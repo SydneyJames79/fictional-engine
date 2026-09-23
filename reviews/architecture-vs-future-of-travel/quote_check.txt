@@ -1,0 +1,32 @@
+reading_A.md: 26 quotes; unmatched: []
+reading_B.md: 33 quotes; unmatched: []
+judge_1.md: 33 quotes; unmatched: []
+judge_2.md: 30 quotes; unmatched: []
+issues.md: 43 quotes; unmatched: []
+hypothesis_A.md: 20 quotes; unmatched: []
+hypothesis_B.md: 23 quotes; unmatched: []
+evidence_audit.md: 35 quotes; unmatched: ['네 보고서 모두', '통상적', '같은 역설을 반복', '변주 없는 반복', '구문으로 수행', '바꿔 넣어도 된다', '손실이 작다', '자리를 바꿔도 손실이 작다', '재규정', '확인에 가깝다', '가산적', '추상 수식 말고는', '구조로 획득', '말의 좌절']
+synthesis.md: 42 quotes; unmatched: ['네 보고서 모두', '너는 …다', '너는 …다']
+revisions.md: 11 quotes; unmatched: ['네 보고서 모두', '통상적']
+robustness.md: 0 quotes; unmatched: []
+faults.md: 41 quotes; unmatched: []
+audit.md: 3 quotes; unmatched: []
+final_report.md: 65 quotes; unmatched: ['너는 …다']
+total quotes checked: 405
+
+[보충] 원문에 없는 인용은 보고서 문구를 인용한 것이다. 보고서(judge_1, judge_2, issues)와 대조한 결과:
+  '네 보고서 모두': 보고서에 있음
+  '통상적': 보고서에 있음
+  '같은 역설을 반복': 보고서에 있음
+  '변주 없는 반복': 보고서에 있음
+  '구문으로 수행': 보고서에 있음
+  '바꿔 넣어도 된다': 보고서에 있음
+  '손실이 작다': 보고서에 있음
+  '자리를 바꿔도 손실이 작다': 보고서에 있음
+  '재규정': 보고서에 있음
+  '확인에 가깝다': 보고서에 있음
+  '가산적': 보고서에 있음
+  '추상 수식 말고는': 보고서에 있음
+  '구조로 획득': 보고서에 있음
+  '말의 좌절': 보고서에 있음
+  '너는 …다': 「건축」의 반복 구문 틀을 가리키는 도식 표기이며, 원문 인용이 아니다.
