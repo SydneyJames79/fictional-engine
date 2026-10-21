@@ -54,15 +54,15 @@
     <radialGradient id="ds-g-face" cx=".5" cy=".4" r=".62">
       <stop offset="0" stop-color="#F6F7F8"/>
       <stop offset=".6" stop-color="#E4E7EB"/>
-      <stop offset=".88" stop-color="#C4CAD1"/>
-      <stop offset="1" stop-color="#AAB1BA"/>
+      <stop offset=".88" stop-color="#CACFD5"/>
+      <stop offset="1" stop-color="#B6BCC4"/>
     </radialGradient>
     <radialGradient id="ds-g-face-caustic" cx=".5" cy=".86" r=".5">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity=".5"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ds-g-cap-rim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".6"/>
       <stop offset=".4" stop-color="#FFFFFF" stop-opacity="0"/>
       <stop offset=".6" stop-color="#959BA4" stop-opacity="0"/>
       <stop offset="1" stop-color="#959BA4" stop-opacity=".4"/>
@@ -88,9 +88,9 @@
       <stop offset="1" stop-color="#0E0E0F"/>
     </radialGradient>
     <linearGradient id="ds-g-rim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#5A5B5F"/>
-      <stop offset=".4" stop-color="#2C2D30"/>
-      <stop offset="1" stop-color="#101011"/>
+      <stop offset="0" stop-color="#3E3F42"/>
+      <stop offset=".4" stop-color="#252628"/>
+      <stop offset="1" stop-color="#0F0F10"/>
     </linearGradient>
     <radialGradient id="ds-g-well" cx=".5" cy=".5" r=".5">
       <stop offset=".74" stop-color="#040404"/>
@@ -157,7 +157,6 @@
     </radialGradient>
     <filter id="ds-blur-1_5-core" filterUnits="userSpaceOnUse" x="10" y="-4" width="140" height="112" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="1.5"/></filter>
     <filter id="ds-blur-0_4-core" filterUnits="userSpaceOnUse" x="10" y="-4" width="140" height="112" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.4"/></filter>
-    <filter id="ds-blur-0_35-core" filterUnits="userSpaceOnUse" x="10" y="-4" width="140" height="112" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.35"/></filter>
     <filter id="ds-blur-3-lightbar" filterUnits="userSpaceOnUse" x="34" y="-4" width="92" height="46" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="3"/></filter>
     <filter id="ds-blur-1_2-lightbar" filterUnits="userSpaceOnUse" x="34" y="-4" width="92" height="46" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="1.2"/></filter>
     <filter id="ds-blur-0_12-lightbar" filterUnits="userSpaceOnUse" x="34" y="-4" width="92" height="46" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.12"/></filter>
@@ -167,30 +166,30 @@
     <filter id="ds-blur-0_2" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.2"/></filter>
     <linearGradient id="ds-g-dpad-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F7F8F9"/><stop offset=".5" stop-color="#DCE0E4"/><stop offset="1" stop-color="#BCC2C9"/></linearGradient>
     <linearGradient id="ds-g-dpad-caustic-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".92" stop-color="#FFFFFF" stop-opacity=".5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-spec-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-rim-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-spec-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-rim-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".15"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
     <linearGradient id="ds-g-gap-0" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#B4B9C0"/><stop offset="1" stop-color="#5A5F67"/></linearGradient>
     <linearGradient id="ds-g-dpad-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#F7F8F9"/><stop offset=".5" stop-color="#DCE0E4"/><stop offset="1" stop-color="#BCC2C9"/></linearGradient>
     <linearGradient id="ds-g-dpad-caustic-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".92" stop-color="#FFFFFF" stop-opacity=".5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-spec-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-rim-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-spec-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-rim-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".15"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
     <linearGradient id="ds-g-gap-90" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#B4B9C0"/><stop offset="1" stop-color="#5A5F67"/></linearGradient>
     <linearGradient id="ds-g-dpad-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#F7F8F9"/><stop offset=".5" stop-color="#DCE0E4"/><stop offset="1" stop-color="#BCC2C9"/></linearGradient>
     <linearGradient id="ds-g-dpad-caustic-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".92" stop-color="#FFFFFF" stop-opacity=".5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-spec-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-rim-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-spec-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-rim-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".15"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
     <linearGradient id="ds-g-gap-180" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#B4B9C0"/><stop offset="1" stop-color="#5A5F67"/></linearGradient>
     <linearGradient id="ds-g-dpad-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#F7F8F9"/><stop offset=".5" stop-color="#DCE0E4"/><stop offset="1" stop-color="#BCC2C9"/></linearGradient>
     <linearGradient id="ds-g-dpad-caustic-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".92" stop-color="#FFFFFF" stop-opacity=".5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-spec-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-    <linearGradient id="ds-g-dpad-rim-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-spec-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".05" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ds-g-dpad-rim-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".15"/><stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
     <linearGradient id="ds-g-gap-270" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#B4B9C0"/><stop offset="1" stop-color="#5A5F67"/></linearGradient>
     <filter id="ds-blur-0_45" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.45"/></filter>
     <filter id="ds-blur-0_15" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.15"/></filter>
-    <radialGradient id="ds-soft-ffffff-0_45">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/>
-      <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0.32"/>
-      <stop offset=".78" stop-color="#FFFFFF" stop-opacity="0.1"/>
+    <radialGradient id="ds-soft-ffffff-0_32">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset=".45" stop-color="#FFFFFF" stop-opacity="0.23"/>
+      <stop offset=".78" stop-color="#FFFFFF" stop-opacity="0.07"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="ds-soft-000000-0_42">
@@ -232,14 +231,14 @@
   <g id="ds-shoulder-buttons">
     <!-- per side: L2 trigger sliver + top highlight, L1 bumper + satin highlight -->
     <g id="ds-shoulder-left">
-      <path d="M41.7 5 C41.39 3.23 41.49 2.7 40.6 1.9 C39.71 1.1 39.19 0.55 37.8 0.4 C35.81 0.19 35.6 0.08 33 0.22 C30 0.38 28.11 0.97 25.2 1.7 C22.87 2.28 21.36 2.7 19.8 3.6 C18.59 4.3 17.32 5.6 16.8 6.9 C16.5 7.64 16.94 8.14 17.6 8.6 C21.7 11.47 24.06 8.44 30 7.6 C35.94 6.76 37.82 5.97 41.7 5 C42.67 4.76 41.87 5.98 41.7 5 Z" fill="#0D0D0E"/>
-      <path d="M39 0.75 C37.42 0.53 35.2 0.43 33 0.55 C30.2 0.7 28.12 1.32 25.4 2 C23.46 2.48 21.81 3.05 20.6 3.75" fill="none" stroke="#4B4C50" stroke-width=".25" stroke-linecap="round" opacity=".65"/>
+      <path d="M41 5.2 C40.9 4 40.87 2.69 40.1 2.05 C39.33 1.41 39.09 0.68 37.9 0.55 C36.11 0.36 35.4 0.22 33 0.35 C30.2 0.5 28.12 1.17 25.4 1.85 C23.46 2.33 21.79 3.05 20.4 3.85 C19.36 4.45 18.75 6.09 18.3 7.2 C17.93 8.13 17.19 9.49 18.6 10 C23.3 11.71 24.06 8.24 30 7.4 C35.94 6.56 41.09 6.2 41 5.2 Z" fill="#0D0D0E"/>
+      <path d="M38.6 0.85 C37.01 0.66 35.2 0.5 33 0.62 C30.2 0.77 28.22 1.42 25.5 2.1 C23.56 2.58 22.41 3.15 21.2 3.85" fill="none" stroke="#4B4C50" stroke-width=".25" stroke-linecap="round" opacity=".65"/>
       <path d="M41 5.2 C40.9 4 40.87 3.04 40.1 2.4 C39.33 1.76 39.19 1.28 38 1.15 C36.21 0.96 35.2 0.88 33 1 C30.2 1.15 28.22 1.77 25.5 2.45 C23.56 2.93 21.99 3.35 20.6 4.15 C19.56 4.75 18.75 6.09 18.3 7.2 C17.93 8.13 17.19 9.49 18.6 10 C23.3 11.71 24.06 8.24 30 7.4 C35.94 6.56 37.12 6.17 41 5.2 C41.97 4.96 41.09 6.2 41 5.2 Z" fill="url(#ds-g-l1)"/>
       <path d="M38 1.5 C36.51 1.34 35 1.28 33 1.38 C30.4 1.52 28.12 2.17 25.6 2.8 C23.85 3.24 22.51 3.6 21.3 4.3" fill="none" stroke="#A0A2A6" stroke-width=".45" stroke-linecap="round" opacity=".3" filter="url(#ds-blur-0_12)"/>
     </g>
     <g id="ds-shoulder-right" transform="translate(160 0) scale(-1 1)">
-      <path d="M41.7 5 C41.39 3.23 41.49 2.7 40.6 1.9 C39.71 1.1 39.19 0.55 37.8 0.4 C35.81 0.19 35.6 0.08 33 0.22 C30 0.38 28.11 0.97 25.2 1.7 C22.87 2.28 21.36 2.7 19.8 3.6 C18.59 4.3 17.32 5.6 16.8 6.9 C16.5 7.64 16.94 8.14 17.6 8.6 C21.7 11.47 24.06 8.44 30 7.6 C35.94 6.76 37.82 5.97 41.7 5 C42.67 4.76 41.87 5.98 41.7 5 Z" fill="#0D0D0E"/>
-      <path d="M39 0.75 C37.42 0.53 35.2 0.43 33 0.55 C30.2 0.7 28.12 1.32 25.4 2 C23.46 2.48 21.81 3.05 20.6 3.75" fill="none" stroke="#4B4C50" stroke-width=".25" stroke-linecap="round" opacity=".65"/>
+      <path d="M41 5.2 C40.9 4 40.87 2.69 40.1 2.05 C39.33 1.41 39.09 0.68 37.9 0.55 C36.11 0.36 35.4 0.22 33 0.35 C30.2 0.5 28.12 1.17 25.4 1.85 C23.46 2.33 21.79 3.05 20.4 3.85 C19.36 4.45 18.75 6.09 18.3 7.2 C17.93 8.13 17.19 9.49 18.6 10 C23.3 11.71 24.06 8.24 30 7.4 C35.94 6.56 41.09 6.2 41 5.2 Z" fill="#0D0D0E"/>
+      <path d="M38.6 0.85 C37.01 0.66 35.2 0.5 33 0.62 C30.2 0.77 28.22 1.42 25.5 2.1 C23.56 2.58 22.41 3.15 21.2 3.85" fill="none" stroke="#4B4C50" stroke-width=".25" stroke-linecap="round" opacity=".65"/>
       <path d="M41 5.2 C40.9 4 40.87 3.04 40.1 2.4 C39.33 1.76 39.19 1.28 38 1.15 C36.21 0.96 35.2 0.88 33 1 C30.2 1.15 28.22 1.77 25.5 2.45 C23.56 2.93 21.99 3.35 20.6 4.15 C19.56 4.75 18.75 6.09 18.3 7.2 C17.93 8.13 17.19 9.49 18.6 10 C23.3 11.71 24.06 8.24 30 7.4 C35.94 6.56 37.12 6.17 41 5.2 C41.97 4.96 41.09 6.2 41 5.2 Z" fill="url(#ds-g-l1)"/>
       <path d="M38 1.5 C36.51 1.34 35 1.28 33 1.38 C30.4 1.52 28.12 2.17 25.6 2.8 C23.85 3.24 22.51 3.6 21.3 4.3" fill="none" stroke="#A0A2A6" stroke-width=".45" stroke-linecap="round" opacity=".3" filter="url(#ds-blur-0_12)"/>
     </g>
@@ -273,7 +272,7 @@
         <use href="#ds-outline" fill="none" stroke="#000" stroke-width="5" opacity=".45" filter="url(#ds-blur-1_5-core)"/>
         <use href="#ds-shell-edges" fill="none" stroke="#8F9195" stroke-width=".8" opacity=".22" filter="url(#ds-blur-0_4-core)"/>
         <!-- soft rim where the black edges roll away (keeps the body readable on dark backgrounds) -->
-        <use href="#ds-outline" fill="none" stroke="#717276" stroke-width="1" opacity=".38" filter="url(#ds-blur-0_35-core)"/>
+        <use href="#ds-outline" fill="none" stroke="#717276" stroke-width="1.1" opacity=".48" filter="url(#ds-blur-0_4-core)"/>
       </g>
       <use href="#ds-shell-edges" fill="none" stroke="#050505" stroke-width=".22"/>
     </g>
@@ -292,8 +291,8 @@
     <g id="ds-light-bar" fill="none" stroke-linecap="round">
       <path d="M53.92 33.3 A11.5 11.5 0 0 1 50.78 27.75 L45.62 5.93 L44.93 3.01 M115.07 3.01 L114.38 5.93 L109.22 27.75 A11.5 11.5 0 0 1 106.08 33.3" stroke="#2F6FFF" stroke-width="7" opacity=".08" filter="url(#ds-blur-3-lightbar)"/>
       <path d="M53.92 33.3 A11.5 11.5 0 0 1 50.78 27.75 L45.62 5.93 L44.93 3.01 M115.07 3.01 L114.38 5.93 L109.22 27.75 A11.5 11.5 0 0 1 106.08 33.3" stroke="#2F6FFF" stroke-width="3.2" opacity=".32" filter="url(#ds-blur-1_2-lightbar)"/>
-      <path d="M53.92 33.3 A11.5 11.5 0 0 1 50.78 27.75 L45.62 5.93 L44.93 3.01 M115.07 3.01 L114.38 5.93 L109.22 27.75 A11.5 11.5 0 0 1 106.08 33.3" stroke="#5A94FF" stroke-width="1.9" filter="url(#ds-blur-0_12-lightbar)"/>
-      <path d="M53.92 33.3 A11.5 11.5 0 0 1 50.78 27.75 L45.62 5.93 L44.93 3.01 M115.07 3.01 L114.38 5.93 L109.22 27.75 A11.5 11.5 0 0 1 106.08 33.3" stroke="#A9C9FF" stroke-width=".5" opacity=".7" filter="url(#ds-blur-0_12-lightbar)"/>
+      <path d="M53.92 33.3 A11.5 11.5 0 0 1 50.78 27.75 L45.62 5.93 L44.93 3.01 M115.07 3.01 L114.38 5.93 L109.22 27.75 A11.5 11.5 0 0 1 106.08 33.3" stroke="#5A94FF" stroke-width="1.6" filter="url(#ds-blur-0_12-lightbar)"/>
+      <path d="M53.92 33.3 A11.5 11.5 0 0 1 50.78 27.75 L45.62 5.93 L44.93 3.01 M115.07 3.01 L114.38 5.93 L109.22 27.75 A11.5 11.5 0 0 1 106.08 33.3" stroke="#A9C9FF" stroke-width=".5" opacity=".5" filter="url(#ds-blur-0_12-lightbar)"/>
     </g>
     <!-- pad surface -->
     <use href="#ds-pad-shape" fill="#000" opacity=".45" transform="translate(0 .3)" filter="url(#ds-blur-0_4)"/>
@@ -310,7 +309,7 @@
   </g>
   <g id="ds-d-pad">
       <!-- cast shadow, hairline gaps, contact shadow, then each key: base, caustic, specular edge, bevel, rim -->
-      <g fill="#000" opacity=".2" filter="url(#ds-blur-0_8)"><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(0)"/><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(90)"/><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(180)"/><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(270)"/></g>
+      <g fill="#000" opacity=".14" filter="url(#ds-blur-0_8)"><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(0)"/><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(90)"/><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(180)"/><use href="#ds-dpad-gap" transform="translate(29.35 31.05) rotate(270)"/></g>
       <use href="#ds-dpad-gap" fill="url(#ds-g-gap-0)" transform="translate(29.35 30.25) rotate(0)"/>
       <use href="#ds-dpad-gap" fill="url(#ds-g-gap-90)" transform="translate(29.35 30.25) rotate(90)"/>
       <use href="#ds-dpad-gap" fill="url(#ds-g-gap-180)" transform="translate(29.35 30.25) rotate(180)"/>
@@ -347,7 +346,7 @@
   </g>
   <g id="ds-face-buttons">
     <!-- cast shadows, hairline gaps, contact shadows, then each cap: base, caustic, symbol (lit copy + grey), highlights, rim -->
-    <g fill="#000" opacity=".2" filter="url(#ds-blur-0_8)"><circle cx="130.65" cy="20.05" r="6.2"/><circle cx="141.65" cy="31.05" r="6.2"/><circle cx="130.65" cy="42.05" r="6.2"/><circle cx="119.65" cy="31.05" r="6.2"/></g>
+    <g fill="#000" opacity=".14" filter="url(#ds-blur-0_8)"><circle cx="130.65" cy="20.05" r="6.2"/><circle cx="141.65" cy="31.05" r="6.2"/><circle cx="130.65" cy="42.05" r="6.2"/><circle cx="119.65" cy="31.05" r="6.2"/></g>
     <g fill="url(#ds-g-gap)"><circle cx="130.65" cy="19.25" r="5.67"/><circle cx="141.65" cy="30.25" r="5.67"/><circle cx="130.65" cy="41.25" r="5.67"/><circle cx="119.65" cy="30.25" r="5.67"/></g>
     <g fill="#000" opacity=".16" filter="url(#ds-blur-0_45)"><circle cx="130.65" cy="19.6" r="5.45"/><circle cx="141.65" cy="30.6" r="5.45"/><circle cx="130.65" cy="41.6" r="5.45"/><circle cx="119.65" cy="30.6" r="5.45"/></g>
     <g id="ds-btn-triangle">
@@ -356,8 +355,8 @@
       <g fill="none" stroke="#FFFFFF" stroke-width="0.49" opacity=".55" transform="translate(0 .16)"
          filter="url(#ds-blur-0_15)"><path d="M130.65 16.58L133.2 20.99L128.1 20.99Z" stroke-linejoin="miter"/></g>
       <g fill="none" stroke="#878C94" stroke-width="0.49"><path d="M130.65 16.58L133.2 20.99L128.1 20.99Z" stroke-linejoin="miter"/></g>
-      <ellipse cx="130.65" cy="16.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_45)"/>
-      <ellipse cx="130.65" cy="15.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".55" filter="url(#ds-blur-0_2)"/>
+      <ellipse cx="130.65" cy="16.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_32)"/>
+      <ellipse cx="130.65" cy="15.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".35" filter="url(#ds-blur-0_2)"/>
       <circle cx="130.65" cy="19.25" r="5.29" fill="none" stroke="url(#ds-g-cap-rim)" stroke-width=".3"/>
     </g>
     <g id="ds-btn-circle">
@@ -366,8 +365,8 @@
       <g fill="none" stroke="#FFFFFF" stroke-width="0.49" opacity=".55" transform="translate(0 .16)"
          filter="url(#ds-blur-0_15)"><circle cx="141.65" cy="30.25" r="2.45"/></g>
       <g fill="none" stroke="#878C94" stroke-width="0.49"><circle cx="141.65" cy="30.25" r="2.45"/></g>
-      <ellipse cx="141.65" cy="27.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_45)"/>
-      <ellipse cx="141.65" cy="26.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".55" filter="url(#ds-blur-0_2)"/>
+      <ellipse cx="141.65" cy="27.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_32)"/>
+      <ellipse cx="141.65" cy="26.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".35" filter="url(#ds-blur-0_2)"/>
       <circle cx="141.65" cy="30.25" r="5.29" fill="none" stroke="url(#ds-g-cap-rim)" stroke-width=".3"/>
     </g>
     <g id="ds-btn-cross">
@@ -376,8 +375,8 @@
       <g fill="none" stroke="#FFFFFF" stroke-width="0.49" opacity=".55" transform="translate(0 .16)"
          filter="url(#ds-blur-0_15)"><path d="M128.63 39.23L132.67 43.27M132.67 39.23L128.63 43.27" stroke-linecap="butt"/></g>
       <g fill="none" stroke="#878C94" stroke-width="0.49"><path d="M128.63 39.23L132.67 43.27M132.67 39.23L128.63 43.27" stroke-linecap="butt"/></g>
-      <ellipse cx="130.65" cy="38.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_45)"/>
-      <ellipse cx="130.65" cy="37.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".55" filter="url(#ds-blur-0_2)"/>
+      <ellipse cx="130.65" cy="38.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_32)"/>
+      <ellipse cx="130.65" cy="37.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".35" filter="url(#ds-blur-0_2)"/>
       <circle cx="130.65" cy="41.25" r="5.29" fill="none" stroke="url(#ds-g-cap-rim)" stroke-width=".3"/>
     </g>
     <g id="ds-btn-square">
@@ -386,8 +385,8 @@
       <g fill="none" stroke="#FFFFFF" stroke-width="0.49" opacity=".55" transform="translate(0 .16)"
          filter="url(#ds-blur-0_15)"><rect x="117.69" y="28.29" width="3.92" height="3.92" stroke-linejoin="miter"/></g>
       <g fill="none" stroke="#878C94" stroke-width="0.49"><rect x="117.69" y="28.29" width="3.92" height="3.92" stroke-linejoin="miter"/></g>
-      <ellipse cx="119.65" cy="27.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_45)"/>
-      <ellipse cx="119.65" cy="26.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".55" filter="url(#ds-blur-0_2)"/>
+      <ellipse cx="119.65" cy="27.52" rx="3.38" ry="1.64" fill="url(#ds-soft-ffffff-0_32)"/>
+      <ellipse cx="119.65" cy="26.03" rx="2.36" ry="0.5" fill="#FFFFFF" opacity=".35" filter="url(#ds-blur-0_2)"/>
       <circle cx="119.65" cy="30.25" r="5.29" fill="none" stroke="url(#ds-g-cap-rim)" stroke-width=".3"/>
     </g>
   </g>
@@ -397,9 +396,9 @@
       <circle cx="54.5" cy="52.6" r="12.3" fill="none" stroke="url(#ds-g-lip)" stroke-width=".55"/>
       <circle cx="54.5" cy="52.6" r="11.8" fill="url(#ds-g-well)"/>
       <circle cx="54.5" cy="52.6" r="9.7" fill="url(#ds-g-rim)"/>
-      <circle cx="54.5" cy="52.6" r="8.59" fill="none" stroke="#08080A" stroke-width="2.02" stroke-dasharray="0.2061 0.2846" opacity=".38"/>
-      <circle cx="54.5" cy="52.6" r="9.48" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".3"/>
-      <circle cx="54.5" cy="52.6" r="7.58" fill="#414245"/>
+      <circle cx="54.5" cy="52.6" r="8.59" fill="none" stroke="#08080A" stroke-width="2.02" stroke-dasharray="0.2061 0.2846" opacity=".45"/>
+      <circle cx="54.5" cy="52.6" r="9.48" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".3" opacity=".55"/>
+      <circle cx="54.5" cy="52.6" r="7.58" fill="#333437"/>
       <circle cx="54.5" cy="52.6" r="7.18" fill="url(#ds-g-dish)"/>
       <ellipse cx="54.5" cy="49.37" rx="6.82" ry="4.31" fill="url(#ds-soft-000000-0_42)"/>
       <ellipse cx="54.5" cy="58.34" rx="4.45" ry="1.44" fill="url(#ds-soft-9c9ea2-0_18)"/>
@@ -409,26 +408,26 @@
       <circle cx="105.5" cy="52.6" r="12.3" fill="none" stroke="url(#ds-g-lip)" stroke-width=".55"/>
       <circle cx="105.5" cy="52.6" r="11.8" fill="url(#ds-g-well)"/>
       <circle cx="105.5" cy="52.6" r="9.7" fill="url(#ds-g-rim)"/>
-      <circle cx="105.5" cy="52.6" r="8.59" fill="none" stroke="#08080A" stroke-width="2.02" stroke-dasharray="0.2061 0.2846" opacity=".38"/>
-      <circle cx="105.5" cy="52.6" r="9.48" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".3"/>
-      <circle cx="105.5" cy="52.6" r="7.58" fill="#414245"/>
+      <circle cx="105.5" cy="52.6" r="8.59" fill="none" stroke="#08080A" stroke-width="2.02" stroke-dasharray="0.2061 0.2846" opacity=".45"/>
+      <circle cx="105.5" cy="52.6" r="9.48" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".3" opacity=".55"/>
+      <circle cx="105.5" cy="52.6" r="7.58" fill="#333437"/>
       <circle cx="105.5" cy="52.6" r="7.18" fill="url(#ds-g-dish)"/>
       <ellipse cx="105.5" cy="49.37" rx="6.82" ry="4.31" fill="url(#ds-soft-000000-0_42)"/>
       <ellipse cx="105.5" cy="58.34" rx="4.45" ry="1.44" fill="url(#ds-soft-9c9ea2-0_18)"/>
       <ellipse cx="105.5" cy="44.45" rx="6.01" ry="1.55" fill="url(#ds-soft-ffffff-0_16)"/>
     </g>
   </g>
-  <g id="ds-speaker-grille" fill="#0B0B0C" opacity=".85">
+  <g id="ds-speaker-grille" fill="#0B0B0C" opacity=".6">
     <circle cx="76.7" cy="40.05" r="0.26"/><circle cx="77.8" cy="40.05" r="0.26"/><circle cx="78.9" cy="40.05" r="0.26"/><circle cx="80" cy="40.05" r="0.26"/><circle cx="81.1" cy="40.05" r="0.26"/><circle cx="82.2" cy="40.05" r="0.26"/><circle cx="83.3" cy="40.05" r="0.26"/><circle cx="76.15" cy="41" r="0.26"/><circle cx="77.25" cy="41" r="0.26"/><circle cx="78.35" cy="41" r="0.26"/><circle cx="79.45" cy="41" r="0.26"/><circle cx="80.55" cy="41" r="0.26"/><circle cx="81.65" cy="41" r="0.26"/><circle cx="82.75" cy="41" r="0.26"/><circle cx="83.85" cy="41" r="0.26"/><circle cx="76.7" cy="41.95" r="0.26"/><circle cx="77.8" cy="41.95" r="0.26"/><circle cx="78.9" cy="41.95" r="0.26"/><circle cx="80" cy="41.95" r="0.26"/><circle cx="81.1" cy="41.95" r="0.26"/><circle cx="82.2" cy="41.95" r="0.26"/><circle cx="83.3" cy="41.95" r="0.26"/>
   </g>
   <g id="ds-ps-button">
-    <use href="#ds-ps-logo" fill="none" stroke="#060607" stroke-width=".5" stroke-linejoin="round"/>
+    <use href="#ds-ps-logo" fill="none" stroke="#08080A" stroke-width=".35" stroke-linejoin="round"/>
     <use href="#ds-ps-logo" fill="#000" opacity=".6" transform="translate(0 .35)" filter="url(#ds-blur-0_25)"/>
     <use href="#ds-ps-logo" fill="url(#ds-g-ps)"/>
     <g clip-path="url(#ds-clip-ps)">
       <ellipse cx="80" cy="45.4" rx="6.5" ry="3.2" fill="url(#ds-soft-ffffff-0_13)"/>
     </g>
-    <use href="#ds-ps-logo" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".3"/>
+    <use href="#ds-ps-logo" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".25"/>
   </g>
   <g id="ds-mute-button">
     <path d="M77.6 55.1H82.4A1.5 1.5 0 0 1 82.4 58.1H77.6A1.5 1.5 0 0 1 77.6 55.1Z" fill="#060607"/>
@@ -447,19 +446,19 @@
   <g id="ds-create-options">
     <g id="ds-btn-create" transform="translate(41.7 12.6) rotate(-14)">
       <path d="M-1.9 -2.2A1.9 1.9 0 0 1 1.9 -2.2V2.2A1.9 1.9 0 0 1 -1.9 2.2Z" fill="#000" opacity=".2" transform="rotate(14) translate(0 .6) rotate(-14)" filter="url(#ds-blur-0_4)"/>
-      <path d="M-1.9 -2.2A1.9 1.9 0 0 1 1.9 -2.2V2.2A1.9 1.9 0 0 1 -1.9 2.2Z" fill="#0B0C0E"/>
+      <path d="M-1.8 -2.2A1.8 1.8 0 0 1 1.8 -2.2V2.2A1.8 1.8 0 0 1 -1.8 2.2Z" fill="#0B0C0E"/>
       <path d="M-1.6 -2.2A1.6 1.6 0 0 1 1.6 -2.2V2.2A1.6 1.6 0 0 1 -1.6 2.2Z" fill="url(#ds-g-key)"/>
       <path d="M-1 -3.2H1A0.4 0.4 0 0 1 1 -2.4H-1A0.4 0.4 0 0 1 -1 -3.2Z" fill="#FFFFFF" opacity=".22" filter="url(#ds-blur-0_2)"/>
       <path d="M-1.5 -2.2A1.5 1.5 0 0 1 1.5 -2.2V2.2A1.5 1.5 0 0 1 -1.5 2.2Z" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".26"/>
-      <g fill="none" stroke="#9EA2A9" stroke-width=".38" stroke-linecap="round"><path d="M-1.2 -4.54L-2.41 -5.88M0 -5L0 -6.8M1.2 -4.54L2.41 -5.88"/></g>
+      <g fill="none" stroke="#AEB2B8" stroke-width=".32" stroke-linecap="round"><path d="M-1.24 -4.57L-2.24 -5.69M0 -5.05L0 -6.55M1.24 -4.57L2.24 -5.69"/></g>
     </g>
     <g id="ds-btn-options" transform="translate(118.3 12.6) rotate(14)">
       <path d="M-1.9 -2.2A1.9 1.9 0 0 1 1.9 -2.2V2.2A1.9 1.9 0 0 1 -1.9 2.2Z" fill="#000" opacity=".2" transform="rotate(-14) translate(0 .6) rotate(14)" filter="url(#ds-blur-0_4)"/>
-      <path d="M-1.9 -2.2A1.9 1.9 0 0 1 1.9 -2.2V2.2A1.9 1.9 0 0 1 -1.9 2.2Z" fill="#0B0C0E"/>
+      <path d="M-1.8 -2.2A1.8 1.8 0 0 1 1.8 -2.2V2.2A1.8 1.8 0 0 1 -1.8 2.2Z" fill="#0B0C0E"/>
       <path d="M-1.6 -2.2A1.6 1.6 0 0 1 1.6 -2.2V2.2A1.6 1.6 0 0 1 -1.6 2.2Z" fill="url(#ds-g-key)"/>
       <path d="M-1 -3.2H1A0.4 0.4 0 0 1 1 -2.4H-1A0.4 0.4 0 0 1 -1 -3.2Z" fill="#FFFFFF" opacity=".22" filter="url(#ds-blur-0_2)"/>
       <path d="M-1.5 -2.2A1.5 1.5 0 0 1 1.5 -2.2V2.2A1.5 1.5 0 0 1 -1.5 2.2Z" fill="none" stroke="url(#ds-g-top-rim)" stroke-width=".26"/>
-      <g fill="none" stroke="#9EA2A9" stroke-width=".38" stroke-linecap="round"><path d="M-1.3 -5.3H1.3"/><path d="M-1.3 -6.05H1.3"/><path d="M-1.3 -6.8H1.3"/></g>
+      <g fill="none" stroke="#AEB2B8" stroke-width=".32" stroke-linecap="round"><path d="M-1.15 -5.25H1.15"/><path d="M-1.15 -5.9H1.15"/><path d="M-1.15 -6.55H1.15"/></g>
     </g>
   </g>
 </svg>

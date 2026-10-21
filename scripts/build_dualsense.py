@@ -409,7 +409,7 @@ TP = RoundedPoly(
     [1.6, 210, 1.6, 10.5, 10.5],  # the top arc's crown sits on the silhouette (y = 1.3)
 )
 CHANNEL = 2.0            # touchpad edge -> white shell edge; the light bar sits in it
-LB_IN, LB_OUT = 0.05, 1.95  # light-bar strip, as offsets from the pad edge
+LB_IN, LB_OUT = 0.2, 1.8    # light-bar strip, as offsets from the pad edge
 
 # The white shell's inner edge (left): runs beside the pad, rounds the junction
 # below the pad's corner, then sweeps down the inside of the grip to its tip.
@@ -622,15 +622,15 @@ def static_defs():
         '''<radialGradient id="g-face" cx=".5" cy=".4" r=".62">
       <stop offset="0" stop-color="#F6F7F8"/>
       <stop offset=".6" stop-color="#E4E7EB"/>
-      <stop offset=".88" stop-color="#C4CAD1"/>
-      <stop offset="1" stop-color="#AAB1BA"/>
+      <stop offset=".88" stop-color="#CACFD5"/>
+      <stop offset="1" stop-color="#B6BCC4"/>
     </radialGradient>''',
         '''<radialGradient id="g-face-caustic" cx=".5" cy=".86" r=".5">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity=".5"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>''',
         '''<linearGradient id="g-cap-rim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".6"/>
       <stop offset=".4" stop-color="#FFFFFF" stop-opacity="0"/>
       <stop offset=".6" stop-color="#959BA4" stop-opacity="0"/>
       <stop offset="1" stop-color="#959BA4" stop-opacity=".4"/>
@@ -657,9 +657,9 @@ def static_defs():
       <stop offset="1" stop-color="#0E0E0F"/>
     </radialGradient>''',
         '''<linearGradient id="g-rim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#5A5B5F"/>
-      <stop offset=".4" stop-color="#2C2D30"/>
-      <stop offset="1" stop-color="#101011"/>
+      <stop offset="0" stop-color="#3E3F42"/>
+      <stop offset=".4" stop-color="#252628"/>
+      <stop offset="1" stop-color="#0F0F10"/>
     </linearGradient>''',
         '''<radialGradient id="g-well" cx=".5" cy=".5" r=".5">
       <stop offset=".74" stop-color="#040404"/>
@@ -700,22 +700,21 @@ def shoulders():
     """L1 bumper and a sliver of the L2 trigger behind it, seen from above."""
     # Slim bands that follow the shell's top edge; the lower parts tuck under the shell.
     l2 = spline([
-        (41.7, 5.0, -100, 1, 1.8),
-        (40.6, 1.9, -138, 1.2, 1.2),
-        (37.8, 0.4, 186, 1.4, 2.0),
-        (33.0, 0.22, 177, 2.6, 3.0),
-        (25.2, 1.7, 166, 3.0, 2.4),
-        (19.8, 3.6, 150, 1.8, 1.4),
-        (16.8, 6.9, 112, 1.4, 0.8),
-        (17.6, 8.6, 35, 0.8, 5),
-        (30.0, 7.6, -8, 6, 6),
-        (41.7, 5.0, -14, 4, 1),
+        (41.0, 5.2, -95, 1, 1.2),
+        (40.1, 2.05, -140, 1.0, 1.0),
+        (37.9, 0.55, 186, 1.2, 1.8),
+        (33.0, 0.35, 177, 2.4, 2.8),
+        (25.4, 1.85, 166, 2.8, 2.0),
+        (20.4, 3.85, 150, 1.6, 1.2),
+        (18.3, 7.2, 112, 1.2, 1.0),
+        (18.6, 10.0, 20, 1.5, 5),
+        (30.0, 7.4, -8, 6, 6),
     ])
     l2_hi = spline([
-        (39.0, 0.75, 188, 1, 1.6),
-        (33.0, 0.55, 177, 2.2, 2.8),
-        (25.4, 2.0, 166, 2.8, 2.0),
-        (20.6, 3.75, 150, 1.4, 1),
+        (38.6, 0.85, 187, 1, 1.6),
+        (33.0, 0.62, 177, 2.2, 2.8),
+        (25.5, 2.1, 166, 2.8, 2.0),
+        (21.2, 3.85, 150, 1.4, 1),
     ], closed=False)
     l1 = spline([
         (41.0, 5.2, -95, 1, 1.2),
@@ -779,7 +778,7 @@ def body():
         {use("outline", fill="none", stroke="#000", stroke_width="5", opacity=".45", filter=blur(1.5, "core"))}
         {use("shell-edges", fill="none", stroke="#8F9195", stroke_width=".8", opacity=".22", filter=blur(.4, "core"))}
         <!-- soft rim where the black edges roll away (keeps the body readable on dark backgrounds) -->
-        {use("outline", fill="none", stroke="#717276", stroke_width="1", opacity=".38", filter=blur(.35, "core"))}
+        {use("outline", fill="none", stroke="#717276", stroke_width="1.1", opacity=".48", filter=blur(.4, "core"))}
       </g>
       {use("shell-edges", fill="none", stroke="#050505", stroke_width=".22")}
     </g>
@@ -818,7 +817,7 @@ def touchpad():
       {path(both, stroke=C['light'], stroke_width="7", opacity=".08", filter=blur(3, "lightbar"))}
       {path(both, stroke=C['light'], stroke_width="3.2", opacity=".32", filter=blur(1.2, "lightbar"))}
       {path(both, stroke=C['light_mid'], stroke_width=n(lb_w), filter=blur(.12, "lightbar"))}
-      {path(both, stroke=C['light_hi'], stroke_width=".5", opacity=".7", filter=blur(.12, "lightbar"))}
+      {path(both, stroke=C['light_hi'], stroke_width=".5", opacity=".5", filter=blur(.12, "lightbar"))}
     </g>
     <!-- pad surface -->
     {use("pad-shape", fill="#000", opacity=".45", transform="translate(0 .3)", filter=blur(.4))}
@@ -851,12 +850,12 @@ def dpad():
                                      '<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>')
         spec = _world_up_gradient(f"g-dpad-spec-{rot}", rot,
                                   '<stop offset=".02" stop-color="#FFFFFF" stop-opacity="0"/>'
-                                  '<stop offset=".05" stop-color="#FFFFFF" stop-opacity=".28"/>'
+                                  '<stop offset=".05" stop-color="#FFFFFF" stop-opacity=".2"/>'
                                   '<stop offset=".1" stop-color="#FFFFFF" stop-opacity=".1"/>'
                                   '<stop offset=".16" stop-color="#FFFFFF" stop-opacity="0"/>')
         rim = _world_up_gradient(f"g-dpad-rim-{rot}", rot,
-                                 '<stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>'
-                                 '<stop offset=".35" stop-color="#FFFFFF" stop-opacity=".2"/>'
+                                 '<stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/>'
+                                 '<stop offset=".35" stop-color="#FFFFFF" stop-opacity=".15"/>'
                                  '<stop offset=".6" stop-color="#FFFFFF" stop-opacity="0"/>')
         gap = _world_up_gradient(f"g-gap-{rot}", rot,
                                  f'<stop offset="0" stop-color="{C["gap_clear_top"]}"/>'
@@ -873,7 +872,7 @@ def dpad():
       </g>''')
     return ('<g id="d-pad">\n      <!-- cast shadow, hairline gaps, contact shadow, then each key: '
             'base, caustic, specular edge, bevel, rim -->\n      '
-            + f'<g fill="#000" opacity=".2" filter="{blur(.8)}">' + "".join(casts) + "</g>\n      "
+            + f'<g fill="#000" opacity=".14" filter="{blur(.8)}">' + "".join(casts) + "</g>\n      "
             + "\n      ".join(gaps)
             + f'\n      <g fill="#000" opacity=".16" filter="{blur(.45)}">' + "".join(shadows) + "</g>\n      "
             + "\n      ".join(keys) + "\n  </g>")
@@ -908,8 +907,8 @@ def face_buttons():
       <g fill="none" stroke="#FFFFFF" stroke-width="{sw}" opacity=".55" transform="translate(0 .16)"
          filter="{blur(.15)}">{glyph}</g>
       <g fill="none" stroke="{C['sym']}" stroke-width="{sw}">{glyph}</g>
-      {soft(x, y - r * 0.5, r * 0.62, r * 0.3, "#FFFFFF", .45)}
-      {ellipse(x, y - r * 0.775, r * 0.433, r * 0.092, fill="#FFFFFF", opacity=".55", filter=blur(.2))}
+      {soft(x, y - r * 0.5, r * 0.62, r * 0.3, "#FFFFFF", .32)}
+      {ellipse(x, y - r * 0.775, r * 0.433, r * 0.092, fill="#FFFFFF", opacity=".35", filter=blur(.2))}
       {circle(x, y, r - 0.16, fill="none", stroke="url(#g-cap-rim)", stroke_width=".3")}
     </g>''')
     casts = "".join(circle(x, y + 0.8, r + 0.75) for x, y in pos.values())
@@ -917,7 +916,7 @@ def face_buttons():
     shadows = "".join(circle(x, y + 0.35, r) for x, y in pos.values())
     return ('<g id="face-buttons">\n    <!-- cast shadows, hairline gaps, contact shadows, then each cap: '
             'base, caustic, symbol (lit copy + grey), highlights, rim -->\n    '
-            f'<g fill="#000" opacity=".2" filter="{blur(.8)}">{casts}</g>\n    '
+            f'<g fill="#000" opacity=".14" filter="{blur(.8)}">{casts}</g>\n    '
             f'<g fill="url(#g-gap)">{gaps}</g>\n    '
             f'<g fill="#000" opacity=".16" filter="{blur(.45)}">{shadows}</g>\n    '
             + "\n    ".join(out) + "\n  </g>")
@@ -930,14 +929,14 @@ def stick(cx, cy, side):
     ring_r = float(n((rc + dish) / 2 + 0.15))  # the radius exactly as written to the file
     period = 2 * math.pi * ring_r / 110         # 110 ridges that close up without a seam
     knurl = dict(fill="none", stroke="#08080A", stroke_width=n(rc - dish - 0.5),
-                 stroke_dasharray=f"{period * 0.42:.4f} {period * 0.58:.4f}", opacity=".38")
+                 stroke_dasharray=f"{period * 0.42:.4f} {period * 0.58:.4f}", opacity=".45")
     return f'''<g id="stick-{side}">
       {circle(cx, cy, rw + 0.5, fill="none", stroke="url(#g-lip)", stroke_width=".55")}
       {circle(cx, cy, rw, fill="url(#g-well)")}
       {circle(cx, cy, rc, fill="url(#g-rim)")}
       {circle(cx, cy, ring_r, **knurl)}
-      {circle(cx, cy, rc - 0.22, fill="none", stroke="url(#g-top-rim)", stroke_width=".3")}
-      {circle(cx, cy, dish + 0.4, fill="#414245")}
+      {circle(cx, cy, rc - 0.22, fill="none", stroke="url(#g-top-rim)", stroke_width=".3", opacity=".55")}
+      {circle(cx, cy, dish + 0.4, fill="#333437")}
       {circle(cx, cy, dish, fill="url(#g-dish)")}
       {soft(cx, cy - dish * 0.45, dish * 0.95, dish * 0.6, "#000000", .42)}
       {soft(cx, cy + dish * 0.8, dish * 0.62, dish * 0.2, "#9C9EA2", .18)}
@@ -954,13 +953,13 @@ def ps_button():
     """The PS button: a raised black key moulded in the shape of the PlayStation logo."""
     x, y = PS_C
     return f'''<g id="ps-button">
-    {use("ps-logo", fill="none", stroke="#060607", stroke_width=".5", stroke_linejoin="round")}
+    {use("ps-logo", fill="none", stroke="#08080A", stroke_width=".35", stroke_linejoin="round")}
     {use("ps-logo", fill="#000", opacity=".6", transform="translate(0 .35)", filter=blur(.25))}
     {use("ps-logo", fill="url(#g-ps)")}
     <g clip-path="url(#clip-ps)">
       {soft(x, y - 3.2, 6.5, 3.2, "#FFFFFF", .13)}
     </g>
-    {use("ps-logo", fill="none", stroke="url(#g-top-rim)", stroke_width=".3")}
+    {use("ps-logo", fill="none", stroke="url(#g-top-rim)", stroke_width=".25")}
   </g>'''
 
 
@@ -988,7 +987,7 @@ def speaker_grille():
             hx, hy = off + i * pitch, row * row_h
             if (hx / a) ** 2 + (hy / b) ** 2 <= 1.0:
                 holes.append(circle(cx + hx, cy + hy, r_hole))
-    return f'''<g id="speaker-grille" fill="#0B0B0C" opacity=".85">
+    return f'''<g id="speaker-grille" fill="#0B0B0C" opacity=".6">
     {"".join(holes)}
   </g>'''
 
@@ -1019,23 +1018,23 @@ def small_buttons():
         cap = capsule_path(0, 0, w, h)
         if side == "options":
             # "≡" printed on the shell above the button
-            icon = "".join(f'<path d="M-1.3 {n(-h / 2 - dy)}H1.3"/>' for dy in (1.5, 2.25, 3.0))
+            icon = "".join(f'<path d="M-1.15 {n(-h / 2 - dy)}H1.15"/>' for dy in (1.45, 2.1, 2.75))
         else:
             # Create: three short rays fanning out above the button
             fx, fy = 0.0, -h / 2 + 0.6
             rays = []
             for ang in (-132, -90, -48):
                 c, s = math.cos(rad(ang)), math.sin(rad(ang))
-                rays.append(f"M{pt(fx + 1.8 * c, fy + 1.8 * s)}L{pt(fx + 3.6 * c, fy + 3.6 * s)}")
+                rays.append(f"M{pt(fx + 1.85 * c, fy + 1.85 * s)}L{pt(fx + 3.35 * c, fy + 3.35 * s)}")
             icon = f'<path d="{"".join(rays)}"/>'
         out.append(f'''<g id="btn-{side}" transform="translate({n(x)} {n(y)}) rotate({n(rot)})">
       {path(capsule_path(0, 0, w + 0.6, h + 0.6), fill="#000", opacity=".2",
             transform=f"rotate({n(-rot)}) translate(0 .6) rotate({n(rot)})", filter=blur(.4))}
-      {path(capsule_path(0, 0, w + 0.6, h + 0.6), fill=C['gap'])}
+      {path(capsule_path(0, 0, w + 0.4, h + 0.4), fill=C['gap'])}
       {path(cap, fill="url(#g-key)")}
       {path(capsule_path(0, -h / 2 + 1.0, w - 0.4, 0.8), fill="#FFFFFF", opacity=".22", filter=blur(.2))}
       {path(capsule_path(0, 0, w - 0.2, h - 0.2), fill="none", stroke="url(#g-top-rim)", stroke_width=".26")}
-      <g fill="none" stroke="#9EA2A9" stroke-width=".38" stroke-linecap="round">{icon}</g>
+      <g fill="none" stroke="#AEB2B8" stroke-width=".32" stroke-linecap="round">{icon}</g>
     </g>''')
     return '<g id="create-options">\n    ' + "\n    ".join(out) + "\n  </g>"
 
