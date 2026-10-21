@@ -122,10 +122,11 @@ def polar(cx, cy, r, deg):
     return (cx + r * math.cos(a), cy + r * math.sin(a))
 
 class Doc:
-    def __init__(self, vb, title, desc):
+    def __init__(self, vb, title, desc, id_prefix=''):
         self.vb = vb
         self.title = title
         self.desc = desc
+        self.id_prefix = id_prefix
         self.defs = []
         self.body = []
         self._ids = set()
@@ -139,9 +140,9 @@ class Doc:
         x, y, w, h = self.vb
         head = (f'<?xml version="1.0" encoding="UTF-8"?>\n'
                 f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
-                f'viewBox="{n(x)} {n(y)} {n(w)} {n(h)}" width="{n(w)}" height="{n(h)}" role="img" aria-labelledby="title desc">\n'
-                f'  <title id="title">{self.title}</title>\n'
-                f'  <desc id="desc">{self.desc}</desc>\n')
+                f'viewBox="{n(x)} {n(y)} {n(w)} {n(h)}" width="{n(w)}" height="{n(h)}" role="img" aria-labelledby="{self.id_prefix}title {self.id_prefix}desc">\n'
+                f'  <title id="{self.id_prefix}title">{self.title}</title>\n'
+                f'  <desc id="{self.id_prefix}desc">{self.desc}</desc>\n')
         defs = '  <defs>\n' + '\n'.join('    ' + d for d in self.defs) + '\n  </defs>\n'
         return head + defs + '\n'.join(self.body) + '\n</svg>\n'
 
