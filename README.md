@@ -9,17 +9,19 @@
 - **단위와 크기**: SVG 1 유닛 = 1 mm. 컨트롤러는 가로 160 mm, 세로 약 106 mm(L1/L2 포함)로 Sony 공식 치수(160 × 66 × 106 mm, 가로 × 두께 × 세로)에 맞췄어요. 좌우 대칭축은 x = 80이고, 대칭인 윤곽은 왼쪽 절반을 그려 뒤집어서 만들어요.
 - **그린 부분**: 흰 셸과 검은 센터 트림(그립 안쪽 끝까지), 터치패드와 양옆 라이트 바(1P 파란색), 플레이어 LED 다섯 개(1P는 가운데만 켜짐), 스피커 그릴, PS 버튼, 마이크 음소거 버튼, 투명 캡의 십자키와 액션 버튼(△ ○ × □), 아날로그 스틱, Create·Options 버튼과 아이콘, L1/R1과 그 뒤로 보이는 L2/R2.
 - **조명**: 빛은 그림 위쪽에서 들어오는 것으로 통일했어요. 흰색과 검은색 배경 어디에 올려도 윤곽이 읽히게 맞췄어요.
-- **호환성**: Chromium과 resvg로 렌더링해 비교했고(평균 차이 0.77/255), 64 px부터 4096 px까지 크기를 바꿔 확인했어요.
+- **호환성**: Chromium, resvg, librsvg로 렌더링해 비교했고(Chromium 대비 평균 차이 0.76/255, 0.71/255), 64 px부터 4096 px까지 크기를 바꿔 확인했어요.
+- **HTML에 바로 넣을 때**: 모든 id에 `ds-` 접두사가 붙어 있어서, 같은 페이지의 다른 SVG와 id가 겹치지 않아요.
 
 ### 다시 만들기
 
-`dualsense.svg`는 `scripts/build_dualsense.py`가 만들어요. 표준 라이브러리만 쓰는 Python 3 스크립트예요.
+`dualsense.svg`는 `scripts/build_dualsense.py`가 만들어요. 표준 라이브러리만 쓰는 Python 3 스크립트이고, 출력이 매번 같아서 커밋된 SVG가 스크립트와 맞는지 확인할 수 있어요.
 
 ```sh
-python3 scripts/build_dualsense.py dualsense.svg
+python3 scripts/build_dualsense.py dualsense.svg          # 다시 생성
+python3 scripts/build_dualsense.py dualsense.svg --check  # 스크립트와 다르면 종료 코드 1
 ```
 
-부품 위치·크기는 스크립트 앞쪽 상수(`OUTLINE_L`, `TP`, `SHELL_EDGE_L`, `DPAD_C`, `FACE_C`, `STICK_L`, `PS_C` 등)에, 색은 `C` 팔레트에 모여 있어요. SVG 파일을 직접 고치기보다 스크립트를 고친 뒤 다시 생성하는 쪽을 권해요.
+부품 위치·크기는 스크립트 앞쪽 상수(`OUTLINE_L`, `TP`, `SHELL_EDGE_L`, `DPAD_C`, `FACE_C`, `STICK_L`, `PS_C` 등)에, 주요 색은 `PALETTE`에 모여 있어요. 여러 번 그리는 모양(윤곽, 터치패드, PS 로고, 십자키 등)은 `<defs>`에 한 번만 두고 `<use>`로 재사용해요. SVG 파일을 직접 고치기보다 스크립트를 고친 뒤 다시 생성하는 쪽을 권해요.
 
 ### 참고한 자료
 
