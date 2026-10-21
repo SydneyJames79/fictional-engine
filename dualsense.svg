@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 800 540" width="800" height="540" role="img" aria-labelledby="t d">
+  <title id="t">PS5 DualSense controller</title>
+  <desc id="d">Front view of a white PlayStation 5 DualSense wireless controller: white shell with a black inner section, touchpad with blue light bar, two analog sticks, D-pad, triangle/circle/cross/square buttons, PS button with speaker grille, mute button, and L1/L2, R1/R2 shoulder buttons.</desc>
+  <defs>
+    <clipPath id="bodyClip"><path d="M400 72 C330 72 280 86 236 104 C205 110 178 108 156 100 C144 96 134 92 126 92 C114 92 106 104 105 124 C102 160 99 230 100 300 C102 350 106 420 126 452 C142 480 206 494 242 470 C270 452 286 396 300 364 C314 338 356 338 400 338 C444 338 486 338 500 364 C514 396 530 452 558 470 C594 494 658 480 674 452 C694 420 698 350 700 300 C701 230 698 160 695 124 C694 104 686 92 674 92 C666 92 656 96 644 100 C622 108 595 110 564 104 C520 86 470 72 400 72 Z"/></clipPath>
+
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fdfdfe"/>
+      <stop offset="0.55" stop-color="#f2f3f6"/>
+      <stop offset="1" stop-color="#dadde2"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2d32"/>
+      <stop offset="0.45" stop-color="#1b1c20"/>
+      <stop offset="1" stop-color="#0f1012"/>
+    </linearGradient>
+    <linearGradient id="padGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f3"/>
+      <stop offset="1" stop-color="#dfe2e7"/>
+    </linearGradient>
+    <linearGradient id="triggerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe2e7"/>
+      <stop offset="1" stop-color="#b4b9c1"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f8fa"/>
+      <stop offset="1" stop-color="#dde0e5"/>
+    </linearGradient>
+    <radialGradient id="wellGrad" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#050506"/>
+      <stop offset="0.85" stop-color="#0f1013"/>
+      <stop offset="1" stop-color="#34363c"/>
+    </radialGradient>
+    <radialGradient id="capGrad" cx="0.42" cy="0.38" r="0.65">
+      <stop offset="0" stop-color="#4b4d55"/>
+      <stop offset="0.7" stop-color="#26272c"/>
+      <stop offset="1" stop-color="#151619"/>
+    </radialGradient>
+    <radialGradient id="dishGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#1c1d21"/>
+      <stop offset="1" stop-color="#303137"/>
+    </radialGradient>
+
+    <filter id="drop" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
+      <feOffset dx="0" dy="8" result="o"/>
+      <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <g id="stick">
+      <circle r="48" fill="url(#wellGrad)"/>
+      <circle r="48" fill="none" stroke="#3a3c43" stroke-width="1.5"/>
+      <circle r="41" fill="#08090a"/>
+      <circle r="25" fill="#1a1b1f"/>
+      <circle r="33" fill="url(#capGrad)" stroke="#0a0b0d" stroke-width="1"/>
+      <circle r="28.5" fill="none" stroke="#4a4c54" stroke-width="1.3" stroke-dasharray="1.8 2.4"/>
+      <circle r="22" fill="url(#dishGrad)"/>
+      <ellipse cx="-7" cy="-9" rx="9" ry="5" fill="#ffffff" opacity="0.06"/>
+    </g>
+    <g id="menu-btn">
+      <rect x="-7" y="-18" width="14" height="36" rx="7" fill="url(#btnGrad)" stroke="#bfc3cb" stroke-width="1.2"/>
+      <path d="M-3 -4 H3 M-3 0 H3 M-3 4 H3" stroke="#9a9ea7" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <style>
+    .fb { fill: url(#btnGrad); stroke: #bfc3cb; stroke-width: 1.2; }
+  </style>
+
+  <!-- ground shadow -->
+  <ellipse cx="400" cy="488" rx="290" ry="15" fill="#000" opacity="0.18" filter="url(#glow)"/>
+
+  <!-- triggers L2 / R2 (behind the body) -->
+  <g fill="url(#triggerGrad)" stroke="#aab0b8" stroke-width="1.3">
+    <path d="M94 150 C86 112 96 70 128 66 C156 63 176 78 182 100 L178 150 Z"/>
+    <path d="M94 150 C86 112 96 70 128 66 C156 63 176 78 182 100 L178 150 Z" transform="matrix(-1 0 0 1 800 0)"/>
+    <g fill="none" stroke="#f4f5f7" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+      <path d="M100 108 C100 86 110 72 130 70 C152 68 168 80 176 96"/>
+      <path d="M100 108 C100 86 110 72 130 70 C152 68 168 80 176 96" transform="matrix(-1 0 0 1 800 0)"/>
+    </g>
+  </g>
+
+  <!-- body -->
+  <g filter="url(#drop)">
+    <path d="M400 72 C330 72 280 86 236 104 C205 110 178 108 156 100 C144 96 134 92 126 92 C114 92 106 104 105 124 C102 160 99 230 100 300 C102 350 106 420 126 452 C142 480 206 494 242 470 C270 452 286 396 300 364 C314 338 356 338 400 338 C444 338 486 338 500 364 C514 396 530 452 558 470 C594 494 658 480 674 452 C694 420 698 350 700 300 C701 230 698 160 695 124 C694 104 686 92 674 92 C666 92 656 96 644 100 C622 108 595 110 564 104 C520 86 470 72 400 72 Z" fill="url(#bodyGrad)" stroke="#b3b7bf" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- bumpers L1 / R1: slightly lighter band on top of each horn, with a seam -->
+  <g clip-path="url(#bodyClip)">
+    <path d="M90 136 C130 121 165 112 200 108 C216 106 228 104 238 103 L260 100 L260 40 L80 40 Z" fill="#eceef1"/>
+    <path d="M90 136 C130 121 165 112 200 108 C216 106 228 104 238 103 L260 100 L260 40 L80 40 Z" fill="#eceef1" transform="matrix(-1 0 0 1 800 0)"/>
+    <g fill="none" stroke="#c3c7ce" stroke-width="1.3">
+      <path d="M100 132 C130 121 165 112 200 108 C216 106 228 104 238 103"/>
+      <path d="M100 132 C130 121 165 112 200 108 C216 106 228 104 238 103" transform="matrix(-1 0 0 1 800 0)"/>
+    </g>
+  </g>
+
+  <!-- inner black section -->
+  <g clip-path="url(#bodyClip)">
+    <path d="M400 214 C372 214 345 215 330 217 C312 219 300 224 288 230 C248 246 214 272 206 312 C202 354 236 402 276 424 C300 445 330 480 360 540 C380 560 392 560 400 560 C408 560 420 560 440 540 C470 480 500 445 524 424 C564 402 598 354 594 312 C586 272 552 246 512 230 C500 224 488 219 470 217 C455 215 428 214 400 214 Z" fill="url(#innerGrad)" stroke="#0b0c0e" stroke-width="1.2"/>
+  </g>
+
+  <!-- touchpad with light bar -->
+  <path d="M312 98 L488 98 Q508 98 507 116 L500 188 Q498 206 480 206 L320 206 Q302 206 300 188 L293 116 Q292 98 312 98 Z" fill="url(#padGrad)" stroke="#c9cdd4" stroke-width="1.2"/>
+  <g fill="none" stroke="#38b8ff" stroke-width="3.4" stroke-linecap="round" filter="url(#glow)">
+    <path d="M290 112 C287 145 291 176 299 200"/>
+    <path d="M510 112 C513 145 509 176 501 200"/>
+  </g>
+
+  <!-- create / options buttons -->
+  <use xlink:href="#menu-btn" href="#menu-btn" transform="translate(262 114) rotate(-14)"/>
+  <use xlink:href="#menu-btn" href="#menu-btn" transform="translate(538 114) rotate(14)"/>
+
+  <!-- player indicator LEDs (player 1 lit) -->
+  <g>
+    <circle cx="376" cy="221" r="1.8" fill="#45474e"/>
+    <circle cx="388" cy="221" r="1.8" fill="#45474e"/>
+    <circle cx="400" cy="221" r="2" fill="#ffffff" filter="url(#softGlow)"/>
+    <circle cx="412" cy="221" r="1.8" fill="#45474e"/>
+    <circle cx="424" cy="221" r="1.8" fill="#45474e"/>
+  </g>
+
+  <!-- speaker grille -->
+  <g fill="#050506" stroke="#35373e" stroke-width="0.6">
+      <circle cx="370" cy="234" r="2"/>
+      <circle cx="380" cy="234" r="2"/>
+      <circle cx="390" cy="234" r="2"/>
+      <circle cx="400" cy="234" r="2"/>
+      <circle cx="410" cy="234" r="2"/>
+      <circle cx="420" cy="234" r="2"/>
+      <circle cx="430" cy="234" r="2"/>
+      <circle cx="355" cy="243" r="2"/>
+      <circle cx="365" cy="243" r="2"/>
+      <circle cx="375" cy="243" r="2"/>
+      <circle cx="385" cy="243" r="2"/>
+      <circle cx="415" cy="243" r="2"/>
+      <circle cx="425" cy="243" r="2"/>
+      <circle cx="435" cy="243" r="2"/>
+      <circle cx="445" cy="243" r="2"/>
+      <circle cx="350" cy="252" r="2"/>
+      <circle cx="360" cy="252" r="2"/>
+      <circle cx="370" cy="252" r="2"/>
+      <circle cx="430" cy="252" r="2"/>
+      <circle cx="440" cy="252" r="2"/>
+      <circle cx="450" cy="252" r="2"/>
+      <circle cx="355" cy="261" r="2"/>
+      <circle cx="365" cy="261" r="2"/>
+      <circle cx="435" cy="261" r="2"/>
+      <circle cx="445" cy="261" r="2"/>
+      <circle cx="350" cy="270" r="2"/>
+      <circle cx="360" cy="270" r="2"/>
+      <circle cx="370" cy="270" r="2"/>
+      <circle cx="430" cy="270" r="2"/>
+      <circle cx="440" cy="270" r="2"/>
+      <circle cx="450" cy="270" r="2"/>
+      <circle cx="355" cy="279" r="2"/>
+      <circle cx="365" cy="279" r="2"/>
+      <circle cx="435" cy="279" r="2"/>
+      <circle cx="445" cy="279" r="2"/>
+      <circle cx="350" cy="288" r="2"/>
+      <circle cx="360" cy="288" r="2"/>
+      <circle cx="370" cy="288" r="2"/>
+      <circle cx="430" cy="288" r="2"/>
+      <circle cx="440" cy="288" r="2"/>
+      <circle cx="450" cy="288" r="2"/>
+      <circle cx="355" cy="297" r="2"/>
+      <circle cx="365" cy="297" r="2"/>
+      <circle cx="375" cy="297" r="2"/>
+      <circle cx="385" cy="297" r="2"/>
+      <circle cx="415" cy="297" r="2"/>
+      <circle cx="425" cy="297" r="2"/>
+      <circle cx="435" cy="297" r="2"/>
+      <circle cx="445" cy="297" r="2"/>
+      <circle cx="370" cy="306" r="2"/>
+      <circle cx="380" cy="306" r="2"/>
+      <circle cx="390" cy="306" r="2"/>
+      <circle cx="400" cy="306" r="2"/>
+      <circle cx="410" cy="306" r="2"/>
+      <circle cx="420" cy="306" r="2"/>
+      <circle cx="430" cy="306" r="2"/>
+  </g>
+
+  <!-- PS button -->
+  <g transform="translate(400 270)" fill="#45474f" stroke="#60626b" stroke-width="0.6" fill-rule="evenodd">
+    <rect x="-5" y="-17" width="7" height="34"/>
+    <path d="M2 -17 C15 -17 20 -11 20 -6 C20 -1 15 5 2 5 Z M2 -11 C11 -11 14 -8.5 14 -6 C14 -3.5 11 -1 2 -1 Z"/>
+    <path d="M-22 10 L-5 3 L-5 9 L-22 16 Z"/>
+    <path d="M2 10 L21 17 L21 23 L2 16 Z"/>
+  </g>
+
+  <!-- mute button -->
+  <g>
+    <rect x="383" y="318" width="34" height="12" rx="6" fill="#0c0d0f" stroke="#3b3d44" stroke-width="1"/>
+    <rect x="398.5" y="320" width="3" height="5.5" rx="1.5" fill="#8c8e96"/>
+    <path d="M396.5 323.5 a3.5 3.5 0 0 0 7 0 M400 327 v1.5" stroke="#8c8e96" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- D-pad -->
+  <circle cx="212" cy="222" r="45" fill="#eceef1" stroke="#d3d6dc" stroke-width="1"/>
+  <path d="M205 180 H219 A5 5 0 0 1 224 185 V210 H249 A5 5 0 0 1 254 215 V229 A5 5 0 0 1 249 234 H224 V259 A5 5 0 0 1 219 264 H205 A5 5 0 0 1 200 259 V234 H175 A5 5 0 0 1 170 229 V215 A5 5 0 0 1 175 210 H200 V185 A5 5 0 0 1 205 180 Z" fill="url(#btnGrad)" stroke="#b8bcc5" stroke-width="1.2"/>
+  <g fill="#c4c8d0">
+    <path d="M212 191 l5 8 h-10 Z"/>
+    <path d="M212 253 l5 -8 h-10 Z"/>
+    <path d="M181 222 l8 -5 v10 Z"/>
+    <path d="M243 222 l-8 -5 v10 Z"/>
+  </g>
+
+  <!-- face buttons: triangle / circle / cross / square -->
+  <g stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="588" cy="186" r="17" class="fb"/>
+    <path d="M588 178 L596.5 192 L579.5 192 Z" stroke="#5fbe8f"/>
+    <circle cx="624" cy="222" r="17" class="fb"/>
+    <circle cx="624" cy="222" r="7" stroke="#e8706c"/>
+    <circle cx="588" cy="258" r="17" class="fb"/>
+    <path d="M582 252 L594 264 M594 252 L582 264" stroke="#7fa9e8"/>
+    <circle cx="552" cy="222" r="17" class="fb"/>
+    <rect x="546" y="216" width="12" height="12" rx="1.5" stroke="#e39ac3"/>
+  </g>
+
+  <!-- analog sticks -->
+  <use xlink:href="#stick" href="#stick" x="288" y="290"/>
+  <use xlink:href="#stick" href="#stick" x="512" y="290"/>
+</svg>
