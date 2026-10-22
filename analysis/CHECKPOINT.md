@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 03:21 KST
+갱신: 2026-10-23 03:23 KST
 
-메모: 현대오토에버 3개 역할 완료
+메모: 현대모비스 일반 분석가 완료
 
 ## 고정된 설정
 
@@ -18,10 +18,10 @@
 |---|---|---|---|---|
 | 000660 | SK하이닉스 | 완료(12회 검색) | 대기/미완 | 완료(16회) |
 | 005930 | 삼성전자 | 완료(12회 검색) | 대기/미완 | 완료(16회) |
-| 207940 | 삼성바이오로직스 | 완료(12회 검색) | 대기/미완 | 검색없는 초안만 |
+| 207940 | 삼성바이오로직스 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
 | 0126Z0 | 삼성에피스홀딩스 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
 | 005380 | 현대차 | 완료(12회 검색) | 대기/미완 | 완료(12회) |
-| 012330 | 현대모비스 | 완료(12회 검색) | 대기/미완 | 완료(13회) |
+| 012330 | 현대모비스 | 완료(12회 검색) | 완료(4회 검색) | 완료(13회) |
 | 307950 | 현대오토에버 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 295310 | 에이치브이엠 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 452430 | 사피엔반도체 | 대기/미완 | 대기/미완 | 대기/미완 |
@@ -41,7 +41,7 @@
 | 032500 | 케이엠더블유 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 098460 | 고영 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 232140 | 와이씨 | 대기/미완 | 대기/미완 | 검색없는 초안만 |
-| 042700 | 한미반도체 | 완료(12회 검색) | 대기/미완 | 검색없는 초안만 |
+| 042700 | 한미반도체 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
 
 ## 기타 에이전트 결과(파일: analysis/data/aux/)
 
@@ -63,11 +63,11 @@
 - `wf_86f1ebc6-b8f`: D specialist HPSP=done; E forensic HPSP=done; G generalist HPSP=done
 - `wf_8b27352d-8ee`: D specialist SK하이닉스=done; G generalist SK하이닉스=running
 - `wf_e5c79c65-5c0`: D specialist 삼성전자=done; G generalist 삼성전자=running
-- `wf_d9ca0087-923`: D specialist 현대모비스=done; G generalist 현대모비스=running
+- `wf_d9ca0087-923`: D specialist 현대모비스=done; G generalist 현대모비스=done
 - `wf_7e65be40-75c`: D specialist 현대차=done; G generalist 현대차=running
-- `wf_df0e3ba4-2c1`: D specialist 한미반도체=done; E forensic 한미반도체=running; G generalist 한미반도체=running
+- `wf_df0e3ba4-2c1`: D specialist 한미반도체=done; E forensic 한미반도체=done; G generalist 한미반도체=running
 - `wf_3f2f13d0-370`: D specialist 삼성에피스홀딩스=done; E forensic 삼성에피스홀딩스=running; G generalist 삼성에피스홀딩스=running
-- `wf_5f8f46b4-9d4`: D specialist 삼성바이오로직스=done; E forensic 삼성바이오로직스=running; G generalist 삼성바이오로직스=running
+- `wf_5f8f46b4-9d4`: D specialist 삼성바이오로직스=done; E forensic 삼성바이오로직스=done; G generalist 삼성바이오로직스=running
 - `wf_53fa0f1f-009`: D specialist 현대오토에버=done; E forensic 현대오토에버=done; G generalist 현대오토에버=done
 - `wf_2bf524a6-d21`: D specialist 이수페타시스=done; E forensic 이수페타시스=done; G generalist 이수페타시스=running
 - `wf_55bd304a-62d`: ?=failed
