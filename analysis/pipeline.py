@@ -145,6 +145,12 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
                 vm = adj.get('value_mult', 1.0)
                 mvm = adj.get('macro_value_mult', {})
                 mix = [(m, n, p, price * vm * mvm.get(m, 1.0), div, nar) for m, n, p, price, div, nar in mix]
+                tail = adj.get('extra_tail')
+                if tail and tail.get('prob', 0) > 0:
+                    tp = tail['prob']
+                    tot = sum(x[2] for x in mix)
+                    mix = [(m, n, p * (1 - tp) / tot, price, div, nar) for m, n, p, price, div, nar in mix]
+                    mix.append(('비관', 'cross:극단 손실', tp, p0 * tail['price_frac'], 0.0, '반대심문 채택 꼬리 시나리오'))
                 # 민감도 충격
                 if value_shocks and code in value_shocks:
                     sh = value_shocks[code].get(key, 1.0)

@@ -128,7 +128,9 @@ const TASKS = `
 - Keep every narrative field short; the whole answer should stay compact.
 `
 
-const specialistPrompt = (d) => `${common(12)}
+const CAPS = (typeof args !== 'undefined' && args && args.caps) ? args.caps : { spec: 12, gen: 4, foren: 5 }
+
+const specialistPrompt = (d) => `${common(CAPS.spec)}
 ${MACRO}
 
 [Sector guidance for ${d.sector}]
@@ -143,7 +145,7 @@ ${d.bnote}
 ROLE: Agent D - industry specialist (${d.sector}) who also performs the Agent F valuation for ${d.name} (KRX ${d.code}). Apply deep industry knowledge: product and technology roadmaps, customer capex and qualification status, pricing power, domestic and global competition, supply chain, and how this company's earnings respond to the sector cycle. An independent generalist and a forensic accountant will analyse the same stock separately using ONLY the neutral fact sheet you write (not your valuation, scenarios or opinions), so make "fact_sheet" complete, neutral and sourced: business mix, latest results (FY2025, 1H/2Q26, 3Q26 if out), guidance, consensus, orders/backlog, customers, balance sheet, share-count changes and dilution facts, dividends and buybacks, upcoming dated events. No opinions, valuations or scenarios in the fact sheet. Set role="specialist".
 ${TASKS}`
 
-const generalistPrompt = (d, factSheet) => `${common(4)}
+const generalistPrompt = (d, factSheet) => `${common(CAPS.gen)}
 ${MACRO}
 
 [Sector guidance for ${d.sector}]
@@ -161,7 +163,7 @@ ${factSheet}
 ROLE: Independent generalist analyst (not attached to any industry desk) who also performs the Agent F valuation for ${d.name} (KRX ${d.code}). Your edge is the outside view and valuation discipline: base rates for growth persistence and post-boom behaviour, what the current price already implies, cross-industry comparables and what a mature version of this business is worth, balance-sheet and dilution realism. Be skeptical of industry narratives but not contrarian for its own sake - if the evidence supports a strong view, say so. An industry specialist is analysing the same stock separately; you will not see their valuation or scenarios and must not try to guess them. Set role="generalist" and fact_sheet="".
 ${TASKS}`
 
-const forensicPrompt = (d, factSheet) => `${common(5)}
+const forensicPrompt = (d, factSheet) => `${common(CAPS.foren)}
 [Coordinator KRX data pack]
 ${d.pack}
 
