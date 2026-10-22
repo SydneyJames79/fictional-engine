@@ -91,6 +91,6 @@ template = open(f'{AN}/workflows/stock_template.js').read()
 script = (template.replace('__DATA__', json.dumps(DATA, ensure_ascii=False))
           .replace('__MACRO__', json.dumps(MACRO, ensure_ascii=False))
           .replace('__GUIDE__', json.dumps(SECTOR_GUIDE, ensure_ascii=False)))
-out = sys.argv[1]
-open(out, 'w').write(script)
-print('wrote', out, len(script), 'chars; forensic redo:', sorted(c for c in DATA if DATA[c]['forensic_redo']).__len__())
+out = sys.argv[1] if len(sys.argv) > 1 and __name__ == "__main__" else None
+if out: open(out, "w").write(script)
+if out: print("wrote", out, len(script))
