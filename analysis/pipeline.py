@@ -18,7 +18,7 @@ from quant_engine import HORIZONS, simulate, metrics, pct_rank, rank_desc
 
 MACRO_P = {'기준': 0.50, '낙관': 0.20, '비관': 0.30}
 CONF = {'높음': 2, '보통': 1, '낮음': 0}
-MEANREV = {'h1': 1.0, 'h3': 0.88, 'h5': 0.80}   # 장기 분산비율(약 0.64~0.77) 반영
+MEANREV = {'h1': 1.0, 'h3': 0.95, 'h5': 0.90}   # G 에이전트 검토(시총 0.1조원 이상 3년/1년 분산비 1.02~1.24, 장기 평균회귀 근거 약함) 반영
 S_FLOOR = 0.10
 
 

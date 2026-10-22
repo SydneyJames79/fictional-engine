@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 03:35 KST
+갱신: 2026-10-23 03:37 KST
 
-메모: SK하이닉스 일반 분석가 완료 — 1차 묶음 10개 종목 전 역할 완료
+메모: G 위험검토 완료: 16개 종목 변동성 하향, 장기 배수 0.95/0.90으로 조정
 
 ## 고정된 설정
 
@@ -24,7 +24,7 @@
 | 012330 | 현대모비스 | 완료(12회 검색) | 완료(4회 검색) | 완료(13회) |
 | 307950 | 현대오토에버 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 295310 | 에이치브이엠 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
-| 452430 | 사피엔반도체 | 대기/미완 | 대기/미완 | 대기/미완 |
+| 452430 | 사피엔반도체 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 418420 | 라온텍 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 370090 | 퓨런티어 | 완료(10회 검색) | 대기/미완 | 검색없는 초안만 |
 | 010690 | 화신 | 대기/미완 | 대기/미완 | 검색없는 초안만 |
@@ -33,7 +33,7 @@
 | 171090 | 선익시스템 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 178320 | 서진시스템 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
-| 107640 | 한중엔시에스 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
+| 107640 | 한중엔시에스 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
 | 218410 | RFHIC | 대기/미완 | 대기/미완 | 대기/미완 |
 | 189300 | 인텔리안테크 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 099320 | 쎄트렉아이 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
@@ -52,6 +52,7 @@
 - C1 markets-rates-FX
 - C2 sector drivers
 - C3 macro synthesis
+- G risk review
 
 ## 실행 기록(재개용 run ID)
 
@@ -77,18 +78,17 @@
 - `wf_4d120433-106`: ?=failed
 - `wf_c2caf6a2-003`: ?=failed
 - `wf_cb78a0ed-9ff`: ?=failed
-- `wf_7ef3a569-7e6`: G risk review=running
+- `wf_7ef3a569-7e6`: G risk review=done
 - `wf_4d027186-9f0`: H base rates=running
 - `wf_abf1369d-9e6`: D specialist 라온텍=running
 - `wf_ffdae734-e40`: D specialist 화신=running
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=running
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=running
-- `wf_058659ad-5a5`: D specialist 사피엔반도체=running
 - `wf_372974de-9cf`: D specialist 인텔리안테크=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=running
 - `wf_d819d401-b55`: D specialist RFHIC=running
 - `wf_37871eed-ee1`: B2 price update=done
-- `wf_66a46537-1ed`: D specialist 한중엔시에스=done; E forensic 한중엔시에스=running; G generalist 한중엔시에스=running
+- `wf_66a46537-1ed`: D specialist 한중엔시에스=done; E forensic 한중엔시에스=done; G generalist 한중엔시에스=running
 - `wf_8e4ab4e3-16b`: D specialist 와이씨=done; E forensic 와이씨=running; G generalist 와이씨=running
 - `wf_065961e6-e11`: D specialist 선익시스템=done; E forensic 선익시스템=running; G generalist 선익시스템=running
 - `wf_96ebbf83-b0f`: D specialist 에이치브이엠=done; E forensic 에이치브이엠=running; G generalist 에이치브이엠=running
@@ -96,6 +96,7 @@
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=running; G generalist 서진시스템=running
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=running; G generalist 퓨런티어=running
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=running
+- `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=running; G generalist 사피엔반도체=running
 
 ## 다음 단계
 
