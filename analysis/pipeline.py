@@ -102,7 +102,7 @@ def shrink_weight(conf_spec, conf_gen, e_spec_ann, e_gen_ann, key):
 
 
 def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=20261022, n_sim=200_000,
-            macro_probs=None, value_shocks=None):
+            macro_probs=None, value_shocks=None, horizons=None):
     """stocks: {code: {'name','p0','market','spec','gen','dil_fix':{h:factor}}}.
     priors: {code: prior expected annual TSR (소수)}. weights: {code: w_spec}.
     adjustments: {code: {h: {'value_mult': x, 'macro_value_mult': {macro: x}}}} (반대심문 채택분).
@@ -122,6 +122,8 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
             p0 = s['p0']
             w_spec = weights.get(code, 0.5)
             for key, T in HORIZONS.items():
+                if horizons and key not in horizons:
+                    continue
                 trees = {}
                 for role in ('spec', 'gen'):
                     if s.get(role) is None:
