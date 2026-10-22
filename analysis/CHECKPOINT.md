@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 03:38 KST
+갱신: 2026-10-23 03:39 KST
 
-메모: 한중엔시에스 3개 역할 완료, 보고서 스타일시트 추가
+메모: 예비 순위 산출, 대형 4종목 반대심문·사실검증 착수
 
 ## 고정된 설정
 
@@ -34,13 +34,13 @@
 | 178320 | 서진시스템 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 107640 | 한중엔시에스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
-| 218410 | RFHIC | 대기/미완 | 대기/미완 | 대기/미완 |
-| 189300 | 인텔리안테크 | 대기/미완 | 대기/미완 | 대기/미완 |
+| 218410 | RFHIC | 완료(10회 검색) | 대기/미완 | 대기/미완 |
+| 189300 | 인텔리안테크 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 099320 | 쎄트렉아이 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 403870 | HPSP | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 032500 | 케이엠더블유 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 098460 | 고영 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
-| 232140 | 와이씨 | 완료(12회 검색) | 대기/미완 | 검색없는 초안만 |
+| 232140 | 와이씨 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
 | 042700 | 한미반도체 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 
 ## 기타 에이전트 결과(파일: analysis/data/aux/)
@@ -83,12 +83,10 @@
 - `wf_abf1369d-9e6`: D specialist 라온텍=running
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=running
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=running
-- `wf_372974de-9cf`: D specialist 인텔리안테크=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=running
-- `wf_d819d401-b55`: D specialist RFHIC=running
 - `wf_37871eed-ee1`: B2 price update=done
 - `wf_66a46537-1ed`: D specialist 한중엔시에스=done; E forensic 한중엔시에스=done; G generalist 한중엔시에스=done
-- `wf_8e4ab4e3-16b`: D specialist 와이씨=done; E forensic 와이씨=running; G generalist 와이씨=running
+- `wf_8e4ab4e3-16b`: D specialist 와이씨=done; E forensic 와이씨=done; G generalist 와이씨=running
 - `wf_065961e6-e11`: D specialist 선익시스템=done; E forensic 선익시스템=running; G generalist 선익시스템=running
 - `wf_96ebbf83-b0f`: D specialist 에이치브이엠=done; E forensic 에이치브이엠=running; G generalist 에이치브이엠=running
 - `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=running; G generalist 고영=running
@@ -97,6 +95,12 @@
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=running
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=running; G generalist 사피엔반도체=running
 - `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=running; G generalist 화신=running
+- `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=running; G generalist RFHIC=running
+- `wf_32739f7e-1b3`: I cross-exam 현대모비스=running; V verify 현대모비스=running
+- `wf_a76089cb-89d`: V verify 현대차=running; I cross-exam 현대차=running
+- `wf_0c379425-bc5`: V verify 삼성전자=running; I cross-exam 삼성전자=running
+- `wf_4f6d0d2a-6d6`: V verify SK하이닉스=running; I cross-exam SK하이닉스=running
+- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=running; G generalist 인텔리안테크=running
 
 ## 다음 단계
 
