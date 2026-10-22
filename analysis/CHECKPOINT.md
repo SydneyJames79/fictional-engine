@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 03:42 KST
 
-메모: 선익시스템 3개 역할 완료
+메모: 고영 3개 역할 완료
 
 ## 고정된 설정
 
@@ -39,7 +39,7 @@
 | 099320 | 쎄트렉아이 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 403870 | HPSP | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 032500 | 케이엠더블유 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
-| 098460 | 고영 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
+| 098460 | 고영 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 232140 | 와이씨 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 042700 | 한미반도체 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 
@@ -85,7 +85,7 @@
 - `wf_8e4ab4e3-16b`: D specialist 와이씨=done; E forensic 와이씨=done; G generalist 와이씨=done
 - `wf_065961e6-e11`: D specialist 선익시스템=done; E forensic 선익시스템=done; G generalist 선익시스템=done
 - `wf_96ebbf83-b0f`: D specialist 에이치브이엠=done; E forensic 에이치브이엠=done; G generalist 에이치브이엠=done
-- `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=done; G generalist 고영=running
+- `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=done; G generalist 고영=done
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=running; G generalist 서진시스템=running
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=running; G generalist 퓨런티어=running
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=running
