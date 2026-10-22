@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 03:21 KST
 
-메모: HPSP 3개 역할 완료, 10/22 종가 확인(P) 실행
+메모: 현대오토에버 3개 역할 완료
 
 ## 고정된 설정
 
@@ -22,7 +22,7 @@
 | 0126Z0 | 삼성에피스홀딩스 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
 | 005380 | 현대차 | 완료(12회 검색) | 대기/미완 | 완료(12회) |
 | 012330 | 현대모비스 | 완료(12회 검색) | 대기/미완 | 완료(13회) |
-| 307950 | 현대오토에버 | 완료(12회 검색) | 완료(4회 검색) | 검색없는 초안만 |
+| 307950 | 현대오토에버 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 295310 | 에이치브이엠 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 452430 | 사피엔반도체 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 418420 | 라온텍 | 대기/미완 | 대기/미완 | 대기/미완 |
@@ -68,8 +68,8 @@
 - `wf_df0e3ba4-2c1`: D specialist 한미반도체=done; E forensic 한미반도체=running; G generalist 한미반도체=running
 - `wf_3f2f13d0-370`: D specialist 삼성에피스홀딩스=done; E forensic 삼성에피스홀딩스=running; G generalist 삼성에피스홀딩스=running
 - `wf_5f8f46b4-9d4`: D specialist 삼성바이오로직스=done; E forensic 삼성바이오로직스=running; G generalist 삼성바이오로직스=running
-- `wf_53fa0f1f-009`: D specialist 현대오토에버=done; E forensic 현대오토에버=running; G generalist 현대오토에버=done
-- `wf_2bf524a6-d21`: D specialist 이수페타시스=done; E forensic 이수페타시스=running; G generalist 이수페타시스=running
+- `wf_53fa0f1f-009`: D specialist 현대오토에버=done; E forensic 현대오토에버=done; G generalist 현대오토에버=done
+- `wf_2bf524a6-d21`: D specialist 이수페타시스=done; E forensic 이수페타시스=done; G generalist 이수페타시스=running
 - `wf_55bd304a-62d`: ?=failed
 - `wf_f8f8df06-d24`: ?=failed
 - `wf_4f8d980c-7ef`: ?=failed
