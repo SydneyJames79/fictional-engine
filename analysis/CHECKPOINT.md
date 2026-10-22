@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 03:23 KST
 
-메모: 현대모비스 일반 분석가 완료
+메모: 이수페타시스 3개 역할 완료
 
 ## 고정된 설정
 
@@ -32,7 +32,7 @@
 | 314930 | 바이오다인 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 171090 | 선익시스템 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 178320 | 서진시스템 | 대기/미완 | 대기/미완 | 대기/미완 |
-| 007660 | 이수페타시스 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
+| 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 107640 | 한중엔시에스 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 218410 | RFHIC | 대기/미완 | 대기/미완 | 대기/미완 |
 | 189300 | 인텔리안테크 | 대기/미완 | 대기/미완 | 대기/미완 |
@@ -69,7 +69,7 @@
 - `wf_3f2f13d0-370`: D specialist 삼성에피스홀딩스=done; E forensic 삼성에피스홀딩스=running; G generalist 삼성에피스홀딩스=running
 - `wf_5f8f46b4-9d4`: D specialist 삼성바이오로직스=done; E forensic 삼성바이오로직스=done; G generalist 삼성바이오로직스=running
 - `wf_53fa0f1f-009`: D specialist 현대오토에버=done; E forensic 현대오토에버=done; G generalist 현대오토에버=done
-- `wf_2bf524a6-d21`: D specialist 이수페타시스=done; E forensic 이수페타시스=done; G generalist 이수페타시스=running
+- `wf_2bf524a6-d21`: D specialist 이수페타시스=done; E forensic 이수페타시스=done; G generalist 이수페타시스=done
 - `wf_55bd304a-62d`: ?=failed
 - `wf_f8f8df06-d24`: ?=failed
 - `wf_4f8d980c-7ef`: ?=failed
