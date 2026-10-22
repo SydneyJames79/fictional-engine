@@ -1,0 +1,317 @@
+{
+ "input_name": "현대모비스",
+ "legal_name": "현대모비스 주식회사 (Hyundai Mobis Co., Ltd.)",
+ "ticker": "012330",
+ "market": "KOSPI",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "다음금융·Investing.com 등 시세 페이지에서 '현대모비스 012330 코스피'로 정상 거래 확인. 거래정지·관리종목·투자주의환기·상장폐지 심사 관련 보도 없음. 추정 종목코드 012330, 시장 KOSPI 모두 일치.",
+ "share_class": "보통주(우선주 없음). 사업회사이나 현대차 지분 22.36%(2025년말)를 보유한 그룹 내 실질적 지주회사 성격. 공정거래법상 지주회사는 아님.",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 없음(검색 결과상 해당 보도 없음). 자본 변동은 자사주 소각뿐: 2025년 가을 160만2,511주(3,172억원) 소각, 2026-08-03 신규매입분 91만1,998주(5,000억원) 소각. 2027년 9월까지 기존 보유 자사주 전량 소각 계획(2026년 7월 이사회).",
+ "price": {
+  "value": "346000",
+  "date": "2026-10-21",
+  "kind": "종가(추정 — 10/21 15:47 게재 기사 기준, 장마감 후 보도)",
+  "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16253744",
+  "source_date": "2026-10-21",
+  "alt_price_1021": "346000",
+  "note": "10/22 종가는 9회 검색 내 확인 불가. 10/22 장중(09:41, anewsa) 시가 345,000·고가 346,000·저가 338,000, -2.02%(약 339,000원)까지만 확인되며, 코스피 -3.52% 급락일이므로 종가는 이보다 낮을 가능성 있음. 교차검증: 10/19 종가 365,500(전일 352,500), 10/20 종가 348,000(-4.79%, 재경일보 마감분석), 10/21 346,000(-0.57%) — 수치 체인 일관. Investing.com상 다음 실적발표일 2026-10-23."
+ },
+ "market_cap_bn": {
+  "value": "310779",
+  "date": "2026-10-21",
+  "source_url": "https://m.finance.daum.net/quotes/A012330/home",
+  "note": "산출값: 10/21 종가 346,000 × 상장주식수 89,820,585주(역산). 다음금융 페이지는 주가 369,000원 기준 시총 331,438억(22위)을 표시(기준일 불명, 10월 초중순 추정) — 역산 주식수 89.82백만주로 아래 상장주식수와 정합. 10/22 종가 기준 시총은 미확인."
+ },
+ "shares_outstanding": {
+  "value": "89820585",
+  "date": "2026-08-03",
+  "source_url": "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2026042318055214K_02_02.pdf&inlineYn=Y&saveKey=research.pdf",
+  "note": "삼성증권 1Q26 리뷰(2026-04-23) 주식수 90,732,583주에서 2026-08-03 소각분 911,998주를 차감한 산출값. 다음금융 시총/주가 역산(331,438억/369,000=89.82백만주)과 일치. DART 반기보고서 '주식의 총수' 직접 확인은 못함."
+ },
+ "treasury_shares": {
+  "count": "1552000",
+  "pct": "1.73",
+  "source_url": "https://toryongilab.com/2026-hyundai-mobis-investment-strategy/",
+  "note": "2026-08-03 신규매입분(91만1,998주) 소각 후 잔여 자사주 155만2,000주(블로그성 2차 자료 인용, 공시 직접 확인 못함). 비율은 89,820,585주 대비 산출. 잔여 자사주는 2027년 9월까지 전량 소각 계획."
+ },
+ "fiscal_year_end": "12월 (12-31)",
+ "latest_report_period": "2026년 2분기/상반기(2026-07-24 잠정실적 공정공시). 3Q26 실적은 2026-10-23 발표 예정(Investing.com 표기)으로 아직 미공개.",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "572267",
+   "op_income_bn": "30746",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.econovill.com/news/articleView.html?idxno=727417",
+   "note": "FY2025 YoY(매출 +6.8%, 영업이익 +9.2%)로 역산한 근사치. 기억상 FY2024 공시치 매출 57조2,370억·영업이익 3조735억(memory_unverified)과 근사. 순이익은 미확인."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "611181",
+   "op_income_bn": "33575",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.econovill.com/news/articleView.html?idxno=727417",
+   "note": "연결, 2026-01-28 공시. 매출 +6.8%·영업이익 +9.2% 역대 최대. 부문: 모듈·부품제조 47조8,001억(+5.9%), A/S 13조3,180억(+10.2%). 4Q25 매출 15조3,979억(+4.7%), 영업이익 9,305억(-5.6%). 순이익은 기사에 '7,681억(-39.9%), 법인세차감전 1조379억'로 나오나 연간 규모(현대차 지분법이익 포함 시 통상 3조원대)와 맞지 않아 4Q25 수치로 의심됨 → 채택 보류(N/A). 분할·합병 없어 전년 비교 가능."
+  },
+  {
+   "period": "2Q26",
+   "revenue_bn": "163247",
+   "op_income_bn": "9752",
+   "net_income_bn": "10602",
+   "source_url": "https://www.fnnews.com/news/202607241100461957",
+   "note": "연결 잠정, 2026-07-24 공시. YoY 매출 +2.4%, 영업이익 +12.1%, 순이익 +13.5%. 전장부품 공급 확대·믹스 개선·A/S 호조(환율 우호), 전동화 매출 소폭 감소·메모리 반도체 비용 부담."
+  },
+  {
+   "period": "1H26",
+   "revenue_bn": "318852",
+   "op_income_bn": "17778",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.mt.co.kr/industry/2026/07/24/2026072409281675855",
+   "note": "상반기 누적 YoY 매출 +3.9%, 영업이익 +8.0%. 1Q26 순이익 미확인으로 상반기 순이익 N/A. 상반기 R&D 9,508억(연간계획 2조1,631억의 44%)."
+  }
+ ],
+ "balance_sheet": {
+  "date": "N/A",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "note": "검색 상한 내 순현금·자기자본·영업현금흐름·CAPEX 미확인. 한국신용평가 2026-06-24 평가보고서(kisrating rs20260624-13.pdf)가 존재하나 수치 추출 불가. 반기보고서 DART 직접 확인 필요.",
+  "source_url": "https://m.kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20260624-13.pdf"
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "6500",
+  "dividend_yield_pct": "1.88",
+  "buyback_policy": "2025~2027 중장기 주주환원정책: TSR(총주주환원율) 30% 이상, 배당+신규 자사주 매입·소각+기존 자사주 소각 탄력 운영. 2026-04-24 이사회: 5,000억원 자사주 취득(4/27~7/24) 후 소각 결의 → 91만1,998주 매입해 2026-08-03 전량 소각. 2026년 7월 이사회: 2027년 9월까지 기존 보유 자사주 전량 소각 계획. 2025년 가을에도 160만2,511주(3,172억원) 소각.",
+  "valueup_disclosure": "있음 — 2024-11-19 중장기 주주환원 계획 공시 및 2026-01-28 '주주가치 제고정책' 공시(4/24 소각 공시에서 인용). 밸류업 명칭의 공식 공시 여부는 미확인.",
+  "source_url": "https://m.news.nate.com/view/20260424n25647"
+ },
+ "dilution": {
+  "convertibles": "없음 — 최근 24개월 CB·BW·EB·RCPS 발행 보도 없음(2026년 검색에서 미확인).",
+  "stock_options": "N/A (미확인, 대기업 특성상 미미할 것으로 추정)",
+  "rights_issues": "없음 — 유상증자 보도 없음. 오히려 자사주 소각으로 주식수 감소 중.",
+  "est_dilution_pct": "0",
+  "source_url": "https://m.news.nate.com/view/20260424n25647"
+ },
+ "ownership": {
+  "largest_holder": "기아(주) — 기아 및 특수관계인(현대차·정몽구·정의선 등) 합산",
+  "largest_holder_pct": "32.7",
+  "overhang_notes": "기아 단독 지분은 약 17%대(memory_unverified), 기아+특수관계인 합산 32.70%(2026-03-18 기준, 임원 퇴임·선임으로 40주 감소). 보호예수·블록딜 보도 없음. 구조적 이슈: 현대모비스가 현대차 22.36%를 보유하는 순환출자(모비스→현대차→기아→모비스) 해소 및 정의선 승계 관련 지배구조 재편 가능성이 상시 변수(블로터 '현대모비스 재편 셈법' 시리즈). 유동주식 비중 65.6%(삼성증권 1Q26 리뷰).",
+  "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=642466"
+ },
+ "business": {
+  "summary": "현대차그룹 핵심 자동차 부품사. 모듈(섀시·칵핏·FEM) 및 핵심부품(전동화·전장·램프·제동·조향·에어백), A/S 부품 사업. 미래 사업으로 SDV·로보틱스(휴머노이드 액추에이터, 2026년초 수주 공개) 추진. 현대차 지분 22.36% 보유.",
+  "segments": "FY2025 기준 모듈·핵심부품 제조 47조8,001억(78.2%), A/S 부품 13조3,180억(21.8%). 영업이익은 A/S 부문 비중이 높음(부문별 영업이익 미확인).",
+  "key_customers": "현대차·기아(캡티브)가 압도적. 비계열(Non-Captive) 핵심부품 수주 2025년 91.7억달러(목표 대비 123%), 2026년 목표 118.4억달러. 비계열 매출 비중 40% 목표 미달 지적(아시아타임즈 2026-01-05).",
+  "customer_concentration": "현대차·기아 비중 60% 이상 추정(비계열 매출 비중 목표 40% 미달). 정확한 상위고객 비중은 미확인.",
+  "competitors": "Denso, Bosch, Magna, ZF, Aptiv, Continental(글로벌); HL만도, 현대위아, 에스엘(국내)",
+  "industry_group": "자동차·전장·SDV·부품"
+ },
+ "consensus": {
+  "target_price_avg": "683500",
+  "target_price_date": "2026-10 중순(Investing.com 12개월 평균, 약 1주 전 기준)",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "recent_report_summary": "방향: 하향 우세. 현대차증권(9/17, R&D Tech Day) 목표가 690,000 유지, 6개월 증권사 평균 743,478원 제시. 삼성증권 9월 중순 800,000→650,000(-18.8%) 하향·매수 유지. Nomura 470,000(9월), Bernstein 640,000(8월), JPMorgan 710,000(7월), BNK 580,000(최저). 파이낸셜뉴스(9/17) '전장·로봇 기대 커지는데 목표가 19%↓' — 메모리 반도체 비용·완성차 생산 차질·관세 영향 우려. 유튜브 자료상 '아틀라스 액추에이터 60% 공급, 목표가 870,000' 언급(검증 안됨). 3Q26 실적 발표 2026-10-23 예정. 2026E/2027E 매출·영업이익 컨센서스는 미확인. 현재가 346,000 대비 평균 목표가 괴리 약 +97%.",
+  "source_url": "https://www.investing.com/equities/hyundai-mobis"
+ },
+ "recent_events": [
+  {
+   "event": "2Q26 잠정실적: 매출 16조3,247억(+2.4%), 영업이익 9,752억(+12.1%), 순이익 1조602억(+13.5%). 전장 확대·A/S 호조",
+   "event_date": "2026-07-24",
+   "article_date": "2026-07-24",
+   "source_url": "https://www.fnnews.com/news/202607241100461957"
+  },
+  {
+   "event": "5,000억원 자사주(91만1,998주) 매입 완료 후 전량 소각. 잔여 자사주 155만2,000주",
+   "event_date": "2026-08-03",
+   "article_date": "2026-08",
+   "source_url": "https://toryongilab.com/2026-hyundai-mobis-investment-strategy/"
+  },
+  {
+   "event": "이사회: 5,000억원 자사주 취득·소각 결의(취득 4/27~7/24, 소각 8/3 예정)",
+   "event_date": "2026-04-24",
+   "article_date": "2026-04-24",
+   "source_url": "https://m.news.nate.com/view/20260424n25647"
+  },
+  {
+   "event": "'26 R&D Tech Day(C to NC) 개최. 현대차증권 목표가 690,000 유지",
+   "event_date": "2026-09-17",
+   "article_date": "2026-09-17",
+   "source_url": "https://www.newspim.com/news/view/20260917000305"
+  },
+  {
+   "event": "삼성증권 목표주가 800,000→650,000(-18.8%) 하향, 매수 유지. 전장·로봇 기대에도 비용 변수 반영",
+   "event_date": "2026-09 중순",
+   "article_date": "2026-09-17",
+   "source_url": "https://www.fnnews.com/news/202609170834451872"
+  },
+  {
+   "event": "상하이 로보틱스 협력 행사 — 휴머노이드 액추에이터 수주(연초 공개) 기반 로보틱스 협력 가속",
+   "event_date": "2026-10-15",
+   "article_date": "2026-10-15",
+   "source_url": "https://nocutnews.co.kr/news/6591767"
+  },
+  {
+   "event": "KB증권 '액추에이터 사업 전망 밝아' 목표가 상향",
+   "event_date": "2026-06-02",
+   "article_date": "2026-06-02",
+   "source_url": "https://www.hankyung.com/article/2026060219196"
+  },
+  {
+   "event": "주가 급락 흐름: 10/20 348,000(-4.79%), 10/21 346,000(-0.57%), 10/22 장중 -2% 이상(코스피 -3.52% 급락일)",
+   "event_date": "2026-10-20~22",
+   "article_date": "2026-10-22",
+   "source_url": "https://www.anewsa.com/detail.php?number=3210195"
+  },
+  {
+   "event": "2026년 글로벌 비계열 수주 목표 118.4억달러 제시(2025년 실적 91.7억달러, 목표 대비 123%)",
+   "event_date": "2026-02-02",
+   "article_date": "2026-02-02",
+   "source_url": "https://www.mt.co.kr/industry/2026/02/02/2026020211501629289"
+  },
+  {
+   "event": "3Q26 실적 발표 예정",
+   "event_date": "2026-10-23",
+   "article_date": "2026-10",
+   "source_url": "https://www.investing.com/equities/hyundai-mobis"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 종가 미확인(장중 -2.02%, 저가 338,000까지만 확인). 10/21 346,000원도 장마감 후 보도이나 '종가' 명시는 없음",
+  "상장주식수는 삼성증권 자료(90,732,583주)에서 8/3 소각분을 차감한 산출값 — DART 반기보고서 직접 확인 필요",
+  "자기주식 155만2,000주는 2차 자료(블로그) 인용 — 공시 확인 필요",
+  "FY2025 당기순이익: 기사상 7,681억(-39.9%)은 4Q 수치로 의심되어 채택 보류. FY2024 매출·영업이익은 YoY 역산값",
+  "순현금·자기자본·영업현금흐름·CAPEX 전부 미확인",
+  "컨센서스 증권사 수, 2026E/2027E 매출·영업이익 컨센서스 미확인. 목표가 평균은 출처별(683,500 vs 743,478) 상이",
+  "기아 단독 지분율(약 17%대) 미확인 — 32.7%는 특수관계인 합산",
+  "2026년 9~10월 개별 수주 공시 미확인",
+  "스톡옵션 미행사 잔량 미확인(0으로 추정하나 검증 안됨)"
+ ],
+ "sources": [
+  {
+   "title": "현대모비스 주가, 10월 21일 346,000원 0.57% 하락 (톱스타뉴스)",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16253744",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "현대모비스 주가, 10월 19일 365,500원 3.69% 상승 (톱스타뉴스)",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16251583",
+   "date": "2026-10-19"
+  },
+  {
+   "title": "[마감분석] 현대모비스, 4%대 하락하며 34만8000원에 마감 (재경일보)",
+   "url": "https://news.jkn.co.kr/post/1036797",
+   "date": "2026-10-20(추정)"
+  },
+  {
+   "title": "현대모비스 주가 하락 중 (아시아뉴스통신, 10/22 09:41 장중)",
+   "url": "https://www.anewsa.com/detail.php?number=3210195",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "현대모비스 012330 코스피 - 다음 금융",
+   "url": "https://m.finance.daum.net/quotes/A012330/home",
+   "date": "N/A"
+  },
+  {
+   "title": "현대모비스, 2분기 영업이익 9752억원…전년 대비 12%↑ (파이낸셜뉴스)",
+   "url": "https://www.fnnews.com/news/202607241100461957",
+   "date": "2026-07-24"
+  },
+  {
+   "title": "현대모비스, 2분기 매출·영업익 나란히↑ (머니투데이)",
+   "url": "https://www.mt.co.kr/industry/2026/07/24/2026072409281675855",
+   "date": "2026-07-24"
+  },
+  {
+   "title": "현대모비스 연결재무제표기준영업(잠정)실적(공정공시) 2026.07.24 (치킨스탁)",
+   "url": "https://www.chickstockfi.com/disclosures/20260724800096",
+   "date": "2026-07-24"
+  },
+  {
+   "title": "현대모비스, 2025년 매출 61조1181억원·영업이익 3조3575억원 역대 최대 (이코노믹리뷰)",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=727417",
+   "date": "2026-01-28"
+  },
+  {
+   "title": "현대모비스, 매출 60조원 첫 돌파 (전자신문)",
+   "url": "https://www.etnews.com/20260128000181",
+   "date": "2026-01-28"
+  },
+  {
+   "title": "현대모비스, 자기주식 보통주 112만9943주 소각 결정 (네이트뉴스)",
+   "url": "https://m.news.nate.com/view/20260424n25647",
+   "date": "2026-04-24"
+  },
+  {
+   "title": "현대모비스 주가 전망 2026: 자사주 전량 소각 + SDV 전환 (토룡연구소)",
+   "url": "https://toryongilab.com/2026-hyundai-mobis-investment-strategy/",
+   "date": "2026-08(추정)"
+  },
+  {
+   "title": "[현대모비스 재편 셈법]④ 자사주 소각 (블로터)",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=675281",
+   "date": "N/A"
+  },
+  {
+   "title": "전장·로봇 기대 커지는데 목표가는 19%↓ (파이낸셜뉴스)",
+   "url": "https://www.fnnews.com/news/202609170834451872",
+   "date": "2026-09-17"
+  },
+  {
+   "title": "[리포트 브리핑]현대모비스, '26 R&D Tech Day 목표가 690,000원 - 현대차증권 (뉴스핌)",
+   "url": "https://www.newspim.com/news/view/20260917000305",
+   "date": "2026-09-17"
+  },
+  {
+   "title": "Hyundai Mobis 오늘의 주가 (Investing.com)",
+   "url": "https://www.investing.com/equities/hyundai-mobis",
+   "date": "2026-10"
+  },
+  {
+   "title": "삼성증권 현대모비스 1Q26 Review (주식수 90,732,583주)",
+   "url": "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2026042318055214K_02_02.pdf&inlineYn=Y&saveKey=research.pdf",
+   "date": "2026-04-23"
+  },
+  {
+   "title": "현대모비스 최대주주 기아, 총 지분율 32.7% (디지털투데이)",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=642466",
+   "date": "2026-03"
+  },
+  {
+   "title": "기아 4%·현대차 2%…현대차그룹 3사 배당 전략 (파이낸셜뉴스)",
+   "url": "https://www.fnnews.com/news/202602151959263221",
+   "date": "2026-02-15"
+  },
+  {
+   "title": "현대모비스 신용평가 보고서 (한국신용평가)",
+   "url": "https://m.kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20260624-13.pdf",
+   "date": "2026-06-24"
+  },
+  {
+   "title": "현대모비스, 글로벌 수주 목표 초과달성 (머니투데이)",
+   "url": "https://www.mt.co.kr/industry/2026/02/02/2026020211501629289",
+   "date": "2026-02-02"
+  },
+  {
+   "title": "휴머노이드 액추에이터 수주…현대모비스, 상하이서 로보틱스 협력 (노컷뉴스)",
+   "url": "https://nocutnews.co.kr/news/6591767",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "현대모비스, 또 비계열사 수주 미달 (아시아타임즈)",
+   "url": "https://www.asiatime.co.kr/article/20260105500217",
+   "date": "2026-01-05"
+  },
+  {
+   "title": "현대모비스, 액추에이터 사업 전망 밝아…목표가↑-KB (한국경제)",
+   "url": "https://www.hankyung.com/article/2026060219196",
+   "date": "2026-06-02"
+  }
+ ],
+ "search_count": "9"
+}

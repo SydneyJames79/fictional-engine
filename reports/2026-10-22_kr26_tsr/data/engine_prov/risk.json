@@ -1,0 +1,22 @@
+{
+ "쎄트렉아이": {
+  "ann_vol_1y": 0.72,
+  "ann_vol_3y": 0.6,
+  "ann_vol_5y": 0.52,
+  "p_zero_ann": 0.003,
+  "beta": 1.6,
+  "mdd_3y": -76.0,
+  "turnover_bn": 50.0,
+  "confidence": "낮음"
+ },
+ "인텔리안테크": {
+  "ann_vol_1y": 0.65,
+  "ann_vol_3y": 0.55,
+  "ann_vol_5y": 0.5,
+  "p_zero_ann": 0.004,
+  "beta": 1.6,
+  "mdd_3y": -68.0,
+  "turnover_bn": 45.0,
+  "confidence": "보통"
+ }
+}

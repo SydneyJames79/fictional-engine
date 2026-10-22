@@ -1,0 +1,319 @@
+{
+ "input_name": "서진시스템",
+ "legal_name": "주식회사 서진시스템 (Seojin System Co., Ltd.)",
+ "ticker": "178320",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "검색 결과(Google Finance 178320:KOSDAQ, 아이투자, 한경마켓, 와이즈리포트 등) 모두 코스닥 178320으로 일치. 거래정지·관리종목·투자주의환기·상장폐지심사 관련 언급은 확인되지 않음(10/21~22 정상 거래 기사 존재). 추정 종목코드·시장 모두 검증됨.",
+ "share_class": "보통주(사업회사, 우선주 없음 확인되지 않음)",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 확인되지 않음. 2026-04-22 제3자배정 유상증자(1,800억원, 4,026,846주) 및 2026-08 영구 전환사채(375억원) 발행은 자본조달 항목 참조.",
+ "price": {
+  "value": "34000",
+  "date": "2026-10-21",
+  "kind": "종가",
+  "source_url": "https://news.jkn.co.kr/post/1039633",
+  "source_date": "2026-10-21",
+  "alt_price_1021": "34000",
+  "note": "10/22 확정 종가는 9회 검색으로 확인 실패. 10/22 장중 자료: 중앙이코노미뉴스 09:54 기준 34,450원(+1.32%, 시총 2조1,953억) https://www.joongangenews.com/news/articleView.html?idxno=557330 ; judal.co.kr 10/22자 33,950원(-0.15%, 시총 2조1,634억)이나 시각 미기재로 종가 여부 불명. 채택: 10/21 종가 34,000원(재경일보 마감분석, -10.88%, 전일 38,150원). 톱스타뉴스 10/21 기사는 15:47 작성이라 '현재가' 표현이나 재경일보가 마감으로 보도. 10/16 종가 39,700원(+12.78%)."
+ },
+ "market_cap_bn": {
+  "value": "21666",
+  "date": "2026-10-21",
+  "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16253739",
+  "note": "10/21 34,000원 기준 2조1,666억원. 10/22 장중(09:54) 34,450원 기준 2조1,953억원(중앙이코노미뉴스). 두 수치 모두 상장주식수 약 6,372만주와 정합(주가×주식수 일치)."
+ },
+ "shares_outstanding": {
+  "value": "63720000",
+  "date": "2026-10-21",
+  "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=557330",
+  "note": "직접 공시 수치 미확인. 시가총액 2조1,666억/34,000원 및 2조1,953억/34,450원에서 역산한 근사치(약 6,372만주). 2026-04 유상증자 신주 4,026,846주 포함 여부는 역산상 포함된 것으로 추정. DART 반기보고서로 확정 필요."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=178320",
+  "note": "금융정보 사이트에서 자사주비율 '-' 표시. 자기주식 취득·소각 공시 확인되지 않음. 사실상 미미하거나 0으로 추정되나 미확인."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기(2Q26, 2026-06-30 기준). 3Q26 실적은 미발표(10/22 기준).",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "12138",
+   "op_income_bn": "1087",
+   "net_income_bn": "826",
+   "source_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02443606642102992",
+   "note": "연결 기준. 순이익은 이데일리/디일렉 826억 vs bosoop 839억(지배/총순이익 차이로 추정). 826억 채택. ESS 매출 6,360억(+131.8%). 매출 +55.9%, 영업이익 +121.8%."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "10663",
+   "op_income_bn": "11",
+   "net_income_bn": "-1024",
+   "ocf_bn": "-397",
+   "source_url": "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026031915234889K_02_09.pdf",
+   "note": "연결 기준. 매출 -12.1% YoY, 영업이익 -99% YoY, 순손실 전환. 3Q25 매출 2,155억/영업손실 372억, 4Q25 영업이익 235억. 영업현금흐름 -397억(bosoop). 부문비중(2025): ESS 37%/반도체장비 27%/통신 12%/EV·배터리 7%/기타 16%."
+  },
+  {
+   "period": "2Q26",
+   "revenue_bn": "4102",
+   "op_income_bn": "-194",
+   "net_income_bn": "-402",
+   "source_url": "https://v.daum.net/v/20260820113149739",
+   "note": "연결 기준, 매출 +58.6% YoY, 분기 최대 매출이나 영업적자. 원인: 텍사스 전력망 계통연결 지연으로 Fluence향 ESS 매출 미인식, 미국 ESS 조립공장 구축 일회성 비용·인건비. 2Q ESS 매출 1,270억(+61%), 반도체장비 1,958억."
+  },
+  {
+   "period": "1H26",
+   "revenue_bn": "7000",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=228900",
+   "note": "잡포스트 '상반기 매출 7,000억원' 근사치(정확값 미확인). 상반기 반도체장비 누적 매출 3,086억(2025 연간 초과). 상반기 영업이익·순이익 미확인(1Q26도 영업적자 보도)."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2026-06-30",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "-12876",
+  "equity_bn": "N/A",
+  "source_url": "https://v.daum.net/v/20260820113149739",
+  "note": "2Q26 말 순차입금 약 1조2,876억원(순현금 -12,876억). 현금·총차입금·자기자본 개별 수치 미확인. 참고: 와이즈리포트 BPS 13,127원×약 6,372만주 ≈ 8,360억원 수준(역산, 미확정). 2025년 영업현금흐름 -397억. 대규모 순차입금 + 적자 → 재무부담 높음."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "0",
+  "dividend_yield_pct": "0",
+  "buyback_policy": "자사주 매입·소각 정책 및 관련 공시 확인되지 않음. 현금배당수익률 0.00%(금융정보 사이트). FY2025 순손실 상태로 배당 여력 낮음.",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=178320",
+  "valueup_disclosure": "밸류업 공시 확인되지 않음(N/A)"
+ },
+ "dilution": {
+  "convertibles": "(1) 2026-08 제39회차 사모 영구 전환사채 375억원, 전환가 33,255원(약 1,127,650주 상당), 전환청구 2027-09-01~2056-08-01, 용도 미국 ESS·반도체장비 설비투자. 발행 포함 관련 사채 잔액 총 606.3억원(CBC뉴스). (2) 2026-04-28 더벨: 2,800억원 규모 30년 영구CB 추진 보도 → 8월 375억으로 축소 확정된 것으로 보임(추가 발행 가능성 유의). 기존 회차 CB 잔량·전환가 세부 미확인.",
+  "stock_options": "N/A(미확인)",
+  "rights_issues": "2026-04-22 이사회: 제3자배정 유상증자 1,800억원(보통주 4,026,846주, 발행가 44,700원, 기준주가 49,593원 대비 9.87% 할인), 배정: 토러스자산운용 1,789,709주·네오영 2,237,137주, 1년 의무보유(2027년 상반기 해제 예상 → 오버행). 용도: 미국 ESS·반도체장비 시설 1,400억 + 운영 400억. 현재 주가(34,000)는 발행가 44,700원 하회.",
+  "est_dilution_pct": "2.9",
+  "source_url": "https://www.cbci.co.kr/news/articleView.html?idxno=600758"
+ },
+ "ownership": {
+  "largest_holder": "전동규 대표이사(최대주주) 및 특수관계인",
+  "largest_holder_pct": "15.98",
+  "overhang_notes": "기준 차이 큼: 와이즈리포트 2026-10-08 최대주주등 11명 합산 15.98%(전동규 본인 15.64%); 반기보고서(2026-06) 기준 최대주주측 26.37%(bosoop); 2026-03-27 대량보유보고 36.14%(CB 권리행사분 포함). 15.98% 채택(최신). 2026-07 최대주주 장외매도 기록. 최대주주 지분 상당 부분 대출 담보 → 담보권 전부 실행 시 15.64%→4.40%로 급감 구조(반대매매 리스크). 유상증자 신주 402.7만주(6.3%) 2027년 보호예수 해제 예정. 영구CB 전환 물량 추가 오버행.",
+  "source_url": "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=178320"
+ },
+ "business": {
+  "summary": "알루미늄 다이캐스팅·정밀가공 기반의 다각화 제조업체. ESS 외함/모듈 조립, 반도체 장비 부품·모듈, 통신장비(5G 함체), EV·배터리 부품, 최근 SOFC(고체산화물 연료전지) 모듈 생산까지 확장. 베트남 생산기지 중심, 미국 휴스턴 ESS 조립공장 구축 중.",
+  "segments": "2025년 매출비중: ESS 37% / 반도체장비 27% / 통신장비 12% / EV·배터리 부품 7% / 기타 16%. 2026년은 반도체장비(1H26 3,086억)와 ESS 비중 확대 중.",
+  "key_customers": "ESS: Fluence(플루언스, 미국), 에이스엔지니어링(PCS·ESS 장비 1,870억+537억 계약). 반도체장비: 글로벌 장비사(구체 고객명 미확인, memory_unverified: Lam Research 등). SOFC: 2026-10 7,948만달러 계약 상대 미공개(memory_unverified: Bloom Energy 추정). 통신: 삼성전자(memory_unverified).",
+  "customer_concentration": "상위 고객 비중 수치 미확인. ESS(Fluence·에이스엔지니어링) 의존도 높아 2Q26 Fluence향 매출 지연만으로 분기 적자 전환 → 고객·프로젝트 집중도 높은 것으로 판단.",
+  "competitors": "ESS 외함·조립: 국내외 EMS·금속가공사; 반도체장비 부품: 국내 정밀가공사(구체 경쟁사 미확인)",
+  "industry_group": "ESS·산업재·특수소재"
+ },
+ "consensus": {
+  "target_price_avg": "68500",
+  "target_price_date": "2026-10-08",
+  "n_brokers": "3",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=178320",
+  "recent_report_summary": "와이즈리포트 2026-10-08 기준 투자의견 4.00(매수), 목표가 68,500원, 추정기관 3곳(현 주가 34,000 대비 약 2배 괴리). 10/21 기사: 한 증권사가 목표주가 하향하면서 매수 유지(증권사명·수치 미확인, 방향: 하향). 아이엠증권(8/20): 3Q26 매출 5,590억·영업이익 880억 흑자전환 전망, '단기 악재 해소'. SK증권 2026-02-09 목표가 41,000→55,000 상향(구자료). 2026E/2027E 매출·영업이익 컨센서스 수치 미확인."
+ },
+ "recent_events": [
+  {
+   "event": "SOFC 모듈 및 부품 생산 공급계약 자율공시, 약 7,948만달러(약 1,064억원, 10/8 환율 환산), 계약기간 2026-10-08~2027-12-23, 해외법인 외주생산",
+   "event_date": "2026-10-08(PO 수령일) / 공시 2026-10-12",
+   "article_date": "2026-10-12",
+   "source_url": "https://www.specialtimes.co.kr/news/articleView.html?idxno=472935"
+  },
+  {
+   "event": "주가 10.88% 급락 34,000원 마감(전일 38,150원), 뚜렷한 악재 공시 부재·개별 매물 출회 추정, 한 증권사 목표가 하향(매수 유지)",
+   "event_date": "2026-10-21",
+   "article_date": "2026-10-21",
+   "source_url": "https://news.jkn.co.kr/post/1039633"
+  },
+  {
+   "event": "주가 12.78% 급등 39,700원",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-16",
+   "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16249015"
+  },
+  {
+   "event": "2Q26 실적: 매출 4,102억(+58.6%), 영업손실 194억, 순손실 402억 — 텍사스 계통연결 지연으로 Fluence향 ESS 매출 미인식, 미국 공장 일회성 비용. 아이엠증권 3Q 흑자전환 전망",
+   "event_date": "2026-08-14(추정, 반기보고서)",
+   "article_date": "2026-08-20",
+   "source_url": "https://v.daum.net/v/20260820113149739"
+  },
+  {
+   "event": "제39회차 사모 영구 전환사채 375억원 발행 결정(전환가 33,255원), 미국 ESS·반도체장비 설비투자 목적",
+   "event_date": "2026-08",
+   "article_date": "2026-08",
+   "source_url": "https://www.cbci.co.kr/news/articleView.html?idxno=600758"
+  },
+  {
+   "event": "에이스엔지니어링과 ESS 장비 공급계약 537억원 공시",
+   "event_date": "2026-07-08",
+   "article_date": "2026-07-08",
+   "source_url": "https://view.asiae.co.kr/article/2026070814515335993"
+  },
+  {
+   "event": "최대주주 전동규 장외매도(지분 변동 기록)",
+   "event_date": "2026-07",
+   "article_date": "2026-10-08",
+   "source_url": "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=178320"
+  },
+  {
+   "event": "ESS 및 데이터센터용 PCS 공급계약 1,870억원(매출 대비 17.54%), 상대방 에이스엔지니어링",
+   "event_date": "2026-05-18",
+   "article_date": "2026-05-18",
+   "source_url": "https://www.hankyung.com/article/202605183278L"
+  },
+  {
+   "event": "2,800억원 규모 30년 영구 전환사채 발행 추진(기관 접촉) 보도 — 이후 8월 375억으로 축소 확정",
+   "event_date": "2026-04-28",
+   "article_date": "2026-04-28",
+   "source_url": "https://www.thebell.co.kr/front/newsview.asp?key=202604280755109620104188"
+  },
+  {
+   "event": "제3자배정 유상증자 1,800억원 결정(4,026,846주, 발행가 44,700원, 토러스자산운용·네오영, 1년 보호예수), 미국 ESS·반도체장비 투자",
+   "event_date": "2026-04-22",
+   "article_date": "2026-04-22",
+   "source_url": "https://news.nate.com/view/20260423n06169"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 확정 종가·시가총액 미확인(장중 34,450원 09:54, judal 33,950원 시각 불명). 10/21 종가 34,000원으로 대체.",
+  "상장주식수 공시 수치 미확인(시총/주가 역산 약 6,372만주).",
+  "자기주식 수·비율 미확인(사이트 표시 '-').",
+  "1H26 영업이익·순이익, 1Q26 세부 실적 미확인(상반기 매출 '약 7,000억'만 확인).",
+  "2Q26 말 현금·총차입금·자기자본 개별 수치 미확인(순차입금 1조2,876억만 확인).",
+  "기존 회차 CB 잔량·전환가 세부, 스톡옵션 미행사 잔량 미확인 → 희석률 2.9%는 관련 사채잔액 606억/전환가 33,255원 가정의 근사치.",
+  "최대주주 지분율 기준 간 불일치(15.98% / 26.37% / 36.14%) — 담보·CB 권리행사분 포함 여부 차이, DART 원문 확인 필요.",
+  "2026E·2027E 매출·영업이익 컨센서스 수치 미확인. 10/21 목표주가 하향 증권사·수치 미확인.",
+  "상위 고객 비중(고객 집중도) 수치 및 SOFC 계약 상대방 미확인.",
+  "2024년 당기순이익 826억 vs 839억 불일치(지배주주 vs 총순이익 추정)."
+ ],
+ "sources": [
+  {
+   "title": "[마감분석] 서진시스템 10.88% 급락하며 3만4000원 마감 (재경일보)",
+   "url": "https://news.jkn.co.kr/post/1039633",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "서진시스템 주가, 10월 21일 34,000원 10.88% 하락 (톱스타뉴스)",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16253739",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "서진시스템 주가, 10월 22일 장중 34,450원 1.32% 오름세 (중앙이코노미뉴스)",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557330",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "서진시스템 투자분석 2026.10.22 (judal)",
+   "url": "https://judal.co.kr/?shareToken=LB0it5bu8Seg1rkc&view=stockAI",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "서진시스템, 단기 악재 해소…3분기 실적 대폭 개선 전망 (다음/아이엠증권)",
+   "url": "https://v.daum.net/v/20260820113149739",
+   "date": "2026-08-20"
+  },
+  {
+   "title": "서진시스템 3.08% 하락한 3만1500원…상반기 매출 7000억원 (잡포스트)",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=228900",
+   "date": "2026-08"
+  },
+  {
+   "title": "서진시스템, 반도체 매출 연간치 추월 (리드경제)",
+   "url": "https://www.leadeconomy.co.kr/news/articleView.html?idxno=9191",
+   "date": "2026-08"
+  },
+  {
+   "title": "삼성증권 서진시스템 본질적인 경쟁력에 주목할 때 (FY2025 실적)",
+   "url": "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026031915234889K_02_09.pdf",
+   "date": "2026-03-19"
+  },
+  {
+   "title": "서진시스템 실적·재무제표 (bosoop)",
+   "url": "https://www.bosoop.com/stocks/178320/",
+   "date": "2026"
+  },
+  {
+   "title": "서진시스템, 지난해 영업이익 1087억...전년比 121.8%↑ (이데일리)",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02443606642102992",
+   "date": "2025-02"
+  },
+  {
+   "title": "서진시스템, 매출 1조 클럽 가입… 영업이익 1087억 (디일렉)",
+   "url": "https://www.thelec.kr/news/articleView.html?idxno=33648",
+   "date": "2025-02"
+  },
+  {
+   "title": "서진시스템, 1800억원 규모 유상증자 결정 (네이트뉴스)",
+   "url": "https://news.nate.com/view/20260423n06169",
+   "date": "2026-04-23"
+  },
+  {
+   "title": "서진시스템, 1800억 규모 제3자배정 증자... 신주 402만주 발행 및 1년 보호예수 (데이터투자)",
+   "url": "https://www.datatooza.com/article/20260422165120923752ef3f1908_80",
+   "date": "2026-04-22"
+  },
+  {
+   "title": "서진시스템, 375억원 규모 영구 전환사채 발행 (CBC뉴스)",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=600758",
+   "date": "2026-08"
+  },
+  {
+   "title": "서진시스템, 2800억 규모 전환사채 발행 추진 (더벨)",
+   "url": "https://www.thebell.co.kr/front/newsview.asp?key=202604280755109620104188",
+   "date": "2026-04-28"
+  },
+  {
+   "title": "서진시스템 기업현황 (와이즈리포트, 컨센서스 2026-10-08)",
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=178320",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "서진시스템 지분현황 (와이즈리포트)",
+   "url": "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=178320",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "서진시스템 최대주주 전동규 지분율 36.14% (디지털투데이)",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=647507",
+   "date": "2026-03-27"
+  },
+  {
+   "title": "SK증권 서진시스템 목표주가 55,000원 상향",
+   "url": "https://www.sks.co.kr/data1/research/qna_file/20260209154128692_0_ko.pdf",
+   "date": "2026-02-09"
+  },
+  {
+   "title": "[공시] 서진시스템 단일판매·공급계약체결(자율공시) SOFC (스페셜타임스)",
+   "url": "https://www.specialtimes.co.kr/news/articleView.html?idxno=472935",
+   "date": "2026-10-12"
+  },
+  {
+   "title": "서진시스템 수주공시 PCS 1,870억원 (한국경제)",
+   "url": "https://www.hankyung.com/article/202605183278L",
+   "date": "2026-05-18"
+  },
+  {
+   "title": "서진시스템, 537억원 규모 ESS 장비 공급계약 (아시아경제)",
+   "url": "https://view.asiae.co.kr/article/2026070814515335993",
+   "date": "2026-07-08"
+  },
+  {
+   "title": "서진시스템 주가, 10월 16일 39,700원 12.78% 상승 (톱스타뉴스)",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16249015",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "서진시스템(178320) Google Finance",
+   "url": "https://www.google.com/finance/beta/quote/178320:KOSDAQ?hl=ko",
+   "date": "2026-10-22"
+  }
+ ],
+ "search_count": "9"
+}

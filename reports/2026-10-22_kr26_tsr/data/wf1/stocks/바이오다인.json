@@ -1,0 +1,332 @@
+{
+ "input_name": "바이오다인",
+ "legal_name": "주식회사 바이오다인 (Biodyne Co., Ltd.)",
+ "ticker": "314930",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "코스닥 상장 보통주(2021년 3월 상장). 검색 범위 내에서 거래정지·관리종목·투자주의환기종목·상장폐지심사 관련 공시나 기사는 발견되지 않음(부재 확인은 검색 기반이므로 DART 재확인 권고). 한경·FnGuide·IRGO·DART 네비게이션 모두 종목코드 314930으로 일치. 추정 종목코드/시장 정확함. 2026-08-14 반기보고서(2026.06) 정상 제출 확인(IRGO/DART).",
+ "share_class": "보통주(단일 클래스, 우선주 없음 확인됨 범위 내). 사업회사(지주회사 아님).",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 관련 공시·기사 없음(검색 기반). 액면분할도 확인되지 않음(52주 고가 16,860/저가 5,500, 12개월 수익률 -52%는 분할 없이 주가 하락으로 설명됨). 주요 지분 이벤트: 2025-07-27 공시 최대주주 임욱빈 대표 장외매도 계획(1,226,598주, 4.12%, 2025-07-28~08-26, 약 190억원 규모).",
+ "price": {
+  "value": "5830",
+  "date": "2026-10-22",
+  "kind": "장중체결가 (기준가 확정 2차 갱신)",
+  "source_url": "https://judal.co.kr/?shareToken=CftaA9c5fowLiFWu&view=stockAI",
+  "source_date": "2026-10-22",
+  "note": "2026-10-22 및 10-21 종가는 검색으로 확인 불가(검색 한도 소진). 확인 가능한 가장 최근 날짜 명시 가격은 2026-10-15 주달AI 분석 페이지의 5,720원(52주 최고 16,860/최저 5,500). 보조 자료: 한경마켓 2026-10-01 장중 6,950원(+230원, +3.42%, 3개월 -29.11%, 12개월 -52.17%); 주달 2026-10-08 시총 1,940억(→ 약 6,520원 환산); 치킨스탁 2026-09-15 시총 2,024억(→ 약 6,800원); 밸류라인 2026-08-07 8,280원. 날짜 미표시 페이지(Investing.com 7,250원/14,240원, FnGuide 12,390원, Stockopedia 14,340원, SimplyWallSt 15,890원)는 구버전 스냅샷으로 판단해 채택하지 않음. 10/22 코스피 -3.52% 급락일이므로 실제 10/22 종가는 5,720원보다 낮을 가능성이 있음 — 반드시 KRX/네이버금융에서 재확인 필요. | 2차 갱신: judal.co.kr '바이오다인 투자분석 2026.10.22' 페이지: 5,830원, 전일대비 -250원(-4.11%), 시총 1,735억원, PER 144.39, PBR 3.97. 종가/장중 여부 미명시라 kind를 장중체결가로 보수 표기(마감 후 생성 페이지면 종가일 수 있음). 10/21 종가 6,080원은 전일대비 역산값. 코스닥 -3.62% 급락일과 -4.11% 정합. 기존 기준가 5,720원(10/15 동일 소스)과 흐름 일관(10/13 종가 6,090원 stockanalysis).",
+  "alt_price_1021": "N/A",
+  "prev_value": "5720",
+  "prev_date": "2026-10-15",
+  "prev_kind": "AI투자분석 페이지(주달) 표시 주가 — 종가/장중 구분 불명(종가 추정)"
+ },
+ "market_cap_bn": {
+  "value": "1702.5",
+  "date": "2026-10-15",
+  "source_url": "https://judal.co.kr/?shareToken=fHFObh509b2xXdEo&view=stockAI",
+  "note": "계산값: 5,720원 × 29,764,103주 = 약 1,702.5억원(기준 2026-10-15). 교차: 주달 2026-10-08 시총 1,940억원(https://judal.co.kr/?shareToken=4iMFJl02IsPmry4L&view=stockAI), 치킨스탁 2026-09-15 2,024억원(코스닥 390위, https://www.chickstockfi.com/stocks/314930), 밸류라인 2026-08-07 2,464억원. 주가×주식수와 큰 괴리 없음(가격 시점 차이뿐). 10/22 기준 시총은 미확인."
+ },
+ "shares_outstanding": {
+  "value": "29764103",
+  "date": "2026-10-01",
+  "source_url": "https://markets.hankyung.com/stock/314930",
+  "note": "한경마켓·FnGuide·밸류라인·유진투자증권(2024-06) 모두 29,764,103주(약 2,976만주)로 일관. 2026-08-14 대량보유보고서의 지분율(12,119,888주=40.72%)로 역산 시 약 29.76백만주로 일치."
+ },
+ "treasury_shares": {
+  "count": "287343",
+  "pct": "0.97",
+  "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?gicode=A314930",
+  "note": "FnGuide 표시 자기주식 287,343주(0.97%), 최종변동일 2021-03-17로 표기 — 상장 시점 이후 변동 없는 오래된 수치일 수 있어 최신 반기보고서로 재확인 필요. 최근 자사주 매입·소각 공시는 검색되지 않음."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기보고서(2026.06, 2026-08-14 제출). 3분기 보고서는 미제출(Investing.com 기준 다음 실적 발표 예정일 2026-11-18).",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "53",
+   "op_income_bn": "-17",
+   "net_income_bn": "0.1",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.digitaltoday.co.kr/aigongsi/1509/lim-uk-bin-biodine-stake-reduction",
+   "note": "개별 재무제표 기준(디지털투데이·butler.works 일치: 매출 53억, 영업손실 17억, 당기순이익 1,077만원). FnGuide 업종비교표도 영업이익 -17억. 분할·합병 없어 기간 비교 가능."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "70.3",
+   "op_income_bn": "6.5",
+   "net_income_bn": "8.5",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.openbizdata.com/biodyne/",
+   "note": "매출 7,027,675,925원(위키백과) ≈ 70.3억, 영업이익 6.5억(흑자전환, 전년 -17.3억), 순이익 8.5억(금융수익 10.5억 기여). 마일스톤 3.7억 일회성 수익 포함. butler.works는 영업이익 '7억'으로 반올림 표기 — 6.5억 채택. 매출 비중: LBC 진단 시약키트 82.6%, LBC 장비 17.4%."
+  },
+  {
+   "period": "2026 상반기(1H26)",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://m.irgo.co.kr/IR-COMP/314930/",
+   "note": "반기보고서(2026.06)는 2026-08-14 제출 확인되었으나 매출·영업이익 수치는 검색 결과에서 확보 실패(검색 한도 소진). 주달 2026-10-08 기준 EPS 41원(TTM 추정, PER 약 162배)만 확인 — TTM 순이익 약 12억원 수준 추정(41원×2,976만주, 산식 추정치)."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2024-12-31",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "432",
+  "source_url": "https://www.digitaltoday.co.kr/aigongsi/1509/lim-uk-bin-biodine-stake-reduction",
+  "note": "2024년 말 개별 기준 자산총계 443억, 부채총계 11억, 자본총계 432억 — 사실상 무차입(부채 11억) 구조. 2025년 말·2026년 반기 재무상태표 수치는 미확인. 주달 2026-10-01 PBR 약 4.6배(시총 약 2,000억 기준 → 자본 약 430~450억 추정, 산식 추정치)."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "N/A",
+  "dividend_yield_pct": "N/A",
+  "buyback_policy": "자사주 매입·소각 정책 공시 확인되지 않음. 자기주식 287,343주(0.97%)는 2021년 이후 변동 없음(FnGuide).",
+  "valueup_disclosure": "밸류업 공시 확인되지 않음(검색 기반).",
+  "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?gicode=A314930",
+  "note": "FnGuide 2025/12 결산 배당수익률 '-' 표시(무배당 시사). 반면 이데일리 기사 '바이오다인, 배당주로 우뚝…배당 확대 확신하는 세 가지 이유'(https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02666646645414152, 게시일 미확인·2026년 추정)가 존재해 상충 — 배당 실시 여부·DPS는 미해결로 둠."
+ },
+ "dilution": {
+  "convertibles": "최근 24개월 CB·BW·EB·RCPS 발행 공시 확인되지 않음(검색 결과 없음, 부재 확인은 검색 기반). 2024년 말 부채총계 11억원으로 사채 잔량 사실상 없음.",
+  "stock_options": "N/A (미행사 스톡옵션 잔량 확인 실패)",
+  "rights_issues": "최근 24개월 유상증자 공시 확인되지 않음. 예정 증자 없음(검색 기반).",
+  "est_dilution_pct": "N/A",
+  "source_url": "https://www.digitaltoday.co.kr/aigongsi/1509/lim-uk-bin-biodine-stake-reduction"
+ },
+ "ownership": {
+  "largest_holder": "임욱빈 대표이사(최대주주)",
+  "largest_holder_pct": "40.72",
+  "overhang_notes": "2026-08-14 대량보유상황보고서: 임욱빈 직접 12,119,888주(40.72%), 특별관계자 6인 합산 12,563,315주(42.21%); 질권설정 주식 2,036,806주(6.84%) 존재 — 주가 하락 시 담보 관련 리스크 요인. 2025-07-27 공시로 대표가 1,226,598주(4.12%, 약 190억원)를 장외매도(2025-07-28~08-26), 지분 44.28%→약 40%로 감소. 로슈와의 계약상 최대주주 지분 일정 수준 유지 조항이 있어 추가 대량 매도는 제한적이라는 분석(이데일리). 2026-07-06 공시로 19,617주 소폭 증가(40.65%→40.72%). FnGuide(2025 사업보고서 기준) 최대주주등 합계 41.86%.",
+  "source_url": "https://www.chickstockfi.com/disclosures/20260814002075"
+ },
+ "business": {
+  "summary": "액상세포검사(LBC) 기반 자궁경부암 등 세포진단 장비(Pathplorer)와 전용 진단 시약 키트를 개발·제조. 독자 '블로윙(Blowing)' 세포도말 기술을 로슈진단에 기술이전해 로슈 '벤타나(VENTANA) SP400' 장비에 적용(2025-06-20 일본 출시, 이후 유럽·북미 등 40여 개국 확대 계획). 로슈로부터 마일스톤(최종 25만달러 수령 완료), 소모품 공급매출, 판매 로열티(매출 비율이 아닌 장비 1대·시약 1바이알당 고정금액, 평균판매가의 10% 초반 수준)를 수취하는 구조. 2025년 매출 70억·영업이익 6.5억 흑자전환, 2026년 로열티 본격화로 매출 100억원 돌파 기대(한경 2025-10-03). 로열티 매출 인식 시점·금액은 계약상 기밀로 비공개.",
+  "segments": "FY2025 매출 비중: LBC 진단 시약 키트 82.6%, LBC 장비(Pathplorer 등) 17.4% (openbizdata). 로슈 로열티·소모품 매출의 별도 비중은 비공개.",
+  "key_customers": "로슈진단(Roche Diagnostics) — 글로벌 독점 기술이전·공급 파트너(비부인과 암종 별도 계약 포함). 국내 병원·검진센터·수탁검사기관(장비·시약).",
+  "customer_concentration": "핵심 성장동력이 로슈 단일 파트너에 집중(계약금액·로열티 비공개로 가시성 제한). 상위 고객 비중 수치는 N/A.",
+  "competitors": "Hologic(ThinPrep), BD(SurePath) 등 글로벌 LBC 업체(memory_unverified); 국내 LBC 장비·시약 업체.",
+  "industry_group": "바이오의약품·의료기기·진단"
+ },
+ "consensus": {
+  "target_price_avg": "N/A",
+  "target_price_date": "N/A",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "최근 1~2개월 증권사 리포트·목표주가 확인 불가. 가장 최근 확인된 증권사 목표가는 유진투자증권 2024-09-30 매수/26,000원(권해순)으로 현 주가(5,720원)와 괴리가 커 현행 컨센서스로 사용 불가. 2026년 유진투자증권 제약/바이오 섹터 자료(2026-01-19, 2026-02-23 PDF)에 언급 가능성 있으나 내용 미확인. 비증권사 AI 분석(주달, 2026-10-15)은 '매수 보류, 3,500원대 지지 확인 후 접근' 등 신중 의견.",
+  "source_url": "https://www.newspim.com/news/view/20240930000467"
+ },
+ "recent_events": [
+  {
+   "event": "최대주주 임욱빈 대표 지분 소폭 증가(19,617주 매수), 지분율 40.65%→40.72% 공시",
+   "event_date": "2026-07-06",
+   "article_date": "2026-07-06",
+   "source_url": "https://www.datatooza.com/article/20260706091647602852ef36232b_80"
+  },
+  {
+   "event": "2026년 반기보고서(2026.06) 제출",
+   "event_date": "2026-08-14",
+   "article_date": "2026-08-14",
+   "source_url": "https://m.irgo.co.kr/IR-COMP/314930/"
+  },
+  {
+   "event": "주식등의 대량보유상황보고서: 임욱빈 40.72%, 특별관계자 포함 42.21%, 질권설정 2,036,806주(6.84%)",
+   "event_date": "2026-08-14",
+   "article_date": "2026-08-14",
+   "source_url": "https://www.chickstockfi.com/disclosures/20260814002075"
+  },
+  {
+   "event": "주가 지속 하락: 2026-08-07 8,280원 → 10-01 6,950원 → 10-15 5,720원(52주 저가 5,500원 근접, 12개월 -52%). 급락 원인(실적·로슈 관련 악재 여부)은 미확인",
+   "event_date": "2026-08~2026-10",
+   "article_date": "2026-10-15",
+   "source_url": "https://judal.co.kr/?shareToken=fHFObh509b2xXdEo&view=stockAI"
+  },
+  {
+   "event": "'알테오젠 충격 속 로슈와 두 자릿수 로열티 바이오다인 재평가' 보도(로열티 구조: 단위당 고정금액, ASP의 10% 초반)",
+   "event_date": "2026-02-04",
+   "article_date": "2026-02-04",
+   "source_url": "https://v.daum.net/v/20260204082342731?f=p"
+  },
+  {
+   "event": "FY2025 실적: 매출 70억(+33%), 영업이익 6.5억 흑자전환(마일스톤 3.7억 포함), 순이익 8.5억",
+   "event_date": "2025-12-31",
+   "article_date": "2026-03 추정",
+   "source_url": "https://www.openbizdata.com/biodyne/"
+  },
+  {
+   "event": "이데일리 '바이오다인, 배당주로 우뚝…배당 확대 확신하는 세 가지 이유' 보도(배당 실시 여부·DPS 미확인)",
+   "event_date": "N/A",
+   "article_date": "2026년 추정(미확인)",
+   "source_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02666646645414152"
+  },
+  {
+   "event": "로슈 벤타나 SP400 일본 출시(바이오다인 블로윙 기술 적용), 최종 마일스톤 25만달러 수령, 로슈향 소모품 첫 출고 — 참고(6개월 범위 밖)",
+   "event_date": "2025-06-20",
+   "article_date": "2025-06-25",
+   "source_url": "https://www.hankyung.com/article/202506258280i"
+  },
+  {
+   "event": "최대주주 임욱빈 대표 장외매도 계획 공시(1,226,598주, 4.12%, 약 190억원, 2025-07-28~08-26) — 참고(6개월 범위 밖)",
+   "event_date": "2025-07-27",
+   "article_date": "2025-07-27",
+   "source_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03922886642205984"
+  },
+  {
+   "event": "다음 실적 발표(3분기 보고서) 예정일 2026-11-18 (Investing.com)",
+   "event_date": "2026-11-18",
+   "article_date": "N/A",
+   "source_url": "https://ng.investing.com/equities/biodyne-co"
+  }
+ ],
+ "data_quality": "낮음",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가 미확인 — 세션 WebSearch 한도(200회) 소진으로 추가 검색 불가. 채택 가격은 2026-10-15 주달AI 표시가 5,720원(종가/장중 구분 불명). 10/22 급락장 반영 필요.",
+  "2026년 상반기(반기보고서) 매출·영업이익·순이익·영업현금흐름·CAPEX 수치 미확보(보고서 제출 사실만 확인).",
+  "2025년 말·2026년 반기 재무상태표(현금·차입금·자기자본) 미확인; 2024년 말 자본 432억·부채 11억만 확인.",
+  "2025 결산 배당 여부·DPS·배당수익률 상충(FnGuide '-' vs 이데일리 '배당주' 기사). 밸류업 공시 여부 미확인.",
+  "미행사 스톡옵션 잔량 및 추정 희석률 미확인(CB/BW/유상증자는 검색상 없음).",
+  "2026년 증권사 목표주가·2026E/2027E 컨센서스 미확인(최신 확인 리포트는 2024-09-30 유진투자증권 26,000원).",
+  "2026년 8~10월 주가 급락(약 -30% 이상)의 구체적 원인(실적 실망·로슈 출시 지연·수급 등) 미확인.",
+  "자기주식 수(287,343주)는 2021년 기준 FnGuide 값으로 최신성 미확인.",
+  "로슈 로열티 매출 인식 시점(출하 시점 vs 로슈 판매 시점)·계약 금액은 비공개로 확인 불가.",
+  "경쟁사 목록(Hologic, BD)은 기억 기반(memory_unverified)."
+ ],
+ "sources": [
+  {
+   "title": "주달AI 바이오다인 투자분석 2026-10-15 (주가 5,720원, 52주 고저)",
+   "url": "https://judal.co.kr/?shareToken=fHFObh509b2xXdEo&view=stockAI",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "주달AI 바이오다인 투자분석 2026-10-08 (시총 1,940억, PER 161.95, EPS 41원)",
+   "url": "https://judal.co.kr/?shareToken=4iMFJl02IsPmry4L&view=stockAI",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "주달AI 바이오다인 투자분석 2026-10-01 (PER 166.83, PBR 4.6, 52주 최저 6,370)",
+   "url": "https://judal.co.kr/?shareToken=y70L1RqiT9o6SPWB&view=stockAI",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "한경마켓 바이오다인 (2026-10-01 장중 6,950원, 상장주식수 29,764,103)",
+   "url": "https://markets.hankyung.com/stock/314930",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "치킨스탁 바이오다인 (시총 2,024억, 2026-09-15 기준)",
+   "url": "https://www.chickstockfi.com/stocks/314930",
+   "date": "2026-09-15"
+  },
+  {
+   "title": "밸류라인 바이오다인 재무상태표 (2026-08-07 주가 8,280원, 시총 2,464억)",
+   "url": "https://www.valueline.co.kr/finance/balancesheet/314930",
+   "date": "2026-08-07"
+  },
+  {
+   "title": "FnGuide 바이오다인 (자사주 287,343주 0.97%, 최대주주등 41.86%, 2025/12 배당수익률 '-')",
+   "url": "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?gicode=A314930",
+   "date": "N/A"
+  },
+  {
+   "title": "치킨스탁 공시: 주식등의대량보유상황보고서 2026-08-14 (40.72%/42.21%, 질권 6.84%)",
+   "url": "https://www.chickstockfi.com/disclosures/20260814002075",
+   "date": "2026-08-14"
+  },
+  {
+   "title": "데이터투자: 임욱빈 대표 지분율 40.72% (2026-07-06)",
+   "url": "https://www.datatooza.com/article/20260706091647602852ef36232b_80",
+   "date": "2026-07-06"
+  },
+  {
+   "title": "IRGO 바이오다인 (반기보고서 2026.06, 2026-08-14 공시)",
+   "url": "https://m.irgo.co.kr/IR-COMP/314930/",
+   "date": "2026-08-14"
+  },
+  {
+   "title": "DART 바이오다인 정기공시 네비게이션",
+   "url": "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=01117413&naviCrpNm=%EB%B0%94%EC%9D%B4%EC%98%A4%EB%8B%A4%EC%9D%B8&naviCode=A002",
+   "date": "N/A"
+  },
+  {
+   "title": "오픈비즈데이터 바이오다인 (FY2025 매출 70억, OP 6.5억, NI 8.5억, 매출비중)",
+   "url": "https://www.openbizdata.com/biodyne/",
+   "date": "2026"
+  },
+  {
+   "title": "위키백과 바이오다인 (2025 매출 7,027,675,925원)",
+   "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EC%9D%B4%EC%98%A4%EB%8B%A4%EC%9D%B8",
+   "date": "N/A"
+  },
+  {
+   "title": "디지털투데이 AI공시: 임욱빈 지분 축소 (FY2024 매출 53억, 영업손실 17억, 자본 432억)",
+   "url": "https://www.digitaltoday.co.kr/aigongsi/1509/lim-uk-bin-biodine-stake-reduction",
+   "date": "2025"
+  },
+  {
+   "title": "butler.works 바이오다인 재무 (FY2024/FY2025)",
+   "url": "https://www.butler.works/ko/companies/01117413",
+   "date": "N/A"
+  },
+  {
+   "title": "이데일리: 임욱빈 대표 8월까지 190억 규모 지분 장외매도",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03922886642205984",
+   "date": "2025-07-27"
+  },
+  {
+   "title": "이데일리: 알테오젠 충격 속 로슈와 두 자릿수 로열티 바이오다인 재평가",
+   "url": "https://v.daum.net/v/20260204082342731?f=p",
+   "date": "2026-02-04"
+  },
+  {
+   "title": "이데일리: 바이오다인, 배당주로 우뚝…배당 확대 확신하는 세 가지 이유",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02666646645414152",
+   "date": "N/A"
+  },
+  {
+   "title": "한국경제: 로슈 파트너 바이오다인, 관련 제품 출고로 연내 흑자전환 기대 (연매출 100억 기대)",
+   "url": "https://www.hankyung.com/article/202510034526i",
+   "date": "2025-10-03"
+  },
+  {
+   "title": "한국경제: 바이오다인 기술 적용…로슈, 자궁경부암 진단장비(벤타나 SP400) 출시",
+   "url": "https://www.hankyung.com/article/202506258280i",
+   "date": "2025-06-25"
+  },
+  {
+   "title": "이데일리: 바이오다인, 로슈서 최종 마일스톤 수령",
+   "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03762166642397208",
+   "date": "2025"
+  },
+  {
+   "title": "뉴스핌 리포트 브리핑: 유진투자증권 바이오다인 목표가 26,000원",
+   "url": "https://www.newspim.com/news/view/20240930000467",
+   "date": "2024-09-30"
+  },
+  {
+   "title": "유진투자증권 바이오다인 리포트 PDF (발행주식수 29,764천주)",
+   "url": "https://www.eugenefn.com/common/files/amail//20240610_314930_hskwon_172.pdf",
+   "date": "2024-06-10"
+  },
+  {
+   "title": "Investing.com Biodyne (7,250 KRW, next earnings 2026-11-18, 날짜 미표시)",
+   "url": "https://ng.investing.com/equities/biodyne-co",
+   "date": "N/A"
+  },
+  {
+   "title": "Investing.com KR: InvestingPro 바이오다인 52% 하락 예측 (2024-06 15,370→2026-08 6,940원)",
+   "url": "https://kr.investing.com/news/investment-ideas/article-93CH-2085487",
+   "date": "2026-08"
+  },
+  {
+   "title": "CBC뉴스: 바이오 관련주 일제히 약세 (2026-10-22, 바이오다인 미언급)",
+   "url": "https://cbci.co.kr/news/articleView.html?idxno=618097",
+   "date": "2026-10-22"
+  }
+ ],
+ "search_count": "18 (성공 18회; 추가 8회는 세션 WebSearch 한도 200회 소진으로 미실행)"
+}

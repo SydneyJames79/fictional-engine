@@ -1,0 +1,346 @@
+{
+ "input_name": "에이치브이엠",
+ "legal_name": "주식회사 에이치브이엠 (HVM Co., Ltd.)",
+ "ticker": "295310",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "2024년 코스닥 상장(IPO 당시 최대주주 등 5,680,000주·47.7% 1년 보호예수). 검색 결과상 거래정지·관리종목·투자주의환기·상장폐지 심사 관련 언급 없음(2026-10-21 정상 거래 확인: 종가 65,900원). 추정 종목코드 295310·KOSDAQ 모두 일치. 보통주 단일 사업회사(지주/우선주 아님).",
+ "share_class": "보통주(우선주 없음, 발행주식수 보통주/우선주 12,027,291/0 기준 자료). 사업회사.",
+ "corporate_actions_24m": "사명 변경·인적/물적분할·합병·재상장·이전상장 없음(검색 범위 내). 자본 이벤트: 2025-07 제1회차 CB 400억 발행, 2026-04-02 제2회차 CB 920억 발행 결정, 2026-09-17~21 제1회차 CB 59억 전환청구(신주 182,785주, 2026-10-02 기재정정, 추가상장 10/13).",
+ "price": {
+  "value": "65900",
+  "date": "2026-10-21",
+  "kind": "종가",
+  "source_url": "https://www.biztribune.co.kr/news/articleView.html?idxno=360970",
+  "source_date": "2026-10-21",
+  "note": "2026-10-22 종가는 WebSearch로 확인 불가(검색 5회 이상 시도). 10/21 종가 65,900원(+2.81%, 장중 고가 69,900원, 전일 10/20 종가 역산 64,100원)은 비즈트리뷴·CBC뉴스·미디어펜 3개 매체 일치. 미디어펜/스페셜타임스 기사에 '22일 오전장에서 전일 상승폭 상당 부분 반납 중'이라는 언급만 있어 10/22 종가는 65,900원보다 낮을 가능성이 높음(코스피 -3.52% 급락일). 참고: 10/7 종가 76,700, 10/8 종가 74,200, 9/28 종가 58,000, 9/23 종가 63,100. 52주 최고 144,000 / 최저 21,950(한경).",
+  "alt_price_1021": "65900"
+ },
+ "market_cap_bn": {
+  "value": "8310",
+  "date": "2026-10-21",
+  "source_url": "https://www.biztribune.co.kr/news/articleView.html?idxno=360970",
+  "note": "자체 계산: 10/21 종가 65,900원 x 추정 상장주식수 12,609,647주 = 약 8,310억원. 외부 사이트 표시값은 조회 시점이 달라 상이(알파스퀘어 7,827억=63,100원x12,404,558주, 트레이딩뷰 약 7,841억, 2026-09-15 기준 6,636억, 또 다른 자료 8,708억). 10/22 급락 반영 시 더 낮을 수 있음."
+ },
+ "shares_outstanding": {
+  "value": "12609647",
+  "date": "2026-10-13",
+  "source_url": "https://www.chickstockfi.com/disclosures/20261002900995",
+  "note": "추정치: 2026-09 전환청구 공시 기준 발행주식총수 12,426,862주 + 신규 전환주식 182,785주(추가상장 2026-10-13) = 12,609,647주. 알파스퀘어는 12,404,558주, FnGuide는 12,027,291주(구 기준, 2026-04 CB공시 당시 기준 주식수와 일치)로 표시되어 출처별 기준일 차이 존재. 채택: 공시 기반 합산치."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "note": "자기주식 취득·보유 관련 공시/기사 검색 결과 없음. 트레이딩뷰 유통주식수 7.08M은 최대주주 지분 제외 유통물량 개념으로 자사주와 무관.",
+  "source_url": "https://kr.tradingview.com/symbols/KRX-295310/"
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기(1H26, 연결) — 3분기 실적은 미발표(검색 범위 내 확인 안 됨)",
+ "financials": [
+  {
+   "period": "FY2024(연결)",
+   "revenue_bn": "451.4",
+   "op_income_bn": "-67.9",
+   "net_income_bn": "-84",
+   "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A295310",
+   "note": "FnGuide IFRS 연결: 매출 451억4043만원(+8.9%), 영업손실 -67.9억(사람인·FnGuide), 데일리인베스트는 영업손실 -70.6억으로 보도(별도/연결 차이 추정). 순손실 -84억(FnGuide). 채택: FnGuide 연결. 분할·합병 없어 기간 비교 가능."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "665.3",
+   "op_income_bn": "58.4",
+   "net_income_bn": "126.1",
+   "source_url": "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/K3FocE4yMFNYUVZjb0ZjaTl5QUJadz09/company_nm/(%EC%A3%BC)%ED%95%9C%EA%B5%AD%EC%A7%84%EA%B3%B5%EC%95%BC%EA%B8%88",
+   "note": "매출 665억3155만원(+47.4%), 영업이익 58억3744만원(OPM 8.8%)은 2026-02-11 잠정실적 공시(영업이익 58억) 및 FnGuide와 일치. 당기순이익 126억1133만원은 사람인 표기로 연결/별도 여부 미확인이며 영업이익 대비 과대(파생상품평가이익 등 영업외 요인 추정, 미검증). 우주 부문 매출 395억(약 60%). 3Q25 누적: 매출 431.0억, 영업이익 46.0억."
+  },
+  {
+   "period": "1Q26(별도)",
+   "revenue_bn": "233",
+   "op_income_bn": "44",
+   "net_income_bn": "N/A",
+   "source_url": "https://v.daum.net/v/20260518142732163?sicode=01",
+   "note": "메리츠증권 인용: 매출 233억(+79.4% YoY), 영업이익 44억(+292% YoY), 컨센서스(33억) 상회. 순이익은 +482.6% YoY로만 보도(절대값 미확인). 우주향 매출 149억(+143%)."
+  },
+  {
+   "period": "1H26(연결)",
+   "revenue_bn": "524.2",
+   "op_income_bn": "64.3",
+   "net_income_bn": "-55.9",
+   "source_url": "https://www.biztribune.co.kr/news/articleView.html?idxno=360970",
+   "note": "비즈트리뷴 2026-10-21 기사: 상반기 연결 매출 524억2017만원, 영업이익 64억2796만원, 당기순손실 -55억8535만원. 영업흑자에도 순손실은 CB 관련 파생상품평가손실 등 영업외 요인 추정(미검증). 2Q26 단독(역산, 1Q 별도 기준 혼재 주의): 매출 약 291억, 영업이익 약 20억. DART 반기보고서 원문 미확인."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2026-03-31",
+  "cash_bn": "297",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "note": "2026-04 CB 발행 공시 인용: 1Q26 말 현금 및 단기투자자산 297억. 이후 920억 CB 납입(2026-04)으로 현금·부채 동시 증가 추정. 제1회차 CB 잔액 218.25억 + 제2회차 920억 = 전환사채 약 1,138억 부채 존재(순차입금 산정 불가). 자기자본·영업현금흐름·CAPEX 미확인.",
+  "source_url": "https://m.news.nate.com/view/20260402n28980"
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "N/A",
+  "dividend_yield_pct": "N/A",
+  "buyback_policy": "자사주 매입·소각 공시 없음(검색 범위). 성장 투자(2·3공장 증설) 단계로 배당 미실시 추정(FY2024 적자, FY2025 소폭 흑자). 배당 관련 공시 확인 안 됨.",
+  "valueup_disclosure": "밸류업(기업가치 제고 계획) 공시 확인 안 됨",
+  "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A295310"
+ },
+ "dilution": {
+  "convertibles": "(1) 제1회차 CB: 2025-07 발행 권면 400억, 전환가 32,278원. 2026-09-17~21 59억 전환청구(182,785주, 추가상장 2026-10-13). 전환 후 미전환 잔액 218.25억 → 전환가능 676,157주(현 주가 대비 깊은 내가격, 지속 전환·물량 출회 가능). (2) 제2회차 CB: 2026-04-02 결정 920억(시설 500억·운영 420억, 제3공장 증설), 전환가 90,916원, 전환가능 1,011,923주(당시 발행주식수 대비 7.76%), 전환청구기간 2027-04-10~2031-03-10, 풋옵션·콜옵션 포함, 시가하회 증자 시 전환가 조정 조항(리픽싱 여부 미확인). BW·EB·RCPS 확인 안 됨.",
+  "stock_options": "N/A (검색 결과 없음; 검색 예산 소진으로 추가 확인 불가)",
+  "rights_issues": "최근 24개월 유상증자 없음(검색 범위). 예정 증자 없음.",
+  "est_dilution_pct": "13.4",
+  "source_url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=702180"
+ },
+ "ownership": {
+  "largest_holder": "문승호(대표이사) 및 특별관계자 5인",
+  "largest_holder_pct": "35.83",
+  "overhang_notes": "2026-03-10 공시: 문승호 본인 30.7%, 차연숙 4.72% 등 합계 35.83%(의결권 기준 35.69%, 직전 대비 -0.45%p — CB 전환 등 희석). 최재영 상무(10%이상 주주)가 2025-10-27 시간외 블록딜로 230,000주(단가 22,705원) 처분 후 8.07%로 축소 → 추가 매도 오버행 가능. IPO 보호예수(5,680,000주, 1년)는 2025년 만료. 오버행: 제1회차 CB 잔여 676,157주(전환가 32,278원, 주가 대비 약 2배 내가격) 전환 후 출회 가능성, 제2회차 CB 1,011,923주(2027-04부터).",
+  "source_url": "https://m.news.nate.com/view/20260310n33778"
+ },
+ "business": {
+  "summary": "고청정 진공용해(VIM/VAR 등) 기반 첨단금속·특수합금 제조사. 우주발사체·항공·방산용 니켈계 초내열합금, 타이타늄 합금, 반도체 스퍼터링 타겟 소재 등 생산. 2022~23년부터 스페이스X 랩터 엔진용 특수금속 1차 벤더로 공급, 나로호·누리호 납품 이력. 서산 2공장(2025년 가동 지연 후 4Q25 양산) 및 제3공장 증설(2026-09 발표) 진행, CAPA 2024년 5,420톤→2026년 40,650톤 계획(유안타).",
+  "segments": "우주 부문 2025년 매출 395억(약 60%; 3Q25 누적 241/431억 56%), 2026E 우주 비중 62.9~68.5%(하나·신한·메리츠 추정). 나머지: 항공·방산, 반도체 타겟 소재, 기타 산업용 첨단금속. 세부 부문별 공시 비중 미확인.",
+  "key_customers": "스페이스X(최대 고객, 랩터 엔진용 Ni계 합금), 국내 발사체(누리호 관련 KAI/한화에어로스페이스 등 추정, 미검증), 반도체 타겟 고객(미확인). 수주잔고 485억 중 우주 359억(시점 미확인).",
+  "customer_concentration": "단일 고객(스페이스X 추정) 매출 비중 44%(bosoop 분석 제목, 기준 기간 미확인). 우주 부문 전체 약 60%로 스페이스X 의존도 매우 높음.",
+  "competitors": "국내 직접 경쟁사 사실상 없음(초내열합금 국산화 업체). 해외: ATI, Carpenter Technology, Haynes International, Special Metals(PCC) 등 (memory_unverified). 국내 관련주로 스피어(스페이스X 공급망)와 동반 분류.",
+  "industry_group": "우주항공·위성통신·5G6G"
+ },
+ "consensus": {
+  "target_price_avg": "83500",
+  "target_price_date": "2026-09-23",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "978",
+  "op_2026e_bn": "158",
+  "rev_2027e_bn": "1277",
+  "op_2027e_bn": "240",
+  "recent_report_summary": "방향: 하향 추세. 한국투자증권 2026-05-18 '1Q26 Review: 놀라운 수익성' 매수, TP 136,000원(4/21자 119,000원에서 상향; 당일 주가 +20%, 117,700원). 2026-07-15 인포스탁데일리: 우주향 매출 견인으로 하반기 우상향 지속되나 증설 부담으로 목표가 하향(증권사명 미확인). 9월 기준 개별 목표가 63,000~90,000원(최고 90,000원), 알파디스틸 AI 리서치 145,000→63,000원으로 하향. 스톡플러스 집계 2026-09-23 목표주가 83,500원, 투자의견 매수(4.00). FnGuide 별도 기준 컨센서스: 2026E 매출 978억·영업이익 158억·순이익 125억, 2027E 매출 1,277억·영업이익 240억·순이익 204억(집계 시점 미확인). 메리츠(2025-08)는 2026E 매출 1,023억·영업이익 158억 제시, 이후 '연 5,000억 이상 매출 가능' 언급도 있으나 맥락 미확인.",
+  "source_url": "https://www.stockplus.com/m/stocks/KOREA-A295310"
+ },
+ "recent_events": [
+  {
+   "event": "스페이스X 3Q 실적 서프라이즈(매출 145.8억달러 +161%, 영업이익 흑자전환) 발표 후 관련주 강세. 에이치브이엠 장중 +9.05%(69,900원) 후 종가 65,900원(+2.81%) 마감. 22일 오전장 상승분 상당 부분 반납.",
+   "event_date": "2026-10-21",
+   "article_date": "2026-10-21",
+   "source_url": "https://www.cbci.co.kr/news/articleView.html?idxno=617749"
+  },
+  {
+   "event": "제1회차 CB 전환청구권 행사 기재정정 공시: 9/17~21 전환청구 59억 → 신주 182,785주(발행주식총수 12,426,862주의 1.47%), 전환가 32,278원, 추가상장일 10/19→10/13 정정. 미전환 잔액 218.25억(676,157주).",
+   "event_date": "2026-10-02",
+   "article_date": "2026-10-02",
+   "source_url": "https://www.chickstockfi.com/disclosures/20261002900995"
+  },
+  {
+   "event": "주가 급락: 9/28 종가 58,000원(-9.37%), 장중 저가 57,900원. CB 전환물량 출회 및 차익실현 추정.",
+   "event_date": "2026-09-28",
+   "article_date": "2026-09-28",
+   "source_url": "https://markets.hankyung.com/stock/295310"
+  },
+  {
+   "event": "제3공장 증설 및 핵심 장비 도입 발표(문승호 대표: 우주항공·방산 첨단금속 수요 선제 대응). 9/17 장중 +13.7%(60,600원).",
+   "event_date": "2026-09",
+   "article_date": "2026-09-17",
+   "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=548914"
+  },
+  {
+   "event": "상반기(1H26) 연결 실적: 매출 524.2억, 영업이익 64.3억, 당기순손실 -55.9억(반기보고서, 8월 중순 제출 추정).",
+   "event_date": "2026-08",
+   "article_date": "2026-10-21",
+   "source_url": "https://www.biztribune.co.kr/news/articleView.html?idxno=360970"
+  },
+  {
+   "event": "증권사 목표주가 하향: 우주향 매출 견인에 하반기 우상향 지속 전망이나 증설(CAPEX) 부담으로 목표가 하향.",
+   "event_date": "2026-07-15",
+   "article_date": "2026-07-15",
+   "source_url": "https://www.infostockdaily.co.kr/news/articleView.html?idxno=216862"
+  },
+  {
+   "event": "스페이스X 상장 수혜 및 하반기 수주 랠리 기대 리포트(클릭 e종목). 5~6월 스페이스X IPO 테마로 주가 급등(5/18 장중 117,700원, 52주 최고 144,000원).",
+   "event_date": "2026-06-12",
+   "article_date": "2026-06-12",
+   "source_url": "https://v.daum.net/v/20260612083048388"
+  },
+  {
+   "event": "한국투자증권 1Q26 리뷰 '놀라운 수익성': 매수, TP 119,000→136,000원 상향. 1Q26 매출 233억(+79%), 영업이익 44억(+292%, 컨센 33억 상회). 당일 주가 +20%대.",
+   "event_date": "2026-05-18",
+   "article_date": "2026-05-18",
+   "source_url": "https://v.daum.net/v/20260518142732163?sicode=01"
+  },
+  {
+   "event": "제2회차 CB 920억 발행 결정(전환가 90,916원, 1,011,923주·7.76%, 전환청구 2027-04-10~, 풋·콜옵션). 자금: 제3공장 증설 시설 500억 + 운영 420억.",
+   "event_date": "2026-04-02",
+   "article_date": "2026-04-02",
+   "source_url": "https://m.news.nate.com/view/20260402n28980"
+  },
+  {
+   "event": "최대주주 문승호 외 특별관계자 지분율 0.45%p 감소, 합계 35.83%(CB 전환 등에 따른 희석).",
+   "event_date": "2026-03-10",
+   "article_date": "2026-03-10",
+   "source_url": "https://m.news.nate.com/view/20260310n33778"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 종가 미확인(검색으로 당일 마감 시세 기사 없음). 10/21 종가 65,900원 채택, 22일 오전장 반납 언급만 확인.",
+  "상장주식수는 공시 합산 추정치(12,609,647주)로 KRX 공식 수치 미확인. 시가총액도 자체 계산.",
+  "자기주식 수·비율 미확인(공시 검색 결과 없음).",
+  "스톡옵션(주식매수선택권) 부여·미행사 잔량 미확인 — 검색 예산 소진으로 추가 검색 불가.",
+  "FY2025 당기순이익 126.1억은 사람인 수치로 연결/별도 미확인, 영업이익 대비 과대하여 영업외 요인 검증 필요. 1H26 순손실의 원인(파생상품평가손실 추정) 미검증.",
+  "영업현금흐름·CAPEX·총차입금·자기자본 미확인. 현금 297억은 1Q26 말 기준이며 CB 920억 납입 후 변동.",
+  "목표주가 평균 83,500원(2026-09-23)의 증권사 수 미확인. 7/15 목표가 하향 리포트의 증권사명·신규 목표가 미확인. FnGuide 컨센서스 집계 시점 미확인.",
+  "3Q26 실적 발표 여부 미확인(통상 11월 중순 분기보고서).",
+  "고객 집중도 44%의 기준 기간(FY2025 vs 3Q25 누적) 미확인. 수주잔고 485억 시점 미확인.",
+  "경쟁사 목록은 기억 기반(memory_unverified).",
+  "제2회차 CB 리픽싱 발동 여부 미확인(현 주가 65,900원 < 전환가 90,916원)."
+ ],
+ "sources": [
+  {
+   "title": "[특징주] 스페이스X '어닝 서프라이즈'에 스피어·에이치브이엠 강세 - 비즈트리뷴(10/21 종가, 1H26 실적)",
+   "url": "https://www.biztribune.co.kr/news/articleView.html?idxno=360970",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "스페이스X 3분기 매출 161% 급증·흑자 전환…스피어 5.54%·에이치브이엠 3.59% 상승 - CBC뉴스",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=617749",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "스페이스X, 예상 밖 호실적…국내 증시 영향은? - 미디어펜",
+   "url": "https://www.mediapen.com/news/view/1131742",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "스페이스X 3분기 매출 161% 급증…국내 관련주 상승 마감 - 스페셜타임스",
+   "url": "https://www.specialtimes.co.kr/news/articleView.html?idxno=476773",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "에이치브이엠 [기재정정]전환청구권행사 (제1회차) - 치킨스탁",
+   "url": "https://www.chickstockfi.com/disclosures/20261002900995",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "에이치브이엠, 제1회차 전환사채 전환청구권 행사…신주 18만2785주 발행 - 디지털투데이",
+   "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=702180",
+   "date": "2026-09"
+  },
+  {
+   "title": "에이치브이엠, 920억원 규모 CB 발행…제3공장 증설 추진 - 네이트뉴스",
+   "url": "https://m.news.nate.com/view/20260402n28980",
+   "date": "2026-04-02"
+  },
+  {
+   "title": "에이치브이엠, 920억 규모 전환사채 발행 결정 - 네이트뉴스",
+   "url": "https://m.news.nate.com/view/20260402n35699",
+   "date": "2026-04-02"
+  },
+  {
+   "title": "에이치브이엠 최대주주 문승호 지분율 0.45%p 감소…총 지분율 35.83% - 네이트뉴스",
+   "url": "https://m.news.nate.com/view/20260310n33778",
+   "date": "2026-03-10"
+  },
+  {
+   "title": "10%이상주주 최재영, 에이치브이엠 보유 주식 감소 - 디지털투데이",
+   "url": "https://www.digitaltoday.co.kr/aigongsi/4280/choi-jaeyoung-hvm-stake-decrease",
+   "date": "2025-10"
+  },
+  {
+   "title": "[특징주] 에이치브이엠, 증권가 낙관론에 20%대↑ (1Q26 실적, 한투 TP 136,000)",
+   "url": "https://v.daum.net/v/20260518142732163?sicode=01",
+   "date": "2026-05-18"
+  },
+  {
+   "title": "씽크풀: 에이치브이엠 '1Q26 Review: 놀라운 수익성' 목표가 136,000원 - 한국투자증권",
+   "url": "https://m.thinkpool.com/breakingNews/cont/266464",
+   "date": "2026-05-18"
+  },
+  {
+   "title": "에이치브이엠, 우주향 매출 견인에 하반기 우상향 지속…증설 부담으로 목표가↓ - 인포스탁데일리",
+   "url": "https://www.infostockdaily.co.kr/news/articleView.html?idxno=216862",
+   "date": "2026-07-15"
+  },
+  {
+   "title": "[클릭 e종목] 에이치브이엠, 스페이스X 상장 수혜…하반기 수주 랠리↑",
+   "url": "https://v.daum.net/v/20260612083048388",
+   "date": "2026-06-12"
+  },
+  {
+   "title": "에이치브이엠(A295310) - FnGuide 컴퍼니가이드(재무·컨센서스)",
+   "url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A295310",
+   "date": "N/A"
+  },
+  {
+   "title": "에이치브이엠 종목 상세 - 스톡플러스(목표주가 83,500원, 2026-09-23)",
+   "url": "https://www.stockplus.com/m/stocks/KOREA-A295310",
+   "date": "2026-09-23"
+  },
+  {
+   "title": "에이치브이엠 주가 - 알파스퀘어(주식수 12,404,558, 시총 7,827억)",
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=295310",
+   "date": "N/A"
+  },
+  {
+   "title": "에이치브이엠 - 한경 마켓(52주 고저, 9/28 시세)",
+   "url": "https://markets.hankyung.com/stock/295310",
+   "date": "N/A"
+  },
+  {
+   "title": "(주)에이치브이엠 2025년 재무정보 - 사람인",
+   "url": "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/K3FocE4yMFNYUVZjb0ZjaTl5QUJadz09/company_nm/(%EC%A3%BC)%ED%95%9C%EA%B5%AD%EC%A7%84%EA%B3%B5%EC%95%BC%EA%B8%88",
+   "date": "N/A"
+  },
+  {
+   "title": "에이치브이엠 - 기업모니터(1Q26 증감률)",
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=295310",
+   "date": "2026-06-03"
+  },
+  {
+   "title": "에이치브이엠 주가, 10월 7일 애프터마켓 71,900원 - 중앙이코노미뉴스",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=553366",
+   "date": "2026-10-07"
+  },
+  {
+   "title": "에이치브이엠 주가, 9월 17일 장중 60,600원 13.70% 상승 - 중앙이코노미뉴스",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=548914",
+   "date": "2026-09-17"
+  },
+  {
+   "title": "에이치브이엠, 스페이스X 모멘텀 되살아나나...특수금속으로 스타십 양산 수혜 - 오피니언뉴스(2025 우주 매출 395억/665억)",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=140021",
+   "date": "2026"
+  },
+  {
+   "title": "스페이스X 수혜주…서사 아닌 구조를 읽어라 - 한경매거진",
+   "url": "https://magazine.hankyung.com/money/article/202605158884c",
+   "date": "2026-05-15"
+  },
+  {
+   "title": "에이치브이엠 주가 전망·실적 분석: 우주 부문 423% 폭증…단일 고객 44% 의존 - bosoop",
+   "url": "https://www.bosoop.com/b666b26a-8182-428d-88ed-84aad1eeb0b7/",
+   "date": "N/A"
+  },
+  {
+   "title": "[서치 e종목] 에이치브이엠, 올해 우주 매출 두 배 이상 성장 전망 - 데일리인베스트(FY2024 실적)",
+   "url": "http://www.dailyinvest.kr/news/articleView.html?idxno=64803",
+   "date": "2025"
+  },
+  {
+   "title": "메리츠증권 리포트 PDF(2025-08, CAPA·우주 매출 추정)",
+   "url": "https://home.imeritz.com/include/resource/research/WorkFlow/20250814200809074K_02.pdf",
+   "date": "2025-08-14"
+  },
+  {
+   "title": "IPO 예정 보고서(보호예수 5,680,000주 47.7%) - 파이넛츠",
+   "url": "https://www.finuts.co.kr/datas/report/2cf4f8ca08df750eb1ed0cf58c538ecbff086dea.pdf",
+   "date": "2024"
+  },
+  {
+   "title": "295310 - TradingView(시총 약 7,841억, 유통주식 7.08M)",
+   "url": "https://kr.tradingview.com/symbols/KRX-295310/",
+   "date": "N/A"
+  }
+ ],
+ "search_count": "19 (실행 완료 19회; 추가 5회는 세션 공유 WebSearch 예산 소진으로 미실행 — 스톡옵션·3공장 투자규모·7월 목표가 하향 상세·2Q26 단독·9~10월 증권사 리포트 검색 불가)"
+}

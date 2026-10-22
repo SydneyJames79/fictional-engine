@@ -1,0 +1,335 @@
+{
+ "input_name": "이수페타시스",
+ "legal_name": "주식회사 이수페타시스 (Isu Petasys Co., Ltd.)",
+ "ticker": "007660",
+ "market": "KOSPI",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "종목코드 007660·유가증권시장(KOSPI) 상장 확인(메리츠·SK증권 리포트 '007660/KS', 증권일보 '유가증권시장' 기사). 거래정지·관리종목·투자주의환기·상장폐지심사 관련 기사 없음(검색 결과 기준). 2026-10-22 장중 정상 거래 확인(11시 전후 93,600원 체결). 보통주 사업회사(지주회사 아님, 모회사 ㈜이수가 최대주주).",
+ "share_class": "보통주(사업회사). 우선주 상장 없음(검색 결과 기준).",
+ "corporate_actions_24m": "사명변경·인적/물적분할·합병·재상장·이전상장 없음(검색 결과 기준). 주요 자본 이벤트: 2024-11 제이오 인수(지분 30.11% 확보, 제이오 CB 420억 매입 포함) 목적 5,500억 주주배정 유상증자 공시('올빼미 공시' 논란, 금감원 증권신고서 2회 반려) → 2025-01-23 제이오 SPA 해제 통지·인수 철회, 유상증자 2,500억으로 축소(다음날 주가 +28.01%, 40,900원) → 2025년 중 2,500억 유상증자 완료(완료일·발행가·신주수는 검색으로 미확인). 유증 자금은 대구 5·6공장 증설에 투입(CBC뉴스 2026-08).",
+ "price": {
+  "value": "89800",
+  "date": "2026-10-22",
+  "kind": "종가 (기준가 확정 에이전트 갱신)",
+  "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=233962",
+  "source_date": "2026-10-22",
+  "note": "10/22 종가는 9회 검색 한도 내에서 확보 실패. 10/22 11:08 기준 93,600원(전일 종가 대비 -2,300원, -2.40%, 중앙이코노미뉴스/톱스타뉴스 자동기사, 네이버페이증권 인용). 코스피가 -3.52% 급락 마감한 날이므로 실제 종가는 장중가보다 더 낮을 가능성 있음. 전일(10/21) 종가는 출처 충돌: (a) 10/22 장중기사 '지난 종가 95,900원' vs (b) '지난 거래일 시가 98,200·고가 98,500·저가 94,600·종가 96,300·거래량 435,685주'(anewsa). 10/21 장중 기사들(96,200원 +0.31%, 97,900원 +2.09%)의 역산 전일종가가 95,900원이므로 95,900원은 10/20 종가일 가능성이 높고, 10/21 종가는 96,300원을 채택. 참고: 10/19 종가 98,600원(한경컨센서스), 10/7~8 장중 127,000원대 → 2주 만에 약 -26%. | 갱신: 잡포스트 마감 기사: 전 거래일 대비 6,100원(-6.36%) 내린 89,800원 마감, 고가 97,300원, 저가 89,800원(저가 마감). 역산 전일(10/21) 종가 95,900원은 장중 기사(93,600원, -2.40%)와도 정합. 기존 기준가 93,600원(장중체결가)을 종가로 교체.",
+  "alt_price_1021": "96300",
+  "prev_value": "93600",
+  "prev_date": "2026-10-22",
+  "prev_kind": "장중체결가(오전 11시 08분경, 종가 아님)"
+ },
+ "market_cap_bn": {
+  "value": "68858",
+  "date": "2026-10-22",
+  "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=557344",
+  "note": "10/22 장중(93,600원) 기준 6조 8,858억원(기사 집계). 10/21 종가 96,300원 기준 환산 시 약 7조 844억원('7조원 안팎' 기사와 부합). 10/22 종가 기준 시총은 미확인."
+ },
+ "shares_outstanding": {
+  "value": "73566000",
+  "date": "2026-10-22",
+  "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=557344",
+  "note": "직접 공시 수치 미확보. 역산값: 시총 6조8,858억 ÷ 93,600원 ≈ 7,357만주. FY2025 배당총액 168억 ÷ DPS 230원 ≈ 7,304만주와 근사(배당총액 반올림 영향). 2025년 2,500억 유상증자로 신주 발행된 이후 수치. 정확한 발행주식수는 DART 반기보고서 확인 필요."
+ },
+ "treasury_shares": {
+  "count": "0",
+  "pct": "0",
+  "source_url": "https://www.petasys.com/upload/new_board/B1774347328868.pdf",
+  "note": "회사 IR 정정자료('오해와 진실 세 가지 우려에 대한 정정') 재무표에 자기주식 0으로 표시. 2026년 자사주 취득·소각 공시는 검색 결과에서 확인되지 않음. 최신 반기보고서 기준 재확인 필요."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 2분기(반기, 2026-08-18 실적 발표). 3분기 실적 발표는 2026-11-18 예정.",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "8369",
+   "op_income_bn": "1019",
+   "net_income_bn": "740",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "http://home.imeritz.com/include/resource/research/WorkFlow/20260409071141653K_02.pdf",
+   "note": "연결 기준(메리츠증권 Company Brief 2026-04-09, 십억원 단위 836.9/101.9/74.0). 분할·합병 없어 전후 비교 가능."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "10880",
+   "op_income_bn": "2047",
+   "net_income_bn": "1605",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "http://home.imeritz.com/include/resource/research/WorkFlow/20260409071141653K_02.pdf",
+   "note": "연결 기준. 매출 1조 880억(+30% YoY, 창사 첫 1조 돌파), OPM 18.8%. 메리츠 2026-04 브리프 및 economic22 요약 수치 일치. 4Q25: 매출 2,980 / 영업이익 565 / 순이익 436(씽크풀 실적속보). 2025-09 시점 메리츠 추정(10,320/1,943/1,511)을 상회. DART 사업보고서 확정치 직접 확인은 못 함."
+  },
+  {
+   "period": "1Q26",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=007660",
+   "note": "연결 매출 +34.8%, 영업이익 +41.0%, 순이익 +31.7% YoY(기업모니터 요약). OPM 19.7%. 사전 추정치는 매출 3,254/영업이익 646이었으나 실제 절대값은 미확보."
+  },
+  {
+   "period": "2Q26",
+   "revenue_bn": "3799",
+   "op_income_bn": "771",
+   "net_income_bn": "N/A",
+   "source_url": "https://koreastocklens.com/ir-%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4-007660-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81-2026-08-18/",
+   "note": "연결 매출 3,799(+57% YoY, 컨센 3,573 상회), 영업이익 771(+83% YoY), OPM 20.3%. 법인별: 본사 매출 3,082/영업이익 549, 중국 후난법인 매출 867/영업이익 169. 2Q말 별도 수주잔고 6,222억(1Q말 5,737억, 4Q25말 3,576억). 순이익 미확인. 1H26 합계는 1Q26 절대값 미확보로 산출 불가."
+  },
+  {
+   "period": "3Q26E(컨센서스 아님, 다올투자증권 프리뷰 2026-10-20)",
+   "revenue_bn": "4330",
+   "op_income_bn": "961",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.fnnews.com/news/202610200835496616",
+   "note": "추정치(매출 +46.2%, 영업이익 +64.4% YoY). 판가 인상 조기 반영·저마진 물량 축소로 수익성 개선 전망. 실제 발표 11/18."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2024-12-31(부분)",
+  "cash_bn": "800",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "https://www.petasys.com/upload/new_board/B1774347328868.pdf",
+  "note": "회사 정정자료 재무표: 2024년말 현금성자산 약 800억, 단기금융부채 약 1,800억(장기차입 포함 총차입금 미확인). 2025년 2,500억 유상증자 유입 및 5·6공장 CAPEX 집행 후 2026년 반기 기준 순현금/자기자본은 미확보. 2026년 반기보고서 확인 필요."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "230",
+  "dividend_yield_pct": "0.24",
+  "buyback_policy": "자사주 매입·소각 정책 및 2026년 관련 공시 확인되지 않음(자기주식 0). 주주환원은 현금배당 중심.",
+  "valueup_disclosure": "밸류업 공시 있음(2025년 상반기 중 공시 예고 후 공시, 주주환원율 25~30% 목표). 2026-05-05 '밸류업 점검' 기사에 따르면 FY2025 주주환원율 10%대로 전년(14.5%)보다 낮아져 목표 구간 미달.",
+  "source_url": "https://m.news.nate.com/view/20260226n33257"
+ },
+ "dilution": {
+  "convertibles": "자사 발행 CB·BW·EB 없음(검색 결과 기준). 2024-11 계획했던 제이오 CB 420억 매입은 인수 철회로 무산.",
+  "stock_options": "N/A(미확인)",
+  "rights_issues": "2025년 주주배정 유상증자 2,500억 완료(당초 5,500억에서 축소; 발행가·신주수·납입일 미확인). 추가 증자 예정 공시 없음. 2026-08 6공장 추가 투자 추진 중이나 자금조달 방식 미공개.",
+  "est_dilution_pct": "0",
+  "source_url": "https://v.daum.net/v/1rR5FBP30r"
+ },
+ "ownership": {
+  "largest_holder": "㈜이수(이수그룹 지주회사) 외 특수관계인",
+  "largest_holder_pct": "26.59",
+  "overhang_notes": "출처 충돌: 증권커뮤니티 요약 '이수 외 26.59%' vs Investing.com 'Isu Corp. 21.47%(보고일 2026-09-04)'. 21.47%는 ㈜이수 단독 지분(특수관계인 제외) 또는 유증 후 변동치일 가능성. 26.59% 채택하되 DART 최대주주 현황 확인 필요. 국민연금 9.87~10.00%. 보호예수 해제·블록딜·오버행 관련 기사 없음.",
+  "source_url": "https://www.investing.com/equities/isupetasys"
+ },
+ "business": {
+  "summary": "AI 가속기·ASIC, 800G/1.6T 네트워크 스위치용 고다층 PCB(MLB, 18층 이상) 전문 제조사. 대구 본사(5공장 가동·6공장 증설 중)와 중국 후난법인. 2Q26 기준 다중적층(Multi-Lam) 제품 매출비중 11%(1Q 7%)로 상승 중. 고사양 신규수주 비중 1Q26 14% → 3Q26 30%대 전망. 6공장 가동 시 2028년 생산계획 매출 2조원 이상.",
+  "segments": "단일사업(MLB PCB). 법인별 2Q26: 본사 이수페타시스 매출 3,082억(81%) / 중국 후난법인 867억(19%)(단순합산). 용도별 비중 공시치 미확인(AI 가속기·네트워크 장비가 주력).",
+  "key_customers": "구글(TPU 등 ASIC), 엔비디아, 시스코·아리스타 등 네트워크 장비사(검색 결과 'G사 TPU 7세대' 언급; 고객명은 기사 기반, 회사 공식 공개 아님)",
+  "customer_concentration": "N/A(상위 고객 비중 공시치 미확인). 일부 네트워크 고객사가 2027년 물량까지 선확보 움직임(NH투자증권).",
+  "industry_group": "반도체·AI하드웨어·디스플레이장비",
+  "competitors": "TTM Technologies(미국), WUS Printed Circuit(중국), Unimicron·Tripod(대만), 국내 대덕전자 등. 회사 측은 고다층 MLB 공급사가 '전 세계 3곳' 수준으로 제한적이라 주장."
+ },
+ "consensus": {
+  "target_price_avg": "165000",
+  "target_price_date": "2026-10-19",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "한경컨센서스(10/19): 목표가 165,000원, 종가 98,600원, PER 52.33배, 52주 고가 164,400/저가 57,900. 다른 시점 평균: 178,636원(2026-05-28 신한 브리핑 시점), 167,500원(일자 미상). 개별: 메리츠 BUY 160,000(1/13), 한국투자 매수 180,000 유지(4/13), 신한 160,000 유지(5/28). 최근 1~2개월: 다올투자증권(10/20) 3Q26 매출 4,330억·영업이익 961억 전망, 판가 인상 조기화·고사양 비중 확대로 수익성 개선(방향: 긍정). 10월 발간 증권사 리포트 목표가 변경은 미확인. 2026E/2027E 매출·영업이익 컨센서스 수치는 미확보.",
+  "source_url": "https://markets.hankyung.com/stock/007660/consensus"
+ },
+ "recent_events": [
+  {
+   "event": "2Q26 실적 서프라이즈: 연결 매출 3,799억(+57%), 영업이익 771억(+83%), OPM 20.3%. 수주잔고 6,222억. 6공장 추가 투자 추진 발표.",
+   "event_date": "2026-08-18",
+   "article_date": "2026-08-18",
+   "source_url": "https://koreastocklens.com/ir-%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4-007660-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81-2026-08-18/"
+  },
+  {
+   "event": "다올투자증권 3Q26 프리뷰: 매출 4,330억·영업이익 961억 전망, 주요 고객 판가 인상 조기 반영, 연말 추가 인상 예상",
+   "event_date": "2026-10-20",
+   "article_date": "2026-10-20",
+   "source_url": "https://www.fnnews.com/news/202610200835496616"
+  },
+  {
+   "event": "SK증권 Corp Day 코멘트: '쇼티지 지속', 대구 5·6공장 램프업 가속, 추가 증설 검토",
+   "event_date": "2026-07-24",
+   "article_date": "2026-07-24",
+   "source_url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-07-4f5003b52717448ae1621eaf1f08e942"
+  },
+  {
+   "event": "주가 급락 국면: 10/7~8 장중 127,000원대 → 10/13 장중 110,900원(-8.27%) → 10/22 장중 93,600원(약 -26%). 'G사 TPU 7세대 매출 변수' 등 고객 물량 우려 기사",
+   "event_date": "2026-10-13",
+   "article_date": "2026-10-13",
+   "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16245448"
+  },
+  {
+   "event": "밸류업 점검: FY2025 주주환원율 10%대(전년 14.5%)로 목표(25~30%) 미달, 배당은 확대",
+   "event_date": "2026-05-05",
+   "article_date": "2026-05-05",
+   "source_url": "https://news.nate.com/view/20260505n13705"
+  },
+  {
+   "event": "신한투자증권 '2026년 하반기 전망' 목표가 160,000원 유지(당시 전체 목표가 평균 178,636원)",
+   "event_date": "2026-05-28",
+   "article_date": "2026-05-28",
+   "source_url": "https://news.nate.com/view/20260528n09215"
+  },
+  {
+   "event": "FY2025 결산배당 보통주 1주당 230원(총 168억) 결정, 배당기준일 2026-03-31",
+   "event_date": "2026-02-26",
+   "article_date": "2026-02-26",
+   "source_url": "https://m.news.nate.com/view/20260226n33257"
+  },
+  {
+   "event": "이수그룹 통합 IR Day: '25년 실적 및 '26년 경영계획 발표",
+   "event_date": "2026-04-07",
+   "article_date": "2026-04-07",
+   "source_url": "https://file.alphasquare.co.kr/media/pdfs/company-ir/20260407%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4_%E2%80%B2%EC%9D%B4%EC%88%98%EA%B7%B8%EB%A3%B9_%ED%86%B5%ED%95%A9_IR_DAY%E2%80%B2_%EA%B0%9C%EC%B5%9C.pdf"
+  },
+  {
+   "event": "Investing.com 보유자 집계: Isu Corp. 21.47%, 국민연금 10.00%(보고일 기준)",
+   "event_date": "2026-09-04",
+   "article_date": "2026-09-04",
+   "source_url": "https://www.investing.com/equities/isupetasys"
+  },
+  {
+   "event": "(참고·브로커 아님) 알파증류소 목표주가 190,000→120,000원 하향",
+   "event_date": "2026-07-09",
+   "article_date": "2026-07-09",
+   "source_url": "https://alphadistill.com/report/2331?ch=open"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 종가 미확보(장중 93,600원만 확인; 코스피 -3.52% 급락일이라 종가는 더 낮을 수 있음). 10/21 종가도 95,900 vs 96,300 충돌(96,300 채택).",
+  "상장주식수·자기주식 수 공시치 미확보(시총÷주가 역산 약 7,357만주, 자기주식 0은 회사 IR자료 기준).",
+  "1Q26 절대 실적(매출·영업이익·순이익) 및 1H26 합계 미확보(증감률만 확인). 2Q26 순이익 미확보.",
+  "2026년 반기 기준 순현금/총차입금/자기자본, 영업현금흐름·CAPEX 미확보.",
+  "2025년 유상증자 2,500억의 발행가·신주 수·납입일 미확인.",
+  "최대주주 지분율 출처 충돌(이수 외 26.59% vs Isu Corp 21.47%, 2026-09-04).",
+  "증권사 수·2026E/2027E 매출·영업이익 컨센서스 수치 미확보. 10월 발간 리포트 목표가 변동 미확인.",
+  "스톡옵션 미행사 잔량 미확인.",
+  "상위 고객 비중(고객 집중도) 공시치 미확인; 고객명은 언론 기사 기반.",
+  "FY2025 확정치가 DART 사업보고서 원문이 아닌 증권사 리포트·요약 기사 기반."
+ ],
+ "sources": [
+  {
+   "title": "이수페타시스 주가, 10월 22일 장중 93,600원 2.40% 하락 (중앙이코노미뉴스)",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557344",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "이수페타시스 주가 하락 중 (아시아뉴스통신, 10/21 OHLC·종가 96,300)",
+   "url": "https://www.anewsa.com/detail.php?number=3210124",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "이수페타시스 주가, 10월 21일 장중 96,200원 0.31% 상승",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=556932",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "이수페타시스 주가, 10월 21일 장중 97,900원 2.09% 상승",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16253345",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "[마감분석] 이수페타시스 하락 마감 9만5900원선 기록 (재경일보)",
+   "url": "https://news.jkn.co.kr/post/1036857",
+   "date": "N/A"
+  },
+  {
+   "title": "[IR] 이수페타시스 2026년 2분기 경영실적",
+   "url": "https://koreastocklens.com/ir-%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4-007660-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81-2026-08-18/",
+   "date": "2026-08-18"
+  },
+  {
+   "title": "이수페타시스, 증설·판가 인상···실적 성장 '탄력' (뉴스웨이)",
+   "url": "https://newsway.co.kr/news/view?ud=2026081908205170796",
+   "date": "2026-08-19"
+  },
+  {
+   "title": "메리츠증권 이수페타시스 Company Brief",
+   "url": "http://home.imeritz.com/include/resource/research/WorkFlow/20260409071141653K_02.pdf",
+   "date": "2026-04-09"
+  },
+  {
+   "title": "이수페타시스 주가 전망 2026 — 매출 1조·영업이익 급등 (economic22)",
+   "url": "https://economic22.com/isu-petasys-2026/",
+   "date": "2026"
+  },
+  {
+   "title": "[실적속보] 이수페타시스 4Q25 (씽크풀)",
+   "url": "https://m.thinkpool.com/news/view/16809015",
+   "date": "2026-02"
+  },
+  {
+   "title": "이수페타시스, 제이오 인수 계약 해지…유상증자 규모 대폭 축소",
+   "url": "https://v.daum.net/v/1rR5FBP30r",
+   "date": "2025-01-23"
+  },
+  {
+   "title": "이수페타시스, 제이오 인수 철회···주가 28%대 급등 (증권일보)",
+   "url": "http://www.s-d.kr/news/articleView.html?idxno=75255",
+   "date": "2025-01-24"
+  },
+  {
+   "title": "폭탄 유증으로 제이오 인수하는 이수페타시스…신용도 영향은 (블로터)",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=626516",
+   "date": "2024-11"
+  },
+  {
+   "title": "한경 컨센서스 이수페타시스",
+   "url": "https://markets.hankyung.com/stock/007660/consensus",
+   "date": "2026-10-19"
+  },
+  {
+   "title": "[리포트 브리핑] 이수페타시스 목표가 160,000원 - 신한투자증권",
+   "url": "https://news.nate.com/view/20260528n09215",
+   "date": "2026-05-28"
+  },
+  {
+   "title": "이수페타시스, 보통주 1주당 230원 현금배당 결정",
+   "url": "https://m.news.nate.com/view/20260226n33257",
+   "date": "2026-02-26"
+  },
+  {
+   "title": "[밸류업 점검] 이수페타시스, 실적 성장세 뚜렷…배당 확대",
+   "url": "https://news.nate.com/view/20260505n13705",
+   "date": "2026-05-05"
+  },
+  {
+   "title": "Investing.com 이수페타시스 (007660) 보유자",
+   "url": "https://www.investing.com/equities/isupetasys",
+   "date": "2026-09-04"
+  },
+  {
+   "title": "이수페타시스, 고사양 제품 확대에 수익성 개선 (파이낸셜뉴스, 다올 프리뷰)",
+   "url": "https://www.fnnews.com/news/202610200835496616",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "SK증권 이수페타시스 Corp Day 코멘트",
+   "url": "https://www.hankyung.com/koreamarket/consensus/pdf/2026-07-4f5003b52717448ae1621eaf1f08e942",
+   "date": "2026-07-24"
+  },
+  {
+   "title": "[코스피 현미경 분석] 이수페타시스, 캐파 증설로 매출 2조↑ (데일리인베스트)",
+   "url": "http://www.dailyinvest.kr/news/articleView.html?idxno=70769",
+   "date": "2026"
+  },
+  {
+   "title": "이수페타시스 오해와 진실 세 가지 우려에 대한 정정 (회사 IR자료)",
+   "url": "https://www.petasys.com/upload/new_board/B1774347328868.pdf",
+   "date": "2026-03"
+  },
+  {
+   "title": "기업모니터 이수페타시스 기업현황",
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=007660",
+   "date": "2026"
+  },
+  {
+   "title": "이수페타시스 주가, 10월 13일 장중 110,900원 8.27% 하락",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16245448",
+   "date": "2026-10-13"
+  }
+ ],
+ "search_count": "9"
+}

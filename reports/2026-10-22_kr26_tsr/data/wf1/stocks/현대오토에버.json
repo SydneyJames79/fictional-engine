@@ -1,0 +1,357 @@
+{
+ "input_name": "현대오토에버",
+ "legal_name": "현대오토에버 주식회사 (Hyundai AutoEver Corp.)",
+ "ticker": "307950",
+ "market": "KOSPI",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "추정 종목코드 307950·KOSPI 모두 일치(다음금융·한경마켓·FnGuide 페이지 A307950 코스피). 2026-10-22 당일까지 정상 거래 중(10/22 09:28 체결 기사 존재). 거래정지·관리종목·투자주의환기·상장폐지심사 관련 보도 없음(별도 확인 검색은 예산 초과로 미수행). 보통주 단일(우선주 0주). 사업회사(현대차그룹 IT·차량SW 계열사). 이름 유사 기업(현대오토넷 등)과 혼동 없음. 2026-10-22 종가는 검색으로 확인 불가 — 10/21 종가(간접 산출)를 기준가로 채택. 검색 예산(세션 공유 200회) 소진으로 유효 검색 12회에서 중단됨.",
+ "share_class": "보통주(단일), 사업회사",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 확인된 바 없음(2021-04 현대엠엔소프트·현대오트론 흡수합병은 24개월 밖). 2025-11/12·2026-04 KIND 검색에 나온 '자기주식 교환사채·자기주식 처분' 공시는 교환가 25,950원/27,800원 등으로 현대오토에버 주가(30만원대)와 전혀 맞지 않아 타사 공시로 판단, 미채택.",
+ "price": {
+  "value": "336000",
+  "date": "2026-10-21",
+  "kind": "종가(간접 산출: 아시아뉴스통신 '500원(-0.15%) 하락 후 장마감' 기사와 10/22 시가 336,000원으로 역산)",
+  "source_url": "https://www.anewsa.com/detail.php?number=3209912",
+  "source_date": "2026-10-21",
+  "note": "2026-10-22 종가 미확인(검색 결과에 없음). 10/22 09:28 기준 +0.89%, 시가 336,000·고가 342,000·저가 333,000(아시아뉴스통신 3210138, 장중가). 코스피 10/22 -3.52% 급락일이므로 10/22 종가는 10/21과 크게 다를 수 있음. 일자 충돌: 재경일보 '[마감분석] 6.53% 하락 마감 336,500원'(전일비 -23,500)을 한 검색요약은 10/21로, 다른 요약은 10/20으로 표기. 탑스타뉴스 10/19 애프터마켓 360,000원(+9.92%)과 체인(360,000→336,500→336,000)이 맞으므로 336,500원은 10/20 종가, 336,000원은 10/21 종가로 채택. 만약 6.53% 하락일이 10/21이면 10/21 종가는 336,500원.",
+  "alt_price_1021": "336000 (대안값 336500)"
+ },
+ "market_cap_bn": {
+  "value": "92145",
+  "date": "2026-10-21",
+  "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16251594",
+  "note": "계산값: 336,000원 × 27,423,982주 = 9조2,145억원. 출처 보도값: 10/19 360,000원 기준 9조8,726억원(탑스타뉴스), 363,000원 기준 9조8,863억(알파스퀘어), 374,000원 기준 10조235억(스톡플러스). 주가×주식수와 정합. 참고로 2026-05-27 765,000원 기준 20조9,793억원이었음(5개월 새 약 -56%)."
+ },
+ "shares_outstanding": {
+  "value": "27423982",
+  "date": "2026-10",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=307950",
+  "note": "보통주 27,423,982주 / 우선주 0주(알파스퀘어·탑스타뉴스 일치). 2021년 합병 이후 변동 없는 것으로 보임."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "source_url": "",
+  "note": "자기주식 수량·비율 미확인(검색 예산 소진으로 전용 검색 미수행). KIND에서 검색된 '자기주식 대상 교환사채 655,105주(발행주식총수 6.09%), 교환가 25,950원' 공시는 현대오토에버와 수치가 맞지 않아(655,105/27,423,982=2.39%, 주가 30만원대) 타사 공시로 판단, 미채택."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 2분기(2026-07-29 잠정실적 공시, 반기보고서). 3Q26 실적은 2026-10-22 현재 미발표(기업설명회 개최 안내·결산실적공시예고 공시 제출됨, 전년은 10/31 발표).",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "37136",
+   "op_income_bn": "2244",
+   "net_income_bn": "1752",
+   "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=491490",
+   "note": "매출 3조7,136억(+21.16%), 영업이익 2,244억(FnGuide/알파스퀘어 연간표). 순이익 1,752억은 FY2025 1,868억(+6.6%)에서 역산한 추정치(직접 수치 미확인; 다른 출처는 증가율 6.8%). 연결 기준, 합병 전후 비교 이슈 없음."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "42521",
+   "op_income_bn": "2553",
+   "net_income_bn": "1868",
+   "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=491490",
+   "note": "2026-01-30 잠정 공시: 매출 4조2,521억(+14.5%), 영업이익 2,553억(+13.8%), 순이익 1,868억(+6.6%). 연결 기준. 3Q25 단독: 매출 1조543억·영업이익 708억(+34.8%, OPM 6.7%)."
+  },
+  {
+   "period": "1Q26",
+   "revenue_bn": "9357",
+   "op_income_bn": "212",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.tokenpost.kr/amp/news/economy/356789",
+   "note": "매출 9,357억(+12.3%), 영업이익 212억(-20.7%) '실적 쇼크'(삼성증권 1Q26 Review 제목). 순이익 미확인."
+  },
+  {
+   "period": "2Q26",
+   "revenue_bn": "12507.4",
+   "op_income_bn": "905",
+   "net_income_bn": "695.9",
+   "source_url": "https://www.mt.co.kr/industry/2026/07/29/2026072914135438501",
+   "note": "2026-07-29 잠정 공시. 매출 1조2,507억(+20.0%), 영업이익 905억(+11.3%, OPM 7.2%, -0.6%p), 순이익 696억(+16.5%). 엔터프라이즈IT 1조384억(+27.9%), 차량SW 2,123억(-7.8%)."
+  },
+  {
+   "period": "1H26(누적)",
+   "revenue_bn": "21864",
+   "op_income_bn": "1117",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.hyundai-autoever.com/kor/ir/finance/income-statement/index.do",
+   "note": "1Q26+2Q26 합산 계산값(회사 IR 손익계산서는 반기 누적 표기). 순이익은 1Q26 미확인으로 N/A. TTM(3Q25~2Q26) 추정: 매출 약 45,630억·영업이익 약 2,590억(전년 분기 증감률로 역산한 추정치, 참고용)."
+  }
+ ],
+ "balance_sheet": {
+  "date": "N/A",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "https://dealsite.co.kr/articles/131769/025088",
+  "note": "재무상태표 수치(현금·차입금·자기자본·영업현금흐름·CAPEX) 미확인 — 검색 예산 소진으로 전용 검색 미수행. 딜사이트 기사에 '3분기 말 현금 비율 27%'(기준연도 불명, 2025년 추정) 언급만 확인. 현대오토에버는 역사적으로 순현금 구조(memory_unverified)."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "1900",
+  "dividend_yield_pct": "0.57",
+  "buyback_policy": "자사주 매입·소각 정책 확인되지 않음(전용 검색 미수행). 2023-03 정관 변경으로 '선 배당액 확정·후 배당기준일' 방식 도입. 배당 4년 연속 증액(FY2022 1,140원 +62.9% → FY2025 1,900원 +6.7%, FY2024 역산 약 1,780원).",
+  "valueup_disclosure": "밸류업(기업가치 제고 계획) 공시 여부 미확인(검색 결과 없음).",
+  "source_url": "https://etfshopping.com/stock/307950/dividend"
+ },
+ "dilution": {
+  "convertibles": "현대오토에버 명의의 CB·BW·EB·RCPS 발행 확인된 바 없음. KIND 검색에 나온 2025-11/12·2026-04 교환사채(교환가 25,950원·27,800원, 655,105주·1,345,875주) 공시는 주가·지분율 수치가 현대오토에버와 맞지 않아 타사 공시로 판단(미채택). 전용 검색은 예산 초과로 미수행.",
+  "stock_options": "스톡옵션 부여·미행사 잔량 관련 보도 없음(미확인).",
+  "rights_issues": "최근 24개월 유상증자 없음(관련 보도·공시 검색 결과 없음). 예정 증자 없음.",
+  "est_dilution_pct": "N/A",
+  "source_url": "https://kind.krx.co.kr/external/2025/11/14/001658/20251114003700/11333.htm"
+ },
+ "ownership": {
+  "largest_holder": "현대자동차(주)",
+  "largest_holder_pct": "31.59",
+  "overhang_notes": "특수관계인 포함 75.29%(etfshopping, 2026-09 업데이트 기준). 정의선 회장 7.33%(아시아경제 2025-12). 기아·현대모비스도 주요주주(배당 수령사로 확인; 지분율은 각각 약 15.9%·20.1% memory_unverified). 유통주식 약 25% 수준으로 추정. 보호예수 해제·블록딜 보도 없음. 정의선 지분(7.33%)은 그룹 지배구조 개편 시 활용 가능성이 거론되는 잠재 오버행 요인(해당 기사 맥락, 구체 계획 미확인).",
+  "source_url": "https://etfshopping.com/stock/307950/company"
+ },
+ "business": {
+  "summary": "현대차그룹 IT 서비스·차량 소프트웨어 전문기업. 엔터프라이즈IT(SI·ITO·차세대 ERP·클라우드 전환)와 차량SW(내비게이션, 차량 제어 SW 플랫폼 mobilgene, SDV 관련 ccOS/OTA 등)를 영위. 2026년 휴머노이드·로봇 SW 테마로 5월 주가 급등 후 1Q26 실적 쇼크·차량SW 부진으로 급락.",
+  "segments": "2Q26 기준 엔터프라이즈IT 1조384억(약 83%), 차량SW 2,123억(약 17%). 엔터프라이즈IT 내 SI와 ITO로 구분(세부 비중 미확인).",
+  "key_customers": "현대자동차·기아·현대모비스 등 현대차그룹 계열사(매출 대부분).",
+  "customer_concentration": "현대차그룹 의존도 매우 높음(그룹 비중 약 90% 내외, memory_unverified; 시대일보 2025-03 '현대차그룹에 크게 치우친 매출 비중' 지적). 상위 고객 정확한 비중 미확인.",
+  "competitors": "삼성SDS, LG CNS, SK AX(구 SK C&C), 포스코DX(IT서비스); 차량SW는 글로벌 티어1·OEM 인하우스(보쉬, 콘티넨탈, LG전자 VS 등).",
+  "industry_group": "자동차·전장·SDV·부품"
+ },
+ "consensus": {
+  "target_price_avg": "568750",
+  "target_price_date": "2026-10-22",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "recent_report_summary": "방향 혼재·전반적 하향 추세. 삼성증권(7/29, 2Q26 Review '실적은 회복, 로봇은 아직') 목표가 40만원으로 하향·HOLD, 당시 커버 16개사 컨센서스 668,438원. DB증권(10/8) 57만원 '차량SW 회복 지연, IT 고성장'(당시 평균 576,875원). KB증권(10/22) 65만원 '눈에 잡히는 실적보다 눈에 잡힐 성장동력'(6개월 평균 568,750원 인용). 한경 컨센서스(10/13) 목표가 519,000원·투자의견 매수. 대신증권(5/20) 72만원 상향, 키움(2/5) 50만원 상향(Outperform). 2026E/2027E 매출·영업이익 컨센서스 수치는 미확인. 채택값: KB 기사(10/22)의 6개월 평균 568,750원(출처별 519,000~668,438원 범위, 기준시점 상이).",
+  "source_url": "https://www.newspim.com/news/view/20261022000135"
+ },
+ "recent_events": [
+  {
+   "event": "1Q26 실적 쇼크: 매출 9,357억(+12.3%), 영업이익 212억(-20.7%); 삼성증권 '실적 쇼크' 리뷰",
+   "event_date": "2026-04-30",
+   "article_date": "2026-04-30",
+   "source_url": "https://www.tokenpost.kr/amp/news/economy/356789"
+  },
+  {
+   "event": "대신증권 목표가 56만→72만원 상향('시대에 순행하는 주식')",
+   "event_date": "2026-05-20",
+   "article_date": "2026-05-20",
+   "source_url": "https://www.newspim.com/news/view/20260520000531"
+  },
+  {
+   "event": "주가 765,000원(+19.91%) 마감, 시총 20조9,793억(역사적 고점권, 로봇·SDV 테마)",
+   "event_date": "2026-05-27",
+   "article_date": "2026-05-27",
+   "source_url": "https://www.topstarnews.net/news/articleView.html?idxno=16072950"
+  },
+  {
+   "event": "주가 -8.31% 급락 441,500원 마감",
+   "event_date": "2026-07-08",
+   "article_date": "2026-07-08",
+   "source_url": "https://news.jkn.co.kr/post/950912"
+  },
+  {
+   "event": "2Q26 잠정실적: 매출 1조2,507억(+20.0%), 영업이익 905억(+11.3%), 순이익 696억; 엔터프라이즈IT +27.9%, 차량SW -7.8%",
+   "event_date": "2026-07-29",
+   "article_date": "2026-07-29",
+   "source_url": "https://www.mt.co.kr/industry/2026/07/29/2026072914135438501"
+  },
+  {
+   "event": "삼성증권 투자의견 HOLD·목표가 40만원 하향('실적은 회복, 로봇은 아직')",
+   "event_date": "2026-07-29",
+   "article_date": "2026-07-29",
+   "source_url": "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2026072908290849K_02_05.pdf&inlineYn=Y&saveKey=research.pdf"
+  },
+  {
+   "event": "주가 11%대 급락 306,000원 마감(일자 미확인, 2026-09~10 추정)",
+   "event_date": "N/A",
+   "article_date": "N/A",
+   "source_url": "https://news.jkn.co.kr/post/1025061"
+  },
+  {
+   "event": "DB증권 목표가 57만원('차량SW 회복 지연, IT 사업 고성장')",
+   "event_date": "2026-10-08",
+   "article_date": "2026-10-08",
+   "source_url": "https://www.newspim.com/news/view/20261008000725"
+  },
+  {
+   "event": "주가 +9.92% 360,000원(10/19 애프터마켓) 후 10/20 -6.53% 336,500원 마감(뚜렷한 공시 없음); 기업설명회 개최 안내·결산실적공시 예고 공시",
+   "event_date": "2026-10-19",
+   "article_date": "2026-10-20",
+   "source_url": "https://news.jkn.co.kr/post/1036843"
+  },
+  {
+   "event": "KB증권 목표가 65만원 리포트('눈에 잡히는 실적보다, 눈에 잡힐 성장동력')",
+   "event_date": "2026-10-22",
+   "article_date": "2026-10-22",
+   "source_url": "https://www.newspim.com/news/view/20261022000135"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 종가 미확인(장중 09:28 +0.89%만 확인). 10/21 종가 336,000원은 역산값이며 336,500원 가능성 병기.",
+  "자기주식 수량·비율 미확인(검색 예산 소진).",
+  "CB·BW·EB·스톡옵션 미행사 잔량 미확인 — KIND 검색 결과의 교환사채 공시는 타사 것으로 판단되어 희석률 산정 불가.",
+  "2026년 반기 재무상태표(현금·차입금·자기자본)·영업현금흐름·CAPEX 미확인.",
+  "1Q26 순이익 및 1H26 누적 순이익 미확인; FY2024 순이익은 역산 추정치.",
+  "2026E·2027E 매출·영업이익 컨센서스 및 목표가 평균의 증권사 수 미확인(삼성증권 7/29 기준 16개사만 확인).",
+  "기아·현대모비스 지분율, 현대차그룹 매출 의존도 정확 수치 미확인(memory_unverified 표기).",
+  "밸류업 공시 여부, 자사주 매입·소각 정책 미확인.",
+  "거래정지·관리종목 여부 별도 검색 미수행(보도상 정상 거래 중으로 판단).",
+  "'11%대 급락 306,000원 마감' 기사의 일자 미확인.",
+  "검색 횟수 최소 14회 요건 미충족(유효 12회, 세션 공유 검색 예산 소진으로 중단)."
+ ],
+ "sources": [
+  {
+   "title": "현대오토에버 주가 상승 중(10/22 09:28 장중)",
+   "url": "https://www.anewsa.com/detail.php?number=3210138",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "현대오토에버 주가 500원 하락 후 장마감",
+   "url": "https://www.anewsa.com/detail.php?number=3209912",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "현대오토에버 주가 23,500원 하락 후 장마감",
+   "url": "https://www.anewsa.com/detail.php?number=3209443",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "[마감분석] 현대오토에버 6.53% 하락 마감 33만6500원",
+   "url": "https://news.jkn.co.kr/post/1036843",
+   "date": "2026-10-20(추정)"
+  },
+  {
+   "title": "현대오토에버 주가, 10월 19일 애프터마켓 360,000원 9.92% 상승",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16251594",
+   "date": "2026-10-19"
+  },
+  {
+   "title": "현대오토에버 주가, 5월 27일 765,000원 19.91% 상승 마감",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16072950",
+   "date": "2026-05-27"
+  },
+  {
+   "title": "알파스퀘어 현대오토에버 종목 요약(주식수·시총)",
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=307950",
+   "date": "2026-10"
+  },
+  {
+   "title": "FnGuide 현대오토에버(A307950)",
+   "url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A307950",
+   "date": ""
+  },
+  {
+   "title": "현대오토에버, 2분기 영업익 905억…전년비 11.3%↑ - 머니투데이",
+   "url": "https://www.mt.co.kr/industry/2026/07/29/2026072914135438501",
+   "date": "2026-07-29"
+  },
+  {
+   "title": "[속보]현대오토에버, 2Q 매출 1조2507억3900만원…전년비 20.0%↑ - 이데일리",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04972486645519440",
+   "date": "2026-07-29"
+  },
+  {
+   "title": "현대오토에버 IR 손익계산서",
+   "url": "https://www.hyundai-autoever.com/kor/ir/finance/income-statement/index.do",
+   "date": ""
+  },
+  {
+   "title": "현대오토에버, 2025년 영업이익 2553억원 기록...전년比 13.8%↑ - 중앙이코노미뉴스",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=491490",
+   "date": "2026-01-30"
+  },
+  {
+   "title": "[특징주] 현대오토에버, 1분기 실적 충격에도 44만1000원 - TokenPost",
+   "url": "https://www.tokenpost.kr/amp/news/economy/356789",
+   "date": "2026-04-30"
+  },
+  {
+   "title": "현대오토에버, 역대 최고 3분기 실적...매출·영업익 1조543억·708억 - 전자신문",
+   "url": "https://www.etnews.com/20251031000381",
+   "date": "2025-10-31"
+  },
+  {
+   "title": "[리포트 브리핑] KB증권 목표가 650,000원",
+   "url": "https://www.newspim.com/news/view/20261022000135",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "[리포트 브리핑] DB증권 목표가 570,000원",
+   "url": "https://www.newspim.com/news/view/20261008000725",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "[리포트 브리핑] 대신증권 목표가 720,000원",
+   "url": "https://www.newspim.com/news/view/20260520000531",
+   "date": "2026-05-20"
+  },
+  {
+   "title": "삼성증권 2Q26 Review: 실적은 회복, 로봇은 아직",
+   "url": "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2026072908290849K_02_05.pdf&inlineYn=Y&saveKey=research.pdf",
+   "date": "2026-07-29"
+  },
+  {
+   "title": "삼성증권 1Q26 Review: 실적 쇼크",
+   "url": "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026043010223972K_02_05.pdf",
+   "date": "2026-04-30"
+  },
+  {
+   "title": "한경 현대오토에버 컨센서스",
+   "url": "https://markets.hankyung.com/stock/307950/consensus",
+   "date": "2026-10-13"
+  },
+  {
+   "title": "키움증권 NDR Key Takeaways 목표가 500,000원 상향",
+   "url": "https://bbn.kiwoom.com/rfCR11878",
+   "date": "2026-02-05"
+  },
+  {
+   "title": "현대오토에버 배당금 지급일·배당락일(etfshopping)",
+   "url": "https://etfshopping.com/stock/307950/dividend",
+   "date": "2026"
+  },
+  {
+   "title": "현대오토에버 최대주주·지분율 현황(etfshopping)",
+   "url": "https://etfshopping.com/stock/307950/company",
+   "date": "2026-09"
+  },
+  {
+   "title": "아시아경제(정의선 회장 현대오토에버 지분 7.33%)",
+   "url": "https://core.asiae.co.kr/article/2025120915523654151",
+   "date": "2025-12-09"
+  },
+  {
+   "title": "현대오토에버, 현금배당 늘리고 배당절차 변경 - 아주경제",
+   "url": "https://www.ajunews.com/view/20230327154758372",
+   "date": "2023-03-27"
+  },
+  {
+   "title": "시대일보: 현대차그룹 치우친 매출 비중",
+   "url": "https://www.sidae.com/article/2025032415065385598",
+   "date": "2025-03-24"
+  },
+  {
+   "title": "딜사이트: 모빌리티 SW 투자금 곳간 운용의 묘",
+   "url": "https://dealsite.co.kr/articles/131769/025088",
+   "date": ""
+  },
+  {
+   "title": "[마감분석] 현대오토에버 11%대 급락 마감 30만6000원",
+   "url": "https://news.jkn.co.kr/post/1025061",
+   "date": "N/A"
+  },
+  {
+   "title": "재경일보 7/8 -8.31% 441,500원 마감",
+   "url": "https://news.jkn.co.kr/post/950912",
+   "date": "2026-07-08"
+  },
+  {
+   "title": "KIND 교환사채 관련 공시(타사로 판단, 미채택)",
+   "url": "https://kind.krx.co.kr/external/2025/11/14/001658/20251114003700/11333.htm",
+   "date": "2025-11-14"
+  }
+ ],
+ "search_count": "12 (유효 검색 12회; 추가 4회는 세션 공유 WebSearch 예산 소진으로 미수행 — 최소 14회 요건 미충족)"
+}

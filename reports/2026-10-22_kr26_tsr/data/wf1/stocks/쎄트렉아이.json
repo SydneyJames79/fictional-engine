@@ -1,0 +1,360 @@
+{
+ "input_name": "쎄트렉아이",
+ "legal_name": "주식회사 쎄트렉아이 (Satrec Initiative Co., Ltd.)",
+ "ticker": "099320",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "검색 결과(한경마켓·다음금융·트레이딩뷰, 2026-10-16 장마감 시세 표시)상 정상 거래 중. 거래정지·관리종목·투자주의환기·상장폐지심사 관련 기사/공시 미발견. 단, 2025-11-25 '국가핵심기술 UAE 무허가 이전' 혐의 경찰→검찰 송치 보도로 급락(시간외 -10%대, 익일 -12%)한 이력 있으며, 2026-10월 초(충청투데이, 약 2주 전) 경찰 '혐의없음' 불송치 결정 보도(회사 발표 기반). 검찰 기소·재판 진행 여부는 미확인.",
+ "share_class": "보통주 / 사업회사 (우선주 없음, 지주회사 아님). 최대주주 한화에어로스페이스의 계열 사업회사.",
+ "corporate_actions_24m": "최근 24개월(2024-10~2026-10) 내 사명 변경·인적/물적분할·합병·재상장·이전상장 미발견. 1주당 1주 무상증자(과거, 2021년경으로 추정)와 2021년 1월 한화에어로스페이스 3자배정 유상증자(589억, 지분 20%)·사모 CB 500억 인수는 24개월 이전 사건. 2026-02-12 2,831억 해외 위성영상획득장비 공급계약 공시(2026-03-20 기재정정)가 주요 공시. 분할·합병이 없어 FY2024/FY2025/1H26 수치 비교 가능.",
+ "price": {
+  "value": "56900",
+  "date": "2026-10-16",
+  "kind": "종가(장마감)",
+  "source_url": "https://markets.hankyung.com/stock/099320",
+  "source_date": "2026-10-16",
+  "alt_price_1021": "N/A",
+  "note": "2026-10-22 및 10-21 종가는 WebSearch로 확인 불가(검색 예산 소진 전까지 10/22·10/21 종가 기사 미검색). 확인 가능한 최근 종가는 2026-10-16 56,900원(+2,600원, +4.79%, 고가 58,300 저가 54,600, 거래량 39,527주; 한경마켓 2026.10.16 장마감 표시). 다음금융 전일종가 54,300원(=10/15 종가)과 정합. 보조: 10/07 종가 75,200원(-8.96%, MarketScreener), 10/08 종가 68,600원(-8.78%, Investing.com/한경). 52주 최고 224,000원(2026-02-03), 최저 45,650원(2025-11-26). 10/22 코스피 -3.52% 급락일이므로 실제 10/22 종가는 10/16 대비 크게 다를 수 있음. alpha-lenz 160,500원·야후 113,200원·트레이딩뷰 173,000원 등은 오래된 데이터로 배제."
+ },
+ "market_cap_bn": {
+  "value": "6231",
+  "date": "2026-10-16",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=099320",
+  "note": "와이즈리포트 6,231억원(10/16 종가 56,900원 × 10,951,278주 = 6,231.3억으로 정합). 알파스퀘어 5,946억원은 10/15 종가 54,300원 기준으로 계산상 일치. 참고: 10/08 기준 8,235억(한경), 09/15 기준 8,181억(치킨스탁). 10/22 기준 시총은 N/A."
+ },
+ "shares_outstanding": {
+  "value": "10951278",
+  "date": "2026-10-16",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=099320",
+  "note": "알파스퀘어·와이즈리포트·한경 등 복수 출처 일치(보통주 10,951,278주). 우선주 없음."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "source_url": "",
+  "note": "자기주식 수·비율 검색 결과 미확인. 자사주 매입/소각 공시도 발견되지 않음. DART 반기보고서 확인 필요."
+ },
+ "fiscal_year_end": "12월 결산",
+ "latest_report_period": "2026년 반기보고서(2026-06-30 기준, 2Q26 잠정실적 2026-07-29 공시). 3Q26 실적은 2026-10-22 현재 미발표(검색상 미확인).",
+ "financials": [
+  {
+   "period": "FY2024(연결)",
+   "revenue_bn": "1712.8",
+   "op_income_bn": "-30.7",
+   "net_income_bn": "62.5",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://m.news.nate.com/view/20260204n25838",
+   "note": "2026-02-04 기사(2025 연간 잠정실적 공시 보도)의 전년 비교치. 매출 1,712억7,945만원, 영업손실 30억7,216만원, 당기순이익 62억4,930만원. 순이익은 당기순이익(지배주주 기준 아님) 추정."
+  },
+  {
+   "period": "FY2025(연결)",
+   "revenue_bn": "2069.2",
+   "op_income_bn": "101.8",
+   "net_income_bn": "140.9",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://m.news.nate.com/view/20260204n25838",
+   "note": "2026-02-04 공시 보도. 매출 2,069억1,680만원(+20.8%), 영업이익 101억7,966만원(흑자전환), 당기순이익 140억8,578만원(+125%). FnGuide 별도기준 2025 매출 1,979억(연결과 상이). 분기 참고: 1Q25 매출 400.4억/영업이익 17.4억, 3Q25 매출 504.4억/영업이익 24.6억(하나증권)."
+  },
+  {
+   "period": "2Q26(연결, 잠정)",
+   "revenue_bn": "511",
+   "op_income_bn": "14",
+   "net_income_bn": "-2.2",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://supple.kr/news/cms5j5dsc004wla1waybuxpfk",
+   "note": "2026-07-29 잠정실적 공시 보도(연합뉴스/서플). 매출 511억(+15% YoY), 영업이익 14억(-32.5% YoY), 순손실 2.2억(적자전환). 기사 게시일은 검색요약 기준이며, 2Q24가 영업손실(-15억)이었으므로 '-32.5%' 비교는 2Q25 흑자 대비 → 2026년 기사로 판단."
+  },
+  {
+   "period": "1H26(연결, 반기보고서)",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=099320",
+   "note": "와이즈리포트(2026-09-07 기준): 1H26 연결 매출 +4.5% YoY, 영업이익·당기순이익 모두 적자전환. 원인: 위성사업 원가 부담 + 자회사 에스아이에이(SIA) 영업손실 지속. 금액은 미확인. 참고로 1Q26 별도 영업이익 -4억(FnGuide, 전년 37억 → 적자전환). 2Q26 흑자(14억)에도 상반기 누계 적자이므로 1Q26 연결 영업손실은 -14억 이상으로 추정(도출치, 미채택). 위성사업 매출 비중 94%."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2026-06-30",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "",
+  "note": "검색 예산 소진으로 순현금·자기자본·현금성자산 미확인. 참고 지표: 반기말 수주잔고 5,574억원(2025년 말 대비 약 61% 증가, LS증권 분석 → 2025년 말 약 3,460억 역산), 2026-02 2,831억 해외 계약이 증가분의 대부분."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "210",
+  "dividend_yield_pct": "0.37",
+  "buyback_policy": "자사주 매입·소각 정책 및 관련 공시 미발견. 자기주식 보유 현황 N/A.",
+  "valueup_disclosure": "밸류업(기업가치 제고계획) 공시 미발견(검색상 미확인).",
+  "source_url": "https://www.etoday.co.kr/news/view/1712835",
+  "note": "이투데이 '전일 주요 공시'에 주당 210원 현금배당 결정 기재. 해당 결산연도(FY2024 또는 FY2025) 미확정 — 연도 확인 필요. 배당수익률 0.37%는 210원/56,900원(10/16 종가)으로 자체 계산. etfshopping 기준 산업재 섹터 11종목 중 배당수익률 10위(저배당)."
+ },
+ "dilution": {
+  "convertibles": "제1회 사모 CB 500억원(2021-01 한화에어로스페이스 인수, 전환가 38,219원, 전환 시 1,308,249주). 현재 잔량 미확인. 한화에어로스페이스 단독 지분 33.63%(신주 20% 인수 후 CB 전환 시 약 30% 도달 계획과 정합)로 보아 이미 전량 전환된 것으로 추정(inference, memory_unverified). 최근 24개월 내 신규 CB·BW·EB 발행 공시 미발견.",
+  "stock_options": "N/A (미행사 잔량 미확인)",
+  "rights_issues": "최근 24개월 내 유상증자 공시 미발견. 예정된 증자 미확인.",
+  "est_dilution_pct": "N/A",
+  "source_url": "https://news.bizwatch.co.kr/article/industry/2021/01/18/0019"
+ },
+ "ownership": {
+  "largest_holder": "한화에어로스페이스 (특수관계인 포함 '한화에어로스페이스 외 4인')",
+  "largest_holder_pct": "36.43",
+  "overhang_notes": "하나증권(2025-09-10) 기준 한화에어로스페이스 외 4인 36.43%, 박성동(창업자) 8.98%; 딜사이트(2025) 기준 한화에어로스페이스 단독 33.63%, 박성동 8.34%; 위키백과(2022) 36.31%. 2026-05-11 김도형 이사 1,714주 매도(지분 0.10%) 소액 임원 매도. 보호예수 해제·블록딜 공시 미발견. 오버행 관점: 창업자 박성동 지분(8~9%)의 추가 매도 가능성, 한화그룹 내 위성사업 역할 재편(쎄트렉아이=위성 본체, 한화시스템=위성 사업 주도)에 따른 거버넌스 변동 가능성. 2026-10-16 시점 최신 지분율 공시는 미확인.",
+  "source_url": "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2025/09/09/250910_satreci_F.pdf"
+ },
+ "business": {
+  "summary": "1999년 우리별1호 개발진이 설립한 국내 유일 위성 시스템 전문기업. 지구관측 소형·중형 위성 본체·전자광학 탑재체·지상국 시스템을 개발·수출하고, 자회사 SIIS(위성영상 판매)와 SIA(AI 기반 위성영상 분석)를 통해 영상 서비스 사업을 영위. 2021년 한화에어로스페이스가 최대주주로 참여. 초고해상도 상용 위성 SpaceEye-T 보유.",
+  "segments": "위성사업(위성 본체·탑재체·지상국·위성영상 획득장비) 매출 비중 약 94%(1H26, 와이즈리포트) / 위성영상 판매·AI 분석(SIIS·SIA) 약 6%. SIA는 영업손실 지속으로 연결 실적 부담.",
+  "key_customers": "국내 정부·군(국방부, 국방과학연구소, 항공우주연구원, 한화시스템 등 체계종합사), 해외 정부·기관(UAE 등 중동, 동남아), KAIST(2026-07 우주탐사사업 계약), 2026-02 2,831억 해외 위성영상획득장비 공급 고객(미공개).",
+  "customer_concentration": "상위 고객 비중 수치 미확인. 다만 2026-02 단일 해외계약 2,831억원이 반기말 수주잔고 5,574억의 약 51%를 차지해 단일 프로젝트 집중도가 매우 높음. 향후 5,672억 군 초소형위성체계 사업(한화시스템·KAI만 입찰 가능)의 수주 여부가 쎄트렉아이 참여를 좌우하는 구조적 의존.",
+  "competitors": "국내: 한화시스템, 한국항공우주(KAI), LIG넥스원, 루미르, 나라스페이스; 해외: Airbus Defence & Space, Thales Alenia Space, Surrey Satellite(SSTL), Maxar, Planet Labs, BlackSky, ICEYE",
+  "industry_group": "우주항공·위성통신·5G6G"
+ },
+ "consensus": {
+  "target_price_avg": "68000",
+  "target_price_date": "2026-10-16",
+  "n_brokers": "N/A(한경 집계 기관 수 미표시; 와이즈리포트 최근 3개월 추정기관 1곳)",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "집계치 상충: 한경 컨센서스 목표가 68,000원·매수(2026-10-16 기준, 채택) vs 와이즈리포트 최근 3개월 1개 기관 목표가 120,000원(2026-10-16 기준). 개별 리포트: 신한투자증권 2026-04-14 210,000원(162,000→210,000 상향, '2026년 연간 수주 고점 갱신 예상'), NH투자증권 2026-01-09 129,500원(+29.5% 상향), 상상인증권 200,000원(일자 미확인), 아시아경제 2026-09-16 제목상 목표가 120,000원(최근 1~2개월 내 유일 확인, 4월 21만원 대비 사실상 하향 방향). 2026E/2027E 컨센서스는 실적 발표 전 구치만 확인: 한화투자증권(2025-09-22) 2026E 매출 2,560억/영업이익 190억, 2027E 매출 3,060억/영업이익 320억; 하나증권(2025-11-13) 2026E 매출 2,441억/영업이익 157억. 1H26 적자전환 이후 갱신된 추정치는 미확인이므로 N/A 처리(위 수치는 stale). 3Q26 프리뷰 리포트 미발견.",
+  "source_url": "https://markets.hankyung.com/stock/099320/consensus"
+ },
+ "recent_events": [
+  {
+   "event": "군 초소형위성체계 사업(5,672억 규모) 한화시스템 수주 여부가 쎄트렉아이 네온샛 후속 수주의 핵심 변수로 부각(한화시스템·KAI만 입찰 가능)",
+   "event_date": "2026(진행 중)",
+   "article_date": "N/A(딜사이트, 2026년)",
+   "source_url": "https://dealsite.co.kr/articles/170768"
+  },
+  {
+   "event": "김도형 이사 보유주식 1,714주 매도, 지분율 0.10%",
+   "event_date": "2026-05(공시)",
+   "article_date": "2026-05-11",
+   "source_url": "https://www.datatooza.com/article/20260511143118675952ef337c36_80"
+  },
+  {
+   "event": "KAIST 우주탐사사업 단일판매·공급계약 공시(계약기간 2026-07-23~2033-12-31, 금액 비공개, 전년 매출의 10% 이상=약 207억 이상)",
+   "event_date": "2026-07-23",
+   "article_date": "2026-07-24",
+   "source_url": "https://m.news.nate.com/view/20260724n17373"
+  },
+  {
+   "event": "2Q26 잠정실적: 매출 511억(+15%), 영업이익 14억(-32.5%), 순손실 2.2억(적자전환)",
+   "event_date": "2026-07-29",
+   "article_date": "2026-07-29",
+   "source_url": "https://supple.kr/news/cms5j5dsc004wla1waybuxpfk"
+  },
+  {
+   "event": "반기보고서: 1H26 연결 매출 +4.5%, 영업이익·순이익 적자전환(SIA 손실·위성사업 원가 부담), 반기말 수주잔고 5,574억(+61% vs 2025말)",
+   "event_date": "2026-08(반기보고서)",
+   "article_date": "2026-09-07(와이즈리포트 기준일)",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=099320"
+  },
+  {
+   "event": "증권사 리포트 목표주가 120,000원 제시(아시아경제 '클릭 e종목' 제목 기준)",
+   "event_date": "2026-09-16",
+   "article_date": "2026-09-16",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=099320"
+  },
+  {
+   "event": "누리호 발사 성공 직후 우주항공주 차익실현 급락: 쎄트렉아이 -8.96%(종가 75,200원), 외국계 매도 상위",
+   "event_date": "2026-10-07",
+   "article_date": "2026-10-07",
+   "source_url": "https://m.news.nate.com/view/20261007n25214"
+  },
+  {
+   "event": "연속 급락: 종가 68,600원(-8.78%)",
+   "event_date": "2026-10-08",
+   "article_date": "2026-10-08",
+   "source_url": "https://markets.hankyung.com/stock/099320"
+  },
+  {
+   "event": "UAE 위성기술 이전 의혹(2025-11 송치 건) 경찰 '혐의없음' 불송치 결정(회사 발표 기반 보도)",
+   "event_date": "2026-10(약 2주 전)",
+   "article_date": "2026-10(정확한 게시일 미확인)",
+   "source_url": "https://www.cctoday.co.kr/news/articleView.html?idxno=2237736"
+  },
+  {
+   "event": "10/16 종가 56,900원(+4.79%) 반등; 52주 최고 224,000원(2026-02-03) 대비 약 -75%",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-16",
+   "source_url": "https://markets.hankyung.com/stock/099320"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가 미확인(검색 결과에 해당 일자 시세 없음; 최근 확인치 10/16 56,900원)",
+  "10/22 기준 시가총액 미확인(10/16 기준 6,231억만 확인)",
+  "1H26 연결 매출·영업손실·순손실 금액 미확인(방향만 확인: 매출 +4.5%, OP/NI 적자전환)",
+  "1Q26 연결 실적 미확인(별도 영업이익 -4억만 확인)",
+  "자기주식 수·비율 미확인",
+  "현금·차입금·순현금·자기자본·영업현금흐름·CAPEX 미확인(검색 예산 소진)",
+  "제1회 CB 500억의 전환 완료 여부·잔량 미확인(지분율로 전량 전환 추정)",
+  "스톡옵션 미행사 잔량 및 추정 희석률 미확인",
+  "주당배당금 210원의 해당 결산연도 미확정(FY2024 vs FY2025)",
+  "밸류업 공시·자사주 정책 미확인",
+  "최대주주 지분율 최신(2026년) 공시 미확인(2025년 자료 36.43%/33.63% 사용)",
+  "1H26 적자 이후 갱신된 2026E/2027E 컨센서스 미확인(기존 추정치는 2025년 하반기 작성, stale)",
+  "한경 68,000원 vs 와이즈리포트 120,000원 목표가 집계 상충(한경 채택, 기관 수 미상)",
+  "군 초소형위성체계 사업 한화시스템 수주 결과 미확인(검색 예산 소진으로 미검색)",
+  "UAE 기술이전 의혹 불송치 보도의 정확한 게시일·검찰 최종 처분 미확인",
+  "상위 고객 비중 수치 미확인(2,831억 단일계약이 수주잔고의 약 51%로 집중도 높음)"
+ ],
+ "sources": [
+  {
+   "title": "한경마켓 쎄트렉아이 시세(2026.10.16 장마감, 종가 56,900원, 목표가 68,000원)",
+   "url": "https://markets.hankyung.com/stock/099320",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "한경마켓 쎄트렉아이 컨센서스",
+   "url": "https://markets.hankyung.com/stock/099320/consensus",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "다음금융 쎄트렉아이(종가 56,900/전일종가 54,300)",
+   "url": "https://m.finance.daum.net/quotes/A099320/home",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "와이즈리포트 기업현황(시총 6,231억, 1H26 적자전환, 목표가 120,000원)",
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=099320",
+   "date": "2026-09-07/2026-10-16"
+  },
+  {
+   "title": "알파스퀘어 쎄트렉아이(상장주식수 10,951,278주, 시총 5,946억)",
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=099320",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "MarketScreener Satrec Initiative(10/07 종가 75,200원)",
+   "url": "https://www.marketscreener.com/quote/stock/SATREC-INITIATIVE-CO-LTD-20705046/",
+   "date": "2026-10-07"
+  },
+  {
+   "title": "Investing.com Satrec Initiative(10/08 종가 68,600원)",
+   "url": "https://www.investing.com/equities/satrecinitiative-co-ltd",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "네이트뉴스: 쎄트렉아이 지난해 영업이익 흑자전환, 매출 2069억(FY2025/FY2024 수치)",
+   "url": "https://m.news.nate.com/view/20260204n25838",
+   "date": "2026-02-04"
+  },
+  {
+   "title": "서플: 쎄트렉아이 2분기 영업이익 14억원, 32.5% 감소(2Q26 잠정)",
+   "url": "https://supple.kr/news/cms5j5dsc004wla1waybuxpfk",
+   "date": "2026-07-29"
+  },
+  {
+   "title": "FnGuide 쎄트렉아이 재무(별도 1Q26 영업이익 -4억)",
+   "url": "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A099320&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+   "date": "2026"
+  },
+  {
+   "title": "하나증권 스몰캡 리포트: 실적은 궤도 진입(지분율 36.43%/8.98%)",
+   "url": "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2025/09/09/250910_satreci_F.pdf",
+   "date": "2025-09-10"
+  },
+  {
+   "title": "하나증권 스몰캡 리포트: 2026년에도 탄탄한 실적 성장(2026E 매출 2,441억/영업이익 157억)",
+   "url": "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2025/11/12/251113_satreci_F.pdf",
+   "date": "2025-11-13"
+  },
+  {
+   "title": "한화투자증권 기업분석: 이제 위성 영상으로 돈을 벌 차례(2026E/2027E 추정)",
+   "url": "https://www.hanwhawm.com/main/common/common_file/fileView.cmd?category=2&depth3_id=anls1&key1=64737&key2=1&bldid=bbs10031",
+   "date": "2025-09-22"
+  },
+  {
+   "title": "네이트뉴스: 신한투자증권 목표가 210,000원",
+   "url": "https://news.nate.com/view/20260414n09359",
+   "date": "2026-04-14"
+  },
+  {
+   "title": "머니투데이: NH 목표가 29.5% 상향(129,500원)",
+   "url": "https://www.mt.co.kr/stock/2026/01/09/2026010908344568211",
+   "date": "2026-01-09"
+  },
+  {
+   "title": "프라임경제: 목표주가 90% 상향, 글로벌향 대규모 추가 계약 대기",
+   "url": "https://m.newsprime.co.kr/section_view.html?no=722174",
+   "date": "2026"
+  },
+  {
+   "title": "딜사이트: 흑자전환 쎄트렉아이, 네온샛 넥스트 스텝…한화시스템 수주가 변수(2,831억 계약, 수주잔고 5,574억)",
+   "url": "https://dealsite.co.kr/articles/170768",
+   "date": "2026"
+  },
+  {
+   "title": "딜사이트: 누리호 타고 우주 간 쎄트렉아이…그룹 내 역할 위성 본체(한화에어로 33.63%)",
+   "url": "https://dealsite.co.kr/articles/170683",
+   "date": "2026"
+  },
+  {
+   "title": "네이트뉴스: 쎄트렉아이 수주공시 - 우주탐사사업(KAIST)",
+   "url": "https://m.news.nate.com/view/20260724n17373",
+   "date": "2026-07-24"
+  },
+  {
+   "title": "네이트뉴스: 누리호 성공했는데 주가는 와르르…우주항공주 일제 급락",
+   "url": "https://m.news.nate.com/view/20261007n25214",
+   "date": "2026-10-07"
+  },
+  {
+   "title": "충청투데이: 쎄트렉아이 UAE 위성기술 이전 의혹 혐의없음 불송치",
+   "url": "https://www.cctoday.co.kr/news/articleView.html?idxno=2237736",
+   "date": "2026-10(약 2주 전)"
+  },
+  {
+   "title": "머니투데이: 우리별1호 개발자 설립사, 허가없이 국가핵심기술 UAE에 넘겼다",
+   "url": "https://www.mt.co.kr/society/2025/11/25/2025112508311859756",
+   "date": "2025-11-25"
+  },
+  {
+   "title": "다음: 쎄트렉아이 애프터마켓서 급락",
+   "url": "https://v.daum.net/v/20251125174847061",
+   "date": "2025-11-25"
+  },
+  {
+   "title": "datatooza: 김도형 이사 1,714주 매도",
+   "url": "https://www.datatooza.com/article/20260511143118675952ef337c36_80",
+   "date": "2026-05-11"
+  },
+  {
+   "title": "이투데이 전일 주요 공시(주당 210원 현금배당)",
+   "url": "https://www.etoday.co.kr/news/view/1712835",
+   "date": "N/A"
+  },
+  {
+   "title": "비즈워치: 한화에어로스페이스 쎄트렉아이 신주 589억+CB 500억",
+   "url": "https://news.bizwatch.co.kr/article/industry/2021/01/18/0019",
+   "date": "2021-01-18"
+  },
+  {
+   "title": "한국경제: 한화에어로스페이스 쎄트렉아이 주식 589억원에 취득",
+   "url": "https://www.hankyung.com/article/202101135971Y",
+   "date": "2021-01-13"
+  },
+  {
+   "title": "IRGO 쎄트렉아이 공시 목록",
+   "url": "https://m.irgo.co.kr/IR-ROOM/099320",
+   "date": "2026"
+  },
+  {
+   "title": "Wikipedia Satrec Initiative",
+   "url": "https://en.wikipedia.org/wiki/Satrec_Initiative",
+   "date": "2022 기준 지분"
+  }
+ ],
+ "search_count": "20회 호출(18회 실행, 2회는 세션 공유 검색 예산 소진으로 미실행) — extended 15회, standard 5회"
+}

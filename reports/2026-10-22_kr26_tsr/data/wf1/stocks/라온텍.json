@@ -1,0 +1,284 @@
+{
+ "input_name": "라온텍",
+ "legal_name": "주식회사 라온텍 (RaonTech Inc.)",
+ "ticker": "418420",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "종목코드 418420·코스닥 상장은 알파스퀘어·FnGuide·한경·치킨스탁 등 복수 출처에서 일치 확인. 거래정지·관리종목·투자주의환기 지정 관련 기사는 검색 결과에 없었음(미확인이므로 거래 가능으로 간주하되 DART 재확인 권장). 2023년 2월 기술특례 상장(memory_unverified). 유의: 동명 유사 기업 '라온테크(232680, 로봇·반도체장비)'와 '라온피플'은 별개 회사이며 검색 결과에 혼입됨. 사람인 '(주)라온텍' 재무정보(2025 매출 64.6억·영업이익 12.8억 흑자)는 본 종목 실적(적자)과 방향이 달라 동일 법인 여부 불명, 채택하지 않음.",
+ "share_class": "보통주 (사업회사, 우선주 없음 - 검색상 미확인)",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 기사 없음(검색 결과 기준). 2025년 8월 150억원 2회차 사모 CB 발행이 주요 자본 이벤트.",
+ "price": {
+  "value": "3250",
+  "date": "2026-10-16",
+  "kind": "종가(저신뢰 출처, 개인 AI분석 사이트 주달 수치)",
+  "source_url": "https://judal.co.kr/?shareToken=36vuTAuaXKiYuF9s&view=stockAI",
+  "source_date": "2026-10-16",
+  "note": "10/22·10/21 종가는 9회 검색 내 확인 실패. 가장 최근 수치는 주달AI(10/16) 3,250원이며, 신뢰도 높은 출처로는 한경마켓 2026-10-01 장마감 4,255원(-0.12%, 거래량 80,728주, 52주 최고 12,500/최저 2,635)이 있음. 주달 기준 10/2 4,250 → 10/9 3,935 → 10/16 3,250으로 하락 추세. 10/22 코스피 -3.52% 급락일이므로 실제 10/22 종가는 3,250원보다 더 낮을 가능성. alt_price_1021 미확인.",
+  "alt_price_1021": "N/A"
+ },
+ "market_cap_bn": {
+  "value": "997.8",
+  "date": "2026-10-16",
+  "source_url": "https://judal.co.kr/?shareToken=36vuTAuaXKiYuF9s&view=stockAI",
+  "note": "직접 보고된 시총 아님. 10/16 추정종가 3,250원 × 상장주식수 30,700,933주로 계산한 값(≈998억). 한경 10/1 종가 4,255원 기준이면 ≈1,306억. 알파스퀘어 2026-06-24 기준 시총 1,421억(주가 4,630원)."
+ },
+ "shares_outstanding": {
+  "value": "30700933",
+  "date": "2026-06-24",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=418420",
+  "note": "알파스퀘어 발행주식수. 교차검증: 2026-10-02 대량보유보고에서 김보은 측 8,322,295주=주권기준 26.74% → 역산 약 31.1M주로 약 1.3% 차이. 스톡옵션 행사 등으로 소폭 증가했을 가능성 있음. CB 전환예정주식 3,057,480주가 '총수 대비 9.18%'로 기재된 것은 역산 시 33.3M주가 되어 불일치(전환 후 기준 산식일 가능성)."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "note": "자사주 취득·보유·소각 관련 기사/공시가 검색 결과에 없음. 적자 팹리스 소형주로 자사주 정책 부재 가능성 높으나 미확인.",
+  "source_url": "N/A"
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "FY2025 사업보고서(2026년 3월 정기주총 승인). 2026년 반기보고서(1H26) 수치는 검색으로 확인 실패.",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "89",
+   "op_income_bn": "-70",
+   "net_income_bn": "-65",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646207",
+   "note": "디지털투데이 정기주총 기사(개별 기준, 2024.12 결산). FY2025 매출 전년비 -1.76% 역산(89.0억)과 정합."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "87.46",
+   "op_income_bn": "-58.10",
+   "net_income_bn": "-65.51",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://alphasquare.co.kr/home/stock-summary?code=418420",
+   "note": "알파스퀘어(개별 기준, 2025.12). KODATA 범위자료(매출 78~97억, 영업이익 -64~-52억)와 일치. 사람인 '(주)라온텍' 흑자 수치(매출 64.6억·OP 12.8억)는 동일 법인 여부 불명으로 미채택."
+  },
+  {
+   "period": "1H26 / 2Q26",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "N/A",
+   "note": "2026년 반기 실적 검색 실패. 씽크풀에 나온 '2Q 매출 42.07억(+151%), 영업이익 3.03억 흑자전환'은 문맥상 2025년 2분기 자료로 판단되어 2026 수치로 쓰지 않음. 한국IR협의회 보고서(날짜 미상) 2026E 매출 85억·영업손실 90억 전망, BEP 매출 약 200억 추정."
+  }
+ ],
+ "balance_sheet": {
+  "date": "N/A",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "note": "재무상태표 수치 미확인. 2025년 8월 150억원 CB(0% 쿠폰) 발행으로 현금 유입된 반면 연간 영업손실 약 60억 수준으로 현금 소진 지속 추정. 순현금은 CB(부채) 150억 감안 시 제한적일 가능성. 밸류라인 재무상태표 페이지(https://valueline.co.kr/finance/balancesheet/418420) 존재하나 수치 미취득.",
+  "source_url": "N/A"
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "0",
+  "dividend_yield_pct": "0",
+  "buyback_policy": "자사주 매입·소각 정책 확인 안 됨. 누적 적자 기업으로 배당 없음(FY2025 정기주총 기사에 배당 안건 언급 없음, DPS 0은 추정)",
+  "valueup_disclosure": "밸류업 공시 확인 안 됨",
+  "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646207"
+ },
+ "dilution": {
+  "convertibles": "2회차 무기명식 무보증 사모 CB 150억원(2025-08-18 공시, 납입 2025-08-26). 표면·만기이자 0%. 전환가 4,906원, 전환가능주식 3,057,480주(공시상 총수 대비 9.18%). 전환청구기간 2026-08-26~2030-07-26(현재 전환 가능 구간). 전환가 4,906원 vs 현 주가 3,250~4,255원으로 전환가 하회 → 리픽싱 가능성(조건 미확인). 미전환 잔량 미확인. 1회차 CB 존재·잔량 미확인.",
+  "stock_options": "N/A (미확인)",
+  "rights_issues": "최근 24개월 유상증자 없음(검색 결과 기준). 유상증자 기사는 라온피플·라온테크 등 타사.",
+  "est_dilution_pct": "10.0",
+  "source_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04247606642268632"
+ },
+ "ownership": {
+  "largest_holder": "김보은(대표이사) 및 특별관계자",
+  "largest_holder_pct": "27.04",
+  "overhang_notes": "2026-10-02 대량보유보고: 주식등 8,322,295주(27.04%, -0.52%p), 주권 기준 26.74%. 감소 사유는 160,000주 증여(증여 주체가 김보은/특별관계자 정민수로 출처 간 상이). 3월말 28.95% → 4/10 28.74% → 10/2 27.04%로 점진 감소. 2026-03-27 대신증권과 869,566주 담보계약(기간 2026-03-27~09-28, 만기 경과 후 연장 여부 미확인) → 주가 하락 시 반대매매 리스크. CB 3.06M주(약 10%) 전환 시 오버행. 보호예수·블록딜 기사 없음.",
+  "source_url": "https://www.chickstockfi.com/disclosures/20261002000659"
+ },
+ "business": {
+  "summary": "2009년 설립 마이크로디스플레이·SoC 반도체 설계 전문 팹리스. LCoS·마이크로LED·OLEDoS 등 마이크로디스플레이 패널 및 구동 SoC를 설계해 XR 스마트안경(AR/VR), 차량용 HUD, 광통신(AI 데이터센터용 공간광변조기 SLM 백플레인) 등에 공급. 연매출 90억 미만·영업적자 지속, BEP 매출 약 200억 추정(한국IR협의회).",
+  "segments": "부문별 매출 비중 미확인. 제품군: XR/스마트글라스용 마이크로디스플레이, 차량용 HUD, 광통신용 SLM 백플레인(최근 수주 주력).",
+  "key_customers": "해외 광통신 고객(사명 비공개, 2026-09-01 15억 계약, 기존 공급관계 물량 증가), 국내외 XR 디바이스 업체 (구체 고객명 미확인). 메타·애플 수혜 기대는 유튜브 등 비공식 언급 수준.",
+  "customer_concentration": "N/A (매출 규모가 작아 단일 계약 10억대도 전체 매출의 15% 내외를 차지하는 구조 → 고객 집중도 높을 것으로 추정, 수치 미확인)",
+  "industry_group": "반도체·AI하드웨어·디스플레이장비",
+  "competitors": "Sony(OLEDoS), Himax·OmniVision(LCoS), Kopin, JBD(마이크로LED), 삼성디스플레이·LG디스플레이(OLEDoS) (memory_unverified)"
+ },
+ "consensus": {
+  "target_price_avg": "N/A",
+  "target_price_date": "N/A",
+  "n_brokers": "0",
+  "rev_2026e_bn": "85",
+  "op_2026e_bn": "-90",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "증권사 목표주가·컨센서스 없음(한경 컨센서스 페이지 존재하나 수치 미확인). 2026E 매출 85억·영업손실 90억은 한국IR협의회(기술분석 보고서, 날짜 미상) 전망치. 최근 1~2개월 증권사 리포트 확인 안 됨. 개인 AI분석 사이트(주달)만 목표가 10,500~14,000원 제시(신뢰도 낮음).",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=418420"
+ },
+ "recent_events": [
+  {
+   "event": "광통신용 마이크로디스플레이(SLM 백플레인) 해외 공급계약 체결 1,500,385,000원(약 15억). 계약기간 2026-08-31~2027-07-31, 납품 6개월 전 선지급 조건, 계약금 없음. 일부 매체 16억 표기",
+   "event_date": "2026-09-01",
+   "article_date": "2026-09-01",
+   "source_url": "https://www.chickstockfi.com/disclosures/20260901900129"
+  },
+  {
+   "event": "AI 데이터센터 광통신 핵심부품(SLM 백플레인) 추가 수주 보도, 기존 공급관계 물량 증가 해석",
+   "event_date": "2026-09-01",
+   "article_date": "2026-09-10",
+   "source_url": "https://www.dailyan.com/news/article.html?no=777187"
+  },
+  {
+   "event": "최대주주 김보은 측 주식등 보유비율 27.56%→27.04%(-0.52%p), 160,000주 증여에 따른 변동 보고",
+   "event_date": "2026-10-02",
+   "article_date": "2026-10-02",
+   "source_url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=704918"
+  },
+  {
+   "event": "최대주주 보유비율 28.95%→28.74%(-0.21%p) 보고",
+   "event_date": "2026-04-10",
+   "article_date": "2026-04-10",
+   "source_url": "https://m.news.nate.com/view/20260410n26419"
+  },
+  {
+   "event": "최대주주 김보은, 대신증권과 869,566주 담보계약 체결(2026-03-27~2026-09-28)",
+   "event_date": "2026-03-27",
+   "article_date": "2026-03-30",
+   "source_url": "https://m.news.nate.com/view/20260330n33606"
+  },
+  {
+   "event": "제17기(FY2025) 정기주총, 재무제표 승인 등 안건 가결",
+   "event_date": "2026-03",
+   "article_date": "2026-03",
+   "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646207"
+  },
+  {
+   "event": "단일판매·공급계약 공시(2026-02-04) 및 정정공시(2026-03-23) — 잦은 계약 정정 이력 지적",
+   "event_date": "2026-02-04",
+   "article_date": "2026-09-10",
+   "source_url": "https://www.dailyan.com/news/article.html?no=777187"
+  },
+  {
+   "event": "주가 10/2 4,250원 → 10/16 3,250원 급락(약 -24%), 52주 최고 12,500원(5월경) 대비 -74%",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-16",
+   "source_url": "https://judal.co.kr/?shareToken=36vuTAuaXKiYuF9s&view=stockAI"
+  },
+  {
+   "event": "(참고, 6개월 이전) 150억원 2회차 사모 CB 발행 결정(전환가 4,906원, 0% 쿠폰), 마이크로디스플레이 R&D·운영자금",
+   "event_date": "2025-08-18",
+   "article_date": "2025-08-18",
+   "source_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04247606642268632"
+  }
+ ],
+ "data_quality": "낮음",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가 미확인 — 채택한 10/16 3,250원은 개인 AI분석 사이트 수치로 신뢰도 낮음, 신뢰 가능한 최신치는 한경 10/1 4,255원",
+  "2026년 반기(1H26/2Q26) 매출·영업이익·순이익 미확인 (반기보고서 수치 검색 실패)",
+  "현금·차입금·순현금·자기자본 등 재무상태표 수치 미확인",
+  "영업현금흐름·CAPEX 미확인",
+  "자기주식 수·비율 미확인",
+  "CB 미전환 잔량, 리픽싱 조건, 1회차 CB 존재 여부 미확인",
+  "스톡옵션 미행사 잔량 미확인",
+  "증권사 목표주가·컨센서스 없음(커버리지 부재 추정)",
+  "부문별 매출 비중·고객 집중도 수치 미확인",
+  "상장주식수 30,700,933주(6월)와 대량보유보고 역산치(약 31.1M주) 간 소폭 불일치 — 최신 발행주식수 재확인 필요",
+  "최대주주 담보계약(9/28 만기) 연장·해지 여부 미확인",
+  "거래정지·관리종목 지정 여부는 부재 기사 기준 추정(DART 직접 확인 권장)"
+ ],
+ "sources": [
+  {
+   "title": "라온텍 주가 - 알파스퀘어(발행주식수·시총·FY2025 실적)",
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=418420",
+   "date": "2026-06-24"
+  },
+  {
+   "title": "라온텍 - 한경마켓(10/1 장마감 시세)",
+   "url": "https://markets.hankyung.com/stock/418420",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "라온텍-컨센서스 - 한국경제",
+   "url": "https://markets.hankyung.com/stock/418420/consensus",
+   "date": "N/A"
+  },
+  {
+   "title": "라온텍(A418420) - FnGuide",
+   "url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A418420",
+   "date": "2026-05-22"
+  },
+  {
+   "title": "라온텍 투자분석 2026.10.16 - 주달AI",
+   "url": "https://judal.co.kr/?shareToken=36vuTAuaXKiYuF9s&view=stockAI",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "라온텍 투자분석 2026.10.09 - 주달AI",
+   "url": "https://judal.co.kr/?shareToken=41fRroLpabjUPTWD&view=stockAI",
+   "date": "2026-10-09"
+  },
+  {
+   "title": "라온텍, 150억 규모 전환사채 발행 - 이데일리",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04247606642268632",
+   "date": "2025-08-18"
+  },
+  {
+   "title": "라온텍, 연이은 계약 공시 속 전환사채·감사 이슈 복합 분석 필요 - 데일리연합",
+   "url": "https://www.dailyan.com/news/article.html?no=777187",
+   "date": "2026-09-10"
+  },
+  {
+   "title": "라온텍 단일판매·공급계약체결 (2026.09.01) - 치킨스탁",
+   "url": "https://www.chickstockfi.com/disclosures/20260901900129",
+   "date": "2026-09-01"
+  },
+  {
+   "title": "라온텍 주식등의대량보유상황보고서 (2026.10.02) - 치킨스탁",
+   "url": "https://www.chickstockfi.com/disclosures/20261002000659",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "라온텍, 최대주주 김보은 측 보유비율 0.52%p 감소 - 디지털투데이",
+   "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=704918",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "라온텍 최대주주 김보은, 총 지분율 28.95% - 네이트뉴스",
+   "url": "https://m.news.nate.com/view/20260330n33606",
+   "date": "2026-03-30"
+  },
+  {
+   "title": "라온텍 최대주주 김보은, 비율 0.21%p 감소 28.74% - 네이트뉴스",
+   "url": "https://m.news.nate.com/view/20260410n26419",
+   "date": "2026-04-10"
+  },
+  {
+   "title": "라온텍, 제17기 재무제표 승인 등 정기주총 안건 가결 - 디지털투데이",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646207",
+   "date": "2026-03"
+  },
+  {
+   "title": "기업개요(라온텍) - 네이버 와이즈리포트",
+   "url": "https://navercomp.wisereport.co.kr/v2/company/c1010001.aspx?cmp_cd=418420&cn=",
+   "date": "N/A"
+  },
+  {
+   "title": "라온텍(418420) 주가·실적발표·공시 - 치킨스탁",
+   "url": "https://www.chickstockfi.com/stocks/418420",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "라온텍(418420) 재무상태표 - 밸류라인",
+   "url": "https://valueline.co.kr/finance/balancesheet/418420",
+   "date": "2026-05-18"
+  },
+  {
+   "title": "라온텍 기업정보 - 더브이씨",
+   "url": "https://thevc.kr/raontech",
+   "date": "N/A"
+  }
+ ],
+ "search_count": "9"
+}

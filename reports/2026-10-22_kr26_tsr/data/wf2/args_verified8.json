@@ -1,0 +1,66 @@
+[
+ {
+  "name": "바이오다인",
+  "ticker": "314930",
+  "industry": "바이오의약품·의료기기·진단",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/바이오다인.json",
+  "dataQuality": "낮음",
+  "searchCount": "18 (성공 18회; 추가 8회는 세션 WebSearch 한도 200회 "
+ },
+ {
+  "name": "엘앤씨바이오",
+  "ticker": "290650",
+  "industry": "바이오의약품·의료기기·진단",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/엘앤씨바이오.json",
+  "dataQuality": "보통",
+  "searchCount": "18 (추가 8회 요청은 세션 공유 WebSearch 한도 소진으로 미수"
+ },
+ {
+  "name": "삼성전자",
+  "ticker": "005930",
+  "industry": "반도체·AI하드웨어·디스플레이장비",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/삼성전자.json",
+  "dataQuality": "보통",
+  "searchCount": "25 (29회 시도 중 4회는 세션 공유 WebSearch 한도 소진으로"
+ },
+ {
+  "name": "SK하이닉스",
+  "ticker": "000660",
+  "industry": "반도체·AI하드웨어·디스플레이장비",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/SK하이닉스.json",
+  "dataQuality": "보통",
+  "searchCount": "14 (실행 완료) / 23 시도 (9회는 세션 공유 검색 예산 소진으로"
+ },
+ {
+  "name": "인텔리안테크",
+  "ticker": "189300",
+  "industry": "우주항공·위성통신·5G6G",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/인텔리안테크.json",
+  "dataQuality": "보통",
+  "searchCount": "19 (추가 8회는 이번 턴 WebSearch 예산 소진으로 실행 거부됨"
+ },
+ {
+  "name": "쎄트렉아이",
+  "ticker": "099320",
+  "industry": "우주항공·위성통신·5G6G",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/쎄트렉아이.json",
+  "dataQuality": "보통",
+  "searchCount": "20회 호출(18회 실행, 2회는 세션 공유 검색 예산 소진으로 미실행)"
+ },
+ {
+  "name": "현대오토에버",
+  "ticker": "307950",
+  "industry": "자동차·전장·SDV·부품",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/현대오토에버.json",
+  "dataQuality": "보통",
+  "searchCount": "12 (유효 검색 12회; 추가 4회는 세션 공유 WebSearch 예산"
+ },
+ {
+  "name": "에이치브이엠",
+  "ticker": "295310",
+  "industry": "우주항공·위성통신·5G6G",
+  "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/에이치브이엠.json",
+  "dataQuality": "보통",
+  "searchCount": "19 (실행 완료 19회; 추가 5회는 세션 공유 WebSearch 예산"
+ }
+]

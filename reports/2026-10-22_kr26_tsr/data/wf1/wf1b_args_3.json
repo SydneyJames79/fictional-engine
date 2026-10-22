@@ -1,0 +1,47 @@
+{
+ "stocks": [
+  {
+   "name": "RFHIC",
+   "code": "218410",
+   "market": "KOSDAQ",
+   "hint": "GaN 트랜지스터·전력증폭기(통신·방산). 적자/흑자 전환 여부 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "케이엠더블유",
+   "code": "032500",
+   "market": "KOSDAQ",
+   "hint": "KMW. 5G 기지국 안테나·필터. 적자 지속 여부·자본 상태 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "사피엔반도체",
+   "code": "452430",
+   "market": "KOSDAQ",
+   "hint": "마이크로LED 디스플레이 구동 반도체(팹리스). 2024년 상장. 적자 여부·고객(애플·삼성 등) 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "라온텍",
+   "code": "418420",
+   "market": "KOSDAQ",
+   "hint": "마이크로디스플레이(LCoS·마이크로LED) 팹리스, AR·XR용. 적자 여부·CB 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "퓨런티어",
+   "code": "370090",
+   "market": "KOSDAQ",
+   "hint": "자율주행 센싱카메라 공정장비·부품. 고객(모빌아이·테슬라 등) 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "화신",
+   "code": "010690",
+   "market": "KOSPI",
+   "hint": "자동차 섀시·차체 부품. 현대차그룹 협력사. 유사명 회사(화신정공 등)와 구분.",
+   "maxSearches": 9
+  }
+ ],
+ "macro": false
+}

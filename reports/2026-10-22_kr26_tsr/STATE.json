@@ -1,0 +1,107 @@
+{
+ "updated_utc": "2026-10-22T18:19:06Z",
+ "analysis_basis": "2026-10-22 15:40 KST; horizons 2027-10-22 / 2029-10-22 / 2031-10-22; KRW",
+ "wf1_stocks_verified": [
+  "HPSP",
+  "RFHIC",
+  "SK하이닉스",
+  "고영",
+  "라온텍",
+  "바이오다인",
+  "사피엔반도체",
+  "삼성바이오로직스",
+  "삼성에피스홀딩스",
+  "삼성전자",
+  "서진시스템",
+  "선익시스템",
+  "쎄트렉아이",
+  "에이치브이엠",
+  "엘앤씨바이오",
+  "와이씨",
+  "이수페타시스",
+  "인텔리안테크",
+  "케이엠더블유",
+  "퓨런티어",
+  "한미반도체",
+  "한중엔시에스",
+  "현대모비스",
+  "현대오토에버",
+  "현대차",
+  "화신"
+ ],
+ "wf1_macro_common": true,
+ "wf2": {
+  "spec": [
+   "RFHIC",
+   "SK하이닉스",
+   "바이오다인",
+   "삼성바이오로직스",
+   "삼성에피스홀딩스",
+   "삼성전자",
+   "선익시스템",
+   "쎄트렉아이",
+   "엘앤씨바이오",
+   "이수페타시스",
+   "인텔리안테크",
+   "케이엠더블유"
+  ],
+  "gen": [
+   "RFHIC",
+   "SK하이닉스",
+   "바이오다인",
+   "삼성바이오로직스",
+   "삼성에피스홀딩스",
+   "삼성전자",
+   "선익시스템",
+   "쎄트렉아이",
+   "엘앤씨바이오",
+   "이수페타시스",
+   "인텔리안테크",
+   "케이엠더블유"
+  ],
+  "forensic": [
+   "RFHIC",
+   "SK하이닉스",
+   "바이오다인",
+   "삼성바이오로직스",
+   "삼성에피스홀딩스",
+   "선익시스템",
+   "쎄트렉아이",
+   "엘앤씨바이오",
+   "이수페타시스",
+   "인텔리안테크",
+   "케이엠더블유"
+  ],
+  "risk": [
+   "RFHIC",
+   "SK하이닉스",
+   "바이오다인",
+   "삼성바이오로직스",
+   "삼성에피스홀딩스",
+   "쎄트렉아이",
+   "엘앤씨바이오",
+   "이수페타시스",
+   "인텔리안테크",
+   "케이엠더블유"
+  ],
+  "synth": [
+   "RFHIC",
+   "삼성바이오로직스",
+   "쎄트렉아이",
+   "엘앤씨바이오",
+   "인텔리안테크"
+  ]
+ },
+ "wf3": {
+  "calibration": false,
+  "bear": [],
+  "judge": []
+ },
+ "engine_final": false,
+ "report": false,
+ "resume_notes": [
+  "WF2 workflow run ids (resume with scriptPath work/wf2_analysis.js + resumeFromRunId): wf_ab38b784-c89, wf_eef957b7-41c, wf_09747591-3dc, wf_c0202b56-fc7, wf_52821627-8a5, wf_09fc0278-88b",
+  "Pipeline: collect_wf2.py -> build_trees.py (prov) -> engine.py -> prep_wf3_args.py -> wf3_calibrate_bear.js -> collect_wf3.py -> build_trees.py --final -> engine.py -> report_tables.py -> report_build.py -> wf4_verify.js",
+  "Scratchpad path used by scripts: /tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad (restore data/ from this repo there if lost)"
+ ]
+}

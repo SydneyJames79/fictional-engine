@@ -1,0 +1,374 @@
+{
+ "input_name": "엘앤씨바이오",
+ "legal_name": "주식회사 엘앤씨바이오 (L&C Bio Co., Ltd.)",
+ "ticker": "290650",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "추정 종목코드 290650·KOSDAQ 모두 검색결과(FnGuide A290650, Google Finance 290650:KOSDAQ, 한경마켓)와 일치. 2018년 코스닥 상장. 거래정지·관리종목·투자주의환기·상장폐지심사 관련 기사 없음(10/16 장중 거래 기사 존재로 정상 거래 확인). 단, 2026-10-22는 1,447억 주주배정 유상증자 납입일이며, 10/27은 1:1 무상증자 신주배정기준일(권리락일은 통상 기준일 전영업일인 10/26로 추정, 공시 미확인)이므로 이후 주가는 권리락으로 절반 수준이 됨. 신주(유상 370만주) 상장예정 11/4, 무상 신주 상장예정 11/11(일부 기사 11/12). 검색 한도(세션 공유 200회) 소진으로 10/21·10/22 종가 등 일부 항목 추가검색 불가.",
+ "share_class": "보통주(우선주 없음, FnGuide 보통주/우선주 26,969,704/0). 사업회사(지주회사 아님).",
+ "corporate_actions_24m": "사명변경·인적/물적분할·합병·재상장·이전상장 없음(검색상 미확인). 자본변동: 2025년 600억 CB 발행(450억 전환 완료, 잔여 150억 콜옵션 취득·소각 예정), 2026-07-31 주주배정 유상증자(370만주, 최종 모집액 1,446.7억, 납입 10/22, 상장 11/4) 및 1:1 무상증자(기준일 10/27, 신주 30,437,464주, 상장 11/11) 결정. 상장주식수가 2025년 중 24,842,063주→26,969,704주로 증가(CB 전환 영향 추정).",
+ "price": {
+  "value": "56700",
+  "date": "2026-10-15",
+  "kind": "종가(10/16자 두 기사의 등락률로 역산: 장중 67,300원=+18.69%, 애프터마켓 70,100원=+23.63% 모두 전일종가 56,700원을 가리킴)",
+  "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=232806",
+  "source_date": "2026-10-16",
+  "note": "2026-10-22 및 10-21 종가는 검색결과에 없음(검색 한도 소진으로 추가 조회 불가). 확인된 최신 명시적 '장마감' 가격은 10/08 56,400원(한경마켓). 10/16은 장중 67,300원(+18.69%, 잡포스트)·애프터마켓 16시07분 70,100원(톱스타뉴스)만 확인, 10/16 정규장 종가 미확인. investing.com은 10/15 54,100원(전일종가 60,300원)으로 표시하나 등락률 역산치와 충돌 → 역산치(56,700) 채택. 10/22 코스피 -3.52% 급락일이므로 실제 10/22 종가는 위 값과 크게 다를 수 있음. 52주 범위 42,150~125,000원(한경).",
+  "alt_price_1021": "N/A"
+ },
+ "market_cap_bn": {
+  "value": "15292",
+  "date": "2026-10-15",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=290650",
+  "note": "직접 계산: 56,700원 × 26,969,704주 = 15,291.8억원. 참고치: 알파스퀘어 47,700원 기준 12,729억(날짜 불명, 9월 중순 추정), 밸류라인 47,450원 기준 14,553억(주식수 2,697만주 기준이면 12,797억이어야 하므로 내부 불일치), FnGuide 19,553억(다른 시점 주가). 유상증자 신주 370만주 상장(11/4) 후 주식수 30,669,704주 기준으로는 약 17,390억(동일 주가 가정)."
+ },
+ "shares_outstanding": {
+  "value": "26969704",
+  "date": "2026-10-15",
+  "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A290650",
+  "note": "FnGuide·알파스퀘어·Google Finance(2,696.97만주) 일치. 유상증자 신주 3,700,000주 상장(11/4) 후 30,669,704주, 1:1 무상증자(자기주식 제외 30,437,464주, 11/11 상장) 후 약 61,107,168주로 증가 예정."
+ },
+ "treasury_shares": {
+  "count": "302240",
+  "pct": "1.12",
+  "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A290650",
+  "note": "FnGuide 기준(최종변동일 2025-08-19). 무상증자 공시(2026-07-31)의 배정주식수 30,437,464주를 유증 후 총주식수 30,669,704주에서 빼면 자기주식 232,240주로 역산되어 FnGuide 수치와 70,000주 차이 → 2025-08 이후 처분·소각 가능성, 공시 원문 확인 필요. 2025년 자사주 취득액 약 100억(etfshopping, 현금흐름표 기준)."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기(2Q26) — 2026-08-11 잠정실적 공시. 3분기 실적 발표 예정일 2026-11-18(한경마켓).",
+ "financials": [
+  {
+   "period": "FY2024(연결)",
+   "revenue_bn": "720.9",
+   "op_income_bn": "25.4",
+   "net_income_bn": "N/A",
+   "ocf_bn": "-57",
+   "capex_bn": "N/A",
+   "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=635816",
+   "note": "매출 720억9,332만원, 영업이익 25억4,207만원(2025년 실적 공시의 직전연도 비교치). 순이익은 흑자였다는 기사만 확인, 금액 N/A. OCF 약 -57억(한경 2026-02-27)."
+  },
+  {
+   "period": "FY2025(연결)",
+   "revenue_bn": "854.8",
+   "op_income_bn": "42.4",
+   "net_income_bn": "-1290.8",
+   "ocf_bn": "122",
+   "capex_bn": "N/A",
+   "source_url": "https://www.hankyung.com/article/202602270713P",
+   "note": "매출 854억7,641만원, 영업이익 42억4,132만원(영업이익률 5%), 당기순손실 1,290억7,955만원(공시 기준, 디지털투데이). 메디칼타임즈는 순손실 1,382억으로 보도 → 공시 기준 1,290.8억 채택. 순손실 원인: 주가 상승에 따른 CB 파생상품 평가손실·중국법인 평가손실 등 비현금 요인. OCF 약 +122억 유입. 분할·합병 없어 전년과 비교 가능."
+  },
+  {
+   "period": "2026년 상반기(1H26, 연결)",
+   "revenue_bn": "691",
+   "op_income_bn": "146",
+   "net_income_bn": "-254",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.medicopharma.co.kr/news/articleView.html?idxno=69079",
+   "note": "연결 매출 691억(+80.4% YoY, 전년 383억), 영업이익 146억(전년 -4억에서 흑자전환), 순손실 254억(CB 파생상품 평가손실 217억 반영, 비현금). 별도 기준 상반기 매출 554억·영업이익 153억. 2Q26 별도 잠정: 매출 316억(+91.7%), 영업이익 88억(+624.8%), 순이익 -273억(2026-08-11 공정공시). 별도 영업이익(153)이 연결(146)보다 커 해외 자회사(중국 등) 적자 시사."
+  },
+  {
+   "period": "FY2025 3Q 누적(참고, 연결)",
+   "revenue_bn": "608",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.hankyung.com/article/202511144816P",
+   "note": "2025년 3분기 누적 연결 매출 608억(+15%), 별도 488억. 3Q 영업이익 흑자전환 보도. TTM 계산용 분기치는 미확인."
+  }
+ ],
+ "balance_sheet": {
+  "date": "N/A",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=01181515&naviCrpNm=%EC%97%98%EC%95%A4%EC%94%A8%EB%B0%94%EC%9D%B4%EC%98%A4&naviCode=A002",
+  "note": "2026 반기보고서상 현금·차입금·자기자본 수치는 검색결과에서 확인되지 않음. 정성 정보: 잔여 CB 150억(콜옵션 취득·소각 예정, 유증자금 150억 충당), 2025년 OCF +122억, 10/22 유상증자 1,446.7억 납입으로 현금 대폭 증가(시설 1,050억·운영 206억·CB상환 150억 용도). 최대주주 주식담보대출 존재(이자율 변경 공시, 400억 마련해 담보대출 축소)."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "50",
+  "dividend_yield_pct": "0.09",
+  "buyback_policy": "2025년 자사주 취득 약 100억(현금흐름 기준, etfshopping) 및 자사주 취득 결정 시 '주주가치 제고·밸류업 정책 지속' 언급(기사 날짜 불명). 소각 결정 공시는 검색상 미확인. 2024-11 IB토마토: 수익성 악화로 배당 확대 기조 중단, 전년 수준 유지.",
+  "source_url": "https://etfshopping.com/stock/290650/dividend",
+  "valueup_disclosure": "N/A(밸류업 공시 여부 미확인; 회사가 '밸류업 정책' 표현을 쓴 보도만 존재)"
+ },
+ "dilution": {
+  "convertibles": "2025년 발행 CB 600억 중 450억 전환 완료(주식수 증가 반영), 잔여 150억은 유증자금으로 콜옵션 행사·전량 취득 후 소각 예정(2026-07-31 공시). BW·EB·RCPS 미확인. 과거 제3자배정 증자·CB 다수 발행 이력(나우IB 등).",
+  "stock_options": "N/A(미행사 수량 검색 미확인)",
+  "rights_issues": "2026-07-31 주주배정 후 실권주 일반공모 유상증자 결정: 보통주 3,700,000주(기존 주식수 대비 13.7%), 예정발행가 38,000→39,100원(최종 확정가 미확인), 모집액 1,446.7억(당초 1,406억), 신주배정기준일 9/4, 구주주 청약 10/14~15 청약률 103.92%(초과청약 포함, 일반공모 미실시), 납입 10/22, 신주 상장 11/4. 이어 1:1 무상증자(기준일 10/27, 30,437,464주, 상장 11/11). 최대주주 이환철은 배정분 50%만 참여, 나머지 신주인수권증서 매각.",
+  "est_dilution_pct": "13.7",
+  "source_url": "https://www.news1.kr/bio/pharmaceutical-bio/6322120"
+ },
+ "ownership": {
+  "largest_holder": "이환철(대표이사/회장) 및 특별관계자 11인",
+  "largest_holder_pct": "24.43",
+  "overhang_notes": "2026-09-18 대량보유보고: 이환철 등 24.43%(직전 21.92%, 잠재주식 포함 기준). 본인 직접 보유 6,356,931주(22.81%, 9월) / 6,325,390주(23.5%, 8월 기사). 회사 공시: 유증·구주매각·무상증자 후 최대주주 지분 23.45%→19.40%(특별관계인 포함 20.36%)로 하락 예상. 오버행: 11/4 유상 신주 370만주 상장(발행가 39,100원, 시가 대비 대폭 할인 → 차익실현 물량), 최대주주 배정분 50% 미참여분 신주인수권증서 매각, 최대주주 주식담보대출(400억 마련해 축소 중). 외국인 보유비중 24.19%(스톡플러스, 날짜 불명). 보호예수·블록딜 관련 최근 공시 미확인.",
+  "source_url": "https://www.datatooza.com/article/20260918161058220052ef389ed3_80"
+ },
+ "business": {
+  "summary": "인체조직(동종 피부·연골 등) 기반 재생의학 의료기기 기업. 주력은 무세포 동종진피 '메가덤'(유방재건·화상·성형), ECM 파우더형 피부 재생재료 '리투오(ReCM)'(2025년 하반기부터 '품절템'급 성장, 월 2.4만개→2026년 말 8만개 증설), 무세포 동종 연골 '메가카티(MegaCarti)'(관절연골, 국내 허가·중국 NMPA 혁신의료기기 수입허가 신청 중). 중국: CICC와 합작한 엘앤씨바이오차이나(쿤산 공장 2022-12 준공), 메가덤플러스 중국 현지생산 NMPA 허가심사 2026-03 개시. 동탄 글로벌 통합 생산거점에 1,050억 투자 예정. 미국·중국을 차기 성장축으로 제시.",
+  "segments": "제품별 매출 비중 N/A(사업보고서 미확인). 2025년 3Q 누적 리투오 매출 20억 돌파(당시 비중 소폭) → 2026년 상반기 성장의 주된 동력은 리투오. 인체조직(메가덤 등) 매출이 대부분. 연결 대비 별도 매출 비중: 1H26 별도 554억/연결 691억.",
+  "key_customers": "국내 성형외과·피부과·정형외과·유방외과 병의원(직판·대리점), 중국 합작법인 경유 수출. 구체 고객명 N/A.",
+  "customer_concentration": "N/A(상위 고객 비중 미확인; 병의원 다수 분산 구조로 추정, 뉴스워커는 '제품 편중' 리스크 지적)",
+  "competitors": "한스바이오메드(벨라젤·셀더름), 시지바이오, 파마리서치(리쥬란), 휴젤·클래시스 등 미용의료 기업(memory_unverified, 검색결과에서 경쟁사 직접 비교는 미확인)",
+  "industry_group": "바이오의약품·의료기기·진단"
+ },
+ "consensus": {
+  "target_price_avg": "80000",
+  "target_price_date": "2026-08-12",
+  "n_brokers": "5",
+  "rev_2026e_bn": "1530",
+  "op_2026e_bn": "N/A",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "한경컨센서스 2026-08-12 목표가 80,000원, FnGuide 추정기관 5곳·목표주가 80,000원·투자의견 4.0. 유진투자증권(2026-03-24) 목표가 68,000→80,000 상향(리투오 증설로 공급병목 해소). 하나증권(6월) 미용의료 Top Pick. 유안타(6월) 의견·목표가 미제시. 신한(7/14) 2Q 매출 368억·영업이익 82억 흑자전환 전망(실제 연결 상반기 146억으로 상회). 다올 2026년 매출 1,530억 전망(단일 증권사 수치로 컨센서스 아님). littlebproject 비공식 집계 6~8월 개별 목표가 74,500~125,000원. 9~10월 신규 리포트는 검색 미확인. 주의: 1:1 무상증자(10/27 기준일) 후 목표가는 절반으로 조정될 것.",
+  "source_url": "https://markets.hankyung.com/stock/290650/consensus"
+ },
+ "recent_events": [
+  {
+   "event": "엘앤씨차이나, 메가덤플러스 중국 현지생산 품목허가 NMPA 심사 개시(메가카티 현지허가 병행 추진)",
+   "event_date": "2026-03-04",
+   "article_date": "2026-03-04",
+   "source_url": "https://www.newspim.com/news/view/20260304000768"
+  },
+  {
+   "event": "유진투자증권 목표주가 68,000→80,000원 상향, 매수 유지(리투오 증설)",
+   "event_date": "2026-03-24",
+   "article_date": "2026-03-24",
+   "source_url": "https://v.daum.net/v/20260324164524162?f=p"
+  },
+  {
+   "event": "주주배정 유상증자 1,406억(370만주, 예정가 38,000원) 및 1:1 무상증자 결정 공시 → 다음 거래일 장중 -12.7% 급락",
+   "event_date": "2026-07-31",
+   "article_date": "2026-08-03",
+   "source_url": "https://www.ajunews.com/view/20260803094502273"
+  },
+  {
+   "event": "최대주주 이환철, 유증 배정분 50% 참여·400억 마련·담보대출 축소 계획",
+   "event_date": "2026-08-06",
+   "article_date": "2026-08-06",
+   "source_url": "https://v.daum.net/v/20260806100033479"
+  },
+  {
+   "event": "2Q26 잠정실적: 별도 매출 316억(+91.7%)·영업이익 88억(+624.8%), 연결 상반기 매출 691억·영업이익 146억 흑자전환, 순손실 254억(CB 평가손실 217억)",
+   "event_date": "2026-08-11",
+   "article_date": "2026-08-11",
+   "source_url": "https://www.medicopharma.co.kr/news/articleView.html?idxno=69079"
+  },
+  {
+   "event": "이환철 등 특별관계자 지분 21.92%→24.43% 확대 보고",
+   "event_date": "2026-09-18",
+   "article_date": "2026-09-18",
+   "source_url": "https://www.datatooza.com/article/20260918161058220052ef389ed3_80"
+  },
+  {
+   "event": "메가카티 4년 추적 임상결과 APKASS 학회 발표(40명, 미세천공술 병행)",
+   "event_date": "2026-09-23",
+   "article_date": "2026-09-23",
+   "source_url": "https://www.newspim.com/news/view/20260923000355"
+  },
+  {
+   "event": "유상증자 구주주 청약률 103.92%(모집액 1,446.7억), 실권주 일반공모 미실시, 납입 10/22·상장 11/4",
+   "event_date": "2026-10-15",
+   "article_date": "2026-10-16",
+   "source_url": "https://www.hankyung.com/article/202610166317i"
+  },
+  {
+   "event": "주가 장중 +18.69%(67,300원) 급등, 리투오 해외 공급 확대 기대",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-16",
+   "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=232806"
+  },
+  {
+   "event": "유상증자 납입일(10/22), 무상증자 신주배정기준일(10/27), 무상 신주 상장 예정(11/11)",
+   "event_date": "2026-10-22",
+   "article_date": "2026-07-31",
+   "source_url": "https://www.chickstockfi.com/disclosures/20260731000522"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가 미확인(검색결과 없음, 세션 검색 한도 소진). 채택한 10/15 종가 56,700원은 10/16 기사 등락률 역산치",
+  "10/16~10/21 종가 흐름 미확인(10/16 장중 +18.69% 급등 이후 흐름 불명)",
+  "유상증자 최종 확정 발행가액(예정 39,100원) 미확인",
+  "FY2024 당기순이익 금액 미확인",
+  "2026 반기 기준 현금·차입금·순현금·자기자본·CAPEX·영업현금흐름 미확인",
+  "자기주식 수 충돌(FnGuide 302,240주 vs 무상증자 공시 역산 232,240주)",
+  "스톡옵션 미행사 잔량 미확인",
+  "제품별 매출 비중·상위 고객 집중도 미확인",
+  "2026E·2027E 매출/영업이익 컨센서스(다수 증권사 평균) 미확인, 9~10월 신규 리포트 미확인",
+  "밸류업 공시 여부, 자사주 소각 공시 여부 미확인",
+  "메가카티 중국 NMPA 수입허가 승인 여부(신청 후 결과 미보도)",
+  "보호예수 해제·블록딜 일정 미확인",
+  "경쟁사 목록은 기억 기반(memory_unverified)"
+ ],
+ "sources": [
+  {
+   "title": "한경마켓 엘앤씨바이오 종목페이지(10/08 종가 56,400, 반기 실적, 실적발표일)",
+   "url": "https://markets.hankyung.com/stock/290650",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "잡포스트: 엘앤씨바이오 18.69% 급등…리투오 해외 공급 확대 관심",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=232806",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "톱스타뉴스: 엘앤씨바이오 주가, 10월 16일 애프터마켓 70,100원 23.63% 상승",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16249030",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "investing.com L&C Bio (10/15 54,100원 표시)",
+   "url": "https://www.investing.com/equities/l-c-bio-co-ltd",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "FnGuide 엘앤씨바이오(A290650) 주식수·자사주·컨센서스",
+   "url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A290650",
+   "date": "N/A"
+  },
+  {
+   "title": "알파스퀘어 엘앤씨바이오(주식수 26,969,704주)",
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=290650",
+   "date": "N/A"
+  },
+  {
+   "title": "한경: 엘앤씨바이오 2025년 연결 매출 855억·영업이익 42억",
+   "url": "https://www.hankyung.com/article/202602270713P",
+   "date": "2026-02-27"
+  },
+  {
+   "title": "디지털투데이: 2025년 당기순손실 1,290억 적자전환 공시",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=635816",
+   "date": "2026-02-27"
+  },
+  {
+   "title": "메디코파마: 상반기 영업익 146억 흑자전환, CB 평가손실에 순손실 254억",
+   "url": "https://www.medicopharma.co.kr/news/articleView.html?idxno=69079",
+   "date": "2026-08-11"
+  },
+  {
+   "title": "치킨스탁: 영업(잠정)실적 공정공시 2026-08-11(2Q 별도)",
+   "url": "https://www.chickstockfi.com/disclosures/20260811900222",
+   "date": "2026-08-11"
+  },
+  {
+   "title": "이데일리: 리투오 성장에 상반기 최대 실적, 영업익 6배",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05182406645546336",
+   "date": "2026-08-11"
+  },
+  {
+   "title": "아주경제: 1406억 유증 결정에 12%대 급락",
+   "url": "https://www.ajunews.com/view/20260803094502273",
+   "date": "2026-08-03"
+  },
+  {
+   "title": "뉴스핌: 주주배정 유상증자 추진, 글로벌 생산기지 구축",
+   "url": "https://www.newspim.com/news/view/20260731001249",
+   "date": "2026-07-31"
+  },
+  {
+   "title": "치킨스탁: 주요사항보고서(유무상증자결정) 2026-07-31",
+   "url": "https://www.chickstockfi.com/disclosures/20260731000522",
+   "date": "2026-07-31"
+  },
+  {
+   "title": "뉴스1: 1447억 유상증자 구주주 청약률 103.92%",
+   "url": "https://www.news1.kr/bio/pharmaceutical-bio/6322120",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "한경: 1447억원 유상증자 청약률 103.9%",
+   "url": "https://www.hankyung.com/article/202610166317i",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "데일리팜: 1년여 잇단 CB·유증…1406억 주주배정",
+   "url": "https://www.dailypharm.com/user/news/341268",
+   "date": "2026-08"
+  },
+  {
+   "title": "데일리팜: 이환철, 400억 마련…유증 참여·담보대출 축소(예정발행가 39,100원)",
+   "url": "https://dailypharm.com/user/news/342347",
+   "date": "2026-08"
+  },
+  {
+   "title": "다음(연합인포맥스 등): 시총 10% 유증…최대주주는 절반만 인수",
+   "url": "https://v.daum.net/v/20260806100033479",
+   "date": "2026-08-06"
+  },
+  {
+   "title": "데이터투자: 이환철 등 지분 24.43%로 확대",
+   "url": "https://www.datatooza.com/article/20260918161058220052ef389ed3_80",
+   "date": "2026-09-18"
+  },
+  {
+   "title": "메디칼타임즈: 주가 상승이 곧 손실…CB 역설(순손실 1,382억 표기)",
+   "url": "https://www.medicaltimes.com/Mobile/News/NewsView.html?ID=1168505",
+   "date": "2026"
+  },
+  {
+   "title": "한경컨센서스 엘앤씨바이오(목표가 80,000, 2026-08-12)",
+   "url": "https://markets.hankyung.com/stock/290650/consensus",
+   "date": "2026-08-12"
+  },
+  {
+   "title": "서울경제/다음: 생산역량·해외매출 확대…목표주가 상향(유진)",
+   "url": "https://v.daum.net/v/20260324164524162?f=p",
+   "date": "2026-03-24"
+  },
+  {
+   "title": "유진투자증권 리포트 PDF 2026-03-24",
+   "url": "https://file.alphasquare.co.kr/media/pdfs/company-report/20260324_290650_chaeun.lee_4.pdf",
+   "date": "2026-03-24"
+  },
+  {
+   "title": "다음: 2분기 흑자 전환 전망…미국·중국이 다음 성장축(신한)",
+   "url": "https://v.daum.net/v/20260714085242070?f=p",
+   "date": "2026-07-14"
+  },
+  {
+   "title": "뉴스핌: 메가덤플러스 中 NMPA 현지생산 허가심사 개시",
+   "url": "https://www.newspim.com/news/view/20260304000768",
+   "date": "2026-03-04"
+  },
+  {
+   "title": "뉴스핌: 메가카티 4년 임상 공개",
+   "url": "https://www.newspim.com/news/view/20260923000355",
+   "date": "2026-09-23"
+  },
+  {
+   "title": "이데일리: 메가카티 중국 혁신의료기기 수입인허가 접수 완료",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01594086638893512",
+   "date": "2024"
+  },
+  {
+   "title": "한경: 3분기 영업익 흑자전환…역대 최대 매출(2025 3Q 누적 608억)",
+   "url": "https://www.hankyung.com/article/202511144816P",
+   "date": "2025-11-14"
+  },
+  {
+   "title": "etfshopping 배당 정보(2025 사업연도 DPS 50원)",
+   "url": "https://etfshopping.com/stock/290650/dividend",
+   "date": "2026-08"
+  },
+  {
+   "title": "IB토마토: 배당 확대 멈추고 실적 회복 집중",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1245636",
+   "date": "2024-11"
+  },
+  {
+   "title": "뉴스워커: 오너 중심-제품 편중 이중 리스크 진단",
+   "url": "http://www.newsworker.co.kr/news/articleView.html?idxno=405522",
+   "date": "2026"
+  },
+  {
+   "title": "DART 엘앤씨바이오 정기공시 검색",
+   "url": "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=01181515&naviCrpNm=%EC%97%98%EC%95%A4%EC%94%A8%EB%B0%94%EC%9D%B4%EC%98%A4&naviCode=A002",
+   "date": "N/A"
+  }
+ ],
+ "search_count": "18 (추가 8회 요청은 세션 공유 WebSearch 한도 소진으로 미수행)"
+}

@@ -1,0 +1,745 @@
+{
+ "role": "거시경제·시장체제 에이전트(산업 사이클 담당)",
+ "as_of": "2026-10-22 15:40 KST",
+ "facts": [
+  {
+   "topic": "KOSPI 종가(10/22)",
+   "value": "5533.77",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-10-22",
+   "source_url": "https://view.asiae.co.kr/article/2026102215330776702",
+   "note": "전일(10/21) 종가 5735.66 대비 -201.89p(-3.52%). 장중 저가 5485.98. 코스닥 764.10(-3.62%, 이투데이). 하락 배경은 메타 '현금흐름 적자' 충격 + 외국인·기관 매도(진일보 보도). 메타 수치 자체는 미검증."
+  },
+  {
+   "topic": "국고채 금리(10/21 마감)",
+   "value": "3년 3.822 / 5년 3.965 / 10년 4.160",
+   "as_of_date": "2026-10-21",
+   "source_date": "2026-10-21",
+   "source_url": "https://biz.sbs.co.kr/article/20000341344",
+   "note": "1년 3.688, 2년 3.782, 20년 4.197, 30년 4.251. 10/22 금통위(동결 전망 93%, 금투협 설문 10/12~15). 10/22 마감치·금통위 결과는 검색 예산 소진으로 미확인."
+  },
+  {
+   "topic": "AI·DC: 4대 하이퍼스케일러 2026 CAPEX 가이던스 합산",
+   "value": "720~745 (십억달러)",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-07~10",
+   "source_url": "https://www.tmtfinance.com/intel/2026-hyperscaler-capex-tops-us700bn-analysis",
+   "note": "다른 집계: 2025 $410B→2026 $725B(+77%, jjanalysis 2026-07-26). 회사별: 아마존 ~$220B(←$200B), MS ~$175B(리스 회계 조정), 메타 $130~145B(CFO는 '매우 동적'). 대부분 1·2분기 실적콜 기준이며 2026년 3분기(캘린더) 실적은 10/22 현재 대부분 미발표."
+  },
+  {
+   "topic": "AI·DC: 2027 하이퍼스케일러 CAPEX 전망(증권가 추정)",
+   "value": "도이체방크 2027 +40%(2026 +77% 후) / 모건스탠리 2027 ~1.3조달러 / 골드만 2027 ~1.4조달러",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-09~10",
+   "source_url": "https://seekingalpha.com/news/4501906-us-hyperscalers-capex-to-almost-triple-to-14t-by-2027-goldman-sachs-says",
+   "note": "회사별 2027 공식 가이던스는 미확인. 2027 성장률 전망은 1분기 실적시즌 +23%→현재 +40%로 상향(Threads 게시물 인용 도이체방크, 2차 출처)."
+  },
+  {
+   "topic": "AI·DC: 하이퍼스케일러 CAPEX가 영업현금흐름 초과",
+   "value": "2026년 3분기 전후 교차 전망",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026",
+   "source_url": "https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow",
+   "note": "hbcapitalre도 'Q3 2026 crossover' 분석. 10/22 코스피 급락 재료가 '메타 현금흐름 적자'라는 점과 정합. 부채조달(채권발행) 의존도 상승이 거품 논쟁의 핵심."
+  },
+  {
+   "topic": "AI·DC: 엔비디아 FY27 2분기 실적(2026-08-26 발표)",
+   "value": "매출 96.22 / 데이터센터 89.0 (십억달러)",
+   "as_of_date": "2026-08-26",
+   "source_date": "2026-08-27",
+   "source_url": "https://www.iphoneincanada.ca/2026/08/27/nvidia-blows-past-expectations-with-96-2-billion-revenue-in-q2-2027/",
+   "note": "매출 +106% YoY, DC +117% YoY/+18% QoQ. 3분기 가이던스 $108.0B ±2%, GM 74.0% ±50bp(중국 DC 매출 0 가정). CFO: FY2028 매출 약 +70% 성장 전망(컨센 ~45%). 2차 출처, IR 원문 미확인."
+  },
+  {
+   "topic": "AI·DC: 엔비디아-OpenAI 투자 축소",
+   "value": "당초 최대 1000억달러 → 라운드 300억달러 투자(보도)",
+   "as_of_date": "2026-03",
+   "source_date": "2026-02~03",
+   "source_url": "https://itdaily.com/news/innovation/nvidia-openai-30-billion/",
+   "note": "OpenAI는 2030년까지 약 6000억달러 투자 계획(기존 1.4조달러에서 후퇴, fnnews 2026-02-22). 2026년 10월 최신 OpenAI·xAI 투자계획, 전력·GPU 공급 제약 현황은 미확인."
+  },
+  {
+   "topic": "메모리: 삼성전자 2026년 3분기 잠정실적(10/8)",
+   "value": "매출 1950000 / 영업이익 1074000 (억원)",
+   "as_of_date": "2026-10-08",
+   "source_date": "2026-10-08",
+   "source_url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+   "note": "영업이익 +20% QoQ, +782.5% YoY, 매출 +126.59% YoY. HBM·서버 DRAM·NAND 주도. 국내기업 첫 분기 영업이익 100조원 돌파. 컨센 대비 평가는 집계기준 따라 엇갈림."
+  },
+  {
+   "topic": "메모리: SK하이닉스 3분기 실적 발표 일정·컨센서스",
+   "value": "769640 (억원, 영업이익 컨센서스)",
+   "as_of_date": "2026-10-21",
+   "source_date": "2026-10-20~21",
+   "source_url": "https://www.mt.co.kr/industry/2026/10/20/2026101920003485406",
+   "note": "발표 10/28(수) 09:00 컨퍼런스콜(10/14 공시, stockplus). 일부 매체 29일 표기. 80조원 상회 전망도 존재(공감신문). 실제 수치 미발표."
+  },
+  {
+   "topic": "메모리: 마이크론 FY26 4분기(2026-09-30 발표)",
+   "value": "매출 54.23 (십억달러), GM 87.0%, EPS 33.42달러",
+   "as_of_date": "2026-09-30",
+   "source_date": "2026-09-30",
+   "source_url": "https://www.marketbeat.com/instant-alerts/transcript-micron-technology-q4-earnings-call-highlights-2026-09-30/",
+   "note": "+379% YoY. FY26 매출 $133.2B. FQ1'27 가이던스 매출 $61.5B ±1.5B, GM ~86.25%, EPS $38.15 ±1. FY26 CAPEX $27.37B(아이다호·싱가포르 클린룸 중심), FY27 하반기 CAPEX 증가(건설비>장비비). 2027년 HBM 비트 대부분 상위 가격에 계약 완료, 공급제약 FY27~28 지속 전망, 엔비디아와 커스텀 HBM4E 공동설계."
+  },
+  {
+   "topic": "메모리: TrendForce 4Q26 계약가격 전망(2026-09-30)",
+   "value": "범용 DRAM +10~15% QoQ / HBM 포함 DRAM +15~20% / NAND +15~20%",
+   "as_of_date": "2026-09-30",
+   "source_date": "2026-09-30",
+   "source_url": "https://www.trendforce.com/research/download/RP260924PL",
+   "note": "기업용 QLC SSD +23~28%, 소비자용은 소폭. 3Q26은 범용 DRAM +13~18%, NAND +10~15%였음. 원가 전가로 노트북·스마트폰 출하 감소 지적(소비자 수요 압박)."
+  },
+  {
+   "topic": "메모리: HBM4 가격 협상(2027 물량)",
+   "value": "삼성 제시가 1Gb당 4달러대 중후반, HBM3E 대비 3배 이상(보도)",
+   "as_of_date": "2026-10-03",
+   "source_date": "2026-10-03",
+   "source_url": "https://www.g-enews.com/article/Global-Biz/2026/10/202610031136088018fbbec65dfb_1",
+   "note": "최종 계약가 아님. 협상은 2026년 10월 중 마무리 전망. KB증권: 삼성 HBM4 연간 생산물량 전량 공급계약 완료, 메모리 생산물량 ~80% 장기공급계약(센머니). TrendForce: 2027 HBM ASP +121%(서울경제). KB: 삼성 2027 HBM ASP +100~150%. UBS: 삼성 2027년까지 HBM 점유율 SK하이닉스와 동등 전망. SK하이닉스 협상가는 미확인."
+  },
+  {
+   "topic": "메모리: 중국 추격(CXMT)",
+   "value": "웨이퍼 캐파 2021 5만장→2025 27만장→2026E 35만장(월, 보도)",
+   "as_of_date": "2026-09-04",
+   "source_date": "2026-09-04",
+   "source_url": "https://www.hankyung.com/article/2026090434916",
+   "note": "CXMT 2026년 7월 상하이 커촹반 상장. HBM3E 2027년 양산 목표 거론. 중국 WFE 국산화율(2025): 열처리 45%, CMP 39%, 식각 31%, 박막증착 27%(하나증권 2026-07-06). YMTC 최신 현황·2026년 10월 미국 규제 변화는 미확인."
+  },
+  {
+   "topic": "반도체 장비: WFE/장비시장 전망(기관별)",
+   "value": "SEMI 장비 2026 145 / 2027 156 (십억달러); UBS 2027 WFE 226; TEL 2026 >150, 2027 >190; Citi 2026 144, 2027 200, 2028 250",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-09~10",
+   "source_url": "https://www.eetimes.com/ai-drives-capex-chip-equipment-to-record-156b-in-2027/",
+   "note": "EE Times 기사 날짜 메타데이터 불일치(원문 발표일 확인 필요). UBS는 2027 WFE를 $198B→$226B 상향하며 DRAM·NAND 장비 발주가 선행, 파운드리·로직은 2027 하반기 이후 가속 전망(macrostream). SEMI: 중국 투자 2026년부터 감소 전망. 2027 WFE 추정치 기관별 편차 매우 큼($135B~$226B)."
+  },
+  {
+   "topic": "반도체 장비: TSMC CAPEX",
+   "value": "2026 가이던스 60~64 (십억달러), 2027 추정 최대 85",
+   "as_of_date": "2026-10-15",
+   "source_date": "2026-10",
+   "source_url": "https://finance.yahoo.com/technology/articles/tsmc-rises-2027-capex-forecast-192841498.html",
+   "note": "4월 가이던스 $52~56B에서 상향. 70~80% 선단공정 배분. TSMC 장비 발주 리스트가 2025년 12월 기준선의 ~2배라는 보도(404k, 2026-09-04)."
+  },
+  {
+   "topic": "반도체 장비: 삼성 반도체 2026 투자·파운드리 점유율",
+   "value": "약 73 (십억달러, 메모리+파운드리+R&D 합산 추정) / 파운드리 점유율 7.2%",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026",
+   "source_url": "https://tech-insider.org/samsung-73-billion-semiconductor-investment-2026/",
+   "note": "2차 블로그 출처, 공식 수치 아님. 삼성 파운드리 테슬라 AI6·애플 수주 진행 상황, 후공정(하이브리드 본딩·TC본더) 투자, 2027 삼성·SK 설비투자 계획은 검색 예산 소진으로 미확인."
+  },
+  {
+   "topic": "디스플레이: 삼성디스플레이 8.6세대 IT OLED",
+   "value": "41000 (억원, 아산 투자액) / 2026년 양산 개시",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-10",
+   "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=555952",
+   "note": "8.6세대는 6세대 대비 유리기판 면적 ~2배. 맥북 프로 OLED는 8.6G 라인 가동 후 생산. 애플 OLED 확대로 2030년 IT 패널 비중 3배 전망(중앙이코노미뉴스)."
+  },
+  {
+   "topic": "디스플레이: LG디스플레이 투자전략(8.6G 미투자)",
+   "value": "기존 8세대 설비 활용 FLiPP(무FMM) 기술로 IT OLED 대응, 6세대 중소형 스마트폰 OLED 투자 우선",
+   "as_of_date": "2026-10-08",
+   "source_date": "2026-10-08",
+   "source_url": "https://newsway.co.kr/news/view?ud=2026100814524740720",
+   "note": "비즈니스포스트: LGD는 8.6G IT 설비 투자 대신 6G 라인 활용. 애플워치12 OLED 전량 LGD."
+  },
+  {
+   "topic": "디스플레이: 애플 폴더블 아이폰 OLED",
+   "value": "삼성디스플레이 단독 공급, 양산 개시(보도) + 증설 검토",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-02-06 / 2026-06-22",
+   "source_url": "https://www.etnews.com/20260622000287",
+   "note": "애플 2026 OLED 라인업 전량 삼성·LG 공급(9to5Mac 2026-06-23). 스마트글라스·XR·마이크로LED·마이크로디스플레이(OLEDoS) 시장 수치는 검색 예산 소진으로 미확인(N/A)."
+  },
+  {
+   "topic": "자동차: 현대차 2026년 3분기 실적",
+   "value": "N/A (10/22 16:00 KST 발표 예정, 기준시각 이후)",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026-10-11",
+   "source_url": "https://www.g-enews.com/article/Industry/2026/10/202610110914004578112616b072_1",
+   "note": "컨센서스(글로벌이코노믹 10/11): 영업이익 23635억원(-6.8% YoY), 매출 448014억원(-4.1% YoY), 판매 ~91.8만대(-11.5%). 다른 캘린더(knowingasset): 매출 컨센 ~49.2조, EPS 12,347원 — 두 집계가 상충. 2Q26 매출 45.9조, OPM 5.5%. 회사 2026 OPM 목표 6.3~7.3%. 비교: 3Q25 매출 46.7214조, OP 2.5372조(-29.2%)."
+  },
+  {
+   "topic": "자동차: 미국 관세 현황(한국산 자동차·부품)",
+   "value": "15 (%)",
+   "as_of_date": "2026-06-23",
+   "source_date": "2026-06-23",
+   "source_url": "https://www.mt.co.kr/industry/2026/06/23/2026062219515061536",
+   "note": "2025년 7월 한미 협상으로 25%→15% 합의, 2025년 하반기 지연 후 시행. 현대차·기아 연간 관세 비용 수조원 추정. 3분기 관세 비용 실제치·2026년 10월 한미 후속협상 상태는 미확인."
+  },
+  {
+   "topic": "자동차: 현대차그룹 3분기 미국 판매",
+   "value": "506200 (대, 현대차+기아 합산)",
+   "as_of_date": "2026-10-02",
+   "source_date": "2026-10-02",
+   "source_url": "https://www.mt.co.kr/industry/2026/10/02/2026100212310767180",
+   "note": "분기 사상 첫 50만대 돌파, 포드 추월 추정(EBN). 글로벌·유럽·중국 판매, EV 보조금, 하이브리드 수요, 중국 업체 경쟁, SDV는 검색 예산 소진으로 미확인."
+  },
+  {
+   "topic": "바이오: 미국 생물보안법(BIOSECURE Act)",
+   "value": "2025-12-18 서명·발효 (FY2026 NDAA Sec.851, P.L.119-60)",
+   "as_of_date": "2026-01",
+   "source_date": "2026-01",
+   "source_url": "https://www.bakermckenzie.com/en/insight/publications/2026/01/united-states-the-biosecure-act-becomes-law",
+   "note": "발효 1년 내(~2026-12) 우려기업 명단, 이후 180일 내(~2027-06) 시행지침. 2026년 6월 국방부 1260H 명단에 우시앱텍 포함은 위키피디아 단일 출처(미검증). 바이오시밀러·PBM·의약품 232조 관세·CDMO 가격은 미확인."
+  },
+  {
+   "topic": "바이오: 국내 코스닥 바이오 IPO 심리",
+   "value": "7월 이후 예심 통과 7곳, 하반기 5곳 상장, 엠에스바이오 10/22 상장(청약 경쟁률 1539:1)",
+   "as_of_date": "2026-10-21",
+   "source_date": "2026-10-21",
+   "source_url": "https://www.thebionews.net/news/articleView.html?idxno=29248",
+   "note": "상반기 부진 후 하반기 회복. 퍼스트바이오테라퓨틱스 시리즈D 317억원(리가켐 SI). 이노보테라퓨틱스 예심 통과(10/16). 글로벌 바이오텍 IPO 창은 2026년 초부터 서서히 개방(약사공론 2026-01-29)."
+  },
+  {
+   "topic": "방산·우주: 2027년 국방예산 정부안",
+   "value": "732777 (억원), +8.2% YoY",
+   "as_of_date": "2026-09-03",
+   "source_date": "2026-09-03",
+   "source_url": "https://www.fnnews.com/news/202609030806166003",
+   "note": "2008년 이후 최대 증가율(확정안 기준; 일부 매체 2007년 이후). KF-21·핵추진잠수함·드론/대드론·MUAV·L-SAM 1년 조기 전력화. 2026년 방산 수출액, 우주항공청 예산, 한국 위성사업 예산은 미확인."
+  },
+  {
+   "topic": "위성통신: 저궤도 안테나 국산화·수출",
+   "value": "에이스테크-항우연 LEO 메가군집 지상국 ESA 계약 1.47 (억원)",
+   "as_of_date": "2026-09-02",
+   "source_date": "2026-09-02",
+   "source_url": "https://www.newspim.com/news/view/20260902000757",
+   "note": "케이앤에스아이앤씨 동남아 해군 함정용 위성통신 안테나 첫 수출(10/2), 원웹 인증 마무리 단계. KAI 6G LEO 통신위성·차세대중형위성·초소형 SAR 플랫폼 IAC 2026 공개. LIG D&A 방공망 패키지 수출. 스타링크·카이퍼 전개 수치, 5G CAPEX, 6G 일정은 검색 예산 소진으로 미확인."
+  },
+  {
+   "topic": "ESS: 삼성SDI 미국 LFP ESS",
+   "value": "수주 20000 (억원, 미국 에너지인프라, 2027~2030 납품) / 누적 공급계약 35000 (억원, 더트래커 집계)",
+   "as_of_date": "2026-10-14",
+   "source_date": "2026-10",
+   "source_url": "https://thetracker.co.kr/View.aspx?No=4261736",
+   "note": "인디애나 스타플러스에너지 공장 10월 양산 목표 유지, 10/14 기준 미개시. 두 수주 수치는 집계 범위 차이. LGES 북미 ESS 점유율 ~14%(1Q26). SK온 조지아 LFP ESS 2026년 생산."
+  },
+  {
+   "topic": "ESS: 중국산 배터리 관세·FEOC 및 시장 반응",
+   "value": "중국산 ESS 배터리 관세 28.4% → 58.4% 전망(출처·시점 상이)",
+   "as_of_date": "2026-10-19",
+   "source_date": "2026-10-06 / 2026-10-19",
+   "source_url": "https://www.economytribune.co.kr/news/articleView.html?idxno=3904180",
+   "note": "10/19 중국 ESS 업체 미국 철수 관측에 삼성SDI +11%대, LGES +7%대. FEOC 규제가 한국 업체 수혜 구조(fnnews 10/6, K배터리 소재 LFP 전환 가속). AI 데이터센터 전력수요가 ESS 수요 견인. 미국 ESS 설치 전망(GW), LFP 셀 가격($/kWh)은 N/A."
+  },
+  {
+   "topic": "특수소재: 세아베스틸지주 미국 SST 초내열합금 공장",
+   "value": "연 6000 (톤, 니켈계 초내열합금), 2027년 상반기 상업생산",
+   "as_of_date": "2026-08-10",
+   "source_date": "2026-08-10",
+   "source_url": "https://m.news.nate.com/view/20260810n21309",
+   "note": "스페이스X 공급망 겨냥(서울경제). 미국 우주시장 니켈 초내열합금 수요 2026 3000t→2027 ~3400t(업계 발언). 초내열합금 수요의 ~50%가 우주항공. 러-우 전쟁으로 공급부족. Howmet 2026-03 티타늄 등 경량 부품 증설."
+  },
+  {
+   "topic": "특수소재: 시장규모 전망(상업보고서)",
+   "value": "항공우주·방산 소재 2026 29.21 → 2031 35.03 (십억달러, CAGR 3.7%) / 항공우주 티타늄 가공 2026 7.888 → 2034 15.488 (CAGR 8.8%)",
+   "as_of_date": "2026-10-22",
+   "source_date": "2026",
+   "source_url": "https://www.mordorintelligence.kr/industry-reports/aerospace-and-defense-materials-market",
+   "note": "상업 보고서 추정치, 기관별 편차 큼(티타늄 합금 2032 $13.66B CAGR 5.46% 등). 티타늄 스폰지 가격·국내 수급 데이터 N/A."
+  },
+  {
+   "topic": "의료기기·진단: 재생의료 시장",
+   "value": "2025 43.4 (십억달러), 2034년까지 CAGR 16.94%",
+   "as_of_date": "2026-08",
+   "source_date": "2026-08",
+   "source_url": "https://www.giikorea.co.kr/report/vmr2110257-global-regenerative-medicine-market-size-share.html",
+   "note": "상업 보고서 추정치. 체외진단 최신 시장규모는 N/A(검색된 바이오타임즈 기사는 ~4년 전 자료로 2026 $138.3B 전망). 인체조직 시장 별도 자료 없음."
+  },
+  {
+   "topic": "의료기기: 중국 규제 격상",
+   "value": "'의료기기감독관리조례'(행정규칙) → '의료기기관리법'(국가 법률) 격상",
+   "as_of_date": "2026-03",
+   "source_date": "2026-03",
+   "source_url": "https://www.bosa.co.kr/news/articleView.html?idxno=3001321",
+   "note": "해외 등록인에 안전성·유효성 법적 책임 부과, 해외 임상데이터 NMPA 등록 활용 허용, 해외 GMP 심사·수입통관 강화. 시행일·세부조항은 NMPA 원문 미확인."
+  }
+ ],
+ "scenarios": [
+  {
+   "horizon": "1년(~2027-10)",
+   "name": "비관: AI CAPEX 조정 + 메모리 고점 인식",
+   "probability_pct": "25",
+   "description": "하이퍼스케일러 CAPEX가 영업현금흐름을 넘어선 상태(Epoch, 2026 Q3 교차)에서 메타류 '현금흐름 적자' 이슈가 확산, 2027 CAPEX 성장률이 +40% 전망에서 +10~20%로 하향. HBM4 2027 가격협상은 체결되지만 범용 DRAM·NAND 계약가격이 2027년 상반기부터 QoQ 보합·하락으로 전환하고, 10/22 코스피 -3.52% 같은 변동성 급락이 반복. 자동차는 15% 관세 비용 상존 속 수요 둔화, EV 보조금 축소 영향 지속.",
+   "key_numbers": "2027 하이퍼스케일러 CAPEX 성장 +10~20%(vs DB +40%); 범용 DRAM 계약가 2027 1H QoQ 0~-10%(TrendForce 4Q26 +10~15%에서 급반전); 코스피 5,000 하회 위험; 엔비디아 FY28 성장 +70% 가이던스 미달",
+   "sector_implications": "메모리·장비: 주가 선행 하락, 그러나 2027 HBM 물량 계약(마이크론 '대부분 계약')으로 실적 절벽은 아님. 디스플레이: IT OLED 투자는 애플 로드맵 기반이라 영향 제한, 폴더블 아이폰 판매가 변수. 자동차: 영업이익률 5%대 고착. 바이오: 금리 고착(국고3년 3.8%대)으로 코스닥 바이오 IPO 창 재축소. 방산·우주: 국방예산 +8.2%로 방어적 피난처. ESS: AI DC 전력수요 둔화 시 미국 ESS 수주 속도 조정, 다만 FEOC 반사이익은 유지. 특수소재·의료기기: 상대적 무풍."
+  },
+  {
+   "horizon": "1년(~2027-10)",
+   "name": "기준: AI 투자 고원 유지, 메모리 공급부족 2027 지속",
+   "probability_pct": "50",
+   "description": "2026 CAPEX $720~745B 집행 완료, 2027은 +25~40% 증가하되 부채조달 비중 상승으로 변동성 확대. HBM4 가격 HBM3E 대비 2.5~3배 체결, 2027 HBM ASP +100% 내외(TrendForce +121%, KB +100~150% 범위 하단). 범용 DRAM/NAND는 2027 상반기까지 상승 후 하반기 둔화. SK하이닉스 3Q OP 77조 컨센 부합. 현대차는 15% 관세 흡수하며 OPM 6% 내외 회복. 미국 ESS는 중국산 배제로 한국 3사 수주 지속.",
+   "key_numbers": "2027 하이퍼스케일러 CAPEX $1.0~1.1조(+25~40%); 2027 HBM ASP +100% 내외; 2027 WFE $160~200B(SEMI 장비 $156B~Citi $200B 사이); TSMC 2027 CAPEX $70~85B; 현대차 2026 OPM 6.3~7.3% 목표 하단",
+   "sector_implications": "메모리: 2027 상반기 실적 피크아웃 논쟁 본격화, 삼성 HBM 점유율 상승(UBS: 2027 SK와 동등). 장비: DRAM·NAND 장비 선행, 파운드리 2027 하반기 가속(UBS). 디스플레이: 8.6G 가동률 상승·MacBook Pro OLED·폴더블 아이폰 양산으로 IT OLED 비중 확대. 자동차: 미국 판매 호조(3Q 50.6만대)와 관세 비용 상쇄. 바이오: BIOSECURE 우려기업 명단(~2026-12) 발표로 한국 CDMO 반사수혜 기대 지속. 방산·우주: 국방예산 73.3조, 저궤도 안테나·위성 플랫폼 수출 초기 수주. ESS: 삼성SDI 인디애나 LFP 양산 개시, 2027 납품 개시. 특수소재: SST 2027 상반기 가동."
+  },
+  {
+   "horizon": "1년(~2027-10)",
+   "name": "낙관: AI 수요가 가용용량 초과 지속, 메모리 슈퍼사이클 연장",
+   "probability_pct": "25",
+   "description": "OpenAI·네오클라우드 수주잔고로 2028 수요 가시성 확보, 2027 CAPEX +40% 이상(모건스탠리 $1.3조·골드만 $1.4조 경로). 마이크론 'FY27~28 공급제약 지속' 발언이 현실화돼 범용 DRAM·NAND 계약가격이 2027년 내내 QoQ 상승. 엔비디아 FY28 +70% 달성. 삼성 HBM4 전량 계약·3배 가격으로 메모리 3사 영업이익률 70~80%대 유지.",
+   "key_numbers": "2027 CAPEX $1.3~1.4조; DRAM 계약가 2027 QoQ +5~15% 지속; 2027 WFE $200~226B(Citi·UBS); SK하이닉스 3Q OP 80조 상회; 코스피 6,000 재돌파",
+   "sector_implications": "메모리·장비·후공정: 증설 사이클 2028까지 연장, 2027 삼성·SK CAPEX 대폭 상향. 디스플레이: XR·스마트글라스 수요 가세 시 OLEDoS 투자 개시(미검증). 자동차: 상대적 소외(자금 쏠림). 바이오: 위험선호 회복으로 코스닥 바이오 IPO 활황. 방산·우주: 국방예산+수출로 동반 강세. ESS: AI DC 전력수요 폭증으로 미국 ESS 수주 가속, LFP 셀 가격 상승. 특수소재: 우주발사체·항공 수요로 초내열합금 공급부족 심화."
+  },
+  {
+   "horizon": "3년(~2029-10)",
+   "name": "비관: AI 투자 수익성 입증 실패 → 2028 CAPEX 감소, 메모리 다운사이클 + 중국 추격",
+   "probability_pct": "25",
+   "description": "2027 하반기부터 AI 서비스 매출이 투자 대비 미달, 2028 하이퍼스케일러 CAPEX 전년 대비 감소. 메모리는 2027년 증설분 가동으로 2028 공급과잉, CXMT 월 35만장 캐파 + HBM3E 양산(2027 목표)으로 범용 DRAM 가격 경쟁 심화. WFE 2028 급감. 자동차는 관세·중국 업체 경쟁으로 글로벌 점유율 정체.",
+   "key_numbers": "2028 CAPEX YoY -10~-20%; DRAM 계약가 2028 누적 -30~-40%; WFE 2028 $120B 이하(Citi $250B 대비); 메모리 영업이익률 20~30%대로 회귀",
+   "sector_implications": "메모리: 2028 실적 급감(2026 영업이익 100조원대 삼성 기준 1/3 수준). 장비: 수주 공백, 중국 장비 국산화로 중국 매출도 축소. 디스플레이: IT OLED 캐파 과잉, 8.6G 가동률 저하. 자동차: 하이브리드 중심 방어, EV 전환 지연. 바이오: 금리·위험회피로 자금조달 혹한 재현. 방산·우주: 국방예산 증가율 둔화하나 유럽 자립망(31조원) 수요로 상대적 견조. ESS: 미국 ESS 보조금(IRA 개정) 추가 축소 시 수요 둔화. 특수소재·의료기기: 저성장 지속."
+  },
+  {
+   "horizon": "3년(~2029-10)",
+   "name": "기준: AI 투자 고원 후 완만 둔화, 메모리 2028 조정 후 2029 회복",
+   "probability_pct": "50",
+   "description": "2027 CAPEX 피크 성장 후 2028~2029 한 자릿수 증가. 메모리는 2027 HBM4 전환·범용 가격 고점 후 2028 조정(계약가 -15~-25%), 2029 HBM4E·AI 추론 수요로 재상승. WFE는 2027 피크 후 2028 소폭 감소, 2029 2nm·HBM 후공정 투자로 재확대. BIOSECURE 시행지침(2027-06) 이후 CDMO 공급망 재편 3년에 걸쳐 진행. 미국 ESS는 FEOC 체제 하 한국 3사 미국 현지 LFP 생산 정착.",
+   "key_numbers": "2028 CAPEX +0~10%, 2029 +5~15%; 2028 DRAM 계약가 -15~-25%; 2029 WFE 2027 수준 회복; 현대차 OPM 6~7%; 국방예산 연 5~8% 증가",
+   "sector_implications": "메모리: 2028 사이클 저점이 과거보다 높은 '높은 저점' 사이클(장기계약 80% 구조). 장비: 후공정(하이브리드 본딩) 비중 확대. 디스플레이: 폴더블 아이폰 2세대·IT OLED 본격화, LGD는 FLiPP로 투자 효율 경쟁. 자동차: SDV·하이브리드 전환, 관세 15% 고정 전제. 바이오: CDMO 수주 증가, 바이오시밀러 미국 PBM 구조 변화는 미검증. 방산·우주: 저궤도 통신위성 국산 플랫폼 상용화 초기, 6G 표준화 진행. ESS: 미국 ESS 설치 연평균 두 자릿수 성장 가정(수치 N/A). 특수소재: SST 가동률 상승. 의료기기: 중국 규제 강화로 진입장벽 상승·현지화 요구."
+  },
+  {
+   "horizon": "3년(~2029-10)",
+   "name": "낙관: AI 추론 수요 폭발로 2028 CAPEX도 증가, 메모리 사이클 완만화",
+   "probability_pct": "25",
+   "description": "2028 수요 가시성(수주잔고)이 실현돼 CAPEX 3년 연속 증가. HBM 수요가 2028 캘린더까지 범용 DRAM보다 빠르게 성장(마이크론 발언), 커스텀 HBM4E·HBM5로 고부가 믹스 유지. WFE 2028 $250B(Citi). 한국 파운드리·후공정·소재 생태계 전반 수혜. 방산 수출·우주 발사체 수요로 특수합금 공급부족 지속.",
+   "key_numbers": "2028 CAPEX +15~25%; 2028 WFE $250B; 메모리 영업이익률 60%대 유지; 코스피 7,000대",
+   "sector_implications": "메모리·장비: 증설 연장, 삼성 파운드리 턴어라운드. 디스플레이: XR·마이크로디스플레이 신시장 개화. 자동차: 상대 소외. 바이오: 위험선호로 코스닥 바이오 활황. 방산·우주: 국방·위성 예산 확대. ESS: AI DC 전력·ESS 수요 가속. 특수소재: 초내열합금 가격 상승. 의료기기: 완만 성장."
+  },
+  {
+   "horizon": "5년(~2031-10)",
+   "name": "비관: AI 과잉투자 후유증 장기화, 중국 메모리·장비 자립, 지정학 분절",
+   "probability_pct": "25",
+   "description": "2028~2029 AI 투자 조정이 장기 저성장으로 이어지고, CXMT·YMTC가 HBM 포함 범용 메모리에서 가격파괴. 중국 WFE 국산화율(2025 열처리 45% 등) 70%대로 상승해 글로벌 장비사 중국 매출 급감. 관세·수출규제 분절로 한국 자동차·배터리 미국 현지화 비용 상승. 바이오는 BIOSECURE 역풍(중국 보복)으로 중국 시장 접근 제한.",
+   "key_numbers": "2031 하이퍼스케일러 CAPEX 2027 피크 대비 -30%; 메모리 영업이익률 10~20%; WFE 2031 $130B 이하",
+   "sector_implications": "메모리·장비: 구조적 마진 하락. 디스플레이: 중국 BOE OLED 추격 심화. 자동차: 중국 업체 글로벌 점유율 확대로 현대차 유럽·신흥시장 압박. 바이오: 중국 의료시장 접근 제한, 미국 바이오시밀러 가격 경쟁 심화. 방산·우주: 지정학 긴장으로 오히려 수혜(국방예산 증가 지속). ESS: 미국 FEOC 유지 시 한국 수혜 지속되나 수요 둔화. 특수소재: 공급망 재편 수혜. 의료기기: 중국 규제·자국 우선으로 축소."
+  },
+  {
+   "horizon": "5년(~2031-10)",
+   "name": "기준: AI 인프라 정상 성장기 진입, 메모리 2개 사이클 경험, 한국 산업 포트폴리오 다변화",
+   "probability_pct": "50",
+   "description": "AI CAPEX가 연 5~10% 성장하는 성숙기로 진입, 메모리는 2027 고점→2028 저점→2030 재고점의 사이클을 거치며 HBM·커스텀 메모리 비중 50% 이상. 8.6G IT OLED·폴더블이 애플 중심 표준화, 2030 IT 패널 비중 3배(중앙이코노미뉴스 인용 전망). 자동차는 SDV·하이브리드·EV 혼합. 방산 수출·저궤도 위성·6G(2030 전후 상용화 가정)·ESS·특수소재가 한국 성장 포트폴리오로 자리.",
+   "key_numbers": "2031 하이퍼스케일러 CAPEX 2027 대비 +20~40%; 메모리 평균 영업이익률 40%대; 국방예산 2031 100조원 접근(연 6~8%); 재생의료 시장 CAGR ~17%(상업보고서)",
+   "sector_implications": "메모리: HBM 중심 고마진 유지, 중국은 범용 저가 세그먼트 장악. 장비: 후공정·검사 비중 확대. 디스플레이: IT OLED·폴더블 성숙, XR은 니치. 자동차: 미국 현지 생산 확대로 관세 영향 축소. 바이오: CDMO·바이오시밀러 미국 점유율 상승, BIOSECURE 수혜 실현. 방산·우주: 저궤도 통신위성 국산망 운용, 유럽 자립망 참여. ESS: 미국·글로벌 ESS 설치 지속 성장, LFP 가격 안정. 특수소재: 우주발사체·항공 수요로 안정 성장. 의료기기: 진단·재생의학 고성장 지속."
+  },
+  {
+   "horizon": "5년(~2031-10)",
+   "name": "낙관: AI가 생산성 혁명으로 입증, 전력·메모리·우주 인프라 슈퍼사이클",
+   "probability_pct": "25",
+   "description": "AI 추론·에이전트 수요가 산업 전반 생산성으로 연결돼 CAPEX가 2031년까지 연 15%+ 성장. 메모리는 HBM·CXL·커스텀 메모리로 마진 하방 경직. 전력 제약이 ESS·SMR·특수소재 수요를 구조적으로 끌어올림. 저궤도 위성·6G·XR 디바이스 동시 개화.",
+   "key_numbers": "2031 CAPEX 2027 대비 +80~100%; 메모리 영업이익률 50~60% 유지; 미국 ESS 연간 설치 2026 대비 3배(수치 N/A, 방향성)",
+   "sector_implications": "전 산업 동반 수혜, 특히 메모리·장비·ESS·특수소재·우주. 자동차·바이오는 상대적 중립."
+  }
+ ],
+ "cycle_positions": [
+  {
+   "industry": "1. 글로벌 AI·데이터센터 투자",
+   "position": "고점 부근(중후기) — 투자 가속은 지속되나 현금흐름·부채 의존 논쟁 본격화",
+   "rationale": "2026 CAPEX $720~745B(+77%), 2027 +40%(도이체방크)·$1.3~1.4조(MS·골드만) 전망으로 증가율은 아직 높으나, 2026 Q3 전후 CAPEX가 영업현금흐름을 초과(Epoch)하고 10/22 코스피 -3.52% 재료가 '메타 현금흐름 적자'였다는 점은 시장이 투자 지속가능성을 의심하기 시작했음을 시사. 엔비디아 Q3 FY27 가이던스 $108B·FY28 +70%는 수요 측 가시성 뒷받침. 2027년까지 수요>용량이나 2028 이후는 수익성 입증 여부에 좌우.",
+   "key_dates": "2026-10 하순~11월 초 MS·구글·아마존·메타 3분기 실적(캘린더 Q3)·2027 CAPEX 코멘트; 2026-11 하순 엔비디아 FY27 3분기 실적; 2027-01 4분기 실적 시즌 2027 가이던스"
+  },
+  {
+   "industry": "2. 메모리 사이클",
+   "position": "고점 진입기(가격 상승 지속, 증가율 둔화 시작) — 2027 상반기 피크아웃 논쟁 예상",
+   "rationale": "삼성 3Q 영업이익 107.4조원(+782% YoY), 마이크론 GM 87%, SK하이닉스 3Q 컨센 77조원 등 사상 최대 이익. TrendForce 4Q26 범용 DRAM +10~15%, NAND +15~20%로 상승 지속이나 상승폭 둔화·소비자 수요 압박. 2027 HBM 물량은 대부분 계약(마이크론), 삼성 HBM4 3배 가격·전량 계약, 2027 HBM ASP +121% 전망. 장기공급계약 80%(KB) 구조로 과거보다 하락 사이클이 완만할 가능성. 리스크: 2027년 증설분, CXMT 캐파 35만장·HBM3E 2027 목표.",
+   "key_dates": "2026-10-28 SK하이닉스 3Q 실적; 2026-10 HBM4 가격협상 마무리; 2026-12~2027-01 TrendForce 1Q27 계약가격 전망; 2026-12 마이크론 FQ1'27 실적"
+  },
+  {
+   "industry": "3. 반도체 장비·설비투자",
+   "position": "중기(상승 국면) — 메모리 장비 선행, 파운드리·로직은 2027 하반기 가속",
+   "rationale": "SEMI 장비 2026 $145B→2027 $156B 사상 최대, UBS 2027 WFE $226B 상향, TEL 2027 >$190B, Citi 2028 $250B까지 상향 경로. TSMC 2026 CAPEX $60~64B 상향, 2027 최대 $85B, 장비 발주 리스트 2025-12 대비 ~2배. 마이크론 FY27 하반기 CAPEX 증가(건설>장비)는 장비 발주가 2027 하반기~2028에 집중될 수 있음을 시사. SEMI는 중국 투자 2026년부터 감소 전망(국산화율 상승과 맞물려 글로벌 장비사 중국 매출 리스크). 후공정·삼성 파운드리 수주 현황은 미검증.",
+   "key_dates": "2026-10 TSMC 3Q 실적(10/15 전후) 후속 코멘트; 2026-12 SEMI 연말 전망 업데이트; 2027-01 삼성·SK 2027 CAPEX 가이던스"
+  },
+  {
+   "industry": "4. 디스플레이",
+   "position": "초중기(IT OLED·폴더블 신규 사이클 초기) — 투자 집행 중, 수익 회수 2027~2030",
+   "rationale": "삼성디스플레이 8.6G 아산 4.1조원 투자 2026년 양산 개시, 맥북 프로 OLED·폴더블 아이폰(단독 공급, 양산 개시) 등 애플 로드맵 기반 수요 확보. 애플 2026 OLED 라인업 전량 한국 2사. LGD는 8.6G 미투자·FLiPP(기존 8G 활용)·6G 스마트폰 집중으로 투자 효율 전략. 2030 IT 패널 비중 3배 전망. XR·스마트글라스·마이크로LED·마이크로디스플레이는 미검증(N/A)이며 아직 니치 단계로 판단(memory_unverified).",
+   "key_dates": "2026-10 하순 LGD 3Q 실적; 2026-11~12 폴더블 아이폰 초기 판매 데이터; 2027 상반기 맥북 프로 OLED 출시(보도 기준)"
+  },
+  {
+   "industry": "5. 자동차",
+   "position": "하강 후 바닥 다지기(중기 조정) — 관세 15% 흡수 중, 판매량 정체",
+   "rationale": "현대차 3Q 컨센 영업이익 2.36조원(-6.8% YoY), 매출 44.8조원(-4.1%), 판매 -11.5%(글로벌이코노믹 10/11)이나 미국 판매는 3Q 50.6만대로 사상 최대. 관세 25%→15% 인하로 2025년 대비 비용 부담 완화되었지만 원재료·판매 감소가 상쇄. 2026 OPM 목표 6.3~7.3% 대비 2Q 5.5%. EV 보조금·하이브리드·중국 업체 경쟁·SDV는 검색 예산 소진으로 미검증. 실적 발표(16:00)는 기준시각 이후.",
+   "key_dates": "2026-10-22 16:00 현대차 3Q 실적; 2026-10 하순 기아 3Q 실적; 2026-11 미국 10월 판매; 2027-01 2027 가이던스"
+  },
+  {
+   "industry": "6. 바이오",
+   "position": "초기 회복기(국내 IPO 창 재개방, BIOSECURE 시행 전 대기)",
+   "rationale": "국내 바이오 IPO 상반기 부진 후 하반기 7곳 예심 통과·5곳 상장·엠에스바이오 청약 1539:1로 심리 회복. BIOSECURE Act 2025-12-18 발효, 우려기업 명단 ~2026-12, 시행지침 ~2027-06으로 CDMO 수혜가 2027년부터 가시화될 구조. 글로벌 바이오텍 IPO 창은 2026년 초부터 서서히 개방. 바이오시밀러 미국 PBM·인터체인저블, 의약품 232조 관세, CDMO 가격, 중국 의료시장은 미검증. 국고채 3년 3.8%대 고금리는 코스닥 바이오 밸류에이션 제약.",
+   "key_dates": "2026-10-22 금통위(결과 미확인); 2026-10-28 BIX 2026; 2026-12 BIOSECURE 우려기업 명단; 2027-06 시행지침"
+  },
+  {
+   "industry": "7. 우주항공·위성통신·방산·5G/6G",
+   "position": "중기 확장(방산은 중기, 저궤도 위성·6G는 초기)",
+   "rationale": "2027 국방예산 정부안 73.28조원(+8.2%, 2008년 이후 최대 증가율), KF-21·핵추진잠수함·드론·L-SAM 조기 전력화로 내수 기반 확대. 유럽 31조원 방산 자립망에 한국 참여 추진(10/21). 저궤도 안테나는 에이스테크-항우연(1.47억원 소규모 R&D), 케이앤에스아이앤씨 원웹 인증·해군 수출 등 초기 수주 단계. KAI 6G LEO 위성 플랫폼 수출 모색. 스타링크·카이퍼 전개 수치, 5G CAPEX, 6G 일정, 우주항공청 예산, 2026 방산 수출액은 미검증(N/A).",
+   "key_dates": "2026-11~12 국회 2027 예산 심의·확정; 2026-10~11 방산 수출 계약 발표; 2027 상반기 저궤도 위성통신 사업 본격화(한국 LEO 위성 발사 일정 미검증)"
+  },
+  {
+   "industry": "8. ESS·에너지저장",
+   "position": "초중기(미국 시장 구조적 전환 초기) — 한국 3사 수주→양산 전환 구간",
+   "rationale": "삼성SDI 인디애나 LFP ESS 10월 양산 목표(10/14 미개시), 2조원 수주(2027~2030 납품)·누적 3.5조원 공급계약. LGES 북미 ESS 점유율 ~14%(1Q26). 중국산 ESS 배터리 관세 28.4%→58.4% 전망·FEOC 규제로 중국 배제, 10/19 중국 업체 미국 철수 관측에 SDI +11%·LGES +7%. AI DC 전력수요가 ESS 수요 견인. 미국 ESS 설치 전망(GW)·LFP 셀 가격·OBBBA 세부는 미검증(N/A).",
+   "key_dates": "2026-10 하순 삼성SDI·LGES 3Q 실적 및 ESS 수주 공시; 2026-11 미국 ESS 양산 개시 확인; 2027 미국 FEOC 본격 적용(연도 memory_unverified)"
+  },
+  {
+   "industry": "9. 특수소재·산업재(특수합금·티타늄·초내열합금)",
+   "position": "초중기(공급부족 하 신규 캐파 투입 전)",
+   "rationale": "러-우 전쟁·항공우주 수요로 초내열합금 공급부족, 수요 ~50%가 우주항공. 미국 우주시장 니켈 초내열합금 수요 2026 3000t→2027 3400t(업계). 세아베스틸지주 텍사스 SST 연 6000t, 2027 상반기 상업생산으로 스페이스X 공급망 진입 추진. Howmet 2026-03 증설. 시장 CAGR은 3.7%(A&D 소재)~8.8%(항공 티타늄 가공)로 보고서별 편차. 티타늄 가격·국내 수급 N/A.",
+   "key_dates": "2027 상반기 SST 상업생산; 2026-11 세아베스틸지주 3Q 실적; 보잉·에어버스 2027 증산 일정(미검증)"
+  },
+  {
+   "industry": "10. 의료기기·진단",
+   "position": "중기 안정 성장(재생의학은 초기 고성장, 중국은 규제 전환기)",
+   "rationale": "재생의료 시장 2025 $43.4B, CAGR 16.94%(~2034, 상업보고서). 중국은 의료기기 규제를 국가 법률로 격상해 해외 등록인 책임 강화·해외 임상데이터 인정 병행으로 진입장벽 상승과 기회 공존. 체외진단 최신 시장규모·인체조직 시장은 N/A. 코로나 이후 진단 수요 정상화 국면으로 판단(memory_unverified).",
+   "key_dates": "NMPA 의료기기관리법 시행 세부일정(미확인); 2026-11 국내 진단·의료기기 3Q 실적"
+  }
+ ],
+ "narrative": "[기준시각 2026-10-22 15:40 KST] 코스피는 5,533.77(-3.52%, 전일 5,735.66)로 마감해 전날 급등분을 반납했고 코스닥도 764.10(-3.62%)로 급락했다. 급락 재료는 '메타 현금흐름 적자' 보도와 외국인·기관 매도(진일보)로, 하이퍼스케일러 CAPEX가 영업현금흐름을 초과하는 2026 Q3 교차점(Epoch) 논쟁이 한국 AI 밸류체인에 직접 전이되는 국면이다. 국고채는 10/21 마감 기준 3년 3.822%, 5년 3.965%, 10년 4.160%로 고금리 환경이며, 10/22 금통위는 동결 전망(93%)이 우세했으나 결과와 당일 금리 마감치는 검색 예산 소진으로 확인하지 못했다.\n\n[사이클 종합] (1) AI·DC 투자는 2026 $720~745B(+77%), 2027 +40%·$1.3~1.4조 전망으로 증가율은 여전히 높지만 현금흐름·부채조달 의존이 커지며 '고점 부근'의 특징을 보인다. 엔비디아 Q3 FY27 가이던스 $108B·FY28 +70%는 수요 가시성을 뒷받침하나 OpenAI 투자 축소(1000억→300억달러, OpenAI 투자계획 1.4조→6000억달러)는 자금조달 한계를 시사한다. (2) 메모리는 삼성 3Q 영업이익 107.4조원, 마이크론 GM 87%, SK하이닉스 3Q 컨센 77조원으로 사상 최대 이익 구간이며 TrendForce 4Q26 범용 DRAM +10~15%, NAND +15~20%로 상승이 이어지나 상승폭은 둔화 조짐. 2027 HBM 물량 대부분 계약·HBM4 3배 가격·HBM ASP +121% 전망과 장기계약 80% 구조로 '높은 저점' 사이클 가능성이 있지만, 2027 상반기부터 피크아웃 논쟁이 본격화될 것이다. CXMT 캐파 35만장·HBM3E 2027 목표는 범용 세그먼트 중기 리스크. (3) 장비는 SEMI 2027 $156B 사상 최대, UBS 2027 WFE $226B, TSMC 2026 CAPEX $60~64B·2027 최대 $85B로 중기 상승 국면이며 메모리 장비 선행, 파운드리 2027 하반기 가속. (4) 디스플레이는 8.6G IT OLED(4.1조원)·폴더블 아이폰 단독 공급으로 애플 로드맵 기반 신규 사이클 초기. (5) 자동차는 15% 관세 흡수 중 판매 정체(3Q 컨센 OP -6.8%)이나 미국 판매 사상 최대(50.6만대)로 바닥 다지기. (6) 바이오는 국내 IPO 창 재개방(하반기 7곳 예심 통과)과 BIOSECURE 시행(명단 ~2026-12) 대기의 초기 회복기. (7) 방산은 2027 국방예산 +8.2%(73.3조원)로 중기 확장, 저궤도 위성·6G는 초기 수주 단계. (8) ESS는 FEOC·관세로 중국 배제 하에 한국 3사 수주→양산 전환 초기(삼성SDI 2조원 수주, 인디애나 10월 양산 목표). (9) 특수소재는 초내열합금 공급부족 속 SST 2027 상반기 가동 전 초중기. (10) 의료기기·진단은 재생의학 고성장(CAGR ~17%)과 중국 규제 격상의 전환기.\n\n[2027~2031 전망 근거] 기준 시나리오(각 지평 50%)는 AI CAPEX가 2027 피크 성장 후 2028~29 한 자릿수로 둔화하고 메모리가 2027 고점→2028 조정→2029~30 재상승하는 '완만한 2사이클' 경로다. 비관(25%)은 AI 수익성 입증 실패로 2028 CAPEX 감소·메모리 다운사이클·중국 자립이 겹치는 경로, 낙관(25%)은 2028 수요 가시성이 실현돼 CAPEX 3년 연속 증가·공급제약 연장 경로다. 방산·ESS·특수소재는 지정학·FEOC 구조상 비관 시나리오에서도 상대적 방어력이 있다.\n\n[검증 한계] 총 23회 검색 성공(31회 시도, 마지막 8회는 공유 검색 예산 소진으로 거부). 금통위 결과, 10/22 국고채 마감, 현대차 3Q 실적(16:00 발표), 메타 3Q 세부, 하이퍼스케일러 3Q(캘린더) 실적, 전력·GPU 제약, 삼성 파운드리 수주, 후공정 투자, XR·마이크로LED, 글로벌 EV 판매·보조금, 바이오시밀러·의약품 관세·CDMO 가격, 스타링크·카이퍼·5G CAPEX·6G, 우주항공청 예산·2026 방산 수출액, 미국 ESS 설치 전망·LFP 가격, 체외진단 최신 시장규모는 N/A로 남겼다. 기억 기반 서술은 (memory_unverified)로 표시했다.",
+ "unresolved": [
+  "10/22 한국은행 금통위 기준금리 결정 결과 및 당일 국고채 3·5·10년 마감 금리 — 검색 예산 소진으로 미확인(10/21 마감치로 대체, 동결 전망 93%)",
+  "현대차 2026년 3분기 확정 실적 — 10/22 16:00 KST 발표 예정으로 기준시각(15:40) 이후. 컨센서스는 출처 간 상충(글로벌이코노믹 매출 44.8조 vs knowingasset 49.2조)",
+  "메타 '현금흐름 적자' 보도의 세부 수치·발표 형식(실적 발표인지 보도인지) — 미확인",
+  "MS·구글·아마존·메타·오라클 2026년 3분기(캘린더) 실적 및 2027 회사별 CAPEX 가이던스 — 대부분 10월 하순 이후 발표, 2027 수치는 증권가 추정치만 확보",
+  "OpenAI·xAI 2026년 10월 기준 최신 투자계획, 전력·GPU 공급 제약 정량 지표 — 미확인",
+  "HBM3E·HBM4 최종 계약가격, SK하이닉스 협상가, 삼성·SK하이닉스·마이크론 2027 CAPEX 계획, YMTC 현황, 2026년 10월 미국 대중 수출규제 변경 여부 — 미확인",
+  "삼성 파운드리 테슬라 AI6·애플 수주 진행 상황, 후공정(하이브리드 본딩·TC본더) 투자 규모 — 검색 예산 소진",
+  "SEMI 2027 WFE $135.2B(EE Times) 기사 날짜 메타데이터 불일치 — 원문 발표일 확인 필요. 삼성 2026 반도체 투자 $73B는 2차 블로그 출처",
+  "XR(비전프로·메타·삼성 XR·스마트글라스) 판매량, 마이크로LED·OLEDoS 시장, BOE 8.6G 투자 현황 — 검색 예산 소진",
+  "글로벌·유럽·중국 자동차/EV 판매, EV 보조금 변화, 하이브리드 수요, 중국 업체 경쟁, SDV, 현대차 미국 투자 집행, 3Q 관세 비용 실제치, 2026년 10월 한미 관세 후속협상 상태 — 검색 예산 소진(15% 관세는 2026-06-23 기사로 확인)",
+  "바이오시밀러 미국 시장(PBM·인터체인저블·가격), 의약품 232조 관세 상태, CDMO 수요·가격, 삼성바이오로직스 3Q, 중국 의료시장, 글로벌 바이오텍 자금조달 최신 수치 — 검색 예산 소진. 우시앱텍 1260H 등재(2026-06)는 위키피디아 단일 출처",
+  "스타링크·원웹·카이퍼 전개·가입자 수치, 미국·인도·유럽·일본 통신사 5G CAPEX, 6G 표준 일정, 한국 위성사업 예산, 우주항공청 2027 예산, 2026년 방산 수출액·수주 — 미확인",
+  "미국 ESS 설치 전망(GW/GWh), OBBBA FEOC 세부 적용 시점, LFP 셀 가격($/kWh), 글로벌 ESS 설치 전망 — 미확인. 중국산 ESS 배터리 관세 28.4%/58.4%는 출처·시점 상이",
+  "티타늄 스폰지·초내열합금 가격, 국내 수급 데이터 — 미확인. 시장규모는 상업보고서별 편차 큼",
+  "체외진단 최신 글로벌 시장규모, 인체조직 시장 규모, 중국 의료기기관리법 시행일·세부조항 — 미확인",
+  "전체 검색: 31회 시도 중 23회 성공, 8회는 공유 WebSearch 예산 소진으로 거부됨. 산업 7·8·10 및 자동차·바이오 보조 항목은 최소 2회 요건을 충족하지 못함"
+ ],
+ "risk_free": {
+  "ktb_1y": "3.688",
+  "ktb_2y": "3.782",
+  "ktb_3y": "3.822",
+  "ktb_5y": "3.965",
+  "ktb_10y": "4.160",
+  "date": "2026-10-21",
+  "source_url": "https://biz.sbs.co.kr/article/20000341344",
+  "note": "2026-10-21 서울 채권시장 마감 기준(3년 -1.8bp, 5년 -2.5bp, 10년 -1.6bp). 20년 4.197, 30년 4.251, 50년 4.280. 10/22 금통위 결과 및 10/22 마감 금리는 검색 예산 소진으로 미확인. 금투협 설문(10/12~15) 동결 93%·인상 7%."
+ },
+ "sources": [
+  {
+   "title": "코스피 201.89P 내린 5533.77 마감(3.52%↓) - 아시아경제",
+   "url": "https://view.asiae.co.kr/article/2026102215330776702",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "[속보] 코스닥 28.66p(3.62%) 내린 764.10(마감) - 이투데이",
+   "url": "https://www.etoday.co.kr/news/view/2639024",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "하루만에 꺾인 반등…코스피, 메타 '현금흐름 적자' 충격에 5600선 후퇴 - 진일보",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000075757",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "국고채 금리 대체로 하락…3년물 연 3.822% - SBS Biz",
+   "url": "https://biz.sbs.co.kr/article/20000341344",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "2026 hyperscaler capex tops US$700bn - TMT Finance",
+   "url": "https://www.tmtfinance.com/intel/2026-hyperscaler-capex-tops-us700bn-analysis",
+   "date": "2026"
+  },
+  {
+   "title": "Hyperscaler AI CapEx Hits $725B for 2026 — Up 77% YoY",
+   "url": "https://jjanalysis.com/sp500/2026/07/26/ai-capex-725-billion-2026/",
+   "date": "2026-07-26"
+  },
+  {
+   "title": "Hyperscaler Capex to Exceed Cash Flow by Q3 2026 - Epoch AI",
+   "url": "https://epoch.ai/data-insights/hyperscaler-capex-vs-cash-flow",
+   "date": "2026"
+  },
+  {
+   "title": "U.S. hyperscalers' capex to almost triple to $1.4T by 2027, Goldman Sachs says",
+   "url": "https://seekingalpha.com/news/4501906-us-hyperscalers-capex-to-almost-triple-to-14t-by-2027-goldman-sachs-says",
+   "date": "2026"
+  },
+  {
+   "title": "하이퍼스케일러 CAPEX, 2027년에도 +40% 전망(도이체방크 인용)",
+   "url": "https://www.threads.com/@eunho.letter/post/DcJG-hVE-Il/",
+   "date": "2026-10"
+  },
+  {
+   "title": "Nvidia Blows Past Expectations with $96.2 Billion Revenue in Q2 FY2027",
+   "url": "https://www.iphoneincanada.ca/2026/08/27/nvidia-blows-past-expectations-with-96-2-billion-revenue-in-q2-2027/",
+   "date": "2026-08-27"
+  },
+  {
+   "title": "Nvidia Q2 FY2027 Earnings Beats, Guides Q3 to $108B - Webull",
+   "url": "https://www.webull.com/blog/304-Nvidia-Q2-FY2027-Earnings-Beats-Revenue-EPS-Estimates-Guides-Q3-to-108B",
+   "date": "2026-08"
+  },
+  {
+   "title": "Nvidia won't invest $100 billion in OpenAI after all - ITdaily",
+   "url": "https://itdaily.com/news/innovation/nvidia-openai-30-billion/",
+   "date": "2026-03"
+  },
+  {
+   "title": "엔비디아, 호실적에도 주가 5%대 급락…오픈AI 투자 불확실성 탓? - 머니투데이",
+   "url": "https://www.mt.co.kr/world/2026/02/27/2026022708555573881",
+   "date": "2026-02-27"
+  },
+  {
+   "title": "삼성전자, 2026년 3분기 잠정실적 발표 - 삼성 뉴스룸",
+   "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "HBM4 날개… SK하닉, 또 새기록 펼친다 - 머니투데이",
+   "url": "https://www.mt.co.kr/industry/2026/10/20/2026101920003485406",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "SK하이닉스, 28일 3분기 실적 발표 - 스톡플러스",
+   "url": "https://newsroom.stockplus.com/breaking-news/39522",
+   "date": "2026-10"
+  },
+  {
+   "title": "Micron Q4 FY2026 Earnings Call Highlights - MarketBeat",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-micron-technology-q4-earnings-call-highlights-2026-09-30/",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Micron Q4 Revenue Jumps 379% to $54.2B, Guides Q1 FY27 to $61.5B",
+   "url": "https://aiweekly.co/alerts/micron-q4-revenue-jumps-379-to-542b-on-ai-memory-demand-guides-fiscal-2027-q1",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "TrendForce 4Q26 Memory Price Forecast",
+   "url": "https://www.trendforce.com/research/download/RP260924PL",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "AI 伺服器新增需求支撐 4Q26 記憶體合約價漲勢 - TechNews",
+   "url": "https://technews.tw/?p=1622115",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "공급난 틈탄 삼성전자의 베팅… HBM4 석 배 가격 - 글로벌이코노믹",
+   "url": "https://www.g-enews.com/article/Global-Biz/2026/10/202610031136088018fbbec65dfb_1",
+   "date": "2026-10-03"
+  },
+  {
+   "title": "삼성전자, HBM4 공급계약 100% 확보 - 센머니",
+   "url": "https://www.senmoney.co.kr/news/articleView.html?idxno=38009",
+   "date": "2026-10"
+  },
+  {
+   "title": "내년 HBM 평균판매가 121% 오를 것 - 서울경제",
+   "url": "https://m.sedaily.com/article/20097309",
+   "date": "2026-10"
+  },
+  {
+   "title": "UBS: 삼성전자 2027년까지 HBM 점유율 SK하이닉스와 동등 - Investing.com",
+   "url": "https://kr.investing.com/news/stock-market-news/article-1943201",
+   "date": "2026-10"
+  },
+  {
+   "title": "중국 메모리(CXMT) 추격 현황 - 한국경제",
+   "url": "https://www.hankyung.com/article/2026090434916",
+   "date": "2026-09-04"
+  },
+  {
+   "title": "HBM 산업 리포트(중국 WFE 국산화율) - 하나증권",
+   "url": "https://file.alphasquare.co.kr/media/pdfs/market-report/HBM20260706%ED%95%98%EB%82%98%EC%A6%9D%EA%B6%8C.pdf",
+   "date": "2026-07-06"
+  },
+  {
+   "title": "AI Drives CapEx Chip Equipment to Record $156B in 2027 - EE Times",
+   "url": "https://www.eetimes.com/ai-drives-capex-chip-equipment-to-record-156b-in-2027/",
+   "date": "2026-10-14(메타데이터 불일치)"
+  },
+  {
+   "title": "Asia-Pacific Semis: SPE and Material Prices Trend Up (UBS WFE 상향) - Macrostream",
+   "url": "https://www.macrostream.ai/articles/6a824bde0e22a3e2245b75e0",
+   "date": "2026-10"
+  },
+  {
+   "title": "TSMC Rises as 2027 Capex Forecast Reaches $85 Billion - Yahoo Finance",
+   "url": "https://finance.yahoo.com/technology/articles/tsmc-rises-2027-capex-forecast-192841498.html",
+   "date": "2026-10"
+  },
+  {
+   "title": "TSMC Commits Higher CapEx in 2026 - Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-commits-higher-capex-2026-154100814.html",
+   "date": "2026"
+  },
+  {
+   "title": "404K SEMI-AI Equipment Weekly (TSMC tool list ~2x) - Substack",
+   "url": "https://404kresearch.substack.com/p/404k-semi-ai-semiconductor-equipment-83e",
+   "date": "2026-09-04"
+  },
+  {
+   "title": "Samsung's $73B Semiconductor Investment 2026 - Tech Insider",
+   "url": "https://tech-insider.org/samsung-73-billion-semiconductor-investment-2026/",
+   "date": "2026"
+  },
+  {
+   "title": "LG디스플레이, 8.6세대 투자 경쟁에 '기술 해자'로 맞선다 - 뉴스웨이",
+   "url": "https://newsway.co.kr/news/view?ud=2026100814524740720",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "삼성디스플레이·LG디스플레이, 애플 OLED 확대에 날개 - 중앙이코노미뉴스",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=555952",
+   "date": "2026-10"
+  },
+  {
+   "title": "삼성디스플레이 '8.6세대 IT' LG디스플레이 '6세대 스마트폰' - 비즈니스포스트",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=402324",
+   "date": "2026"
+  },
+  {
+   "title": "삼성D·LGD, 애플 OLED 양산 돌입 - 전자신문",
+   "url": "https://www.etnews.com/20260622000287",
+   "date": "2026-06-22"
+  },
+  {
+   "title": "삼성D, 애플 폴더블 OLED 증설 투자 추진 - 전자신문",
+   "url": "https://www.etnews.com/20260206000164",
+   "date": "2026-02-06"
+  },
+  {
+   "title": "Apple's 2026 OLED lineup will rely entirely on Samsung and LG - 9to5Mac",
+   "url": "https://9to5mac.com/2026/06/23/apples-2026-oled-lineup-will-reportedly-rely-entirely-on-samsung-and-lg/",
+   "date": "2026-06-23"
+  },
+  {
+   "title": "현대차, 3분기 영업익 기아에 뒤질 듯…매출 6년 만에 감소 전망 - 글로벌이코노믹",
+   "url": "https://www.g-enews.com/article/Industry/2026/10/202610110914004578112616b072_1",
+   "date": "2026-10-11"
+  },
+  {
+   "title": "현대차·기아, 3분기 美 50만대 넘게 팔았다 - 머니투데이",
+   "url": "https://www.mt.co.kr/industry/2026/10/02/2026100212310767180",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "美 관세 견뎌낸 현대차, 하반기 반등 시동 - 머니투데이",
+   "url": "https://www.mt.co.kr/industry/2026/06/23/2026062219515061536",
+   "date": "2026-06-23"
+  },
+  {
+   "title": "현대차 실적발표 캘린더 - knowingasset",
+   "url": "https://www.knowingasset.com/app/calendar/7807",
+   "date": "2026-10"
+  },
+  {
+   "title": "The BIOSECURE Act Becomes Law - Baker McKenzie",
+   "url": "https://www.bakermckenzie.com/en/insight/publications/2026/01/united-states-the-biosecure-act-becomes-law",
+   "date": "2026-01"
+  },
+  {
+   "title": "BIOSECURE Act Becomes Law - Akin Gump",
+   "url": "https://www.akingump.com/en/insights/alerts/biosecure-act-becomes-law",
+   "date": "2025-12"
+  },
+  {
+   "title": "국내 바이오 IPO, 하반기 '기지개'…7곳 예심 통과 - 더바이오",
+   "url": "https://www.thebionews.net/news/articleView.html?idxno=29248",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "이노보테라퓨틱스, 코스닥 상장예심 통과 - 메디파나뉴스",
+   "url": "https://www.medipana.com/news/articleView.html?idxno=419427",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "2027년 국방예산 73조2777억원, 8.2% 증액 - 파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202609030806166003",
+   "date": "2026-09-03"
+  },
+  {
+   "title": "트럼프 압박 속 내년 '국방예산 70조' 돌파 - 뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1312152",
+   "date": "2026-09"
+  },
+  {
+   "title": "원자재 빗장 거는 유럽… 한국 방산, 31조원 자립망 합류 - 글로벌이코노믹",
+   "url": "https://www.g-enews.com/article/Global-Biz/2026/10/202610211734471716fbbec65dfb_1",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "에이스테크, 항우연 저궤도 위성통신 핵심 안테나 개발 수주 - 뉴스핌",
+   "url": "https://www.newspim.com/news/view/20260902000757",
+   "date": "2026-09-02"
+  },
+  {
+   "title": "케이앤에스아이앤씨, 동남아 해군에 위성통신 안테나 공급 - 뉴스핌",
+   "url": "https://www.newspim.com/news/view/20261002000837",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "KAI, 저궤도 통신·SAR 위성 들고 세계로 - 이코노미사이언스",
+   "url": "https://www.e-science.co.kr/news/articleView.html?idxno=136908",
+   "date": "2026-10"
+  },
+  {
+   "title": "LIG D&A, K-방산 새 수출 공식 - 아시아투데이",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261015010004774",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "삼성SDI, 미국 ESS용 LFP 양산 임박…3.5조 수주 - 더트래커",
+   "url": "https://thetracker.co.kr/View.aspx?No=4261736",
+   "date": "2026-10-14"
+  },
+  {
+   "title": "美 ESS가 판 키운다…K배터리 소재, LFP 전환 가속 - 파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202610060750556629",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "中 ESS 업체 美 철수 관측에 2차전지주 급등 - 이코노미트리뷴",
+   "url": "https://www.economytribune.co.kr/news/articleView.html?idxno=3904180",
+   "date": "2026-10-19"
+  },
+  {
+   "title": "K-배터리 3사, 美 'LFP ESS' 수주 잭팟 - 페로타임즈",
+   "url": "https://www.ferrotimes.com/news/articleView.html?idxno=45252",
+   "date": "2026"
+  },
+  {
+   "title": "세아베스틸지주, 美 SST 내년 초 가동 - 네이트뉴스(단독)",
+   "url": "https://m.news.nate.com/view/20260810n21309",
+   "date": "2026-08-10"
+  },
+  {
+   "title": "세아베스틸, '스페이스X 공급망' 정조준 - 서울경제",
+   "url": "https://m.sedaily.com/article/20100106",
+   "date": "2026"
+  },
+  {
+   "title": "항공우주 및 방위산업 소재 시장 규모 및 전망, 2031년 - Mordor Intelligence",
+   "url": "https://www.mordorintelligence.kr/industry-reports/aerospace-and-defense-materials-market",
+   "date": "2026"
+  },
+  {
+   "title": "항공우주용 티타늄 가공 시장 - Straits Research",
+   "url": "https://straitsresearch.com/report/aerospace-titanium-machining-market",
+   "date": "2026"
+  },
+  {
+   "title": "재생의료 시장 보고서(2026-2034) - GII Korea",
+   "url": "https://www.giikorea.co.kr/report/vmr2110257-global-regenerative-medicine-market-size-share.html",
+   "date": "2026-08"
+  },
+  {
+   "title": "중국 의료기기 규제 전면 격상 - 의학신문",
+   "url": "https://www.bosa.co.kr/news/articleView.html?idxno=3001321",
+   "date": "2026-03"
+  }
+ ],
+ "search_count": "23 성공 / 31 시도 (마지막 8회는 공유 WebSearch 예산 소진으로 거부됨; extended 11회, standard 12회)"
+}

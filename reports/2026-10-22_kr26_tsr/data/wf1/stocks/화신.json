@@ -1,0 +1,283 @@
+{
+ "input_name": "화신",
+ "legal_name": "주식회사 화신 (Hwashin Co., Ltd.)",
+ "ticker": "010690",
+ "market": "KOSPI",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "종목코드 010690, KRX 유가증권시장(KOSPI) 상장 확인(Google Finance 010690:KRX, 와이즈리포트·한경마켓 등 다수 사이트 일치). 거래정지·관리종목·투자주의환기·상장폐지 심사 관련 징후는 검색 결과에 없음(공식 확인은 아님). 유사명 회사 화신정공(126640, 코스닥, 관계사·동일 대표 정서진)과 별개 법인이며, 검색 결과 중 화신정공 자료(배당 75원, 최대주주 12.37% 등)는 본 종목에서 제외함. 화신목재·화신이앤비·화신해양·화신금속공업 등도 무관.",
+ "share_class": "보통주(사업회사). 우선주 없음(검색상 미발견).",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 관련 기사·공시 검색 결과 없음(없는 것으로 판단, 공식 확인은 아님). 2026-10-15 자기주식 처분 결정 정정공시(교환사채 만기상환에 따른 교환대상 자기주식 1,823,631주 환입)만 확인.",
+ "price": {
+  "value": "6970",
+  "date": "2026-10-16",
+  "kind": "종가(추정) - investing.com 2026-10-17 스냅샷 기준 '현재가 6,970원, 전일종가 6,650원'. 10/17은 토요일이므로 6,970원은 10/16(금) 종가, 6,650원은 10/15(목) 종가로 추정",
+  "source_url": "https://www.investing.com/equities/hwashin",
+  "note": "2026-10-22 및 10-21 종가는 9회 검색 내에서 확인 실패(N/A). 확인된 최근 시세: 10/16 추정종가 6,970원(당일 범위 6,690~7,070원, 52주 범위 6,410~16,720원; investing.com 10/17 스냅샷), 10/15 종가 6,650원(judal 2026.10.15 분석 페이지 주가 6,650원·PER 3.21배와 일치), 9/18 종가 7,641원(치킨스탁), 9/16 15:30 체결가 7,520원(치킨스탁), 6/18 종가 12,030원, 5/15 13,160원(-10.48%). 10/22 코스피 -3.52% 급락일 종가는 별도 확인 필요. 5월 이후 약 -50% 하락.",
+  "source_date": "2026-10-17",
+  "alt_price_1021": "N/A"
+ },
+ "market_cap_bn": {
+  "value": "2616",
+  "date": "2026-09-15",
+  "source_url": "https://www.chickstockfi.com/stocks/010690",
+  "note": "치킨스탁 2026-09-15 기준 시가총액 2,616억원(주가 약 7,500원). 10/16 추정종가 6,970원 x 추정 상장주식수 약 3,492만주 = 약 2,434억원(계산치). 참고로 2026-05-15 기준 시총 4,596억원(주가 13,160원)."
+ },
+ "shares_outstanding": {
+  "value": "34923000",
+  "date": "2026-03-31",
+  "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=440835",
+  "note": "직접 확인된 상장주식수 수치는 없음. 비즈니스포스트 기사(2026-03-31 기준 글로벌오토트레이딩 5,736,656주=16.43%, 정서진 1,814,900주=5.20%)에서 역산 시 약 3,490~3,492만주. 34,923,000주는 memory_unverified이며 역산값과 정합. 시총 2,616억/7,500원=약 3,488만주로도 정합."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "0.5",
+  "source_url": "https://itooza.com/vscore/010690",
+  "note": "아이투자: 최근 분기말 자사주 비중 0.5%. 단, 2026-10-15 정정공시(치킨스탁 공시 요약)에 따르면 교환사채 교환대상이던 자기주식 1,823,631주(약 5.2%, 처분예정금액 212.1억원, 주당 약 11,632원)가 교환사채 만기상환으로 환입됨. 환입 후 자사주는 약 1.82백만주+ (약 5.2%+)로 증가했을 가능성이 있어 0.5%와 충돌. 어느 시점 기준인지 미확정이므로 보수적으로 0.5%(공시 전)를 기재하고 환입분을 note로 남김."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기(2Q26) 보고서가 통상 8월 중 제출되었을 것이나, 2Q26·1H26 연결 수치는 검색으로 확인 실패. 확인된 최신 수치는 FY2025 연간 및 2025년 3분기.",
+ "financials": [
+  {
+   "period": "FY2024 (연결)",
+   "revenue_bn": "17125",
+   "op_income_bn": "653",
+   "net_income_bn": "536",
+   "source_url": "https://www.butler.works/ko/companies/00166315",
+   "note": "순이익 536억원은 버틀러 연간표 직접 수치. 매출·영업이익은 FY2025 수치와 증가율(+14.6%, +56.9%)로 역산한 계산치(17,125억, 653억)이며 반올림 오차 가능."
+  },
+  {
+   "period": "FY2025 (연결)",
+   "revenue_bn": "19625",
+   "op_income_bn": "1024",
+   "net_income_bn": "667",
+   "source_url": "https://www.butler.works/ko/companies/00166315",
+   "note": "매출 1조9,625억원(+14.6% YoY), 영업이익 1,024억원(+56.9%), 순이익 667억원(버틀러). 한경마켓 재무표도 영업이익 약 1,024억원으로 일치. 잡코리아의 2025 매출 1조1,149억·영업이익 477억은 별도 기준으로 추정되어 미채택. 분할·합병 없어 전년 비교 가능."
+  },
+  {
+   "period": "1Q2025 (연결)",
+   "revenue_bn": "4735",
+   "op_income_bn": "305",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.datatooza.com/article/2025051912023754673f2b95e194_80",
+   "note": "하나증권(2025-05-19 기사): 매출 +14%, 영업이익 +44% YoY."
+  },
+  {
+   "period": "3Q2025 (연결)",
+   "revenue_bn": "4859",
+   "op_income_bn": "116",
+   "net_income_bn": "N/A",
+   "source_url": "https://m.thinkpool.com/stockDiscuss/010690/cont/11835858",
+   "note": "씽크풀 실적속보: 매출 +16%, 영업이익 +83% YoY."
+  },
+  {
+   "period": "1Q2026 (연결)",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=010690",
+   "note": "삼성증권(2026-05-18): 1Q26 영업이익이 추정치를 크게 하회, 미국 신공장 감가상각비(약 40억원) 부담이 원인. 절대 수치 미확인."
+  },
+  {
+   "period": "2Q2026 / 1H2026 (연결)",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.butler.works/ko/companies/00166315",
+   "note": "수치 확인 실패. 버틀러는 2Q26 매출 기준 사업부문 비중만 제공(Chassis 61%·기타 20%·Body 10%·상품 6%·전동화 3%). 와이즈리포트 2026E EPS 2,549원(추정)."
+  }
+ ],
+ "balance_sheet": {
+  "date": "N/A",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "note": "현금·차입금·순현금·자기자본·영업현금흐름·CAPEX는 9회 검색 내 확인 실패. 미국 신공장 투자(2025~2026 감가상각 개시)로 CAPEX 부담 및 차입 증가 가능성 있으나 수치 미확인.",
+  "source_url": "N/A"
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "170",
+  "dividend_yield_pct": "2.0",
+  "buyback_policy": "자사주 매입·소각 정책 공시는 미확인. 보유 자사주(0.5%) 일부는 과거 교환사채 교환대상으로 사용되었고 2026-10-15 교환사채 만기상환으로 1,823,631주가 환입됨(처분 정정공시). 소각 계획은 확인되지 않음.",
+  "source_url": "https://itooza.com/vscore/010690",
+  "valueup_disclosure": "탑데일리 기사 제목 '화신정공, 화신과 밸류업 동행'에 비추어 화신도 기업가치 제고 계획(밸류업) 공시를 한 것으로 추정되나 내용 미확인. 중장기 배당정책: 2024사업연도부터 3년간 연결 당기순이익 기준 배당성향 7% 내외 탄력 운영(아이투자). FY2025 DPS 170원, 배당성향 8.9%, 배당수익률 2.0%(아이투자 기준 시점 주가 기준; 10/16 추정종가 6,970원 기준 약 2.4%)."
+ },
+ "dilution": {
+  "convertibles": "전환사채(CB)·신주인수권부사채(BW) 발행 확인 안 됨. 교환사채(EB): 자기주식 1,823,631주(처분예정금액 212.1억원, 주당 약 11,632원)를 교환대상으로 한 EB가 존재했으며, 2026-10-15 정정공시에 따르면 교환사채 만기상환으로 교환대상 자기주식이 환입됨(발행 시점·총액·잔량 미확인). 2026-09-08 CB 정정신고 문서는 회사명 미확인으로 화신 공시로 단정 불가.",
+  "stock_options": "N/A (미확인)",
+  "rights_issues": "최근 24개월 유상증자 공시 확인 안 됨(검색상 미발견).",
+  "est_dilution_pct": "0",
+  "source_url": "https://www.chickstockfi.com/disclosures/20261015000114"
+ },
+ "ownership": {
+  "largest_holder": "글로벌오토트레이딩(정서진 대표가 지분 22% 보유한 최대주주)",
+  "largest_holder_pct": "16.43",
+  "overhang_notes": "2026-03-31 기준 글로벌오토트레이딩 5,736,656주(16.43%), 정서진 대표 1,814,900주(5.20%). 최대주주 및 특수관계인 합계는 '글로벌오토트레이딩 외 16인 50.41%'(와이즈리포트, 2026-05-15 기준). 보호예수·블록딜 관련 기사 미발견. 오버행 요인: 교환사채 환입 자기주식 약 182만주(5.2%)의 향후 재처분 가능성. 정서진 대표의 화신정공 지분 확대(1.4%→11.7%→12.37%)는 관계사 지배구조 이슈로 참고.",
+  "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=440835"
+ },
+ "business": {
+  "summary": "자동차 섀시(서스펜션 암·크로스멤버 등)·차체 부품 전문 제조사. 현대차그룹 1차 협력사로 국내(영천)·미국(신공장 2025~26 가동)·중국·인도·브라질·멕시코 등 해외 생산기지 보유(해외 거점 세부는 memory_unverified). 2025년 연결 매출 1조9,625억원, 영업이익 1,024억원. 2026년 1Q는 미국 신공장 감가상각으로 이익 쇼크.",
+  "segments": "2Q26 매출 기준(버틀러): Chassis Parts 61%, 기타제품 20%, Body Parts 10%, 상품 6%, Electrification Parts 3%.",
+  "key_customers": "현대자동차·기아(현대차그룹) 중심(업무 메모 및 memory_unverified; 검색 결과에서 고객사 비중 수치 미확인).",
+  "customer_concentration": "N/A (현대차그룹 비중 대다수로 알려져 있으나 수치 미확인, memory_unverified)",
+  "competitors": "화신정공(관계사·섀시 가공), 성우하이텍, 서진오토모티브, 오스템, 동원금속 등 국내 섀시·차체 부품사(memory_unverified)",
+  "industry_group": "자동차·전장·SDV·부품"
+ },
+ "consensus": {
+  "target_price_avg": "16000",
+  "target_price_date": "2026-05-15",
+  "n_brokers": "1",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "recent_report_summary": "최근 1~2개월(2026년 9~10월) 증권사 리포트 확인 실패. 확인된 최신 자료: 와이즈리포트 컨센서스(2026-05-15 기준) 목표주가 평균 16,000원·투자의견 4.00(매수)·추정기관 1곳. 삼성증권 2026-05-18 매수·목표가 16,000원 유지(1Q26 영업이익 추정치 대폭 하회, 미국 신공장 감가상각 40억원 원인). 2026-05-11 전후 타 리포트 목표가 18,000원·18,500원도 존재. 와이즈리포트 2026E EPS 2,549원(연 순이익 약 890억원 수준으로 환산, 계산치). 주가가 5월 13,160원에서 10월 6,650~6,970원으로 약 50% 하락해 목표가 16,000원과 괴리가 매우 크며, 이후 하향 가능성 높으나 미확인. 방향성: 1Q 실적 쇼크 이후 하향 압력(추정치 하향 여부 미확인).",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=010690"
+ },
+ "recent_events": [
+  {
+   "event": "자기주식 처분 결정 정정공시: 교환사채 만기상환에 따라 교환대상 자기주식 1,823,631주(처분예정금액 212.1억원) 환입",
+   "event_date": "2026-10-15",
+   "article_date": "2026-10-15",
+   "source_url": "https://www.chickstockfi.com/disclosures/20261015000114"
+  },
+  {
+   "event": "주가 급락 지속: 10/15 종가 6,650원, 10/16 추정종가 6,970원(52주 최저 6,410원 근접). 5/15 13,160원 대비 약 -47~50%",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-17",
+   "source_url": "https://www.investing.com/equities/hwashin"
+  },
+  {
+   "event": "삼성증권: 1Q26 영업이익 추정치 대폭 하회(미국 신공장 감가상각비 약 40억원 부담), 투자의견 매수·목표가 16,000원 유지",
+   "event_date": "2026-05-18",
+   "article_date": "2026-05-18",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=010690"
+  },
+  {
+   "event": "주가 하루 -10.48%(13,160원) 급락 - 1Q26 실적 쇼크 직후로 추정",
+   "event_date": "2026-05-15",
+   "article_date": "2026-05-15",
+   "source_url": "https://www.valueline.co.kr/finance/summary/010690"
+  },
+  {
+   "event": "2026-03-31 기준 지배구조: 최대주주 글로벌오토트레이딩 16.43%, 정서진 대표 5.20%; 정서진은 글로벌오토트레이딩 지분 22% 보유. 관계사 화신정공은 정서진(12.37%)으로 최대주주 변경",
+   "event_date": "2026-03-31",
+   "article_date": "2026-04",
+   "source_url": "https://www.businesspost.co.kr/BP?command=article_view&num=440835"
+  },
+  {
+   "event": "FY2025 결산 배당 주당 170원(배당성향 8.9%), 중장기 배당정책 연결 순이익 7% 내외 배당성향",
+   "event_date": "2026-03",
+   "article_date": "N/A",
+   "source_url": "https://itooza.com/vscore/010690"
+  },
+  {
+   "event": "FY2025 연결 실적: 매출 1조9,625억원(+14.6%), 영업이익 1,024억원(+56.9%), 순이익 667억원",
+   "event_date": "2026-02",
+   "article_date": "N/A",
+   "source_url": "https://www.butler.works/ko/companies/00166315"
+  }
+ ],
+ "data_quality": "낮음",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가 미확인(3회 시도 모두 실패). 최근 확인 시세는 10/16 추정종가 6,970원(investing.com 10/17 스냅샷) 및 10/15 종가 6,650원.",
+  "2026년 2분기·상반기 연결 매출/영업이익/순이익 미확인(2회 시도). 1Q26 절대 수치도 미확인.",
+  "상장주식수 직접 확인 실패 - 지분율 역산(약 3,490만주) 및 memory 기반 34,923,000주 기재(memory_unverified).",
+  "자기주식 수·비율: 아이투자 0.5%와 10/15 교환사채 환입 1,823,631주(약 5.2%) 간 정합성 미확인. 교환사채 발행일·총액·잔량 미확인.",
+  "순현금(순차입금)·자기자본·영업현금흐름·CAPEX 전부 미확인.",
+  "FY2024 매출·영업이익은 증가율 역산 계산치(순이익만 직접 확인).",
+  "2026년 9~10월 증권사 리포트·최신 컨센서스(목표주가·2026E/2027E 매출·영업이익) 미확인. 최신 확인 컨센서스는 2026-05-15 기준(1개사 16,000원).",
+  "최대주주 및 특수관계인 합계 50.41%(와이즈리포트 5/15)의 상세 구성 미확인.",
+  "고객 집중도(현대차·기아 매출 비중) 수치 미확인, 경쟁사 목록은 memory_unverified.",
+  "밸류업(기업가치 제고 계획) 공시 여부·내용 미확인(관계사 기사 제목으로 간접 추정).",
+  "최근 6개월 수주·계약 공시 미발견(없는 것인지 검색 누락인지 불명).",
+  "거래정지·관리종목 여부는 부정 징후 없음에 근거한 판단이며 공식 확인 아님."
+ ],
+ "sources": [
+  {
+   "title": "Hwashin 오늘의 주가 - Investing.com (10/17 스냅샷: 6,970원, 전일종가 6,650원)",
+   "url": "https://www.investing.com/equities/hwashin",
+   "date": "2026-10-17"
+  },
+  {
+   "title": "화신 투자분석 2026.10.15 - judal (주가 약 6,650원, PER 3.21배)",
+   "url": "https://judal.co.kr/?shareToken=Vm2jEXG0wpp1zGMC&view=stockAI",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "화신(010690) 주가·실적발표·공시 - 치킨스탁 (9/16 체결가 7,520원, 시총 2,616억원 9/15 기준)",
+   "url": "https://www.chickstockfi.com/stocks/010690",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "화신(010690) 밸류에이션 상세 - 치킨스탁 (9/18 종가 7,641원)",
+   "url": "https://www.chickstockfi.com/stocks/010690/valuation",
+   "date": "2026-09-18"
+  },
+  {
+   "title": "화신 [기재정정]주요사항보고서(자기주식처분결정) 2026.10.15 - 치킨스탁",
+   "url": "https://www.chickstockfi.com/disclosures/20261015000114",
+   "date": "2026-10-15"
+  },
+  {
+   "title": "버틀러 - 화신(010690) 실적·재무제표 (FY2025 매출 1조9,625억·OP 1,024억·NI 667억, 2Q26 부문비중)",
+   "url": "https://www.butler.works/ko/companies/00166315",
+   "date": "2026"
+  },
+  {
+   "title": "화신 - 기업현황 - 와이즈리포트 (컨센서스 2026.05.15 기준 TP 16,000원, 2026E EPS 2,549원, 삼성증권 5/18)",
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=010690",
+   "date": "2026-05-18"
+  },
+  {
+   "title": "화신-기업재무 - 한경마켓",
+   "url": "https://markets.hankyung.com/stock/010690/financial-summary",
+   "date": "2026"
+  },
+  {
+   "title": "화신-컨센서스 - 한경마켓",
+   "url": "https://markets.hankyung.com/stock/010690/consensus",
+   "date": "2026"
+  },
+  {
+   "title": "[Who Is ?] 정서진 화신 대표이사 사장 - 비즈니스포스트 (2026-03-31 기준 지분 구조)",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=440835",
+   "date": "2026-04"
+  },
+  {
+   "title": "화신 : 주가, 기업개요, 통합진단 - 아이투자 (DPS 170원, 배당성향 8.9%, 자사주 0.5%, 배당정책)",
+   "url": "https://itooza.com/vscore/010690",
+   "date": "2026"
+  },
+  {
+   "title": "화신(010690) - 개요 - 밸류라인 (5/15 주가 13,160원 -10.48%, 시총 4,596억, 주요주주 50.41%)",
+   "url": "https://www.valueline.co.kr/finance/summary/010690",
+   "date": "2026-05-15"
+  },
+  {
+   "title": "씽크풀 [실적속보] 화신 3Q25 매출 4,859억(+16%) 영업이익 116억(+83%) (연결)",
+   "url": "https://m.thinkpool.com/stockDiscuss/010690/cont/11835858",
+   "date": "2025-11"
+  },
+  {
+   "title": "화신, 신공장 가동 본격화로 매출 성장 기대 - 하나증권 (1Q25 매출 4,735억·OP 305억)",
+   "url": "https://www.datatooza.com/article/2025051912023754673f2b95e194_80",
+   "date": "2025-05-19"
+  },
+  {
+   "title": "화신정공, 화신과 밸류업 동행…단발성은 아쉬움 - 탑데일리",
+   "url": "https://www.topdaily.kr/articles/110252",
+   "date": "2026"
+  },
+  {
+   "title": "화신정공, 최대주주 정서진 대표외 21인으로 변경 - 이데일리 (관계사, 구분용)",
+   "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03742486609569328",
+   "date": "2026"
+  },
+  {
+   "title": "화신(010690) 주가 및 뉴스 - Google Finance (KRX 상장 확인)",
+   "url": "https://www.google.com/finance/beta/quote/010690:KRX?hl=ko",
+   "date": "2026"
+  }
+ ],
+ "search_count": "9"
+}

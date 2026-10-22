@@ -1,0 +1,47 @@
+{
+ "stocks": [
+  {
+   "name": "이수페타시스",
+   "code": "007660",
+   "market": "KOSPI",
+   "hint": "AI 서버용 고다층 PCB(MLB). 2024~25년 유상증자·제이오 인수 이슈 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "선익시스템",
+   "code": "080000",
+   "market": "KOSDAQ",
+   "hint": "OLED 증착장비. 동아엘텍 자회사. 8.6세대·BOE·삼성디스플레이 수주 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "와이씨",
+   "code": "232140",
+   "market": "KOSDAQ",
+   "hint": "YC(구 와이아이케이). 메모리 웨이퍼 테스트 장비. 삼성전자 지분 보유 여부·고객 집중 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "고영",
+   "code": "098460",
+   "market": "KOSDAQ",
+   "hint": "3D SPI·AOI 검사장비, 의료로봇(카이메로).",
+   "maxSearches": 9
+  },
+  {
+   "name": "서진시스템",
+   "code": "178320",
+   "market": "KOSDAQ",
+   "hint": "ESS 외함·통신장비·반도체장비 부품 등 다각화 제조. CB 발행 이력과 희석 확인.",
+   "maxSearches": 9
+  },
+  {
+   "name": "한중엔시에스",
+   "code": "107640",
+   "market": "KOSDAQ",
+   "hint": "ESS 수랭식 냉각 시스템(삼성SDI 협력). 2024년 코스닥 이전상장.",
+   "maxSearches": 9
+  }
+ ],
+ "macro": false
+}

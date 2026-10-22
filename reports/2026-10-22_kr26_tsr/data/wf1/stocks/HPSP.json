@@ -1,0 +1,420 @@
+{
+ "input_name": "HPSP",
+ "legal_name": "주식회사 에이치피에스피 (HPSP Co., Ltd.)",
+ "ticker": "403870",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "정상 거래 중(10/22 장중·마감 기사 다수 존재). 거래정지·관리종목·투자주의환기·상장폐지심사 관련 보도 없음. 종목코드 403870·코스닥 상장법인 확인(Google Finance 403870:KOSDAQ, 삼성증권 리포트 '코스닥상장법인' 기재). 'HPSP'는 미국 군의 장학프로그램(Health Professions Scholarship Program)과 동명이므로 검색 시 혼동 주의.",
+ "share_class": "보통주(단일 종류, 사업회사). 우선주 없음.",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·분할·합병·재상장·이전상장 없음(검색 범위 내). 자본 이벤트: 2026-01-06 최대주주(히트2025홀딩스) 보유분 10.01%(836만주) 블록딜(주당 35,350원, 약 3,000억원), 2026-02-12 자기주식 1,699,120주 소각 결정(소각 후 발행주식총수 82,300,000주), 2026-08-07·2026-10-22 RSU용 자기주식 처분 결정.",
+ "price": {
+  "value": "48400",
+  "date": "2026-10-22",
+  "kind": "종가(마감 보도)",
+  "source_url": "https://news.jkn.co.kr/post/1042155",
+  "source_date": "2026-10-22",
+  "alt_price_1021": "50900",
+  "note": "10/22 종가 보도 충돌: 재경일보 [마감분석] 48,400원(-2,500원, -4.91%) vs 잡포스트 48,050원(-2,850원, -5.60%). 두 기사 모두 전일(10/21) 종가 50,900원을 전제로 하며 Investing.com(10/21 기준 약 50,900원)과 일치. 본 항목은 '마감분석' 명시 기사인 재경일보 48,400원 채택. 장중가 참고: 11:09 기준 48,800원(-4.13%, 중앙이코노미뉴스), 48,950원(-3.83%, 톱스타뉴스). 코스피 급락일(-3.52%)과 동반 하락."
+ },
+ "market_cap_bn": {
+  "value": "39833.2",
+  "date": "2026-10-22",
+  "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=557349",
+  "note": "종가 기준 시총은 보도되지 않아 48,400원 x 82,300,000주 = 3조9,833억원으로 계산(자사주 포함). 10/22 장중 보도치: 4조162억원(중앙이코노미뉴스 11:09), 4조286억원(톱스타뉴스). Google Finance 4.12조원은 10/21 이전 종가 기준으로 추정. 잡포스트 종가 48,050원 채택 시 3조9,545억원."
+ },
+ "shares_outstanding": {
+  "value": "82300000",
+  "date": "2026-02-24",
+  "source_url": "https://m.news.nate.com/view/20260212n37414",
+  "note": "2026-02-12 자기주식 1,699,120주 소각 결정 공시에서 소각 후 발행주식총수 82,300,000주로 기재. 삼성자산운용 지분 보고(2026년) 의결권 있는 발행주식 총수 82,300,000주로 재확인. 이후 신주 발행 보도 없음."
+ },
+ "treasury_shares": {
+  "count": "941164",
+  "pct": "1.14",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=403870",
+  "note": "WiseReport 2026-07-30 기준 941,164주(1.14%). FnGuide 2026-05-29 기준 945,751주(1.15%, 자사주+신탁). 이후 RSU용 장외처분 51,517주(2026-08-07 공시, 37명, 주당 35,800원 기준 약 18.4억원)와 5,360주(2026-10-22 공시, 처분기간 10/22~11/22)가 있어 현재 잔량은 약 88만~89만주(약 1.08%)로 추정되나 공시 원문 미확인."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기보고서(2Q26, 2026-08-14 공시). 3Q26 실적 발표 예정일 2026-11-18(치킨스탁 일정, 미확정).",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "1814",
+   "op_income_bn": "939",
+   "net_income_bn": "863",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=403870",
+   "note": "연결 기준(WiseReport/FnGuide 연간표). 분할·합병 없어 기간 비교 가능."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "1730",
+   "op_income_bn": "899",
+   "net_income_bn": "727",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A403870",
+   "note": "매출 -4.7% YoY, 영업이익 -4.3% YoY(버틀러). 순이익 FnGuide 727억원, 잡코리아 726억원(반올림 차이). 2025-12 말 자산총계 3,697억원(FnGuide)."
+  },
+  {
+   "period": "1Q26",
+   "revenue_bn": "319",
+   "op_income_bn": "161",
+   "net_income_bn": "249",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.chickstockfi.com/stocks/403870/earnings",
+   "note": "2026-05-15 공시, 별도 기준. 매출 -13.4% YoY, 영업이익 -13.7% YoY, 순이익 +63.6% YoY(금융수익 등 영업외 영향 추정, 미확인). 삼성증권 '컨센서스 부합' 평가."
+  },
+  {
+   "period": "2Q26",
+   "revenue_bn": "461",
+   "op_income_bn": "283",
+   "net_income_bn": "N/A",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=228584",
+   "note": "2026-08-14 반기보고서 기반. 매출 -10.1~10.2% YoY, QoQ +44.4%; 영업이익률 약 61.4%. 순이익 미확인."
+  },
+  {
+   "period": "1H26(합산)",
+   "revenue_bn": "780",
+   "op_income_bn": "444",
+   "net_income_bn": "N/A",
+   "ocf_bn": "N/A",
+   "capex_bn": "N/A",
+   "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=228584",
+   "note": "1Q26+2Q26 단순 합산(에이전트 계산). 상반기 매출 감소는 고객사 설비투자 시점 조정 영향."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2025-12-31",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A403870",
+  "note": "2025-12 말 자산총계 3,697억원(FnGuide)만 확인. 현금성자산·차입금·자기자본 수치는 검색 결과에 없음. 회사는 통상 무차입·순현금 구조로 알려져 있음(memory_unverified). 2026 반기 기준 재무상태는 DART 반기보고서 확인 필요."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "500",
+  "dividend_yield_pct": "1.03",
+  "buyback_policy": "2026-02-12 자기주식 1,699,120주 소각 결정(발행주식의 약 2%). 자사주는 RSU 임직원 보상용으로 소량 장외처분 지속(2026-08-07 51,517주, 2026-10-22 5,360주, 이전 4,410주). 정기 매입 프로그램 여부는 미확인.",
+  "valueup_disclosure": "N/A(밸류업 공시 여부 검색 결과에서 확인되지 않음)",
+  "source_url": "https://m.news.nate.com/view/20260327n31302"
+ },
+ "dilution": {
+  "convertibles": "CB·BW·EB·RCPS 발행 보도 없음(검색 범위 내, 최근 24개월). 잔량 0으로 추정.",
+  "stock_options": "미행사 스톡옵션 규모 N/A. RSU 제도 운영: 기존 자사주로 교부(2026-08 51,517주, 2026-10 5,360주)하여 신주 발행 없음.",
+  "rights_issues": "최근 24개월 유상증자 없음(검색 범위 내). 예정 증자 보도 없음.",
+  "est_dilution_pct": "0.1",
+  "source_url": "https://www.chickstockfi.com/disclosures/20260807000741"
+ },
+ "ownership": {
+  "largest_holder": "히트2025홀딩스 유한회사(크레센도에쿼티파트너스/프레스토 측 투자목적회사)",
+  "largest_holder_pct": "29.27",
+  "overhang_notes": "블록딜 전 39.28%(3,280만주)에서 2026-01-06 10.01%(836만주)를 주당 35,350원(할인율 9.7%, 약 3,000억원)에 블록딜 처분 → 잔여 약 29.27%(에이전트 계산). 매도 측은 '잔여 지분 홀딩' 입장. 다만 FnGuide는 히트2025홀딩스 지분율 20.46%(2026-02-24)로 표기해 충돌(2025-05 크레센도의 투자구조 조정으로 보유 주체가 분산됐을 가능성). 과거 UBS 자문으로 지분 40.9% 전체 매각 추진 이력이 있어 PEF 엑시트(추가 블록딜/경영권 매각) 오버행 상존. 기타: 엔지니어링 총괄 임원 장내 매도(일자 미확인), 삼성자산운용 측 보유비율 +2.51%p 증가 보고(일자 미확인). 보호예수 해제 일정 N/A.",
+  "source_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03165206645315424"
+ },
+ "business": {
+  "summary": "반도체 전공정용 고압 수소 어닐링(HPA) 장비 세계 유일 양산 업체. 고압 수소 분위기에서 계면 결함을 치유해 트랜지스터 특성을 개선하며 로직/파운드리 선단공정에서 출발해 DRAM·NAND로 적용처 확대 중. 고압 산화(HPO) 장비도 공급. 영업이익률 50~60%대의 고수익 구조.",
+  "segments": "단일 사업부문(반도체 장비). 제품별로 HPA 장비가 대부분, HPO 장비 일부(비중 수치 N/A). 지역별 수출 비중 높음(수치 N/A).",
+  "key_customers": "글로벌 파운드리·메모리 대형 고객(TSMC, 삼성전자, SK하이닉스, 인텔 등으로 알려짐, memory_unverified). 2026년 1분기 신규 고객사 매출 발생(삼성증권).",
+  "customer_concentration": "소수 대형 고객 집중도 높음(상위 고객 비중 수치 N/A). 고객 설비투자 시점에 따라 분기 매출 변동 큼.",
+  "competitors": "예스티(YEST, 특허분쟁 후 HPA 시장 진입 시도, 삼성 수주 공시), 글로벌 장비사(AMAT 등)의 잠재 진입(memory_unverified).",
+  "industry_group": "반도체·AI하드웨어·디스플레이장비"
+ },
+ "consensus": {
+  "target_price_avg": "75375",
+  "target_price_date": "2026-10-21",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "2373",
+  "op_2026e_bn": "1266",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "상향 흐름. KB증권(2026-10-06) 목표가 65,000→85,000원 매수 유지(NAND·DRAM 확장으로 3년 영업이익 성장률 상향, 3Q26는 컨센서스 하회·4Q부터 개선 전망). 삼성증권(2026-10-19) 목표가 65,000→75,000원(+15.4%), 3Q26 시장 기대 부합 전망, 2026E 매출 2,497억·영업이익 1,361억원. 평균 목표가: Investing.com 75,375원(10/21, Strong Buy), 중앙이코노미뉴스 71,667원(10/12). 2026E 컨센서스는 FnGuide 별도 기준 매출 2,373억·영업이익 1,266억원(대신증권 2,390/1,350억원). 이전: 한국투자증권 2026-04-16 목표가 54,000원(+29%), 대신증권 58,000원, NH 2025-11-17 40,000원.",
+  "source_url": "https://www.investing.com/equities/hpsp"
+ },
+ "recent_events": [
+  {
+   "event": "최대주주 히트2025홀딩스, 보유 지분 중 10.01%(836만주) 블록딜 처분(주당 35,350원, 할인율 9.7%, 약 3,000억원). 잔여 지분은 홀딩 방침",
+   "event_date": "2026-01-06",
+   "article_date": "2026-01-06",
+   "source_url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03165206645315424"
+  },
+  {
+   "event": "FY2025 주당 500원 현금배당(총 404.4억원) 및 자기주식 1,699,120주 소각 결정",
+   "event_date": "2026-02-12",
+   "article_date": "2026-02-12",
+   "source_url": "https://m.news.nate.com/view/20260212n37414"
+  },
+  {
+   "event": "한국투자증권 '저가 매수 타이밍' 목표가 54,000원(+29%) 상향, 상저하고 전망",
+   "event_date": "2026-04-16",
+   "article_date": "2026-04-16",
+   "source_url": "https://www.news1.kr/finance/general-stock/6138153"
+  },
+  {
+   "event": "1Q26 실적 공시: 매출 319억(-13.4% YoY), 영업이익 161억, 순이익 249억(+63.6%); 신규 고객사 매출 발생",
+   "event_date": "2026-05-15",
+   "article_date": "2026-05-15",
+   "source_url": "https://www.chickstockfi.com/stocks/403870/earnings"
+  },
+  {
+   "event": "특허법원, HPSP·예스티 심결취소소송 3건 모두 기각: HPSP 특허 유효이나 예스티 기술은 비침해 판단. HPSP는 대법원 상고 등 대응 검토",
+   "event_date": "2026-06-17",
+   "article_date": "2026-06-17",
+   "source_url": "https://zdnet.co.kr/view/?no=20260617233922"
+  },
+  {
+   "event": "RSU 보상용 자기주식 51,517주 장외처분 결정(임직원 37명, 주당 35,800원 기준 약 18.4억원)",
+   "event_date": "2026-08-07",
+   "article_date": "2026-08-07",
+   "source_url": "https://www.chickstockfi.com/disclosures/20260807000741"
+  },
+  {
+   "event": "2Q26 실적(반기보고서): 매출 461억(-10% YoY, +44% QoQ), 영업이익 283억, 영업이익률 61.4%",
+   "event_date": "2026-08-14",
+   "article_date": "2026-08-14",
+   "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=228584"
+  },
+  {
+   "event": "KB증권 목표주가 65,000→85,000원 상향(매수 유지), NAND·DRAM 매출 확장 근거",
+   "event_date": "2026-10-06",
+   "article_date": "2026-10-06",
+   "source_url": "https://kbthink.com/securities-view.html?docId=20261002154614420K"
+  },
+  {
+   "event": "삼성증권 목표주가 65,000→75,000원(+15.4%) 상향, 수주 증가 기대",
+   "event_date": "2026-10-19",
+   "article_date": "2026-10-19",
+   "source_url": "https://view.asiae.co.kr/en/article/2026101916490180804"
+  },
+  {
+   "event": "RSU용 자기주식 5,360주 처분 결정 공시; 같은 날 주가 -4.91% 48,400원 마감(코스피 급락 동반). 별도로 10월 중 특허심판원이 HPSP '303 특허(이중벽 구조) 무효 판정' 보도(이데일리, 정확한 일자 미확정) 및 서울중앙지법 1심 변론기일 11월로 연기",
+   "event_date": "2026-10-22",
+   "article_date": "2026-10-22",
+   "source_url": "https://www.chickstockfi.com/disclosures/20261022000168"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "10/22 종가 출처 충돌(48,400원 vs 48,050원) — 거래소 공식 종가 미확인",
+  "종가 기준 공식 시가총액 미확인(계산치 사용)",
+  "현금성자산·차입금·순현금·자기자본(2025년말·2026년 반기) 수치 미확인",
+  "영업현금흐름·CAPEX(FY2024·FY2025·1H26) 미확인",
+  "2Q26·1H26 순이익 미확인",
+  "최대주주 지분율 충돌(블록딜 후 계산 29.27% vs FnGuide 20.46%) — 최신 대량보유 공시 원문 확인 필요; 크레센도 투자구조 조정 후 보유 주체 분산 여부",
+  "미행사 스톡옵션 잔량 및 RSU 총 부여 규모 미확인",
+  "목표주가 집계 증권사 수(n), 2027E 컨센서스 미확인",
+  "상위 고객 매출 비중·제품별 매출 비중 미확인",
+  "밸류업 공시 여부 미확인",
+  "특허심판원 '303 특허 무효 판정' 보도의 정확한 일자 및 HPSP 대법원 상고 여부",
+  "엔지니어링 총괄 임원 장내 매도·삼성자산운용 지분 증가 보고의 일자·규모"
+ ],
+ "sources": [
+  {
+   "url": "https://news.jkn.co.kr/post/1042155",
+   "title": "[마감분석] HPSP 4.91% 하락 마감 4만8400원에 장 마쳐 - 재경일보",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=233948",
+   "title": "HPSP 5.60% 하락…고압수소 어닐링 장비 수주 점검 - 잡포스트",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=557349",
+   "title": "HPSP 주가, 10월 22일 장중 48,800원 4.13% 하락 - 중앙이코노미뉴스",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16254702",
+   "title": "HPSP 주가, 10월 22일 장중 48,950원 3.83% 하락 - 톱스타뉴스",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.google.com/finance/quote/403870:KOSDAQ?hl=ko",
+   "title": "HPSP(403870) Google Finance",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=228584",
+   "title": "HPSP 1.48% 상승…2분기 영업이익률 61% 기록 - 잡포스트",
+   "date": "2026-08"
+  },
+  {
+   "url": "https://happist.com/602786/hpsp-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D%EA%B3%BC-hpsp-%ED%88%AC%EC%9E%90-%EB%B6%84%EC%84%9D",
+   "title": "HPSP 주가 전망과 투자 분석: 2분기 영업이익률 61.4%의 의미(블로그)",
+   "date": "2026-08"
+  },
+  {
+   "url": "https://www.butler.works/ko/companies/01288827",
+   "title": "버틀러 - HPSP(403870) 실적·재무제표",
+   "date": "2026"
+  },
+  {
+   "url": "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A403870",
+   "title": "FnGuide HPSP(A403870)",
+   "date": "2026"
+  },
+  {
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=403870",
+   "title": "WiseReport 기업현황 HPSP",
+   "date": "2026-07-30"
+  },
+  {
+   "url": "https://www.chickstockfi.com/stocks/403870/earnings",
+   "title": "HPSP 실적 발표일·분기 실적 - 치킨스탁",
+   "date": "2026"
+  },
+  {
+   "url": "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026051517363170K_02_01.pdf",
+   "title": "삼성증권 HPSP 1Q26 review",
+   "date": "2026-05-15"
+  },
+  {
+   "url": "https://kbthink.com/securities-view.html?docId=20261002154614420K",
+   "title": "KB증권 HPSP 주가전망·목표주가",
+   "date": "2026-10-06"
+  },
+  {
+   "url": "https://view.asiae.co.kr/en/article/2026101916490180804",
+   "title": "HPSP, Orders Expected to Increase... Target Price Raised 15% - 아시아경제",
+   "date": "2026-10-19"
+  },
+  {
+   "url": "https://www.investing.com/equities/hpsp",
+   "title": "HPSP Co Ltd Stock Price - Investing.com",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=554067",
+   "title": "HPSP 주가, 10월 12일 장중 62,700원 2.94% 하락 - 중앙이코노미뉴스",
+   "date": "2026-10-12"
+  },
+  {
+   "url": "https://news.nate.com/view/20260416n07678",
+   "title": "[리포트 브리핑] HPSP 1Q26 Preview 목표가 54,000원 - 한국투자증권",
+   "date": "2026-04-16"
+  },
+  {
+   "url": "https://www.news1.kr/finance/general-stock/6138153",
+   "title": "한투證 '상저하고 기대되는 HPSP, 저가매수 타이밍…목표가 29%↑' - 뉴스1",
+   "date": "2026-04-16"
+  },
+  {
+   "url": "https://file.alphasquare.co.kr/media/pdfs/company-report/57215_260421_HPSP_1Q26_Preview.pdf",
+   "title": "대신증권 HPSP 1Q26 Preview 다가오는 재평가의 시간",
+   "date": "2026-04-22"
+  },
+  {
+   "url": "https://news.nate.com/view/20251117n07163",
+   "title": "[리포트 브리핑] HPSP 3Q25 Review 목표가 40,000원 - NH투자증권",
+   "date": "2025-11-17"
+  },
+  {
+   "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03165206645315424",
+   "title": "[마켓인] 크레센도, HPSP 지분 10% 블록딜…잔여 지분은 홀딩 - 이데일리",
+   "date": "2026-01-06"
+  },
+  {
+   "url": "https://m.news.nate.com/view/20260106n33374",
+   "title": "HPSP 최대주주 지분 10% 블록딜 - 네이트",
+   "date": "2026-01-06"
+  },
+  {
+   "url": "https://www.samsungpop.com/common.do?cmd=down&contentType=application/pdf&inlineYn=Y&saveKey=research.pdf&fileName=2010/2026010708192520K_02_02.pdf",
+   "title": "삼성증권 HPSP 최대주주 블록딜 업데이트",
+   "date": "2026-01-07"
+  },
+  {
+   "url": "https://www.heraldk.com/article/2025051215415457660",
+   "title": "크레센도, HPSP 투자 구조 조정…매각 장기전 대비 - 헤럴드경제",
+   "date": "2025-05-12"
+  },
+  {
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=741294",
+   "title": "HPSP 대주주들 '대박'...주주들은 '쪽박'? [사모펀드 논란] - 한스경제",
+   "date": "N/A"
+  },
+  {
+   "url": "https://v.daum.net/v/q1szIBVZWR",
+   "title": "HPSP 엔지니어링 총괄, 지분 장내 매도 - 다음",
+   "date": "N/A"
+  },
+  {
+   "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=705645",
+   "title": "HPSP, 주주 삼성자산운용 측 주식등 보유 비율 2.51%p 증가 - 디지털투데이",
+   "date": "N/A"
+  },
+  {
+   "url": "https://news.nate.com/view/20260212n37119",
+   "title": "HPSP, 보통주 1주당 500원 현금배당 결정 - 네이트",
+   "date": "2026-02-12"
+  },
+  {
+   "url": "https://m.news.nate.com/view/20260212n37414",
+   "title": "HPSP, 보통주 169만9120주 소각 결정 - 네이트",
+   "date": "2026-02-12"
+  },
+  {
+   "url": "https://m.news.nate.com/view/20260327n31302",
+   "title": "HPSP, 정기주총서 주당500원 현금배당 의결 - 네이트",
+   "date": "2026-03-27"
+  },
+  {
+   "url": "https://stockevents.app/kr/stock/403870.KQ/dividends",
+   "title": "HPSP 2026년 배당 내역 - Stock Events",
+   "date": "2026"
+  },
+  {
+   "url": "https://www.chickstockfi.com/disclosures/20260807000741",
+   "title": "HPSP 주요사항보고서(자기주식처분결정) 2026.08.07 - 치킨스탁",
+   "date": "2026-08-07"
+  },
+  {
+   "url": "https://www.chickstockfi.com/disclosures/20261022000168",
+   "title": "HPSP 주요사항보고서(자기주식처분결정) 2026.10.22 - 치킨스탁",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664594",
+   "title": "HPSP, RSU로 자기주식 보통주 4410주 임직원에 처분 - 디지털투데이",
+   "date": "N/A"
+  },
+  {
+   "url": "https://zdnet.co.kr/view/?no=20260617233922",
+   "title": "특허법원 'HPSP 특허 유효, 예스티 비침해' 판결 - ZDNet Korea",
+   "date": "2026-06-17"
+  },
+  {
+   "url": "https://www.thebell.co.kr/front/newsview.asp?key=202606182202455600109654",
+   "title": "HPSP, 핵심기술 '유효 판정'·추가 대응방안 검토 - 더벨",
+   "date": "2026-06-18"
+  },
+  {
+   "url": "https://www.etnews.com/20260618000450",
+   "title": "HPSP·예스티 특허분쟁 2심…특허 유효·비침해 판단 - 전자신문",
+   "date": "2026-06-18"
+  },
+  {
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03201286645453840&mediaCodeNo=257",
+   "title": "예스티, HPSP 고압어닐링 '303 특허' 무효 심판 승소 - 이데일리",
+   "date": "2026-10(추정, 미확정)"
+  },
+  {
+   "url": "https://supple.kr/news/cmv98fmcg00g7xwobgoptuqu5",
+   "title": "예스티, 특허소송 불확실성 벗나...수익성장 시그널도 - 서플",
+   "date": "2026-10(추정)"
+  },
+  {
+   "url": "https://www.leadeconomy.co.kr/news/articleView.html?idxno=7100",
+   "title": "세계 유일 독점 기업 HPSP, 성장 정체의 역설에 빠지다 - 리드경제",
+   "date": "N/A"
+  }
+ ],
+ "search_count": "9"
+}

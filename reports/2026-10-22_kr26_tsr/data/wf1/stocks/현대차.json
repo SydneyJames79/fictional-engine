@@ -1,0 +1,325 @@
+{
+ "input_name": "현대차",
+ "legal_name": "현대자동차 주식회사 (Hyundai Motor Company)",
+ "ticker": "005380",
+ "market": "KOSPI",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "유가증권시장(KOSPI) 보통주 005380으로 정상 거래 중(10/22 마감분석 기사·시세 페이지에서 확인). 거래정지·관리종목·투자주의환기·상장폐지심사 관련 보도 없음. 우선주(005385·005387·005389)와 구분. 현대차증권(별개 회사)의 10/22 3분기 실적 공시와 혼동 주의.",
+ "share_class": "보통주(사업회사). 우선주 3종(005385 1우, 005387 2우B, 005389 3우B) 별도 상장",
+ "corporate_actions_24m": "최근 24개월 내 사명 변경·인적분할·물적분할·합병·재상장·이전상장 없음(검색 결과상 해당 보도 없음). 2026-08-26 이사회에서 자사주 2,505,606주(보통주 1,291,274주 + 종류주 1,214,332주) 소각 결정, 소각예정일 2026-08-31(발행주식수 감소, 자본금 불변). 임직원 보상목적 보유분은 소각 제외.",
+ "price": {
+  "value": "301500",
+  "date": "2026-10-22",
+  "kind": "종가",
+  "source_url": "https://news.jkn.co.kr/post/1042130",
+  "source_date": "2026-10-22",
+  "note": "재경일보 [마감분석] 기사: 전일 대비 8,000원(-2.58%) 하락한 301,500원 마감 → 역산한 10/21 종가 309,500원. 장중 기사(topstarnews, 304,500원 -1.62%)도 전일 종가 309,500원과 정합. 반면 시세 사이트(alphasquare)는 2026.10.22 299,500원(-3.39%)으로 표시해 충돌 → 명시적 마감 기사인 재경일보 수치를 채택. 한국거래소 공식 종가로 재확인 권장. 또한 6월 증권사 리포트 당시 주가 수준(약 75만원대)과 10월 30만원대 사이의 괴리가 매우 커서 중간 급락 또는 주식수 변동(분할 등) 여부를 확인하지 못함(unresolved 참조).",
+  "alt_price_1021": "309500"
+ },
+ "market_cap_bn": {
+  "value": "613451",
+  "date": "2026-10-22",
+  "source_url": "https://news.jkn.co.kr/post/1042130",
+  "note": "계산값: 종가 301,500원 × 보통주 203,466,492주 = 약 61조 3,451억원(보통주 기준, 우선주 제외). 10/22 장중 기사(topstarnews)의 시가총액 61조 9,555억원(장중가 304,500원 기준)과 정합. 우선주 포함 시가총액은 별도."
+ },
+ "shares_outstanding": {
+  "value": "203466492",
+  "date": "2026-08-31",
+  "source_url": "https://www.bloter.net/news/articleView.html?idxno=672731",
+  "note": "보통주 기준. 소각 전 204,757,766주 − 2026-08-31 소각 1,291,274주 = 203,466,492주(검색 요약에 제시된 수치이며 장중 시가총액 보도와 정합). 우선주는 별도(소각 1,214,332주 반영 후). DART 반기보고서 원문으로 미확인."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "source_url": "https://www.mt.co.kr/industry/2026/08/26/2026082615313323891",
+  "note": "2026-08-31 보유 자사주 전량(임직원 보상목적 보유 승인분 제외) 소각. 잔여 자사주(임직원 보상목적)의 정확한 주수는 미확인. 소각 규모는 전일 종가 기준 7,891억원(장부가 4,764억원)."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 2분기/반기(2Q26, 2026-07-23 발표). 3Q26 실적은 기준시각(10/22 15:40) 이전 검색으로 확인되지 않음(발표 예정이었다면 기준시각 이후).",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "1752159",
+   "op_income_bn": "142458",
+   "net_income_bn": "125279",
+   "source_url": "https://www.hankyung.com/article/202601291064P",
+   "note": "FY2025 확정치와 보도된 전년비(매출 +6.3%, 영업이익 -19.5%, 지배주주순이익 -24.6%)로 역산한 추정치(derived). 순이익은 지배주주 기준 역산. 기억상 FY2024 공식치는 매출 약 175.2조·영업이익 약 14.2조(memory_unverified). 분할·합병 없음 → 전후 비교 가능."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "1862545",
+   "op_income_bn": "114679",
+   "net_income_bn": "103648",
+   "source_url": "https://www.hankyung.com/article/202601291064P",
+   "note": "연결 기준(2026-01-29 발표). 당기순이익 10조 3,648억원은 비지배지분 포함, 지배주주순이익 9조 4,460억원(-24.6%). 영업이익률 6.2%. 4Q25 영업이익 1조 6,954억원(-39.9%). OCF·CAPEX 미확인(2026년 투자계획 17.8조원 발표)."
+  },
+  {
+   "period": "2Q26 (2026.4~6)",
+   "revenue_bn": "492153",
+   "op_income_bn": "28509",
+   "net_income_bn": "28880",
+   "source_url": "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-2026-q2-earnings",
+   "note": "2026-07-23 발표 연결 기준. 매출 +1.9% YoY(분기 사상 최대), 영업이익 -20.8%(OPM 5.8%), 당기순이익(비지배 포함) 2조 8,880억원(-11.1~-11.2%, 매체별 상이), 경상이익 3조 6,457억원. 도매판매 991,885대(-6.9%). 1Q26 수치를 확보하지 못해 1H26 합산은 N/A."
+  },
+  {
+   "period": "3Q26E (컨센서스, 발표 전)",
+   "revenue_bn": "448014",
+   "op_income_bn": "23635",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.g-enews.com/article/Industry/2026/10/202610110914004578112616b072_1",
+   "note": "최근 1개월 증권사 추정 평균(2026-10-11 기사). 영업이익 -6.8% YoY 전망, KB증권 2조 5,550억·DB금융투자 2조 3,760억. 3Q25 실적 매출 46조 7,214억·영업이익 2조 5,373억원. 실제 3Q26 확정치는 기준시각 이전 미확인."
+  }
+ ],
+ "balance_sheet": {
+  "date": "N/A",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "N/A",
+  "note": "검색 한도(9회) 내에서 순현금·자기자본 수치 미확보. 현대차는 금융부문(현대캐피탈·현대카드 등) 연결로 총차입금이 크므로 '자동차부문 순현금'과 '연결 순차입금'을 구분해 봐야 함. DART 2026년 반기보고서로 보강 필요."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "10000",
+  "dividend_yield_pct": "3.32",
+  "buyback_policy": "2026-08-26 발표 주주환원 정책: 총주주환원율(TSR) 35% 이상, 최소 연간배당 주당 1만원 이상 유지. 같은 날 보유 자사주 전량(임직원 보상목적 제외) 2,505,606주 소각 결정(7,891억원 규모, 8/31 소각). 영업이익률 목표 9%로 상향 발표.",
+  "valueup_disclosure": "기업가치 제고(밸류업) 성격의 주주환원 정책을 2026-08-26 발표(TSR 35%+, 최소배당 1만원, OPM 9% 목표). 공식 '기업가치 제고계획' 공시 여부는 검색으로 미확인.",
+  "source_url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608260552"
+ },
+ "dilution": {
+  "convertibles": "CB·BW·EB·RCPS 발행 보도 없음(최근 24개월). 미행사 잔량 N/A(없는 것으로 추정, DART 미확인).",
+  "stock_options": "2026년 3월 주총에서 임직원 보상목적 자사주 보유 승인(주식기준보상). 규모 미확인. 전통적 스톡옵션 미행사 잔량은 미확인.",
+  "rights_issues": "유상증자 없음(보도 없음). 예정 증자 없음.",
+  "est_dilution_pct": "0",
+  "source_url": "https://www.chickstockfi.com/disclosures/20260826800261"
+ },
+ "ownership": {
+  "largest_holder": "현대모비스(최대주주). 특수관계인: 정몽구 명예회장, 정의선 회장 등",
+  "largest_holder_pct": "22.50",
+  "overhang_notes": "자사주 소각 후 발행주식 기준 현대모비스 22.5010%(의결권 기준 22.6175%), 정몽구 5.6009%, 정의선 2.7515%(블로터, 2026-08). 일부 기사는 현대모비스 지분을 21.64%로 표기(기준 시점·자사주 반영 차이). 최대주주+특수관계인 합계는 약 31% 내외로 추정(기타 특수관계인 미포함, DART 미확인). 오버행: 순환출자(현대모비스→현대차→기아→현대모비스) 해소 및 승계 관련 지배구조 개편 가능성, 보스턴다이내믹스 상장 관련 지분 변동 가능성이 거론됨. 보호예수·블록딜 보도 없음.",
+  "source_url": "https://www.bloter.net/news/articleView.html?idxno=672731"
+ },
+ "business": {
+  "summary": "글로벌 완성차 제조사(현대·제네시스 브랜드). 승용·SUV·상용차 및 전기차(아이오닉)·하이브리드·수소차 생산·판매. 연결로 금융(현대캐피탈·현대카드 등)과 기타(로보틱스 보스턴다이내믹스, 모셔널 등) 사업 포함. 2026년 2분기 매출 49.2조원(분기 최대), 도매판매 99.2만대.",
+  "segments": "차량 부문(매출 대부분, 약 80% 전후, memory_unverified), 금융 부문, 기타(철도·로보틱스 등). 2Q26 하이브리드 판매 호조 및 환율 효과가 매출을 견인. 부문별 정확한 비중은 반기보고서 미확인.",
+  "key_customers": "B2C 완성차 판매(딜러·법인 포함) 구조로 특정 핵심 고객 없음. 지역별로 북미·국내·유럽·인도 중심.",
+  "customer_concentration": "낮음(불특정 다수 소비자 대상). 상위 고객 비중 해당 없음.",
+  "industry_group": "자동차·전장·SDV·부품",
+  "competitors": "기아(계열), 도요타, 폭스바겐, GM, 포드, 스텔란티스, 테슬라, BYD 등 글로벌 완성차"
+ },
+ "consensus": {
+  "target_price_avg": "611429",
+  "target_price_date": "2026-10-02",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "N/A",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "한경 컨센서스 페이지 기준(2026-10-02 종가 346,500원 표시) 목표주가 611,429원. 참고: 6월 기준 6개월 평균 목표가 81만원(한화투자증권 6/18 리포트, 66만→76만원 상향), 다올 6/2 100만원 상향(보스턴다이내믹스 가치), 삼성증권 3월말 70만원 하향(당시 커버 26곳 평균 681,923원), BNK 1/30 65만원. 10월 들어 3Q 프리뷰는 영업이익 -6.8% YoY(2조 3,635억) 및 매출 6년만의 감소 전망, 기아에 분기 영업이익 역전 가능성 등 부정적 톤. 유안타증권 투자의견 하향 보도(ket.kr, 일자 미확인). 현 주가(30만원대)와 목표가(61만원대) 괴리가 매우 크므로 컨센서스 최신성·주식수 변동 여부 재확인 필요.",
+  "source_url": "https://markets.hankyung.com/stock/005380/consensus"
+ },
+ "recent_events": [
+  {
+   "event": "2Q26 실적 발표: 매출 49조 2,153억원(+1.9%, 분기 최대), 영업이익 2조 8,509억원(-20.8%), 순이익 2조 8,880억원. 원자재가 상승·부품사 화재 생산차질로 수익성 둔화",
+   "event_date": "2026-07-23",
+   "article_date": "2026-07-23",
+   "source_url": "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-2026-q2-earnings"
+  },
+  {
+   "event": "노조 파업 종료 및 자사주 2,505,606주(7,891억원) 전량 소각 결정(소각일 8/31), 주주환원 정책(TSR 35%+, 최소배당 1만원) 및 영업이익률 목표 9% 상향 발표",
+   "event_date": "2026-08-26",
+   "article_date": "2026-08-26",
+   "source_url": "https://www.mt.co.kr/industry/2026/08/26/2026082615313323891"
+  },
+  {
+   "event": "정의선 회장, 모디 총리 면담 후 인도에 7년간 약 155억달러(약 21조원) 투자 계획 발표, 푸네 신공장 준공, 2028년 이후 연 150만대 생산체제 목표",
+   "event_date": "2026-10-13",
+   "article_date": "2026-10-14",
+   "source_url": "https://www.seoul.co.kr/news/economy/car/2026/10/14/20261014500255"
+  },
+  {
+   "event": "3Q26 프리뷰: 증권사 컨센서스 영업이익 2조 3,635억원(-6.8% YoY), 매출 44조 8,014억원(6년만 감소 전망), 3Q 글로벌 판매 약 91.8만대(-11.5%, 파업 영향), 기아에 분기 영업이익 역전 가능성",
+   "event_date": "2026-10-08",
+   "article_date": "2026-10-11",
+   "source_url": "https://www.g-enews.com/article/Industry/2026/10/202610110914004578112616b072_1"
+  },
+  {
+   "event": "미국 수출 관세율 전년 3분기 25%에서 2026년 15%로 인하(관세 부담 완화 요인, 다만 판매 부진·원재료가·환율 하락(2Q 1,502원→3Q 1,418원, 약 4,000억원 감익 요인)이 상쇄)",
+   "event_date": "2026-3Q",
+   "article_date": "2026-10-11",
+   "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1316188"
+  },
+  {
+   "event": "현대차그룹 E-FOREST TECH DAY 2026 개최(의왕연구소), 자동화·미래 모빌리티 신기술 공개",
+   "event_date": "2026-10-19",
+   "article_date": "2026-10",
+   "source_url": "https://www.job-post.co.kr/news/articleView.html?idxno=233886"
+  },
+  {
+   "event": "유안타증권 현대차 투자의견 하향 보도",
+   "event_date": "N/A",
+   "article_date": "N/A",
+   "source_url": "https://www.ket.kr/news/article.html?no=38825"
+  },
+  {
+   "event": "한화투자증권 목표가 66만→76만원 상향(당시 6개월 평균 목표가 81만원), 다올 100만원 상향(6/2) 등 6월 상향 사이클",
+   "event_date": "2026-06-18",
+   "article_date": "2026-06-18",
+   "source_url": "https://www.newspim.com/news/view/20260618000156"
+  },
+  {
+   "event": "10/22 코스피 급락일(-3.52%) 현대차 종가 301,500원(-2.58%) 마감, 시총 약 61.3조원",
+   "event_date": "2026-10-22",
+   "article_date": "2026-10-22",
+   "source_url": "https://news.jkn.co.kr/post/1042130"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "10/22 종가 충돌: 재경일보 마감기사 301,500원(-2.58%) vs alphasquare 299,500원(-3.39%). 전자를 채택했으나 KRX 공식 종가 재확인 필요",
+  "6월 리포트 당시 주가 수준(약 75만원대)·목표가 76만~100만원과 10월 종가 30만원대의 괴리가 극단적임. 중간 급락 원인 또는 주식분할 등 주식수 변동 여부를 검색 한도 내에서 확인하지 못함(상장주식수 203,466,492주는 분할 없는 기존 주식수와 정합)",
+  "3Q26 확정 실적(10/22 발표 예정) 미확인 — 기준시각 이전 검색에서 현대차증권 실적만 검색됨",
+  "1Q26 실적 및 1H26 누계 수치 미확보",
+  "FY2024 수치는 FY2025 전년비로 역산한 추정치(공식 수치 미확인)",
+  "순현금/순차입금·자기자본·OCF·CAPEX 미확보(금융부문 연결 영향 구분 필요)",
+  "잔여 자사주(임직원 보상목적) 주수·비율 미확인",
+  "최대주주 및 특수관계인 합계 지분율 정확치 미확인(현대모비스 22.50%, 정몽구 5.60%, 정의선 2.75% 외 기타 특수관계인·국민연금 지분 미확인)",
+  "증권사 평균 목표주가 기준일·증권사 수 최신치(10월) 미확인, 2026E/2027E 매출·영업이익 컨센서스 미확보",
+  "유안타증권 투자의견 하향 리포트 일자·목표가 미확인",
+  "공식 '기업가치 제고계획(밸류업)' 공시 여부 미확인"
+ ],
+ "sources": [
+  {
+   "title": "[마감분석] 현대차, 2.58% 내린 30만1500원에 거래 마쳐 - 재경일보",
+   "url": "https://news.jkn.co.kr/post/1042130",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "현대차 주가, 10월 22일 장중 304,500원 1.62% 하락 - 톱스타뉴스",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16254571",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "현대차 주가 - 알파스퀘어",
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=005380",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "현대차, 2026년 2분기 경영실적 발표 - 현대차그룹",
+   "url": "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-2026-q2-earnings",
+   "date": "2026-07-23"
+  },
+  {
+   "title": "현대차, 2분기 매출 49.2조원 '역대 최대'…영업이익 20.8%↓ - 더퍼블릭",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=312458",
+   "date": "2026-07-23"
+  },
+  {
+   "title": "현대자동차, 2025년 경영실적 발표 - 한국경제",
+   "url": "https://www.hankyung.com/article/202601291064P",
+   "date": "2026-01-29"
+  },
+  {
+   "title": "순이익 25% 급감에도 배당 약속 지켰다 - 위키트리",
+   "url": "https://www.wikitree.co.kr/articles/1114820",
+   "date": "2026"
+  },
+  {
+   "title": "현대차 사업보고서 분석…이익 25% 줄어도 배당은 늘렸다 - 뉴탐사",
+   "url": "https://newtamsa.org/news/6mYAQ9",
+   "date": "2026"
+  },
+  {
+   "title": "현대차 주주들 잇단 기쁜 소식…파업 끝→자사주 7891억 소각 - 머니투데이",
+   "url": "https://www.mt.co.kr/industry/2026/08/26/2026082615313323891",
+   "date": "2026-08-26"
+  },
+  {
+   "title": "[오너 자본방정식] 현대차 7891억 자사주 소각…정의선 의결권은 그대로 - 블로터",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=672731",
+   "date": "2026-08"
+  },
+  {
+   "title": "현대차, 자사주 전량 소각한다…영업이익률 목표 9%로 상향 - 한국경제TV",
+   "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608260552",
+   "date": "2026-08-26"
+  },
+  {
+   "title": "현대자동차 주식소각결정 공시 (2026.08.26)",
+   "url": "https://www.chickstockfi.com/disclosures/20260826800261",
+   "date": "2026-08-26"
+  },
+  {
+   "title": "현대차-컨센서스 - 한국경제 마켓",
+   "url": "https://markets.hankyung.com/stock/005380/consensus",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "[리포트 브리핑]현대차, 목표가 760,000원 - 한화투자증권 (뉴스핌)",
+   "url": "https://www.newspim.com/news/view/20260618000156",
+   "date": "2026-06-18"
+  },
+  {
+   "title": "현대차 목표주가 또 100만원, 보스턴다이내믹스 가치 상승 기대 - 다음",
+   "url": "https://v.daum.net/v/20260602093053016?f=p",
+   "date": "2026-06-02"
+  },
+  {
+   "title": "현대차 (005380) 1Q26 Preview - 삼성증권",
+   "url": "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026040712412976K_02_02.pdf",
+   "date": "2026-04-07"
+  },
+  {
+   "title": "현대차 3분기 영업익 6.4% 감소 전망 - 글로벌이코노믹",
+   "url": "https://www.g-enews.com/article/Global-Biz/2026/10/2026100822590064512bd56fbc3c_1",
+   "date": "2026-10-08"
+  },
+  {
+   "title": "현대차, 3분기 영업익 기아에 뒤질 듯…매출 6년 만에 감소 전망 - 글로벌이코노믹",
+   "url": "https://www.g-enews.com/article/Industry/2026/10/202610110914004578112616b072_1",
+   "date": "2026-10-11"
+  },
+  {
+   "title": "현대차 3분기 영업익, 기아에 역전당하나 - 뉴스토마토",
+   "url": "https://www.newstomato.com/ReadNews.aspx?no=1316188",
+   "date": "2026-10"
+  },
+  {
+   "title": "KB증권, 현대차 3분기 영업익 2조5550억원 추정 - 비건뉴스",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=393860",
+   "date": "2026-10"
+  },
+  {
+   "title": "현대차그룹, 인도에 7년간 21조 투자…연 150만대 생산 시동 - 서울신문",
+   "url": "https://www.seoul.co.kr/news/economy/car/2026/10/14/20261014500255",
+   "date": "2026-10-14"
+  },
+  {
+   "title": "[컨콜] 현대차, 올해 투자 17.8조원…전년比 23% 확대 - 뉴스핌",
+   "url": "https://www.newspim.com/news/view/20260129000974",
+   "date": "2026-01-29"
+  },
+  {
+   "title": "현대차 30만원선에서 약세…인도 투자·판매 흐름 주목 - 잡포스트",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=233886",
+   "date": "2026-10"
+  },
+  {
+   "title": "유안타증권, 현대차 투자의견 전격 하향 - 경제타임스",
+   "url": "https://www.ket.kr/news/article.html?no=38825",
+   "date": "N/A"
+  },
+  {
+   "title": "[황혼 승계] 정몽구와 13조… 현대차 순환출자 - 아시아타임즈",
+   "url": "https://www.asiatime.co.kr/article/20261018500029",
+   "date": "2026-10-18"
+  },
+  {
+   "title": "현대차증권, 3분기 순이익 154억원 (별개 회사, 혼동 주의) - 디지털데일리",
+   "url": "https://www.ddaily.co.kr/page/view/2026102217485136653",
+   "date": "2026-10-22"
+  }
+ ],
+ "search_count": "9"
+}

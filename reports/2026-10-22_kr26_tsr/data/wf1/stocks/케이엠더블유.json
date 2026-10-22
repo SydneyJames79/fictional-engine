@@ -1,0 +1,300 @@
+{
+ "input_name": "케이엠더블유",
+ "legal_name": "주식회사 케이엠더블유 (KMW Co., Ltd.)",
+ "ticker": "032500",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "종목코드 032500·KOSDAQ 상장은 Google Finance(032500:KOSDAQ)·TradingView(KRX:032500)·FnGuide(A032500) 등 복수 출처에서 일치. 2026년 10월 초 기사들에서 정상 거래(장중·애프터마켓 시세) 확인됨. 거래정지·관리종목·투자주의환기·상장폐지 심사 관련 언급은 검색 결과에 없었음(공식 KRX 조회는 불가). 4년 연속 영업적자(FY2022~FY2025 추정, 2025년 영업손실 237.7억)이나 2026년 10월 16일 350억 사모 CB 발행 결정으로 유동성 보강 중. 사명 유사 기업(케이엔더블유, 케이더블유엠산업기술, 더블유게임즈)과 혼동 주의.",
+ "share_class": "보통주 (사업회사, 우선주 없음)",
+ "corporate_actions_24m": "검색 결과상 최근 24개월 내 사명 변경·인적/물적분할·합병·재상장·이전상장 없음(미확인 = 해당 기사 부재). 자본 관련 주요 행위: 제10회 CB(권면 300억) 전환청구(2026-04 80억·589,227주 전환, 전환가 13,577원) 및 90억 만기 전 취득(2026-04-08), 제11회 사모 CB 350억 발행 결정(2026-10-16, 납입 2026-10-26).",
+ "price": {
+  "value": "20200",
+  "date": "2026-10-07",
+  "kind": "종가",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=032500",
+  "source_date": "2026-10-07",
+  "note": "10/22·10/21 종가는 2회의 전용 검색으로도 확인 실패(날짜 명시된 최신 종가가 10/07). 알파스퀘어 10/07 일봉: 시 21,900 / 고 22,100 / 저 20,000 / 종 20,200(-5.61%; 같은 페이지의 다른 표기는 -3.35%로 상충). 한국경제는 10/07 장중 20,300원(-2.87%) 표시. 중앙이코노미뉴스 10/07 애프터마켓 20,250원(-3.11%). 와이즈리포트는 날짜 미상 20,900원(-0.95%) 표시. 10/22 코스피 -3.52% 급락일이므로 실제 10/22 종가는 본 값과 크게 다를 수 있음. 52주 고가 40,000원·저가 약 11,720~11,860원. Google Finance 15,450·TradingView 38,200·alpha-lenz 34,100은 기준일 불명으로 미채택.",
+  "alt_price_1021": "N/A"
+ },
+ "market_cap_bn": {
+  "value": "8818",
+  "date": "2026-10-07",
+  "source_url": "https://alphasquare.co.kr/home/stock-summary?code=032500",
+  "note": "알파스퀘어 10/07 종가 기준 8,818억. 중앙이코노미뉴스 10/07 애프터마켓 기준 8,544억으로 상충(채택: 알파스퀘어). 8,818억/20,200원 = 약 4,365만주로, 아래 상장주식수 추정치(4,208만~4,415만주)와 ±4% 범위 내에서 대체로 정합. 10/22 기준 시가총액은 미확인."
+ },
+ "shares_outstanding": {
+  "value": "44150000",
+  "date": "2026-10-16",
+  "source_url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=707793",
+  "note": "직접 확인된 수치가 아닌 역산 추정치. 2026-10-16 제11회 CB 공시에서 전환 시 발행주식 1,929,437주 = 주식총수 대비 4.37% → 약 4,415만주. 반면 2026-04-10 전환청구 공시의 발행주식총수는 41,491,995주(당시 행사분 589,227주 미포함 → 약 42,081,222주)로, 4월~10월 사이 추가 전환 여부에 따라 4,208만~4,415만주 범위. 공시 원문(DART) 확인 필요."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "source_url": "",
+  "note": "자사주 보유·취득·소각 관련 정보 검색 결과 없음. 적자 지속·CB 조달 중인 회사로 자사주 매입 가능성은 낮으나 미확인."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기(2Q26, 2026-08-14 발표). 3Q26 실적은 검색 결과상 미발표.",
+ "financials": [
+  {
+   "period": "FY2024 (연결)",
+   "revenue_bn": "873.6",
+   "op_income_bn": "-454.4",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=636509",
+   "note": "매출 873억5714만원은 기사 명시. 영업손실은 'FY2025 237.66억이 전년 대비 47.7% 감소'에서 역산한 추정치(약 -454억, 기사 원문 수치 아님). 순손실은 'FY2025 270.3억이 전년比 30% 가까이 감소'라는 표현만 있어 N/A(약 -380억대 추정, memory_unverified 아님·역산 불확실로 미기재)."
+  },
+  {
+   "period": "FY2025 (연결)",
+   "revenue_bn": "975.2",
+   "op_income_bn": "-237.7",
+   "net_income_bn": "-270.3",
+   "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=636509",
+   "note": "2026-03-03 공시 기사. 매출 975억1862만원(+11.6% YoY, 미주 보완투자 재개), 영업손실 237억6561만원(-47.7%, 구조조정·공정자동화), 당기순손실 270억3304만원. 3Q25 단독: 매출 205억(-5.9%), 영업손실 70.2억(씽크풀)."
+  },
+  {
+   "period": "1H26 (연결, 증감률만)",
+   "revenue_bn": "N/A",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=032500",
+   "note": "와이즈리포트(기준일 2026-09-06): 상반기 연결 매출 -10.9% YoY, 영업손실 +3.1%(적자 확대), 당기순손실 -0.3%. 절대금액 미확인. 원인: 글로벌 통신사 CAPEX 조정·RF부문 부진·LED 조명 시장 위축. 2026.06 별도 매출 559억(반기 누적인지 연환산인지 불명)."
+  },
+  {
+   "period": "2Q26 (연결)",
+   "revenue_bn": "243",
+   "op_income_bn": "N/A",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.investing.com/equities/kmw-co-ltd-earnings",
+   "note": "Investing.com: 2026년 6월 분기(8/14 발표) 매출 24.3B원 vs 예상 33.7B원(컨센서스 대비 -28% 미달), EPS -355원. 영업이익 미확인. 단위·환산은 원문 표기 기반."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2025-12-31",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "source_url": "https://www.catch.co.kr/Comp/CompSummary/066034",
+  "note": "자본총계·현금·차입금 절대금액 미확인. 캐치 기준 2025년 부채비율 87.99%만 확인. 제10회 CB(300억) 잔액은 2026-04 기준 22억으로 대부분 전환·상환 완료, 2026-10-26 제11회 CB 350억(시설 150억·운영 200억) 납입 예정으로 부채 증가 예정. 4년 연속 적자로 자본 잠식 진행 중일 가능성 있으나 자본총계 수치 미확인."
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "0",
+  "dividend_yield_pct": "0",
+  "buyback_policy": "자사주 매입·소각 정책 없음(검색 결과 없음). 적자 지속으로 배당 여력 없음.",
+  "source_url": "https://koreadividend.kr/KR7032500001",
+  "valueup_disclosure": "밸류업 공시 확인되지 않음"
+ },
+ "dilution": {
+  "convertibles": "제11회 사모 CB 350억원(2026-10-16 결정, 납입 2026-10-26): 표면·만기이자 0.0%, 전환가 18,140원, 전환 시 1,929,437주(주식총수의 4.37%), 전환청구기간 2027-10-26~2031-09-26, 투자자 풋옵션 2029-10부터, 발행사 콜옵션 최대 105억. 대상: 증권사·사모투자신탁 등 18곳. 제10회 CB(권면 300억, 전환가 13,577원): 2026-04-08 90억 만기 전 취득, 2026-04-10 80억(589,227주) 전환청구, 2026-04 기준 미전환 잔액 22억.",
+  "stock_options": "N/A (검색 결과 없음)",
+  "rights_issues": "최근 24개월 유상증자 없음(검색 결과 기준), 예정된 증자 없음",
+  "est_dilution_pct": "4.4",
+  "source_url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=707793"
+ },
+ "ownership": {
+  "largest_holder": "김덕용 대표이사 회장 외 1인",
+  "largest_holder_pct": "30.43",
+  "overhang_notes": "와이즈리포트 2026-10-06 기준 김덕용 외 1인 12,838,169주·30.43%. FnGuide는 31.37%(최종변동일 2025-01-13, 구자료), 나이스평가정보/사람인은 김덕용 26.68%·김찬경 4.26%(합 30.94%)로 상충 → 최신인 30.43% 채택. 오버행: 제11회 CB 350억(전환가 18,140원, 현 주가 대비 약 10% 할인 수준, 2027-10부터 전환 가능) 1,929,437주가 중기 오버행. 제10회 CB 전환분(2026-04, 589,227주)은 이미 유통 중일 가능성. 보호예수·블록딜 정보 없음.",
+  "source_url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=032500"
+ },
+ "business": {
+  "summary": "5G/4G 이동통신 기지국용 RF 부품(안테나·필터·MMR(Massive MIMO Radio)) 및 LED 조명 제조. 미국 통신사(버라이즌·AT&T 등) CAPEX와 노키아·삼성전자 등 장비사 공급망에 실적이 연동되며, 글로벌 통신 CAPEX 둔화로 2022년 이후 적자 지속. 2026년 들어 미주 보완투자 재개 기대와 구조조정으로 적자 축소 중이나 1H26 매출은 -10.9% YoY.",
+  "segments": "RF부문(기지국 안테나·필터·MMR 등, 매출 대부분) / LED 조명 부문 (부문별 정확한 비중 미확인)",
+  "key_customers": "노키아, 삼성전자(네트워크), 미국 통신사(버라이즌·AT&T 등) 경유 공급 — 검색 결과 직접 확인 안 됨(memory_unverified)",
+  "customer_concentration": "N/A (상위 고객 비중 미확인; 과거 노키아 의존도 높았던 것으로 알려짐, memory_unverified)",
+  "industry_group": "우주항공·위성통신·5G6G",
+  "competitors": "에이스테크놀로지, 삼지전자/기산텔레콤·RFHIC(국내 RF), 코멧(Comba)·로젠버거·CommScope(해외) (memory_unverified)"
+ },
+ "consensus": {
+  "target_price_avg": "N/A",
+  "target_price_date": "2026-05-19",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "N/A",
+  "op_2026e_bn": "16",
+  "rev_2027e_bn": "N/A",
+  "op_2027e_bn": "1119",
+  "recent_report_summary": "평균 목표주가 미확인. 확인된 개별 목표가: 하나증권 70,000원 BUY(2026-05-19, 5만원→7만원 상향, '중요한 건 올해가 아닌 내년도 실적', 미국 규제·통신사 CAPEX 전망 양호 근거, 2026년 4분기 흑자전환·2027~28년 이익 급증 전망); 이전 하나증권 50,000원(2026-03/04). alphadistill 보고서 42,000원 BUY(날짜 미상). 2026E 영업이익 16억·2027E 1,119억은 개인 블로그(needinfo)가 인용한 증권사 추정치로 신뢰도 낮음. 최근 1~2개월(9~10월) 신규 리포트 검색 결과 없음. 2Q26 매출이 컨센서스 대비 -28% 미달한 점은 하향 리스크. 현 주가(20,200원)는 하나증권 목표가 대비 -71%로 괴리 큼.",
+  "source_url": "https://www.mt.co.kr/stock/2026/05/19/2026051907413374478"
+ },
+ "recent_events": [
+  {
+   "event": "350억원 규모 제11회 사모 전환사채 발행 결정(전환가 18,140원, 0% 금리, 시설 150억·운영 200억, 납입 10/26, 투자자 18곳)",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-16",
+   "source_url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=707793"
+  },
+  {
+   "event": "주가 10/07 20,200원 마감(-5.61%), 10/02 장중 20,850원(+7.25%) 등 10월 초 변동성 확대",
+   "event_date": "2026-10-07",
+   "article_date": "2026-10-07",
+   "source_url": "https://www.joongangenews.com/news/articleView.html?idxno=553359"
+  },
+  {
+   "event": "2Q26 실적 발표: 매출 243억원으로 컨센서스 337억 대비 -28% 미달, EPS -355원(적자 지속). 1H26 연결 매출 -10.9% YoY, 영업손실 +3.1%",
+   "event_date": "2026-08-14",
+   "article_date": "2026-08-14",
+   "source_url": "https://www.investing.com/equities/kmw-co-ltd-earnings"
+  },
+  {
+   "event": "하나증권 목표주가 50,000→70,000원 상향, BUY 유지(내년 실적 급증 전망)",
+   "event_date": "2026-05-19",
+   "article_date": "2026-05-19",
+   "source_url": "https://www.mt.co.kr/stock/2026/05/19/2026051907413374478"
+  },
+  {
+   "event": "제10회 CB 80억원(589,227주, 전환가 13,577원) 전환청구권 행사",
+   "event_date": "2026-04-10",
+   "article_date": "2026-04-10",
+   "source_url": "https://m.news.nate.com/view/20260410n29100"
+  },
+  {
+   "event": "제10회 전환사채 90억원 만기 전 취득(풋옵션 대응)",
+   "event_date": "2026-04-08",
+   "article_date": "2026-04-08",
+   "source_url": "https://m.news.nate.com/view/20260408n38049"
+  },
+  {
+   "event": "하나증권 목표주가 50,000원 상향, 2026년 4분기 흑자전환 전망",
+   "event_date": "2026-03-17",
+   "article_date": "2026-03-17",
+   "source_url": "https://www.asiae.co.kr/article/2026031708120664358"
+  },
+  {
+   "event": "FY2025 실적 공시: 매출 975억(+11.6%), 영업손실 237.7억(적자폭 47.7% 축소), 순손실 270.3억",
+   "event_date": "2026-03-03",
+   "article_date": "2026-03-03",
+   "source_url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=636509"
+  }
+ ],
+ "data_quality": "낮음",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가 미확인(최신 확인 종가는 10/07 20,200원; 코스피 급락일 반영 안 됨)",
+  "10/22 기준 시가총액 미확인(10/07 기준 8,818억 vs 8,544억 상충)",
+  "상장주식수 확정 불가(4,149만~4,415만주 범위, CB 공시 비율 역산)",
+  "자기주식 수·비율 미확인",
+  "1H26·2Q26 연결 영업이익·순이익 절대금액 미확인(증감률만 확인)",
+  "FY2024 영업손실·순손실 절대값은 역산 추정(기사 원문 아님)",
+  "자본총계·현금·차입금·순현금·영업현금흐름·CAPEX 전부 미확인 (자본잠식 여부 판단 불가)",
+  "증권사 평균 목표주가·증권사 수·2026E/2027E 매출 컨센서스 미확인",
+  "부문별 매출 비중·상위 고객 집중도 미확인",
+  "스톡옵션 미행사 잔량 미확인",
+  "2026년 9~10월 수주·계약 공시 없음(검색 기준)",
+  "3Q26 실적 발표 여부 미확인"
+ ],
+ "sources": [
+  {
+   "url": "https://alphasquare.co.kr/home/stock-summary?code=032500",
+   "title": "알파스퀘어 케이엠더블유 주가·시총·재무 요약",
+   "date": "2026-10-07"
+  },
+  {
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=553359",
+   "title": "케이엠더블유 주가, 10월 7일 애프터마켓 20,250원 3.11% 하락",
+   "date": "2026-10-07"
+  },
+  {
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=552441",
+   "title": "케이엠더블유 주가, 10월 2일 장중 20,850원 7.25% 상승",
+   "date": "2026-10-02"
+  },
+  {
+   "url": "https://markets.hankyung.com/stock/032500/financial-summary",
+   "title": "한국경제 케이엠더블유 기업재무",
+   "date": "2026-10-07"
+  },
+  {
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=636509",
+   "title": "케이엠더블유, 지난해 영업손실 237억… 전년 대비 47.7% 감소",
+   "date": "2026-03-03"
+  },
+  {
+   "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=707793",
+   "title": "케이엠더블유, 350억원 규모 사모 전환사채 발행 결정",
+   "date": "2026-10-16"
+  },
+  {
+   "url": "https://www.chickstockfi.com/disclosures/20261016000208",
+   "title": "케이엠더블유 주요사항보고서(전환사채권발행결정)",
+   "date": "2026-10-16"
+  },
+  {
+   "url": "https://www.vegannews.co.kr/news/article.html?no=395419",
+   "title": "케이엠더블유, 350억원 CB 발행 결정…설비투자 150억원",
+   "date": "2026-10-16"
+  },
+  {
+   "url": "https://m.news.nate.com/view/20260410n29100",
+   "title": "케이엠더블유, 전환청구권 행사로 58만9227주 전환청구",
+   "date": "2026-04-10"
+  },
+  {
+   "url": "https://m.news.nate.com/view/20260408n38049",
+   "title": "케이엠더블유, 제10회 전환사채 90억원 만기 전 취득",
+   "date": "2026-04-08"
+  },
+  {
+   "url": "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=032500",
+   "title": "와이즈리포트 기업모니터 케이엠더블유(주주·1H26 증감률)",
+   "date": "2026-10-06"
+  },
+  {
+   "url": "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A032500",
+   "title": "FnGuide 케이엠더블유(A032500)",
+   "date": ""
+  },
+  {
+   "url": "https://www.investing.com/equities/kmw-co-ltd-earnings",
+   "title": "Investing.com KMW 실적(2Q26)",
+   "date": "2026-08-14"
+  },
+  {
+   "url": "https://m.thinkpool.com/stockDiscuss/032500/cont/11836527",
+   "title": "씽크풀 실적속보 3Q25 매출 205억 영업이익 -70.2억",
+   "date": "2025-11"
+  },
+  {
+   "url": "https://www.mt.co.kr/stock/2026/05/19/2026051907413374478",
+   "title": "케이엠더블유, 내년 실적 관건…목표가 7만원으로 상향-하나",
+   "date": "2026-05-19"
+  },
+  {
+   "url": "https://www.asiae.co.kr/article/2026031708120664358",
+   "title": "KMW, 내년 이익 급증 전망…목표가 5만원으로 상향",
+   "date": "2026-03-17"
+  },
+  {
+   "url": "https://alphadistill.com/report/585",
+   "title": "케이엠더블유 (032500) Buy 목표가 42,000원",
+   "date": ""
+  },
+  {
+   "url": "https://needinfo.co.kr/kmw-inc-26q1-analysis-target-price/",
+   "title": "케이엠더블유 목표주가-26Q1 실적(블로그, 신뢰도 낮음)",
+   "date": ""
+  },
+  {
+   "url": "https://koreadividend.kr/KR7032500001",
+   "title": "케이엠더블유 주식 배당금 조회(최근 배당 2007년)",
+   "date": ""
+  },
+  {
+   "url": "https://www.catch.co.kr/Comp/CompSummary/066034",
+   "title": "캐치 케이엠더블유 기업정보(부채비율 87.99%)",
+   "date": ""
+  },
+  {
+   "url": "https://www.bloter.net/news/articleView.html?idxno=675973",
+   "title": "[메자닌 투자파일] 케이엠더블유, 혹독한 감축…'미국 5G' 승부수",
+   "date": ""
+  },
+  {
+   "url": "https://www.google.com/finance/beta/quote/032500:KOSDAQ?hl=ko",
+   "title": "Google Finance 케이엠더블유(032500:KOSDAQ)",
+   "date": ""
+  }
+ ],
+ "search_count": "9"
+}

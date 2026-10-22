@@ -1,0 +1,291 @@
+{
+ "input_name": "사피엔반도체",
+ "legal_name": "주식회사 사피엔반도체 (Sapien Semiconductors Inc.)",
+ "ticker": "452430",
+ "market": "KOSDAQ",
+ "listed": true,
+ "tradable": true,
+ "status_notes": "2024-02-19 코스닥 신규상장(기술특례, 위키백과·한경). 검색 범위(9회) 내에서 거래정지·관리종목·투자주의환기·상장폐지심사 관련 기사 없음(미발견 기준, 완전 확인 아님). 종목코드 452430·KOSDAQ 추정 정확함(thevc.kr, 한경마켓, 아이투자 등 다수 일치).",
+ "share_class": "보통주(사업회사, 단일 상장주식). 우선주 없음(검색 기준 미발견).",
+ "corporate_actions_24m": "검색 범위 내 사명 변경·분할·합병·재상장·이전상장 없음(미발견). 2024-02 코스닥 IPO 이후 단일 법인으로 유지.",
+ "price": {
+  "value": "29050",
+  "date": "2026-10-16",
+  "kind": "종가",
+  "source_url": "https://markets.hankyung.com/stock/452430/consensus",
+  "source_date": "2026-10-16",
+  "note": "10/22·10/21 종가는 9회 검색(2회 전용) 내 미확보. 확인 가능한 최근 종가는 2026-10-16 29,050원(+650원, +2.29%, 고가 29,600/저가 27,700; 한경마켓 컨센서스·차트 페이지). 2026-09-30 종가 38,800원(-1.90%, 한경마켓) → 10월 들어 약 25% 하락 상태. 52주 최고 56,000 / 최저 19,000. 10/22 코스피 -3.52% 급락일이므로 실제 10/22 종가는 29,050과 크게 다를 수 있음(장중가 아님, 종가 기준 명시). judal.co.kr 10/09 분석의 시총 2,918억 역산 시 약 35,300원 수준 추정되나 날짜·주식수 불명확해 미채택."
+ },
+ "market_cap_bn": {
+  "value": "2398",
+  "date": "2026-10-16",
+  "source_url": "https://markets.hankyung.com/stock/452430",
+  "note": "계산값: 10/16 종가 29,050원 × 상장주식수 8,255,421주 = 약 2,398억원. 비교: 한경마켓 9/30 기준 시가총액 3,265억(종가 38,800원) — 38,800×8,255,421=3,203억으로 약 60억 차이(주식수 약 841만주 기준일 수 있음, 소폭 불일치 note). judal.co.kr 2026-10-09 분석 시총 2,918억(기준일 불명). 10/22 기준 시총은 미확인."
+ },
+ "shares_outstanding": {
+  "value": "8255421",
+  "date": "2026-09-30",
+  "source_url": "https://markets.hankyung.com/stock/452430",
+  "note": "한경마켓(2026.09.30 장마감 기준) 상장주식수 8,255,421주. 시총/주가 역산 결과 약 841만주 가능성 있어 ±2% 오차 가능. DART 미확인."
+ },
+ "treasury_shares": {
+  "count": "N/A",
+  "pct": "N/A",
+  "note": "자기주식 보유·매입·소각 내역 검색 미발견. 적자 성장기업으로 자사주 정책 공시 없을 가능성 높으나 DART 미확인."
+ },
+ "fiscal_year_end": "12월",
+ "latest_report_period": "2026년 반기(1H26, 2Q26). 3Q26 실적은 미발표(Investing.com 기준 다음 실적 발표 예정일 2026-11-12).",
+ "financials": [
+  {
+   "period": "FY2024",
+   "revenue_bn": "80",
+   "op_income_bn": "-34",
+   "net_income_bn": "-171",
+   "source_url": "https://www.newstomato.com/ReadNews.aspx?no=1310293",
+   "note": "IB토마토·catch.co.kr 요약. 순손실 171억은 영업손실 대비 매우 커 IPO 관련 파생상품평가손실 등 비경상 손실 포함 추정(memory_unverified). 억원 반올림."
+  },
+  {
+   "period": "FY2025",
+   "revenue_bn": "173.1",
+   "op_income_bn": "-45.65",
+   "net_income_bn": "-47.88",
+   "source_url": "https://www.catch.co.kr/Comp/CompInfo/IT6339",
+   "note": "catch.co.kr 재무평가(2025.12 기준): 매출 173.1억(+116.6% YoY), 영업이익 -45.65억, 당기순이익 -47.88억. 유진투자증권 2025E 영업이익 -14억 전망과 실제(-45.65억) 괴리 큼. 매출 대부분 용역(NRE) 매출."
+  },
+  {
+   "period": "1H26 (2026년 상반기)",
+   "revenue_bn": "143",
+   "op_income_bn": "4",
+   "net_income_bn": "N/A",
+   "ocf_bn": "-69",
+   "source_url": "https://www.ibtomato.com/ExternalView.aspx?type=1&no=19211",
+   "note": "IB토마토 2026-08-19 보도: 상반기 매출 143억(전년 37억 대비 약 4배), 영업이익 4억 흑자전환(5년 연속 적자 종료), 매출의 약 99%가 개발용역. 영업활동현금흐름 -69억(전년 동기 -10억). 순이익·CAPEX 미확인."
+  },
+  {
+   "period": "2Q26",
+   "revenue_bn": "72",
+   "op_income_bn": "3",
+   "net_income_bn": "N/A",
+   "source_url": "https://news.bizwatch.co.kr/article/market/2026/08/24/0005",
+   "note": "비즈워치 2026-08-24: 2Q 매출 72억(+257.7% YoY), 영업이익 3억(흑자전환), 용역매출 +267.3%. 공시 원문 미대조. 1H26과 2Q26 합산 시 1Q26 매출 약 71억·영업이익 약 1억 역산."
+  },
+  {
+   "period": "3Q25",
+   "revenue_bn": "46",
+   "op_income_bn": "-13",
+   "net_income_bn": "N/A",
+   "source_url": "https://www.news2day.co.kr/article/20251204500082",
+   "note": "참고: 2025년 3분기 매출 46억, 영업손실 13억(뉴스투데이 2025-12-04, 신한투자증권 리포트 인용)."
+  }
+ ],
+ "balance_sheet": {
+  "date": "2026-06-30",
+  "cash_bn": "N/A",
+  "total_debt_bn": "N/A",
+  "net_cash_bn": "N/A",
+  "equity_bn": "N/A",
+  "note": "반기보고서 재무상태표 수치 검색 미확보. IB토마토(2026-08-19) 제목 '매출 4배 뛰고 현금은 반토막'에 따르면 상반기 중 현금성자산이 전년 대비 약 절반으로 감소(영업현금흐름 -69억). 전환사채 1건 존재(thevc.kr)로 순현금 계산 불가. DART 확인 필요.",
+  "source_url": "https://www.ibtomato.com/ExternalView.aspx?type=1&no=19211"
+ },
+ "shareholder_returns": {
+  "dps_latest_krw": "0",
+  "dividend_yield_pct": "0",
+  "buyback_policy": "자사주 매입·소각 정책 및 공시 미발견. 배당 없음(FY2024·FY2025 주당배당금 0원, 한경마켓 2026.09.30 기준 배당성향 0%).",
+  "valueup_disclosure": "밸류업 공시 미발견(검색 기준).",
+  "source_url": "https://markets.hankyung.com/stock/452430"
+ },
+ "dilution": {
+  "convertibles": "전환사채 1건 존재(thevc.kr 기업정보, 발행일·규모·전환가·잔량은 유료 영역으로 미확인). thevc.kr 목록의 '제3자배정 유상증자(발행가 1,317원, 상장예정 2026-12-02, 99억)' 항목은 타사(우진아이엔에스 등) 기사와 혼재되어 사피엔반도체 건으로 확정 불가 — 주가 수준(2~5만원) 대비 발행가 1,317원은 비현실적이므로 타사 건일 가능성 높음.",
+  "stock_options": "N/A (규모 미확인. IPO 전 벤처기업 스톡옵션 부여 이력 가능성 있으나 미검증)",
+  "rights_issues": "최근 24개월 내 사피엔반도체 명의의 공모·3자배정 유상증자 공시 검색 미발견.",
+  "est_dilution_pct": "N/A",
+  "source_url": "https://thevc.kr/sapiensemiconductors"
+ },
+ "ownership": {
+  "largest_holder": "이명희(대표이사) 외 6인",
+  "largest_holder_pct": "35.31",
+  "overhang_notes": "위키백과 기준 최대주주 측 35.31%, SVIC55호 신기술사업투자조합(삼성벤처투자 계열) 5.33%. 씽크풀(약 1년 전) 34.92%, 유진투자증권 2024-06 리포트 32.35%→30.31%로 시점별 상이 — 최신치(35.31%) 채택하되 기준일 불명. 2024-02 상장 시 보호예수는 이미 대부분 해제(2025년 2월 1년 의무보유 종료 추정, memory_unverified). SVIC55호 및 기타 VC 잔여 지분이 잠재적 오버행. 블록딜 기사 미발견.",
+  "source_url": "https://ko.wikipedia.org/wiki/%EC%82%AC%ED%94%BC%EC%97%94%EB%B0%98%EB%8F%84%EC%B2%B4"
+ },
+ "business": {
+  "summary": "마이크로LED(LEDoS·μLED) 디스플레이 구동 반도체(Driver IC) 및 CMOS 백플레인 설계 팹리스. AR 스마트글래스·초소형 마이크로디스플레이용 픽셀 구동 기술이 핵심. 현재 매출의 약 99%가 개발용역(NRE) 매출이며 2026년 하반기~2027년 양산 매출 전환이 투자 포인트. 1H26 영업이익 흑자전환(4억)했으나 영업현금흐름은 -69억으로 현금 소진 지속.",
+  "segments": "개발용역(NRE·CMOS 백플레인 개발) 약 99% / 제품(양산 칩) 약 1% (1H26, IB토마토). 부문별 공식 비중은 DART 미확인.",
+  "key_customers": "북미 빅테크(미공개, 2026-08-04 72.2억 공동개발·공급 계약; 2026-04-07 23.5억 AR글래스용 LEDoS 백플레인 웨이퍼 계약), 글로벌 마이크로디스플레이 솔루션 기업(미공개, 2025-12 54.7억 CMOS 백플레인 개발). 언론에서 애플·메타·삼성 등을 거론하나 회사가 고객명을 공식 확인한 바 없음(미검증).",
+  "customer_concentration": "매우 높음. 단일 계약 규모가 전년 매출 대비 42%(72억 건), 68%(54.7억 건, 2024년 매출 대비), 14%(23.5억 건)로 소수 빅테크 고객 의존. 상위 고객 정확한 비중은 N/A.",
+  "competitors": "N/A(검색 미확인). 참고(memory_unverified): LEDoS 백플레인·마이크로디스플레이 구동 분야에서 Jade Bird Display(중국), Plessey/Meta, Mojo Vision, 삼성·LG디스플레이 내부 설계 등.",
+  "industry_group": "반도체·AI하드웨어·디스플레이장비"
+ },
+ "consensus": {
+  "target_price_avg": "47000",
+  "target_price_date": "N/A (Investing.com 12개월 평균 목표가, 집계일 미표기; 한경 컨센서스는 2026-10-16 기준 목표가 0원=집계 없음)",
+  "n_brokers": "N/A",
+  "rev_2026e_bn": "350",
+  "op_2026e_bn": "20",
+  "rev_2027e_bn": "696",
+  "op_2027e_bn": "N/A",
+  "recent_report_summary": "공식 컨센서스 없음(한경 목표가 미집계). 개별 추정: 하나증권 2026E 매출 350억·영업이익 20억 흑자전환 원년(비즈워치 2026-08-24 인용, 상향 톤). 신한투자증권(2025-12-04) 2026E 매출 351억·영업이익 5억, 2027E 매출 696억, 연평균 100% 내외 성장 기대. 유진투자증권(2025-11-17) NR·목표가 없음. Investing.com 애널리스트 평균 목표가 47,000원·'Strong Buy'(상승여력 +61.8%는 29,050 기준과 근사하나 집계일 불명). 최근 1~2개월 증권사 정식 리포트 검색 미확인. 2026E 매출 350억 vs 1H26 실적 143억 → 하반기 207억 필요(양산 전환 가정).",
+  "source_url": "https://www.investing.com/equities/sapien-semiconductors"
+ },
+ "recent_events": [
+  {
+   "event": "북미 빅테크 기업과 디스플레이 구동칩 공동개발 및 공급 계약 체결, 계약금액 72억1,613만원(2025년 매출의 42%), 계약기간 2026-07-21~2027-10-28",
+   "event_date": "2026-08-04",
+   "article_date": "2026-08-04",
+   "source_url": "https://www.cbci.co.kr/news/articleView.html?idxno=594428"
+  },
+  {
+   "event": "2026년 상반기 실적: 매출 143억(약 4배), 영업이익 4억 흑자전환, 영업현금흐름 -69억·현금 반토막(IB토마토 분석)",
+   "event_date": "2026-08-14(반기보고서 추정)",
+   "article_date": "2026-08-19",
+   "source_url": "https://www.ibtomato.com/ExternalView.aspx?type=1&no=19211"
+  },
+  {
+   "event": "2Q26 매출 72억(+257.7% YoY)·영업이익 3억 흑자전환; AR글래스 출시 경쟁 수혜주로 하나증권 2026E 매출 350억·영업이익 20억 전망",
+   "event_date": "2026-08",
+   "article_date": "2026-08-24",
+   "source_url": "https://news.bizwatch.co.kr/article/market/2026/08/24/0005"
+  },
+  {
+   "event": "미국 기업과 AR 스마트글래스용 MicroLED(LEDoS) 백플레인 웨이퍼 공급계약 23.5억원(약 156만달러, 2025년 매출 대비 14%), 기간 2026-04-06~2026-12-31",
+   "event_date": "2026-04-07",
+   "article_date": "2026-04-07",
+   "source_url": "https://www.etnews.com/20260408000236"
+  },
+  {
+   "event": "디스플레이 구동칩 공동개발·공급 계약 종료일을 기존 16일에서 12월 11일로 연장(정정공시, 대상 계약·공시일 미확인)",
+   "event_date": "N/A(2026년 하반기 추정)",
+   "article_date": "N/A",
+   "source_url": "https://thevc.kr/sapiensemiconductors"
+  },
+  {
+   "event": "주가 9/30 종가 38,800원 → 10/16 종가 29,050원(약 -25%), 52주 최고 56,000원 대비 약 -48%",
+   "event_date": "2026-10-16",
+   "article_date": "2026-10-16",
+   "source_url": "https://markets.hankyung.com/stock/452430/chart"
+  },
+  {
+   "event": "글로벌 마이크로디스플레이 솔루션 기업과 CMOS Backplane 개발 공급계약 54.7억원(2024년 매출 대비 68%), 기간 2025-12-01~2026-11-23; 52주 신고가",
+   "event_date": "2025-12-24",
+   "article_date": "2025-12-24~26",
+   "source_url": "https://www.hankyung.com/article/202512243939L"
+  },
+  {
+   "event": "다음 실적(3Q26) 발표 예정일 2026-11-12(Investing.com)",
+   "event_date": "2026-11-12(예정)",
+   "article_date": "N/A",
+   "source_url": "https://www.investing.com/equities/sapien-semiconductors"
+  }
+ ],
+ "data_quality": "보통",
+ "unresolved": [
+  "2026-10-22 및 10-21 종가·시가총액 미확보(최근 확인 종가 2026-10-16 29,050원). 10/22 급락일 반영 필요.",
+  "2026년 반기 재무상태표(현금성자산·차입금·전환사채 잔액·자기자본·순현금) 미확인.",
+  "1H26·2Q26 당기순이익, CAPEX 미확인.",
+  "전환사채 1건의 발행규모·전환가·미전환 잔량, 스톡옵션 미행사 수량, 추정 희석률 미확인.",
+  "자기주식 수·비율 미확인.",
+  "최대주주 지분율(35.31%) 기준일 불명; 2026년 최신 지분변동 미확인.",
+  "증권사 평균 목표주가(Investing.com 47,000원)의 집계일·증권사 수 미확인; 최근 1~2개월 정식 리포트 미확인.",
+  "상장주식수 8,255,421주와 한경 9/30 시총(3,265억) 간 약 2% 불일치 — 최신 주식수 DART 확인 필요.",
+  "2026년 9~10월 신규 수주·공시 여부 미확인(최근 확인 공시 2026-08-04). 계약 종료일 연장 정정공시의 대상 계약 미확인.",
+  "경쟁사·고객명(북미 빅테크 실체) 공식 미확인.",
+  "FY2024 순손실 171억의 비경상 손실 구성 미확인."
+ ],
+ "sources": [
+  {
+   "url": "https://markets.hankyung.com/stock/452430/consensus",
+   "title": "한경마켓 사피엔반도체 컨센서스(2026-10-16 종가 29,050원, 목표가 미집계)",
+   "date": "2026-10-16"
+  },
+  {
+   "url": "https://markets.hankyung.com/stock/452430",
+   "title": "한경마켓 사피엔반도체 개요(9/30 종가 38,800, 시총 3,265억, 상장주식수 8,255,421주, 배당 0원)",
+   "date": "2026-09-30"
+  },
+  {
+   "url": "https://markets.hankyung.com/stock/452430/chart",
+   "title": "한경마켓 사피엔반도체 차트",
+   "date": "2026-10-16"
+  },
+  {
+   "url": "https://www.ibtomato.com/ExternalView.aspx?type=1&no=19211",
+   "title": "IB토마토: 사피엔반도체, 매출 4배 뛰고 현금은 반토막…양산 매출 절실(1H26 실적)",
+   "date": "2026-08-19"
+  },
+  {
+   "url": "https://news.bizwatch.co.kr/article/market/2026/08/24/0005",
+   "title": "비즈워치: 사피엔반도체 호실적 예상, AR 글래스 출시 경쟁 수혜주(2Q26, 하나증권 전망)",
+   "date": "2026-08-24"
+  },
+  {
+   "url": "https://www.catch.co.kr/Comp/CompInfo/IT6339",
+   "title": "캐치 사피엔반도체 재무평가(FY2025 매출 173.1억, 영업이익 -45.65억, 순이익 -47.88억)",
+   "date": "2026"
+  },
+  {
+   "url": "https://www.newstomato.com/ReadNews.aspx?no=1310293",
+   "title": "IB토마토(뉴스토마토) FY2024 실적 언급(매출 80억, 영업손실 34억, 순손실 171억)",
+   "date": "2026-08-19"
+  },
+  {
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=594428",
+   "title": "CBC뉴스: 북미 빅테크와 72억원 규모 디스플레이 구동칩 공동개발·공급 계약",
+   "date": "2026-08-04"
+  },
+  {
+   "url": "https://www.chickstockfi.com/disclosures/20260804900308",
+   "title": "치킨스탁: 사피엔반도체 단일판매·공급계약체결 공시 요약",
+   "date": "2026-08-04"
+  },
+  {
+   "url": "https://www.etnews.com/20260408000236",
+   "title": "전자신문: 사피엔반도체, 美 빅테크와 23억 규모 수주",
+   "date": "2026-04-08"
+  },
+  {
+   "url": "https://m.news.nate.com/view/20260407n24571",
+   "title": "수주공시: AR 스마트글래스용 LEDoS 백플레인 웨이퍼 공급 23.5억원",
+   "date": "2026-04-07"
+  },
+  {
+   "url": "https://www.hankyung.com/article/202512243939L",
+   "title": "한경: 사피엔반도체 수주공시 CMOS Backplane development 54.7억원",
+   "date": "2025-12-24"
+  },
+  {
+   "url": "https://www.news2day.co.kr/article/20251204500082",
+   "title": "뉴스투데이: 신한투자증권 사피엔반도체 연평균 100% 매출 성장 기대(2026E 351억/2027E 696억)",
+   "date": "2025-12-04"
+  },
+  {
+   "url": "https://www.eugenefn.com/common/files/amail/20251117_452430_jongsun.park_2495.pdf",
+   "title": "유진투자증권 사피엔반도체 리포트(NR, 11/14 주가 26,200원, 시총 2,150억)",
+   "date": "2025-11-17"
+  },
+  {
+   "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%ED%94%BC%EC%97%94%EB%B0%98%EB%8F%84%EC%B2%B4",
+   "title": "위키백과 사피엔반도체(최대주주 이명희 외 6인 35.31%, SVIC55호 5.33%, 2024-02-19 상장)",
+   "date": "N/A"
+  },
+  {
+   "url": "https://thevc.kr/sapiensemiconductors",
+   "title": "더브이씨 사피엔반도체 기업정보(전환사채 1건, 종목코드 452430 KOSDAQ)",
+   "date": "2026"
+  },
+  {
+   "url": "https://www.investing.com/equities/sapien-semiconductors",
+   "title": "Investing.com Sapien Semiconductors(평균 목표가 47,000원, 실적 발표 예정 2026-11-12)",
+   "date": "N/A"
+  },
+  {
+   "url": "https://judal.co.kr/?shareToken=WM5npf3yXYG8vAVg&view=stockAI",
+   "title": "주달AI 사피엔반도체 투자분석(시총 2,918억, EPS -45원)",
+   "date": "2026-10-09"
+  },
+  {
+   "url": "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/06/28/Sapien_250630.pdf",
+   "title": "하나증권 IPO 주관사 업데이트: AR 글라스 성장 수혜 기대",
+   "date": "2025-06-30"
+  }
+ ],
+ "search_count": "9"
+}
