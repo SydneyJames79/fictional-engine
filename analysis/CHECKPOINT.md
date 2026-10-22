@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 03:42 KST
 
-메모: 와이씨 3개 역할 완료 — 전문가 26/26 완료
+메모: 선익시스템 3개 역할 완료
 
 ## 고정된 설정
 
@@ -30,7 +30,7 @@
 | 010690 | 화신 | 완료(10회 검색) | 대기/미완 | 검색없는 초안만 |
 | 290650 | 엘앤씨바이오 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 314930 | 바이오다인 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
-| 171090 | 선익시스템 | 완료(12회 검색) | 대기/미완 | 완료(5회) |
+| 171090 | 선익시스템 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 178320 | 서진시스템 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 107640 | 한중엔시에스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
@@ -83,7 +83,7 @@
 - `wf_37871eed-ee1`: B2 price update=done
 - `wf_66a46537-1ed`: D specialist 한중엔시에스=done; E forensic 한중엔시에스=done; G generalist 한중엔시에스=done
 - `wf_8e4ab4e3-16b`: D specialist 와이씨=done; E forensic 와이씨=done; G generalist 와이씨=done
-- `wf_065961e6-e11`: D specialist 선익시스템=done; E forensic 선익시스템=done; G generalist 선익시스템=running
+- `wf_065961e6-e11`: D specialist 선익시스템=done; E forensic 선익시스템=done; G generalist 선익시스템=done
 - `wf_96ebbf83-b0f`: D specialist 에이치브이엠=done; E forensic 에이치브이엠=done; G generalist 에이치브이엠=done
 - `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=done; G generalist 고영=running
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=running; G generalist 서진시스템=running
