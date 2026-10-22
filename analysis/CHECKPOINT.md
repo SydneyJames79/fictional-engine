@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 03:29 KST
+갱신: 2026-10-23 03:34 KST
 
-메모: 삼성에피스홀딩스 3개 역할 완료
+메모: 10/22 종가 확인(P): 26개 중 10개만 날짜 명시 종가 확보 → 기준가는 10/21 공식 종가 유지
 
 ## 고정된 설정
 
@@ -31,7 +31,7 @@
 | 290650 | 엘앤씨바이오 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 314930 | 바이오다인 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 171090 | 선익시스템 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
-| 178320 | 서진시스템 | 대기/미완 | 대기/미완 | 대기/미완 |
+| 178320 | 서진시스템 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 107640 | 한중엔시에스 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 218410 | RFHIC | 대기/미완 | 대기/미완 | 대기/미완 |
@@ -48,6 +48,7 @@
 - B verify 1
 - B verify 2
 - B verify 3
+- B2 price update
 - C1 markets-rates-FX
 - C2 sector drivers
 - C3 macro synthesis
@@ -76,7 +77,6 @@
 - `wf_4d120433-106`: ?=failed
 - `wf_c2caf6a2-003`: ?=failed
 - `wf_cb78a0ed-9ff`: ?=failed
-- `wf_56d7a284-8d5`: D specialist 서진시스템=running
 - `wf_7ef3a569-7e6`: G risk review=running
 - `wf_4d027186-9f0`: H base rates=running
 - `wf_abf1369d-9e6`: D specialist 라온텍=running
@@ -89,12 +89,13 @@
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=running
 - `wf_d819d401-b55`: D specialist RFHIC=running
-- `wf_37871eed-ee1`: B2 price update=running
+- `wf_37871eed-ee1`: B2 price update=done
 - `wf_66a46537-1ed`: D specialist 한중엔시에스=done; E forensic 한중엔시에스=running; G generalist 한중엔시에스=running
 - `wf_8e4ab4e3-16b`: D specialist 와이씨=done; E forensic 와이씨=running; G generalist 와이씨=running
 - `wf_065961e6-e11`: D specialist 선익시스템=done; E forensic 선익시스템=running; G generalist 선익시스템=running
 - `wf_96ebbf83-b0f`: D specialist 에이치브이엠=done; E forensic 에이치브이엠=running; G generalist 에이치브이엠=running
 - `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=running; G generalist 고영=running
+- `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=running; G generalist 서진시스템=running
 
 ## 다음 단계
 
