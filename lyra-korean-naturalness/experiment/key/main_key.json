@@ -1,0 +1,618 @@
+{
+ "R606": {
+  "variant": "a",
+  "scenario": "C1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_C1_1.md"
+ },
+ "R183": {
+  "variant": "a",
+  "scenario": "C1",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_C1_2.md"
+ },
+ "R790": {
+  "variant": "a",
+  "scenario": "C2",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_C2_1.md"
+ },
+ "R393": {
+  "variant": "a",
+  "scenario": "C2",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_C2_2.md"
+ },
+ "R395": {
+  "variant": "a",
+  "scenario": "H1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_H1_1.md"
+ },
+ "R622": {
+  "variant": "a",
+  "scenario": "H2",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_H2_1.md"
+ },
+ "R301": {
+  "variant": "a",
+  "scenario": "H3",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_H3_1.md"
+ },
+ "R901": {
+  "variant": "a",
+  "scenario": "H3",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_H3_2.md"
+ },
+ "R672": {
+  "variant": "a",
+  "scenario": "H4",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_H4_1.md"
+ },
+ "R338": {
+  "variant": "a",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S1_1.md"
+ },
+ "R636": {
+  "variant": "a",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S1_1_B.md"
+ },
+ "R740": {
+  "variant": "a",
+  "scenario": "S1",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S1_2.md"
+ },
+ "R637": {
+  "variant": "a",
+  "scenario": "S1",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S1_2_B.md"
+ },
+ "R825": {
+  "variant": "a",
+  "scenario": "S1",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S1_3.md"
+ },
+ "R657": {
+  "variant": "a",
+  "scenario": "S2",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S2_1.md"
+ },
+ "R980": {
+  "variant": "a",
+  "scenario": "S2",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S2_1_B.md"
+ },
+ "R873": {
+  "variant": "a",
+  "scenario": "S2",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S2_2.md"
+ },
+ "R877": {
+  "variant": "a",
+  "scenario": "S2",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S2_2_B.md"
+ },
+ "R132": {
+  "variant": "a",
+  "scenario": "S2",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S2_3.md"
+ },
+ "R210": {
+  "variant": "a",
+  "scenario": "S3",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S3_1.md"
+ },
+ "R111": {
+  "variant": "a",
+  "scenario": "S3",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S3_1_B.md"
+ },
+ "R340": {
+  "variant": "a",
+  "scenario": "S3",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S3_2.md"
+ },
+ "R219": {
+  "variant": "a",
+  "scenario": "S3",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S3_2_B.md"
+ },
+ "R182": {
+  "variant": "a",
+  "scenario": "S3",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S3_3.md"
+ },
+ "R858": {
+  "variant": "a",
+  "scenario": "S4",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S4_1.md"
+ },
+ "R363": {
+  "variant": "a",
+  "scenario": "S4",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S4_1_B.md"
+ },
+ "R572": {
+  "variant": "a",
+  "scenario": "S4",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S4_2.md"
+ },
+ "R689": {
+  "variant": "a",
+  "scenario": "S4",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S4_2_B.md"
+ },
+ "R537": {
+  "variant": "a",
+  "scenario": "S4",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S4_3.md"
+ },
+ "R477": {
+  "variant": "a",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S5_1.md"
+ },
+ "R322": {
+  "variant": "a",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S5_1_B.md"
+ },
+ "R105": {
+  "variant": "a",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S5_2.md"
+ },
+ "R187": {
+  "variant": "a",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S5_2_B.md"
+ },
+ "R267": {
+  "variant": "a",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S5_3.md"
+ },
+ "R610": {
+  "variant": "a",
+  "scenario": "S6",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S6_1.md"
+ },
+ "R237": {
+  "variant": "a",
+  "scenario": "S6",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S6_1_B.md"
+ },
+ "R317": {
+  "variant": "a",
+  "scenario": "S6",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S6_2.md"
+ },
+ "R231": {
+  "variant": "a",
+  "scenario": "S6",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S6_2_B.md"
+ },
+ "R270": {
+  "variant": "a",
+  "scenario": "S6",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S6_3.md"
+ },
+ "R848": {
+  "variant": "a",
+  "scenario": "S7",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/a_S7_1.md"
+ },
+ "R763": {
+  "variant": "a",
+  "scenario": "S7",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/a_S7_1_B.md"
+ },
+ "R568": {
+  "variant": "a",
+  "scenario": "S7",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/a_S7_2.md"
+ },
+ "R161": {
+  "variant": "a",
+  "scenario": "S7",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/a_S7_2_B.md"
+ },
+ "R129": {
+  "variant": "a",
+  "scenario": "S7",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/a_S7_3.md"
+ },
+ "R782": {
+  "variant": "b",
+  "scenario": "C1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_C1_1.md"
+ },
+ "R199": {
+  "variant": "b",
+  "scenario": "C2",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_C2_1.md"
+ },
+ "R828": {
+  "variant": "b",
+  "scenario": "H1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_H1_1.md"
+ },
+ "R546": {
+  "variant": "b",
+  "scenario": "H2",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_H2_1.md"
+ },
+ "R164": {
+  "variant": "b",
+  "scenario": "H3",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_H3_1.md"
+ },
+ "R287": {
+  "variant": "b",
+  "scenario": "H3",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/b_H3_2.md"
+ },
+ "R379": {
+  "variant": "b",
+  "scenario": "H4",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_H4_1.md"
+ },
+ "R226": {
+  "variant": "b",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S1_1.md"
+ },
+ "R496": {
+  "variant": "b",
+  "scenario": "S2",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S2_1.md"
+ },
+ "R596": {
+  "variant": "b",
+  "scenario": "S3",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S3_1.md"
+ },
+ "R333": {
+  "variant": "b",
+  "scenario": "S4",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S4_1.md"
+ },
+ "R262": {
+  "variant": "b",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S5_1.md"
+ },
+ "R465": {
+  "variant": "b",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "B",
+  "file": "gen/b_S5_1_B.md"
+ },
+ "R332": {
+  "variant": "b",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/b_S5_2.md"
+ },
+ "R139": {
+  "variant": "b",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "B",
+  "file": "gen/b_S5_2_B.md"
+ },
+ "R994": {
+  "variant": "b",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/b_S5_3.md"
+ },
+ "R607": {
+  "variant": "b",
+  "scenario": "S6",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S6_1.md"
+ },
+ "R100": {
+  "variant": "b",
+  "scenario": "S7",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/b_S7_1.md"
+ },
+ "R745": {
+  "variant": "c",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/c_S1_1.md"
+ },
+ "R803": {
+  "variant": "c",
+  "scenario": "S3",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/c_S3_1.md"
+ },
+ "R350": {
+  "variant": "c",
+  "scenario": "S4",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/c_S4_1.md"
+ },
+ "R770": {
+  "variant": "c",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/c_S5_1.md"
+ },
+ "R314": {
+  "variant": "c",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/c_S5_2.md"
+ },
+ "R200": {
+  "variant": "c",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/c_S5_3.md"
+ },
+ "R948": {
+  "variant": "c",
+  "scenario": "S7",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/c_S7_1.md"
+ },
+ "R141": {
+  "variant": "d",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/d_S5_1.md"
+ },
+ "R520": {
+  "variant": "d",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/d_S5_2.md"
+ },
+ "R608": {
+  "variant": "d",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/d_S5_3.md"
+ },
+ "R898": {
+  "variant": "e",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/e_S5_1.md"
+ },
+ "R273": {
+  "variant": "e",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/e_S5_2.md"
+ },
+ "R930": {
+  "variant": "e",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/e_S5_3.md"
+ },
+ "R971": {
+  "variant": "f",
+  "scenario": "H3",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/f_H3_1.md"
+ },
+ "R830": {
+  "variant": "f",
+  "scenario": "H3",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/f_H3_2.md"
+ },
+ "R909": {
+  "variant": "f",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/f_S1_1.md"
+ },
+ "R720": {
+  "variant": "f",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/f_S5_1.md"
+ },
+ "R905": {
+  "variant": "f",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/f_S5_2.md"
+ },
+ "R459": {
+  "variant": "f",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/f_S5_3.md"
+ },
+ "R794": {
+  "variant": "m",
+  "scenario": "S5",
+  "sample": "1",
+  "model": "A",
+  "file": "gen/m_S5_1.md"
+ },
+ "R977": {
+  "variant": "m",
+  "scenario": "S5",
+  "sample": "2",
+  "model": "A",
+  "file": "gen/m_S5_2.md"
+ },
+ "R643": {
+  "variant": "m",
+  "scenario": "S5",
+  "sample": "3",
+  "model": "A",
+  "file": "gen/m_S5_3.md"
+ },
+ "R815": {
+  "variant": "ctrlN",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "A",
+  "file": "controls/ctrlN_S1_1.md"
+ },
+ "R438": {
+  "variant": "ctrlN",
+  "scenario": "S3",
+  "sample": "1",
+  "model": "A",
+  "file": "controls/ctrlN_S3_1.md"
+ },
+ "R693": {
+  "variant": "ctrlP",
+  "scenario": "S1",
+  "sample": "1",
+  "model": "A",
+  "file": "controls/ctrlP_S1_1.md"
+ },
+ "R138": {
+  "variant": "ctrlP",
+  "scenario": "S3",
+  "sample": "1",
+  "model": "A",
+  "file": "controls/ctrlP_S3_1.md"
+ }
+}

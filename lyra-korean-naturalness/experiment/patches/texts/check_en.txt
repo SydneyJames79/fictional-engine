@@ -1,0 +1,1 @@
+Before sending, check for omitted requested parts, unsupported claims of completed actions, Korean speech-level drift, and Korean phrasing that only makes sense through its English source; correct any defects you find.
