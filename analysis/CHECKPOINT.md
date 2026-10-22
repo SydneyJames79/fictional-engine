@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 03:34 KST
+갱신: 2026-10-23 03:35 KST
 
-메모: 10/22 종가 확인(P): 26개 중 10개만 날짜 명시 종가 확보 → 기준가는 10/21 공식 종가 유지
+메모: SK하이닉스 일반 분석가 완료 — 1차 묶음 10개 종목 전 역할 완료
 
 ## 고정된 설정
 
@@ -16,7 +16,7 @@
 
 | 코드 | 종목 | 전문가(D) | 일반(G) | 포렌식(E) |
 |---|---|---|---|---|
-| 000660 | SK하이닉스 | 완료(12회 검색) | 대기/미완 | 완료(16회) |
+| 000660 | SK하이닉스 | 완료(12회 검색) | 완료(4회 검색) | 완료(16회) |
 | 005930 | 삼성전자 | 완료(12회 검색) | 완료(4회 검색) | 완료(16회) |
 | 207940 | 삼성바이오로직스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 0126Z0 | 삼성에피스홀딩스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
@@ -26,7 +26,7 @@
 | 295310 | 에이치브이엠 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 452430 | 사피엔반도체 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 418420 | 라온텍 | 대기/미완 | 대기/미완 | 대기/미완 |
-| 370090 | 퓨런티어 | 대기/미완 | 대기/미완 | 검색없는 초안만 |
+| 370090 | 퓨런티어 | 완료(10회 검색) | 대기/미완 | 검색없는 초안만 |
 | 010690 | 화신 | 대기/미완 | 대기/미완 | 검색없는 초안만 |
 | 290650 | 엘앤씨바이오 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 314930 | 바이오다인 | 대기/미완 | 대기/미완 | 대기/미완 |
@@ -36,7 +36,7 @@
 | 107640 | 한중엔시에스 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
 | 218410 | RFHIC | 대기/미완 | 대기/미완 | 대기/미완 |
 | 189300 | 인텔리안테크 | 대기/미완 | 대기/미완 | 대기/미완 |
-| 099320 | 쎄트렉아이 | 대기/미완 | 대기/미완 | 대기/미완 |
+| 099320 | 쎄트렉아이 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 403870 | HPSP | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 032500 | 케이엠더블유 | 대기/미완 | 대기/미완 | 대기/미완 |
 | 098460 | 고영 | 완료(12회 검색) | 대기/미완 | 대기/미완 |
@@ -62,7 +62,7 @@
 - `wf_186cfa78-ec7`: E forensic SK하이닉스=done; E forensic 삼성전자=done; E forensic 한미반도체=done; E forensic HPSP=done; E forensic 와이씨=done; E forensic 이수페타시스=running; E forensic 고영=running
 - `wf_d4f4b1cd-657`: E forensic 현대차=done; E forensic 현대모비스=done; E forensic 현대오토에버=done; E forensic 화신=done; E forensic 퓨런티어=done; E forensic 삼성바이오로직스=done; E forensic 삼성에피스홀딩스=running; E forensic 엘앤씨바이오=running
 - `wf_86f1ebc6-b8f`: D specialist HPSP=done; E forensic HPSP=done; G generalist HPSP=done
-- `wf_8b27352d-8ee`: D specialist SK하이닉스=done; G generalist SK하이닉스=running
+- `wf_8b27352d-8ee`: D specialist SK하이닉스=done; G generalist SK하이닉스=done
 - `wf_e5c79c65-5c0`: D specialist 삼성전자=done; G generalist 삼성전자=done
 - `wf_d9ca0087-923`: D specialist 현대모비스=done; G generalist 현대모비스=done
 - `wf_7e65be40-75c`: D specialist 현대차=done; G generalist 현대차=done
@@ -81,12 +81,10 @@
 - `wf_4d027186-9f0`: H base rates=running
 - `wf_abf1369d-9e6`: D specialist 라온텍=running
 - `wf_ffdae734-e40`: D specialist 화신=running
-- `wf_2a198423-31c`: D specialist 퓨런티어=running
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=running
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=running
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=running
 - `wf_372974de-9cf`: D specialist 인텔리안테크=running
-- `wf_1de1e803-013`: D specialist 쎄트렉아이=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=running
 - `wf_d819d401-b55`: D specialist RFHIC=running
 - `wf_37871eed-ee1`: B2 price update=done
@@ -96,6 +94,8 @@
 - `wf_96ebbf83-b0f`: D specialist 에이치브이엠=done; E forensic 에이치브이엠=running; G generalist 에이치브이엠=running
 - `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=running; G generalist 고영=running
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=running; G generalist 서진시스템=running
+- `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=running; G generalist 퓨런티어=running
+- `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=running
 
 ## 다음 단계
 
