@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 20 800 540" width="800" height="540">
+  <title>PS5 DualSense controller</title>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#f1f2f5"/>
+      <stop offset="1" stop-color="#d9dce2"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2d33"/>
+      <stop offset="1" stop-color="#16171b"/>
+    </linearGradient>
+    <linearGradient id="pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfbfc"/>
+      <stop offset="1" stop-color="#e3e5ea"/>
+    </linearGradient>
+    <radialGradient id="cap" cx="0.42" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#3a3c43"/>
+      <stop offset="1" stop-color="#1b1c20"/>
+    </radialGradient>
+    <radialGradient id="btn" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#3b3d44"/>
+      <stop offset="1" stop-color="#202126"/>
+    </radialGradient>
+    <filter id="shadow" filterUnits="userSpaceOnUse" x="0" y="20" width="800" height="560">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.22"/>
+    </filter>
+    <filter id="glow" x="-200%" y="-20%" width="500%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <!-- left-side parts, mirrored for the right side -->
+    <path id="bumper" d="M 128 96 C 140 62, 205 50, 258 74 L 254 96 Z" fill="#1c1d22"/>
+    <g id="lightbar">
+      <path d="M 279 100 L 285 206" stroke="#3d8bff" stroke-width="7" stroke-linecap="round" filter="url(#glow)" opacity="0.8"/>
+      <path d="M 279 100 L 285 206" stroke="#9cc8ff" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <path id="dpadArrow" d="M 180 175 L 168 163 L 168 146 Q 168 140 174 140 L 186 140 Q 192 140 192 146 L 192 163 Z"
+          fill="url(#btn)" stroke="#0e0f12" stroke-width="1"/>
+  </defs>
+
+  <!-- shoulder buttons peeking out above the shell -->
+  <use href="#bumper"/>
+  <use href="#bumper" transform="translate(800 0) scale(-1 1)"/>
+
+  <!-- white outer shell -->
+  <path filter="url(#shadow)" fill="url(#shell)" stroke="#c9ccd3" stroke-width="1.5" d="
+    M 400 92 L 265 92
+    C 228 70, 170 64, 138 84
+    C 104 104, 86 152, 72 212
+    C 55 292, 40 382, 50 432
+    C 60 482, 112 502, 147 487
+    C 177 472, 200 432, 225 392
+    C 250 362, 290 352, 330 352
+    L 470 352
+    C 510 352, 550 362, 575 392
+    C 600 432, 623 472, 653 487
+    C 688 502, 740 482, 750 432
+    C 760 382, 745 292, 728 212
+    C 714 152, 696 104, 662 84
+    C 630 64, 572 70, 535 92 Z"/>
+
+  <!-- black core -->
+  <path fill="url(#core)" d="
+    M 400 102 L 270 102
+    C 200 96, 140 112, 120 160
+    C 104 200, 110 246, 140 270
+    C 175 298, 215 300, 240 320
+    C 262 340, 292 352, 330 352
+    L 470 352
+    C 508 352, 538 340, 560 320
+    C 585 300, 625 298, 660 270
+    C 690 246, 696 200, 680 160
+    C 660 112, 600 96, 530 102 Z"/>
+
+  <!-- touchpad -->
+  <path fill="url(#pad)" stroke="#c9ccd3" stroke-width="1.2" d="
+    M 284 92 L 516 92 L 510 200 Q 509 216 493 216 L 307 216 Q 291 216 290 200 Z"/>
+  <use href="#lightbar"/>
+  <use href="#lightbar" transform="translate(800 0) scale(-1 1)"/>
+
+  <!-- create / options -->
+  <rect x="250" y="104" width="8" height="20" rx="4" fill="#3a3c43" stroke="#0e0f12" transform="rotate(-18 254 114)"/>
+  <rect x="542" y="104" width="8" height="20" rx="4" fill="#3a3c43" stroke="#0e0f12" transform="rotate(18 546 114)"/>
+
+  <!-- d-pad -->
+  <g>
+    <use href="#dpadArrow"/>
+    <use href="#dpadArrow" transform="rotate(90 180 185)"/>
+    <use href="#dpadArrow" transform="rotate(180 180 185)"/>
+    <use href="#dpadArrow" transform="rotate(270 180 185)"/>
+    <g fill="#9a9da6">
+      <path d="M 180 147 L 175 154 L 185 154 Z"/>
+      <path d="M 180 223 L 175 216 L 185 216 Z"/>
+      <path d="M 142 185 L 149 180 L 149 190 Z"/>
+      <path d="M 218 185 L 211 180 L 211 190 Z"/>
+    </g>
+  </g>
+
+  <!-- face buttons -->
+  <g stroke="#0e0f12" stroke-width="1" fill="url(#btn)">
+    <circle cx="620" cy="151" r="16"/>
+    <circle cx="654" cy="185" r="16"/>
+    <circle cx="620" cy="219" r="16"/>
+    <circle cx="586" cy="185" r="16"/>
+  </g>
+  <g fill="none" stroke="#c4c7d0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="620,143 627,155.5 613,155.5"/>
+    <circle cx="654" cy="185" r="6.5"/>
+    <path d="M 614 213 L 626 225 M 626 213 L 614 225"/>
+    <rect x="580" y="179" width="12" height="12" rx="0.5"/>
+  </g>
+
+  <!-- analog sticks -->
+  <g>
+    <circle cx="310" cy="285" r="40" fill="#0f1013"/>
+    <circle cx="310" cy="285" r="31" fill="url(#cap)" stroke="#000" stroke-width="1"/>
+    <circle cx="310" cy="285" r="23" fill="none" stroke="#45474f" stroke-width="2"/>
+    <circle cx="490" cy="285" r="40" fill="#0f1013"/>
+    <circle cx="490" cy="285" r="31" fill="url(#cap)" stroke="#000" stroke-width="1"/>
+    <circle cx="490" cy="285" r="23" fill="none" stroke="#45474f" stroke-width="2"/>
+  </g>
+
+  <!-- speaker grille -->
+  <g fill="#050507" id="speaker">
+    <circle cx="382" cy="234" r="1.6"/><circle cx="388" cy="234" r="1.6"/><circle cx="394" cy="234" r="1.6"/><circle cx="400" cy="234" r="1.6"/><circle cx="406" cy="234" r="1.6"/><circle cx="412" cy="234" r="1.6"/><circle cx="418" cy="234" r="1.6"/>
+    <circle cx="385" cy="240" r="1.6"/><circle cx="391" cy="240" r="1.6"/><circle cx="397" cy="240" r="1.6"/><circle cx="403" cy="240" r="1.6"/><circle cx="409" cy="240" r="1.6"/><circle cx="415" cy="240" r="1.6"/>
+    <circle cx="388" cy="246" r="1.6"/><circle cx="394" cy="246" r="1.6"/><circle cx="400" cy="246" r="1.6"/><circle cx="406" cy="246" r="1.6"/><circle cx="412" cy="246" r="1.6"/>
+  </g>
+
+  <!-- PS button -->
+  <circle cx="400" cy="276" r="13" fill="url(#btn)" stroke="#000" stroke-width="1"/>
+  <circle cx="400" cy="276" r="9" fill="none" stroke="#4a4c54" stroke-width="1"/>
+
+  <!-- mic mute button -->
+  <rect x="389" y="306" width="22" height="7" rx="3.5" fill="#2e3036" stroke="#000" stroke-width="1"/>
+  <rect x="393" y="308.5" width="14" height="2" rx="1" fill="#e8823a" opacity="0.85"/>
+</svg>
