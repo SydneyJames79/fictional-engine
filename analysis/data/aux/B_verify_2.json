@@ -1,0 +1,434 @@
+{
+ "label": "B verify 2",
+ "run": "wf_cbe96be2-a39",
+ "searches": 24,
+ "result": {
+  "stocks": [
+   {
+    "code": "295310",
+    "input_name": "에이치브이엠",
+    "legal_name": "주식회사 에이치브이엠",
+    "english_name": "HVM Co., Ltd. (언론 표기 'HVM'; 공식 영문 법인명 원문 미확인)",
+    "market": "KOSDAQ (코디네이터 데이터셋 소속부 기술성장기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 2026-10-08 종가 74,200원(한경) 확인, 2026-10월에도 CB 전환 신주 추가상장 진행 중. 거래정지 정보는 찾지 못함(10/21·10/22 시세는 확인 불가).",
+    "listing_history": "2024-06-28 코스닥 신규상장(IPO). 데이터셋 최초일과 일치하며, 기술성장기업부 소속이라 기술특례 계열로 추정(공모가·특례 유형 원문 미확인). 상장 후 인적/물적분할·합병·사명변경은 확인되지 않음. 2025년 제1회 사모 CB(권면 400억원, 전환가 32,278원), 2026-04 제2회 사모 CB(920억원) 발행. 주의: '브이엠(089970)'은 별개 회사이며 검색 결과에 섞여 나옴.",
+    "share_class": "보통주 단일(상장 우선주 없는 것으로 파악, 원문 미확인)",
+    "halt_or_admin_issues": "시장경보 이력: 2025-12-22 투자경고 지정예고(KIND) → 2025-12-30 투자경고 지정 → 2026-01-15 해제와 동시에 1일 투자주의 → 2026-01-21 투자주의(15일 +78.15%) → 2026-03-12 투자주의 → 2026-03-26 투자경고 재지정(해제 판단 4/8부터). 2026-05-18자 KIND '투자경고종목 지정해제' 공시 링크가 검색되었으나 이 종목 건인지 원문 확인 불가. 2026-10 현재 지정 여부는 확인 불가. 거래정지·관리종목·불성실공시법인 지정 정보는 찾지 못함(검색 범위 내).",
+    "shares_listed": "12,640,627주(코디네이터 KRX 데이터셋, 2026-10-20). 제1회 CB 전환으로 계속 증가 중: 8/18 61,961주, 8/24 64,283주 추가상장. 9/17~21 전환청구 59억원 → 182,785주(신고 시점 발행주식총수 12,426,862주의 1.47%), 상장예정일 10/13(정정). 12,426,862+182,785=12,609,647주보다 데이터셋이 30,980주(10억원÷32,278원과 일치) 많아, 추가 전환분이 상장된 것으로 추정.",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "추정 약 1,433만주(상한, 2026-10-20 기준). 산식: 상장 12,640,627주 + 제1회 CB 잔액 218.25억원(2026-09-21 신고일 기준)÷32,278원 ≈ 676,157주(10/20까지 상장된 분과 최대 약 3.1만주 중복 가능) + 제2회 CB 920억원÷90,916원 ≈ 1,011,923주(리픽싱 미반영) = 14,328,707주. 주식매수선택권 잔량은 미반영(확인 불가).",
+    "latest_reported_period": "2026 반기보고서(2026-08 제출). 2Q26 별도 매출 292억원, 영업이익 20억원(한경 페이지). 1Q26 매출 232~233억원, 영업이익 44억원(출처별 소폭 차이). 3Q26 잠정실적은 확인되지 않음. 3분기보고서 법정기한 2026-11-16.",
+    "fiscal_year_end": "12월 31일(12월 결산)",
+    "core_business": "진공용해 정련 기술로 우주항공(스페이스X 랩터 엔진용 Ni계 합금 등)과 디스플레이·반도체 장비용 고순도 특수금속·합금 소재를 만드는 첨단금속소재 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-10-08",
+      "close_krw": 74200,
+      "source": "한경 코리아마켓 295310 페이지(10/08 장마감, +3.06%)"
+     },
+     {
+      "date": "2026-09-28",
+      "close_krw": 58000,
+      "source": "알파스퀘어 종목요약(9/28 종가, -9.37%)"
+     }
+    ],
+    "upcoming_events": "제1회 CB 잔여분(약 208~218억원, 전환가 32,278원) 전환청구와 주간 추가상장이 이어질 수 있음(오버행). 제1회 CB 콜옵션(80억원 규모) 행사는 미정(회사 측 '구체 논의 없음', 딜사이트). 제2회 CB 920억원(표면·만기이자 0%, 전환가 90,916원, 만기 2031-04-10, 발행 2년 후부터 3개월 단위 풋옵션): 전환청구 개시일은 확인 불가(통상 발행 1년 후인 2027-04경). 신규시설투자 96.3억원(자기자본의 8.27%, 2026-10-07~2027-12-31, 우주항공·에너지용 용해설비). 제3공장 증설(약 500억원). 3분기보고서 2026-11-16 기한, FY2026 사업보고서·정기주총 2027-03. IPO 최대주주 의무보유 만료일은 확인 불가.",
+    "data_flags": [
+     "웹검색 한도(턴당 200회, 전 에이전트 공유)가 소진되어 추가 검증 중단",
+     "10/20 종가 64,100원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "상장주식수가 CB 전환으로 매주 증가: 시총·주당지표 산정 시 최신 주식수와 잔여 CB를 반영해야 함",
+     "제2회 CB 리픽싱 조항과 현재 전환가 확인 불가. 현 주가(64,100원)가 전환가 90,916원보다 낮음",
+     "2026-10 현재 시장경보 지정 상태 확인 불가",
+     "52주 고가 144,000원, 저가 21,950원(한경): 극단적 변동성. 하나증권은 5월 고점 대비 약 40% 하락으로 언급",
+     "'브이엠(089970)' 기사가 검색에 섞임: 별개 종목이라 제외"
+    ],
+    "sources": [
+     "https://markets.hankyung.com/stock/295310",
+     "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=705694",
+     "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=702180",
+     "https://www.chickstockfi.com/disclosures/20261002900995",
+     "https://www.chickstockfi.com/disclosures/20260921900473",
+     "https://dealsite.co.kr/articles/164675",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16161648",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16167552",
+     "https://www.bloter.net/news/articleView.html?idxno=658502",
+     "https://news.nate.com/view/20260402n35699",
+     "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251222000595",
+     "https://kind.krx.co.kr/external/2026/05/18/000871/20260518001930/70820.htm",
+     "https://www.topstarnews.net/news/articleView.html?idxno=15934495",
+     "https://www.topstarnews.net/news/articleView.html?idxno=15939808",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16016285",
+     "https://alphasquare.co.kr/home/stock-summary?code=295310",
+     "http://www.opinionnews.co.kr/news/articleView.html?idxno=140021",
+     "https://home.imeritz.com/include/resource/research/WorkFlow/20260211154849868K_02.pdf"
+    ]
+   },
+   {
+    "code": "452430",
+    "input_name": "사피엔반도체",
+    "legal_name": "주식회사 사피엔반도체",
+    "english_name": "Sapien Semiconductors Inc. (Investing.com 표기; 공식 영문명 원문 미확인)",
+    "market": "KOSDAQ (데이터셋 소속부 기술성장기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. FnGuide 기준 10월 중순 종가 29,050원, 2026-10-14 공급계약 정정공시 제출. 거래정지 정보는 찾지 못함.",
+    "listing_history": "2024-02-19 코스닥 신규상장(IPO). 데이터셋 최초일 기준이며, 기술성장기업부 소속이라 기술특례 계열로 추정(공모가·특례 유형 원문 미확인). 분할·합병·사명변경은 확인되지 않음.",
+    "share_class": "보통주(상장 우선주 없는 것으로 파악)",
+    "halt_or_admin_issues": "2025~2026 투자주의/경고/위험, 관리종목, 불성실공시 지정 여부는 전용 검증을 하지 못해 확인 불가(검색 예산 소진). 검색 결과에서 관련 기사는 나오지 않음.",
+    "shares_listed": "8,255,421주(코디네이터 데이터셋, 2026-10-20). FnGuide 시총 3,182억원(2026-09-15)을 역산하면 주가 약 38,544원으로 정합.",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "확인 불가(CB/BW/주식매수선택권 잔량 미확인)",
+    "latest_reported_period": "2026 반기보고서(FnGuide: 1H26 별도 매출 +291.5% YoY, 영업이익·순이익 흑자전환). 1Q26 매출 71억원(+332.8%). 3Q26 실적 발표 예정일 2026-11-12(Investing.com)라 잠정실적은 아직 미발표로 추정. 법정기한 2026-11-16.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "AR/MR·스마트글라스용 마이크로LED 등 초소형 디스플레이 구동칩(백플레인/DDI)을 설계하는 팹리스 반도체 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-10 중순(정확한 일자 미상)",
+      "close_krw": 29050,
+      "source": "FnGuide Snapshot 시세 표기"
+     }
+    ],
+    "upcoming_events": "3Q26 실적 발표 2026-11-12 예정(Investing.com). 2026-10-14 [기재정정] 단일판매·공급계약: 'CA(캘리포니아) BigTech company'향 145억원(최근 매출액의 84%) 이행(계약기간 확인 불가). FY2026 사업보고서·주총 2027-03. IPO 관련 의무보유 만료일은 확인 불가.",
+    "data_flags": [
+     "웹검색 한도 소진으로 추가 검증 중단",
+     "10/20 종가 27,550원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "단일 고객(미국 빅테크로 추정) 의존도가 높음: 145억원 계약이 직전 연매출(역산 약 173억원)의 84%",
+     "52주 고가 56,000원, 저가 19,000원(FnGuide)",
+     "최대주주 등 지분율 32.05%(FnGuide)",
+     "유진투자증권 2025-11 추정(2026E 매출 403억원, 영업이익 91억원)은 1년 가까이 지난 추정치",
+     "시장경보 이력 미검증"
+    ],
+    "sources": [
+     "https://wcomp.fnguide.com/CompanyInfo/Snapshot?cmp_cd=452430",
+     "https://www.chickstockfi.com/disclosures/20261014900205",
+     "https://www.chickstockfi.com/stocks/452430",
+     "https://www.chickstockfi.com/stocks/452430/reports",
+     "https://www.investing.com/equities/sapien-semiconductors",
+     "https://www.eugenefn.com/common/files/amail/20251117_452430_jongsun.park_2495.pdf"
+    ]
+   },
+   {
+    "code": "418420",
+    "input_name": "라온텍",
+    "legal_name": "주식회사 라온텍",
+    "english_name": "RAONTECH Inc. (Investing.com 'RaonTech Inc' 표기; 원문 미확인)",
+    "market": "KOSDAQ (데이터셋 소속부 기술성장기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 데이터셋에 10/20 종가가 있고, 독립적으로 확인한 최근 시세는 2026-09-16 4,100원. 거래정지 정보는 찾지 못함.",
+    "listing_history": "2023-03-09 코스닥 상장(데이터셋 최초일). 종목코드(418420)가 2022년경 부여된 신규 코드라 신규상장(IPO)으로 추정, 기술특례 계열로 추정(상장 경로·공모가 원문 미확인). 2025사업연도가 제17기(2026-03-26 정기주총 가결). 분할·합병·사명변경은 확인되지 않음.",
+    "share_class": "보통주",
+    "halt_or_admin_issues": "전용 검증을 하지 못해 확인 불가. 검색 결과에서 시장경보·관리종목 관련 기사는 나오지 않음. 참고: 기술특례 상장사의 법차손 요건 유예기간이 끝났는지와 자기자본 대비 손실 규모를 점검할 필요가 있음(1Q26 순손실 36억원).",
+    "shares_listed": "30,774,558주(데이터셋, 2026-10-20). 치킨스탁 시총 1,262억원(9/16, 4,100원)을 역산하면 약 3,078만주로 정합.",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "확인 불가",
+    "latest_reported_period": "1Q26 분기보고서(2026-05-15: 매출 9억원(+24.4%), 영업손실 33억원, 순손실 36억원) 확인. 2026 반기보고서는 제출된 것으로 추정하나 내용 미확인. 3Q26 잠정실적은 확인되지 않음. 3분기보고서 기한 2026-11-16.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "AR/VR·스마트글라스용 마이크로디스플레이(LCoS·OLEDoS)와 구동 SoC를 개발하는 팹리스 시스템반도체 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-09-16",
+      "close_krw": 4100,
+      "source": "치킨스탁 418420 페이지(9/16 15:30 기준)"
+     }
+    ],
+    "upcoming_events": "3분기보고서 2026-11-16 기한. 2026-07-06 공시한 스마트글라스용 부품사향 46억원 공급계약(최근 매출액의 52.8%) 납품. FY2026 사업보고서·정기주총 2027-03(관리종목 요건 해당 여부를 점검할 시점).",
+    "data_flags": [
+     "웹검색 한도 소진으로 추가 검증 중단",
+     "10/20 종가 3,160원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "52주 고가 12,500원 대비 약 75% 하락(데이터셋 종가 기준)",
+     "영업적자가 이어지고 매출 규모가 작음(2025 매출 역산 약 87억원): 재무안정성·관리종목 리스크 점검 필요",
+     "상장 경로(IPO인지 이전상장인지) 원문 미확인"
+    ],
+    "sources": [
+     "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646207",
+     "https://www.chickstockfi.com/disclosures/20260706900374",
+     "https://www.chickstockfi.com/stocks/418420",
+     "https://www.chickstockfi.com/stocks/418420/earnings",
+     "https://www.investing.com/equities/raontech",
+     "https://markets.hankyung.com/stock/418420/consensus"
+    ]
+   },
+   {
+    "code": "370090",
+    "input_name": "퓨런티어",
+    "legal_name": "주식회사 퓨런티어",
+    "english_name": "Furonteer Inc. (Investing.com 'Furonteer Co Ltd' 표기; 원문 미확인)",
+    "market": "KOSDAQ (데이터셋 소속부 기술성장기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 2026-10-14 장중 5,900원(한경, 20분 지연), 10/02 6,170원(Investing.com). 거래정지 정보는 찾지 못함.",
+    "listing_history": "2022-02-23 코스닥 신규상장(IPO). 데이터셋 최초일 기준이며, 기술성장기업부 소속이라 기술특례 계열로 추정(원문 미확인). Investing.com 기준 최대주주는 하이비젼시스템(HyVision System) 30.50%(2026-06-30). 최대주주가 바뀐 경위와 시점은 확인 불가. 분할·합병·사명변경은 확인되지 않음.",
+    "share_class": "보통주",
+    "halt_or_admin_issues": "전용 검증을 하지 못해 확인 불가(검색 결과에서 관련 기사는 나오지 않음).",
+    "shares_listed": "8,556,830주(데이터셋, 2026-10-20)",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "확인 불가",
+    "latest_reported_period": "1Q26(2026-05-13: 매출 34억원, 영업손실 14억원, 순손실 11억원) 확인. 2026 반기보고서는 제출된 것으로 추정하나 내용 미확인. 3Q26: 법정기한 2026-11-16, Investing.com 발표 예정일 2026-11-18(출처 간 상이).",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "전장(자동차)용 카메라 모듈 등의 액티브 얼라인(Active Alignment)·조립·검사 자동화 장비를 만드는 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-10-02",
+      "close_krw": 6170,
+      "source": "Investing.com Furonteer 페이지(10/2 기준 표기, 종가 여부 불명확)"
+     }
+    ],
+    "upcoming_events": "3Q26 실적(기한 11/16, Investing.com 기준 11/18). FY2026 사업보고서·정기주총 2027-03.",
+    "data_flags": [
+     "웹검색 한도 소진으로 추가 검증 중단",
+     "10/20 종가 5,640원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "52주 범위 4,415~18,930원(Investing.com)",
+     "최대주주 하이비젼시스템(30.50%): 지배구조 변경 여부를 원문으로 확인할 필요",
+     "공매도 거래비중 1.64%(9/17, 치킨스탁)"
+    ],
+    "sources": [
+     "https://markets.hankyung.com/stock/370090",
+     "https://www.investing.com/equities/furonteer",
+     "https://kr.investing.com/equities/furonteer-earnings",
+     "https://www.chickstockfi.com/stocks/370090",
+     "https://www.chickstockfi.com/stocks/370090/short",
+     "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A370090"
+    ]
+   },
+   {
+    "code": "010690",
+    "input_name": "화신",
+    "legal_name": "주식회사 화신",
+    "english_name": "HWASHIN Co., Ltd. (Investing.com 'Hwashin'; 원문 미확인)",
+    "market": "KOSPI(유가증권시장)",
+    "tradable_now": "거래 가능. Investing.com 10/17자 페이지 6,970원(직전 거래일인 10/16 종가로 추정), 전일 종가 6,650원. 거래정지 정보는 찾지 못함.",
+    "listing_history": "유가증권시장 장기 상장사(구 코드 010690). 정확한 상장일은 원문 미확인(1990년대 상장으로 알려져 있으나 검증 불가). 최근 분할·합병·사명변경은 확인되지 않음.",
+    "share_class": "보통주(상장 우선주 없는 것으로 파악)",
+    "halt_or_admin_issues": "전용 검증을 하지 못해 확인 불가. 2026-06-19 하루 +37% 급등(블로그 출처, 신뢰도 낮음)이 있었으나 시장경보 지정 여부는 미확인.",
+    "shares_listed": "34,920,410주(데이터셋, 2026-10-20)",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "확인 불가",
+    "latest_reported_period": "2026 반기보고서(2Q26 실적 2026-08-14 발표, 매출 4,982억원으로 추정치 5,420억원 하회. Investing.com 기준이며 원자료 미확인). 1Q26(5/15 공시): 매출 5,056억원(+6.8%), 영업이익 170억원, 순이익 283억원. 삼성증권은 미국 신공장 감가상각 부담으로 1Q26 영업이익이 추정치를 하회했다고 분석. 3Q26: 기한 11/16, Investing.com 발표 예정일 11/18.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "현대차·기아에 섀시(서브프레임·액슬 등)와 차체 부품을 국내 및 미국 등 해외 공장에서 생산해 공급하는 자동차 부품사.",
+    "latest_closes_found": [
+     {
+      "date": "2026-10-16(추정)",
+      "close_krw": 6970,
+      "source": "Investing.com Hwashin 페이지(10/17 기준 표기, 직전 거래일 종가로 추정)"
+     },
+     {
+      "date": "2026-10-15(추정)",
+      "close_krw": 6650,
+      "source": "Investing.com Hwashin 페이지 '전일 종가'"
+     },
+     {
+      "date": "2026-09-16",
+      "close_krw": 7520,
+      "source": "치킨스탁 010690 페이지"
+     }
+    ],
+    "upcoming_events": "3Q26 실적(Investing.com 11/18 예정, 기한 11/16). 미국 신공장 감가상각 부담이 이어지는지 여부. FY2026 사업보고서·정기주총 2027-03.",
+    "data_flags": [
+     "웹검색 한도 소진으로 추가 검증 중단",
+     "10/20 종가 7,040원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "52주 범위 6,410~16,720원(Investing.com)",
+     "목표가 괴리: 한경 컨센서스 19,000원(2026-06-18) vs Investing.com 평균 10,000원",
+     "6월 급등의 '인도 IPO 수혜' 서술은 블로그 출처라 미검증",
+     "2Q26 매출 수치는 Investing.com 표기로, DART 원문 미확인"
+    ],
+    "sources": [
+     "https://www.investing.com/equities/hwashin",
+     "https://www.chickstockfi.com/stocks/010690",
+     "https://www.chickstockfi.com/stocks/010690/earnings",
+     "https://markets.hankyung.com/stock/010690/consensus",
+     "https://markets.hankyung.com/stock/010690/financial-summary",
+     "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=010690"
+    ]
+   },
+   {
+    "code": "290650",
+    "input_name": "엘앤씨바이오",
+    "legal_name": "주식회사 엘앤씨바이오",
+    "english_name": "L&C BIO Co., Ltd. (Investing.com 'L&C Bio Co Ltd')",
+    "market": "KOSDAQ (데이터셋 소속부 우량기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 10/08 종가 56,400원(한경). 유상증자 진행 중(주금납입 10/22). 거래정지 정보는 찾지 못함. 다만 1:1 무상증자 권리락이 임박.",
+    "listing_history": "코스닥 상장. 상장일은 확인 불가(종목코드상 2018년경이며 2018년 코스닥 IPO로 기억되나 미검증). 분할·합병·사명변경은 확인되지 않음. 2026-05-15 상장주식수가 24,847,063주에서 26,969,704주로 2,122,641주 늘었으나 원인(CB 전환, 제3자배정 등)은 확인 불가. 2026 유무상증자: 주주배정 유상 370만주(확정 발행가 39,100원, 약 1,447억원. 초기 공시 1,406억원), 이어서 1:1 무상증자. 유상 신주배정기준일은 2026-09-04로 추정(미래에셋 페이지 파라미터 기준).",
+    "share_class": "보통주",
+    "halt_or_admin_issues": "전용 검증을 하지 못해 확인 불가(검색 결과에서 관련 기사는 나오지 않음).",
+    "shares_listed": "26,969,704주(데이터셋, 2026-10-20; 유상 신주 미반영)",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "유상증자 후 30,669,704주(26,969,704+3,700,000, 신주 상장 11/4 예정). 1:1 무상증자 후 약 61,339,408주(유상 신주도 무상 배정 대상이라고 가정, 자기주식 배정 제외 여부 미반영). CB 등 기타 잠재주식은 확인 불가.",
+    "latest_reported_period": "2026 반기보고서는 제출된 것으로 추정하나 내용 미확인. 3Q26 잠정실적은 확인되지 않음. 3분기보고서 기한 2026-11-16.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "인체조직(무세포 진피 등) 기반 재건·재생의료 제품(메가덤 등)과 인체조직 유래 스킨부스터(엘라비에 리투오)를 만들어 파는 바이오 소재 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-10-08",
+      "close_krw": 56400,
+      "source": "한경 코리아마켓 290650 페이지(10/08 장마감, -3.26%)"
+     }
+    ],
+    "upcoming_events": "유상증자 주금납입 2026-10-22 → 신주 상장 2026-11-04(10/12 정정, 기존 11/03). 1:1 무상증자 신주 상장 예정 2026-11-12(정정 전 11/11). 무상증자 신주배정기준일·권리락일은 확인 불가이며, 권리락 시 기준가가 약 1/2로 조정됨. 3분기보고서 기한 11/16. 조달자금으로 동탄 생산기지 확충. 증자 전 최대주주·FI가 지분 일부를 매각(팜이데일리).",
+    "data_flags": [
+     "가장 중요: 가격 기준(10/20 종가 63,300원)은 1:1 무상증자 권리락 전 가격이므로, 권리락 이후 주가·목표가·주당지표를 2:1로 조정해야 함",
+     "10/20 종가는 유상증자 발행가 39,100원보다 약 62% 높음",
+     "5/15 주식수 증가(+2,122,641주) 원인 확인 불가",
+     "유상증자 규모 1,406억원(초기) vs 약 1,446.7억원(확정가 39,100원 × 370만주로 계산)",
+     "웹검색 한도 소진으로 추가 검증 중단, 10/21·10/22 종가 확인 불가",
+     "52주 범위 42,150~125,000원(한경)"
+    ],
+    "sources": [
+     "https://www.chickstockfi.com/disclosures/20261012000188",
+     "https://m.news.nate.com/view/20260731n24865",
+     "https://pharm.edaily.co.kr/News/Read?newsId=05576006645546664",
+     "https://corp.tossinvest.com/ko/post?type=notice&id=24374&category=52",
+     "https://securities.miraeasset.com/hku/hku4042/p02.do?check_data=init&BaseDate11=20260904&Stcd3=29065&DataBit=01&DataBit2=1",
+     "https://markets.hankyung.com/stock/290650",
+     "https://www.chickstockfi.com/stocks/290650"
+    ]
+   },
+   {
+    "code": "314930",
+    "input_name": "바이오다인",
+    "legal_name": "주식회사 바이오다인",
+    "english_name": "BIODYNE Co., Ltd. (원문 미확인)",
+    "market": "KOSDAQ (데이터셋 소속부 기술성장기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 데이터셋에 10/20 종가가 있고, 독립적으로 확인한 최근 시세는 9/16 6,950원. 거래정지 정보는 찾지 못함. 유동성이 매우 낮음(데이터셋).",
+    "listing_history": "코스닥 기술성장기업부 상장(기술특례 계열로 추정). 상장일과 공모 내용은 원문 확인 불가. 2024-03 무상증자(코디네이터 데이터셋). 2025사업연도가 제27기. 분할·합병·사명변경은 확인되지 않음.",
+    "share_class": "보통주",
+    "halt_or_admin_issues": "전용 검증을 하지 못해 확인 불가. 2026-03-24 정기주총 결과 기재정정(이사 보수한도 찬성률을 26.3%로 수정)이 있었으나 이는 정정공시이며, 불성실공시 지정 여부는 확인 불가.",
+    "shares_listed": "29,764,103주(데이터셋, 2026-10-20). 치킨스탁 시총 2,024억원(9/16, 6,950원)을 역산하면 약 2,912만주로 약 64만주 차이가 남(자기주식 차감 등 원인 확인 불가).",
+    "treasury_shares": "확인 불가(위 약 64만주 차이가 자기주식일 가능성 있음, 미검증)",
+    "fully_diluted_shares": "확인 불가",
+    "latest_reported_period": "1Q26(매출 9억원(-5.4%), 영업손실 4억원, 순이익 2억원. 치킨스탁) 확인. 2026 반기보고서는 제출된 것으로 추정하나 내용 미확인. FY2025 연결 매출 약 70억원, 영업이익 약 6.5억원, 순이익 약 8.5억원. 3분기보고서 기한 2026-11-16.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "액상세포검사(LBC) 장비·시약과 자궁경부암 검체 자가채취 브러시(얼리팝)를 개발·제조하는 체외진단 기업(로슈와의 LBC 기술 계약은 기억 기반이며 미검증).",
+    "latest_closes_found": [
+     {
+      "date": "2026-09-16",
+      "close_krw": 6950,
+      "source": "치킨스탁 314930 페이지(9/16 기준)"
+     }
+    ],
+    "upcoming_events": "얼리팝이 EU MDR 적합성평가를 통과(2026-06 이데일리 보도)해 CE 인증서가 연내 발급될 전망이며, 러시아·베트남 출고 예정. 베트남 생산공장 투자 130억원(2025-08-20~2026-12-31, 2026-03-03 정정). 3분기보고서 기한 11/16. FY2026 사업보고서·정기주총 2027-03.",
+    "data_flags": [
+     "웹검색 한도 소진으로 추가 검증 중단",
+     "10/20 종가 6,140원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "유동성이 매우 낮음. 공매도 비중 6.33%(9/18)로 직전 20일 평균 4.75%보다 높음, 대차잔고 46억원",
+     "밸류에이션 지표가 높음(PER 약 337배, PBR 약 4.6배. 치킨스탁 9월)",
+     "상장일·상장 경로 미확인",
+     "3월 주총 전후 1만2천원대에서 9월 6,950원으로 급락"
+    ],
+    "sources": [
+     "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02109046645486640",
+     "https://news.nate.com/view/20260323n26582",
+     "https://m.news.nate.com/view/20260324n24709",
+     "https://news.nate.com/view/20260303n30752",
+     "https://www.chickstockfi.com/stocks/314930",
+     "https://www.chickstockfi.com/stocks/314930/short",
+     "https://www.chickstockfi.com/stocks/314930/disclosures"
+    ]
+   },
+   {
+    "code": "171090",
+    "input_name": "선익시스템",
+    "legal_name": "주식회사 선익시스템",
+    "english_name": "SUNIC SYSTEM Co., Ltd. (Investing.com 'Sunic System Ltd'; 원문 미확인)",
+    "market": "KOSDAQ (데이터셋 소속부 우량기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 회사 홈페이지 공시목록상 2026-10-14 공매도 과열종목으로 지정되어 공매도 거래가 금지됨(통상 익일 1거래일). 매매거래 자체는 정상이며 거래정지 정보는 찾지 못함.",
+    "listing_history": "코스닥 상장. 상장일과 경로는 원문 미확인(검색 예산 소진). 종목코드(171090)가 2013년경 부여된 코드라 코넥스를 거친 이전상장일 가능성이 있으나 미검증. 분할·합병·사명변경은 확인되지 않음.",
+    "share_class": "보통주",
+    "halt_or_admin_issues": "2026-02 말 단기급등(15일 +122.03%)과 상위 20개 계좌 매수관여로 시장경보 이력(투자주의 지정 및 투자경고 지정예고 관련, 톱스타뉴스). 2026-10-14 공매도 과열종목 지정(회사 홈페이지 공시목록 기준, KRX 원문 미확인). 관리종목·불성실공시 정보는 찾지 못함.",
+    "shares_listed": "10,127,626주(데이터셋, 2026-10-20). 시총 7,089억원(2026-09-15)을 역산하면 주가 약 70,000원으로 정합.",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "확인 불가",
+    "latest_reported_period": "2026 반기보고서는 제출된 것으로 추정(1Q26 매출 161억원(+1.3%), 치킨스탁). 3Q26: Investing.com 발표 예정일 2026-11-18, 법정기한 11/16. 잠정실적은 확인되지 않음.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "모바일·IT용 OLED와 마이크로 OLED(OLEDoS)용 증착기 등 OLED 증착장비를 만드는 디스플레이 장비 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-09-03",
+      "close_krw": 64700,
+      "source": "한경 코리아마켓 171090 컨센서스 페이지(9/3 종가 표기)"
+     }
+    ],
+    "upcoming_events": "3Q26 실적(Investing.com 기준 11/18 예정). 2026-01-08 공시한 Jinan Goerpixel Technology향 Micro OLED 양산용 증착장비 2,834만달러 계약의 납품·매출인식. IBK투자증권 3Q 추정(매출 1,253억원, 영업이익 300억원. 분기 기준인지 불명확). FY2026 사업보고서·정기주총 2027-03.",
+    "data_flags": [
+     "웹검색 한도 소진으로 추가 검증 중단",
+     "10/20 종가 78,500원은 독립 확인 못 함, 10/21·10/22 종가 확인 불가",
+     "회사 홈페이지 시세 82,900원(+10.83%)과 Investing.com 77,700원(+3.60%)은 기준일이 불명확",
+     "목표가 편차가 큼: DS투자증권 167,000원(2026-04-21), 한경 컨센서스 118,143원(2026-09-02)",
+     "IBK 3Q 추정치가 분기 기준인지 누적 기준인지 불명확",
+     "공매도 과열종목 지정은 KRX 원문 미확인"
+    ],
+    "sources": [
+     "http://sunic.co.kr/web/home.php?go=Cmenu_01",
+     "https://www.topstarnews.net/news/articleView.html?idxno=15986637",
+     "https://news.nate.com/view/20260108n16465",
+     "https://www.newspim.com/news/view/20260421000084",
+     "https://markets.hankyung.com/stock/171090/consensus",
+     "https://markets.hankyung.com/stock/171090",
+     "https://www.investing.com/equities/sunic-system-ltd-earnings",
+     "https://www.chickstockfi.com/stocks/171090"
+    ]
+   },
+   {
+    "code": "178320",
+    "input_name": "서진시스템",
+    "legal_name": "주식회사 서진시스템",
+    "english_name": "SEOJIN SYSTEM Co., Ltd. (Investing.com 'Seojin System Co Ltd'; 원문 미확인)",
+    "market": "KOSDAQ (데이터셋 소속부 중견기업부; KOSDAQ GLOBAL 아님)",
+    "tradable_now": "거래 가능. 10/21 종가 34,000원(-10.88%, 거래량 2,282,222주, 거래대금 815억원), 10/22에도 장중 거래(09:54 34,450원). 거래정지 정보는 찾지 못함.",
+    "listing_history": "코스닥 상장. 상장일과 경로는 원문 미확인(종목코드가 2013~14년경 부여된 코드라 코넥스 경유 가능성이 있으나 미검증). 분할·합병·사명변경은 확인되지 않음. 2026년 BW·CB 행사로 추가상장(3/16 261,115주, 4/3 83,792주, 4/30 50,000주, 5/29 54,000주, 6/15 18,990주 등). 2026-05-20 제3자배정 유상증자 4,026,846주(발행가 44,700원, 약 1,800억원, 4/23 결정, 의무보유 2026-05-20~2027-05-19) 상장. 2026-08 사모 CB 2,000억원(제39~42회) 발행 결의(3,000억원 영구채 계획 대체). 창업주 전동규 대표가 회장 체제로 전환(2026-08 더벨).",
+    "share_class": "보통주",
+    "halt_or_admin_issues": "2025~2026 시장경보·관리종목·불성실공시 지정 정보는 찾지 못함(전용 검증은 미실시). 재무 리스크: 1년 내 상환할 차입성 부채가 1조원 초과, 베트남 종속사 부가세 이슈, 영구채 조달 지연 가능성(IB토마토). 2Q26 말 순차입금 약 1조2,876억원(iM증권, 한경).",
+    "shares_listed": "63,723,489주(데이터셋, 2026-10-20). 10/21 기사 시총 2조1,666억원 ÷ 34,000원과 정합. 유상증자 직후 표기는 63,577,747주(톱스타) / 63,650,737주(위키리포트).",
+    "treasury_shares": "확인 불가",
+    "fully_diluted_shares": "추정 약 6,974만주 이상. 산식: 상장 63,723,489주 + 2026-08 CB 2,000억원 전량을 제39회 전환가 33,255원으로 전환한다고 가정할 때 약 6,014,133주 = 69,737,622주. 제40~42회 전환가와 리픽싱, 기존 CB/BW 미행사 잔량은 미반영(확인 불가).",
+    "latest_reported_period": "2026 반기보고서(2026-08-14): 2Q26 매출 4,102억원(+58.6% YoY), 영업손실 194억원(컨센서스 +181억원을 크게 하회), 상반기 누적 매출 약 7,000억원. 3Q26 잠정실적은 확인되지 않음. 기한 2026-11-16.",
+    "fiscal_year_end": "12월 31일",
+    "core_business": "베트남 생산기지의 금속가공·EMS 역량으로 ESS(에너지저장장치) 함체·장비, 반도체 장비 부품·모듈, 통신장비, 모바일 부품을 만드는 기업.",
+    "latest_closes_found": [
+     {
+      "date": "2026-10-16",
+      "close_krw": 39700,
+      "source": "톱스타뉴스 자동시세기사(10/16 39,700원 +12.78%)"
+     },
+     {
+      "date": "2026-10-20",
+      "close_krw": 38150,
+      "source": "톱스타뉴스 10/21 기사의 전일 종가(데이터셋과 일치; 한경 페이지는 38,250원으로 표기)"
+     },
+     {
+      "date": "2026-10-21",
+      "close_krw": 34000,
+      "source": "톱스타뉴스 idxno=16253739, 재경일보 마감분석(-4,150원, -10.88%)"
+     }
+    ],
+    "upcoming_events": "3Q26 실적(기한 11/16). 기존 CB/BW 행사로 인한 추가상장이 이어질 수 있음. 2026-08 CB 2,000억원(제39·41회는 30년 영구 CB, 제40·42회는 4년 CB. 제39회: 표면 2.0%, 만기 5.0%, 전환가 33,255원, 만기 2056-09-01)의 전환청구 개시 시점은 확인 불가(통상 발행 1년 후). 제3자배정 신주 4,026,846주 의무보유가 2027-05-19 만료되어 이후 매도 가능. FY2026 사업보고서·정기주총 2027-03.",
+    "data_flags": [
+     "10/22 종가 확인 불가(장중 09:54 34,450원, 시가 34,050원, 고가 35,350원, 저가 33,550원만 확인). 웹검색 한도 소진",
+     "10/20 종가: 한경 페이지 38,250원과 불일치. 데이터셋과 같은 톱스타 38,150원(=34,000+4,150) 채택",
+     "주가 34,000원이 2026-05 제3자배정 발행가 44,700원보다 낮고, 2026-08 CB 전환가 33,255원에 근접: 전환 오버행·리픽싱 리스크",
+     "2Q26 영업적자, 높은 부채, 단기 유동성 리스크",
+     "10/21 급락(-10.88%)의 원인 공시는 없음",
+     "52주 고가 83,300원, 저가 21,750원 또는 21,300원(출처별 상이)",
+     "상반기 사업비중(반도체장비 44.7%, ESS 29.9%)은 블로그 출처라 신뢰도 낮음",
+     "iM증권 목표가 68,000원(2026-08-20)"
+    ],
+    "sources": [
+     "https://www.topstarnews.net/news/articleView.html?idxno=16253739",
+     "https://news.jkn.co.kr/post/1039633",
+     "https://www.joongangenews.com/news/articleView.html?idxno=557330",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16249015",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16251600",
+     "https://www.digitaltoday.co.kr/news/articleView.html?idxno=659462",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16000611",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16021642",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16045807",
+     "https://www.topstarnews.net/news/articleView.html?idxno=16065145",
+     "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=178320&cn=",
+     "https://www.etoday.co.kr/news/view/2618466",
+     "https://www.cbci.co.kr/news/articleView.html?idxno=600758",
+     "https://www.bloter.net/news/articleView.html?idxno=672194",
+     "https://www.mt.co.kr/stock/2026/08/25/2026082509329658485",
+     "https://www.mt.co.kr/stock/2026/08/20/2026082008029688754",
+     "https://alphadistill.com/report/3195",
+     "https://www.hankyung.com/article/2026082010796",
+     "https://newstomato.com/ReadNews.aspx?no=1306012"
+    ]
+   }
+  ]
+ }
+}
