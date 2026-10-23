@@ -67,7 +67,8 @@ def pct(x, signed=True, d=1):
         return 'N/A'
     v = x * 100
     s = f'{v:+.{d}f}%' if signed else f'{v:.{d}f}%'
-    return s.replace('+-', '-').replace('-0.0%', '0.0%').replace('+0.0%', '0.0%')
+    s = s.replace('+-', '-').replace('-0.0%', '0.0%').replace('+0.0%', '0.0%')
+    return s.replace('-', '−')
 
 
 def cls(x):
@@ -114,7 +115,7 @@ def strip_svg(p10, med, mean, p90, lo, hi, w=150, h=20):
 def strip_scale(lo, hi, step, w=150):
     """분포 막대 머리글 눈금. 양 끝 글자는 안쪽으로 정렬해 잘리지 않게 한다."""
     sx = lambda v: 4 + (v - lo) / (hi - lo) * (w - 8)
-    fmt = lambda t: '0%' if abs(t) < 1e-9 else f'{t*100:+.0f}%'
+    fmt = lambda t: '0%' if abs(t) < 1e-9 else f'{t*100:+.0f}%'.replace('-', '−')
     lab = f'<text x="1" y="10" text-anchor="start">{fmt(lo)}</text><text x="{w-1}" y="10" text-anchor="end">{fmt(hi)}</text>'
     if lo < 0 < hi and sx(0) - 1 > 34 and (w - 1) - sx(0) > 34:
         lab += f'<text x="{sx(0):.1f}" y="10" text-anchor="middle">0%</text>'
@@ -143,7 +144,7 @@ def scatter_svg(g, key):
         if yv > y1 + 1e-9:
             break
         out.append(f'<line x1="{L}" x2="{W-R}" y1="{sy(yv):.1f}" y2="{sy(yv):.1f}" class="grid"/>'
-                   f'<text x="{L-6}" y="{sy(yv)+4:.1f}" text-anchor="end" class="tick">{yv*100:.0f}%</text>')
+                   f'<text x="{L-6}" y="{sy(yv)+4:.1f}" text-anchor="end" class="tick">{yv*100:.0f}%</text>'.replace('>-', '>−'))
         k += 1
     k = 0
     while True:
@@ -151,7 +152,7 @@ def scatter_svg(g, key):
         if xv > x1 + 1e-9:
             break
         out.append(f'<line y1="{T}" y2="{H-Bm}" x1="{sx(xv):.1f}" x2="{sx(xv):.1f}" class="grid"/>'
-                   f'<text x="{sx(xv):.1f}" y="{H-Bm+16}" text-anchor="middle" class="tick">{xv*100:.0f}%</text>')
+                   f'<text x="{sx(xv):.1f}" y="{H-Bm+16}" text-anchor="middle" class="tick">{xv*100:.0f}%</text>'.replace('>-', '>−'))
         k += 1
     if y0 < 0 < y1:
         out.append(f'<line x1="{L}" x2="{W-R}" y1="{sy(0):.1f}" y2="{sy(0):.1f}" class="axis"/>')
@@ -220,7 +221,7 @@ def part1():
             e = r.exp_cum if key == 'h1' else r.exp_ann
             sb = stab[(stab.code == r.code) & (stab.h == key)].stability.iloc[0] if stab is not None and len(stab[(stab.code == r.code) & (stab.h == key)]) else None
             rows.append(f'<tr><td class="l">{H_LABEL[key]}</td><td>{int(r.rank_bal)}</td><td class="l stick">{esc(r["name"])}</td>'
-                        f'{tsr_td(e)}<td>{r.sortino:.2f}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False, 0)}</td>'
+                        f'{tsr_td(e)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False, 0)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
     t = table([('기간', 'l'), ('균형 순위', ''), ('종목', 'l stick'), ('기대 TSR', ''), ('Sortino', ''), ('CVaR10', ''), ('손실확률', ''), ('신뢰도', ''), ('순위 안정성', '')], rows)
     return sec('p1', '1부. 핵심 결론', narr('core') + '<h3>기간별 균형형 상위 5</h3>' + t +
@@ -263,7 +264,7 @@ def part3():
             rows.append(f'<tr><td>{int(r.rank_bal)}</td><td class="l stick">{esc(r["name"])}</td>{tsr_td(r.exp_cum)}{ann}'
                         f'<td class="viz">{strip_svg(r.p10, r.median_cum, r.exp_cum, r.p90, lo, hi)}</td>'
                         f'{tsr_td(r.median_cum)}{tsr_td(r.p10)}{tsr_td(r.p90)}<td>{pct(r.p_loss, False)}</td><td>{pct(r.p_loss30, False)}</td>'
-                        f'{tsr_td(r.cvar10)}<td>{r.sortino:.2f}</td>{tsr_td(r.excess_vs_index_ann)}'
+                        f'{tsr_td(r.cvar10)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.excess_vs_index_ann)}'
                         f'<td>{int(r.rank_er)}</td><td>{int(r.rank_ra)}</td><td>{int(r.rank_agg)}</td><td>{int(r.rank_def)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
         head = [('균형', ''), ('종목', 'l stick'), ('기대 TSR(누적)', '')] + ([] if key == 'h1' else [('기대(연)', '')]) + \
