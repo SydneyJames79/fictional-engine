@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 11:13 KST
+갱신: 2026-10-23 11:14 KST
 
-메모: 엘앤씨바이오 3개 역할 완료
+메모: 퓨런티어 완료 — 26종목 3개 역할 전부 완료, 2차 반대심문·검증 5건 시작
 
 ## 고정된 설정
 
@@ -26,7 +26,7 @@
 | 295310 | 에이치브이엠 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 452430 | 사피엔반도체 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 418420 | 라온텍 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
-| 370090 | 퓨런티어 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
+| 370090 | 퓨런티어 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 010690 | 화신 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 290650 | 엘앤씨바이오 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 314930 | 바이오다인 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
@@ -101,7 +101,7 @@
 - `wf_0c379425-bc5`: V verify 삼성전자=done; I cross-exam 삼성전자=done
 - `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=done; G generalist 화신=done
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=done; G generalist 바이오다인=done
-- `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=running
+- `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=done
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=done; G generalist 사피엔반도체=done
 - `wf_8f2359cf-1b9`: S sensitivity=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=done; G generalist 케이엠더블유=done
@@ -111,6 +111,11 @@
 - `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=done
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=done; G generalist 쎄트렉아이=done
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=done
+- `wf_3a69747d-e9e`: I cross-exam 화신=running; V verify 화신=running
+- `wf_6b25a062-107`: V verify 라온텍=running; I cross-exam 라온텍=running
+- `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=running; I cross-exam 삼성에피스홀딩스=running
+- `wf_1750c915-51a`: V verify 인텔리안테크=running; I cross-exam 인텔리안테크=running
+- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=running; I cross-exam 쎄트렉아이=running
 
 ## 다음 단계
 
