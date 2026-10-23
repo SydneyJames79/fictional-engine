@@ -34,7 +34,7 @@ for b in H['priors']:
         for c, n in NAMES.items():
             if c in m or n in m:
                 bucket[c] = {'bucket': b['bucket'], 'alpha_vs_capm_prior_pct': b['alpha_vs_capm_prior_pct'],
-                             'prob_perm_loss_gt50_5y_pct': b['prob_perm_loss_gt50_5y_pct'], 'why': b['rationale'][:500]}
+                             'prob_perm_loss_gt50_5y_pct': b['prob_perm_loss_gt50_5y_pct']}
 I = {r['code']: r for r in aux('I_').values()}
 V = {r['code']: r for r in aux('V_').values()}
 
@@ -44,16 +44,20 @@ def short(s, n):
     return s if len(s) <= n else s[:n] + '…'
 
 
+def grp_str(groups):
+    return ' / '.join(f"{m} {g['p']}%: {g['tsr_pct']:+.1f}%" for m, g in groups.items())
+
+
 def analyst(r, p0):
     b = analyst_brief(r, p0)
     if not b:
         return None
-    return {'confidence': b['confidence'], 'confidence_reason': short(b['confidence_reason'], 250),
-            'view_vs_market': short(b['view_vs_market'], 450),
-            'dilution_assumed_pct': b['dilution_assumed'],
-            'by_h': {h: {'exp_tsr_pct': v['exp_tsr_pct'], 'exp_ann_pct': v['exp_ann_pct'], 'groups': v['groups']}
-                     for h, v in b['scenarios'].items()},
-            'top_risks': [short(x if isinstance(x, str) else json.dumps(x, ensure_ascii=False), 160) for x in b['risks'][:3]]}
+    d = b['dilution_assumed'] or {}
+    return {'confidence': b['confidence'], 'why': short(b['confidence_reason'], 150),
+            'view_vs_market': short(b['view_vs_market'], 260),
+            'net_share_change_pct_1y3y5y': [d.get('h1'), d.get('h3'), d.get('h5')],
+            'by_h': {h: f"E[TSR] {v['exp_tsr_pct']:+.1f}% (연 {v['exp_ann_pct']:+.1f}%) | {grp_str(v['groups'])}" for h, v in b['scenarios'].items()},
+            'top_risks': [short(x if isinstance(x, str) else json.dumps(x, ensure_ascii=False), 110) for x in b['risks'][:2]]}
 
 
 # 코디네이터(A)가 데이터로 직접 확인한 사항. J가 같은 위험을 두 번 반영하지 않도록 전달한다.
@@ -82,28 +86,26 @@ for c, n in NAMES.items():
         grp = {}
         for m, t in br[(br.code == c) & (br.h == h)].groupby('macro'):
             grp[m] = {'p': round(t.prob.sum() * 100), 'tsr_pct_after_shrink': round(((t.prob * (t.price + t['div'])).sum() / t.prob.sum() / p0 - 1) * 100, 1)}
-        pre[h] = {'exp_tsr_pct': round(x.exp_cum * 100, 1), 'exp_ann_pct': round(x.exp_ann * 100, 1),
-                  'blend_before_shrink_tsr_pct': round(x.e_raw_cum * 100, 1),
-                  'median_pct': round(x.median_cum * 100, 1), 'p10_pct': round(x.p10 * 100, 1), 'p90_pct': round(x.p90 * 100, 1),
-                  'p_loss_pct': round(x.p_loss * 100), 'cvar10_pct': round(x.cvar10 * 100, 1),
-                  'shrink_weight_on_analysts': round(x.shrink_w, 2), 'prior_ann_pct': round(x.prior_ann * 100, 1),
-                  'rank_balanced': int(x.rank_bal), 'rank_expected': int(x.rank_er), 'groups_after_shrink': grp}
+        gtxt = ' / '.join(f"{m} {g['p']}%: {g['tsr_pct_after_shrink']:+.1f}%" for m, g in grp.items())
+        pre[h] = (f"E[TSR] {x.exp_cum*100:+.1f}% (연 {x.exp_ann*100:+.1f}%), 축소 전 혼합 {x.e_raw_cum*100:+.1f}%, 중앙 {x.median_cum*100:+.1f}%, "
+                  f"P10 {x.p10*100:+.1f}%, P90 {x.p90*100:+.1f}%, 손실확률 {x.p_loss*100:.0f}%, CVaR10 {x.cvar10*100:+.1f}%, "
+                  f"축소가중 w {x.shrink_w:.2f}, 사전값 연 {x.prior_ann*100:.1f}%, 균형순위 {int(x.rank_bal)}, 기대순위 {int(x.rank_er)} | 축소 후 그룹: {gtxt}")
     f = None
     if fo:
         fr = fo['result']
-        f = {'risk_score': fr.get('forensic_risk_score'), 'expected_net_share_change_pct': fr.get('expected_net_share_change_pct'),
-             'red_flags': [short(f"[{y['severity']}] {y['issue']}: {y['evidence']}", 220) for y in fr.get('red_flags', [])[:4]],
-             'recommended_adjustments': short(fr.get('recommended_adjustments'), 500),
-             'tail_risk_notes': short(fr.get('tail_risk_notes'), 350)}
+        f = {'risk_score': fr.get('forensic_risk_score'), 'expected_net_share_change_pct': {k: fr.get('expected_net_share_change_pct', {}).get(k) for k in ('h1', 'h3', 'h5')},
+             'red_flags': [short(f"[{y['severity']}] {y['issue']}: {y['evidence']}", 160) for y in fr.get('red_flags', [])[:3]],
+             'recommended_adjustments': short(fr.get('recommended_adjustments'), 300),
+             'tail_risk_notes': short(fr.get('tail_risk_notes'), 200)}
     g = G.get(c, {})
     item = {'code': c, 'name': n, 'sector': SECTOR[c], 'market': r['market'], 'p0': p0,
             'mcap_bn_krw': round(float(r['mcap_krw_bn'])), 'adv60_bn_krw': round(float(r['adv60_krw_bn']), 1),
             'vol_1y_pct': round(float(r['vol_1y']) * 100), 'dd_from_52w_high_pct': round(float(r['dd_from_52w_high']) * 100),
             'default_w_spec': round(settings['w_spec'].get(c, 0.5), 2),
-            'dilution_fix_applied': settings['dilution_fix'].get(c) or None,
+            'dilution_fix_applied': {r: {h: round(f, 3) for h, f in d.items() if f < 0.9999} for r, d in (settings['dilution_fix'].get(c) or {}).items() if any(f < 0.9999 for f in d.values())} or None,
             'prelim': pre, 'specialist': analyst(spec, p0), 'generalist': analyst(gen, p0), 'forensic': f,
             'risk_G': {'sigma_1y_pct': g.get('sigma_1y_pct'), 'sigma_lr_pct': g.get('sigma_lr_pct'), 'perm_loss_risk_score_1to5': g.get('perm_loss_risk_score'),
-                       'liquidity': g.get('liquidity_risk'), 'gap': g.get('gap_risk'), 'discrete_events': short(g.get('discrete_event_risk'), 400)},
+                       'liquidity': g.get('liquidity_risk'), 'discrete_events': short(g.get('discrete_event_risk'), 250)},
             'base_rate_H': bucket.get(c)}
     if c in V:
         item['verification_V'] = {'material_errors': short(V[c]['material_errors'], 1300),
