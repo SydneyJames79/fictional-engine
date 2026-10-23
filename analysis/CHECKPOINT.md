@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 11:12 KST
+갱신: 2026-10-23 11:13 KST
 
-메모: 쎄트렉아이 3개 역할 완료
+메모: 엘앤씨바이오 3개 역할 완료
 
 ## 고정된 설정
 
@@ -28,7 +28,7 @@
 | 418420 | 라온텍 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 370090 | 퓨런티어 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
 | 010690 | 화신 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
-| 290650 | 엘앤씨바이오 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
+| 290650 | 엘앤씨바이오 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 314930 | 바이오다인 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 171090 | 선익시스템 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 178320 | 서진시스템 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
@@ -103,7 +103,6 @@
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=done; G generalist 바이오다인=done
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=running
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=done; G generalist 사피엔반도체=done
-- `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=running
 - `wf_8f2359cf-1b9`: S sensitivity=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=done; G generalist 케이엠더블유=done
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=done; G generalist 서진시스템=done
@@ -111,6 +110,7 @@
 - `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=done; G generalist 인텔리안테크=done
 - `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=done
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=done; G generalist 쎄트렉아이=done
+- `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=done
 
 ## 다음 단계
 
