@@ -362,7 +362,22 @@ def part6():
     rows2 = [f'<tr><td class="l stick">{esc(r["name"])}</td><td>{pct(r.p_loss30, False)}</td>{tsr_td(r.cvar10)}{tsr_td(r.median_cum)}{tsr_td(r.exp_ann)}'
              f'<td>{G.get(r.code, {}).get("perm_loss_risk_score", "N/A")}</td><td>{esc(G.get(r.code, {}).get("liquidity_risk", ""))}</td></tr>' for _, r in hr.iterrows()]
     head2 = [('종목', 'l stick'), ('5년 −30% 이하 확률', ''), ('5년 CVaR10', ''), ('5년 중앙값', ''), ('5년 기대(연)', ''), ('영구손실 위험', ''), ('유동성 위험', '')]
-    return sec('p6', '6부. 하위·고위험 종목', '<h3>기간별 균형형 하위 5</h3>' + table(head, rows) + '<h3>5년 꼬리위험 상위</h3>' + table(head2, rows2) + narr('bottom', ''))
+    # 모형의 5년 −50% 이하 확률과 베이스레이트(H) 버킷 기저율 비교
+    g5 = rk[rk.h == 'h5'].set_index('code')
+    rows3 = []
+    for b in HB['priors']:
+        mem = [c for c in NAMES if any(c in m for m in b['members'])]
+        if not mem or 'p_loss50' not in g5.columns:
+            continue
+        vals = [float(g5.loc[c, 'p_loss50']) for c in mem if c in g5.index]
+        names = ', '.join(NAMES[c] for c in mem)
+        rows3.append(f'<tr><td class="l">{esc(b["bucket"])}</td><td class="l wrap">{esc(names)}</td><td>{b["prob_perm_loss_gt50_5y_pct"]:.0f}%</td>'
+                     f'<td>{sum(vals)/len(vals)*100:.1f}%</td><td>{min(vals)*100:.1f}~{max(vals)*100:.1f}%</td></tr>')
+    head3 = [('베이스레이트 버킷', 'l'), ('종목', 'l'), ('H 기저율(5년 −50% 초과 손실)', ''), ('모형 평균', ''), ('모형 범위', '')]
+    calib = ('<h3>꼬리 확률 점검: 모형 대 베이스레이트</h3>' + table(head3, rows3) +
+             '<p class="note">H 기저율은 버킷별 5년 영구손실(−50% 초과) 확률 추정치다. 모형 값은 5년 누적 TSR이 −50% 미만인 경로 비율이다. '
+             '모형이 대체로 더 높게 나오는 까닭은 2026년 급등락으로 커진 변동성 가정 때문이며, 이 차이는 손실확률·CVaR를 보수적으로 만든다.</p>')
+    return sec('p6', '6부. 하위·고위험 종목', '<h3>기간별 균형형 하위 5</h3>' + table(head, rows) + '<h3>5년 꼬리위험 상위</h3>' + table(head2, rows2) + calib + narr('bottom', ''))
 
 
 def part7():
@@ -398,11 +413,11 @@ def part7():
 def part8():
     body = narr('sensitivity_lead', '')
     if sens is not None and stab is not None:
-        label = {'macro_bear': '거시 비관 45%', 'macro_bull': '거시 낙관 35%', 'w_spec_lo': '전문가 가중 0.35', 'w_spec_hi': '전문가 가중 0.65', 'prior_heavy': '축소 2배',
+        label = {'macro_bear': '거시 비관 45%', 'macro_bull': '거시 낙관 35%', 'w_spec_lo': '전문가 가중 0.35', 'w_spec_hi': '전문가 가중 0.65', 'prior_heavy': '축소 2배', 'vol_low': '변동성 −15%',
                  'shock_krw_strong_10pct': '원화 10% 강세', 'shock_rates_up_100bp': '금리 +100bp', 'shock_exit_multiple_down_20pct': '출구배수 −20%',
                  'shock_memory_ai_capex_down': '메모리·AI capex −20%', 'shock_auto_tariff_25pct': '자동차 관세 25%', 'shock_bio_pos_down': '성공확률 −20%',
                  'shock_extra_dilution_5pct': '추가 희석 5%', 'shock_top_customer_loss': '최대 고객 이탈'}
-        assump = ['macro_bear', 'macro_bull', 'w_spec_lo', 'w_spec_hi', 'prior_heavy']
+        assump = ['macro_bear', 'macro_bull', 'w_spec_lo', 'w_spec_hi', 'prior_heavy', 'vol_low']
         shocks = [r for r in sens.run.unique() if r.startswith('shock_')]
 
         def cell(run, key, c, b0):
@@ -429,7 +444,7 @@ def part8():
             body += (f'<h3>{H_LABEL[key]}</h3>' + table(head, rows, 'sens') +
                      f'<details><summary>{H_LABEL[key]} 스트레스 충격별 균형 순위 보기</summary>' + table(head2, rows2, 'sens') + '</details>')
         body += ('<p class="note">가정 변경 열은 그 가정만 바꿔 다시 계산한 균형형 순위다(같은 난수 시드, 6만 경로). 거시 비관은 기준·낙관·비관 확률을 45/10/45로, 거시 낙관은 45/35/20으로 바꾸고 사전값의 지수 기대도 같이 바꾼다. '
-                 '축소 2배는 분석가 쪽 가중치를 절반으로 줄여 사전값 쪽으로 더 당긴 경우다. 기준보다 3계단 이상 오르면 빨강, 3계단 이상 내리면 파랑으로 표시했다. '
+                 '축소 2배는 분석가 쪽 가중치를 절반으로 줄여 사전값 쪽으로 더 당긴 경우다. 변동성 −15%는 모든 종목의 목표 변동성을 15% 낮춘 경우로, 6부의 꼬리 확률 점검에서 모형 꼬리가 베이스레이트보다 두껍게 나온 점을 확인하려고 넣었다. 기준보다 3계단 이상 오르면 빨강, 3계단 이상 내리면 파랑으로 표시했다. '
                  '추정오차 구간은 기대수익에 두 가지 오차를 더해 4,000번 다시 순위를 매긴 결과의 10~90% 구간이다. 하나는 종목 고유 오차로, 전문가·일반 분석가 차이와 그 기간의 중앙값을 합쳐 축소 가중치와 최종 신뢰도에 비례해 키운다. '
                  '다른 하나는 사전값 오차로, 베이스레이트 버킷마다 연 1.5%p의 공통 충격을 사전값 비중만큼 준다. '
                  '판정 기준은 다음과 같다. 안정은 추정오차 구간 폭 4계단 이하이면서 가정 변경에 따른 순위 폭 3계단 이하다. 주의는 각각 9계단 이하, 6계단 이하다. 나머지는 불안정이다. '

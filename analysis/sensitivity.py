@@ -11,6 +11,7 @@
 - macro_bear / macro_bull: 거시 확률 45/10/45, 45/35/20(사전값의 지수 기대도 함께 바꾼다)
 - w_spec_lo / w_spec_hi: 전문가 가중 0.35 / 0.65 일괄
 - prior_heavy: 분석가 쪽 축소 가중치를 절반으로(사전값 쪽으로 더 끌어당김)
+- vol_low: 목표 변동성을 15% 낮춤(모형 꼬리가 베이스레이트보다 두꺼운 점 점검)
 - S 충격 8종: 원화 10% 강세, 금리 +100bp, 출구배수 -20%, 메모리·AI capex 하향, 자동차 관세 25%,
   임상·인허가 성공확률 -20%, 추가 희석 5%, 최대 고객 이탈(종목별 탄력도는 Agent S 추정)
 - 가중치 프로필: 공격형(75/15/10), 방어형(40/35/25)은 기본 실행의 점수로 계산한다.
@@ -58,12 +59,15 @@ def load_adjustments():
     return adj
 
 
-def run(stocks, settings, adjustments, macro_probs=None, value_shocks=None, w_override=None, shrink_scale=1.0):
+def run(stocks, settings, adjustments, macro_probs=None, value_shocks=None, w_override=None, shrink_scale=1.0, vol_scale=1.0):
     idx = index_exp(macro_probs) if macro_probs else rq.IDX
     weights = dict(settings['w_spec'])
     if w_override is not None:
         weights = {c: w_override for c in weights}
     saved = pipeline.shrink_weight
+    saved_mr = dict(pipeline.MEANREV)
+    if vol_scale != 1.0:
+        pipeline.MEANREV.update({k: v * vol_scale for k, v in saved_mr.items()})
     if shrink_scale != 1.0:
         pipeline.shrink_weight = lambda *a, **k: (saved(*a, **k)[0] * shrink_scale, saved(*a, **k)[1])
     frames = []
@@ -75,6 +79,7 @@ def run(stocks, settings, adjustments, macro_probs=None, value_shocks=None, w_ov
             frames.append(df)
     finally:
         pipeline.shrink_weight = saved
+        pipeline.MEANREV.update(saved_mr)
     return pd.concat(frames)
 
 
@@ -87,7 +92,8 @@ def main():
             perm[s['code']] = s['perm_loss_risk_score']
     runs = {'base': {}, 'macro_bear': {'macro_probs': {'기준': 0.45, '낙관': 0.10, '비관': 0.45}},
             'macro_bull': {'macro_probs': {'기준': 0.45, '낙관': 0.35, '비관': 0.20}},
-            'w_spec_lo': {'w_override': 0.35}, 'w_spec_hi': {'w_override': 0.65}, 'prior_heavy': {'shrink_scale': 0.5}}
+            'w_spec_lo': {'w_override': 0.35}, 'w_spec_hi': {'w_override': 0.65}, 'prior_heavy': {'shrink_scale': 0.5},
+            'vol_low': {'vol_scale': 0.85}}
     shocks = {}
     S = rq.load_aux('S_')
     if S:
@@ -106,7 +112,7 @@ def main():
             base_df = rk.copy()
         for _, r in rk.iterrows():
             rows.append({'run': name, 'code': r.code, 'name': r['name'], 'h': r.h, 'exp_cum': r.exp_cum, 'exp_ann': r.exp_ann,
-                         'sortino': r.sortino, 'cvar10': r.cvar10, 'rank_bal': int(r.rank_bal), 'rank_er': int(r.rank_er),
+                         'sortino': r.sortino, 'cvar10': r.cvar10, 'p_loss': r.p_loss, 'p_loss50': r.p_loss50, 'rank_bal': int(r.rank_bal), 'rank_er': int(r.rank_er),
                          'rank_agg': int(r.rank_agg), 'rank_def': int(r.rank_def)})
         print('done', name, flush=True)
     sr = pd.DataFrame(rows)
@@ -164,7 +170,7 @@ def main():
             r = rank_desc(score)
             rank_draws[b] = r
             top5 += (r <= 5)
-        ASSUMP = ['base', 'macro_bear', 'macro_bull', 'w_spec_lo', 'w_spec_hi', 'prior_heavy']
+        ASSUMP = ['base', 'macro_bear', 'macro_bull', 'w_spec_lo', 'w_spec_hi', 'prior_heavy', 'vol_low']
         for i, r in g.iterrows():
             sub = sr[(sr.code == r.code) & (sr.h == key)]
             a_ranks = list(sub[sub.run.isin(ASSUMP)].rank_bal) + [int(r.rank_agg), int(r.rank_def)]
