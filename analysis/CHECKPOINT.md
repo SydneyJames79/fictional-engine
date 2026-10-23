@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 10:54 KST
+갱신: 2026-10-23 11:00 KST
 
-메모: batch3 전문가·서진·H·I/V 결과 수집
+메모: J 심사·민감도 코드 추가, 11종목 재개 중
 
 ## 고정된 설정
 
@@ -95,19 +95,19 @@
 - `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=done; G generalist 고영=done
 - `wf_32739f7e-1b3`: I cross-exam 현대모비스=done; V verify 현대모비스=done
 - `wf_4f6d0d2a-6d6`: V verify SK하이닉스=done; I cross-exam SK하이닉스=done
-- `wf_0c379425-bc5`: V verify 삼성전자=done; I cross-exam 삼성전자=failed
-- `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=failed; G generalist 화신=failed
-- `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=failed; G generalist 쎄트렉아이=failed
-- `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=failed; G generalist 케이엠더블유=failed
-- `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=failed; G generalist 퓨런티어=failed
-- `wf_a76089cb-89d`: V verify 현대차=done; I cross-exam 현대차=failed
-- `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=failed; G generalist 바이오다인=failed
-- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=failed; G generalist 인텔리안테크=failed
-- `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=failed; G generalist RFHIC=failed
-- `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=failed; G generalist 사피엔반도체=failed
-- `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=failed; G generalist 엘앤씨바이오=failed
-- `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=done; G generalist 서진시스템=failed
-- `wf_abf1369d-9e6`: D specialist 라온텍=done; E forensic 라온텍=failed; G generalist 라온텍=failed
+- `wf_a76089cb-89d`: V verify 현대차=running; I cross-exam 현대차=running
+- `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=running
+- `wf_0c379425-bc5`: V verify 삼성전자=running; I cross-exam 삼성전자=running
+- `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=running; G generalist 화신=running
+- `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=running; G generalist 케이엠더블유=running
+- `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=running; G generalist 바이오다인=running
+- `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=running; G generalist 퓨런티어=running
+- `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=running; G generalist 사피엔반도체=running
+- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=running; G generalist 인텔리안테크=running
+- `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=running; G generalist 엘앤씨바이오=running
+- `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=running; G generalist RFHIC=running
+- `wf_abf1369d-9e6`: D specialist 라온텍=done; E forensic 라온텍=running; G generalist 라온텍=running
+- `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=running; G generalist 서진시스템=running
 
 ## 다음 단계
 

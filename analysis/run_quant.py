@@ -36,12 +36,24 @@ def load_aux(prefix):
     return out
 
 
+def to_pipeline_adj(a):
+    """J의 채택값(거시 그룹별 배수·추가 꼬리)을 pipeline 형식으로 바꾼다. 범위를 벗어난 값은 잘라낸다."""
+    clip = lambda x: min(max(float(x), 0.80), 1.15)
+    out = {}
+    for h, m in a.items():
+        out[h] = {'macro_value_mult': {'기준': clip(m['base_mult']), '낙관': clip(m['bull_mult']), '비관': clip(m['bear_mult'])}}
+        tp = min(max(float(m.get('extra_tail_prob_pct', 0)), 0.0), 15.0) / 100
+        if tp > 0:
+            out[h]['extra_tail'] = {'prob': tp, 'price_frac': min(max(float(m['extra_tail_price_frac']), 0.0), 1.0)}
+    return out
+
+
 def beta_fwd(r):
     return 0.67 * (0.5 * r['beta_1y_KOSPI'] + 0.5 * r['beta_3y_KOSPI']) + 0.33
 
 
 def build_inputs():
-    stocks, settings = {}, {'dilution_fix': {}, 'w_spec': {}, 'prior_ann': {}, 'sigma': {}, 'notes': []}
+    stocks, settings = {}, {'dilution_fix': {}, 'w_spec': {}, 'prior_ann': {}, 'sigma': {}, 'beta_fwd': {}, 'alpha_H': {}, 'notes': []}
     # H 사전값(버킷 알파). 없으면 0.
     h = load_aux('H_base_rates')
     alpha = {}
@@ -54,7 +66,7 @@ def build_inputs():
     # G 위험 검토(시그마 덮어쓰기)
     g = load_aux('G_risk_review')
     gmap = {s['code']: s for s in g[-1]['result']['stocks']} if g else {}
-    judge = load_aux('J_')
+    judge = load_aux('J_') if STAGE != 'prelim' else []
     jw = {}
     if judge:
         for s in judge[-1]['result'].get('stocks', []):
@@ -95,6 +107,8 @@ def build_inputs():
         b = beta_fwd(r)
         pr = {k: RF[k] + b * (IDX['KOSPI'][k] - RF[k]) + alpha.get(c, 0.0) for k in ('h1', 'h3', 'h5')}
         settings['prior_ann'][c] = pr
+        settings['beta_fwd'][c] = b
+        settings['alpha_H'][c] = alpha.get(c, 0.0)
         s1, slr = forward_sigma(r.to_dict())
         if c in gmap:
             s1, slr = gmap[c]['sigma_1y_pct'] / 100, gmap[c]['sigma_lr_pct'] / 100
@@ -106,12 +120,13 @@ def build_inputs():
 
 def main():
     stocks, settings = build_inputs()
-    # 반대심문 채택분(최종 심사)
+    # 반대심문 채택분(최종 심사). 예비 단계에서는 쓰지 않는다.
     adjustments = {}
-    for j in load_aux('J_'):
+    for j in (load_aux('J_') if STAGE != 'prelim' else []):
         for s in j['result'].get('stocks', []):
             if s.get('adjustments'):
-                adjustments[s['code']] = s['adjustments']
+                adjustments[s['code']] = to_pipeline_adj(s['adjustments'])
+    settings['adjustments'] = adjustments
     # 기간별 사전값을 쓰기 위해 기간마다 따로 돌린다
     frames, br_frames, logs = [], [], []
     for key in ('h1', 'h3', 'h5'):

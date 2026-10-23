@@ -164,8 +164,8 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
                 # 분석가별 기대(연환산) — 축소 가중치 계산용
                 e_role = {}
                 for role, t in trees.items():
-                    e = tree_expectation(t, p0) * (vm)
-                    e_role[role] = e ** (1 / T) - 1
+                    ta = [(m, n, p, price * vm * mvm.get(m, 1.0), div, nar) for m, n, p, price, div, nar in t]
+                    e_role[role] = tree_expectation(ta, p0) ** (1 / T) - 1
                 cs = CONF.get(s['spec']['confidence'], 1) if s.get('spec') else 1
                 cg = CONF.get(s['gen']['confidence'], 1) if s.get('gen') else 1
                 es = e_role.get('spec', e_role.get('gen'))
