@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 11:09 KST
 
-메모: 바이오다인 3개 역할 완료
+메모: 화신 3개 역할 완료
 
 ## 고정된 설정
 
@@ -27,7 +27,7 @@
 | 452430 | 사피엔반도체 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 418420 | 라온텍 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
 | 370090 | 퓨런티어 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
-| 010690 | 화신 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
+| 010690 | 화신 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 290650 | 엘앤씨바이오 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
 | 314930 | 바이오다인 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 171090 | 선익시스템 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
@@ -35,10 +35,10 @@
 | 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 107640 | 한중엔시에스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 218410 | RFHIC | 완료(10회 검색) | 대기/미완 | 완료(4회) |
-| 189300 | 인텔리안테크 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
+| 189300 | 인텔리안테크 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
 | 099320 | 쎄트렉아이 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
 | 403870 | HPSP | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
-| 032500 | 케이엠더블유 | 완료(10회 검색) | 대기/미완 | 대기/미완 |
+| 032500 | 케이엠더블유 | 완료(10회 검색) | 대기/미완 | 완료(4회) |
 | 098460 | 고영 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 232140 | 와이씨 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 042700 | 한미반도체 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
@@ -98,17 +98,17 @@
 - `wf_a76089cb-89d`: V verify 현대차=done; I cross-exam 현대차=running
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=running
 - `wf_0c379425-bc5`: V verify 삼성전자=done; I cross-exam 삼성전자=running
-- `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=done; G generalist 화신=running
-- `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=running; G generalist 케이엠더블유=running
+- `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=done; G generalist 화신=done
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=done; G generalist 바이오다인=done
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=running
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=done; G generalist 사피엔반도체=done
-- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=running; G generalist 인텔리안테크=running
+- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=done; G generalist 인텔리안테크=running
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=running
 - `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=running
 - `wf_abf1369d-9e6`: D specialist 라온텍=done; E forensic 라온텍=done; G generalist 라온텍=running
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=done; G generalist 서진시스템=running
 - `wf_8f2359cf-1b9`: S sensitivity=running
+- `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=done; G generalist 케이엠더블유=running
 
 ## 다음 단계
 
