@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 11:10 KST
 
-메모: 서진시스템 일반 분석가 완료
+메모: 현대차 반대심문 완료
 
 ## 고정된 설정
 
@@ -56,6 +56,7 @@
 - H base rates
 - I cross-exam SK하이닉스
 - I cross-exam 현대모비스
+- I cross-exam 현대차
 - V verify SK하이닉스
 - V verify 삼성전자
 - V verify 현대모비스
@@ -95,7 +96,7 @@
 - `wf_b4e8daa5-88c`: D specialist 고영=done; E forensic 고영=done; G generalist 고영=done
 - `wf_32739f7e-1b3`: I cross-exam 현대모비스=done; V verify 현대모비스=done
 - `wf_4f6d0d2a-6d6`: V verify SK하이닉스=done; I cross-exam SK하이닉스=done
-- `wf_a76089cb-89d`: V verify 현대차=done; I cross-exam 현대차=running
+- `wf_a76089cb-89d`: V verify 현대차=done; I cross-exam 현대차=done
 - `wf_0c379425-bc5`: V verify 삼성전자=done; I cross-exam 삼성전자=running
 - `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=done; G generalist 화신=done
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=done; G generalist 바이오다인=done
