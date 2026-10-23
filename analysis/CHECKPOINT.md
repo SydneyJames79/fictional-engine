@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 11:14 KST
+갱신: 2026-10-23 11:28 KST
 
-메모: 퓨런티어 완료 — 26종목 3개 역할 전부 완료, 2차 반대심문·검증 5건 시작
+메모: 화신 반대심문·검증 완료
 
 ## 고정된 설정
 
@@ -58,10 +58,16 @@
 - I cross-exam 삼성전자
 - I cross-exam 현대모비스
 - I cross-exam 현대차
+- I cross-exam 화신
 - V verify SK하이닉스
+- V verify 라온텍
+- V verify 삼성에피스홀딩스
 - V verify 삼성전자
+- V verify 쎄트렉아이
+- V verify 인텔리안테크
 - V verify 현대모비스
 - V verify 현대차
+- V verify 화신
 
 ## 실행 기록(재개용 run ID)
 
@@ -111,11 +117,11 @@
 - `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=done
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=done; G generalist 쎄트렉아이=done
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=done
-- `wf_3a69747d-e9e`: I cross-exam 화신=running; V verify 화신=running
-- `wf_6b25a062-107`: V verify 라온텍=running; I cross-exam 라온텍=running
-- `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=running; I cross-exam 삼성에피스홀딩스=running
-- `wf_1750c915-51a`: V verify 인텔리안테크=running; I cross-exam 인텔리안테크=running
-- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=running; I cross-exam 쎄트렉아이=running
+- `wf_1750c915-51a`: V verify 인텔리안테크=done; I cross-exam 인텔리안테크=running
+- `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=done; I cross-exam 삼성에피스홀딩스=running
+- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=done; I cross-exam 쎄트렉아이=running
+- `wf_6b25a062-107`: V verify 라온텍=done; I cross-exam 라온텍=running
+- `wf_3a69747d-e9e`: I cross-exam 화신=done; V verify 화신=done
 
 ## 다음 단계
 
