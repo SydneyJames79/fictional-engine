@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 11:30 KST
+갱신: 2026-10-23 11:31 KST
 
-메모: 쎄트렉아이 반대심문·검증 완료
+메모: 민감도 탄력도(S) 완료
 
 ## 고정된 설정
 
@@ -61,6 +61,7 @@
 - I cross-exam 현대모비스
 - I cross-exam 현대차
 - I cross-exam 화신
+- S sensitivity
 - V verify SK하이닉스
 - V verify 라온텍
 - V verify 삼성에피스홀딩스
@@ -111,7 +112,6 @@
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=done; G generalist 바이오다인=done
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=done
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=done; G generalist 사피엔반도체=done
-- `wf_8f2359cf-1b9`: S sensitivity=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=done; G generalist 케이엠더블유=done
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=done; G generalist 서진시스템=done
 - `wf_abf1369d-9e6`: D specialist 라온텍=done; E forensic 라온텍=done; G generalist 라온텍=done
@@ -124,6 +124,7 @@
 - `wf_3a69747d-e9e`: I cross-exam 화신=done; V verify 화신=done
 - `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=done; I cross-exam 삼성에피스홀딩스=done
 - `wf_586a1dbf-c0e`: V verify 쎄트렉아이=done; I cross-exam 쎄트렉아이=done
+- `wf_8f2359cf-1b9`: S sensitivity=done
 
 ## 다음 단계
 
