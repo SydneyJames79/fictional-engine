@@ -397,34 +397,43 @@ def part7():
 
 def part8():
     body = narr('sensitivity_lead', '')
-    if sens is not None:
-        runs = [r for r in sens.run.unique() if r != 'base']
-        label = {'macro_bear': '거시 비관 45%', 'macro_bull': '거시 낙관 35%', 'w_spec_lo': '전문가 가중 0.35', 'w_spec_hi': '전문가 가중 0.65', 'prior_heavy': '사전값 쪽 축소 2배',
+    if sens is not None and stab is not None:
+        label = {'macro_bear': '거시 비관 45%', 'macro_bull': '거시 낙관 35%', 'w_spec_lo': '전문가 가중 0.35', 'w_spec_hi': '전문가 가중 0.65', 'prior_heavy': '축소 2배',
                  'shock_krw_strong_10pct': '원화 10% 강세', 'shock_rates_up_100bp': '금리 +100bp', 'shock_exit_multiple_down_20pct': '출구배수 −20%',
-                 'shock_memory_ai_capex_down': '메모리·AI capex 하향', 'shock_auto_tariff_25pct': '자동차 관세 25%', 'shock_bio_pos_down': '임상·인허가 성공률 −20%',
+                 'shock_memory_ai_capex_down': '메모리·AI capex −20%', 'shock_auto_tariff_25pct': '자동차 관세 25%', 'shock_bio_pos_down': '성공확률 −20%',
                  'shock_extra_dilution_5pct': '추가 희석 5%', 'shock_top_customer_loss': '최대 고객 이탈'}
+        assump = ['macro_bear', 'macro_bull', 'w_spec_lo', 'w_spec_hi', 'prior_heavy']
+        shocks = [r for r in sens.run.unique() if r.startswith('shock_')]
+
+        def cell(run, key, c, b0):
+            m = sens[(sens.run == run) & (sens.h == key) & (sens.code == c)]
+            if not len(m):
+                return '<td>N/A</td>'
+            v = int(m.rank_bal.iloc[0])
+            dv = b0 - v
+            k = 'up' if dv >= 3 else ('down' if dv <= -3 else '')
+            return f'<td class="{k}">{v}</td>'
         for key in ('h1', 'h3', 'h5'):
-            base = sens[(sens.run == 'base') & (sens.h == key)].set_index('code')
             fin = rk[rk.h == key].set_index('code')
             order = fin.sort_values('rank_bal').index
-            rows = []
+            rows, rows2 = [], []
             for c in order:
-                cells = f'<td>{int(fin.loc[c, "rank_bal"])}</td><td>{int(fin.loc[c, "rank_agg"])}</td><td>{int(fin.loc[c, "rank_def"])}</td>'
-                for run in runs:
-                    m = sens[(sens.run == run) & (sens.h == key) & (sens.code == c)]
-                    v = int(m.rank_bal.iloc[0]) if len(m) else None
-                    b0 = int(base.loc[c, 'rank_bal'])
-                    dv = (b0 - v) if v is not None else 0
-                    k = 'up' if dv >= 3 else ('down' if dv <= -3 else '')
-                    cells += f'<td class="{k}">{v if v is not None else "N/A"}</td>'
-                srow = stab[(stab.code == c) & (stab.h == key)].iloc[0] if stab is not None else None
-                extra = (f'<td>{int(srow.boot_p10)}~{int(srow.boot_p90)}</td><td>{srow.p_top5*100:.0f}%</td><td>{stab_pill(srow.stability)}</td>' if srow is not None else '<td>N/A</td><td>N/A</td><td>N/A</td>')
-                rows.append(f'<tr><td class="l stick">{esc(NAMES[c])}</td>{cells}{extra}</tr>')
-            head = [('종목', 'l stick'), ('균형', ''), ('공격형', ''), ('방어형', '')] + [(label.get(r, r), '') for r in runs] + [('추정오차 80% 구간', ''), ('상위5 확률', ''), ('판정', '')]
-            body += f'<h3>{H_LABEL[key]}</h3>' + table(head, rows, 'sens')
-        body += ('<p class="note">시나리오 열은 그 가정만 바꿔 다시 계산한 균형형 순위다(같은 난수 시드, 6만 경로). 기준보다 3계단 이상 오르면 빨강, 3계단 이상 내리면 파랑. '
-                 '추정오차 구간은 종목별 기대수익에 분석가 간 차이와 신뢰도에 비례한 오차를 더해 4,000번 다시 순위를 매긴 결과의 10~90% 구간이다. '
-                 '판정: 순위 범위가 8계단 이상이거나 상위5 경계(상위5 확률 20~80%)에 걸치면서 5계단 이상 흔들리면 불안정, 5계단 이상이거나 경계에 걸치면 주의.</p>')
+                b0 = int(fin.loc[c, 'rank_bal'])
+                srow = stab[(stab.code == c) & (stab.h == key)].iloc[0]
+                cells = f'<td>{b0}</td><td>{int(fin.loc[c, "rank_agg"])}</td><td>{int(fin.loc[c, "rank_def"])}</td>' + ''.join(cell(r, key, c, b0) for r in assump)
+                rows.append(f'<tr><td class="l stick">{esc(NAMES[c])}</td>{cells}<td>{int(srow.boot_p10)}~{int(srow.boot_p90)}</td>'
+                            f'<td>{srow.p_top5*100:.0f}%</td><td>{stab_pill(srow.stability)}</td></tr>')
+                rows2.append(f'<tr><td class="l stick">{esc(NAMES[c])}</td><td>{b0}</td>' + ''.join(cell(r, key, c, b0) for r in shocks) + '</tr>')
+            head = [('종목', 'l stick'), ('균형', ''), ('공격형', ''), ('방어형', '')] + [(label[r], '') for r in assump] + [('추정오차 80% 구간', ''), ('상위5 확률', ''), ('판정', '')]
+            head2 = [('종목', 'l stick'), ('기준', '')] + [(label.get(r, r), '') for r in shocks]
+            body += (f'<h3>{H_LABEL[key]}</h3>' + table(head, rows, 'sens') +
+                     f'<details><summary>{H_LABEL[key]} 스트레스 충격별 균형 순위 보기</summary>' + table(head2, rows2, 'sens') + '</details>')
+        body += ('<p class="note">가정 변경 열은 그 가정만 바꿔 다시 계산한 균형형 순위다(같은 난수 시드, 6만 경로). 거시 비관은 기준·낙관·비관 확률을 45/10/45로, 거시 낙관은 45/35/20으로 바꾸고 사전값의 지수 기대도 같이 바꾼다. '
+                 '축소 2배는 분석가 쪽 가중치를 절반으로 줄여 사전값 쪽으로 더 당긴 경우다. 기준보다 3계단 이상 오르면 빨강, 3계단 이상 내리면 파랑으로 표시했다. '
+                 '추정오차 구간은 기대수익에 두 가지 오차를 더해 4,000번 다시 순위를 매긴 결과의 10~90% 구간이다. 하나는 종목 고유 오차로, 전문가·일반 분석가 차이와 그 기간의 중앙값을 합쳐 축소 가중치와 최종 신뢰도에 비례해 키운다. '
+                 '다른 하나는 사전값 오차로, 베이스레이트 버킷마다 연 1.5%p의 공통 충격을 사전값 비중만큼 준다. '
+                 '판정 기준은 다음과 같다. 안정은 추정오차 구간 폭 4계단 이하이면서 가정 변경에 따른 순위 폭 3계단 이하다. 주의는 각각 9계단 이하, 6계단 이하다. 나머지는 불안정이다. '
+                 '스트레스 충격(Agent S가 종목별 노출로 추정한 기간말 가치 변화)은 확률가중 시나리오가 아닌 가상 상황이라 판정에서 뺐다.</p>')
     return sec('p8', '8부. 민감도와 순위 안정성', body + narr('sensitivity', ''))
 
 

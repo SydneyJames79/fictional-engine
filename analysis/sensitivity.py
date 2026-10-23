@@ -112,15 +112,26 @@ def main():
     sr = pd.DataFrame(rows)
     sr.to_csv(os.path.join(OUT, 'sens_runs.csv'), index=False)
 
-    # 추정오차 부트스트랩: 기대수익에 종목별 오차를 더해 균형 점수 순위를 다시 매긴다.
-    # 오차 표준편차(연환산 로그) = sqrt((w*d/2)^2 + tau0^2); tau0는 최종 신뢰도별 1.5/2.5/4.0%p(3·5년),
-    # 1년은 누적 기준 5/8/12%p. d는 전문가-일반 분석가 차이, w는 축소 가중치.
+    # 추정오차 부트스트랩: 기대수익에 두 가지 오차를 더해 균형 점수 순위를 다시 매긴다.
+    # (1) 종목 고유 오차(분석가 쪽): sd = w x sqrt(d^2 + d_med^2) / sqrt(2) x k(신뢰도).
+    #     d는 전문가-일반 분석가 차이(로그, 1년은 누적·3·5년은 연환산), d_med는 같은 기간의 중앙값,
+    #     w는 축소 가중치, k는 최종 신뢰도 높음 0.8 / 보통 1.0 / 낮음 1.3. 두 분석가가 같은 팩트시트를 써서
+    #     차이가 실제 오차를 과소평가할 수 있으므로 중앙값을 하한처럼 더한다.
+    # (2) 사전값 오차(베이스레이트 버킷 공통): sd = (1 - w) x 1.5%p, 같은 H 버킷 종목에 같은 충격.
     conf = {}
     for j in rq.load_aux('J_'):
-        for s in j['result'].get('stocks', []):
-            conf[s['code']] = s.get('final_confidence', '보통')
-    TAU = {'h1': {'높음': 0.05, '보통': 0.08, '낮음': 0.12}, 'h3': {'높음': 0.015, '보통': 0.025, '낮음': 0.04},
-           'h5': {'높음': 0.015, '보통': 0.025, '낮음': 0.04}}
+        for s_ in j['result'].get('stocks', []):
+            conf[s_['code']] = s_.get('final_confidence', '보통')
+    KCONF = {'높음': 0.8, '보통': 1.0, '낮음': 1.3}
+    bucket_of = {}
+    hb = rq.load_aux('H_base_rates')
+    if hb:
+        for bi, b in enumerate(hb[-1]['result']['priors']):
+            for m in b['members']:
+                for c in stocks:
+                    if c in m:
+                        bucket_of[c] = bi
+    SIG_ALPHA = 0.015
     final = pd.read_csv(os.path.join(OUT, 'final_ranks.csv'), dtype={'code': str})
     rng = np.random.default_rng(7)
     stab = []
@@ -128,12 +139,18 @@ def main():
         g = g.reset_index(drop=True)
         T = {'h1': 1, 'h3': 3, 'h5': 5}[key]
         rf = rq.RF[key]
-        tau = np.array([math.sqrt((r.shrink_w * r.disagree_log_ann / 2) ** 2 + TAU[key][conf.get(r.code, '보통')] ** 2) for r in g.itertuples()])
+        d_med = float(g.disagree_log_ann.median())
+        tau = np.array([r.shrink_w * math.sqrt(r.disagree_log_ann ** 2 + d_med ** 2) / math.sqrt(2) * KCONF.get(conf.get(r.code, '보통'), 1.0)
+                        for r in g.itertuples()])
+        tau_b = np.array([(1 - r.shrink_w) * SIG_ALPHA for r in g.itertuples()])
+        bidx = np.array([bucket_of.get(c, 100 + k) for k, c in enumerate(g.code)])
+        ub = np.unique(bidx)
         B = 4000
         top5 = np.zeros(len(g))
         rank_draws = np.zeros((B, len(g)), int)
         for b in range(B):
-            delta = rng.standard_normal(len(g)) * tau
+            zb = dict(zip(ub, rng.standard_normal(len(ub))))
+            delta = rng.standard_normal(len(g)) * tau + np.array([zb[x] for x in bidx]) * tau_b
             if key == 'h1':
                 er = g.exp_cum.values + delta
                 er_ann = er
@@ -147,24 +164,29 @@ def main():
             r = rank_desc(score)
             rank_draws[b] = r
             top5 += (r <= 5)
+        ASSUMP = ['base', 'macro_bear', 'macro_bull', 'w_spec_lo', 'w_spec_hi', 'prior_heavy']
         for i, r in g.iterrows():
             sub = sr[(sr.code == r.code) & (sr.h == key)]
-            scen_ranks = list(sub.rank_bal) + [int(r.rank_agg), int(r.rank_def)]
+            a_ranks = list(sub[sub.run.isin(ASSUMP)].rank_bal) + [int(r.rank_agg), int(r.rank_def)]
+            s_ranks = list(sub[sub.run.str.startswith('shock_')].rank_bal)
             lo, hi = np.percentile(rank_draws[:, i], [10, 90])
             stab.append({'code': r.code, 'name': r['name'], 'h': key, 'rank_bal': int(r.rank_bal),
                          'rank_agg': int(r.rank_agg), 'rank_def': int(r.rank_def),
-                         'scen_min': int(min(scen_ranks)), 'scen_max': int(max(scen_ranks)),
+                         'assump_min': int(min(a_ranks)), 'assump_max': int(max(a_ranks)),
+                         'stress_min': int(min(s_ranks)) if s_ranks else None, 'stress_max': int(max(s_ranks)) if s_ranks else None,
                          'boot_p10': int(lo), 'boot_p90': int(hi), 'p_top5': top5[i] / B, 'tau': tau[i]})
     st = pd.DataFrame(stab)
 
     def flag(r):
-        width = max(r.scen_max - r.scen_min, r.boot_p90 - r.boot_p10)
-        border = 0.2 <= r.p_top5 <= 0.8
-        if width >= 8 or (border and width >= 5):
-            return '불안정'
-        if width >= 5 or border:
+        """가정 변경(가중 프로필·거시 확률·전문가 가중·축소 강도)과 추정오차 부트스트랩으로 판정한다.
+        스트레스 충격(S)은 확률가중이 아닌 가상 상황이라 판정에 넣지 않고 따로 보여 준다."""
+        wb = r.boot_p90 - r.boot_p10
+        ra = r.assump_max - r.assump_min
+        if wb <= 4 and ra <= 3:
+            return '안정'
+        if wb <= 9 and ra <= 6:
             return '주의'
-        return '안정'
+        return '불안정'
     st['stability'] = st.apply(flag, axis=1)
     st.to_csv(os.path.join(OUT, 'rank_stability.csv'), index=False)
     pd.set_option('display.width', 220)
