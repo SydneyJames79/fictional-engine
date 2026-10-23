@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 11:28 KST
+갱신: 2026-10-23 11:30 KST
 
-메모: 화신 반대심문·검증 완료
+메모: 삼성에피스홀딩스 반대심문·검증 완료, 검토 도시에 라벨 수정
 
 ## 고정된 설정
 
@@ -55,6 +55,7 @@
 - G risk review
 - H base rates
 - I cross-exam SK하이닉스
+- I cross-exam 삼성에피스홀딩스
 - I cross-exam 삼성전자
 - I cross-exam 현대모비스
 - I cross-exam 현대차
@@ -118,10 +119,10 @@
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=done; G generalist 쎄트렉아이=done
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=done
 - `wf_1750c915-51a`: V verify 인텔리안테크=done; I cross-exam 인텔리안테크=running
-- `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=done; I cross-exam 삼성에피스홀딩스=running
-- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=done; I cross-exam 쎄트렉아이=running
 - `wf_6b25a062-107`: V verify 라온텍=done; I cross-exam 라온텍=running
 - `wf_3a69747d-e9e`: I cross-exam 화신=done; V verify 화신=done
+- `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=done; I cross-exam 삼성에피스홀딩스=done
+- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=done; I cross-exam 쎄트렉아이=running
 
 ## 다음 단계
 

@@ -35,6 +35,7 @@ const prompt = `
 - You are Agent J (최종심사) inside a multi-agent institutional research system ranking 26 Korean stocks by expected total shareholder return (TSR) over 1y (to 2027-10-22), 3y (2029-10-22) and 5y (2031-10-22). Price basis: KRX official close of 2026-10-21. KRW. Analysis date 2026-10-22.
 - ${CTX.macro}
 - ${CTX.price_basis}
+- ${CTX.review_caveat}
 - Do NOT use WebSearch or any web tool. Judge only from the material below. Write in Korean, concisely, as a report (하다체/명사형 is fine).
 
 [How the numbers are produced after you]

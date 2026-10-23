@@ -119,6 +119,8 @@ ctx = {
     'macro': "Common macro scenarios (Agent C): 기준 50% / 낙관 20% / 비관 30%; probability-weighted index TSR KOSPI 1y 8.5%, 3y 7.7%/yr, 5y 8.9%/yr; "
              "KOSDAQ 6.0% / 5.7% / 7.0%. KTB 1y 3.688%, 3y 3.822%, 5y 3.965%. KOSPI closed 5,735.66 on 2026-10-21 and 5,533.77 on 2026-10-22 (-3.52%). "
              "2026 was an extreme boom-bust year (KOSPI record 9,114.55 on 2026-06-22).",
+    'review_caveat': "Cross-examination (I) agents were shown macro-group values labelled 'before shrink' that were in fact after shrinkage (the prior shift was already applied). "
+                     "Their multipliers act on pre-shrink branch prices, so the direction and size of each proposed multiplier is usable, but the 'expected TSR after adjustment' figures they quote can be off by the shrink shift.",
     'price_basis': "All TSRs are recomputed from the analysts' structured horizon prices (price_at_horizon + cum_dividends) against the 2026-10-21 close. "
                    "Some analyst narratives quote returns against the 2026-10-20 close; those narrative numbers are not used.",
     'method': "(1) Each analyst's tree is rescaled so that macro groups carry exactly 50/20/30. (2) If the forensic agent expects materially more dilution than an analyst assumed (+2pp or more), "

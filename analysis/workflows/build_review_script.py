@@ -26,8 +26,10 @@ for c, n in NAMES.items():
         g = ranks[(ranks.code == c) & (ranks.h == h)]
         if len(g):
             r = g.iloc[0]
+            # prelim_branches의 가격은 축소 이동(shift)이 곱해진 값이므로, 축소 전 값은 shift로 나눠 되돌린다.
+            sh = float(r['shift'])
             grp = br[(br.code == c) & (br.h == h)].groupby('macro').apply(
-                lambda t: {'p': round(t.prob.sum() * 100), 'tsr_pct': round(((t['prob'] * (t['price'] + t['div'])).sum() / t.prob.sum() / p0 - 1) * 100, 1)},
+                lambda t: {'p': round(t.prob.sum() * 100), 'tsr_pct': round(((t['prob'] * (t['price'] + t['div'])).sum() / t.prob.sum() / sh / p0 - 1) * 100, 1)},
                 include_groups=False).to_dict()
             pre[h] = {'exp_tsr_pct': round(r.exp_cum * 100, 1), 'exp_ann_pct': round(r.exp_ann * 100, 1), 'median_pct': round(r.median_cum * 100, 1),
                       'p10_pct': round(r.p10 * 100, 1), 'p90_pct': round(r.p90 * 100, 1), 'p_loss_pct': round(r.p_loss * 100), 'rank_balanced': int(r.rank_bal),
