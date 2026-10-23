@@ -56,6 +56,12 @@ def analyst(r, p0):
             'top_risks': [short(x if isinstance(x, str) else json.dumps(x, ensure_ascii=False), 160) for x in b['risks'][:3]]}
 
 
+# 코디네이터(A)가 데이터로 직접 확인한 사항. J가 같은 위험을 두 번 반영하지 않도록 전달한다.
+COORD = {
+    '005930': '코디네이터 확인: 두 분석가 모두 3Q26 배당(기준일 2026-09-30, 주당 약 4,600원)을 cum_dividends에서 이미 뺐다. '
+              '1년 cum_dividends(전문가 8,000~12,800원, 일반 9,900~17,300원)는 4Q26~3Q27 기준일분이다. 반대심문이 제기한 약 2%p 차감은 필요 없다.',
+}
+
 S = []
 for c, n in NAMES.items():
     p = f'{AN}/data/stocks/{c}.json'
@@ -102,6 +108,8 @@ for c, n in NAMES.items():
     if c in V:
         item['verification_V'] = {'material_errors': short(V[c]['material_errors'], 1300),
                                   'mismatches': [short(f"{y['claim']} → {y['correct_value']}", 300) for y in V[c]['checks'] if y['status'] == '불일치']}
+    if c in COORD:
+        item['coordinator_note'] = COORD[c]
     if c in I:
         item['cross_exam_I'] = {'proposed_adjustments': I[c]['adjustments'], 'rationale': short(I[c]['adjustment_rationale'], 1800),
                                 'verdict': short(I[c]['verdict'], 700), 'strongest_bear_argument': short(I[c]['strongest_bear_argument'], 500)}
@@ -111,6 +119,8 @@ ctx = {
     'macro': "Common macro scenarios (Agent C): 기준 50% / 낙관 20% / 비관 30%; probability-weighted index TSR KOSPI 1y 8.5%, 3y 7.7%/yr, 5y 8.9%/yr; "
              "KOSDAQ 6.0% / 5.7% / 7.0%. KTB 1y 3.688%, 3y 3.822%, 5y 3.965%. KOSPI closed 5,735.66 on 2026-10-21 and 5,533.77 on 2026-10-22 (-3.52%). "
              "2026 was an extreme boom-bust year (KOSPI record 9,114.55 on 2026-06-22).",
+    'price_basis': "All TSRs are recomputed from the analysts' structured horizon prices (price_at_horizon + cum_dividends) against the 2026-10-21 close. "
+                   "Some analyst narratives quote returns against the 2026-10-20 close; those narrative numbers are not used.",
     'method': "(1) Each analyst's tree is rescaled so that macro groups carry exactly 50/20/30. (2) If the forensic agent expects materially more dilution than an analyst assumed (+2pp or more), "
               "that analyst's prices are cut by the difference (floor 0.80x). (3) Trees are mixed with w_spec / (1 - w_spec). (4) Your adopted multipliers and extra tail are applied. "
               "(5) Shrinkage, applied once: expected gross return = w x blended + (1 - w) x prior, where prior = KTB + forward beta x (KOSPI expectation - KTB) + base-rate bucket alpha (H), "
