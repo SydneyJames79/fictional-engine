@@ -94,8 +94,11 @@ def build_inputs():
                 for k in ('h1', 'h3', 'h5'):
                     da, df_ = a[k] / 100, fr[k] / 100
                     f = 1.0
-                    if df_ > da + 0.02:          # 포렌식이 더 큰 희석을 보면 차이만큼 주당가치를 낮춘다(보수적 비대칭)
-                        f = max((1 + da) / (1 + df_), 0.80)
+                    # 포렌식이 분석가보다 신주 발행(희석)을 더 크게 볼 때만 차이만큼 주당가치를 낮춘다(보수적 비대칭).
+                    # 분석가의 자사주 소각(음수) 가정은 0으로 본다. 소각 규모 차이는 현금 감소와 상쇄돼 주당가치에 거의 중립이기 때문이다.
+                    da_issue = max(da, 0.0)
+                    if df_ > da_issue + 0.02:
+                        f = max((1 + da_issue) / (1 + df_), 0.80)
                     dil[role][k] = f
         settings['dilution_fix'][c] = dil
         cs = CONF.get(spec['confidence'], 1) if spec else 1
