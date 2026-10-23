@@ -6,6 +6,8 @@
 3. 결합: 산업 전문가와 독립 일반 분석가의 트리를 가중 혼합(linear opinion pool)한다. 가중치는 최종 심사(J)가 정한다.
 4. 반대심문 조정: 최종 심사가 채택한 반대심문(I) 조정을 반영한다.
 5. 축소: 기대 총수익 배수를 베이스레이트 사전값 쪽으로 한 번만 축소한다(가중치 = 자료 품질과 분석가 간 차이).
+   두 분석가가 사전값의 같은 쪽에 있으면 불일치 감쇠가 결과를 덜 극단적인 분석가 값(또는 감쇠 없는 축소값)
+   너머로 끌고 가지 못하게 한다(같은 방향 불일치 보정).
 6. 시뮬레이션: 시나리오 혼합 + 로그정규 내부잡음(목표 총변동성에 보정)으로 누적 TSR 분포를 만든다.
 7. 지표와 순위: 기대·중앙값·분위수·손실확률·CVaR·Forward Sortino, 기대수익/위험조정/균형·공격·방어 순위.
 """
@@ -174,6 +176,22 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
                 prior_ann = priors.get(code, 0.08)
                 e_prior = (1 + prior_ann) ** T
                 e_target = w * e_raw + (1 - w) * e_prior
+                # 같은 방향 불일치 보정(최종심사 권고): 두 분석가가 사전값의 같은 쪽에 있으면, 불일치 감쇠가
+                # 결과를 '감쇠 없는 축소값'과 '덜 극단적인 분석가 값' 가운데 사전값에 더 가까운 쪽보다 더 끌고 가지 못하게 한다.
+                same_side = 0
+                if 'spec' in e_role and 'gen' in e_role:
+                    gs, gg = (1 + e_role['spec']) ** T, (1 + e_role['gen']) ** T
+                    base_w = {2: 0.85, 1: 0.70, 0: 0.50}[min(cs, cg)]
+                    t_und = base_w * e_raw + (1 - base_w) * e_prior
+                    if gs < e_prior and gg < e_prior:
+                        cap = max(max(gs, gg), t_und)
+                        if e_target > cap:
+                            e_target, same_side = cap, 1
+                    elif gs > e_prior and gg > e_prior:
+                        floor_ = min(min(gs, gg), t_und)
+                        if e_target < floor_:
+                            e_target, same_side = floor_, 1
+                w_eff = (e_target - e_prior) / (e_raw - e_prior) if abs(e_raw - e_prior) > 1e-12 else w
                 shift = e_target / e_raw if e_raw > 0 else 1.0
                 gross_s = gross * shift
                 target = target_total_sigma(s1, slr, key)
@@ -185,7 +203,7 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
                 exp_ann = met['exp_ann']
                 rows.append({'code': code, 'name': s['name'], 'h': key, 'T': T, 'p0': p0,
                              'e_raw_cum': e_raw - 1, 'e_spec_ann': e_role.get('spec', np.nan), 'e_gen_ann': e_role.get('gen', np.nan),
-                             'disagree_log_ann': d, 'shrink_w': w, 'prior_ann': prior_ann, 'shift': shift,
+                             'disagree_log_ann': d, 'shrink_w': w_eff, 'shrink_w_raw': w, 'same_side_fix': same_side, 'prior_ann': prior_ann, 'shift': shift,
                              'sigma_target': target, 'sigma_within': sw, 'sigma_between': between,
                              'excess_vs_index_ann': exp_ann - idx_ann, 'index_ann': idx_ann, 'w_spec': w_spec,
                              **met})
