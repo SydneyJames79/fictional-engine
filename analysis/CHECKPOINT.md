@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 11:30 KST
 
-메모: 삼성에피스홀딩스 반대심문·검증 완료, 검토 도시에 라벨 수정
+메모: 쎄트렉아이 반대심문·검증 완료
 
 ## 고정된 설정
 
@@ -57,6 +57,7 @@
 - I cross-exam SK하이닉스
 - I cross-exam 삼성에피스홀딩스
 - I cross-exam 삼성전자
+- I cross-exam 쎄트렉아이
 - I cross-exam 현대모비스
 - I cross-exam 현대차
 - I cross-exam 화신
@@ -122,7 +123,7 @@
 - `wf_6b25a062-107`: V verify 라온텍=done; I cross-exam 라온텍=running
 - `wf_3a69747d-e9e`: I cross-exam 화신=done; V verify 화신=done
 - `wf_36a5c884-80a`: V verify 삼성에피스홀딩스=done; I cross-exam 삼성에피스홀딩스=done
-- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=done; I cross-exam 쎄트렉아이=running
+- `wf_586a1dbf-c0e`: V verify 쎄트렉아이=done; I cross-exam 쎄트렉아이=done
 
 ## 다음 단계
 
