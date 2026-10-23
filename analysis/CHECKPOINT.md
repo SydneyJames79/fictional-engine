@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-23 11:11 KST
+갱신: 2026-10-23 11:12 KST
 
-메모: 인텔리안테크 3개 역할 완료
+메모: RFHIC 3개 역할 완료
 
 ## 고정된 설정
 
@@ -34,7 +34,7 @@
 | 178320 | 서진시스템 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 007660 | 이수페타시스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
 | 107640 | 한중엔시에스 | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
-| 218410 | RFHIC | 완료(10회 검색) | 대기/미완 | 완료(4회) |
+| 218410 | RFHIC | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 189300 | 인텔리안테크 | 완료(10회 검색) | 완료(3회 검색) | 완료(4회) |
 | 099320 | 쎄트렉아이 | 완료(10회 검색) | 완료(3회 검색) | 대기/미완 |
 | 403870 | HPSP | 완료(12회 검색) | 완료(4회 검색) | 완료(5회) |
@@ -104,13 +104,13 @@
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=running
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=done; G generalist 사피엔반도체=done
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=running
-- `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=running
 - `wf_8f2359cf-1b9`: S sensitivity=running
 - `wf_bfa81d1d-efd`: D specialist 케이엠더블유=done; E forensic 케이엠더블유=done; G generalist 케이엠더블유=done
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=done; G generalist 서진시스템=done
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=done
 - `wf_abf1369d-9e6`: D specialist 라온텍=done; E forensic 라온텍=done; G generalist 라온텍=done
 - `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=done; G generalist 인텔리안테크=done
+- `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=done
 
 ## 다음 단계
 
