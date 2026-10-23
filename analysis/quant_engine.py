@@ -52,6 +52,7 @@ def metrics(tsr, T, rf_ann):
     q = np.percentile(tsr, [10, 50, 90])
     p_loss = (tsr < 0).mean()
     p_loss30 = (tsr < -0.30).mean()
+    p_loss50 = (tsr < -0.50).mean()
     k = max(1, int(len(tsr) * 0.10))
     cvar10 = np.sort(tsr)[:k].mean()
     # 하방편차: 로그 누적수익률이 기간 무위험 누적수익률에 못 미치는 부분의 제곱평균, sqrt(T)로 연환산
@@ -63,7 +64,7 @@ def metrics(tsr, T, rf_ann):
     med_ann = (1 + q[1]) ** (1 / T) - 1
     return {
         'exp_cum': exp_cum, 'exp_ann': exp_ann, 'median_cum': q[1], 'median_ann': med_ann,
-        'p10': q[0], 'p50': q[1], 'p90': q[2], 'p_loss': p_loss, 'p_loss30': p_loss30,
+        'p10': q[0], 'p50': q[1], 'p90': q[2], 'p_loss': p_loss, 'p_loss30': p_loss30, 'p_loss50': p_loss50,
         'cvar10': cvar10, 'downdev_ann': dd_ann, 'sortino': sortino,
     }
 

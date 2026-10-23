@@ -39,7 +39,11 @@ for c, n in NAMES.items():
                       'market_implied': (sp.get('market_implied') or '')[:500]})
 ctx = {'macro': f"Common macro scenarios (Agent C): 기준 50% / 낙관 20% / 비관 30%; probability-weighted index TSR KOSPI 1y 8.5%, 3y 7.7%/yr, 5y 8.9%/yr; KOSDAQ 6.0% / 5.7% / 7.0%. KTB 1y 3.688%, 3y 3.822%, 5y 3.965%. KOSPI closed 5,735.66 on 2026-10-21 and 5,533.77 on 2026-10-22 (-3.52%).",
        'sens_summaries': summaries}
+# 스크립트 크기 한도(512KB) 때문에 도시에는 반대심문·검증 대상 종목만 넣는다(두 번째 인자: 쉼표로 구분한 코드).
+if len(sys.argv) > 2 and sys.argv[2]:
+    keep = set(sys.argv[2].split(','))
+    D = {c: v for c, v in D.items() if c in keep}
 t = open(f'{AN}/workflows/review_template.js').read()
 t = t.replace('__DOSSIERS__', json.dumps(D, ensure_ascii=False)).replace('__CONTEXT__', json.dumps(ctx, ensure_ascii=False))
 open(sys.argv[1], 'w').write(t)
-print('wrote', sys.argv[1], len(t), 'stocks', len(D))
+print('wrote', sys.argv[1], len(t.encode()), 'bytes; dossiers', len(D))
