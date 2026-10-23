@@ -2,7 +2,7 @@
 
 갱신: 2026-10-23 11:11 KST
 
-메모: 케이엠더블유 3개 역할 완료
+메모: 삼성전자 반대심문 완료
 
 ## 고정된 설정
 
@@ -55,6 +55,7 @@
 - G risk review
 - H base rates
 - I cross-exam SK하이닉스
+- I cross-exam 삼성전자
 - I cross-exam 현대모비스
 - I cross-exam 현대차
 - V verify SK하이닉스
@@ -97,12 +98,11 @@
 - `wf_32739f7e-1b3`: I cross-exam 현대모비스=done; V verify 현대모비스=done
 - `wf_4f6d0d2a-6d6`: V verify SK하이닉스=done; I cross-exam SK하이닉스=done
 - `wf_a76089cb-89d`: V verify 현대차=done; I cross-exam 현대차=done
-- `wf_0c379425-bc5`: V verify 삼성전자=done; I cross-exam 삼성전자=running
+- `wf_0c379425-bc5`: V verify 삼성전자=done; I cross-exam 삼성전자=done
 - `wf_ffdae734-e40`: D specialist 화신=done; E forensic 화신=done; G generalist 화신=done
 - `wf_1972a1d9-1a0`: D specialist 바이오다인=done; E forensic 바이오다인=done; G generalist 바이오다인=done
 - `wf_2a198423-31c`: D specialist 퓨런티어=done; E forensic 퓨런티어=done; G generalist 퓨런티어=running
 - `wf_058659ad-5a5`: D specialist 사피엔반도체=done; E forensic 사피엔반도체=done; G generalist 사피엔반도체=done
-- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=done; G generalist 인텔리안테크=running
 - `wf_e56340d8-53d`: D specialist 엘앤씨바이오=done; E forensic 엘앤씨바이오=done; G generalist 엘앤씨바이오=running
 - `wf_d819d401-b55`: D specialist RFHIC=done; E forensic RFHIC=done; G generalist RFHIC=running
 - `wf_8f2359cf-1b9`: S sensitivity=running
@@ -110,6 +110,7 @@
 - `wf_56d7a284-8d5`: D specialist 서진시스템=done; E forensic 서진시스템=done; G generalist 서진시스템=done
 - `wf_1de1e803-013`: D specialist 쎄트렉아이=done; E forensic 쎄트렉아이=running; G generalist 쎄트렉아이=done
 - `wf_abf1369d-9e6`: D specialist 라온텍=done; E forensic 라온텍=done; G generalist 라온텍=done
+- `wf_372974de-9cf`: D specialist 인텔리안테크=done; E forensic 인텔리안테크=done; G generalist 인텔리안테크=running
 
 ## 다음 단계
 
