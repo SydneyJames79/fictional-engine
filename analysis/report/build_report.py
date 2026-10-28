@@ -46,6 +46,7 @@ for r in aux('J_').values():
     for s in r.get('stocks', []):
         J[s['code']] = s
 J_GLOBAL = next(iter(aux('J_').values()), {})
+J_RE = json.load(open(os.path.join(AUX, 'J_final_judge.json'))).get('rereview', {}) if os.path.exists(os.path.join(AUX, 'J_final_judge.json')) else {}
 I = {r['code']: r for r in aux('I_').values()}
 V = {r['code']: r for r in aux('V_').values()}
 G = {s['code']: s for s in next(iter(aux('G_risk_review').values()))['stocks']}
@@ -79,6 +80,19 @@ def cls(x):
 
 def tsr_td(x, d=1):
     return f'<td class="{cls(x)}">{pct(x, True, d)}</td>'
+
+
+def pp_td(x, d=1):
+    """%p 차이 칸."""
+    if x is None or (isinstance(x, float) and math.isnan(x)):
+        return '<td>N/A</td>'
+    return f'<td class="{cls(x)}">{f"{x*100:+.{d}f}%p".replace("-", "−").replace("+0.0%p", "0.0%p").replace("−0.0%p", "0.0%p")}</td>'
+
+
+def fm(x):
+    """배수 표기: 소수 둘째 자리, 셋째 자리가 있으면(1.005 등) 셋째 자리까지."""
+    s = f'{x:.3f}'
+    return s[:-1] if s.endswith('0') else s
 
 
 def krw(x):
@@ -221,7 +235,7 @@ def part1():
             e = r.exp_cum if key == 'h1' else r.exp_ann
             sb = stab[(stab.code == r.code) & (stab.h == key)].stability.iloc[0] if stab is not None and len(stab[(stab.code == r.code) & (stab.h == key)]) else None
             rows.append(f'<tr><td class="l">{H_LABEL[key]}</td><td>{int(r.rank_bal)}</td><td class="l stick">{esc(r["name"])}</td>'
-                        f'{tsr_td(e)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False, 0)}</td>'
+                        f'{tsr_td(e)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
     t = table([('기간', 'l'), ('균형 순위', ''), ('종목', 'l stick'), ('기대 TSR', ''), ('Sortino', ''), ('CVaR10', ''), ('손실확률', ''), ('신뢰도', ''), ('순위 안정성', '')], rows)
     post = f'<p class="callout">{NARR["post_events"]}</p>' if NARR.get('post_events') else ''
@@ -236,16 +250,17 @@ def part2():
         r = risk.loc[c]
         b = B.get(c, {})
         c22 = B2.get(c, {}).get('close_1022')
+        c22_txt = (krw(c22) + ('(미검증)' if B2.get(c, {}).get('confidence') == '낮음' else '')) if c22 else '확인 불가'
         sp = STOCK.get(c, {})
         srch = '/'.join(str((sp.get(k) or {}).get('searches', '-')) for k in ('spec', 'gen', 'foren'))
         rows.append(f'<tr><td class="l">{c}</td><td class="l stick">{esc(n)}</td><td class="l">{esc(r["market"])}</td><td class="l">{esc(SECTOR[c])}</td>'
-                    f'<td>{krw(r["close"])}</td><td>{krw(c22) if c22 else "확인 불가"}</td><td>{float(r["mcap_krw_bn"])/1000:,.1f}</td>'
-                    f'<td>{float(r["adv60_krw_bn"]):,.1f}</td><td>{int(r["shares"]):,}</td><td>{esc(str(r["first_date"])[:10])}</td>'
+                    f'<td>{krw(r["close"])}</td><td>{c22_txt}</td><td>{float(r["mcap_krw_bn"])*10:,.0f}</td>'
+                    f'<td>{float(r["adv60_krw_bn"])*10:,.1f}</td><td>{int(r["shares"]):,}</td><td>{esc(str(r["first_date"])[:10])}</td>'
                     f'<td>{srch}</td><td class="wrap">{esc(notes.get(c, ""))}</td></tr>')
-    head = [('코드', 'l'), ('종목', 'l stick'), ('시장', 'l'), ('분류', 'l'), ('10/21 종가(원)', ''), ('10/22 종가(원)', ''), ('시총(조원)', ''),
-            ('60일 평균 거래대금(십억원)', ''), ('상장주식수', ''), ('데이터 시작일', ''), ('검색 D/G/E', ''), ('비고', 'l')]
+    head = [('코드', 'l'), ('종목', 'l stick'), ('시장', 'l'), ('분류', 'l'), ('10/21 종가(원)', ''), ('10/22 종가(원)', ''), ('시총(억원)', ''),
+            ('60일 평균 거래대금(억원)', ''), ('상장주식수', ''), ('데이터 시작일', ''), ('검색 D/G/E', ''), ('비고', 'l')]
     return sec('p2', '2부. 식별표', table(head, rows) +
-               '<p class="note">기준가는 2026-10-21 KRX 공식 종가(FinanceData/marcap 일별 자료)다. 10/22 종가는 장 마감 보도로 확인된 종목만 적었다. 시총·주식수는 10/21 상장주식수 기준이다. '
+               '<p class="note">기준가는 2026-10-21 KRX 공식 종가(FinanceData/marcap 일별 자료)다. 10/22 종가는 장 마감 보도나 시세 페이지로 확인된 종목만 적었고, 시세 페이지 값처럼 종가인지 확인하지 못한 값에는 (미검증)을 붙였다. 순위 계산에는 쓰지 않는다. 시총·주식수는 10/21 상장주식수 기준이다. '
                '데이터 시작일은 이 분석에 쓴 일별 자료의 첫 거래일(2020-01-02 이후)이다. 검색 D/G/E는 산업 전문가·일반 분석가·포렌식 에이전트가 쓴 웹검색 횟수다.</p>',
                narr('id_lead', ''))
 
@@ -265,12 +280,12 @@ def part3():
             rows.append(f'<tr><td>{int(r.rank_bal)}</td><td class="l stick">{esc(r["name"])}</td>{tsr_td(r.exp_cum)}{ann}'
                         f'<td class="viz">{strip_svg(r.p10, r.median_cum, r.exp_cum, r.p90, lo, hi)}</td>'
                         f'{tsr_td(r.median_cum)}{tsr_td(r.p10)}{tsr_td(r.p90)}<td>{pct(r.p_loss, False)}</td><td>{pct(r.p_loss30, False)}</td>'
-                        f'{tsr_td(r.cvar10)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.excess_vs_index_ann)}'
+                        f'{tsr_td(r.cvar10)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{pp_td(r.excess_vs_index_ann)}'
                         f'<td>{int(r.rank_er)}</td><td>{int(r.rank_ra)}</td><td>{int(r.rank_agg)}</td><td>{int(r.rank_def)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
         head = [('균형', ''), ('종목', 'l stick'), ('기대 TSR(누적)', '')] + ([] if key == 'h1' else [('기대(연)', '')]) + \
                [(f'분포 {strip_scale(lo, hi, 0.25)}', 'viz'), ('중앙값', ''), ('P10', ''), ('P90', ''), ('손실확률', ''), ('−30% 이하', ''), ('CVaR10', ''),
-                ('Sortino', ''), ('지수 대비(연)', ''), ('기대 순위', ''), ('위험조정 순위', ''), ('공격형', ''), ('방어형', ''), ('신뢰도', ''), ('안정성', '')]
+                ('Sortino', ''), ('지수 대비(연, %p)', ''), ('기대 순위', ''), ('위험조정 순위', ''), ('공격형', ''), ('방어형', ''), ('신뢰도', ''), ('안정성', '')]
         idx = macro['index_expected_pct']
         idx_txt = (f"KOSPI {idx['kospi']['h1_cum']:.1f}%, KOSDAQ {idx['kosdaq']['h1_cum']:.1f}%" if key == 'h1' else
                    f"KOSPI 연 {idx['kospi'][key + '_ann']:.1f}%, KOSDAQ 연 {idx['kosdaq'][key + '_ann']:.1f}%")
@@ -399,8 +414,8 @@ def part7():
             a = adj.get(key)
             if a and (abs(a['base_mult'] - 1) > 1e-6 or abs(a['bull_mult'] - 1) > 1e-6 or abs(a['bear_mult'] - 1) > 1e-6 or a.get('extra_tail_prob_pct', 0) > 0):
                 tail = f", 꼬리 {a['extra_tail_prob_pct']:.0f}%@{a['extra_tail_price_frac']:.2f}" if a.get('extra_tail_prob_pct', 0) > 0 else ''
-                mult.append(f"{H_LABEL[key]} {a['base_mult']:.2f}/{a['bull_mult']:.2f}/{a['bear_mult']:.2f}{tail}")
-        rows.append(f'<tr><td class="l stick">{esc(n)}</td>{cells}<td>{g.loc["h1"].w_spec:.2f}</td><td class="l">{"I" if c in I else ""}{"·V" if c in V else ""}</td>'
+                mult.append(f"{H_LABEL[key]} {fm(a['base_mult'])}/{fm(a['bull_mult'])}/{fm(a['bear_mult'])}{tail}")
+        rows.append(f'<tr><td class="l stick">{esc(n)}</td>{cells}<td>{g.loc["h1"].w_spec:.2f}</td><td class="l">{"·".join(x for x, ok in (("I", c in I), ("V", c in V), ("재심사", c in J_RE)) if ok)}</td>'
                     f'<td class="wrap">{esc("; ".join(mult) or "조정 없음")}</td></tr>')
     head = [('종목', 'l stick')]
     for key in ('h1', 'h3', 'h5'):
@@ -409,13 +424,13 @@ def part7():
     head += [('전문가 가중', ''), ('검토', 'l'), ('채택한 조정(기준/낙관/비관 배수)', 'l')]
     return sec('p7', '7부. 의견차와 반대심문', table(head, rows) +
                '<p class="note">전문가·일반은 각 분석가 트리의 연환산 기대 TSR(축소 전, 1년은 누적)이다. 차이는 두 값의 로그 차이(연환산)다. 축소 w는 분석가 혼합값에 주는 가중치이고 나머지는 사전값(무위험 + 선행베타 × 지수 초과기대 + 베이스레이트 알파)으로 간다. '
-               '검토 열의 I는 반대심문, V는 독립 사실검증을 받은 종목이다.</p>' + narr('disagreement', ''))
+               '검토 열의 I는 반대심문, V는 독립 사실검증, 재심사는 독립 검증 뒤 최종심사를 다시 받은 종목이다. 배수는 재심사 뒤 값이다.</p>' + narr('disagreement', ''))
 
 
 def part8():
     body = narr('sensitivity_lead', '')
     if sens is not None and stab is not None:
-        label = {'macro_bear': '거시 비관 45%', 'macro_bull': '거시 낙관 35%', 'w_spec_lo': '전문가 가중 0.35', 'w_spec_hi': '전문가 가중 0.65', 'prior_heavy': '축소 2배', 'vol_low': '변동성 −15%',
+        label = {'macro_bear': '거시 비관 45%', 'macro_bull': '거시 낙관 35%', 'w_spec_lo': '전문가 가중 0.35', 'w_spec_hi': '전문가 가중 0.65', 'prior_heavy': '축소 강화', 'vol_low': '변동성 −15%',
                  'shock_krw_strong_10pct': '원화 10% 강세', 'shock_rates_up_100bp': '금리 +100bp', 'shock_exit_multiple_down_20pct': '출구배수 −20%',
                  'shock_memory_ai_capex_down': '메모리·AI capex −20%', 'shock_auto_tariff_25pct': '자동차 관세 25%', 'shock_bio_pos_down': '성공확률 −20%',
                  'shock_extra_dilution_5pct': '추가 희석 5%', 'shock_top_customer_loss': '최대 고객 이탈'}
@@ -435,7 +450,8 @@ def part8():
             order = fin.sort_values('rank_bal').index
             rows, rows2 = [], []
             for c in order:
-                b0 = int(fin.loc[c, 'rank_bal'])
+                bm = sens[(sens.run == 'base') & (sens.h == key) & (sens.code == c)]
+                b0 = int(bm.rank_bal.iloc[0]) if len(bm) else int(fin.loc[c, 'rank_bal'])
                 srow = stab[(stab.code == c) & (stab.h == key)].iloc[0]
                 cells = f'<td>{b0}</td><td>{int(fin.loc[c, "rank_agg"])}</td><td>{int(fin.loc[c, "rank_def"])}</td>' + ''.join(cell(r, key, c, b0) for r in assump)
                 rows.append(f'<tr><td class="l stick">{esc(NAMES[c])}</td>{cells}<td>{int(srow.boot_p10)}~{int(srow.boot_p90)}</td>'
@@ -445,8 +461,8 @@ def part8():
             head2 = [('종목', 'l stick'), ('기준', '')] + [(label.get(r, r), '') for r in shocks]
             body += (f'<h3>{H_LABEL[key]}</h3>' + table(head, rows, 'sens') +
                      f'<details><summary>{H_LABEL[key]} 스트레스 충격별 균형 순위 보기</summary>' + table(head2, rows2, 'sens') + '</details>')
-        body += ('<p class="note">가정 변경 열은 그 가정만 바꿔 다시 계산한 균형형 순위다(같은 난수 시드, 6만 경로). 거시 비관은 기준·낙관·비관 확률을 45/10/45로, 거시 낙관은 45/35/20으로 바꾸고 사전값의 지수 기대도 같이 바꾼다. '
-                 '축소 2배는 분석가 쪽 가중치를 절반으로 줄여 사전값 쪽으로 더 당긴 경우다. 변동성 −15%는 모든 종목의 목표 변동성을 15% 낮춘 경우로, 6부의 꼬리 확률 점검에서 모형 꼬리가 베이스레이트보다 두껍게 나온 점을 확인하려고 넣었다. 기준보다 3계단 이상 오르면 빨강, 3계단 이상 내리면 파랑으로 표시했다. '
+        body += ('<p class="note">가정 변경 열은 그 가정만 바꿔 다시 계산한 균형형 순위다(최종 계산과 같은 난수 시드·20만 경로라 기준 순위가 최종 순위와 같다). 거시 비관은 기준·낙관·비관 확률을 45/10/45로, 거시 낙관은 45/35/20으로 바꾸고 사전값의 지수 기대도 같이 바꾼다. '
+                 '축소 강화는 같은 방향 보정까지 마친 최종 축소 결과에서 사전값과의 차이를 절반으로 줄여 사전값 쪽으로 더 당긴 경우다. 변동성 −15%는 모든 종목의 목표 변동성을 15% 낮춘 경우로, 6부의 꼬리 확률 점검에서 모형 꼬리가 베이스레이트보다 두껍게 나온 점을 확인하려고 넣었다. 기준보다 3계단 이상 오르면 빨강, 3계단 이상 내리면 파랑으로 표시했다. '
                  '추정오차 구간은 기대수익에 두 가지 오차를 더해 4,000번 다시 순위를 매긴 결과의 10~90% 구간이다. 하나는 종목 고유 오차로, 전문가·일반 분석가 차이와 그 기간의 중앙값을 합쳐 축소 가중치와 최종 신뢰도에 비례해 키운다. '
                  '다른 하나는 사전값 오차로, 베이스레이트 버킷마다 연 1.5%p의 공통 충격을 사전값 비중만큼 준다. '
                  '판정 기준은 다음과 같다. 안정은 추정오차 구간 폭 4계단 이하이면서 가정 변경에 따른 순위 폭 3계단 이하다. 주의는 각각 9계단 이하, 6계단 이하다. 나머지는 불안정이다. '
@@ -469,7 +485,7 @@ def qc():
         qrows = ''.join(f'<tr><td class="l wrap">{esc(c["item"])}</td><td>{esc(c["status"])}</td><td class="wrap">{esc(c["evidence"])}</td></tr>' for c in Q['checks'])
         irows = ''.join(f'<tr><td>{esc(x["severity"])}</td><td class="l wrap">{esc(x["where"])}</td><td class="wrap">{esc(x["problem"])}</td>'
                         f'<td class="wrap">{esc(fixes.get(str(i), "검토 중"))}</td></tr>' for i, x in enumerate(Q['issues']))
-        body += ('<h3>독립 검증(Q) 결과</h3>' + f'<p>{esc(Q["summary"])}</p>' +
+        body += ('<h3>독립 검증(Q) 결과</h3>' + '<p class="note">아래 요약과 판정은 수정 전 보고서에 대한 Q의 결과다. 각 지적의 조치는 마지막 표에 있다.</p>' + f'<p>{esc(Q["summary"])}</p>' +
                  table([('점검 항목', 'l'), ('판정', ''), ('근거', 'l')], qrows) +
                  ('<h3>Q가 지적한 문제와 조치</h3>' + table([('심각도', ''), ('위치', 'l'), ('문제', 'l'), ('조치', 'l')], irows) if Q['issues'] else ''))
     return sec('qc', '품질 체크리스트', body)
