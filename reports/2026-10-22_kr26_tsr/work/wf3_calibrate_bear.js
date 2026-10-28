@@ -130,24 +130,30 @@ ${JSON.stringify(calib, null, 1)}
 - changes_summary: 원안 대비 무엇이 얼마나 바뀌었는지 숫자로.
 - narrative_ko: 보고서 7부('에이전트 의견 차이와 반대심문 결과')에 실릴 문단(보고서 문체, 5~8문장).`
 
+const stage = (args && args.stage) || 'all'
 const groups = (args && args.groups) || []
 const targets = (args && args.bearTargets) || []
+const calibIn = (args && args.calibByStock) || {}
 
-log(`WF3: 보정 ${groups.length}개 산업군, 반대심문 ${targets.length}개 종목`)
+log(`WF3 stage=${stage}: 보정 ${groups.length}개 산업군, 반대심문 ${targets.length}개 종목`)
 
-// Phase A: calibration per industry group (barrier: judge needs its group's calibration)
-const calibs = await parallel(groups.map((g) => () => agent(calibPrompt(g), { label: `calib:${g.industry}`, phase: '베이스레이트 보정', schema: CALIB_SCHEMA, effort: 'xhigh' })))
-const calibByStock = {}
-calibs.filter(Boolean).forEach((c) => (c.assessments || []).forEach((a) => { calibByStock[a.stock] = { ...a, industry_group: c.industry_group } }))
+let calibs = []
+const calibByStock = { ...calibIn }
+if (stage === 'all' || stage === 'calib') {
+  calibs = await parallel(groups.map((g) => () => agent(calibPrompt(g), { label: `calib:${g.industry}`, phase: '베이스레이트 보정', schema: CALIB_SCHEMA, effort: 'xhigh' })))
+  calibs.filter(Boolean).forEach((c) => (c.assessments || []).forEach((a) => { calibByStock[a.stock] = { ...a, industry_group: c.industry_group } }))
+}
 
-// Phase B+C: bear then judge, pipelined per target
-const judged = await pipeline(
-  targets,
-  (s) => agent(bearPrompt(s), { label: `bear:${s.name}`, phase: '반대심문', schema: BEAR_SCHEMA, effort: 'xhigh' }),
-  (bear, s) => {
-    if (!bear) { log(`${s.name}: 반대심문 결과 없음 - 심사 생략`); return { bear: null, judge: null } }
-    return agent(judgePrompt(s, bear, calibByStock[s.name] || null), { label: `judge:${s.name}`, phase: '최종 심사', schema: JUDGE_SCHEMA, effort: 'max' }).then((j) => ({ bear, judge: j }))
-  },
-)
+let judged = []
+if (stage === 'all' || stage === 'bear') {
+  judged = await pipeline(
+    targets,
+    (s) => agent(bearPrompt(s), { label: `bear:${s.name}`, phase: '반대심문', schema: BEAR_SCHEMA, effort: 'xhigh' }),
+    (bear, s) => {
+      if (!bear) { log(`${s.name}: 반대심문 결과 없음 - 심사 생략`); return { bear: null, judge: null } }
+      return agent(judgePrompt(s, bear, calibByStock[s.name] || null), { label: `judge:${s.name}`, phase: '최종 심사', schema: JUDGE_SCHEMA, effort: 'max' }).then((j) => ({ bear, judge: j }))
+    },
+  )
+}
 
 return { calibrations: calibs, bear_judge: targets.map((s, i) => ({ name: s.name, ...(judged[i] || { bear: null, judge: null }) })) }
