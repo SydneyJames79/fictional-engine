@@ -47,6 +47,11 @@ def scan_runs():
     return runs
 
 
+# 같은 라벨을 쓰는 재실행이 앞선 결과를 덮어쓰지 않도록 실행별 파일 이름을 따로 둔다.
+# (예: 3종목 재심사는 26종목 최종심사 파일을 덮어쓰면 안 된다)
+RUN_FILE_OVERRIDE = {'wf_64c36420-365': 'J2_rereview_auto', 'wf_e113a233-ce7': 'J2_rereview_samsung'}
+
+
 def save_aux():
     """종목별이 아닌 결과(H, G, B2, I, V, S, J 등)를 data/aux에 저장한다."""
     saved = []
@@ -66,7 +71,7 @@ def save_aux():
                 lab = labels.get(d['agentId'], '')
                 if lab.split(' ')[0] in ('D', 'G', 'E') and lab.split(' ')[1] in ('specialist', 'generalist', 'forensic'):
                     continue
-                fn = lab.replace(' ', '_').replace('/', '_') or d['agentId']
+                fn = RUN_FILE_OVERRIDE.get(os.path.basename(run)) or lab.replace(' ', '_').replace('/', '_') or d['agentId']
                 json.dump({'label': lab, 'run': os.path.basename(run), 'searches': search_count(os.path.basename(run), d['agentId']),
                            'result': d['result']}, open(os.path.join(AUX, f'{fn}.json'), 'w'), ensure_ascii=False, indent=1)
                 saved.append(lab)

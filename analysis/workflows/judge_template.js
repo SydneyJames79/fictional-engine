@@ -42,7 +42,8 @@ const prompt = `
 ${CTX.method}
 
 [Your job]
-For EVERY one of the 26 stocks below, decide:
+${CTX.scope_note}
+For EVERY one of the stocks below, decide:
 1. w_spec: the weight on the industry specialist tree versus the independent generalist tree (0.35-0.65). Default is the value shown (from the two analysts' self-rated confidence). Move it only for a concrete reason: one analyst used materially better or more recent evidence, made a factual error that verification (V) or forensic (E) caught, or used the wrong price basis.
 2. adjustments per horizon: multipliers on the branch prices of each macro group (base_mult for 기준, bull_mult for 낙관, bear_mult for 비관; 1.0 = no change) and an optional extra tail branch (extra_tail_prob_pct in %, taken pro-rata from all branches; extra_tail_price_frac = horizon-end value as a fraction of the 2026-10-21 close, dividends included).
    - Where a cross-examination (I) proposal exists, adopt it fully, partly, or not at all. Where none exists, keep 1.0 and 0 unless the verification (V), forensic (E) or risk (G) material shows a specific, evidenced error or omitted discrete event.
@@ -57,7 +58,7 @@ Also give global_notes (cross-stock consistency issues you noticed, e.g., analys
 Each summary has: market data, preliminary blended results before shrinkage and after (prelim), both analysts' expectations and group-level values, forensic flags, risk review (G), base-rate bucket (H), verification (V) and cross-examination (I) where they exist.
 ${JSON.stringify(S)}
 
-Output strictly in the schema, one entry per stock, all 26 stocks.`
+Output strictly in the schema, one entry per stock, for every stock in the summaries.`
 
 const res = await agent(prompt, { label: 'J final judge', phase: 'Judge', schema: J_SCHEMA })
 return res

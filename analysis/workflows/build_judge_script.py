@@ -66,8 +66,30 @@ COORD = {
               '1년 cum_dividends(전문가 8,000~12,800원, 일반 9,900~17,300원)는 4Q26~3Q27 기준일분이다. 반대심문이 제기한 약 2%p 차감은 필요 없다.',
 }
 
+# 선택: 두 번째 인자로 재심사할 종목 코드(쉼표 구분)를 주면 그 종목만 넣고, 이전 심사 결정을 함께 넘긴다.
+SUBSET = set(sys.argv[2].split(',')) if len(sys.argv) > 2 and sys.argv[2] else None
+PREV_J = {}
+if SUBSET:
+    for f in sorted(os.listdir(AUX)):
+        if f.startswith('J_'):
+            for s_ in json.load(open(os.path.join(AUX, f)))['result'].get('stocks', []):
+                PREV_J[s_['code']] = s_
+    # 1차 사실검증(V1) 결과: 재실행으로 덮어써져 1차 심사에 전달되지 않았다.
+    V1 = json.load(open(os.path.join(AUX, 'V1_verify_현대차_1차.json')))['result']
+    law = next(x for x in V1['checks'] if '특별법' in x['correct_value'])
+    note = ('1차 사실검증(V1) 결과로, 검증 재실행 때 파일이 덮어써져 1차 심사에 전달되지 않았다: ' + law['correct_value'] +
+            ' 출처: ' + law['source'] + ' V1의 영향 평가: ' + law['impact'])
+    COORD['005380'] = note
+    for c_ in ('012330', '010690'):
+        COORD[c_] = note + ' 이 종목의 비관 분기에도 미국 관세 25% 환원이 들어 있어 같은 사실이 적용될 수 있다.'
+    V1s = json.load(open(os.path.join(AUX, 'V1_verify_삼성전자_1차.json')))['result']
+    COORD['005930'] = (COORD.get('005930', '') + ' 1차 사실검증(V1) 결과로, 검증 재실행 때 파일이 덮어써져 1차 심사에 전달되지 않았다: ' + V1s['material_errors'] +
+                       ' 불일치 항목: ' + ' / '.join(f"{x['claim']} → {x['correct_value']}" for x in V1s['checks'] if x['status'] == '불일치'))
+
 S = []
 for c, n in NAMES.items():
+    if SUBSET and c not in SUBSET:
+        continue
     p = f'{AN}/data/stocks/{c}.json'
     if not os.path.exists(p):
         continue
@@ -112,12 +134,20 @@ for c, n in NAMES.items():
                                   'mismatches': [short(f"{y['claim']} → {y['correct_value']}", 300) for y in V[c]['checks'] if y['status'] == '불일치']}
     if c in COORD:
         item['coordinator_note'] = COORD[c]
+    if SUBSET and c in PREV_J:
+        pj = PREV_J[c]
+        item['previous_J_decision'] = {k: pj[k] for k in ('w_spec', 'w_spec_reason', 'adjustments', 'adjustment_reason', 'final_confidence', 'confidence_reason')}
     if c in I:
         item['cross_exam_I'] = {'proposed_adjustments': I[c]['adjustments'], 'rationale': short(I[c]['adjustment_rationale'], 1800),
                                 'verdict': short(I[c]['verdict'], 700), 'strongest_bear_argument': short(I[c]['strongest_bear_argument'], 500)}
     S.append(item)
 
+scope = ('This is a full review of all 26 stocks.' if not SUBSET else
+         'This is a RE-REVIEW of only the stocks below, triggered after the first review: independent QA found that a first-round verification (V1) result was overwritten by a re-run and never reached you. '
+         'Each summary includes your previous decision (previous_J_decision) and the recovered V1 finding in coordinator_note. Keep the same rules as the first review. '
+         'Change your previous decision only where the recovered evidence justifies it, and say what changed and why in adjustment_reason. Keep everything else as it was.')
 ctx = {
+    'scope_note': scope,
     'macro': "Common macro scenarios (Agent C): 기준 50% / 낙관 20% / 비관 30%; probability-weighted index TSR KOSPI 1y 8.5%, 3y 7.7%/yr, 5y 8.9%/yr; "
              "KOSDAQ 6.0% / 5.7% / 7.0%. KTB 1y 3.688%, 3y 3.822%, 5y 3.965%. KOSPI closed 5,735.66 on 2026-10-21 and 5,533.77 on 2026-10-22 (-3.52%). "
              "2026 was an extreme boom-bust year (KOSPI record 9,114.55 on 2026-06-22).",

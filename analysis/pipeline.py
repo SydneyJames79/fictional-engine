@@ -22,6 +22,7 @@ MACRO_P = {'기준': 0.50, '낙관': 0.20, '비관': 0.30}
 CONF = {'높음': 2, '보통': 1, '낮음': 0}
 MEANREV = {'h1': 1.0, 'h3': 0.95, 'h5': 0.90}   # G 에이전트 검토(시총 0.1조원 이상 3년/1년 분산비 1.02~1.24, 장기 평균회귀 근거 약함) 반영
 S_FLOOR = 0.10
+SHRINK_SCALE = 1.0   # 민감도 분석용: 최종 축소 결과에서 분석가 쪽 이탈폭에 곱하는 배수(1이면 그대로)
 
 
 def fix_tree(branches, log, tag):
@@ -191,6 +192,7 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
                         floor_ = min(min(gs, gg), t_und)
                         if e_target < floor_:
                             e_target, same_side = floor_, 1
+                e_target = e_prior + SHRINK_SCALE * (e_target - e_prior)
                 w_eff = (e_target - e_prior) / (e_raw - e_prior) if abs(e_raw - e_prior) > 1e-12 else w
                 shift = e_target / e_raw if e_raw > 0 else 1.0
                 gross_s = gross * shift
@@ -199,6 +201,12 @@ def analyse(stocks, risk, rf, index_exp, priors, weights, adjustments, seed=2026
                 tsr = simulate(probs, gross_s, sw, rng, n_sim)
                 rf_ann = rf[key]
                 met = metrics(tsr, T, rf_ann)
+                # 기대값은 표본평균 대신 분기 확률가중 정확값을 쓴다(몬테카를로 오차 제거). 잡음은 평균 1이라 수학적 기대값은 같다.
+                e_exact = float(np.sum(probs * gross_s)) - 1
+                met['exp_cum_mc'] = met['exp_cum']
+                met['exp_cum'] = e_exact
+                met['exp_ann'] = (1 + e_exact) ** (1 / T) - 1 if e_exact > -1 else -1.0
+                met['sortino'] = (met['exp_ann'] - rf_ann) / met['downdev_ann'] if met['downdev_ann'] > 0 else float('nan')
                 idx_ann = index_exp['KOSDAQ' if s['market'].startswith('KOSDAQ') else 'KOSPI'][key]
                 exp_ann = met['exp_ann']
                 rows.append({'code': code, 'name': s['name'], 'h': key, 'T': T, 'p0': p0,

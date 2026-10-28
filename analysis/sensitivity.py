@@ -6,7 +6,7 @@
 - output/sens_runs.csv: 종목·기간·실행별 기대수익과 균형 순위
 - output/rank_stability.csv: 종목·기간별 순위 범위, 추정오차 부트스트랩 순위 구간, 상위5 확률, 불안정 표시
 
-실행 목록(모두 같은 난수 시드·같은 경로 수를 써서 몬테카를로 잡음이 아니라 가정 차이만 비교한다)
+실행 목록(최종 계산과 같은 난수 시드·같은 경로 수(20만)를 써서 몬테카를로 잡음이 아니라 가정 차이만 비교한다)
 - base: 최종 설정
 - macro_bear / macro_bull: 거시 확률 45/10/45, 45/35/20(사전값의 지수 기대도 함께 바꾼다)
 - w_spec_lo / w_spec_hi: 전문가 가중 0.35 / 0.65 일괄
@@ -33,7 +33,7 @@ from quant_engine import rank_desc, pct_rank  # noqa: E402
 
 rq.STAGE = 'final'
 OUT = os.path.join(HERE, 'output')
-N_SIM = 60_000
+N_SIM = 200_000   # 최종 계산과 같은 경로 수·시드라 base 실행이 최종 결과와 같다
 SEED = 20261022
 macro = json.load(open(os.path.join(HERE, 'data', 'macro.json')))['synth']
 SC = {s['name'].split(' ')[0]: s for s in macro['scenarios']}
@@ -64,12 +64,10 @@ def run(stocks, settings, adjustments, macro_probs=None, value_shocks=None, w_ov
     weights = dict(settings['w_spec'])
     if w_override is not None:
         weights = {c: w_override for c in weights}
-    saved = pipeline.shrink_weight
     saved_mr = dict(pipeline.MEANREV)
     if vol_scale != 1.0:
         pipeline.MEANREV.update({k: v * vol_scale for k, v in saved_mr.items()})
-    if shrink_scale != 1.0:
-        pipeline.shrink_weight = lambda *a, **k: (saved(*a, **k)[0] * shrink_scale, saved(*a, **k)[1])
+    pipeline.SHRINK_SCALE = shrink_scale   # 같은 방향 보정 뒤 최종 축소 결과에 적용(분석가 쪽 비중을 줄임)
     frames = []
     try:
         for key in ('h1', 'h3', 'h5'):
@@ -78,7 +76,7 @@ def run(stocks, settings, adjustments, macro_probs=None, value_shocks=None, w_ov
                                n_sim=N_SIM, macro_probs=macro_probs, value_shocks=value_shocks, horizons=[key])
             frames.append(df)
     finally:
-        pipeline.shrink_weight = saved
+        pipeline.SHRINK_SCALE = 1.0
         pipeline.MEANREV.update(saved_mr)
     return pd.concat(frames)
 
