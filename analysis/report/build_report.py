@@ -224,7 +224,8 @@ def part1():
                         f'{tsr_td(e)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False, 0)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
     t = table([('기간', 'l'), ('균형 순위', ''), ('종목', 'l stick'), ('기대 TSR', ''), ('Sortino', ''), ('CVaR10', ''), ('손실확률', ''), ('신뢰도', ''), ('순위 안정성', '')], rows)
-    return sec('p1', '1부. 핵심 결론', narr('core') + '<h3>기간별 균형형 상위 5</h3>' + t +
+    post = f'<p class="callout">{NARR["post_events"]}</p>' if NARR.get('post_events') else ''
+    return sec('p1', '1부. 핵심 결론', narr('core') + post + '<h3>기간별 균형형 상위 5</h3>' + t +
                '<p class="note">기대 TSR은 1년은 누적, 3·5년은 연환산이다. 손실확률은 기간 말 누적 TSR이 0 미만일 확률이다. 모든 확률은 모형 추정치이며 확정된 사실이 아니다.</p>')
 
 
@@ -454,7 +455,8 @@ def part8():
 
 
 def part9():
-    return sec('p9', '9부. 최종 판단', narr('final'))
+    post = f'<p class="callout">{NARR["post_events"]}</p>' if NARR.get('post_events') else ''
+    return sec('p9', '9부. 최종 판단', narr('final') + post)
 
 
 def qc():
