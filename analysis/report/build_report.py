@@ -462,7 +462,17 @@ def part9():
 def qc():
     items = NARR.get('qc', [])
     rows = ''.join(f'<tr><td class="l">{esc(x["item"])}</td><td>{esc(x["status"])}</td><td class="wrap">{esc(x.get("note", ""))}</td></tr>' for x in items)
-    return sec('qc', '품질 체크리스트', table([('항목', 'l'), ('상태', ''), ('근거·비고', 'l')], rows))
+    body = table([('항목', 'l'), ('상태', ''), ('근거·비고', 'l')], rows)
+    Q = next(iter(aux('Q_').values()), None)
+    if Q:
+        fixes = NARR.get('q_fixes', {})
+        qrows = ''.join(f'<tr><td class="l wrap">{esc(c["item"])}</td><td>{esc(c["status"])}</td><td class="wrap">{esc(c["evidence"])}</td></tr>' for c in Q['checks'])
+        irows = ''.join(f'<tr><td>{esc(x["severity"])}</td><td class="l wrap">{esc(x["where"])}</td><td class="wrap">{esc(x["problem"])}</td>'
+                        f'<td class="wrap">{esc(fixes.get(str(i), "검토 중"))}</td></tr>' for i, x in enumerate(Q['issues']))
+        body += ('<h3>독립 검증(Q) 결과</h3>' + f'<p>{esc(Q["summary"])}</p>' +
+                 table([('점검 항목', 'l'), ('판정', ''), ('근거', 'l')], qrows) +
+                 ('<h3>Q가 지적한 문제와 조치</h3>' + table([('심각도', ''), ('위치', 'l'), ('문제', 'l'), ('조치', 'l')], irows) if Q['issues'] else ''))
+    return sec('qc', '품질 체크리스트', body)
 
 
 def appendix():
