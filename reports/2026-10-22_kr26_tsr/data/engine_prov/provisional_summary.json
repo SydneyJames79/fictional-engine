@@ -6,6 +6,85 @@
   "5y": 0.03965
  },
  "stocks": {
+  "HPSP": {
+   "ticker": "403870",
+   "price0": 48400.0,
+   "price_date": "2026-10-22",
+   "industry": "반도체·AI하드웨어·디스플레이장비",
+   "confidence": "보통",
+   "1y": {
+    "exp_cum_pct": -4.8,
+    "exp_ann_pct": -4.8,
+    "median_pct": -16.6,
+    "p10_pct": -60.6,
+    "p90_pct": 64.2,
+    "p_loss_pct": 63.3,
+    "p_loss30_pct": 37.3,
+    "sortino": -0.23,
+    "cvar10_pct": -70.3,
+    "scen_tsr_pct": {
+     "bear": -40.1,
+     "base": -6.8,
+     "bull": 41.9
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 13,
+    "ret_rank": 14,
+    "ra_rank": 14
+   },
+   "3y": {
+    "exp_cum_pct": 7.3,
+    "exp_ann_pct": 2.4,
+    "median_pct": -19.8,
+    "p10_pct": -75.2,
+    "p90_pct": 117.5,
+    "p_loss_pct": 61.0,
+    "p_loss30_pct": 43.4,
+    "sortino": -0.06,
+    "cvar10_pct": -83.9,
+    "scen_tsr_pct": {
+     "bear": -51.8,
+     "base": 3.3,
+     "bull": 74.8
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 11,
+    "ret_rank": 11,
+    "ra_rank": 12
+   },
+   "5y": {
+    "exp_cum_pct": 12.8,
+    "exp_ann_pct": 2.4,
+    "median_pct": -26.4,
+    "p10_pct": -82.6,
+    "p90_pct": 145.2,
+    "p_loss_pct": 62.5,
+    "p_loss30_pct": 48.0,
+    "sortino": -0.08,
+    "cvar10_pct": -89.6,
+    "scen_tsr_pct": {
+     "bear": -57.3,
+     "base": 7.5,
+     "bull": 96.1
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 11,
+    "ret_rank": 12,
+    "ra_rank": 13
+   }
+  },
   "RFHIC": {
    "ticker": "218410",
    "price0": 47200.0,
@@ -13,15 +92,15 @@
    "industry": "우주항공·위성통신·5G6G",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": -4.3,
-    "exp_ann_pct": -4.3,
-    "median_pct": -20.4,
-    "p10_pct": -67.5,
-    "p90_pct": 76.1,
-    "p_loss_pct": 64.2,
-    "p_loss30_pct": 41.9,
-    "sortino": -0.2,
-    "cvar10_pct": -76.9,
+    "exp_cum_pct": -3.9,
+    "exp_ann_pct": -3.9,
+    "median_pct": -20.3,
+    "p10_pct": -67.6,
+    "p90_pct": 77.7,
+    "p_loss_pct": 64.0,
+    "p_loss30_pct": 42.0,
+    "sortino": -0.19,
+    "cvar10_pct": -77.0,
     "scen_tsr_pct": {
      "bear": -42.1,
      "base": -3.8,
@@ -32,19 +111,19 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 10,
-    "ret_rank": 10,
-    "ra_rank": 10
+    "balanced_rank": 11,
+    "ret_rank": 11,
+    "ra_rank": 11
    },
    "3y": {
-    "exp_cum_pct": 9.0,
-    "exp_ann_pct": 2.9,
+    "exp_cum_pct": 8.8,
+    "exp_ann_pct": 2.8,
     "median_pct": -27.5,
     "p10_pct": -81.6,
-    "p90_pct": 133.9,
+    "p90_pct": 133.8,
     "p_loss_pct": 63.5,
     "p_loss30_pct": 48.5,
-    "sortino": -0.03,
+    "sortino": -0.04,
     "cvar10_pct": -88.9,
     "scen_tsr_pct": {
      "bear": -51.2,
@@ -56,20 +135,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 6,
-    "ret_rank": 6,
-    "ra_rank": 6
+    "balanced_rank": 10,
+    "ret_rank": 9,
+    "ra_rank": 8
    },
    "5y": {
-    "exp_cum_pct": 15.8,
+    "exp_cum_pct": 16.0,
     "exp_ann_pct": 3.0,
-    "median_pct": -30.7,
+    "median_pct": -30.5,
     "p10_pct": -85.8,
-    "p90_pct": 157.7,
+    "p90_pct": 157.3,
     "p_loss_pct": 63.6,
-    "p_loss30_pct": 50.4,
+    "p_loss30_pct": 50.3,
     "sortino": -0.05,
-    "cvar10_pct": -91.8,
+    "cvar10_pct": -91.9,
     "scen_tsr_pct": {
      "bear": -54.0,
      "base": 9.6,
@@ -80,9 +159,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 8,
-    "ret_rank": 8,
-    "ra_rank": 8
+    "balanced_rank": 10,
+    "ret_rank": 10,
+    "ra_rank": 10
    }
   },
   "SK하이닉스": {
@@ -92,14 +171,14 @@
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": 10.6,
-    "exp_ann_pct": 10.6,
-    "median_pct": 1.4,
-    "p10_pct": -48.3,
-    "p90_pct": 80.0,
-    "p_loss_pct": 48.7,
-    "p_loss30_pct": 22.5,
-    "sortino": 0.26,
+    "exp_cum_pct": 10.4,
+    "exp_ann_pct": 10.4,
+    "median_pct": 1.3,
+    "p10_pct": -48.4,
+    "p90_pct": 79.7,
+    "p_loss_pct": 48.9,
+    "p_loss30_pct": 22.4,
+    "sortino": 0.25,
     "cvar10_pct": -59.5,
     "scen_tsr_pct": {
      "bear": -36.4,
@@ -112,19 +191,19 @@
      0.0
     ],
     "balanced_rank": 2,
-    "ret_rank": 1,
+    "ret_rank": 2,
     "ra_rank": 2
    },
    "3y": {
-    "exp_cum_pct": 34.9,
-    "exp_ann_pct": 10.5,
-    "median_pct": 12.3,
-    "p10_pct": -62.2,
-    "p90_pct": 155.9,
-    "p_loss_pct": 43.4,
-    "p_loss30_pct": 26.6,
-    "sortino": 0.4,
-    "cvar10_pct": -73.9,
+    "exp_cum_pct": 35.3,
+    "exp_ann_pct": 10.6,
+    "median_pct": 12.7,
+    "p10_pct": -62.3,
+    "p90_pct": 156.3,
+    "p_loss_pct": 43.2,
+    "p_loss30_pct": 26.5,
+    "sortino": 0.41,
+    "cvar10_pct": -73.8,
     "scen_tsr_pct": {
      "bear": -45.1,
      "base": 33.2,
@@ -142,11 +221,11 @@
    "5y": {
     "exp_cum_pct": 51.2,
     "exp_ann_pct": 8.6,
-    "median_pct": 11.9,
-    "p10_pct": -69.8,
-    "p90_pct": 211.5,
-    "p_loss_pct": 44.7,
-    "p_loss30_pct": 30.1,
+    "median_pct": 11.8,
+    "p10_pct": -70.1,
+    "p90_pct": 210.9,
+    "p_loss_pct": 44.9,
+    "p_loss30_pct": 30.3,
     "sortino": 0.34,
     "cvar10_pct": -81.0,
     "scen_tsr_pct": {
@@ -164,6 +243,164 @@
     "ra_rank": 2
    }
   },
+  "고영": {
+   "ticker": "098460",
+   "price0": 33200.0,
+   "price_date": "2026-10-16",
+   "industry": "반도체·AI하드웨어·디스플레이장비",
+   "confidence": "보통",
+   "1y": {
+    "exp_cum_pct": -11.1,
+    "exp_ann_pct": -11.1,
+    "median_pct": -19.4,
+    "p10_pct": -59.5,
+    "p90_pct": 46.3,
+    "p_loss_pct": 67.6,
+    "p_loss30_pct": 38.7,
+    "sortino": -0.41,
+    "cvar10_pct": -69.1,
+    "scen_tsr_pct": {
+     "bear": -45.3,
+     "base": -12.1,
+     "bull": 25.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 21,
+    "ret_rank": 21,
+    "ra_rank": 26
+   },
+   "3y": {
+    "exp_cum_pct": -10.8,
+    "exp_ann_pct": -3.7,
+    "median_pct": -31.2,
+    "p10_pct": -76.7,
+    "p90_pct": 76.4,
+    "p_loss_pct": 69.3,
+    "p_loss30_pct": 50.9,
+    "sortino": -0.31,
+    "cvar10_pct": -84.6,
+    "scen_tsr_pct": {
+     "bear": -55.0,
+     "base": -14.0,
+     "bull": 40.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 19,
+    "ret_rank": 19,
+    "ra_rank": 21
+   },
+   "5y": {
+    "exp_cum_pct": -3.2,
+    "exp_ann_pct": -0.6,
+    "median_pct": -34.8,
+    "p10_pct": -82.4,
+    "p90_pct": 106.0,
+    "p_loss_pct": 68.2,
+    "p_loss30_pct": 53.1,
+    "sortino": -0.24,
+    "cvar10_pct": -89.1,
+    "scen_tsr_pct": {
+     "bear": -55.6,
+     "base": -11.3,
+     "bull": 69.3
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 16,
+    "ret_rank": 18,
+    "ra_rank": 19
+   }
+  },
+  "라온텍": {
+   "ticker": "418420",
+   "price0": 3250.0,
+   "price_date": "2026-10-16",
+   "industry": "반도체·AI하드웨어·디스플레이장비",
+   "confidence": "낮음",
+   "1y": {
+    "exp_cum_pct": -11.0,
+    "exp_ann_pct": -11.0,
+    "median_pct": -37.7,
+    "p10_pct": -83.8,
+    "p90_pct": 87.1,
+    "p_loss_pct": 70.9,
+    "p_loss30_pct": 55.3,
+    "sortino": -0.28,
+    "cvar10_pct": -91.3,
+    "scen_tsr_pct": {
+     "bear": -53.8,
+     "base": -16.9,
+     "bull": 84.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 20,
+    "ret_rank": 20,
+    "ra_rank": 16
+   },
+   "3y": {
+    "exp_cum_pct": -30.3,
+    "exp_ann_pct": -11.3,
+    "median_pct": -70.4,
+    "p10_pct": -95.0,
+    "p90_pct": 65.8,
+    "p_loss_pct": 81.0,
+    "p_loss30_pct": 72.8,
+    "sortino": -0.34,
+    "cvar10_pct": -96.8,
+    "scen_tsr_pct": {
+     "bear": -75.4,
+     "base": -23.1,
+     "bull": 78.5
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 26,
+    "ret_rank": 26,
+    "ra_rank": 22
+   },
+   "5y": {
+    "exp_cum_pct": -22.9,
+    "exp_ann_pct": -5.1,
+    "median_pct": -76.1,
+    "p10_pct": -95.0,
+    "p90_pct": 87.0,
+    "p_loss_pct": 80.3,
+    "p_loss30_pct": 73.1,
+    "sortino": -0.26,
+    "cvar10_pct": -97.2,
+    "scen_tsr_pct": {
+     "bear": -84.6,
+     "base": -26.2,
+     "bull": 176.9
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 23,
+    "ret_rank": 23,
+    "ra_rank": 22
+   }
+  },
   "바이오다인": {
    "ticker": "314930",
    "price0": 5830.0,
@@ -171,12 +408,12 @@
    "industry": "바이오의약품·의료기기·진단",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -9.6,
-    "exp_ann_pct": -9.6,
+    "exp_cum_pct": -9.4,
+    "exp_ann_pct": -9.4,
     "median_pct": -22.4,
     "p10_pct": -65.0,
-    "p90_pct": 61.5,
-    "p_loss_pct": 67.4,
+    "p90_pct": 62.0,
+    "p_loss_pct": 67.2,
     "p_loss30_pct": 42.9,
     "sortino": -0.33,
     "cvar10_pct": -74.5,
@@ -190,16 +427,16 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 14,
-    "ret_rank": 14,
-    "ra_rank": 15
+    "balanced_rank": 17,
+    "ret_rank": 17,
+    "ra_rank": 20
    },
    "3y": {
-    "exp_cum_pct": 7.3,
-    "exp_ann_pct": 2.4,
+    "exp_cum_pct": 7.2,
+    "exp_ann_pct": 2.3,
     "median_pct": -21.1,
     "p10_pct": -79.4,
-    "p90_pct": 127.8,
+    "p90_pct": 127.0,
     "p_loss_pct": 61.1,
     "p_loss30_pct": 44.6,
     "sortino": -0.06,
@@ -214,20 +451,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 9,
-    "ret_rank": 9,
-    "ra_rank": 9
+    "balanced_rank": 12,
+    "ret_rank": 12,
+    "ra_rank": 11
    },
    "5y": {
-    "exp_cum_pct": 23.4,
-    "exp_ann_pct": 4.3,
-    "median_pct": -16.6,
-    "p10_pct": -84.5,
-    "p90_pct": 172.6,
+    "exp_cum_pct": 23.0,
+    "exp_ann_pct": 4.2,
+    "median_pct": -16.7,
+    "p10_pct": -84.4,
+    "p90_pct": 172.8,
     "p_loss_pct": 57.3,
-    "p_loss30_pct": 43.4,
-    "sortino": 0.02,
-    "cvar10_pct": -90.9,
+    "p_loss30_pct": 43.5,
+    "sortino": 0.01,
+    "cvar10_pct": -90.8,
     "scen_tsr_pct": {
      "bear": -65.2,
      "base": 14.2,
@@ -238,9 +475,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 6,
-    "ret_rank": 5,
-    "ra_rank": 6
+    "balanced_rank": 9,
+    "ret_rank": 8,
+    "ra_rank": 8
    }
   },
   "사피엔반도체": {
@@ -250,15 +487,15 @@
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -10.9,
-    "exp_ann_pct": -10.9,
-    "median_pct": -29.2,
-    "p10_pct": -72.1,
-    "p90_pct": 70.4,
-    "p_loss_pct": 69.7,
-    "p_loss30_pct": 49.3,
+    "exp_cum_pct": -11.0,
+    "exp_ann_pct": -11.0,
+    "median_pct": -29.3,
+    "p10_pct": -72.2,
+    "p90_pct": 70.9,
+    "p_loss_pct": 69.8,
+    "p_loss30_pct": 49.4,
     "sortino": -0.32,
-    "cvar10_pct": -81.3,
+    "cvar10_pct": -81.4,
     "scen_tsr_pct": {
      "bear": -51.8,
      "base": -17.4,
@@ -269,18 +506,18 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 15,
-    "ret_rank": 15,
-    "ra_rank": 14
+    "balanced_rank": 19,
+    "ret_rank": 19,
+    "ra_rank": 19
    },
    "3y": {
     "exp_cum_pct": -1.2,
     "exp_ann_pct": -0.4,
-    "median_pct": -40.6,
-    "p10_pct": -88.9,
-    "p90_pct": 127.8,
-    "p_loss_pct": 69.0,
-    "p_loss30_pct": 56.0,
+    "median_pct": -40.3,
+    "p10_pct": -88.8,
+    "p90_pct": 126.4,
+    "p_loss_pct": 68.9,
+    "p_loss30_pct": 55.9,
     "sortino": -0.13,
     "cvar10_pct": -93.3,
     "scen_tsr_pct": {
@@ -293,20 +530,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 12,
-    "ret_rank": 11,
-    "ra_rank": 11
+    "balanced_rank": 14,
+    "ret_rank": 14,
+    "ra_rank": 14
    },
    "5y": {
-    "exp_cum_pct": 9.7,
+    "exp_cum_pct": 10.1,
     "exp_ann_pct": 1.9,
-    "median_pct": -44.7,
-    "p10_pct": -93.5,
-    "p90_pct": 173.7,
-    "p_loss_pct": 67.0,
+    "median_pct": -44.8,
+    "p10_pct": -93.6,
+    "p90_pct": 174.2,
+    "p_loss_pct": 66.9,
     "p_loss30_pct": 56.5,
     "sortino": -0.08,
-    "cvar10_pct": -95.1,
+    "cvar10_pct": -95.2,
     "scen_tsr_pct": {
      "bear": -77.6,
      "base": 4.0,
@@ -317,9 +554,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 11,
-    "ret_rank": 11,
-    "ra_rank": 10
+    "balanced_rank": 14,
+    "ret_rank": 14,
+    "ra_rank": 12
    }
   },
   "삼성바이오로직스": {
@@ -329,15 +566,15 @@
    "industry": "바이오의약품·의료기기·진단",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": 1.8,
-    "exp_ann_pct": 1.8,
-    "median_pct": -2.9,
-    "p10_pct": -42.9,
+    "exp_cum_pct": 2.0,
+    "exp_ann_pct": 2.0,
+    "median_pct": -2.8,
+    "p10_pct": -42.7,
     "p90_pct": 51.6,
-    "p_loss_pct": 53.2,
+    "p_loss_pct": 53.1,
     "p_loss30_pct": 20.1,
     "sortino": -0.07,
-    "cvar10_pct": -53.6,
+    "cvar10_pct": -53.4,
     "scen_tsr_pct": {
      "bear": -30.9,
      "base": 2.9,
@@ -348,17 +585,17 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 4,
-    "ret_rank": 5,
-    "ra_rank": 5
+    "balanced_rank": 6,
+    "ret_rank": 7,
+    "ra_rank": 7
    },
    "3y": {
     "exp_cum_pct": 12.6,
     "exp_ann_pct": 4.0,
-    "median_pct": -0.7,
-    "p10_pct": -57.1,
-    "p90_pct": 96.2,
-    "p_loss_pct": 50.5,
+    "median_pct": -0.5,
+    "p10_pct": -57.2,
+    "p90_pct": 96.9,
+    "p_loss_pct": 50.4,
     "p_loss30_pct": 27.8,
     "sortino": 0.01,
     "cvar10_pct": -69.0,
@@ -372,20 +609,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 4,
-    "ret_rank": 5,
-    "ra_rank": 5
+    "balanced_rank": 6,
+    "ret_rank": 7,
+    "ra_rank": 7
    },
    "5y": {
-    "exp_cum_pct": 22.8,
-    "exp_ann_pct": 4.2,
-    "median_pct": 2.3,
-    "p10_pct": -64.3,
-    "p90_pct": 131.3,
-    "p_loss_pct": 48.6,
-    "p_loss30_pct": 30.0,
-    "sortino": 0.02,
-    "cvar10_pct": -75.7,
+    "exp_cum_pct": 23.6,
+    "exp_ann_pct": 4.3,
+    "median_pct": 2.8,
+    "p10_pct": -64.2,
+    "p90_pct": 133.3,
+    "p_loss_pct": 48.4,
+    "p_loss30_pct": 29.8,
+    "sortino": 0.03,
+    "cvar10_pct": -75.6,
     "scen_tsr_pct": {
      "bear": -45.4,
      "base": 24.3,
@@ -396,9 +633,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 5,
-    "ret_rank": 6,
-    "ra_rank": 5
+    "balanced_rank": 6,
+    "ret_rank": 7,
+    "ra_rank": 7
    }
   },
   "삼성에피스홀딩스": {
@@ -411,12 +648,12 @@
     "exp_cum_pct": -2.8,
     "exp_ann_pct": -2.8,
     "median_pct": -7.9,
-    "p10_pct": -47.5,
-    "p90_pct": 47.6,
-    "p_loss_pct": 58.7,
-    "p_loss30_pct": 24.8,
+    "p10_pct": -47.7,
+    "p90_pct": 47.0,
+    "p_loss_pct": 58.6,
+    "p_loss30_pct": 24.9,
     "sortino": -0.23,
-    "cvar10_pct": -57.6,
+    "cvar10_pct": -57.7,
     "scen_tsr_pct": {
      "bear": -37.3,
      "base": -2.7,
@@ -427,20 +664,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 7,
-    "ret_rank": 7,
-    "ra_rank": 11
+    "balanced_rank": 9,
+    "ret_rank": 9,
+    "ra_rank": 13
    },
    "3y": {
-    "exp_cum_pct": 9.0,
-    "exp_ann_pct": 2.9,
-    "median_pct": -5.8,
+    "exp_cum_pct": 8.6,
+    "exp_ann_pct": 2.8,
+    "median_pct": -6.2,
     "p10_pct": -62.5,
-    "p90_pct": 97.4,
-    "p_loss_pct": 53.9,
-    "p_loss30_pct": 32.3,
-    "sortino": -0.05,
-    "cvar10_pct": -72.2,
+    "p90_pct": 96.7,
+    "p_loss_pct": 54.2,
+    "p_loss30_pct": 32.5,
+    "sortino": -0.06,
+    "cvar10_pct": -72.3,
     "scen_tsr_pct": {
      "bear": -46.0,
      "base": 7.8,
@@ -451,20 +688,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 7,
-    "ret_rank": 7,
-    "ra_rank": 8
+    "balanced_rank": 9,
+    "ret_rank": 10,
+    "ra_rank": 10
    },
    "5y": {
-    "exp_cum_pct": 22.5,
-    "exp_ann_pct": 4.1,
-    "median_pct": -2.3,
-    "p10_pct": -68.5,
-    "p90_pct": 143.6,
-    "p_loss_pct": 51.3,
-    "p_loss30_pct": 33.8,
+    "exp_cum_pct": 22.6,
+    "exp_ann_pct": 4.2,
+    "median_pct": -2.7,
+    "p10_pct": -68.6,
+    "p90_pct": 143.4,
+    "p_loss_pct": 51.5,
+    "p_loss30_pct": 33.9,
     "sortino": 0.01,
-    "cvar10_pct": -77.7,
+    "cvar10_pct": -77.8,
     "scen_tsr_pct": {
      "bear": -51.8,
      "base": 14.5,
@@ -475,9 +712,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 7,
-    "ret_rank": 7,
-    "ra_rank": 7
+    "balanced_rank": 8,
+    "ret_rank": 9,
+    "ra_rank": 9
    }
   },
   "삼성전자": {
@@ -487,15 +724,15 @@
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": 10.4,
-    "exp_ann_pct": 10.4,
-    "median_pct": 3.5,
-    "p10_pct": -42.2,
+    "exp_cum_pct": 10.5,
+    "exp_ann_pct": 10.5,
+    "median_pct": 3.6,
+    "p10_pct": -42.1,
     "p90_pct": 71.0,
-    "p_loss_pct": 46.6,
-    "p_loss30_pct": 18.5,
+    "p_loss_pct": 46.4,
+    "p_loss30_pct": 18.3,
     "sortino": 0.28,
-    "cvar10_pct": -53.5,
+    "cvar10_pct": -53.4,
     "scen_tsr_pct": {
      "bear": -30.4,
      "base": 8.7,
@@ -507,19 +744,19 @@
      0.0
     ],
     "balanced_rank": 1,
-    "ret_rank": 2,
+    "ret_rank": 1,
     "ra_rank": 1
    },
    "3y": {
-    "exp_cum_pct": 32.8,
-    "exp_ann_pct": 9.9,
+    "exp_cum_pct": 32.5,
+    "exp_ann_pct": 9.8,
     "median_pct": 13.9,
-    "p10_pct": -51.9,
+    "p10_pct": -52.1,
     "p90_pct": 137.9,
-    "p_loss_pct": 41.4,
-    "p_loss30_pct": 22.1,
+    "p_loss_pct": 41.5,
+    "p_loss30_pct": 22.2,
     "sortino": 0.44,
-    "cvar10_pct": -65.1,
+    "cvar10_pct": -65.3,
     "scen_tsr_pct": {
      "bear": -27.7,
      "base": 31.5,
@@ -537,10 +774,10 @@
    "5y": {
     "exp_cum_pct": 48.2,
     "exp_ann_pct": 8.2,
-    "median_pct": 19.9,
+    "median_pct": 20.1,
     "p10_pct": -58.1,
-    "p90_pct": 184.4,
-    "p_loss_pct": 40.0,
+    "p90_pct": 183.5,
+    "p_loss_pct": 39.9,
     "p_loss30_pct": 23.8,
     "sortino": 0.39,
     "cvar10_pct": -71.4,
@@ -559,6 +796,85 @@
     "ra_rank": 1
    }
   },
+  "서진시스템": {
+   "ticker": "178320",
+   "price0": 34000.0,
+   "price_date": "2026-10-21",
+   "industry": "ESS·산업재·특수소재",
+   "confidence": "낮음",
+   "1y": {
+    "exp_cum_pct": -12.3,
+    "exp_ann_pct": -12.3,
+    "median_pct": -21.9,
+    "p10_pct": -66.4,
+    "p90_pct": 54.8,
+    "p_loss_pct": 67.8,
+    "p_loss30_pct": 42.3,
+    "sortino": -0.4,
+    "cvar10_pct": -74.8,
+    "scen_tsr_pct": {
+     "bear": -55.9,
+     "base": -14.7,
+     "bull": 47.1
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 24,
+    "ret_rank": 24,
+    "ra_rank": 23
+   },
+   "3y": {
+    "exp_cum_pct": -8.1,
+    "exp_ann_pct": -2.8,
+    "median_pct": -33.8,
+    "p10_pct": -82.9,
+    "p90_pct": 94.0,
+    "p_loss_pct": 68.6,
+    "p_loss30_pct": 52.6,
+    "sortino": -0.24,
+    "cvar10_pct": -89.8,
+    "scen_tsr_pct": {
+     "bear": -64.7,
+     "base": -16.2,
+     "bull": 83.2
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 18,
+    "ret_rank": 18,
+    "ra_rank": 17
+   },
+   "5y": {
+    "exp_cum_pct": -8.3,
+    "exp_ann_pct": -1.7,
+    "median_pct": -40.3,
+    "p10_pct": -89.3,
+    "p90_pct": 106.9,
+    "p_loss_pct": 69.8,
+    "p_loss30_pct": 56.2,
+    "sortino": -0.25,
+    "cvar10_pct": -93.6,
+    "scen_tsr_pct": {
+     "bear": -72.1,
+     "base": -16.5,
+     "bull": 97.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 21,
+    "ret_rank": 21,
+    "ra_rank": 21
+   }
+  },
   "선익시스템": {
    "ticker": "171090",
    "price0": 82900.0,
@@ -566,15 +882,15 @@
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -3.1,
-    "exp_ann_pct": -3.1,
-    "median_pct": -19.5,
-    "p10_pct": -66.7,
-    "p90_pct": 78.3,
-    "p_loss_pct": 63.6,
-    "p_loss30_pct": 41.3,
-    "sortino": -0.17,
-    "cvar10_pct": -76.4,
+    "exp_cum_pct": -4.0,
+    "exp_ann_pct": -4.0,
+    "median_pct": -20.1,
+    "p10_pct": -66.9,
+    "p90_pct": 76.9,
+    "p_loss_pct": 64.1,
+    "p_loss30_pct": 41.7,
+    "sortino": -0.19,
+    "cvar10_pct": -76.5,
     "scen_tsr_pct": {
      "bear": -47.5,
      "base": -9.5,
@@ -585,20 +901,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 9,
-    "ret_rank": 9,
-    "ra_rank": 7
+    "balanced_rank": 12,
+    "ret_rank": 12,
+    "ra_rank": 12
    },
    "3y": {
-    "exp_cum_pct": -11.2,
-    "exp_ann_pct": -3.9,
+    "exp_cum_pct": -10.8,
+    "exp_ann_pct": -3.8,
     "median_pct": -41.4,
-    "p10_pct": -85.2,
-    "p90_pct": 92.3,
-    "p_loss_pct": 71.5,
+    "p10_pct": -85.0,
+    "p90_pct": 92.1,
+    "p_loss_pct": 71.6,
     "p_loss30_pct": 57.4,
-    "sortino": -0.26,
-    "cvar10_pct": -90.8,
+    "sortino": -0.25,
+    "cvar10_pct": -90.7,
     "scen_tsr_pct": {
      "bear": -61.4,
      "base": -19.3,
@@ -609,20 +925,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 14,
-    "ret_rank": 14,
-    "ra_rank": 14
+    "balanced_rank": 20,
+    "ret_rank": 20,
+    "ra_rank": 19
    },
    "5y": {
-    "exp_cum_pct": 1.0,
-    "exp_ann_pct": 0.2,
-    "median_pct": -43.5,
-    "p10_pct": -89.2,
-    "p90_pct": 128.3,
-    "p_loss_pct": 69.9,
+    "exp_cum_pct": 0.7,
+    "exp_ann_pct": 0.1,
+    "median_pct": -43.7,
+    "p10_pct": -89.4,
+    "p90_pct": 128.4,
+    "p_loss_pct": 69.7,
     "p_loss30_pct": 57.7,
-    "sortino": -0.16,
-    "cvar10_pct": -93.7,
+    "sortino": -0.17,
+    "cvar10_pct": -93.8,
     "scen_tsr_pct": {
      "bear": -61.0,
      "base": -10.0,
@@ -633,9 +949,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 13,
-    "ret_rank": 13,
-    "ra_rank": 13
+    "balanced_rank": 17,
+    "ret_rank": 17,
+    "ra_rank": 17
    }
   },
   "쎄트렉아이": {
@@ -645,14 +961,14 @@
    "industry": "우주항공·위성통신·5G6G",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -4.6,
-    "exp_ann_pct": -4.6,
-    "median_pct": -24.3,
-    "p10_pct": -72.3,
-    "p90_pct": 84.0,
+    "exp_cum_pct": -4.4,
+    "exp_ann_pct": -4.4,
+    "median_pct": -24.1,
+    "p10_pct": -72.1,
+    "p90_pct": 83.9,
     "p_loss_pct": 65.3,
-    "p_loss30_pct": 45.6,
-    "sortino": -0.19,
+    "p_loss30_pct": 45.5,
+    "sortino": -0.18,
     "cvar10_pct": -80.8,
     "scen_tsr_pct": {
      "bear": -47.1,
@@ -664,20 +980,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 11,
-    "ret_rank": 11,
-    "ra_rank": 9
+    "balanced_rank": 14,
+    "ret_rank": 13,
+    "ra_rank": 10
    },
    "3y": {
-    "exp_cum_pct": 4.3,
-    "exp_ann_pct": 1.4,
-    "median_pct": -35.7,
-    "p10_pct": -86.0,
-    "p90_pct": 131.0,
-    "p_loss_pct": 66.7,
+    "exp_cum_pct": 3.8,
+    "exp_ann_pct": 1.3,
+    "median_pct": -35.6,
+    "p10_pct": -85.9,
+    "p90_pct": 129.4,
+    "p_loss_pct": 66.8,
     "p_loss30_pct": 53.2,
-    "sortino": -0.08,
-    "cvar10_pct": -91.7,
+    "sortino": -0.09,
+    "cvar10_pct": -91.6,
     "scen_tsr_pct": {
      "bear": -57.1,
      "base": -0.3,
@@ -688,18 +1004,18 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 10,
-    "ret_rank": 10,
-    "ra_rank": 10
+    "balanced_rank": 13,
+    "ret_rank": 13,
+    "ra_rank": 13
    },
    "5y": {
-    "exp_cum_pct": 12.8,
-    "exp_ann_pct": 2.4,
+    "exp_cum_pct": 12.9,
+    "exp_ann_pct": 2.5,
     "median_pct": -36.0,
-    "p10_pct": -89.8,
-    "p90_pct": 157.1,
+    "p10_pct": -89.9,
+    "p90_pct": 157.7,
     "p_loss_pct": 65.2,
-    "p_loss30_pct": 53.0,
+    "p_loss30_pct": 53.1,
     "sortino": -0.07,
     "cvar10_pct": -94.1,
     "scen_tsr_pct": {
@@ -712,9 +1028,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 10,
-    "ret_rank": 9,
-    "ra_rank": 9
+    "balanced_rank": 12,
+    "ret_rank": 11,
+    "ra_rank": 11
    }
   },
   "에이치브이엠": {
@@ -724,15 +1040,15 @@
    "industry": "ESS·산업재·특수소재",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -15.9,
-    "exp_ann_pct": -15.9,
-    "median_pct": -35.5,
-    "p10_pct": -77.3,
-    "p90_pct": 67.6,
-    "p_loss_pct": 72.4,
-    "p_loss30_pct": 54.4,
+    "exp_cum_pct": -16.1,
+    "exp_ann_pct": -16.1,
+    "median_pct": -35.7,
+    "p10_pct": -77.4,
+    "p90_pct": 66.4,
+    "p_loss_pct": 72.5,
+    "p_loss30_pct": 54.5,
     "sortino": -0.4,
-    "cvar10_pct": -84.7,
+    "cvar10_pct": -84.9,
     "scen_tsr_pct": {
      "bear": -57.5,
      "base": -24.1,
@@ -743,16 +1059,16 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 17,
-    "ret_rank": 17,
-    "ra_rank": 16
+    "balanced_rank": 26,
+    "ret_rank": 26,
+    "ra_rank": 25
    },
    "3y": {
-    "exp_cum_pct": -22.9,
-    "exp_ann_pct": -8.3,
-    "median_pct": -51.0,
+    "exp_cum_pct": -22.6,
+    "exp_ann_pct": -8.2,
+    "median_pct": -50.8,
     "p10_pct": -90.9,
-    "p90_pct": 71.9,
+    "p90_pct": 72.2,
     "p_loss_pct": 76.2,
     "p_loss30_pct": 63.6,
     "sortino": -0.35,
@@ -767,20 +1083,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 16,
-    "ret_rank": 16,
-    "ra_rank": 16
+    "balanced_rank": 23,
+    "ret_rank": 23,
+    "ra_rank": 23
    },
    "5y": {
-    "exp_cum_pct": -21.2,
+    "exp_cum_pct": -21.6,
     "exp_ann_pct": -4.7,
-    "median_pct": -51.2,
-    "p10_pct": -93.5,
+    "median_pct": -51.4,
+    "p10_pct": -93.4,
     "p90_pct": 80.6,
-    "p_loss_pct": 75.1,
-    "p_loss30_pct": 62.8,
-    "sortino": -0.33,
-    "cvar10_pct": -95.4,
+    "p_loss_pct": 75.2,
+    "p_loss30_pct": 63.1,
+    "sortino": -0.34,
+    "cvar10_pct": -95.3,
     "scen_tsr_pct": {
      "bear": -81.8,
      "base": -27.9,
@@ -791,9 +1107,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 16,
-    "ret_rank": 16,
-    "ra_rank": 16
+    "balanced_rank": 22,
+    "ret_rank": 22,
+    "ra_rank": 23
    }
   },
   "엘앤씨바이오": {
@@ -803,15 +1119,15 @@
    "industry": "바이오의약품·의료기기·진단",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -13.8,
-    "exp_ann_pct": -13.8,
-    "median_pct": -27.0,
+    "exp_cum_pct": -13.5,
+    "exp_ann_pct": -13.5,
+    "median_pct": -26.8,
     "p10_pct": -69.2,
-    "p90_pct": 56.7,
-    "p_loss_pct": 70.1,
-    "p_loss30_pct": 47.2,
-    "sortino": -0.41,
-    "cvar10_pct": -77.9,
+    "p90_pct": 57.8,
+    "p_loss_pct": 70.0,
+    "p_loss30_pct": 47.1,
+    "sortino": -0.4,
+    "cvar10_pct": -78.0,
     "scen_tsr_pct": {
      "bear": -54.1,
      "base": -18.8,
@@ -822,20 +1138,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 16,
-    "ret_rank": 16,
-    "ra_rank": 17
+    "balanced_rank": 25,
+    "ret_rank": 25,
+    "ra_rank": 24
    },
    "3y": {
-    "exp_cum_pct": -13.7,
-    "exp_ann_pct": -4.8,
-    "median_pct": -40.3,
-    "p10_pct": -85.7,
-    "p90_pct": 83.9,
+    "exp_cum_pct": -13.9,
+    "exp_ann_pct": -4.9,
+    "median_pct": -40.0,
+    "p10_pct": -85.5,
+    "p90_pct": 83.7,
     "p_loss_pct": 71.8,
-    "p_loss30_pct": 56.9,
+    "p_loss30_pct": 56.8,
     "sortino": -0.29,
-    "cvar10_pct": -91.3,
+    "cvar10_pct": -91.2,
     "scen_tsr_pct": {
      "bear": -68.0,
      "base": -19.3,
@@ -846,19 +1162,19 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 15,
-    "ret_rank": 15,
-    "ra_rank": 15
+    "balanced_rank": 21,
+    "ret_rank": 21,
+    "ra_rank": 20
    },
    "5y": {
-    "exp_cum_pct": -5.5,
-    "exp_ann_pct": -1.1,
-    "median_pct": -41.3,
+    "exp_cum_pct": -5.9,
+    "exp_ann_pct": -1.2,
+    "median_pct": -41.4,
     "p10_pct": -89.8,
-    "p90_pct": 115.3,
-    "p_loss_pct": 69.7,
+    "p90_pct": 112.3,
+    "p_loss_pct": 69.8,
     "p_loss30_pct": 56.6,
-    "sortino": -0.22,
+    "sortino": -0.23,
     "cvar10_pct": -93.8,
     "scen_tsr_pct": {
      "bear": -75.0,
@@ -870,9 +1186,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 14,
-    "ret_rank": 14,
-    "ra_rank": 14
+    "balanced_rank": 19,
+    "ret_rank": 19,
+    "ra_rank": 18
    }
   },
   "와이씨": {
@@ -882,15 +1198,15 @@
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": -7.2,
-    "exp_ann_pct": -7.2,
-    "median_pct": -19.5,
-    "p10_pct": -60.9,
-    "p90_pct": 61.4,
-    "p_loss_pct": 66.0,
-    "p_loss30_pct": 39.7,
-    "sortino": -0.29,
-    "cvar10_pct": -70.4,
+    "exp_cum_pct": -6.8,
+    "exp_ann_pct": -6.8,
+    "median_pct": -19.4,
+    "p10_pct": -60.7,
+    "p90_pct": 62.8,
+    "p_loss_pct": 65.7,
+    "p_loss30_pct": 39.5,
+    "sortino": -0.28,
+    "cvar10_pct": -70.3,
     "scen_tsr_pct": {
      "bear": -45.9,
      "base": -14.8,
@@ -901,20 +1217,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 12,
-    "ret_rank": 12,
-    "ra_rank": 12
+    "balanced_rank": 15,
+    "ret_rank": 15,
+    "ra_rank": 17
    },
    "3y": {
     "exp_cum_pct": -7.5,
     "exp_ann_pct": -2.6,
-    "median_pct": -32.5,
+    "median_pct": -32.6,
     "p10_pct": -78.4,
-    "p90_pct": 87.9,
-    "p_loss_pct": 68.8,
+    "p90_pct": 88.4,
+    "p_loss_pct": 68.9,
     "p_loss30_pct": 51.8,
     "sortino": -0.25,
-    "cvar10_pct": -86.0,
+    "cvar10_pct": -85.9,
     "scen_tsr_pct": {
      "bear": -54.4,
      "base": -16.2,
@@ -925,17 +1241,17 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 13,
-    "ret_rank": 13,
-    "ra_rank": 13
+    "balanced_rank": 17,
+    "ret_rank": 17,
+    "ra_rank": 18
    },
    "5y": {
-    "exp_cum_pct": -6.2,
-    "exp_ann_pct": -1.3,
-    "median_pct": -41.3,
+    "exp_cum_pct": -6.6,
+    "exp_ann_pct": -1.4,
+    "median_pct": -41.4,
     "p10_pct": -85.8,
-    "p90_pct": 105.1,
-    "p_loss_pct": 70.6,
+    "p90_pct": 103.4,
+    "p_loss_pct": 70.7,
     "p_loss30_pct": 57.1,
     "sortino": -0.25,
     "cvar10_pct": -91.5,
@@ -949,9 +1265,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 15,
-    "ret_rank": 15,
-    "ra_rank": 15
+    "balanced_rank": 20,
+    "ret_rank": 20,
+    "ra_rank": 20
    }
   },
   "이수페타시스": {
@@ -961,15 +1277,15 @@
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": -2.8,
-    "exp_ann_pct": -2.8,
-    "median_pct": -16.2,
-    "p10_pct": -63.9,
-    "p90_pct": 72.8,
-    "p_loss_pct": 62.0,
-    "p_loss30_pct": 38.3,
+    "exp_cum_pct": -2.9,
+    "exp_ann_pct": -2.9,
+    "median_pct": -16.4,
+    "p10_pct": -64.1,
+    "p90_pct": 73.7,
+    "p_loss_pct": 62.2,
+    "p_loss30_pct": 38.4,
     "sortino": -0.17,
-    "cvar10_pct": -73.4,
+    "cvar10_pct": -73.5,
     "scen_tsr_pct": {
      "bear": -44.0,
      "base": -3.8,
@@ -980,18 +1296,18 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 8,
-    "ret_rank": 8,
-    "ra_rank": 8
+    "balanced_rank": 10,
+    "ret_rank": 10,
+    "ra_rank": 9
    },
    "3y": {
-    "exp_cum_pct": -6.6,
-    "exp_ann_pct": -2.3,
-    "median_pct": -34.5,
-    "p10_pct": -81.9,
-    "p90_pct": 97.1,
-    "p_loss_pct": 68.7,
-    "p_loss30_pct": 53.0,
+    "exp_cum_pct": -6.1,
+    "exp_ann_pct": -2.1,
+    "median_pct": -34.3,
+    "p10_pct": -81.8,
+    "p90_pct": 99.0,
+    "p_loss_pct": 68.5,
+    "p_loss30_pct": 52.9,
     "sortino": -0.22,
     "cvar10_pct": -88.2,
     "scen_tsr_pct": {
@@ -1004,18 +1320,18 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 11,
-    "ret_rank": 12,
-    "ra_rank": 12
+    "balanced_rank": 15,
+    "ret_rank": 16,
+    "ra_rank": 16
    },
    "5y": {
     "exp_cum_pct": 5.6,
     "exp_ann_pct": 1.1,
-    "median_pct": -37.1,
-    "p10_pct": -85.9,
-    "p90_pct": 133.9,
-    "p_loss_pct": 67.2,
-    "p_loss30_pct": 54.0,
+    "median_pct": -37.0,
+    "p10_pct": -85.8,
+    "p90_pct": 134.0,
+    "p_loss_pct": 67.3,
+    "p_loss30_pct": 53.9,
     "sortino": -0.14,
     "cvar10_pct": -91.4,
     "scen_tsr_pct": {
@@ -1028,9 +1344,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 12,
-    "ret_rank": 12,
-    "ra_rank": 12
+    "balanced_rank": 15,
+    "ret_rank": 15,
+    "ra_rank": 15
    }
   },
   "인텔리안테크": {
@@ -1040,15 +1356,15 @@
    "industry": "우주항공·위성통신·5G6G",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": 1.9,
-    "exp_ann_pct": 1.9,
-    "median_pct": -15.3,
+    "exp_cum_pct": 2.3,
+    "exp_ann_pct": 2.3,
+    "median_pct": -15.1,
     "p10_pct": -65.9,
-    "p90_pct": 89.0,
-    "p_loss_pct": 60.4,
-    "p_loss30_pct": 38.5,
-    "sortino": -0.05,
-    "cvar10_pct": -75.8,
+    "p90_pct": 90.4,
+    "p_loss_pct": 60.2,
+    "p_loss30_pct": 38.3,
+    "sortino": -0.04,
+    "cvar10_pct": -75.7,
     "scen_tsr_pct": {
      "bear": -44.8,
      "base": -2.7,
@@ -1059,17 +1375,17 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 5,
-    "ret_rank": 4,
-    "ra_rank": 4
+    "balanced_rank": 7,
+    "ret_rank": 6,
+    "ra_rank": 6
    },
    "3y": {
-    "exp_cum_pct": 19.3,
+    "exp_cum_pct": 19.4,
     "exp_ann_pct": 6.1,
     "median_pct": -18.9,
     "p10_pct": -80.9,
-    "p90_pct": 158.0,
-    "p_loss_pct": 58.9,
+    "p90_pct": 157.9,
+    "p_loss_pct": 58.8,
     "p_loss30_pct": 44.0,
     "sortino": 0.09,
     "cvar10_pct": -88.3,
@@ -1083,20 +1399,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 5,
-    "ret_rank": 4,
-    "ra_rank": 4
+    "balanced_rank": 7,
+    "ret_rank": 6,
+    "ra_rank": 6
    },
    "5y": {
-    "exp_cum_pct": 26.6,
-    "exp_ann_pct": 4.8,
-    "median_pct": -26.5,
+    "exp_cum_pct": 26.9,
+    "exp_ann_pct": 4.9,
+    "median_pct": -26.1,
     "p10_pct": -87.2,
-    "p90_pct": 187.7,
-    "p_loss_pct": 61.0,
-    "p_loss30_pct": 48.3,
+    "p90_pct": 188.8,
+    "p_loss_pct": 60.8,
+    "p_loss30_pct": 48.1,
     "sortino": 0.04,
-    "cvar10_pct": -92.6,
+    "cvar10_pct": -92.7,
     "scen_tsr_pct": {
      "bear": -62.2,
      "base": 12.9,
@@ -1107,9 +1423,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 4,
-    "ret_rank": 4,
-    "ra_rank": 4
+    "balanced_rank": 7,
+    "ret_rank": 6,
+    "ra_rank": 6
    }
   },
   "케이엠더블유": {
@@ -1119,15 +1435,15 @@
    "industry": "우주항공·위성통신·5G6G",
    "confidence": "낮음",
    "1y": {
-    "exp_cum_pct": -9.4,
-    "exp_ann_pct": -9.4,
-    "median_pct": -25.8,
-    "p10_pct": -69.9,
-    "p90_pct": 70.2,
-    "p_loss_pct": 68.0,
-    "p_loss30_pct": 46.3,
-    "sortino": -0.3,
-    "cvar10_pct": -80.2,
+    "exp_cum_pct": -9.8,
+    "exp_ann_pct": -9.8,
+    "median_pct": -26.1,
+    "p10_pct": -70.1,
+    "p90_pct": 69.2,
+    "p_loss_pct": 68.3,
+    "p_loss30_pct": 46.7,
+    "sortino": -0.31,
+    "cvar10_pct": -80.3,
     "scen_tsr_pct": {
      "bear": -50.5,
      "base": -18.3,
@@ -1138,18 +1454,18 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 13,
-    "ret_rank": 13,
-    "ra_rank": 13
+    "balanced_rank": 18,
+    "ret_rank": 18,
+    "ra_rank": 18
    },
    "3y": {
-    "exp_cum_pct": -27.4,
-    "exp_ann_pct": -10.1,
-    "median_pct": -54.6,
-    "p10_pct": -91.6,
-    "p90_pct": 61.8,
+    "exp_cum_pct": -27.0,
+    "exp_ann_pct": -10.0,
+    "median_pct": -54.9,
+    "p10_pct": -91.7,
+    "p90_pct": 62.9,
     "p_loss_pct": 78.5,
-    "p_loss30_pct": 66.7,
+    "p_loss30_pct": 66.6,
     "sortino": -0.39,
     "cvar10_pct": -94.7,
     "scen_tsr_pct": {
@@ -1162,19 +1478,19 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 17,
-    "ret_rank": 17,
-    "ra_rank": 17
+    "balanced_rank": 24,
+    "ret_rank": 24,
+    "ra_rank": 24
    },
    "5y": {
-    "exp_cum_pct": -34.7,
-    "exp_ann_pct": -8.2,
-    "median_pct": -67.8,
+    "exp_cum_pct": -33.7,
+    "exp_ann_pct": -7.9,
+    "median_pct": -67.5,
     "p10_pct": -95.0,
-    "p90_pct": 51.8,
-    "p_loss_pct": 82.5,
-    "p_loss30_pct": 73.7,
-    "sortino": -0.41,
+    "p90_pct": 54.1,
+    "p_loss_pct": 82.2,
+    "p_loss30_pct": 73.4,
+    "sortino": -0.4,
     "cvar10_pct": -96.0,
     "scen_tsr_pct": {
      "bear": -76.7,
@@ -1186,9 +1502,325 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 17,
-    "ret_rank": 17,
-    "ra_rank": 17
+    "balanced_rank": 26,
+    "ret_rank": 26,
+    "ra_rank": 26
+   }
+  },
+  "퓨런티어": {
+   "ticker": "370090",
+   "price0": 5640.0,
+   "price_date": "2026-10-20",
+   "industry": "자동차·전장·SDV·부품",
+   "confidence": "낮음",
+   "1y": {
+    "exp_cum_pct": -7.2,
+    "exp_ann_pct": -7.2,
+    "median_pct": -24.4,
+    "p10_pct": -70.1,
+    "p90_pct": 76.2,
+    "p_loss_pct": 66.6,
+    "p_loss30_pct": 45.3,
+    "sortino": -0.25,
+    "cvar10_pct": -81.1,
+    "scen_tsr_pct": {
+     "bear": -45.0,
+     "base": -14.9,
+     "bull": 59.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 16,
+    "ret_rank": 16,
+    "ra_rank": 15
+   },
+   "3y": {
+    "exp_cum_pct": -5.1,
+    "exp_ann_pct": -1.7,
+    "median_pct": -42.8,
+    "p10_pct": -90.5,
+    "p90_pct": 113.1,
+    "p_loss_pct": 70.4,
+    "p_loss30_pct": 57.6,
+    "sortino": -0.17,
+    "cvar10_pct": -94.4,
+    "scen_tsr_pct": {
+     "bear": -59.2,
+     "base": -16.7,
+     "bull": 103.9
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 16,
+    "ret_rank": 15,
+    "ra_rank": 15
+   },
+   "5y": {
+    "exp_cum_pct": 1.6,
+    "exp_ann_pct": 0.3,
+    "median_pct": -49.1,
+    "p10_pct": -95.0,
+    "p90_pct": 140.4,
+    "p_loss_pct": 70.5,
+    "p_loss30_pct": 59.8,
+    "sortino": -0.14,
+    "cvar10_pct": -95.4,
+    "scen_tsr_pct": {
+     "bear": -66.3,
+     "base": -9.9,
+     "bull": 146.5
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 18,
+    "ret_rank": 16,
+    "ra_rank": 16
+   }
+  },
+  "한미반도체": {
+   "ticker": "042700",
+   "price0": 191200.0,
+   "price_date": "2026-10-22",
+   "industry": "반도체·AI하드웨어·디스플레이장비",
+   "confidence": "보통",
+   "1y": {
+    "exp_cum_pct": -11.5,
+    "exp_ann_pct": -11.5,
+    "median_pct": -24.3,
+    "p10_pct": -65.1,
+    "p90_pct": 57.8,
+    "p_loss_pct": 69.3,
+    "p_loss30_pct": 44.4,
+    "sortino": -0.38,
+    "cvar10_pct": -73.5,
+    "scen_tsr_pct": {
+     "bear": -53.6,
+     "base": -19.9,
+     "bull": 47.2
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 22,
+    "ret_rank": 22,
+    "ra_rank": 22
+   },
+   "3y": {
+    "exp_cum_pct": -22.6,
+    "exp_ann_pct": -8.2,
+    "median_pct": -45.3,
+    "p10_pct": -85.1,
+    "p90_pct": 63.4,
+    "p_loss_pct": 75.8,
+    "p_loss30_pct": 61.1,
+    "sortino": -0.4,
+    "cvar10_pct": -90.2,
+    "scen_tsr_pct": {
+     "bear": -71.7,
+     "base": -30.1,
+     "bull": 49.3
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 22,
+    "ret_rank": 22,
+    "ra_rank": 25
+   },
+   "5y": {
+    "exp_cum_pct": -24.8,
+    "exp_ann_pct": -5.5,
+    "median_pct": -54.9,
+    "p10_pct": -90.4,
+    "p90_pct": 68.1,
+    "p_loss_pct": 77.9,
+    "p_loss30_pct": 66.3,
+    "sortino": -0.38,
+    "cvar10_pct": -94.1,
+    "scen_tsr_pct": {
+     "bear": -74.6,
+     "base": -33.9,
+     "bull": 51.7
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 24,
+    "ret_rank": 24,
+    "ra_rank": 24
+   }
+  },
+  "한중엔시에스": {
+   "ticker": "107640",
+   "price0": 49450.0,
+   "price_date": "2026-10-22",
+   "industry": "ESS·산업재·특수소재",
+   "confidence": "낮음",
+   "1y": {
+    "exp_cum_pct": -12.3,
+    "exp_ann_pct": -12.3,
+    "median_pct": -26.0,
+    "p10_pct": -69.2,
+    "p90_pct": 60.5,
+    "p_loss_pct": 69.0,
+    "p_loss30_pct": 46.4,
+    "sortino": -0.37,
+    "cvar10_pct": -78.9,
+    "scen_tsr_pct": {
+     "bear": -49.4,
+     "base": -15.1,
+     "bull": 41.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 23,
+    "ret_rank": 23,
+    "ra_rank": 21
+   },
+   "3y": {
+    "exp_cum_pct": -27.7,
+    "exp_ann_pct": -10.2,
+    "median_pct": -54.5,
+    "p10_pct": -88.9,
+    "p90_pct": 59.3,
+    "p_loss_pct": 79.1,
+    "p_loss30_pct": 67.1,
+    "sortino": -0.41,
+    "cvar10_pct": -93.3,
+    "scen_tsr_pct": {
+     "bear": -67.6,
+     "base": -41.1,
+     "bull": 52.5
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 25,
+    "ret_rank": 25,
+    "ra_rank": 26
+   },
+   "5y": {
+    "exp_cum_pct": -29.1,
+    "exp_ann_pct": -6.6,
+    "median_pct": -63.8,
+    "p10_pct": -94.0,
+    "p90_pct": 63.2,
+    "p_loss_pct": 80.8,
+    "p_loss30_pct": 71.5,
+    "sortino": -0.38,
+    "cvar10_pct": -95.6,
+    "scen_tsr_pct": {
+     "bear": -71.7,
+     "base": -48.2,
+     "bull": 68.3
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 25,
+    "ret_rank": 25,
+    "ra_rank": 25
+   }
+  },
+  "현대모비스": {
+   "ticker": "012330",
+   "price0": 346000.0,
+   "price_date": "2026-10-21(종가, 10/22 KOSPI -3.52% 급락 미반영·10/22 장중 저가 338000)",
+   "industry": "자동차·전장·SDV·부품",
+   "confidence": "보통",
+   "1y": {
+    "exp_cum_pct": 7.4,
+    "exp_ann_pct": 7.4,
+    "median_pct": 2.1,
+    "p10_pct": -39.3,
+    "p90_pct": 59.8,
+    "p_loss_pct": 47.7,
+    "p_loss30_pct": 16.9,
+    "sortino": 0.16,
+    "cvar10_pct": -50.6,
+    "scen_tsr_pct": {
+     "bear": -24.7,
+     "base": 9.0,
+     "bull": 36.6
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 3,
+    "ret_rank": 4,
+    "ra_rank": 3
+   },
+   "3y": {
+    "exp_cum_pct": 26.4,
+    "exp_ann_pct": 8.1,
+    "median_pct": 10.3,
+    "p10_pct": -49.2,
+    "p90_pct": 119.9,
+    "p_loss_pct": 43.0,
+    "p_loss30_pct": 21.6,
+    "sortino": 0.33,
+    "cvar10_pct": -62.2,
+    "scen_tsr_pct": {
+     "bear": -20.7,
+     "base": 25.3,
+     "bull": 76.4
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 3,
+    "ret_rank": 3,
+    "ra_rank": 3
+   },
+   "5y": {
+    "exp_cum_pct": 40.3,
+    "exp_ann_pct": 7.0,
+    "median_pct": 16.3,
+    "p10_pct": -53.5,
+    "p90_pct": 160.6,
+    "p_loss_pct": 40.8,
+    "p_loss30_pct": 22.6,
+    "sortino": 0.3,
+    "cvar10_pct": -67.2,
+    "scen_tsr_pct": {
+     "bear": -22.7,
+     "base": 38.7,
+     "bull": 108.8
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 3,
+    "ret_rank": 3,
+    "ra_rank": 3
    }
   },
   "현대오토에버": {
@@ -1200,13 +1832,13 @@
    "1y": {
     "exp_cum_pct": -0.8,
     "exp_ann_pct": -0.8,
-    "median_pct": -11.8,
-    "p10_pct": -56.1,
-    "p90_pct": 67.4,
-    "p_loss_pct": 60.0,
-    "p_loss30_pct": 32.3,
+    "median_pct": -11.6,
+    "p10_pct": -56.3,
+    "p90_pct": 67.3,
+    "p_loss_pct": 59.8,
+    "p_loss30_pct": 32.4,
     "sortino": -0.13,
-    "cvar10_pct": -66.2,
+    "cvar10_pct": -66.5,
     "scen_tsr_pct": {
      "bear": -41.4,
      "base": -5.6,
@@ -1217,19 +1849,19 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 6,
-    "ret_rank": 6,
-    "ra_rank": 6
+    "balanced_rank": 8,
+    "ret_rank": 8,
+    "ra_rank": 8
    },
    "3y": {
-    "exp_cum_pct": 9.0,
-    "exp_ann_pct": 2.9,
-    "median_pct": -12.8,
+    "exp_cum_pct": 9.1,
+    "exp_ann_pct": 3.0,
+    "median_pct": -12.5,
     "p10_pct": -68.1,
-    "p90_pct": 109.0,
-    "p_loss_pct": 57.9,
-    "p_loss30_pct": 37.9,
-    "sortino": -0.05,
+    "p90_pct": 109.7,
+    "p_loss_pct": 57.6,
+    "p_loss30_pct": 37.8,
+    "sortino": -0.04,
     "cvar10_pct": -78.0,
     "scen_tsr_pct": {
      "bear": -47.2,
@@ -1243,18 +1875,18 @@
     ],
     "balanced_rank": 8,
     "ret_rank": 8,
-    "ra_rank": 7
+    "ra_rank": 9
    },
    "5y": {
-    "exp_cum_pct": 12.2,
+    "exp_cum_pct": 11.8,
     "exp_ann_pct": 2.3,
-    "median_pct": -16.7,
-    "p10_pct": -73.7,
-    "p90_pct": 127.3,
-    "p_loss_pct": 59.0,
-    "p_loss30_pct": 41.5,
-    "sortino": -0.1,
-    "cvar10_pct": -82.8,
+    "median_pct": -17.1,
+    "p10_pct": -73.6,
+    "p90_pct": 126.1,
+    "p_loss_pct": 59.3,
+    "p_loss30_pct": 41.7,
+    "sortino": -0.11,
+    "cvar10_pct": -82.7,
     "scen_tsr_pct": {
      "bear": -50.3,
      "base": 2.7,
@@ -1265,9 +1897,9 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 9,
-    "ret_rank": 10,
-    "ra_rank": 11
+    "balanced_rank": 13,
+    "ret_rank": 13,
+    "ra_rank": 14
    }
   },
   "현대차": {
@@ -1277,15 +1909,15 @@
    "industry": "자동차·전장·SDV·부품",
    "confidence": "보통",
    "1y": {
-    "exp_cum_pct": 7.3,
-    "exp_ann_pct": 7.3,
+    "exp_cum_pct": 7.4,
+    "exp_ann_pct": 7.4,
     "median_pct": 2.7,
-    "p10_pct": -40.0,
-    "p90_pct": 59.5,
+    "p10_pct": -39.9,
+    "p90_pct": 59.4,
     "p_loss_pct": 47.1,
-    "p_loss30_pct": 16.9,
+    "p_loss30_pct": 17.0,
     "sortino": 0.16,
-    "cvar10_pct": -51.2,
+    "cvar10_pct": -51.1,
     "scen_tsr_pct": {
      "bear": -27.7,
      "base": 9.6,
@@ -1296,20 +1928,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 3,
-    "ret_rank": 3,
-    "ra_rank": 3
+    "balanced_rank": 5,
+    "ret_rank": 5,
+    "ra_rank": 4
    },
    "3y": {
     "exp_cum_pct": 22.7,
-    "exp_ann_pct": 7.1,
-    "median_pct": 7.7,
+    "exp_ann_pct": 7.0,
+    "median_pct": 7.6,
     "p10_pct": -50.8,
-    "p90_pct": 113.0,
-    "p_loss_pct": 44.7,
+    "p90_pct": 112.8,
+    "p_loss_pct": 44.8,
     "p_loss30_pct": 22.9,
     "sortino": 0.24,
-    "cvar10_pct": -63.5,
+    "cvar10_pct": -63.7,
     "scen_tsr_pct": {
      "bear": -23.7,
      "base": 25.4,
@@ -1320,20 +1952,20 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 3,
-    "ret_rank": 3,
-    "ra_rank": 3
+    "balanced_rank": 4,
+    "ret_rank": 5,
+    "ra_rank": 4
    },
    "5y": {
-    "exp_cum_pct": 35.7,
+    "exp_cum_pct": 35.8,
     "exp_ann_pct": 6.3,
-    "median_pct": 12.1,
-    "p10_pct": -55.1,
+    "median_pct": 12.8,
+    "p10_pct": -54.9,
     "p90_pct": 152.0,
-    "p_loss_pct": 43.0,
-    "p_loss30_pct": 24.4,
-    "sortino": 0.22,
-    "cvar10_pct": -68.4,
+    "p_loss_pct": 42.7,
+    "p_loss30_pct": 24.1,
+    "sortino": 0.23,
+    "cvar10_pct": -68.2,
     "scen_tsr_pct": {
      "bear": -20.4,
      "base": 36.8,
@@ -1344,9 +1976,88 @@
      0.0,
      0.0
     ],
-    "balanced_rank": 3,
+    "balanced_rank": 4,
+    "ret_rank": 4,
+    "ra_rank": 4
+   }
+  },
+  "화신": {
+   "ticker": "010690",
+   "price0": 6970.0,
+   "price_date": "2026-10-16",
+   "industry": "자동차·전장·SDV·부품",
+   "confidence": "낮음",
+   "1y": {
+    "exp_cum_pct": 7.8,
+    "exp_ann_pct": 7.8,
+    "median_pct": -0.4,
+    "p10_pct": -47.1,
+    "p90_pct": 71.8,
+    "p_loss_pct": 50.4,
+    "p_loss30_pct": 22.5,
+    "sortino": 0.15,
+    "cvar10_pct": -59.2,
+    "scen_tsr_pct": {
+     "bear": -29.7,
+     "base": 8.3,
+     "bull": 44.9
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 4,
     "ret_rank": 3,
-    "ra_rank": 3
+    "ra_rank": 5
+   },
+   "3y": {
+    "exp_cum_pct": 23.9,
+    "exp_ann_pct": 7.4,
+    "median_pct": 1.7,
+    "p10_pct": -61.7,
+    "p90_pct": 133.2,
+    "p_loss_pct": 48.9,
+    "p_loss30_pct": 29.6,
+    "sortino": 0.21,
+    "cvar10_pct": -74.3,
+    "scen_tsr_pct": {
+     "bear": -34.0,
+     "base": 23.4,
+     "bull": 84.1
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 5,
+    "ret_rank": 4,
+    "ra_rank": 5
+   },
+   "5y": {
+    "exp_cum_pct": 32.2,
+    "exp_ann_pct": 5.7,
+    "median_pct": 0.4,
+    "p10_pct": -68.1,
+    "p90_pct": 164.7,
+    "p_loss_pct": 49.8,
+    "p_loss30_pct": 32.8,
+    "sortino": 0.13,
+    "cvar10_pct": -80.1,
+    "scen_tsr_pct": {
+     "bear": -35.4,
+     "base": 29.4,
+     "bull": 111.3
+    },
+    "probs": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "balanced_rank": 5,
+    "ret_rank": 5,
+    "ra_rank": 5
    }
   }
  }

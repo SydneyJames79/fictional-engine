@@ -2,39 +2,27 @@
  "searchAllowed": false,
  "groups": [
   {
-   "industry": "우주항공·위성통신·5G6G",
-   "stocks": [
-    {
-     "name": "RFHIC",
-     "ticker": "218410",
-     "synthPath": "./wf2/synth/RFHIC.json"
-    },
-    {
-     "name": "쎄트렉아이",
-     "ticker": "099320",
-     "synthPath": "./wf2/synth/쎄트렉아이.json"
-    },
-    {
-     "name": "인텔리안테크",
-     "ticker": "189300",
-     "synthPath": "./wf2/synth/인텔리안테크.json"
-    },
-    {
-     "name": "케이엠더블유",
-     "ticker": "032500",
-     "synthPath": "./wf2/synth/케이엠더블유.json"
-    }
-   ],
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
-  },
-  {
    "industry": "반도체·AI하드웨어·디스플레이장비",
    "stocks": [
+    {
+     "name": "HPSP",
+     "ticker": "403870",
+     "synthPath": "./wf2/synth/HPSP.json"
+    },
     {
      "name": "SK하이닉스",
      "ticker": "000660",
      "synthPath": "./wf2/synth/SK하이닉스.json"
+    },
+    {
+     "name": "고영",
+     "ticker": "098460",
+     "synthPath": "./wf2/synth/고영.json"
+    },
+    {
+     "name": "라온텍",
+     "ticker": "418420",
+     "synthPath": "./wf2/synth/라온텍.json"
     },
     {
      "name": "사피엔반도체",
@@ -60,6 +48,38 @@
      "name": "이수페타시스",
      "ticker": "007660",
      "synthPath": "./wf2/synth/이수페타시스.json"
+    },
+    {
+     "name": "한미반도체",
+     "ticker": "042700",
+     "synthPath": "./wf2/synth/한미반도체.json"
+    }
+   ],
+   "macroPath": "./wf1/macro_common.json",
+   "provisionalPath": "engine_prov/provisional_summary.json"
+  },
+  {
+   "industry": "우주항공·위성통신·5G6G",
+   "stocks": [
+    {
+     "name": "RFHIC",
+     "ticker": "218410",
+     "synthPath": "./wf2/synth/RFHIC.json"
+    },
+    {
+     "name": "쎄트렉아이",
+     "ticker": "099320",
+     "synthPath": "./wf2/synth/쎄트렉아이.json"
+    },
+    {
+     "name": "인텔리안테크",
+     "ticker": "189300",
+     "synthPath": "./wf2/synth/인텔리안테크.json"
+    },
+    {
+     "name": "케이엠더블유",
+     "ticker": "032500",
+     "synthPath": "./wf2/synth/케이엠더블유.json"
     }
    ],
    "macroPath": "./wf1/macro_common.json",
@@ -96,9 +116,19 @@
    "industry": "ESS·산업재·특수소재",
    "stocks": [
     {
+     "name": "서진시스템",
+     "ticker": "178320",
+     "synthPath": "./wf2/synth/서진시스템.json"
+    },
+    {
      "name": "에이치브이엠",
      "ticker": "295310",
      "synthPath": "./wf2/synth/에이치브이엠.json"
+    },
+    {
+     "name": "한중엔시에스",
+     "ticker": "107640",
+     "synthPath": "./wf2/synth/한중엔시에스.json"
     }
    ],
    "macroPath": "./wf1/macro_common.json",
@@ -108,6 +138,16 @@
    "industry": "자동차·전장·SDV·부품",
    "stocks": [
     {
+     "name": "퓨런티어",
+     "ticker": "370090",
+     "synthPath": "./wf2/synth/퓨런티어.json"
+    },
+    {
+     "name": "현대모비스",
+     "ticker": "012330",
+     "synthPath": "./wf2/synth/현대모비스.json"
+    },
+    {
      "name": "현대오토에버",
      "ticker": "307950",
      "synthPath": "./wf2/synth/현대오토에버.json"
@@ -116,6 +156,11 @@
      "name": "현대차",
      "ticker": "005380",
      "synthPath": "./wf2/synth/현대차.json"
+    },
+    {
+     "name": "화신",
+     "ticker": "010690",
+     "synthPath": "./wf2/synth/화신.json"
     }
    ],
    "macroPath": "./wf1/macro_common.json",
@@ -146,6 +191,28 @@
    "provisionalPath": "engine_prov/provisional_summary.json"
   },
   {
+   "name": "현대모비스",
+   "ticker": "012330",
+   "dataPath": "./wf1/stocks/현대모비스.json",
+   "synthPath": "./wf2/synth/현대모비스.json",
+   "specPath": "./wf2/spec/현대모비스.json",
+   "genPath": "./wf2/gen/현대모비스.json",
+   "forPath": "./wf2/forensic/현대모비스.json",
+   "macroPath": "./wf1/macro_common.json",
+   "provisionalPath": "engine_prov/provisional_summary.json"
+  },
+  {
+   "name": "화신",
+   "ticker": "010690",
+   "dataPath": "./wf1/stocks/화신.json",
+   "synthPath": "./wf2/synth/화신.json",
+   "specPath": "./wf2/spec/화신.json",
+   "genPath": "./wf2/gen/화신.json",
+   "forPath": "./wf2/forensic/화신.json",
+   "macroPath": "./wf1/macro_common.json",
+   "provisionalPath": "engine_prov/provisional_summary.json"
+  },
+  {
    "name": "현대차",
    "ticker": "005380",
    "dataPath": "./wf1/stocks/현대차.json",
@@ -153,28 +220,6 @@
    "specPath": "./wf2/spec/현대차.json",
    "genPath": "./wf2/gen/현대차.json",
    "forPath": "./wf2/forensic/현대차.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
-  },
-  {
-   "name": "삼성바이오로직스",
-   "ticker": "207940",
-   "dataPath": "./wf1/stocks/삼성바이오로직스.json",
-   "synthPath": "./wf2/synth/삼성바이오로직스.json",
-   "specPath": "./wf2/spec/삼성바이오로직스.json",
-   "genPath": "./wf2/gen/삼성바이오로직스.json",
-   "forPath": "./wf2/forensic/삼성바이오로직스.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
-  },
-  {
-   "name": "인텔리안테크",
-   "ticker": "189300",
-   "dataPath": "./wf1/stocks/인텔리안테크.json",
-   "synthPath": "./wf2/synth/인텔리안테크.json",
-   "specPath": "./wf2/spec/인텔리안테크.json",
-   "genPath": "./wf2/gen/인텔리안테크.json",
-   "forPath": "./wf2/forensic/인텔리안테크.json",
    "macroPath": "./wf1/macro_common.json",
    "provisionalPath": "engine_prov/provisional_summary.json"
   }
