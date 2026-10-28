@@ -69,7 +69,12 @@ COORD = {
 # 선택: 두 번째 인자로 재심사할 종목 코드(쉼표 구분)를 주면 그 종목만 넣고, 이전 심사 결정을 함께 넘긴다.
 SUBSET = set(sys.argv[2].split(',')) if len(sys.argv) > 2 and sys.argv[2] else None
 PREV_J = {}
+PREV0 = {}
 if SUBSET:
+    J0F = os.path.join(AUX, 'J0_final_judge_1차.json')
+    if os.path.exists(J0F):
+        for s_ in json.load(open(J0F))['result']['stocks']:
+            PREV0[s_['code']] = {h: s_['adjustments'][h]['bear_mult'] for h in ('h1', 'h3', 'h5')}
     for f in sorted(os.listdir(AUX)):
         if f.startswith('J_'):
             for s_ in json.load(open(os.path.join(AUX, f)))['result'].get('stocks', []):
@@ -82,6 +87,17 @@ if SUBSET:
     COORD['005380'] = note
     for c_ in ('012330', '010690'):
         COORD[c_] = note + ' 이 종목의 비관 분기에도 미국 관세 25% 환원이 들어 있어 같은 사실이 적용될 수 있다.'
+    # 자동차 3종목 재심사(J2_rereview_auto)가 일관성을 위해 같은 보정을 권고한 나머지 종목(비관 분기에 관세 25%를 넣은 종목)
+    J2A = os.path.join(AUX, 'J2_rereview_auto.json')
+    if os.path.exists(J2A):
+        j2 = json.load(open(J2A))['result']
+        prec = '; '.join(f"{s_['name']} 비관 배수 " + ', '.join(f"{h} {PREV0.get(s_['code'], {}).get(h, '?')}→{s_['adjustments'][h]['bear_mult']}" for h in ('h1', 'h3', 'h5'))
+                         for s_ in j2['stocks'])
+        for c_ in ('307950', '370090'):
+            COORD[c_] = (note + ' 이 종목의 비관 분기에도 미국 관세 25%가 들어 있다(분석가 서술 기준). '
+                         '같은 사실로 먼저 재심사한 자동차 3종목의 처리 방식: ' + j2['global_notes'].split('3)')[0].strip() +
+                         ' 결과: ' + prec + '. 그 재심사는 비관 분기에 관세 25%를 넣은 다른 자동차·부품 종목에도 같은 보정이 필요하다고 권고했다. '
+                         '이 종목의 노출 경로(그룹 IT 예산 또는 고객 설비투자 이연)가 완성차·부품사보다 간접적인지 따져 상향 폭을 정하라.')
     V1s = json.load(open(os.path.join(AUX, 'V1_verify_삼성전자_1차.json')))['result']
     COORD['005930'] = (COORD.get('005930', '') + ' 1차 사실검증(V1) 결과로, 검증 재실행 때 파일이 덮어써져 1차 심사에 전달되지 않았다: ' + V1s['material_errors'] +
                        ' 불일치 항목: ' + ' / '.join(f"{x['claim']} → {x['correct_value']}" for x in V1s['checks'] if x['status'] == '불일치'))
@@ -145,7 +161,7 @@ for c, n in NAMES.items():
 scope = ('This is a full review of all 26 stocks.' if not SUBSET else
          'This is a RE-REVIEW of only the stocks below, triggered after the first review: independent QA found that a first-round verification (V1) result was overwritten by a re-run and never reached you. '
          'Each summary includes your previous decision (previous_J_decision) and the recovered V1 finding in coordinator_note. Keep the same rules as the first review. '
-         'Change your previous decision only where the recovered evidence justifies it, and say what changed and why in adjustment_reason. Keep everything else as it was.')
+         'Change your previous decision only where the recovered evidence justifies it, and say what changed and why in adjustment_reason. Keep everything else as it was.' + (' Stocks 307950 and 370090 were not in the first re-review: that re-review recommended giving every other auto/parts stock whose bear branches assume a 25% US tariff the same correction, ''so apply the same method for consistency, scaled to each stock\'s own exposure (its coordinator_note gives the precedent).' if SUBSET & {'307950', '370090'} else ''))
 ctx = {
     'scope_note': scope,
     'macro': "Common macro scenarios (Agent C): 기준 50% / 낙관 20% / 비관 30%; probability-weighted index TSR KOSPI 1y 8.5%, 3y 7.7%/yr, 5y 8.9%/yr; "

@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-29 05:02 KST
+갱신: 2026-10-29 05:15 KST
 
-메모: 독립 검증(Q) 완료
+메모: 재심사 결과 저장(자동차 3종목·삼성전자), 1차 최종심사 원본 J0 보존
 
 ## 고정된 설정
 
@@ -131,6 +131,8 @@
 - `wf_1750c915-51a`: V verify 인텔리안테크=done; I cross-exam 인텔리안테크=done
 - `wf_9f46b1d1-5df`: J final judge=done
 - `wf_42f274d0-21d`: Q independent verification=done
+- `wf_64c36420-365`: J final judge=done
+- `wf_e113a233-ce7`: J final judge=done
 
 ## 다음 단계
 
