@@ -179,6 +179,9 @@ def stab_list(h, codes):
     return s + josa(S(codes[-1], h).stability, '이다', '다')
 
 
+_s35 = {S(c, h).stability for h, cs in (('h3', t3), ('h5', t5)) for c in cs}
+stab35 = (f'3·5년 상위 5는 모두 \'{next(iter(_s35))}\' 판정이다' if len(_s35) == 1
+          else f'3년 상위 5의 판정은 {stab_list("h3", t3)}. 5년은 {stab_list("h5", t5)}')
 rob = ('가중 프로필, 거시 확률, 전문가 가중, 축소 강도, 변동성 가정을 바꾸거나 추정오차를 넣어도 이 종목들의 순위는 크게 흔들리지 않는다. ' if h35_ok
        else f'{names(unst35)}{josa(NAME[unst35[-1]], "은", "는")} 가정이나 추정오차에 따라 순위가 크게 움직일 수 있다. ')
 p1 = S(t1[0], 'h1')
@@ -190,7 +193,7 @@ core = [
         '<b>1년 균형형 상위 5</b>: ' + ', '.join(f'{NAME[c]}({pc(er(c, "h1"))})' for c in t1) + '. 괄호는 1년 기대 TSR이다.',
         '<b>3년 상위 5</b>: ' + ', '.join(f'{NAME[c]}(연 {pc(er(c, "h3"))})' for c in t3) + '.',
         '<b>5년 상위 5</b>: ' + ', '.join(f'{NAME[c]}(연 {pc(er(c, "h5"))})' for c in t5) + '.',
-        f'<b>견고성</b>: 3년 상위 5의 판정은 {stab_list("h3", t3)}. 5년은 {stab_list("h5", t5)}. {rob}'
+        f'<b>견고성</b>: {stab35}. {rob}'
         f'1년은 {NAME[t1[0]]} 1위가 {p1.stability}(상위 5 확률 {p1.p_top5*100:.0f}%)이고, 2~7위({names(mid17)})의 상위 5 확률은 '
         f'{min(pt17)*100:.0f}~{max(pt17)*100:.0f}%로 서로 자리를 바꿀 수 있다.',
         f'<b>지수 대비</b>: {ex_sent("h3")} {ex_sent("h5")} 기대 TSR이 같은 기간 국고채 수익률보다 낮은 종목이 1년 {stat["h1"]["below_rf"]}개, '
@@ -221,9 +224,9 @@ upm = piv.assign(d=piv.h1 - piv.h5).sort_values('d', ascending=False)
 dn3 = list(down.index[:3])
 up3 = list(upm.index[:2])
 big_all = all(set(top(h, 4)) == set(big4) for h in ('h1', 'h3', 'h5'))
-n['rank_change'] = ('<p>' + '기간이 길어질수록 크게 밀리는 종목은 ' + ', '.join(f'{NAME[c]}({int(piv.loc[c, "h1"])}위 → {int(piv.loc[c, "h5"])}위)' for c in dn3) + '이다. '
+n['rank_change'] = ('<p>' + '기간이 길어질수록 크게 밀리는 종목은 ' + ', '.join(f'{NAME[c]}({int(piv.loc[c, "h1"])}위 → {int(piv.loc[c, "h5"])}위)' for c in dn3) + josa(NAME[dn3[-1]], '이다. ', '다. ') +
                     '1년에는 수주·테마 기대와 사전값 비중이 기대값을 받쳐 준다. 그러나 기간이 길어지면 희석과 현금 소진이 쌓이고, 소형 적자주·통신장비 버킷의 음의 베이스레이트가 누적된다. '
-                    '반대로 ' + ', '.join(f'{NAME[c]}({int(piv.loc[c, "h1"])}위 → {int(piv.loc[c, "h5"])}위)' for c in up3) + '는 단기 이익 정체와 디레이팅을 지나 장기 이익이 반영되면서 올라간다. '
+                    '반대로 ' + ', '.join(f'{NAME[c]}({int(piv.loc[c, "h1"])}위 → {int(piv.loc[c, "h5"])}위)' for c in up3) + josa(NAME[up3[-1]], '은', '는') + ' 단기 이익 정체와 디레이팅을 지나 장기 이익이 반영되면서 올라간다. '
                     + ('대형 4종목은 세 기간 모두 1~4위를 지킨다.' if big_all else '') + '</p>')
 
 
@@ -244,7 +247,7 @@ td = {}
 td['012330'] = detail('012330',
     f'<p>이익의 대부분은 현대차·기아 차량 보유대수에 연동된 A/S 부문에서 나온다(1H26 A/S 영업이익이 전사의 약 106%). 순현금, 현대차 지분, 2025~27년 총주주환원율 30% 이상 정책이 하방을 받친다. '
     f'두 분석가는 로봇(보스턴다이나믹스) 가치를 거의 인정하지 않고도 1년 {pc(es)}·{pc(eg)}의 기대(반대심문 조정 반영, 축소 전)를 냈다. '
-    f'상위권의 핵심은 얕은 하방이다. 1년 비관 그룹의 확률가중 TSR이 {pc(grp("012330", "h1", "비관"))}로 다른 상위 종목({pc(min(grp(c, "h1", "비관") for c in OTH))}~{pc(max(grp(c, "h1", "비관") for c in OTH))})보다 작다.</p>',
+    f'상위권의 핵심은 얕은 하방이다. 1년 비관 그룹의 확률가중 TSR이 {pc(grp("012330", "h1", "비관"))}로, 다른 상위 종목({pc(min(grp(c, "h1", "비관") for c in OTH))}~{pc(max(grp(c, "h1", "비관") for c in OTH))})보다 손실 폭이 작다.</p>',
     f'<p>원화가 1,320원 수준으로 강해지면 A/S 마진이 정점에서 내려올 수 있다. 미국 관세가 25%로 돌아가면 모듈 적자와 현대차 지분법이익이 함께 줄어든다. '
     f'램프 사업 물적분할은 매수청구 한도(2,300억원)를 넘으면 무산될 수 있다. 순현금 추정이 6조·7조·8조원으로 엇갈리는데, 2조원 차이가 시총의 약 6%라 순위를 바꿀 수 있다. '
     f'1년 기대값의 상당 부분(낙관 그룹 기여 약 {bull_contrib("012330", "h1")[0]*100:.1f}%p)이 낙관 그룹에서 나온다.</p>',
@@ -295,8 +298,8 @@ td['005930'] = detail('005930',
 
 es, eg = spec_gen('189300', 'h1')
 x_ = R('189300', 'h1')
-shr_txt = (f'축소 가중치가 {x_.shrink_w:.2f}로 내려가 사전값 비중이 커진 결과다' if x_.same_side_fix == 0 and x_.shrink_w < 0.6
-           else f'사전값 쪽으로 당겨진 결과다(축소 가중 {x_.shrink_w:.2f})')
+shr_txt = (f'나온 순위다. 분석가 신뢰도가 낮아 축소 가중치가 {x_.shrink_w:.2f}에 그쳐 사전값 쪽 비중({1 - x_.shrink_w:.2f})이 더 크다' if x_.shrink_w < 0.5
+           else f'나온 순위다(축소 가중 {x_.shrink_w:.2f})')
 td['189300'] = detail('189300',
     '<p>위성통신 지상단(게이트웨이·사용자 단말·해상 안테나) 전문 업체다. 2025년 말 수주잔고가 매출의 약 1.34배로 추정된다(사실검증, 증권사 리포트 인용). '
     f'1년 {int(x_.rank_bal)}위는 두 분석가의 기대가 엇갈린 상태(전문가 {pc(es)}, 일반 {pc(eg)}, 반대심문 조정 반영)에서 {shr_txt}. '
@@ -309,7 +312,7 @@ td['189300'] = detail('189300',
 
 td['010690'] = detail('010690',
     '<p>현대차·기아의 섀시·차체 1차 협력사이고 P/B는 약 0.43배다. 미국 조지아(HMGMA)·인도 공장의 램프업과 배터리 케이스 매출이 회복 경로를 이끈다. '
-    f'균형 순위는 {rks("010690")}이고, 판정은 3년 \'{S("010690", "h3").stability}\'·5년 \'{S("010690", "h5").stability}\'다(상위 5 확률 3년 {S("010690", "h3").p_top5*100:.0f}%, 5년 {S("010690", "h5").p_top5*100:.0f}%).</p>',
+    f'균형 순위는 {rks("010690")}이고, 판정은 3년 \'{S("010690", "h3").stability}\'·5년 \'{S("010690", "h5").stability}\'{josa(S("010690", "h5").stability, "이다", "다")}(상위 5 확률 3년 {S("010690", "h3").p_top5*100:.0f}%, 5년 {S("010690", "h5").p_top5*100:.0f}%).</p>',
     '<p>순차입(2025년 말 약 4,780억원, 집계 사이트 기준·미검증)이 시가총액의 약 2배이고, 차입의 57%가 1년 안에 만기라는 집계도 있다(미검증). FCF는 3년 연속 적자이고 2Q26 영업이익률은 1.2%였다. '
     '현대차·기아의 관세 비용 분담 요구가 납품 단가 압력이 될 수 있다. 지수 강세장에서 소외된 이력(2025년 KOSPI 대용지수 +75.8%, 화신 +21.5%)이 있어 낙관 그룹 가정이 과할 수 있다. '
     f'1년 기대값에서 낙관 그룹 기여(약 {bull_contrib("010690", "h1")[0]*100:.1f}%p)를 빼면 약 {pp(bull_contrib("010690", "h1")[1])}다.</p>',
@@ -352,25 +355,28 @@ BOT_DETAIL = {
     '418420': f'라온텍({rks("418420")}): 법인세비용차감전손실 관리종목 요건, 코스닥 시가총액 상장유지 기준 상향(2027-07 300억원), CB 풋 상환 부담.',
 }
 n['bottom'] = '<h3>하위권의 공통점</h3>' + li(
-    [f'하위권({", ".join(NAME[c] for c in BOT)})은 두 분석가가 모두 현재 주가가 정점 이익이나 아직 실현되지 않은 마진을 반영했다고 본 종목이 대부분이다.'] +
+    [f'하위권({", ".join(NAME[c] for c in BOT)}){josa(NAME[BOT[-1]], "은", "는")} 두 분석가가 모두 현재 주가가 정점 이익이나 아직 실현되지 않은 마진을 반영했다고 본 종목이 대부분이다.'] +
     [BOT_DETAIL[c] for c in BOT if c in BOT_DETAIL]) + \
-    (f'<p>5년 −30% 이하 손실확률이 가장 높은 종목은 {NAME[tail2[0]]}({pc(R(tail2[0], "h5").p_loss30, signed=False)})과 {NAME[tail2[1]]}({pc(R(tail2[1], "h5").p_loss30, signed=False)})다. '
+    (f'<p>5년 −30% 이하 손실확률이 가장 높은 종목은 {NAME[tail2[0]]}({pc(R(tail2[0], "h5").p_loss30, signed=False)}){josa(NAME[tail2[0]], "과", "와")} '
+     f'{NAME[tail2[1]]}({pc(R(tail2[1], "h5").p_loss30, signed=False)}){josa(NAME[tail2[1]], "이다", "다")}. '
      f'꼬리 확률 점검표에서 보듯 모형의 5년 −50% 이하 확률은 {CAL_TXT}. 변동성 가정을 15% 낮춰도 5년 균형 순위는 최대 {VOL_MAXD}계단만 바뀌어, 이 차이는 순위보다 손실확률·CVaR의 절대 수준에 영향을 준다.</p>')
 
 # ---------- 7부 ----------
 d1 = r[r.h == 'h1'].assign(diff=lambda x: (x.e_spec_ann - x.e_gen_ann).abs()).sort_values('diff', ascending=False).head(3)
-hm_pre = pre[(pre.code == '042700') & (pre.h == 'h3')].iloc[0]
-hm = R('042700', 'h3')
+_nf = r.assign(e_nofix=lambda x: x.shrink_w_raw * (1 + x.e_raw_cum) + (1 - x.shrink_w_raw) * (1 + x.prior_ann) ** x['T'] - 1)
+_nf = _nf.assign(e_nofix_ann=lambda x: (1 + x.e_nofix) ** (1 / x['T']) - 1)
+big_fix = _nf.loc[(_nf.exp_ann - _nf.e_nofix_ann).abs().idxmax()]
 fixed = r[r.same_side_fix == 1].assign(g=lambda x: x.shrink_w - x.shrink_w_raw).sort_values('g', ascending=False).head(2)
 damp = r[(r.same_side_fix == 0)].assign(att=lambda x: 1 / (1 + (x.disagree_log_ann / x.h.map(D0)) ** 2))
 damp = damp[damp.att < 0.95].sort_values('shrink_w')
 
 
 def adopt(c):
-    """반대심문 제안 대비 최종심사 채택 비율(배수 하향 폭 기준). I가 하향을 제안한 칸만 센다."""
+    """반대심문 제안 대비 최종심사 채택 비율(기준·낙관 배수의 하향 폭 기준). I가 하향을 제안한 칸만 센다.
+    비관 배수는 재심사에서 관세 사실로 따로 정한 종목이 있어 비교에서 뺀다."""
     vals = []
     for h in ('h1', 'h3', 'h5'):
-        for k in ('base_mult', 'bull_mult', 'bear_mult'):
+        for k in ('base_mult', 'bull_mult'):
             ip, jp = I[c]['adjustments'][h][k], J[c]['adjustments'][h][k]
             if ip < 0.995:
                 vals.append(max(0.0, (1 - jp) / (1 - ip)))
@@ -383,13 +389,14 @@ dil = {c: [f for role in v.values() for f in role.values() if f < 0.9999] for c,
 dil = {c: v for c, v in dil.items() if v}
 tariff_names = names(TARIFF)
 n['disagreement'] = '<h3>무엇이 결과를 바꿨나</h3>' + li([
-    '분석가 간 차이가 가장 큰 곳은 1년 ' + ', '.join(f'{x["name"]}(전문가 {pc(x.e_spec_ann)}, 일반 {pc(x.e_gen_ann)})' for _, x in d1.iterrows()) + '이다. '
+    '분석가 간 차이가 가장 큰 곳은 1년 ' + ', '.join(f'{x["name"]}(전문가 {pc(x.e_spec_ann)}, 일반 {pc(x.e_gen_ann)})' for _, x in d1.iterrows()) + josa(d1.iloc[-1]['name'], '이다. ', '다. ') +
     '차이가 크면 축소 가중치가 내려간다. 다만 두 분석가가 사전값의 같은 쪽에 있으면 같은 방향 보정으로 감쇠가 대부분 풀린다('
     + ', '.join(f'{x["name"]} {HL[x.h]} {x.shrink_w_raw:.2f}→{x.shrink_w:.2f}' for _, x in fixed.iterrows()) + f' 등 {NTOT}건 중 {SS_N}건). '
     + ('감쇠가 남은 곳은 ' + ', '.join(f'{x["name"]} {HL[x.h]}({x.shrink_w:.2f})' for _, x in damp.head(3).iterrows()) + f' 등 {len(damp)}건이다.' if len(damp) else ''),
     f'같은 방향 불일치 보정: 최종심사의 권고로, 두 분석가가 사전값의 같은 쪽에 있을 때 불일치 감쇠가 결과를 덜 극단적인 분석가 값이나 감쇠 없는 축소값 너머로 끌고 가지 못하게 했다. '
-    f'가장 큰 영향은 한미반도체 3년이다(축소 가중 {hm_pre.shrink_w:.2f} → {hm.shrink_w:.2f}, 기대 연 {pc(hm_pre.exp_ann)} → {pc(hm.exp_ann)}, 균형 {int(hm_pre.rank_bal)}위 → {int(hm.rank_bal)}위; 예비값은 반대심문 조정 전).',
-    f'반대심문(I) {len(I)}건에서 제안된 하향 배수 가운데 최종심사는 사실 근거가 있는 부분만 채택했다. 배수 하향 폭 기준으로 본 채택 비율은 '
+    f'영향이 가장 큰 곳은 {big_fix["name"]} {HL[big_fix.h]}{josa(HL[big_fix.h], "이다", "다")}(축소 가중 {big_fix.shrink_w_raw:.2f} → {big_fix.shrink_w:.2f}, 기대 연 {pc(big_fix.e_nofix_ann)} → {pc(big_fix.exp_ann)}). '
+    '보정은 사전값 쪽으로 당기는 힘을 줄일 뿐이라, 두 분석가가 모두 사전값보다 낮게 본 종목의 기대는 오히려 낮아진다.',
+    f'반대심문(I) {len(I)}건에서 제안된 하향 배수 가운데 최종심사는 사실 근거가 있는 부분만 채택했다. 기준·낙관 배수의 하향 폭으로 본 채택 비율은 '
     + ', '.join(f'{NAME[c]} {lo*100:.0f}~{hi*100:.0f}%' for c, (lo, hi) in ad4.items()) + '다. 삼성에피스홀딩스의 순차입 보정은 1·3년에 그대로 채택됐다. '
     + ('추가 꼬리 분기는 한 건도 채택되지 않았다. ' if n_tail == 0 else f'추가 꼬리 분기는 {n_tail}건 채택됐다. ')
     + '"배수가 높다", "성장이 기저율을 넘는다" 같은 일반론은 축소 단계와 겹치므로 채택하지 않았다.',
@@ -430,6 +437,11 @@ n['sensitivity_lead'] = '<h3>요약</h3>' + li(lines)
 n['sensitivity'] = ''
 
 # ---------- 9부 ----------
+def stab_short(h, codes):
+    v = [S(c, h).stability for c in codes]
+    return f'판정 모두 {v[0]}' if len(set(v)) == 1 else '판정 ' + ', '.join(v)
+
+
 c_med = h5g.sort_values('median_cum', ascending=False).code.iloc[0]
 c_pl = h5g.sort_values('p_loss').code.iloc[0]
 def_txt = (f' {NAME[c_med]}{josa(NAME[c_med], "은", "는")} 5년 중앙값과 손실확률에서 가장 방어적이다.' if c_med == c_pl else
@@ -438,8 +450,8 @@ n['final'] = li([
     f'<b>1년</b>: {NAME[t1[0]]}{josa(NAME[t1[0]], "이", "가")} 1위다(판정 {p1.stability}, 상위 5 확률 {p1.p_top5*100:.0f}%). 2~7위는 추정오차를 넣으면 서로 자리를 바꿀 수 있다. '
     + ('모든 종목의 1년 기대 TSR이 지수 기대를 밑돌고' if not pl['excess'] else f'1년 기대 TSR이 지수 기대를 넘는 종목은 {names(pl["excess"])}뿐이고')
     + (' 손실확률이 50%를 넘는다.' if pl['ploss50'] == NST else f' {pl["ploss50"]}종목의 손실확률이 50%를 넘는다.'),
-    f'<b>3년</b>: 상위 5는 {names(t3)}{josa(NAME[t3[-1]], "이다", "다")}(판정 {", ".join(S(c, "h3").stability for c in t3)}). {ex_sent("h3")}',
-    f'<b>5년</b>: 상위 5는 {names(t5)}{josa(NAME[t5[-1]], "이다", "다")}(판정 {", ".join(S(c, "h5").stability for c in t5)}). {ex_sent("h5")}{def_txt}',
+    f'<b>3년</b>: 상위 5는 {names(t3)}{josa(NAME[t3[-1]], "이다", "다")}({stab_short("h3", t3)}). {ex_sent("h3")}',
+    f'<b>5년</b>: 상위 5는 {names(t5)}{josa(NAME[t5[-1]], "이다", "다")}({stab_short("h5", t5)}). {ex_sent("h5")}{def_txt}',
     '<b>하위권</b>: 두 분석가가 모두 현재가가 미실현 이익을 반영했다고 본 중소형 성장·테마주가 대부분이다. 하위권 판정은 1·3·5년에 걸쳐 대체로 일관된다.',
     '<b>판단을 바꿀 조건</b>: 삼성전자 2027년 1월 잔여 환원 75조원 이상과 소각 포함(상향), 보상용 자사주의 다년 매입 확인(삼성전자 3·5년 추가 하향), '
     f'미국 자동차 관세 25% 재부과 공고({tariff_names or "현대차·현대모비스·화신"} 하향, 재심사가 올린 비관 배수를 되돌림), 현대모비스 매수청구 한도 초과(분할 철회), 화신 3Q26 순차입 확정, '
