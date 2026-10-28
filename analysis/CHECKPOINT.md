@@ -1,8 +1,8 @@
 # 체크포인트 — 한국 26개 종목 기대수익률 순위 프로젝트
 
-갱신: 2026-10-29 05:27 KST
+갱신: 2026-10-29 05:54 KST
 
-메모: 관세 일관성 재심사(현대오토에버·퓨런티어) 결과 저장, 서술·보고서 Q 지적 반영 코드
+메모: 재검증(Q2) 결과 저장, Q2 지적 6건 반영 코드
 
 ## 고정된 설정
 
@@ -65,6 +65,7 @@
 - I cross-exam 화신
 - J final judge
 - Q independent verification
+- Q2 re-verification
 - S sensitivity
 - V verify SK하이닉스
 - V verify 라온텍
@@ -134,6 +135,7 @@
 - `wf_64c36420-365`: J final judge=done
 - `wf_e113a233-ce7`: J final judge=done
 - `wf_5689db55-502`: J final judge=done
+- `wf_c91d63de-617`: Q2 re-verification=done
 
 ## 다음 단계
 
