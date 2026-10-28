@@ -7,56 +7,56 @@
     {
      "name": "HPSP",
      "ticker": "403870",
-     "synthPath": "./wf2/synth/HPSP.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/HPSP.json"
     },
     {
      "name": "SK하이닉스",
      "ticker": "000660",
-     "synthPath": "./wf2/synth/SK하이닉스.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/SK하이닉스.json"
     },
     {
      "name": "고영",
      "ticker": "098460",
-     "synthPath": "./wf2/synth/고영.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/고영.json"
     },
     {
      "name": "라온텍",
      "ticker": "418420",
-     "synthPath": "./wf2/synth/라온텍.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/라온텍.json"
     },
     {
      "name": "사피엔반도체",
      "ticker": "452430",
-     "synthPath": "./wf2/synth/사피엔반도체.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/사피엔반도체.json"
     },
     {
      "name": "삼성전자",
      "ticker": "005930",
-     "synthPath": "./wf2/synth/삼성전자.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/삼성전자.json"
     },
     {
      "name": "선익시스템",
      "ticker": "171090",
-     "synthPath": "./wf2/synth/선익시스템.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/선익시스템.json"
     },
     {
      "name": "와이씨",
      "ticker": "232140",
-     "synthPath": "./wf2/synth/와이씨.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/와이씨.json"
     },
     {
      "name": "이수페타시스",
      "ticker": "007660",
-     "synthPath": "./wf2/synth/이수페타시스.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/이수페타시스.json"
     },
     {
      "name": "한미반도체",
      "ticker": "042700",
-     "synthPath": "./wf2/synth/한미반도체.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/한미반도체.json"
     }
    ],
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "industry": "우주항공·위성통신·5G6G",
@@ -64,26 +64,26 @@
     {
      "name": "RFHIC",
      "ticker": "218410",
-     "synthPath": "./wf2/synth/RFHIC.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/RFHIC.json"
     },
     {
      "name": "쎄트렉아이",
      "ticker": "099320",
-     "synthPath": "./wf2/synth/쎄트렉아이.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/쎄트렉아이.json"
     },
     {
      "name": "인텔리안테크",
      "ticker": "189300",
-     "synthPath": "./wf2/synth/인텔리안테크.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/인텔리안테크.json"
     },
     {
      "name": "케이엠더블유",
      "ticker": "032500",
-     "synthPath": "./wf2/synth/케이엠더블유.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/케이엠더블유.json"
     }
    ],
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "industry": "바이오의약품·의료기기·진단",
@@ -91,26 +91,26 @@
     {
      "name": "바이오다인",
      "ticker": "314930",
-     "synthPath": "./wf2/synth/바이오다인.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/바이오다인.json"
     },
     {
      "name": "삼성바이오로직스",
      "ticker": "207940",
-     "synthPath": "./wf2/synth/삼성바이오로직스.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/삼성바이오로직스.json"
     },
     {
      "name": "삼성에피스홀딩스",
      "ticker": "0126Z0",
-     "synthPath": "./wf2/synth/삼성에피스홀딩스.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/삼성에피스홀딩스.json"
     },
     {
      "name": "엘앤씨바이오",
      "ticker": "290650",
-     "synthPath": "./wf2/synth/엘앤씨바이오.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/엘앤씨바이오.json"
     }
    ],
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "industry": "ESS·산업재·특수소재",
@@ -118,21 +118,21 @@
     {
      "name": "서진시스템",
      "ticker": "178320",
-     "synthPath": "./wf2/synth/서진시스템.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/서진시스템.json"
     },
     {
      "name": "에이치브이엠",
      "ticker": "295310",
-     "synthPath": "./wf2/synth/에이치브이엠.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/에이치브이엠.json"
     },
     {
      "name": "한중엔시에스",
      "ticker": "107640",
-     "synthPath": "./wf2/synth/한중엔시에스.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/한중엔시에스.json"
     }
    ],
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "industry": "자동차·전장·SDV·부품",
@@ -140,88 +140,110 @@
     {
      "name": "퓨런티어",
      "ticker": "370090",
-     "synthPath": "./wf2/synth/퓨런티어.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/퓨런티어.json"
     },
     {
      "name": "현대모비스",
      "ticker": "012330",
-     "synthPath": "./wf2/synth/현대모비스.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/현대모비스.json"
     },
     {
      "name": "현대오토에버",
      "ticker": "307950",
-     "synthPath": "./wf2/synth/현대오토에버.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/현대오토에버.json"
     },
     {
      "name": "현대차",
      "ticker": "005380",
-     "synthPath": "./wf2/synth/현대차.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/현대차.json"
     },
     {
      "name": "화신",
      "ticker": "010690",
-     "synthPath": "./wf2/synth/화신.json"
+     "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/화신.json"
     }
    ],
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   }
  ],
  "bearTargets": [
   {
    "name": "삼성전자",
    "ticker": "005930",
-   "dataPath": "./wf1/stocks/삼성전자.json",
-   "synthPath": "./wf2/synth/삼성전자.json",
-   "specPath": "./wf2/spec/삼성전자.json",
-   "genPath": "./wf2/gen/삼성전자.json",
-   "forPath": "./wf2/forensic/삼성전자.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/삼성전자.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/삼성전자.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/삼성전자.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/삼성전자.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/삼성전자.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "name": "SK하이닉스",
    "ticker": "000660",
-   "dataPath": "./wf1/stocks/SK하이닉스.json",
-   "synthPath": "./wf2/synth/SK하이닉스.json",
-   "specPath": "./wf2/spec/SK하이닉스.json",
-   "genPath": "./wf2/gen/SK하이닉스.json",
-   "forPath": "./wf2/forensic/SK하이닉스.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/SK하이닉스.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/SK하이닉스.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/SK하이닉스.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/SK하이닉스.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/SK하이닉스.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "name": "현대모비스",
    "ticker": "012330",
-   "dataPath": "./wf1/stocks/현대모비스.json",
-   "synthPath": "./wf2/synth/현대모비스.json",
-   "specPath": "./wf2/spec/현대모비스.json",
-   "genPath": "./wf2/gen/현대모비스.json",
-   "forPath": "./wf2/forensic/현대모비스.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/현대모비스.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/현대모비스.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/현대모비스.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/현대모비스.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/현대모비스.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "name": "화신",
    "ticker": "010690",
-   "dataPath": "./wf1/stocks/화신.json",
-   "synthPath": "./wf2/synth/화신.json",
-   "specPath": "./wf2/spec/화신.json",
-   "genPath": "./wf2/gen/화신.json",
-   "forPath": "./wf2/forensic/화신.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/화신.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/화신.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/화신.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/화신.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/화신.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   },
   {
    "name": "현대차",
    "ticker": "005380",
-   "dataPath": "./wf1/stocks/현대차.json",
-   "synthPath": "./wf2/synth/현대차.json",
-   "specPath": "./wf2/spec/현대차.json",
-   "genPath": "./wf2/gen/현대차.json",
-   "forPath": "./wf2/forensic/현대차.json",
-   "macroPath": "./wf1/macro_common.json",
-   "provisionalPath": "engine_prov/provisional_summary.json"
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/현대차.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/현대차.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/현대차.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/현대차.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/현대차.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
+  },
+  {
+   "name": "삼성바이오로직스",
+   "ticker": "207940",
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/삼성바이오로직스.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/삼성바이오로직스.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/삼성바이오로직스.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/삼성바이오로직스.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/삼성바이오로직스.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
+  },
+  {
+   "name": "인텔리안테크",
+   "ticker": "189300",
+   "dataPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/stocks/인텔리안테크.json",
+   "synthPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/synth/인텔리안테크.json",
+   "specPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/spec/인텔리안테크.json",
+   "genPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/gen/인텔리안테크.json",
+   "forPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf2/forensic/인텔리안테크.json",
+   "macroPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/wf1/macro_common.json",
+   "provisionalPath": "/tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad/engine_prov/provisional_summary.json"
   }
  ]
 }

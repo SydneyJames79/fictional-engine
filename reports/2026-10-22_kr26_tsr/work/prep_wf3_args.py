@@ -35,7 +35,7 @@ group_args = [{'industry': g, 'stocks': lst, 'macroPath': macro, 'provisionalPat
 targets = []
 for hk in HZ:
     rk = RK[hk]
-    for n in sorted(rk, key=lambda x: rk[x]['balanced_rank'])[:5] + sorted(rk, key=lambda x: rk[x]['ret_rank'])[:3]:
+    for n in sorted(rk, key=lambda x: rk[x]["balanced_rank"])[:7] + sorted(rk, key=lambda x: rk[x]["ret_rank"])[:4]:
         if n not in targets:
             targets.append(n)
 target_args = [{'name': n, 'ticker': trees[n]['ticker'], 'dataPath': os.path.join(base, 'wf1', 'stocks', f'{n}.json'), 'synthPath': os.path.join(base, 'wf2', 'synth', f'{n}.json'),

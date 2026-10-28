@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-28T20:58:25Z",
+ "updated_utc": "2026-10-28T21:20:28Z",
  "analysis_basis": "2026-10-22 15:40 KST; horizons 2027-10-22 / 2029-10-22 / 2031-10-22; KRW",
  "wf1_stocks_verified": [
   "HPSP",
@@ -173,8 +173,16 @@
   ]
  },
  "wf3": {
-  "calibration": false,
-  "bear": [],
+  "calibration": true,
+  "bear": [
+   "SK하이닉스",
+   "삼성바이오로직스",
+   "삼성전자",
+   "인텔리안테크",
+   "현대모비스",
+   "현대차",
+   "화신"
+  ],
   "judge": []
  },
  "engine_final": false,

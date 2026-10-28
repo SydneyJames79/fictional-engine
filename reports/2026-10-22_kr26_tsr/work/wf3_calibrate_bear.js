@@ -119,10 +119,10 @@ ${COMMON}
 - 공통 거시 시나리오: ${s.macroPath}
 
 [약세론 에이전트 결과]
-${JSON.stringify(bear, null, 1)}
+${typeof bear === 'string' ? '다음 파일을 Read 도구로 전부 읽으세요: ' + bear : JSON.stringify(bear, null, 1)}
 
 [베이스레이트 보정 의견(이 종목 해당분)]
-${JSON.stringify(calib, null, 1)}
+${typeof calib === 'string' ? '다음 파일을 Read 도구로 전부 읽으세요(해당 종목 항목만 참고): ' + calib : JSON.stringify(calib, null, 1)}
 
 [출력 규칙]
 - final_scenarios: 1y/3y/5y 각 bear/base/bull 총 9개. 확률 합 100, cum_tsr_pct를 직접 재계산해 검산. 기말 주가는 희석 후 주당 기준.
@@ -145,6 +145,12 @@ if (stage === 'all' || stage === 'calib') {
 }
 
 let judged = []
+if (stage === 'bearonly') {
+  judged = await parallel(targets.map((s) => () => agent(bearPrompt(s), { label: `bear:${s.name}`, phase: '반대심문', schema: BEAR_SCHEMA, effort: 'xhigh' }).then((b) => ({ bear: b, judge: null }))))
+}
+if (stage === 'judge') {
+  judged = await parallel(targets.map((s) => () => agent(judgePrompt(s, s.bearPath, s.calibPath), { label: `judge:${s.name}`, phase: '최종 심사', schema: JUDGE_SCHEMA, effort: 'max' }).then((j) => ({ bear: null, judge: j }))))
+}
 if (stage === 'all' || stage === 'bear') {
   judged = await pipeline(
     targets,
