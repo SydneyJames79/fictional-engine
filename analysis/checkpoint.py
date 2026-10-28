@@ -50,7 +50,8 @@ def scan_runs():
 # 같은 라벨을 쓰는 재실행이 앞선 결과를 덮어쓰지 않도록 실행별 파일 이름을 따로 둔다.
 # (예: 3종목 재심사는 26종목 최종심사 파일을 덮어쓰면 안 된다)
 # 1차 최종심사 원본은 J0_으로 남기고, J_final_judge.json은 merge_judge.py가 1차와 재심사를 병합해 만든다.
-RUN_FILE_OVERRIDE = {'wf_9f46b1d1-5df': 'J0_final_judge_1차', 'wf_64c36420-365': 'J2_rereview_auto', 'wf_e113a233-ce7': 'J2_rereview_samsung'}
+RUN_FILE_OVERRIDE = {'wf_9f46b1d1-5df': 'J0_final_judge_1차', 'wf_64c36420-365': 'J2_rereview_auto', 'wf_e113a233-ce7': 'J2_rereview_samsung',
+                     'wf_5689db55-502': 'J2_rereview_tariff'}
 
 
 def save_aux():
