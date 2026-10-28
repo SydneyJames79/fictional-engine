@@ -29,6 +29,8 @@ for f_ in sorted(glob.glob(f'{AN}/data/aux/I_cross-exam_*.json')):
     d_ = json.load(open(f_))['result']
     I[d_['code']] = d_
 Q = json.load(open(f'{AN}/data/aux/Q_independent_verification.json'))['result']
+Q2F = f'{AN}/data/aux/Q2_re-verification.json'
+Q2 = json.load(open(Q2F))['result'] if os.path.exists(Q2F) else None  # 조치 뒤 좁은 재검증
 NAME = dict(zip(r.code, r.name))
 CODE = {v: k for k, v in NAME.items()}
 RF = {'h1': 0.03688, 'h3': 0.03822, 'h5': 0.03965}
@@ -141,7 +143,7 @@ SS_N = int(r.same_side_fix.sum())
 
 n['standfirst'] = ('2026-10-21 종가를 기준으로 26개 종목의 1·3·5년 기대 총주주수익률(배당 포함, 이하 TSR)을 추정해 순위를 매겼다. '
                    '총괄을 뺀 역할별 에이전트 108개가 종목 식별·거시·산업 분석·포렌식·가치평가·반대심문·사실검증·최종심사·독립 검증을 맡았고'
-                   f'(독립 검증 뒤 최종심사 재심사 {len({v["run"] for v in RE.values()})}회 별도), 종목·기간마다 20만 개 경로의 몬테카를로로 수익률 분포를 만들었다.')
+                   f'(독립 검증 뒤 최종심사 재심사 {len({v["run"] for v in RE.values()})}회{"와 재검증 1회" if Q2 else ""} 별도), 종목·기간마다 20만 개 경로의 몬테카를로로 수익률 분포를 만들었다.')
 
 # ---------- 1부 ----------
 t1, t3, t5 = top('h1'), top('h3'), top('h5')
@@ -539,7 +541,9 @@ n['id_notes']['370090'] = (f'2022-02 상장. 10/21 시총 약 {round(float(m_.mc
 ax = open(os.path.join(AN, 'report', 'appendix.html')).read()
 ax = (ax.replace('{{SAME_SIDE}}', f'{SS_N}/{NTOT}건').replace('{{J_RUNS}}', str(len({v['run'] for v in RE.values()})))
         .replace('{{J_STOCKS}}', f'{len(RE)}종목({names(list(RE))})' if RE else '0종목')
-        .replace('{{PLOSS1}}', '26종목 모두' if pl['ploss50'] == NST else f'{pl["ploss50"]}종목에서'))
+        .replace('{{PLOSS1}}', '26종목 모두' if pl['ploss50'] == NST else f'{pl["ploss50"]}종목에서')
+        .replace('{{Q2_NOTE}}', '(재검증 1회 별도)' if Q2 else '')
+        .replace('{{Q2_WHAT}}', '. 재검증은 지적별 조치와 재심사 병합을 다시 대조' if Q2 else ''))
 assert '{{' not in ax, '부록 빈칸이 남았다'
 n['appendix'] = ax
 json.dump(n, open(P, 'w'), ensure_ascii=False, indent=1)

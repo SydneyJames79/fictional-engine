@@ -95,6 +95,12 @@ def fm(x):
     return s[:-1] if s.endswith('0') else s
 
 
+def num2(x):
+    """비율 표기(소수 둘째 자리). 반올림해 0이 되는 음수는 0.00으로 적는다."""
+    s = f'{x:.2f}'
+    return ('0.00' if s == '-0.00' else s).replace('-', '−')
+
+
 def krw(x):
     return f'{x:,.0f}'
 
@@ -235,7 +241,7 @@ def part1():
             e = r.exp_cum if key == 'h1' else r.exp_ann
             sb = stab[(stab.code == r.code) & (stab.h == key)].stability.iloc[0] if stab is not None and len(stab[(stab.code == r.code) & (stab.h == key)]) else None
             rows.append(f'<tr><td class="l">{H_LABEL[key]}</td><td>{int(r.rank_bal)}</td><td class="l stick">{esc(r["name"])}</td>'
-                        f'{tsr_td(e)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False)}</td>'
+                        f'{tsr_td(e)}<td>{num2(r.sortino)}</td>{tsr_td(r.cvar10)}<td>{pct(r.p_loss, False)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
     t = table([('기간', 'l'), ('균형 순위', ''), ('종목', 'l stick'), ('기대 TSR', ''), ('Sortino', ''), ('CVaR10', ''), ('손실확률', ''), ('신뢰도', ''), ('순위 안정성', '')], rows)
     post = f'<p class="callout">{NARR["post_events"]}</p>' if NARR.get('post_events') else ''
@@ -280,7 +286,7 @@ def part3():
             rows.append(f'<tr><td>{int(r.rank_bal)}</td><td class="l stick">{esc(r["name"])}</td>{tsr_td(r.exp_cum)}{ann}'
                         f'<td class="viz">{strip_svg(r.p10, r.median_cum, r.exp_cum, r.p90, lo, hi)}</td>'
                         f'{tsr_td(r.median_cum)}{tsr_td(r.p10)}{tsr_td(r.p90)}<td>{pct(r.p_loss, False)}</td><td>{pct(r.p_loss30, False)}</td>'
-                        f'{tsr_td(r.cvar10)}<td>{f"{r.sortino:.2f}".replace("-", "−")}</td>{pp_td(r.excess_vs_index_ann)}'
+                        f'{tsr_td(r.cvar10)}<td>{num2(r.sortino)}</td>{pp_td(r.excess_vs_index_ann)}'
                         f'<td>{int(r.rank_er)}</td><td>{int(r.rank_ra)}</td><td>{int(r.rank_agg)}</td><td>{int(r.rank_def)}</td>'
                         f'<td>{conf_pill(J.get(r.code, {}).get("final_confidence"))}</td><td>{stab_pill(sb)}</td></tr>')
         head = [('균형', ''), ('종목', 'l stick'), ('기대 TSR(누적)', '')] + ([] if key == 'h1' else [('기대(연)', '')]) + \
@@ -488,6 +494,15 @@ def qc():
         body += ('<h3>독립 검증(Q) 결과</h3>' + '<p class="note">아래 요약과 판정은 수정 전 보고서에 대한 Q의 결과다. 각 지적의 조치는 마지막 표에 있다.</p>' + f'<p>{esc(Q["summary"])}</p>' +
                  table([('점검 항목', 'l'), ('판정', ''), ('근거', 'l')], qrows) +
                  ('<h3>Q가 지적한 문제와 조치</h3>' + table([('심각도', ''), ('위치', 'l'), ('문제', 'l'), ('조치', 'l')], irows) if Q['issues'] else ''))
+    Q2 = next(iter(aux('Q2_').values()), None)
+    if Q2:
+        fx2 = NARR.get('q2_fixes', {})
+        crow = ''.join(f'<tr><td class="l wrap">{esc(c["item"])}</td><td>{esc(c["status"])}</td><td class="wrap">{esc(c["evidence"])}</td></tr>' for c in Q2['checks'])
+        irow = ''.join(f'<tr><td>{esc(x["severity"])}</td><td class="l wrap">{esc(x["where"])}</td><td class="wrap">{esc(x["problem"])}</td>'
+                       f'<td class="wrap">{esc(fx2.get(str(i), "검토 중"))}</td></tr>' for i, x in enumerate(Q2['issues']))
+        body += ('<h3>재검증(Q2) 결과</h3><p class="note">Q의 지적을 조치하고 6종목을 재심사한 뒤, 조치와 재심사 병합만 좁게 다시 대조했다.</p>' + f'<p>{esc(Q2["summary"])}</p>' +
+                 table([('점검 항목', 'l'), ('판정', ''), ('근거', 'l')], crow) +
+                 ('<h3>Q2가 지적한 문제와 조치</h3>' + table([('심각도', ''), ('위치', 'l'), ('문제', 'l'), ('조치', 'l')], irow) if Q2['issues'] else ''))
     return sec('qc', '품질 체크리스트', body)
 
 

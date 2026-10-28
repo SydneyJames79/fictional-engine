@@ -7,12 +7,25 @@ import pandas as pd
 AN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 r = pd.read_csv(f'{AN}/output/final_ranks.csv', dtype={'code': str})
 st = pd.read_csv(f'{AN}/output/rank_stability.csv', dtype={'code': str})
-J = {s['code']: s for s in json.load(open(f'{AN}/data/aux/J_final_judge.json'))['result']['stocks']}
+JF = json.load(open(f'{AN}/data/aux/J_final_judge.json'))
+J = {s['code']: s for s in JF['result']['stocks']}
+RE = JF.get('rereview', {})
 
 
 def pc(x, signed=True):
     s = f'{x*100:+.1f}%' if signed else f'{x*100:.1f}%'
     return s.replace('+0.0%', '0.0%').replace('-0.0%', '0.0%').replace('-', '−')
+
+
+def pp(x):
+    s = f'{x*100:+.1f}%p'
+    return s.replace('+0.0%p', '0.0%p').replace('-0.0%p', '0.0%p').replace('-', '−')
+
+
+def num2(x):
+    """비율 표기(소수 둘째 자리). 반올림해 0이 되는 음수는 0.00으로 적는다."""
+    s = f'{x:.2f}'
+    return ('0.00' if s == '-0.00' else s).replace('-', '−')
 
 
 L = ['# 한국 26종목 1·3·5년 기대수익 순위', '',
@@ -22,21 +35,22 @@ L = ['# 한국 26종목 1·3·5년 기대수익 순위', '',
 for h, lab in (('h1', '1년'), ('h3', '3년'), ('h5', '5년')):
     g = r[r.h == h].sort_values('rank_bal')
     L += [f'## {lab} 균형형 순위', '',
-          '| 균형 | 종목 | 기대 TSR' + ('(누적)' if h == 'h1' else '(연)') + ' | 중앙값(누적) | P10 | P90 | 손실확률 | CVaR10 | Sortino | 지수 대비(연) | 신뢰도 | 안정성 |',
+          '| 균형 | 종목 | 기대 TSR' + ('(누적)' if h == 'h1' else '(연)') + ' | 중앙값(누적) | P10 | P90 | 손실확률 | CVaR10 | Sortino | 지수 대비(연, %p) | 신뢰도 | 안정성 |',
           '|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|']
     for _, x in g.iterrows():
         e = x.exp_cum if h == 'h1' else x.exp_ann
         s = st[(st.code == x.code) & (st.h == h)].stability.iloc[0]
-        so = f'{x.sortino:.2f}'.replace('-', '−')
+        so = num2(x.sortino)
         L.append(f'| {int(x.rank_bal)} | {x["name"]} | {pc(e)} | {pc(x.median_cum)} | {pc(x.p10)} | {pc(x.p90)} | {pc(x.p_loss, False)} | {pc(x.cvar10)} | {so} | '
-                 f'{pc(x.excess_vs_index_ann)} | {J[x.code]["final_confidence"]} | {s} |')
+                 f'{pp(x.excess_vs_index_ann)} | {J[x.code]["final_confidence"]} | {s} |')
     L.append('')
 L += ['## 방법 요약', '',
-      '1. 역할별 에이전트 108개: 식별·검증(B) 4, 거시(C) 3, 산업 전문가(D, 가치평가 겸) 26, 독립 일반 분석가 26, 포렌식(E) 26, 정량·위험(G) 1, 베이스레이트(H) 1, 반대심문(I) 9, 사실검증(V) 9, 민감도(S) 1, 최종심사(J) 1, 독립 검증(Q) 1.',
+      '1. 역할별 에이전트 108개: 식별·검증(B) 4, 거시(C) 3, 산업 전문가(D, 가치평가 겸) 26, 독립 일반 분석가 26, 포렌식(E) 26, 정량·위험(G) 1, 베이스레이트(H) 1, 반대심문(I) 9, 사실검증(V) 9, 민감도(S) 1, 최종심사(J) 1, 독립 검증(Q) 1. 독립 검증 뒤 최종심사 재심사 ' + str(len({v['run'] for v in RE.values()})) + '회와 재검증(Q2) 1회는 별도다.',
       '2. 종목·기간별 시나리오 트리(거시 기준 50·낙관 20·비관 30 고정, 하위분기 무조건부 확률)를 전문가·일반 분석가가 각각 작성했다.',
-      '3. 포렌식이 더 큰 신주 발행을 보면 희석 보정, 두 트리를 가중 혼합, 최종심사가 채택한 반대심문 조정을 적용했다.',
+      '3. 포렌식이 더 큰 신주 발행을 보면 희석 보정, 두 트리를 가중 혼합, 최종심사가 채택한 반대심문 조정을 적용했다. '
+      '독립 검증(Q)이 찾은 문제(재실행으로 덮어써진 1차 사실검증)를 반영해 ' + str(len(RE)) + '종목(' + '·'.join(J[c]['name'] for c in RE) + ')을 재심사했다.',
       '4. 사전값(무위험 + 선행 베타 × 지수 초과기대 + 베이스레이트 버킷 알파) 쪽으로 한 번만 축소했다. 두 분석가가 사전값의 같은 쪽에 있으면 불일치 감쇠가 과하게 작동하지 않게 했다.',
-      '5. 혼합 로그정규 몬테카를로(종목·기간별 200,000 경로)로 분포 지표를 계산했다. 균형형 = 기대 60 / Sortino 25 / CVaR10 15(백분위). 공격형 75/15/10, 방어형 40/35/25.',
+      '5. 기대 TSR은 분기 확률가중 정확값이고, 중앙값·분위수·손실확률·CVaR·하방편차는 혼합 로그정규 몬테카를로(종목·기간별 200,000 경로)로 계산했다. 균형형 = 기대 60 / Sortino 25 / CVaR10 15(백분위). 공격형 75/15/10, 방어형 40/35/25.',
       '6. 가정 변경 8종과 추정오차 부트스트랩으로 순위 안정성을 판정했고, 스트레스 충격 8종은 따로 계산했다.', '',
       '## 파일', '',
       '- `analysis/report/report.html`: 최종 보고서. `analysis/report/build_report.py`, `write_narrative.py`로 생성한다.',
@@ -46,7 +60,8 @@ L += ['## 방법 요약', '',
       '- `analysis/pipeline.py`, `quant_engine.py`, `run_quant.py`, `sensitivity.py`: 정량 단계 코드. `analysis/workflows/`: 에이전트 워크플로 스크립트.', '',
       '## 한계', '',
       '- 공시 원문(DART·KRX)을 직접 열람하지 못했고 유료 데이터베이스에는 접근하지 않았다. 일부 수치는 2차 집계 출처라 "미검증"으로 표시했다.',
-      '- 대부분 종목의 3Q26 실적이 분석 시점에 발표 전이었다.',
+      '- 대부분 종목의 3Q26 실적이 분석 시점에 발표 전이었다. 분석 뒤 발표된 SK하이닉스 3Q26 실적(2026-10-28)은 순위에 반영하지 않았다.',
+      '- 미국 자동차 관세율(15% 유지)은 보도로만 확인했고 미국 관보 기준 현행 세율은 확인하지 못했다. 25% 재부과가 확인되면 자동차·부품 5종목의 비관 보정을 되돌려야 한다.',
       '- 2026년 급등락으로 변동성 가정이 커서 손실확률·CVaR가 베이스레이트보다 보수적으로 나온다(순위 영향은 작음).', '']
 open(os.path.join(os.path.dirname(AN), 'REPORT.md'), 'w').write('\n'.join(L))
 print('wrote REPORT.md', len(L))
