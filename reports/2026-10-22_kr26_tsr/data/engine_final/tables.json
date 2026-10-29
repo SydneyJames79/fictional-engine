@@ -1,6 +1,9 @@
 {
  "1y": [
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.01169360270860103,
    "balanced_rank": 1,
    "ret_rank": 1,
    "ra_rank": 1,
@@ -36,6 +39,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.018143636764661027,
    "balanced_rank": 2,
    "ret_rank": 2,
    "ra_rank": 2,
@@ -71,6 +77,9 @@
    "shrink_weight": 0.9
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.03887732283742426,
    "balanced_rank": 3,
    "ret_rank": 3,
    "ra_rank": 3,
@@ -106,6 +115,9 @@
    "shrink_weight": 0.88
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.046815256226701185,
    "balanced_rank": 4,
    "ret_rank": 4,
    "ra_rank": 4,
@@ -141,6 +153,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.05529015942823307,
    "balanced_rank": 5,
    "ret_rank": 5,
    "ra_rank": 5,
@@ -176,6 +191,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.0631503754617631,
    "balanced_rank": 6,
    "ret_rank": 6,
    "ra_rank": 6,
@@ -211,6 +229,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.04741935754883138,
    "balanced_rank": 7,
    "ret_rank": 7,
    "ra_rank": 8,
@@ -246,6 +267,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.04926493024402656,
    "balanced_rank": 8,
    "ret_rank": 8,
    "ra_rank": 9,
@@ -281,6 +305,9 @@
    "shrink_weight": 0.6
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.050359350828741864,
    "balanced_rank": 9,
    "ret_rank": 9,
    "ra_rank": 7,
@@ -316,6 +343,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.08667386320113502,
    "balanced_rank": 10,
    "ret_rank": 10,
    "ra_rank": 15,
@@ -351,6 +381,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.08690000703822126,
    "balanced_rank": 11,
    "ret_rank": 11,
    "ra_rank": 11,
@@ -386,6 +419,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.08740688991193027,
    "balanced_rank": 12,
    "ret_rank": 12,
    "ra_rank": 16,
@@ -421,6 +457,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.053845910233806936,
    "balanced_rank": 13,
    "ret_rank": 13,
    "ra_rank": 10,
@@ -456,6 +495,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.06611133035905634,
    "balanced_rank": 14,
    "ret_rank": 14,
    "ra_rank": 12,
@@ -491,6 +533,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.07999850263770109,
    "balanced_rank": 15,
    "ret_rank": 15,
    "ra_rank": 13,
@@ -526,6 +571,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.08109994809415719,
    "balanced_rank": 16,
    "ret_rank": 17,
    "ra_rank": 18,
@@ -561,6 +609,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.08024435686285514,
    "balanced_rank": 17,
    "ret_rank": 16,
    "ra_rank": 14,
@@ -596,6 +647,9 @@
    "shrink_weight": 0.6
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.09777950898532226,
    "balanced_rank": 18,
    "ret_rank": 18,
    "ra_rank": 20,
@@ -631,6 +685,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.10111400005334648,
    "balanced_rank": 19,
    "ret_rank": 19,
    "ra_rank": 19,
@@ -666,6 +723,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.110156700697832,
    "balanced_rank": 20,
    "ret_rank": 21,
    "ra_rank": 25,
@@ -701,6 +761,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.10431915140817989,
    "balanced_rank": 21,
    "ret_rank": 20,
    "ra_rank": 21,
@@ -736,6 +799,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.11317794840101857,
    "balanced_rank": 22,
    "ret_rank": 22,
    "ra_rank": 17,
@@ -771,6 +837,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.065,
+   "excess_vs_index": -0.15309650896656601,
    "balanced_rank": 23,
    "ret_rank": 23,
    "ra_rank": 24,
@@ -806,6 +875,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.11934501005203842,
    "balanced_rank": 24,
    "ret_rank": 24,
    "ra_rank": 23,
@@ -841,6 +913,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.12525689405157425,
    "balanced_rank": 25,
    "ret_rank": 25,
    "ra_rank": 26,
@@ -876,6 +951,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.031,
+   "excess_vs_index": -0.12868161094606373,
    "balanced_rank": 26,
    "ret_rank": 26,
    "ra_rank": 22,
@@ -913,6 +991,9 @@
  ],
  "3y": [
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.004626205451263216,
    "balanced_rank": 1,
    "ret_rank": 1,
    "ra_rank": 1,
@@ -948,6 +1029,9 @@
    "shrink_weight": 0.9
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.021131904500693716,
    "balanced_rank": 2,
    "ret_rank": 3,
    "ra_rank": 2,
@@ -983,6 +1067,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.008423247392146171,
    "balanced_rank": 3,
    "ret_rank": 2,
    "ra_rank": 3,
@@ -1018,6 +1105,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.07838293310925265,
    "balanced_rank": 4,
    "ret_rank": 4,
    "ra_rank": 4,
@@ -1053,6 +1143,9 @@
    "shrink_weight": 0.88
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.12388074314955479,
    "balanced_rank": 5,
    "ret_rank": 5,
    "ra_rank": 5,
@@ -1088,6 +1181,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.14038772716114611,
    "balanced_rank": 6,
    "ret_rank": 6,
    "ra_rank": 7,
@@ -1123,6 +1219,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.10601865369665792,
    "balanced_rank": 7,
    "ret_rank": 7,
    "ra_rank": 6,
@@ -1158,6 +1257,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.15272731109753807,
    "balanced_rank": 8,
    "ret_rank": 8,
    "ra_rank": 11,
@@ -1193,6 +1295,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.12157854817380806,
    "balanced_rank": 9,
    "ret_rank": 10,
    "ra_rank": 9,
@@ -1228,6 +1333,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.1163613413208268,
    "balanced_rank": 10,
    "ret_rank": 9,
    "ra_rank": 8,
@@ -1263,6 +1371,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.12783345863754184,
    "balanced_rank": 11,
    "ret_rank": 11,
    "ra_rank": 10,
@@ -1298,6 +1409,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.1743062016756946,
    "balanced_rank": 12,
    "ret_rank": 12,
    "ra_rank": 13,
@@ -1333,6 +1447,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.13869253265923462,
    "balanced_rank": 13,
    "ret_rank": 13,
    "ra_rank": 12,
@@ -1368,6 +1485,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.18433622167010777,
    "balanced_rank": 14,
    "ret_rank": 14,
    "ra_rank": 14,
@@ -1403,6 +1523,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.2262400043441113,
    "balanced_rank": 15,
    "ret_rank": 16,
    "ra_rank": 16,
@@ -1438,6 +1561,9 @@
    "shrink_weight": 0.6
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.27526612792103766,
    "balanced_rank": 16,
    "ret_rank": 17,
    "ra_rank": 17,
@@ -1473,6 +1599,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.22307945410589528,
    "balanced_rank": 17,
    "ret_rank": 15,
    "ra_rank": 15,
@@ -1508,6 +1637,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.24102912701572454,
    "balanced_rank": 18,
    "ret_rank": 18,
    "ra_rank": 19,
@@ -1543,6 +1675,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.24575823202398073,
    "balanced_rank": 19,
    "ret_rank": 19,
    "ra_rank": 18,
@@ -1578,6 +1713,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.2554245021959586,
    "balanced_rank": 20,
    "ret_rank": 20,
    "ra_rank": 22,
@@ -1613,6 +1751,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.2658558499227225,
    "balanced_rank": 21,
    "ret_rank": 21,
    "ra_rank": 20,
@@ -1648,6 +1789,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.3110869817592915,
    "balanced_rank": 22,
    "ret_rank": 22,
    "ra_rank": 21,
@@ -1683,6 +1827,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.3249897008576285,
    "balanced_rank": 23,
    "ret_rank": 23,
    "ra_rank": 23,
@@ -1718,6 +1865,9 @@
    "shrink_weight": 0.6
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.24100000000000002,
+   "excess_vs_index": -0.3958626681939479,
    "balanced_rank": 24,
    "ret_rank": 25,
    "ra_rank": 26,
@@ -1753,6 +1903,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.3457585737755453,
    "balanced_rank": 25,
    "ret_rank": 24,
    "ra_rank": 25,
@@ -1788,6 +1941,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.204,
+   "excess_vs_index": -0.41960748554675126,
    "balanced_rank": 26,
    "ret_rank": 26,
    "ra_rank": 24,
@@ -1825,6 +1981,9 @@
  ],
  "5y": [
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.05467876868106725,
    "balanced_rank": 1,
    "ret_rank": 1,
    "ra_rank": 1,
@@ -1860,6 +2019,9 @@
    "shrink_weight": 0.9
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.09163106690724654,
    "balanced_rank": 2,
    "ret_rank": 3,
    "ra_rank": 2,
@@ -1895,6 +2057,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.07279826444141058,
    "balanced_rank": 3,
    "ret_rank": 2,
    "ra_rank": 3,
@@ -1930,6 +2095,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.14753343106558903,
    "balanced_rank": 4,
    "ret_rank": 4,
    "ra_rank": 4,
@@ -1965,6 +2133,9 @@
    "shrink_weight": 0.88
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.20720788026146822,
    "balanced_rank": 5,
    "ret_rank": 5,
    "ra_rank": 5,
@@ -2000,6 +2171,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.20908300905705057,
    "balanced_rank": 6,
    "ret_rank": 6,
    "ra_rank": 6,
@@ -2035,6 +2209,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.10585653796916794,
    "balanced_rank": 7,
    "ret_rank": 7,
    "ra_rank": 7,
@@ -2070,6 +2247,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.1434234360451512,
    "balanced_rank": 8,
    "ret_rank": 8,
    "ra_rank": 8,
@@ -2105,6 +2285,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.26807988909246494,
    "balanced_rank": 9,
    "ret_rank": 10,
    "ra_rank": 13,
@@ -2140,6 +2323,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.1545913990536632,
    "balanced_rank": 10,
    "ret_rank": 9,
    "ra_rank": 9,
@@ -2175,6 +2361,9 @@
    "shrink_weight": 0.7
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.16573639432803433,
    "balanced_rank": 11,
    "ret_rank": 11,
    "ra_rank": 11,
@@ -2210,6 +2399,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.28517852547045885,
    "balanced_rank": 12,
    "ret_rank": 12,
    "ra_rank": 14,
@@ -2245,6 +2437,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.18379726930386522,
    "balanced_rank": 13,
    "ret_rank": 13,
    "ra_rank": 10,
@@ -2280,6 +2475,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.18657105099953677,
    "balanced_rank": 14,
    "ret_rank": 14,
    "ra_rank": 12,
@@ -2315,6 +2513,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.21140316173999152,
    "balanced_rank": 15,
    "ret_rank": 15,
    "ra_rank": 15,
@@ -2350,6 +2551,9 @@
    "shrink_weight": 0.6
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.34052078467345875,
    "balanced_rank": 16,
    "ret_rank": 16,
    "ra_rank": 16,
@@ -2385,6 +2589,9 @@
    "shrink_weight": 0.85
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.2797755673953955,
    "balanced_rank": 17,
    "ret_rank": 18,
    "ra_rank": 19,
@@ -2420,6 +2627,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.27519032794301973,
    "balanced_rank": 18,
    "ret_rank": 17,
    "ra_rank": 17,
@@ -2455,6 +2665,9 @@
    "shrink_weight": 0.75
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.2963662230199866,
    "balanced_rank": 19,
    "ret_rank": 19,
    "ra_rank": 18,
@@ -2490,6 +2703,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.3220229818857518,
    "balanced_rank": 20,
    "ret_rank": 20,
    "ra_rank": 20,
@@ -2525,6 +2741,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.34378046854066796,
    "balanced_rank": 21,
    "ret_rank": 21,
    "ra_rank": 21,
@@ -2560,6 +2779,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.39027982536598804,
    "balanced_rank": 22,
    "ret_rank": 22,
    "ra_rank": 23,
@@ -2595,6 +2817,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.4353445072479059,
    "balanced_rank": 23,
    "ret_rank": 23,
    "ra_rank": 25,
@@ -2630,6 +2855,9 @@
    "shrink_weight": 0.65
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.44364154201459544,
    "balanced_rank": 24,
    "ret_rank": 24,
    "ra_rank": 24,
@@ -2665,6 +2893,9 @@
    "shrink_weight": 0.6
   },
   {
+   "index": "KOSPI",
+   "index_exp_cum": 0.43,
+   "excess_vs_index": -0.5721439314461791,
    "balanced_rank": 25,
    "ret_rank": 25,
    "ra_rank": 26,
@@ -2700,6 +2931,9 @@
    "shrink_weight": 0.8
   },
   {
+   "index": "KOSDAQ",
+   "index_exp_cum": 0.32299999999999995,
+   "excess_vs_index": -0.46963376560407627,
    "balanced_rank": 26,
    "ret_rank": 26,
    "ra_rank": 22,

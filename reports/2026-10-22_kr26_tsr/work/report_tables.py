@@ -43,6 +43,15 @@ def main(base, eng):
     macro_rf = json.load(open(os.path.join(eng, 'macro_rf.json')))
     R, RK = res['results'], res['rankings']
     names = list(R.keys())
+    # expected index returns (price basis) from the common macro scenario, keyed by market and horizon
+    idx = {}
+    try:
+        macro = json.load(open(os.path.join(base, 'wf1', 'macro_common.json')))
+        for ie in macro.get('index_expectations', []):
+            hk2 = '1y' if ie['horizon'].startswith('1') else ('3y' if ie['horizon'].startswith('3') else '5y')
+            idx.setdefault(ie['index'], {})[hk2] = float(str(ie.get('expected_cum_pct')).replace('+', '').replace('%', '')) / 100.0
+    except Exception:
+        idx = {}
     out = []
     tj = {}
 
@@ -53,13 +62,17 @@ def main(base, eng):
         rk = RK[hk]
         rows = sorted(rk.keys(), key=lambda n: rk[n]['balanced_rank'])
         out.append(f'\n### {HZN[hk]} 전체 순위표 (종료일 { {"1y":"2027-10-22","3y":"2029-10-22","5y":"2031-10-22"}[hk] }, 무위험수익률 {macro_rf["rf"][hk]*100:.2f}%)\n')
-        out.append('| 종합순위 | 기대수익률순위 | 위험조정순위 | 종목(코드) | 현재가 | 기대 누적 TSR | 기대 연환산 | 중앙값 누적 TSR | P10 | P50 | P90 | 손실확률 | 30%↑손실확률 | Fwd Sortino | CVaR 10% | 신뢰도 | 핵심 요인 |')
-        out.append('|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:--:|---|')
+        out.append('| 종합순위 | 기대수익률순위 | 위험조정순위 | 종목(코드) | 현재가 | 기대 누적 TSR | 기대 연환산 | 중앙값 누적 TSR | P10 | P50 | P90 | 손실확률 | 30%↑손실확률 | Fwd Sortino | CVaR 10% | 시장 대비 초과(기대 누적) | 신뢰도 | 핵심 요인 |')
+        out.append('|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:--:|---|')
         tj[hk] = []
         for n in rows:
             r = R[n]['horizons'][hk]
             t = trees[n]
+            mkt = t.get('market') or 'KOSPI'
+            ix = idx.get(mkt, {}).get(hk)
+            excess = (r['exp_cum'] - ix) if ix is not None else None
             row = {
+                'index': mkt, 'index_exp_cum': ix, 'excess_vs_index': excess,
                 'balanced_rank': rk[n]['balanced_rank'], 'ret_rank': rk[n]['ret_rank'], 'ra_rank': rk[n]['ra_rank'],
                 'aggressive_rank': rk[n]['aggressive_rank'], 'defensive_rank': rk[n]['defensive_rank'],
                 'name': n, 'ticker': t['ticker'], 'price0': t['price0'], 'price_date': t['price_date'],
@@ -69,7 +82,7 @@ def main(base, eng):
                 'scen_tsr': r['scen_tsr'], 'probs': r['probs'], 'shrink_weight': t.get('shrink_weight', 1.0),
             }
             tj[hk].append(row)
-            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {t.get('confidence','')} | {t.get('one_line','')} |")
+            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {t.get('one_line','')} |")
 
     # ---------- Part 4: rank change table ----------
     out.append('\n### 기간별 순위 변화표\n')
