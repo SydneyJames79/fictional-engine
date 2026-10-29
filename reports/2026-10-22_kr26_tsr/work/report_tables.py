@@ -78,7 +78,8 @@ def main(base, eng):
             dlabel = f'{int(mdate.group(1))}/{int(mdate.group(2))}' if mdate else '미확인'
             kind = str(t.get('price_kind', ''))
             flags = []
-            if '장중' in kind: flags.append('장중가')
+            if '구분 불명' in kind or '구분불명' in kind: flags.append('종가·장중 불명')
+            elif kind.startswith('장중') or '장중체결가' in kind: flags.append('장중가')
             if ('저신뢰' in kind) or ('비공식' in kind) or ('AI분석' in kind) or ('judal' in kind): flags.append('비공식·저신뢰 출처')
             if not mdate: flags.append('기준일 미확인')
             elif dlabel != '10/22': flags.append('10/22 급락 미반영')
@@ -96,7 +97,7 @@ def main(base, eng):
                 'scen_tsr': r['scen_tsr'], 'probs': r['probs'], 'shrink_weight': t.get('shrink_weight', 1.0),
             }
             tj[hk].append(row)
-            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {dlabel}{(' (' + pflag + ')') if pflag else ''} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {KF.get(n) or t.get('one_line','')} |")
+            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {dlabel}{(' (' + pflag + ')') if pflag else ''} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {(0.0 if abs(r['sortino']) < 0.005 else r['sortino']):.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {KF.get(n) or t.get('one_line','')} |")
 
     # ---------- Part 4: rank change table ----------
     out.append('\n### 기간별 순위 변화표\n')

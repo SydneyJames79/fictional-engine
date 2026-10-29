@@ -24,7 +24,9 @@ def na(x):
 
 FORECAST_OVERRIDES = {('현대모비스', '2031E'): {'op_income_bn': '42000', 'net_income_bn': '44300', 'eps_krw': '53000', '_note': '종합 원안 전망표의 2031E 영업이익 44,800억원은 오기(보정·최종 심사 에이전트 지적) → 최종 심사 시나리오 값 42,000억원(순이익 44,300억원·EPS 53,000원)으로 정정'}}
 REPORT_FIXES = [v['_note'] for v in FORECAST_OVERRIDES.values()]
+MCAP_OVERRIDES = {'한중엔시에스': '약 4,480억원 (2026-10-22; 역산 주식수 906만주 기준, 공식 상장주식수 미확인)'}
 TEXT_FIXES = [
+    ('2026~27년 사상 최대 이익이 확정적이나', '2026~27년 사상 최대 이익의 가시성이 높으나'),
     ('자연스러운 1차 매수선이다', '기준 시나리오만으로 기대 TSR이 양(+)으로 전환되는 가격대다'),
     ('3년 +32.8%(연 9.6%), 5년 +48.2%(연 8.0%)', '3년 +32.8%(연 9.9%), 5년 +48.2%(연 8.2%)'),
 ]
@@ -63,6 +65,11 @@ def main(base, eng, out_md):
     def _hmatch(h, hk):
         return str(h).startswith(hk[0])
 
+    def fmt_pct_hu(x):
+        from decimal import Decimal, ROUND_HALF_UP
+        v = Decimal(str(round(x * 100, 4))).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP)
+        return f"{'+' if v > 0 else ''}{v}%"
+
     def final_vs_orig_line(n):
         t = trees[n]; p0 = t['price0']; syn = synth[n] or {}
         fin, conf, orig = [], [], []
@@ -72,17 +79,19 @@ def main(base, eng, out_md):
                 fin.append('N/A'); conf.append('N/A'); orig.append('N/A'); continue
             e_fin = sum(x['prob'] / 100 * ((x['end_price'] + x['cum_cash']) / p0 - 1) for x in sc)
             e_conf = sum(x['prob'] / 100 * x.get('tsr_orig', (x['end_price'] + x['cum_cash']) / p0 - 1) for x in sc)
-            fin.append(fmt_pct(e_fin)); conf.append(fmt_pct(e_conf))
+            fin.append(fmt_pct_hu(e_fin)); conf.append(fmt_pct_hu(e_conf))
             hb = next((h for h in syn.get('horizons', []) if _hmatch(h.get('horizon', ''), hk)), None)
             if hb:
                 try:
                     e_o = sum(parse_num(x['probability_pct']) / 100 * ((parse_num(x['end_price_krw']) + (parse_num(x.get('cum_cash_per_share_krw')) or 0)) / p0 - 1) for x in hb['scenarios'])
-                    orig.append(fmt_pct(e_o))
+                    orig.append(fmt_pct_hu(e_o))
                 except Exception:
                     orig.append('N/A')
             else:
                 orig.append('N/A')
-        return (f"- **확률가중 기대 TSR 단계별 비교(1년 / 3년 / 5년, 현재 기준가 {fmt_krw(p0)} 기준)**: 종합 원안 {orig[0]} / {orig[1]} / {orig[2]} → 최종 심사 확정 {conf[0]} / {conf[1]} / {conf[2]} → 베이스레이트 축소 후(엔진 입력, 3부 표의 몬테카를로 기대값과 대응) {fin[0]} / {fin[1]} / {fin[2]}. 아래 본문 서술의 수치는 종합 원안 기준이며 최종값은 표를 따른다.")
+        refreshed = any(l.startswith(f'{n}: 기준가 갱신') for l in build_log)
+        note = ' (기준가가 갱신된 종목이라 원안도 갱신 기준가로 다시 계산한 값이며, 원안 문서의 수치는 갱신 전 기준가 기준이다)' if refreshed else ''
+        return (f"- **확률가중 기대 TSR 단계별 비교(1년 / 3년 / 5년, 현재 기준가 {fmt_krw(p0)} 기준)**: 종합 원안 {orig[0]} / {orig[1]} / {orig[2]}{note} → 최종 심사 확정 {conf[0]} / {conf[1]} / {conf[2]} → 베이스레이트 축소 후(엔진 입력) {fin[0]} / {fin[1]} / {fin[2]}. 축소 후 값은 시나리오 확률가중 입력값이고 3부 표는 몬테카를로 경로 평균이라 시나리오 내 분산 때문에 최대 0.7%p 차이가 날 수 있으며, 최종값은 3부 표다. 아래 본문 서술의 수치는 종합 원안 기준이다.")
     calib = load(os.path.join(base, 'wf3', 'calibration.json'), [])
     price_refresh = load(os.path.join(base, 'wf1', 'price_refresh.json'), {})
 
@@ -138,7 +147,8 @@ def main(base, eng, out_md):
         trad = '가능' if d.get('tradable') else '불가'
         note = (d.get('status_notes') or '')[:160].replace('|', '/').replace('\n', ' ')
         special = manual.get('part2_notes', {}).get(n) or note
-        A(f"| {i} | {n} ({d.get('legal_name','')[:45].replace('|','/')}) | {d.get('ticker','')} | {d.get('market','')} | {trad} | {fmt_krw(price) if price else 'N/A'} ({pdate}) | {fmt_mcap(mcap)} ({mcap_date}) | {na(d.get('latest_report_period'))[:40].replace('|','/')} | {(d['business'].get('summary') or '')[:70].replace('|','/').replace(chr(10),' ')} | {special.replace(chr(10),' ')} |")
+        mcap_cell = MCAP_OVERRIDES.get(n) or f"{fmt_mcap(mcap)} ({mcap_date})"
+        A(f"| {i} | {n} ({d.get('legal_name','')[:45].replace('|','/')}) | {d.get('ticker','')} | {d.get('market','')} | {trad} | {fmt_krw(price) if price else 'N/A'} ({pdate}) | {mcap_cell} | {na(d.get('latest_report_period'))[:40].replace('|','/')} | {(d['business'].get('summary') or '')[:70].replace('|','/').replace(chr(10),' ')} | {special.replace(chr(10),' ')} |")
     A('')
     A(manual.get('part2_exclusions', ''))
     A('')
@@ -200,6 +210,9 @@ def main(base, eng, out_md):
         ft = s.get('forecast_table', [])
         if ft:
             A('')
+            if any(k[0] == n for k in FORECAST_OVERRIDES):
+                A('(아래 전망표의 정정 행은 최종 심사 확정 경로 기준이고, 위 본문 서술은 종합 원안 기준이다. 정정 내역은 부록 D.)')
+                A('')
             A('| 연도 | 매출(억원) | 영업이익(억원) | 순이익(억원) | EPS(원) | FCF(억원) |')
             A('|---|---:|---:|---:|---:|---:|')
             for r in ft:
@@ -245,6 +258,7 @@ def main(base, eng, out_md):
     for n in names:
         if n not in bottom_union and n not in top_union and R[n]['horizons'].get('3y', {}).get('p_loss', 0) >= 0.45:
             bottom_union.append(n)
+    bottom_union.sort(key=lambda n: -RK['1y'][n]['balanced_rank'])
     for n in bottom_union:
         s = synth[n] or {}
         rs = s.get('report_sections', {})
@@ -287,6 +301,8 @@ def main(base, eng, out_md):
             A(f'- {d.get("topic","")}: 산업전문가 — {d.get("specialist_view","")} / 독립분석가 — {d.get("generalist_view","")} / 포렌식·위험 — {d.get("forensic_or_risk_view","")} → 결론: {d.get("resolution","")} (가중치 근거: {d.get("weighting_rationale","")})')
         A('')
     A('### 7-3. 반대심문(약세론) 결과와 최종 심사')
+    A('')
+    A('(아래 약세론·최종 심사 서술에 나오는 손실확률·Sortino 등 통계량은 반대심문 시점의 잠정 몬테카를로 결과이며, 최종 수치는 3부 표를 따른다.)')
     A('')
     for n in names:
         if not bear.get(n):
