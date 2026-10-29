@@ -6,7 +6,7 @@ Usage: build_trees.py <scratchpad> [--final]
          wf3/calibration.json (optional), wf3/judge/<name>.json (optional)
   Writes <out>/trees.json, <out>/risk.json, <out>/macro_rf.json, <out>/build_log.json
 """
-import json, os, sys, glob, re
+import json, re, os, sys, glob, re
 from engine import parse_num
 
 HZ = ['1y', '3y', '5y']
@@ -75,7 +75,9 @@ def main(base, final=False):
             if not c:
                 continue
             for a in c.get('assessments', []):
-                calib[a['stock']] = a
+                # calibration agents label stocks as '이름 (코드)'; key by the bare name
+                key = re.sub(r'\s*\(.*?\)\s*$', '', str(a.get('stock', ''))).strip()
+                calib[key] = a
 
     trees, risks = {}, {}
     for sp in sorted(glob.glob(os.path.join(base, 'wf2', 'synth', '*.json'))):
