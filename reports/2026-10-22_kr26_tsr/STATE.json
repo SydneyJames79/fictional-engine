@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-29T01:12:37Z",
+ "updated_utc": "2026-10-29T01:25:42Z",
  "analysis_basis": "2026-10-22 15:40 KST; horizons 2027-10-22 / 2029-10-22 / 2031-10-22; KRW",
  "wf1_stocks_verified": [
   "HPSP",
@@ -194,7 +194,7 @@
   ]
  },
  "engine_final": true,
- "report": false,
+ "report": true,
  "resume_notes": [
   "WF2 workflow run ids (resume with scriptPath work/wf2_analysis.js + resumeFromRunId): wf_ab38b784-c89, wf_eef957b7-41c, wf_09747591-3dc, wf_c0202b56-fc7, wf_52821627-8a5, wf_09fc0278-88b",
   "WF3 run ids (scriptPath work/wf3_calibrate_bear.js): calib wf_693073ee-80a, wf_1d4a3052-2e4, wf_d3fcdfc3-e7a; bear wf_5a264304-350, wf_753db09c-1ef, wf_2bd496e4-c3a; judge wf_4fff849e-a5a, wf_5112a154-f41, wf_02838b94-35b",

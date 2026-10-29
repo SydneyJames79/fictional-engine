@@ -156,13 +156,18 @@ def main(base, eng, out_md):
         A(f'- **비관·기준·낙관 시나리오**: {rs.get("scenarios","N/A")}')
         # scenario table (final)
         A('')
-        A('| 기간 | 시나리오 | 확률 | 기말 주가(희석 후) | 누적 현금환원/주 | 누적 TSR |')
-        A('|---|---|---:|---:|---:|---:|')
+        A('| 기간 | 시나리오 | 확률 | 기말 주가(확정, 희석 후) | 누적 현금환원/주 | 누적 TSR(확정) | 축소 후 TSR(엔진 입력) |')
+        A('|---|---|---:|---:|---:|---:|---:|')
         for hk in HZ:
             for sc in t['horizons'].get(hk, []):
-                A(f"| {HZN[hk]} | {sc['name']} | {sc['prob']:.0f}% | {fmt_krw(sc['end_price'])} | {fmt_krw(sc['cum_cash'])} | {fmt_pct((sc['end_price']+sc['cum_cash'])/t['price0']-1)} |")
+                ep0 = sc.get('end_price_orig', sc['end_price'])
+                tsr0 = sc.get('tsr_orig', (sc['end_price'] + sc['cum_cash']) / t['price0'] - 1)
+                tsr1 = (sc['end_price'] + sc['cum_cash']) / t['price0'] - 1
+                A(f"| {HZN[hk]} | {sc['name']} | {sc['prob']:.0f}% | {fmt_krw(ep0)} | {fmt_krw(sc['cum_cash'])} | {fmt_pct(tsr0)} | {fmt_pct(tsr1)} |")
         if t.get('shrink_weight', 1.0) < 1.0:
-            A(f'(베이스레이트 축소 가중치 {t["shrink_weight"]:.2f} 적용 후 값)')
+            A(f'(확정 값은 최종 심사·종합 에이전트의 시나리오이며, 엔진은 베이스레이트 축소 가중치 {t["shrink_weight"]:.2f}를 적용한 \'축소 후 TSR\'을 입력으로 썼다: 축소 후 TSR = {t["shrink_weight"]:.2f} × 확정 TSR + {1-t["shrink_weight"]:.2f} × 산업 사전 기대 TSR({", ".join(f"{k} {v:+.0f}%" for k, v in t.get("prior_tsr", {}).items())}). 확률은 그대로다.)')
+        else:
+            A('(베이스레이트 축소 미적용: 축소 후 TSR = 확정 TSR)')
         A('')
         A(f'- **가장 중요한 촉매**: {rs.get("catalysts","N/A")}')
         A(f'- **가장 중요한 하방위험**: {rs.get("downside_risks","N/A")}')

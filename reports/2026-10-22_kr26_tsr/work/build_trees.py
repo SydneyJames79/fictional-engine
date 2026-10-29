@@ -133,6 +133,8 @@ def main(base, final=False):
                 for hk, sc in horizons.items():
                     for x in sc:
                         tsr = (x['end_price'] + x['cum_cash']) / price0 - 1
+                        x['end_price_orig'] = x['end_price']
+                        x['tsr_orig'] = tsr
                         tsr_adj = w * tsr + (1 - w) * (prior_tsr[hk] / 100.0)
                         # keep cash, adjust end price so that TSR = tsr_adj
                         x['end_price'] = max((1 + tsr_adj) * price0 - x['cum_cash'], 0.01 * price0)
