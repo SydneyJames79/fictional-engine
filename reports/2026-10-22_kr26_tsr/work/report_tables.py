@@ -2,7 +2,7 @@
 """Generate markdown tables for the report from engine results + WF1 data.
 Usage: report_tables.py <scratchpad> <engine_dir>  → writes <engine_dir>/tables.md and tables.json
 """
-import json, os, sys
+import json, re, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from engine import parse_num
 
@@ -62,17 +62,27 @@ def main(base, eng):
         rk = RK[hk]
         rows = sorted(rk.keys(), key=lambda n: rk[n]['balanced_rank'])
         out.append(f'\n### {HZN[hk]} 전체 순위표 (종료일 { {"1y":"2027-10-22","3y":"2029-10-22","5y":"2031-10-22"}[hk] }, 무위험수익률 {macro_rf["rf"][hk]*100:.2f}%)\n')
-        out.append('| 종합순위 | 기대수익률순위 | 위험조정순위 | 종목(코드) | 현재가 | 기대 누적 TSR | 기대 연환산 | 중앙값 누적 TSR | P10 | P50 | P90 | 손실확률 | 30%↑손실확률 | Fwd Sortino | CVaR 10% | 시장 대비 초과(기대 누적) | 신뢰도 | 핵심 요인 |')
-        out.append('|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:--:|---|')
+        out.append('| 종합순위 | 기대수익률순위 | 위험조정순위 | 종목(코드) | 현재가 | 기준일(표시) | 기대 누적 TSR | 기대 연환산 | 중앙값 누적 TSR | P10 | P50 | P90 | 손실확률 | 30%↑손실확률 | Fwd Sortino | CVaR 10% | 시장 대비 초과(기대 누적) | 신뢰도 | 핵심 요인(종합 에이전트 원안 서술; 문장 속 TSR·기준가·시총은 반대심문·축소·기준가 갱신 전 값이며 숫자 열이 최종) |')
+        out.append('|---:|---:|---:|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:--:|---|')
         tj[hk] = []
         for n in rows:
             r = R[n]['horizons'][hk]
             t = trees[n]
             mkt = t.get('market') or 'KOSPI'
+            pd_ = str(t.get('price_date', ''))
+            mdate = re.search(r'2026-(\d\d)-(\d\d)', pd_)
+            dlabel = f'{int(mdate.group(1))}/{int(mdate.group(2))}' if mdate else '미확인'
+            kind = str(t.get('price_kind', ''))
+            flags = []
+            if '장중' in kind: flags.append('장중가')
+            if ('저신뢰' in kind) or ('비공식' in kind) or ('AI분석' in kind) or ('judal' in kind): flags.append('비공식·저신뢰 출처')
+            if not mdate: flags.append('기준일 미확인')
+            elif dlabel != '10/22': flags.append('10/22 급락 미반영')
+            pflag = ', '.join(flags)
             ix = idx.get(mkt, {}).get(hk)
             excess = (r['exp_cum'] - ix) if ix is not None else None
             row = {
-                'index': mkt, 'index_exp_cum': ix, 'excess_vs_index': excess,
+                'index': mkt, 'index_exp_cum': ix, 'excess_vs_index': excess, 'price_flag': pflag, 'price_date_label': dlabel,
                 'balanced_rank': rk[n]['balanced_rank'], 'ret_rank': rk[n]['ret_rank'], 'ra_rank': rk[n]['ra_rank'],
                 'aggressive_rank': rk[n]['aggressive_rank'], 'defensive_rank': rk[n]['defensive_rank'],
                 'name': n, 'ticker': t['ticker'], 'price0': t['price0'], 'price_date': t['price_date'],
@@ -82,7 +92,7 @@ def main(base, eng):
                 'scen_tsr': r['scen_tsr'], 'probs': r['probs'], 'shrink_weight': t.get('shrink_weight', 1.0),
             }
             tj[hk].append(row)
-            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {t.get('one_line','')} |")
+            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {dlabel}{(' (' + pflag + ')') if pflag else ''} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {t.get('one_line','')} |")
 
     # ---------- Part 4: rank change table ----------
     out.append('\n### 기간별 순위 변화표\n')
@@ -97,7 +107,7 @@ def main(base, eng):
         if b[0] and b[2]:
             diff = b[0] - b[2]
             trend = '장기로 갈수록 상승' if diff >= 3 else ('장기로 갈수록 하락' if diff <= -3 else '비슷')
-        tj['rank_change'].append({'name': n, 'ticker': trees[n]['ticker'], 'balanced': b, 'aggressive': a, 'defensive': d, 'trend': trend})
+        tj['rank_change'].append({'name': n, 'ticker': trees[n]['ticker'], 'balanced': b, 'aggressive': a, 'defensive': d, 'trend': trend, 'agg_def_maxdiff': max(abs(x - y) for x, y in zip(a, d) if x and y)})
         f = lambda x: str(x) if x else '-'
         out.append(f"| {n}({trees[n]['ticker']}) | {f(b[0])} | {f(b[1])} | {f(b[2])} | {f(a[0])} | {f(a[1])} | {f(a[2])} | {f(d[0])} | {f(d[1])} | {f(d[2])} | {trend} |")
 
@@ -117,7 +127,7 @@ def main(base, eng):
     # high return but high risk: ret rank top-10 and p_loss30 high (3y)
     hk = '3y'
     if hk in RK:
-        p1['high_ret_high_risk'] = [n for n in sorted(RK[hk], key=lambda n: RK[hk][n]['ret_rank']) if RK[hk][n]['ret_rank'] <= 10 and R[n]['horizons'][hk]['p_loss30'] >= 0.30][:6]
+        p1['high_ret_high_risk'] = [n for n in sorted(RK[hk], key=lambda n: RK[hk][n]['ret_rank']) if RK[hk][n]['ret_rank'] <= 10 and R[n]['horizons'][hk]['p_loss30'] >= 0.30][:10]
         p1['mid_ret_good_ra'] = [n for n in sorted(RK[hk], key=lambda n: RK[hk][n]['ra_rank']) if RK[hk][n]['ra_rank'] <= 8 and RK[hk][n]['ret_rank'] > 8][:6]
         p1['exp_vs_median_gap'] = sorted(names, key=lambda n: -(R[n]['horizons'][hk]['exp_cum'] - R[n]['horizons'][hk]['median']))[:6]
     tj['part1'] = p1

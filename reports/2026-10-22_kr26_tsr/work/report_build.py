@@ -3,7 +3,7 @@
 Usage: report_build.py <scratchpad> <engine_dir> <out_md>
 Manual sections (Part 1 commentary, Part 9, extra notes) are read from <scratchpad>/manual_sections.json if present.
 """
-import json, os, sys, glob
+import json, os, sys, glob, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from engine import parse_num
 from report_tables import fmt_pct, fmt_pct_plain, fmt_krw, fmt_mcap, HZ, HZN
@@ -22,6 +22,29 @@ def na(x):
     return x if (x not in (None, '', 'N/A', 'null')) else 'N/A'
 
 
+FORECAST_OVERRIDES = {('현대모비스', '2031E'): {'op_income_bn': '42000', 'net_income_bn': '44300', 'eps_krw': '53000', '_note': '종합 원안 전망표의 2031E 영업이익 44,800억원은 오기(보정·최종 심사 에이전트 지적) → 최종 심사 시나리오 값 42,000억원(순이익 44,300억원·EPS 53,000원)으로 정정'}}
+REPORT_FIXES = [v['_note'] for v in FORECAST_OVERRIDES.values()]
+TEXT_FIXES = [
+    ('자연스러운 1차 매수선이다', '기준 시나리오만으로 기대 TSR이 양(+)으로 전환되는 가격대다'),
+    ('3년 +32.8%(연 9.6%), 5년 +48.2%(연 8.0%)', '3년 +32.8%(연 9.9%), 5년 +48.2%(연 8.2%)'),
+]
+
+
+def ratio_str(price, mid):
+    m = parse_num(mid)
+    return f'{price / m:.1f}배' if m else 'N/A'
+
+
+def postprocess(md):
+    # unify formatting: ASCII minus, %p, thousand separators for bare KRW amounts
+    md = md.replace('\u2212', '-')
+    md = re.sub(r'(\d)pp\b', r'\1%p', md)
+    md = re.sub(r'(?<![\d,.\-])(\d{4,})원', lambda m: f"{int(m.group(1)):,}원", md)
+    for a, b in TEXT_FIXES:
+        md = md.replace(a, b)
+    return md
+
+
 def main(base, eng, out_md):
     res = load(os.path.join(eng, 'results.json'))
     trees = load(os.path.join(eng, 'trees.json'))
@@ -36,6 +59,30 @@ def main(base, eng, out_md):
     synth = {n: load(os.path.join(base, 'wf2', 'synth', f'{n}.json')) for n in names}
     judge = {n: load(os.path.join(base, 'wf3', 'judge', f'{n}.json')) for n in names}
     bear = {n: load(os.path.join(base, 'wf3', 'bear', f'{n}.json')) for n in names}
+
+    def _hmatch(h, hk):
+        return str(h).startswith(hk[0])
+
+    def final_vs_orig_line(n):
+        t = trees[n]; p0 = t['price0']; syn = synth[n] or {}
+        fin, conf, orig = [], [], []
+        for hk in HZ:
+            sc = t['horizons'].get(hk, [])
+            if not sc:
+                fin.append('N/A'); conf.append('N/A'); orig.append('N/A'); continue
+            e_fin = sum(x['prob'] / 100 * ((x['end_price'] + x['cum_cash']) / p0 - 1) for x in sc)
+            e_conf = sum(x['prob'] / 100 * x.get('tsr_orig', (x['end_price'] + x['cum_cash']) / p0 - 1) for x in sc)
+            fin.append(fmt_pct(e_fin)); conf.append(fmt_pct(e_conf))
+            hb = next((h for h in syn.get('horizons', []) if _hmatch(h.get('horizon', ''), hk)), None)
+            if hb:
+                try:
+                    e_o = sum(parse_num(x['probability_pct']) / 100 * ((parse_num(x['end_price_krw']) + (parse_num(x.get('cum_cash_per_share_krw')) or 0)) / p0 - 1) for x in hb['scenarios'])
+                    orig.append(fmt_pct(e_o))
+                except Exception:
+                    orig.append('N/A')
+            else:
+                orig.append('N/A')
+        return (f"- **확률가중 기대 TSR 단계별 비교(1년 / 3년 / 5년, 현재 기준가 {fmt_krw(p0)} 기준)**: 종합 원안 {orig[0]} / {orig[1]} / {orig[2]} → 최종 심사 확정 {conf[0]} / {conf[1]} / {conf[2]} → 베이스레이트 축소 후(엔진 입력, 3부 표의 몬테카를로 기대값과 대응) {fin[0]} / {fin[1]} / {fin[2]}. 아래 본문 서술의 수치는 종합 원안 기준이며 최종값은 표를 따른다.")
     calib = load(os.path.join(base, 'wf3', 'calibration.json'), [])
     price_refresh = load(os.path.join(base, 'wf1', 'price_refresh.json'), {})
 
@@ -107,6 +154,11 @@ def main(base, eng, out_md):
     A('## 4부. 기간별 순위 변화표')
     A('')
     A(manual.get('part4_intro', ''))
+    _rc = tj.get('rank_change', [])
+    _mx = max((r.get('agg_def_maxdiff', 0) for r in _rc), default=0)
+    _big = [f"{r['name']}({r['agg_def_maxdiff']}단계)" for r in _rc if r.get('agg_def_maxdiff', 0) >= max(3, _mx)]
+    A('')
+    A(f"공격형과 방어형 순위 차이의 최대값은 {_mx}단계이며, 그 차이가 가장 큰 종목은 {', '.join(_big) if _big else '없음'}이다. 이 종목들은 8부에서 '순위 불안정' 후보로도 다룬다.")
     A('')
     A('| 종목(코드) | 1년 종합 | 3년 종합 | 5년 종합 | 공격형(1/3/5년) | 방어형(1/3/5년) | 장기로 갈수록 순위가 변하는 이유 |')
     A('|---|---:|---:|---:|---|---|---|')
@@ -140,7 +192,8 @@ def main(base, eng, out_md):
         A(f'기준 주가 {fmt_krw(t["price0"])} ({t["price_date"]}), 산업군 {t["industry"]}, 추정 신뢰도 {t.get("confidence","")}.')
         A('')
         vs = s.get('valuation_summary', {})
-        A(f'- **핵심 투자논지**: {rs.get("thesis","N/A")}')
+        A(final_vs_orig_line(n))
+        A(f'- **핵심 투자논지(종합 에이전트 원안 서술)**: {rs.get("thesis","N/A")}')
         A(f'- **현재 주가가 암시하는 기대**: {rs.get("implied_expectations","N/A")}')
         A(f'- **시장 전망과 자체 전망의 차이**: {rs.get("vs_consensus","N/A")}')
         A(f'- **매출·이익·현금흐름 전망**: {rs.get("financial_outlook","N/A")}')
@@ -150,10 +203,13 @@ def main(base, eng, out_md):
             A('| 연도 | 매출(억원) | 영업이익(억원) | 순이익(억원) | EPS(원) | FCF(억원) |')
             A('|---|---:|---:|---:|---:|---:|')
             for r in ft:
+                ov = FORECAST_OVERRIDES.get((n, str(r.get('year', ''))))
+                if ov:
+                    r = {**r, **{k: v for k, v in ov.items() if not k.startswith('_')}}
                 A(f"| {r.get('year','')} | {na(r.get('revenue_bn'))} | {na(r.get('op_income_bn'))} | {na(r.get('net_income_bn'))} | {na(r.get('eps_krw'))} | {na(r.get('fcf_bn'))} |")
             A('')
         A(f'- **가치평가 방법과 적정가치 범위**: {rs.get("valuation","N/A")} (방법: {vs.get("methods_used","N/A")}; 적정가치 범위 {na(vs.get("fair_value_low_krw"))}~{na(vs.get("fair_value_high_krw"))}원, 중간값 {na(vs.get("fair_value_mid_krw"))}원)')
-        A(f'- **비관·기준·낙관 시나리오**: {rs.get("scenarios","N/A")}')
+        A(f'- **비관·기준·낙관 시나리오(종합 에이전트 원안 서술; 최종 확정값은 아래 표)**: {rs.get("scenarios","N/A")}')
         # scenario table (final)
         A('')
         A('| 기간 | 시나리오 | 확률 | 기말 주가(확정, 희석 후) | 누적 현금환원/주 | 누적 TSR(확정) | 축소 후 TSR(엔진 입력) |')
@@ -198,7 +254,10 @@ def main(base, eng, out_md):
         pl = ' / '.join(f'{HZN[h]} 손실확률 {fmt_pct_plain(R[n]["horizons"][h]["p_loss"])}' for h in HZ if h in R[n]['horizons'])
         A(f'### {n} ({t["ticker"]}) — 균형형 종합순위 {ranks}; {pl}')
         A('')
-        A(f'- **낮은 순위의 핵심 원인**: {rs.get("low_rank_reasons","N/A")}')
+        A(final_vs_orig_line(n))
+        vs6 = s.get('valuation_summary', {}) or {}
+        A(f'- **종합 에이전트 적정가치(원안)**: 중간값 {na(vs6.get("fair_value_mid_krw"))}원(범위 {na(vs6.get("fair_value_low_krw"))}~{na(vs6.get("fair_value_high_krw"))}원); 현재가 {fmt_krw(t["price0"])}는 중간값의 {ratio_str(t["price0"], vs6.get("fair_value_mid_krw"))}')
+        A(f'- **낮은 순위의 핵심 원인(원안 서술)**: {rs.get("low_rank_reasons","N/A")}')
         A(f'- **현재 주가에 반영된 기대**: {rs.get("implied_expectations","N/A")} (낙관 반영도: {fl.get("optimism_priced_in","N/A")})')
         A(f'- **재무·희석·기술·고객·규제 위험**: {rs.get("downside_risks","N/A")}')
         A(f'- **순위가 크게 오를 수 있는 변화**: {rs.get("what_would_lift_rank","N/A")}')
@@ -209,6 +268,8 @@ def main(base, eng, out_md):
     A(manual.get('part7_intro', ''))
     A('')
     A('### 7-1. 산업군별 베이스레이트 보정 요약')
+    A('')
+    A('(아래 서술의 기대 TSR 수치는 보정 에이전트가 검토한 시점의 잠정 결과(반대심문·최종 심사 전)이며, 최종 수치는 3부 표를 따른다.)')
     A('')
     for c in calib:
         if c:
@@ -261,6 +322,19 @@ def main(base, eng, out_md):
     A('')
     A(manual.get('part8_analysis', ''))
     A('')
+    sens = load(os.path.join(eng, '..', 'engine_sens', 'sens_table.json'))
+    if sens:
+        A('### 8-2. 기준가 날짜 통일 민감도(10/22 급락 미반영 종목의 기준가를 10/22 지수 변동 × 베타로 조정)')
+        A('')
+        A(sens.get('intro', ''))
+        A('')
+        A('| 종목(코드) | 기준가(보고서) | 조정 기준가(추정) | 1년 기대 TSR 보고서→조정 | 1년 종합순위 | 3년 종합순위 | 5년 종합순위 |')
+        A('|---|---:|---:|---:|---:|---:|---:|')
+        for r in sens.get('rows', []):
+            A(f"| {r['name']}({r['ticker']}) | {fmt_krw(r['price0'])} | {fmt_krw(r['price_adj'])}{'' if r['adjusted'] else ' (변경 없음)'} | {fmt_pct(r['e1_base'])}→{fmt_pct(r['e1_sens'])} | {r['b1_base']}→{r['b1_sens']} | {r['b3_base']}→{r['b3_sens']} | {r['b5_base']}→{r['b5_sens']} |")
+        A('')
+        A(sens.get('summary', ''))
+        A('')
     # ---------- Part 9 ----------
     A('## 9부. 최종 판단')
     A('')
@@ -286,6 +360,8 @@ def main(base, eng, out_md):
     A('')
     A('## 부록 D. 엔진 빌드 로그(산식 검산·정규화·축소 기록)')
     A('')
+    for l in REPORT_FIXES:
+        A(f'- 보고서 편집 정정: {l}')
     for l in build_log:
         A(f'- {l}')
     A('')
@@ -301,7 +377,7 @@ def main(base, eng, out_md):
             A(f'- **{n}**: ' + '; '.join(f"{(s.get('title') or '')[:40]} ({s.get('url','')}, {s.get('date','')})" for s in srcs))
     A('')
     with open(out_md, 'w') as f:
-        f.write('\n'.join(L))
+        f.write(postprocess('\n'.join(L)))
     print(f'wrote {out_md}: {len("".join(L))} chars, {len(L)} lines')
 
 

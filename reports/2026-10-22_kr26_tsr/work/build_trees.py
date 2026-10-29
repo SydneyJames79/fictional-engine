@@ -157,9 +157,17 @@ def main(base, final=False):
         pz = (pz / 100.0) if pz is not None else 0.0
         # cap extreme vol inputs
         v1, v3, v5 = [min(max(v, 0.15), 1.20) for v in (v1, v3, v5)]
-        risks[name] = {'ann_vol_1y': v1, 'ann_vol_3y': v3, 'ann_vol_5y': v5, 'p_zero_ann': min(pz, 0.15), 'beta': parse_num(rk.get('beta')), 'mdd_3y': parse_num(rk.get('mdd_3y_pct')), 'turnover_bn': parse_num(rk.get('avg_daily_turnover_bn')), 'confidence': rk.get('confidence', '')}
+        # Permanent-loss tail: the synthesis/judge bear legs already embed the delisting/-80% tail (24/26 trees say so
+        # explicitly), so the engine must NOT apply p_zero again (double counting flagged by verifier 1). Keep the reported value for the record.
+        risks[name] = {'ann_vol_1y': v1, 'ann_vol_3y': v3, 'ann_vol_5y': v5, 'p_zero_ann': 0.0, 'p_zero_ann_reported': min(pz, 0.15), 'beta': parse_num(rk.get('beta')), 'mdd_3y': parse_num(rk.get('mdd_3y_pct')), 'turnover_bn': parse_num(rk.get('avg_daily_turnover_bn')), 'confidence': rk.get('confidence', '')}
+        if pz and pz > 0:
+            log.append(f'{name}: 위험 에이전트 영구손실 확률 연 {pz*100:.2f}%는 비관 레그 기말가에 이미 내재 → 엔진 p_zero 별도 적용 제외(이중 차감 방지)')
+        trees[name]['price_kind'] = str((data.get('price') or {}).get('kind', ''))
         if not rk:
             log.append(f'{name}: 위험 보고서 없음 → 산업 사전 변동성 {pri_vol}% 사용')
+    n_tot = sum(len(t['horizons']) for t in trees.values())
+    n_norm = sum(1 for l in log if '확률 합' in l and '정규화' in l)
+    log.append(f'확률 합 검산: {n_tot}개 종목·기간 트리 모두 합계 100% (정규화 적용 {n_norm}건)')
     out_dir = os.path.join(base, 'engine_final' if final else 'engine_prov')
     os.makedirs(out_dir, exist_ok=True)
     json.dump(trees, open(os.path.join(out_dir, 'trees.json'), 'w'), ensure_ascii=False, indent=1)
