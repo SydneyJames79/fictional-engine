@@ -32,6 +32,7 @@ state = {
   'report': os.path.exists(os.path.join(out, 'report.md')),
   'resume_notes': [
     'WF2 workflow run ids (resume with scriptPath work/wf2_analysis.js + resumeFromRunId): wf_ab38b784-c89, wf_eef957b7-41c, wf_09747591-3dc, wf_c0202b56-fc7, wf_52821627-8a5, wf_09fc0278-88b',
+    'WF3 run ids (scriptPath work/wf3_calibrate_bear.js): calib wf_693073ee-80a, wf_1d4a3052-2e4, wf_d3fcdfc3-e7a; bear wf_5a264304-350, wf_753db09c-1ef, wf_2bd496e4-c3a; judge wf_4fff849e-a5a, wf_5112a154-f41, wf_02838b94-35b',
     'Pipeline: collect_wf2.py -> build_trees.py (prov) -> engine.py -> prep_wf3_args.py -> wf3_calibrate_bear.js -> collect_wf3.py -> build_trees.py --final -> engine.py -> report_tables.py -> report_build.py -> wf4_verify.js',
     'Scratchpad path used by scripts: /tmp/claude-0/-home-user-fictional-engine/ff335beb-4d53-52b1-a2ba-4fe6e5b2979b/scratchpad (restore data/ from this repo there if lost)',
   ],
