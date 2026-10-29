@@ -16,6 +16,7 @@ json.dump(w, open(os.path.join(base, 'wf4', 'writer.json'), 'w'), ensure_ascii=F
 mp = os.path.join(base, 'manual_sections.json'); m = json.load(open(mp))
 def bare(s): return re.sub(r'\s*\(.*?\)\s*$', '', str(s)).strip()
 m['part4_reasons'] = {bare(x['stock']): x['reason'] for x in w.get('part4_reasons', [])}
+m['part3_key_factors'] = {bare(x['stock']): x['factor'] for x in w.get('part3_key_factors', [])}
 m['part2_notes'] = {bare(x['stock']): x['note'] for x in w.get('part2_notes', [])}
 pi = w.get('priced_in_ranking', [])
 m['part1_priced_in'] = '; '.join(f"{i+1}. {bare(x['stock'])}({x['degree']}: {x['reason']})" for i, x in enumerate(pi))

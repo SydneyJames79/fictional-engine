@@ -12,13 +12,14 @@ const STRARR = { type: 'array', items: STR }
 const FINDINGS = { type: 'array', items: { type: 'object', properties: { id: STR, location: STR, severity: { type: 'string', enum: ['치명', '중요', '경미'] }, issue: STR, evidence: STR, suggested_fix: STR }, required: ['id', 'location', 'severity', 'issue', 'evidence', 'suggested_fix'] } }
 const VERIFY_SCHEMA = { type: 'object', properties: { role: STR, checks_performed: STRARR, findings: FINDINGS, pass_summary: STR, overall: { type: 'string', enum: ['통과', '조건부 통과', '불통과'] } }, required: ['role', 'checks_performed', 'findings', 'pass_summary', 'overall'] }
 const QC_SCHEMA = { type: 'object', properties: { role: STR, checklist: { type: 'array', items: { type: 'object', properties: { item: STR, status: { type: 'string', enum: ['충족', '부분충족', '미충족'] }, evidence: STR, fix: STR }, required: ['item', 'status', 'evidence', 'fix'] } }, findings: FINDINGS, overall: { type: 'string', enum: ['통과', '조건부 통과', '불통과'] } }, required: ['role', 'checklist', 'findings', 'overall'] }
-const WRITER_SCHEMA = { type: 'object', properties: { part4_reasons: { type: 'array', items: { type: 'object', properties: { stock: STR, reason: STR }, required: ['stock', 'reason'] } }, part2_notes: { type: 'array', items: { type: 'object', properties: { stock: STR, note: STR }, required: ['stock', 'note'] } }, priced_in_ranking: { type: 'array', items: { type: 'object', properties: { stock: STR, degree: STR, reason: STR }, required: ['stock', 'degree', 'reason'] } }, part8_analysis: STR, part7_summary: STR, biggest_disagreements: STRARR }, required: ['part4_reasons', 'part2_notes', 'priced_in_ranking', 'part8_analysis', 'part7_summary', 'biggest_disagreements'] }
+const WRITER_SCHEMA = { type: 'object', properties: { part3_key_factors: { type: 'array', items: { type: 'object', properties: { stock: STR, factor: STR }, required: ['stock', 'factor'] } }, part4_reasons: { type: 'array', items: { type: 'object', properties: { stock: STR, reason: STR }, required: ['stock', 'reason'] } }, part2_notes: { type: 'array', items: { type: 'object', properties: { stock: STR, note: STR }, required: ['stock', 'note'] } }, priced_in_ranking: { type: 'array', items: { type: 'object', properties: { stock: STR, degree: STR, reason: STR }, required: ['stock', 'degree', 'reason'] } }, part8_analysis: STR, part7_summary: STR, biggest_disagreements: STRARR }, required: ['part3_key_factors', 'part4_reasons', 'part2_notes', 'priced_in_ranking', 'part8_analysis', 'part7_summary', 'biggest_disagreements'] }
 
 const P = args.paths
 
 const ENV = `[환경] WebSearch는 사용하지 않는다(검색 없이 파일만으로 수행). 모든 파일은 Read 도구로 끝까지 읽는다(큰 파일은 offset/limit으로 나눠 읽는다). 최종 출력은 JSON 스키마로만.`
 
 const writerPrompt = `당신은 리서치 시스템의 '최종 심사 보조 작성 에이전트'입니다. 아래 산출물을 읽고 보고서에 들어갈 보조 문안을 작성하세요. 보고서 문체(평서문, '~다/~이다'), 숫자 포함, 각 문장 짧게.
+[수치 인용 규칙(최우선)] 순위·기대 TSR·연환산·중앙값·손실확률·Sortino·CVaR·기준가는 반드시 tables.json(최종 엔진 결과)에서만 인용한다. 종목별 종합 보고서(synth)와 종목 데이터 파일에 적힌 확률가중 TSR·기준주가·시가총액은 반대심문·베이스레이트 축소·기준가 갱신 이전의 '원안' 값이라 최종과 다르므로 절대 인용하지 않는다(정성 근거·사업 내용·위험 요인만 가져온다). 영구손실 확률(p_zero)은 비관 시나리오에 내재돼 엔진이 별도 적용하지 않았으므로 '영구손실 확률 n%가 분포 꼬리를 키운다'는 식의 서술도 쓰지 않는다. 문장을 쓰기 전에 tables.json의 해당 종목 행을 다시 확인한다.
 ${ENV}
 [읽을 파일]
 - 순위·통계 요약(tables.json): ${P.tables}
@@ -28,6 +29,7 @@ ${ENV}
 - 종목 데이터 폴더: ${P.stocksDir} (status_notes·price.note·unresolved 참고)
 - 공통 거시 시나리오: ${P.macro}
 [작성 항목]
+0. part3_key_factors: 26개 종목 각각 3부 순위표 '핵심 요인' 열에 들어갈 한 문장(60~140자). 기대 TSR을 만드는 정성적 원천과 순위를 제한하는 핵심 위험을 적되, 숫자는 tables.json의 최종값(기대 TSR·손실확률·순위)만 쓰거나 아예 쓰지 않는다. 기준주가·시가총액·원안 TSR은 쓰지 않는다.
 1. part4_reasons: 26개 종목 각각 '장기로 갈수록 순위가 상승·하락·유지되는 이유' 한 문장(1년 vs 5년 균형형 순위와 기대수익률 수치를 근거로. 예: 1년에는 사이클 고점 이익과 주주환원이 받치지만 5년에는 멀티플 정상화와 공급 증가로 연환산 기대수익률이 x%로 낮아져 순위가 n→m으로 하락한다).
 2. part2_notes: 26개 종목 각각 '데이터상 특이사항' 한 문장(기준가 날짜가 10/22가 아닌 경우 그 사실, 분할·증자·무상증자·CB 등 주당가치 이벤트, 데이터 품질, 확인 불가 항목).
 3. priced_in_ranking: 현재 주가에 낙관론이 가장 많이 반영된 종목 상위 6개(정도: 매우 높음/높음 + 근거: 현재 주가가 암시하는 성장·멀티플 vs 자체 전망).

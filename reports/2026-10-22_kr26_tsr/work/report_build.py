@@ -156,9 +156,9 @@ def main(base, eng, out_md):
     A(manual.get('part4_intro', ''))
     _rc = tj.get('rank_change', [])
     _mx = max((r.get('agg_def_maxdiff', 0) for r in _rc), default=0)
-    _big = [f"{r['name']}({r['agg_def_maxdiff']}단계)" for r in _rc if r.get('agg_def_maxdiff', 0) >= max(3, _mx)]
+    _big = [r['name'] for r in _rc if _mx > 0 and r.get('agg_def_maxdiff', 0) == _mx]
     A('')
-    A(f"공격형과 방어형 순위 차이의 최대값은 {_mx}단계이며, 그 차이가 가장 큰 종목은 {', '.join(_big) if _big else '없음'}이다. 이 종목들은 8부에서 '순위 불안정' 후보로도 다룬다.")
+    A(f"공격형과 방어형 순위 차이의 최대값은 {_mx}단계이고, 그 차이가 {_mx}단계인 종목은 {', '.join(_big) if _big else '없음'}이다. 위험선호를 바꿔도 순위가 크게 흔들리는 종목은 없으며, 순위 불안정은 위험 가중치보다 기준가 날짜(8-2)와 시나리오 가정(8부)에서 온다.")
     A('')
     A('| 종목(코드) | 1년 종합 | 3년 종합 | 5년 종합 | 공격형(1/3/5년) | 방어형(1/3/5년) | 장기로 갈수록 순위가 변하는 이유 |')
     A('|---|---:|---:|---:|---|---|---|')
@@ -362,6 +362,25 @@ def main(base, eng, out_md):
     A('')
     for l in REPORT_FIXES:
         A(f'- 보고서 편집 정정: {l}')
+    # shrinkage direction table (QC finding: shrink toward positive sector priors can lift low-quality names)
+    A('')
+    A('**베이스레이트 축소의 방향(확률가중 기대 TSR, 확정 시나리오 → 축소 후; 1년 / 3년 / 5년)**: 축소는 종목 추정을 산업 사전값 쪽으로 당기므로 사전값보다 낮은 추정은 올라가고 높은 추정은 내려간다. 데이터 품질이 낮은 종목이 상향된 경우는 사전값이 그 종목의 정보 부족을 대신한 것이지 낙관의 근거가 아니다.')
+    A('')
+    A('| 종목 | w | 1년 | 3년 | 5년 | 방향 |')
+    A('|---|---:|---:|---:|---:|---|')
+    for n in names:
+        t = trees[n]; w = t.get('shrink_weight', 1.0); p0 = t['price0']
+        cells, ups = [], 0
+        for hk in HZ:
+            sc = t['horizons'].get(hk, [])
+            if not sc:
+                cells.append('N/A'); continue
+            e_c = sum(x['prob'] / 100 * x.get('tsr_orig', (x['end_price'] + x['cum_cash']) / p0 - 1) for x in sc)
+            e_f = sum(x['prob'] / 100 * ((x['end_price'] + x['cum_cash']) / p0 - 1) for x in sc)
+            ups += 1 if e_f > e_c + 1e-9 else 0
+            cells.append(f'{fmt_pct(e_c)}→{fmt_pct(e_f)}')
+        A(f"| {n} | {w:.2f} | {cells[0]} | {cells[1]} | {cells[2]} | {'상향' if ups == 3 else ('하향' if ups == 0 else '혼합')} |")
+    A('')
     for l in build_log:
         A(f'- {l}')
     A('')

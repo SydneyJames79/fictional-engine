@@ -43,6 +43,10 @@ def main(base, eng):
     macro_rf = json.load(open(os.path.join(eng, 'macro_rf.json')))
     R, RK = res['results'], res['rankings']
     names = list(R.keys())
+    try:
+        KF = json.load(open(os.path.join(base, 'manual_sections.json'))).get('part3_key_factors', {}) or {}
+    except Exception:
+        KF = {}
     # expected index returns (price basis) from the common macro scenario, keyed by market and horizon
     idx = {}
     try:
@@ -62,7 +66,7 @@ def main(base, eng):
         rk = RK[hk]
         rows = sorted(rk.keys(), key=lambda n: rk[n]['balanced_rank'])
         out.append(f'\n### {HZN[hk]} 전체 순위표 (종료일 { {"1y":"2027-10-22","3y":"2029-10-22","5y":"2031-10-22"}[hk] }, 무위험수익률 {macro_rf["rf"][hk]*100:.2f}%)\n')
-        out.append('| 종합순위 | 기대수익률순위 | 위험조정순위 | 종목(코드) | 현재가 | 기준일(표시) | 기대 누적 TSR | 기대 연환산 | 중앙값 누적 TSR | P10 | P50 | P90 | 손실확률 | 30%↑손실확률 | Fwd Sortino | CVaR 10% | 시장 대비 초과(기대 누적) | 신뢰도 | 핵심 요인(종합 에이전트 원안 서술; 문장 속 TSR·기준가·시총은 반대심문·축소·기준가 갱신 전 값이며 숫자 열이 최종) |')
+        out.append('| 종합순위 | 기대수익률순위 | 위험조정순위 | 종목(코드) | 현재가 | 기준일(표시) | 기대 누적 TSR | 기대 연환산 | 중앙값 누적 TSR | P10 | P50 | P90 | 손실확률 | 30%↑손실확률 | Fwd Sortino | CVaR 10% | 시장 대비 초과(기대 누적) | 신뢰도 | 핵심 요인 |')
         out.append('|---:|---:|---:|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:--:|---|')
         tj[hk] = []
         for n in rows:
@@ -92,7 +96,7 @@ def main(base, eng):
                 'scen_tsr': r['scen_tsr'], 'probs': r['probs'], 'shrink_weight': t.get('shrink_weight', 1.0),
             }
             tj[hk].append(row)
-            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {dlabel}{(' (' + pflag + ')') if pflag else ''} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {t.get('one_line','')} |")
+            out.append(f"| {row['balanced_rank']} | {row['ret_rank']} | {row['ra_rank']} | {n}({t['ticker']}) | {fmt_krw(t['price0'])} | {dlabel}{(' (' + pflag + ')') if pflag else ''} | {fmt_pct(r['exp_cum'])} | {fmt_pct(r['exp_ann'])} | {fmt_pct(r['median'])} | {fmt_pct(r['p10'])} | {fmt_pct(r['p50'])} | {fmt_pct(r['p90'])} | {fmt_pct_plain(r['p_loss'])} | {fmt_pct_plain(r['p_loss30'])} | {r['sortino']:.2f} | {fmt_pct(r['cvar10'])} | {(fmt_pct(excess) + 'p vs ' + mkt) if excess is not None else 'N/A'} | {t.get('confidence','')} | {KF.get(n) or t.get('one_line','')} |")
 
     # ---------- Part 4: rank change table ----------
     out.append('\n### 기간별 순위 변화표\n')
