@@ -92,6 +92,11 @@ if (stage === 'writer' || stage === 'all') {
   writer = await agent(writerPrompt, { label: 'writer:보조문안', phase: '보조 문안', schema: WRITER_SCHEMA, effort: 'xhigh' })
 }
 let verifies = null
+if (stage === 'verify2') {
+  verifies = await parallel([
+    () => agent(v2Prompt, { label: 'verify:보고서-표 정합성', phase: '독립 검증', schema: VERIFY_SCHEMA, effort: 'xhigh' }),
+  ])
+}
 if (stage === 'verify' || stage === 'all') {
   verifies = await parallel([
     () => agent(v1Prompt, { label: 'verify:식별·가격·산식', phase: '독립 검증', schema: VERIFY_SCHEMA, effort: 'xhigh' }),
