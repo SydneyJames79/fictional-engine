@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-29T00:53:36Z",
+ "updated_utc": "2026-10-29T01:05:31Z",
  "analysis_basis": "2026-10-22 15:40 KST; horizons 2027-10-22 / 2029-10-22 / 2031-10-22; KRW",
  "wf1_stocks_verified": [
   "HPSP",
@@ -187,12 +187,13 @@
    "SK하이닉스",
    "삼성바이오로직스",
    "삼성전자",
+   "인텔리안테크",
    "현대모비스",
    "현대차",
    "화신"
   ]
  },
- "engine_final": false,
+ "engine_final": true,
  "report": false,
  "resume_notes": [
   "WF2 workflow run ids (resume with scriptPath work/wf2_analysis.js + resumeFromRunId): wf_ab38b784-c89, wf_eef957b7-41c, wf_09747591-3dc, wf_c0202b56-fc7, wf_52821627-8a5, wf_09fc0278-88b",
